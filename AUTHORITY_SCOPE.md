@@ -15,12 +15,12 @@ Allowed:
 - scientific release lineage
 
 Forbidden:
-- MHLM hallucination framing
-- AI safety interpretation as canonical truth
+- non-scientific hallucination framing
+- AI-safety interpretation as canonical truth
 - collective hallucination terminology in root authority docs
 - runtime governance analysis
-- AOIA operational state
+- operational runtime state
 
 Handling rule:
-- if a file discusses LSC as an epistemic case study rather than as physics source,
-  it belongs in `MHLM_MDLH` or `historical_archive`, not here.
+- if a file discusses LSC mainly as an epistemic case rather than as physics source,
+  it belongs in archive/reference handling, not canonical scientific content.

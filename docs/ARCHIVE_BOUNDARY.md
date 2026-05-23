@@ -6,7 +6,7 @@ Allowed in this repository:
 - reproducibility and validation artifacts
 
 Not allowed as canonical root doctrine:
-- MHLM hallucination framing
+- non-scientific hallucination framing
 - AI-safety case-study interpretation
 - runtime governance doctrine
 

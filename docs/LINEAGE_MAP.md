@@ -16,6 +16,6 @@ Primary scientific ancestry preserved in this repository:
 
 ## Cross-repository references
 
-- `MHLM_MDLH` may cite LSC as case-study material
-- `AOIA-Core` may cite LSC only as external knowledge or analysis target
+- external analytical repositories may cite LSC as case-study material
+- runtime repositories may cite LSC only as external knowledge or analysis target
 - mixed continuity documents were excluded from canonical LSC content and preserved in archive during extraction

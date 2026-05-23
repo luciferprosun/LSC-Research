@@ -12,7 +12,7 @@ This repository is physics-first and neutrino-focused. It exists to preserve and
 - simulation tooling tied to physics
 - scientific papers, datasets, and reproducibility artifacts
 
-This repository is not an MHLM/MDLH or AOIA authority root.
+This repository is a standalone scientific authority root.
 
 ## Structure
 
@@ -25,11 +25,11 @@ This repository is not an MHLM/MDLH or AOIA authority root.
 ## Exclusions
 
 The following were intentionally kept out of this repository:
-- hallucination framing
-- AI safety interpretation
+- non-scientific epistemic analysis
+- AI-safety interpretation
 - recursive cognition analysis
-- runtime governance analysis
-- AOIA runtime systems
+- runtime infrastructure doctrine
+- non-scientific operational systems
 
 ## Lineage
 
