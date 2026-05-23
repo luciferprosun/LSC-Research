@@ -1,0 +1,31 @@
+{
+  "source": {
+    "paper": "Search for Electron Neutrino Transitions to Sterile States in the BEST Experiment",
+    "arxiv": "2201.07364",
+    "pdf": "public_sources/arxiv/BEST_2201.07364.pdf"
+  },
+  "inner_target": {
+    "shape": "sphere",
+    "inner_diameter_cm": 133.5,
+    "gallium_mass_t": 7.4691,
+    "gallium_mass_uncertainty_t": 0.0631,
+    "mean_path_length_cm": 52.03,
+    "mean_path_length_uncertainty_cm": 0.18
+  },
+  "outer_target": {
+    "shape": "cylinder",
+    "inner_diameter_cm": 218.0,
+    "maximum_gallium_height_cm": 211.2,
+    "gallium_mass_t": 39.9593,
+    "gallium_mass_uncertainty_t": 0.0024,
+    "mean_path_length_cm": 54.41,
+    "mean_path_length_uncertainty_cm": 0.18
+  },
+  "source_cartridge": {
+    "shape": "cylinder",
+    "radius_cm": 4.3,
+    "height_cm": 10.8,
+    "tungsten_shield_thickness_mm": 30,
+    "shield_weight_kg": 42.8
+  }
+}

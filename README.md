@@ -17,10 +17,12 @@ This repository is a standalone scientific authority root.
 ## Structure
 
 - `LSC_core/`: extracted LSC scientific corpus
+- `LSC_core/LSC_data/`: extracted scientific source/data evidence block from the legacy mixed root
 - `framework/`: datasets, loaders, likelihoods, baselines, notebooks, and tests
 - `legacy/`: preserved scientific lineage imports
 - `reports/`: physics-side reports preserved during extraction
 - `docs/`: repository-level scope, lineage, and history continuation planning
+- `archive/quarantine/`: non-canonical quarantine notes for mixed or deferred materials
 
 ## Exclusions
 

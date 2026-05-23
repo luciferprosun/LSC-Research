@@ -1,0 +1,506 @@
+                                                        Results from the Baksan Experiment on Sterile Transitions (BEST)
+
+                                                  V.V. Barinov,1 B.T. Cleveland,2 S.N. Danshin,1 H. Ejiri,3 S.R. Elliott,4 D. Frekers,5 V.N. Gavrin,1, a
+                                                    V.V. Gorbachev,1 D.S. Gorbunov,1 W.C. Haxton,6, 7 T.V. Ibragimova,1 I. Kim,4 Yu.P. Kozlova,1
+                                                     L.V. Kravchuk,1 V.V. Kuzminov,1 B.K. Lubsandorzhiev,1 Yu.M. Malyshkin,1 R. Massarczyk,4
+                                                      V.A. Matveev,8 I.N. Mirmov,1 J.S. Nico,9 A.L. Petelin,10 R.G.H. Robertson,11 D. Sinclair,12
+                                                 A.A. Shikhin,1 V.A. Tarasov,10 G.V. Trubnikov,8 E.P. Veretenkin,1 J.F. Wilkerson,13, 14 and A.I. Zvir10
+                                                          1
+                                                             Institute for Nuclear Research of the Russian Academy of Sciences, Moscow 117312, Russia
+                                                                                        2
+                                                                                          SNOLAB, Sudbury, ON P3Y 1N2, Canada
+                                                                         3
+                                                                           Research Center for Nuclear Physics, Osaka University, Osaka, Japan
+                                                                                 4
+                                                                                   Los Alamos National Laboratory, Los Alamos, NM, USA
+                                                        5
+                                                          Institut für Kernphysik, Westfälische Wilhelms-Universität Munster, D-48149 Munster, Germany
+                                                           6
+                                                             Nuclear Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA
+                                                                     7
+arXiv:2109.11482v2 [nucl-ex] 30 Mar 2022
+
+
+
+
+                                                                       Department of Physics, University of California, Berkeley, CA 94720, USA
+                                                      8
+                                                        Joint Institute for Nuclear Research (JINR) Joliot-Curie 6, 141980, Dubna, Moscow Region, Russia
+                                                         9
+                                                           National Institute of Standards and Technology, 100 Bureau Dr, Gaithersburg, MD 20899, USA
+                                                      10
+                                                         JSC ‘State Scientific Center Research Institute of Atomic Reactors’, Dimitrovgrad, 433510, Russia
+                                                                             11
+                                                                                Center for Experimental Nuclear Physics and Astrophysics, and
+                                                                     Department of Physics, University of Washington, Seattle, WA 98195, USA
+                                                                        12
+                                                                           Carleton University 1125 Colonel By Drive Ottawa, K1S 5B6, Canada
+                                                      13
+                                                         Department of Physics and Astronomy, University of North Carolina, Chapel Hill, NC 27599, USA
+                                                                          14
+                                                                             Triangle Universities Nuclear Laboratory, Durham, NC 27708, USA
+                                                                                                  (Dated: March 31, 2022)
+                                                           The Baksan Experiment on Sterile Transitions (BEST) was designed to investigate the deficit of
+                                                        electron neutrinos, νe , observed in previous gallium-based radiochemical measurements with high-
+                                                        intensity neutrino sources, commonly referred to as the gallium anomaly, which could be interpreted
+                                                        as evidence for oscillations between νe and sterile neutrino (νs ) states. A 3.414-MCi 51 Cr νe source
+                                                        was placed at the center of two nested Ga volumes and measurements were made of the production
+                                                        of 71 Ge through the charged current reaction, 71 Ga(νe ,e− )71 Ge, at two average distances. The
+                                                        measured production rates for the inner and the outer targets respectively are (54.9+2.5  −2.4 (stat) ±
+                                                        1.4(syst)) and (55.6+2.7
+                                                                             −2.6 (stat) ± 1.4(syst)) atoms of
+                                                                                                               71
+                                                                                                                  Ge/d. The ratio (R) of the measured rate of
+                                                        71
+                                                           Ge production at each distance to the expected rate from the known cross section and experimental
+                                                        efficiencies are Rin = 0.79 ± 0.05 and Rout = 0.77 ± 0.05. The ratio of the outer to the inner result
+                                                        is 0.97±0.07, which is consistent with unity within uncertainty. The rates at each distance were
+                                                        found to be similar, but 20-24% lower than expected, thus reaffirming the anomaly. These results
+                                                        are consistent with νe → νs oscillations with a relatively large ∆m2 (>0.5 eV2 ) and mixing sin2 2θ
+                                                        (≈0.4).
+
+
+                                             The possibility of the existence of light sterile neutrinos     These experiments, using 51 Cr [11, 12] and 37 Ar [13]
+                                           (νs ) is presently a major field of inquiry. The literature       placed at the center of their Ga targets, found a 71 Ge
+                                           on this topic is extensive but has been summarized well           production rate of 0.87±0.05 of that expected [8]. This
+                                           in a number of recent reviews [1–7]. Much of the ev-              led to extensive studies of the cross section [14–18], the
+                                           idence for νs ’s comes from oscillation experiments that          extraction efficiency, and counting efficiencies [12, 19] by
+                                           search for the conversion of an active neutrino into a            both collaborations and a number of outside interested
+                                           sterile state.                                                    groups [9, 20, 21]. This discrepancy between the ex-
+                                                                                                             pected and measured rates defines the gallium anomaly
+                                              The SAGE [8] and GALLEX [9] radiochemical ex-                  and has been interpreted in the context of νe → νs os-
+                                           periments detected neutrinos from the Sun through the             cillations [22]. Although the statistical evidence for a
+                                           charged-current reaction 71 Ga(νe ,e− )71 Ge. The SAGE            deviation from expectation is modest, about 2-3σ, it has
+                                           method (GALLEX) exposed a large mass of Ga metal,                 persisted motivating the need for further investigation.
+                                           30-50 t, (GaCl3 -HCl solution, 30.3 t Ga) to the Sun for          Furthermore, given the simplicity of the electron-capture
+                                           about a month and then chemically extracted the ra-               neutrino energy spectrum and the well-known cross sec-
+                                           dioactive 71 Ge atoms (τ1/2 =(11.43±0.03) d [10]), mixed          tion (σ) at these low energies, this is an effective tech-
+                                           the Ge with a proportional counter gas, and counted the           nique to search for νs ’s. There have been numerous
+                                           decaying 71 Ge in a low-background system. Both col-              searches for νs sensitive to the Ga anomaly parameter
+                                           laborations followed up the solar neutrino studies with           range. We present a summary in the bottom panel of
+                                           strong radioactive electron-capture sources to confirm            Fig. 3.
+                                           their sensitivity to interactions with νe from the Sun.
+                                                                                                                          2
+
+   The use of an electron capture νe source is a pow-          maximize the number of extracted 71 Ge atoms. The first
+erful technique to search for ν oscillations. The νe spec-     extraction’s counting times were shorter due to the lim-
+trum from 51 Cr is simple, being comprised of a dominant       ited number of working counters. The shorter counting
+component near 750 keV and a sub-dominant component            time had little effect on the number of measured 71 Ge de-
+near 430 keV. It is a well-understood spectrum relying on      cays, but the statistical uncertainty was increased due to
+well-known nuclear and atomic physics parameters. The          the lower statistical determination of the counter back-
+51
+   Cr isotope (27.704±0.004 d) emits νe ’s at four energies;   ground.
+747 keV (81.63%), 427 keV (8.95%), 752 keV (8.49%) and            Two 8-channel data acquisition systems were used [27–
+432 keV (0.93%).                                               29]. Pulses from the proportional counters were digitized
+   The previous source measurements used a single tar-         at 1 GHz with a bandwidth of 100 MHz and a rise time of
+get and, therefore, required comparison of a measured          3.5 ns. The energy range of the 8-bit digitizer was 0.37-
+rate to a theoretical expectation. The Baksan Experi-          15 keV. The energy range of the NaI counters was 60-
+ment on Sterile Transitions (BEST) was designed as a           3000 keV. Data were collected for each individual event,
+two-distance oscillation experiment. The experimental          recording the time of occurrence.
+concept is depicted in Fig. 1. An inner spherical volume,         The digitized pulse shapes were analyzed for energy
+with diameter 133.5 cm, contains (7.4691±0.0631) t of          and rise time [29]. The measure of energy is the inte-
+Ga. An outer cylindrical volume (234.5 cm high, 218 cm         gral of the pulse waveform for 800 ns after pulse onset.
+diam.) contains (39.9593±0.0024) t of Ga. The 51 Cr            The peak position for each counter is based on routine
+source was placed at the center irradiating both volumes       periodic calibrations with 55 Fe. Auger electrons and x
+simultaneously, permitting the production rate of 71 Ge to     rays from 71 Ge decay will produce point-like ionization
+be measured at two different distances. After exposure,        within the gas resulting in a short rise time compared to
+the Ga was pumped to reactors for the extraction chem-         an extended ionization trail arising from Compton elec-
+istry. Detailed discussion of the experimental operations,     trons or β particles. Thus the pulse rise time (TN ) can be
+efficiencies and uncertainties can be found in Ref. [23].      used to eliminate background and was determined by a
+   The active core of the source consisted of 26 irradi-       functional fit to the waveform [30]. After counting of the
+ated Cr disks, placed into a stainless-steel cylinder with     samples from the Cr experiment was completed in fall of
+a radius of 4.3 cm and height 10.8 cm, was shielded for        2020, measurements of the counting efficiency were made
+radiation safety within a tungsten alloy of thickness of       for each counter used in the experiment. Two differ-
+≈30 mm. The source was manufactured by irradiating             ent techniques and two different isotopes were employed:
+4 kg of 50 Cr-enriched metal for 100 d in a reactor at the     37
+                                                                  Ar to measure volume efficiency, and 71 Ge to measure
+State Scientific Center Research Institute of Atomic Re-       the L- and K-peak efficiencies and the TN acceptance
+actors, Dimitrovgrad, Russia. The source was delivered         for each counter. An upper limit for TN consistent with
+to the Baksan Neutrino Observatory (BNO) on July 5,            point-like events was determined such that 96% of the
+                                                               71
+2019 and was placed into the two-zone target at 14:02             Ge events were accepted [13]. The volume efficiencies
+that same day and this is our chosen reference time for        of all counters used in the experiment were directly mea-
+the source strength. The activity (A) at the reference         sured with 37 Ar. The calculated counting efficiency using
+time is (3.414±0.008) MCi. A full description of the           the measured pressure, GeH4 fraction, and 37 Ar volume
+source and the calorimetric measurements of its inten-         efficiency was determined for each extraction. The to-
+sity can be found in Refs. [24, 25].                           tal uncertainty in these calculated efficiencies is ±1.1%.
+   Twenty extractions, 10 from each volume, were con-          The total efficiency varies for each extraction and is the
+ducted between July 15 and Oct. 13, 2019. The Ga metal         product of the live time factor, counting efficiency with
+was kept molten by maintaining the temperature between         analysis cuts, extraction and synthesis efficiency, and a
+30.0 C and 30.5 C above the 29.8 C melting point. At           factor due to the 51 Cr half-life during the exposure is
+the start of each exposure, ≈175 µg of Ge carrier was          typically (10.0±0.3%) [23], where systematic uncertain-
+added to each Ga volume. Each exposure lasted ap-              ties are included.
+proximately 9 d and counting of the sample commenced              The likelihood fits to the time distribution of the candi-
+approximately 24 h after each extraction. At the end           date events were performed as in Ref. [11]. This analysis
+of the exposure, the carrier Ge and any produced 71 Ge         includes a 71 Ge contribution with its 11-d half-life and a
+was extracted using the procedure described in Ref. [26].      constant background rate. For joint fits of all extractions,
+The process ensured the independent extraction of 71 Ge        the decay of the 51 Cr source was taken into account. Ta-
+atoms from each zone of the Ga target. The gas germane         ble I presents a summary of the K+L fit results for each
+was synthesized, mixed with Xe, and inserted into small        extraction for the inner and outer volumes. Addition-
+(∼0.6 cm3 ), low-background proportional counters. The         ally, a combined fit for each is given. Figure 2 shows the
+counters were installed into a NaI well volume of one of       K+L production rate fits for the two volumes indicating
+the two counting systems. The counting duration varied         the resulting production rate at the reference time. Two
+from 60 to 150 days. The irradiations were scheduled to        independent analyses were pursued and both obtained
+                                                                                                                          3
+
+
+
+
+            FIG. 1. The Ga target and extraction piping diagram also indicating the source handling apparatus.
+
+
+similar results to within about 2%. This difference is due      of Ga [26]. The details of the systematic uncertainties
+to minor event-selection differences at the edges of the        are described in Ref [32].
+selection borders in energy and rise time. This difference
+is accounted for by the estimated systematic uncertain-
+                                                                   The cross section has to be calculated from nuclear
+ties in the efficiencies for those cuts. All efficiencies are
+                                                                physics input and when the original Ga anomaly was ob-
+accounted for each extraction individually.
+                                                                served, there was concern that the transition strengths
+   For the likelihood fits, if the 71 Ge half-life is allowed
+                                                                to excited states were not fully understood. Bahcall [33]
+to float, the result is 11.05±0.72 d (11.11±0.69 d) for the
+                                                                derived the ground state contribution from the 71 Ge half-
+inner (outer) target data agreeing well with the known
+                                                                life, but the excited state contributions were estimated
+half-life. If the 51 Cr half-life is allowed to float the re-
+                                                                from charge exchange (i.e. (p,n)) reactions. For the cen-
+sult is 31.55±2.89 d (30.97±3.90 d) for the inner (outer)
+                                                                tral value, Bahcall used the best estimate of the transi-
+target data agreeing well with the known half-life.
+                                                                tion strength values to the excited states with an esti-
+   During each extraction a small fraction of the produc-
+                                                                mated uncertainty to be the change in σ (-1.6/+2.8%),
+tion is due to solar neutrinos. The measured solar neu-
+                                                                if one ignores the excited states. The charge exchange
+trino capture rate is (66.1±3.1) SNU [8][31] and typically
+                                                                data has been improved by recent work [15–17] indicat-
+results in about 0.51 (3) counts per extraction attributed
+                                                                ing that they are not the cause of the discrepancy. How-
+to the K+L counts for the inner (outer) target. Due
+                                                                ever, the excited-state contribution uncertainty is critical
+to the inefficiency of the extraction, there are also some
+71                                                              because the (p,n) measurements have a significant can-
+   Ge atoms that carryover from one extraction to the
+                                                                cellation between the Gamow-Teller and tensor matrix
+next. Typically this is about 1 count for each volume.
+                                                                elements resulting in an underestimate of the transition
+Both of these effects were taken into account, extraction
+                                                                strengths [34]. Kostensalo et al. [21] used a nuclear shell
+by extraction.
+                                                                model calculation to avoid the (p,n) measurement draw-
+   The systematic uncertainties have been estimated from
+                                                                back. The paper of Semenov et al. [18] reproduces Bah-
+auxiliary tests. The chemical extraction efficiency is typ-
+                                                                call’s approach but uses modern values for the transition
+ically about 95% with an uncertainty of ±1.6%. The
+                                                                strengths [35]. The Semenov et al. and Kostensalo et
+summed K+L peak counting efficiency is typically about
+                                                                al. results differ by about 4%, which is about 2-3 times
+70% with an uncertainty of -1.8/+2.0%. There are small
+                                                                larger than the uncertainty estimated for each. Interest-
+uncertainties due to the Rn cut (-0.05%), the solar neu-
+                                                                ingly, the original Bahcall number is half way between
+trino correction (±0.20%), and the carryover correction
+                                                                these two results with an uncertainty that encompasses
+(±0.04%). The total systematic uncertainty is estimated
+                                                                both. We therefore use the Bahcall σ value and the
+to be -2.5/+2.6%. Note that the uncertainty in the ex-
+                                                                associated conservative uncertainties from his estimate:
+traction efficiency has been greatly reduced as compared
+                                                                (5.81+0.21
+                                                                      −0.16 ) × 10
+                                                                                   −45
+                                                                                       cm2 .
+to Ref. [13]. This is due to the use of mass spectrom-
+etry to determine with high accuracy the efficiency of
+extraction of minute quantities of Ge from a large mass           The survival probability at a distance d for two-
+                                                                                                                             4
+
+
+TABLE I. A summary of the likelihood fits for the production rate from each extraction, the combined fit of all extractions,
+and the predicted production rate. The 2nd and 6th columns are the total number of energy and rise-time selected candidates
+for 71 Ge decay. The 3rd and 7th columns are the number of candidates that fit to 71 Ge. The fit background values can be
+calculated by subtracting columns 3 from 2 or 7 from 6, respectively. The 4th and 8th columns are the number of events
+assigned to production by 51 Cr after contributions from carryover and solar neutrino production are subtracted. Columns 5
+and 9 are the resulting production rates quoted at the reference time. The quoted measurement uncertainties are statistical.
+                               Inner Volume                               Outer Volume
+                                      51                                         51
+    Exposure     K+L    Number fit       Cr Production     K+L     Number fit       Cr Production
+                            71                                         71
+  Dates (DoY) Candidates to Ge Production Rate (Atoms/d) Candidates to Ge Production Rate (Atoms/d)
+ 186.585-196.376  180     176.3       175.5  49.4+4.2
+                                                 −4.0       181      133.4       129.6  41.1+5.3
+                                                                                             −5.2
+                                                 +5.9
+ 197.362-206.372  129     111.5       107.7  44.9−5.6       174      163.8       158.6  63.6+5.7
+                                                                                             −5.5
+ 207.282-216.374  132     117.6       115.4  62.9+7.4
+                                                 −7.1       116       92.5       88.2   51.4 +7.3
+                                                                                             −6.9
+                                                 +8.6                                        +9.8
+ 217.286-226.371  93       87.3        85.6  73.3−8.0        98       82.3       78.9   66.6−9.2
+ 227.258-236.458  134      60.2        58.4  49.8+8.2
+                                                 −7.7       120       64.0       59.5   46.9+7.9
+                                                                                             −7.2
+ 237.342-246.369  81       48.8        47.7  69.5+12.0
+                                                 −11.0       97       62.3       59.3   87.3+13.2
+                                                                                            −12.3
+ 247.243-256.368  91       45.0        43.9  64.6+12.6
+                                                 −11.6       69       38.0       34.4   50.4+10.6
+                                                                                            −9.6
+                                                 +12.2
+ 257.241-266.369  59       33.6        32.4  53.8−11.0       68       43.4       39.2   59.7+11.7
+                                                                                            −10.8
+ 267.240-276.369  106      23.7        22.7  49.9+16.5
+                                                 −14.9       66       20.2       17.0   43.0+15.3
+                                                                                            −13.5
+ 277.201-286.367  88       25.2        24.3  69.1+19.4
+                                                 −17.3       81       31.8       28.0   78.8+20.0
+                                                                                            −18.1
+   Combined      1093     724.0       708.2  54.9+2.5
+                                                 −2.4      1069      738.8       699.8  55.6+2.7
+                                                                                             −2.6
+    Predicted                                69.41+2.5
+                                                  −2.0                                  72.59+2.6
+                                                                                             −2.1
+
+
+
+
+component oscillation for a given ν energy (Eν ) is                 For n = 1, . . . , N experiments (the two BEST volumes
+                                                                  are treated separately), oscillation parameters are esti-
+                                  ∆m2 [eV2 ]d[m]
+                                                
+                                                                  mated by a global minimization of
+   Pee (d) = 1 − sin2 2θsin2 1.27                  .       (1)
+                                   Eν [MeV]
+                                                                  χ2 (∆m2 , sin2 2θ) = (rmeas − rcalc )T V−1 (rmeas − rcalc )
+where ∆m2 is the difference of the masses squared be-                                                                       (4)
+tween the two neutrino species and θ is the angle that            with the rmeas (rcalc ) is the vector of the measured (cal-
+defines the mixing between them. The capture rate (r)             culated) rates with ricalc (∆m2 ; sin2 2θ) and the covariance
+can be written                                                    matrix
+                      Z      4
+                             X                                                    Vnk = δnk ε2n + εnCS × εkCS              (5)
+                                    i
+                 r=        F   (fi Pee )σnd~x,             (2)
+                       V
+                                                                  where ε2n = ε2n,stat + ε2n,syst are uncorrelated uncertain-
+                             i=1
+                                                                  ties comprised of statistical and systematic measurement
+where F is the flux of νe , Pee i
+                                    is the oscillation survival   uncertainties, and εnCS represent the correlated uncer-
+                       th
+probability for the i neutrino branch with branching              tainties of σ [36].
+fraction fi , σ is the cross section, n is the 71 Ga number          The calculation of the confidence level contours cor-
+density ((2.1001 ± 0.0008) × 1022 /cm3 ) and the integral         responding to a ∆χ2 = χ2 − χ2min with two degrees
+is calculated over the target volume (V ). With A as the          of freedom: ∆χ2 = 2.30, 6.18, 11.83 for 68.27% (1σ),
+source activity and d the distance between emission and           95.45% (2σ) and 99.73% (3σ) C.L., respectively. The
+absorption of the νe , this can be written                        two BEST results for the measured to expected ratios
+                                                                  are Rout = 0.77±0.05 and Rin = 0.79±0.05. The re-
+                                        i                         sults from SAGE are RCr = 0.95 ± 0.12 [11], RAr =
+                          Z P
+                    nσA         i (fi Pee (d))
+               r=                              d~x.         (3)   0.79+0.09
+                     4π V            d2                                −0.10 [13] and for GALLEX are RCr1 = 0.95 ± 0.11
+                                                                  and RCr2 = 0.81 ± 0.11 [9, 37].
+The integral is calculated by Monte Carlo due to the                 Figure 3 shows the allowed ∆m2 - sin2 2θ parameter
+complexity of the target geometry. The average path               space assuming that νe → νs oscillations is the origin of
+length < L > of a neutrino through the target is given by         the gallium anomaly. The best fit for BEST only data
+the integral when Pee = 1. The average path lengths for           is ∆m2 = 3.3 eV2 and sin2 2θ = 0.42. Including all the
+the BEST volumes are < L >in = (52.03 ± 0.18) cm and              Ga data, the result is ∆m2 = 1.25 eV2 and sin2 2θ =
+< L >out = (54.41 ± 0.18) cm. The uncertainties on these          0.34. As shown in the figure, the allowed ranges for these
+numbers are dominated by dimensional uncertainties of             parameters are large, however, due to the broadness of
+the apparatus.                                                    the minimum.
+                                                                                                                                                                                                                               5
+
+                                                             Production rates for the inner target                                              10
+                                                                                                           predicted                                                                                           3σ
+                                             80
+
+              Production rate (71 Ge atoms/day)
+                                                                                                           measured                              9                                                             2σ
+                                                                                                                                                 8                                                             1σ
+                                             60
+                                                                                                                                                                                                               b.f.p.
+                                                                                                                                                 7
+                                             40
+                                                                                                                                                 6
+
+
+
+
+                                                                                                                                    ∆m2 (eV2)
+                                             20                                                                                                  5
+
+                                                  0 0                                                                                            4
+                                                        20     40         60         80        100   120           140
+                                                                                                                                                 3
+                                                                                                           predicted
+                                     100
+      Production rate (71 Ge atoms/day)
+
+
+
+
+                                                                                                           measured                              2
+                                                                                                           all K
+                                             80                                                            all L
+                                                                                                                                                 1
+                                             60                                                                                                  0
+                                                                                                                                                     0.0   0.1   0.2    0.3    0.4   0.5    0.6   0.7   0.8   0.9    1.0
+                                             40                                                                                                                                                               sin22
+                                             20
+
+                                                  0 0   20     40        60        80        100     120           140              DANSS 90%                           MicroBooNE (sin2 2 ee = 0)        All Ga 3
+                                                             Time since 14:02 on 05 Jul 2019 (d)                                    Prospect 95%                        MicroBooNE (sin2 2 ee marg.)      All Ga 2
+                                                             Production rates for the outer Target                                  Stereo 95%                          RAA 95% (allowed)                 All solar e 's 95%
+                                                                                                           predicted
+                                                                                                                                    RENO+NEOS 95%                       Neutrino-4 2 (allowed)            Excluded by VSBL
+                                             80
+              Production rate (71 Ge atoms/day)
+
+
+
+
+                                                                                                           measured                 KATRIN 95%
+
+                                             60
+
+                                             40
+                                                                                                                                         101
+                                             20
+
+                                                  0 0   20     40         60         80        100   120           140      m 2 (eV2 )
+                                                                                                           predicted
+                                     100
+      Production rate (71 Ge atoms/day)
+
+
+
+
+                                                                                                           measured
+                                                                                                           all K
+                                                                                                                                         100
+                                             80                                                            all L
+
+                                             60
+
+                                             40
+
+                                             20
+                                                                                                                                     10 101 3                          10 2                10 1                100
+                                                                                                                                                                               sin2 2
+                                                  0 0   20     40        60        80        100     120           140
+                                                             Time since 14:02 on 05 Jul 2019 (d)
+                                                                                                                         FIG. 3. Top: Exclusion for the results from BEST. The best
+FIG. 2. Top: the measured K+L peak rates of the inner target                                                             fit point (b.f.p.) is for ∆m2 = 3.3 eV2 and sin2 2θ = 0.42.
+volume; Middle-Top: normalizes the production rate to the                                                                Bottom: Exclusion contours of all Ga anomaly experiments:
+reference time, the combined results for events in the the L                                                             two GALLEX, two SAGE and two BEST results. The blue
+and K peaks are shown. The blue (red) region represents                                                                  solid line and the blue dotted line shows the 2σ and 3σ con-
+the predicted (measured) production rate. Middle-Bottom:                                                                 fidence level respectively. The figure also presents the exclu-
+Similar to the Top panel but for the outer volume. Bottom:                                                               sion contours from Prospect [38], DANSS [39], Stéréo [40],
+Similar to the Middle-Top panel but for the outer volume.                                                                KATRIN [41], the combined analysis of RENO and NEOS
+The dotted lines enclose the ±1σ uncertainty regions. For                                                                data [42], reactor anti-neutrino anomalies (RAA) [43] allowed
+all panels, the horizontal lines indicate the exposure duration                                                          region, interpretations of the MicroBooNE result for the os-
+with the likelihood fit results plotted at the start of exposure.                                                        cillation hypothesis with fixed mixing angle (sin2 2θ) and pro-
+                                                                                                                         filed over the angle [44], and the model-independent 95% up-
+                                                                                                                         per bound on sin2 2θ from all solar neutrino experiments [45].
+                                                                                                                         The 2σ allowed region of Neutrino-4 [46] is also presented and
+   The νe − νs oscillation parameter space minimum                                                                       the grey shading represents the merged exclusion of the very
+(Fig. 3) is very broad and gradual with very small χ2                                                                    short baseline (VSBL) null results.
+difference between the two best fit points. Because the
+values for R are similar for the two volumes, the deduced
+oscillation length is similar to, or smaller, than the vol-                                                              vious Ga results and hence, given the broad minimum,
+umes’ dimensions. As a result, the acceptable ∆m2 range                                                                  the difference in parameter values at the minima points
+extends above a lower limit. As a consequence, it is not                                                                 is inconsequential.
+well determined and the results are consistent with val-                                                                    Because the measured R’s for the two volumes are sim-
+ues above about 0.5 eV2 . The large deviation of the R’s                                                                 ilar, an alternative explanation for the results could be
+from 1 drives the mixing angle to a large value within an                                                                an overall error in σ or efficiency. Since the observed
+extended range. This description is similar to the pre-                                                                  R’s would require a smaller σ than the ground state con-
+                                                                                                                                 6
+
+tribution alone, some fundamental misunderstanding of             [12] W. Hampel et al., Physics Letters B 420, 114 (1998).
+the nuclear or atomic physics would be necessary for a            [13] J. N. Abdurashitov et al., Phys. Rev. C 73, 045805
+reduced σ to resolve the Ga anomaly. Given the known                   (2006).
+71
+   Ge decay rate, σ to the ground state is assumed to be          [14] V. Barinov et al., Phys. Rev. D 97, 073001 (2018).
+                                                                  [15] D. Frekers et al., Phys. Lett. B 706, 134 (2011).
+well determined and the inclusion of excited state contri-        [16] D. Frekers et al., Phys. Lett. B 722, 233 (2013).
+butions cannot decrease σ.                                        [17] D. Frekers et al., Phys. Rev. C 91, 034608 (2015).
+   An error in the efficiency also cannot be ruled out            [18] S. V. Semenov, Phys. At. Nucl. 83, 1549 (2020).
+but the experimental procedures have been verified ex-            [19] J. Abdurashitov et al., JETP 95, 181 (2002),
+tensively over the past two decades. Many aspects of                   Zh.Eksp.Teor.Fiz. 122, 211-226 (2002).
+BEST have been double-checked, including the Ga target            [20] C. Giunti, M. Laveder, Y. F. Li, Q. Y. Liu, and
+                                                                       H. W. Long, Physical Review D 86 (2012), 10.1103/phys-
+masses, the extraction efficiency, the source strength, the
+                                                                       revd.86.113014.
+source placement, the counting efficiency and the count-          [21] J. Kostensalo et al., Phys. Lett. B 795, 542 (2019).
+ing system operation. No cause for concern was found.             [22] M. Laveder, Nuclear Physics B - Proceedings Supple-
+   After the BEST measurements the Ga anomaly looks                    ments 168, 344 (2007), proceedings of the Neutrino Os-
+more pronounced; the weighted average value of the neu-                cillation Workshop.
+trino capture rate relative to the expected value for all Ga      [23] V. V. Barinov et al., “A search for nonstandard neutrino
+experiments is 0.80±0.05, accounting for the correlated                transitions in the best experiment,” (2021), submitted
+                                                                       to Phys. Rev. C, arXiv:2201.07364.
+uncertainty for σ. If one ignores the excited state contri-
+                                                                  [24] J. Kozlova, V. Gavrin, T. Ibragimova, V. Tarasov,
+bution to σ, the value would increase to 0.84±0.04, but                E. Veretenkin, and A. Zvir, Phys. At. Nucl. 83, 958
+still be significantly below 1. The hypothesis of νe → νs              (2020), presentation at Session of the Department of Nu-
+oscillations with a large mass difference (∆m2 & 0.5 eV2 )             clear Physics March 10-12, 2020.
+and large mixing angle (sin2 2θ ≈ 0.4) is consistent              [25] V. Gavrin, T. Ibragimova, J. Kozlova, V. Tarasov,
+with these results. A future source experiment with a                  E. Veretenkin, and A. Zvir, J. of Instrum. 16, P04012
+smaller inner volume might be considered, but the re-                  (2021).
+                                                                  [26] B. Cleveland, V. Gavrin, V. Gorbachev, T. Ibragimova,
+quired source strength would be challenging.
+                                                                       T. Knodel, Y. Malyshkin, I. Mirmov, and E. Veretenkin,
+   We thanks to V. A. Rubakov for the interest, stimu-                 International Journal of Mass Spectrometry 392, 41
+lation and fruitful discussions. This work is supported                (2015).
+by former Federal Agency for Scientific Organizations             [27] A. A. Shikhin et al., J. Phys.: Conf. Ser. 798, 012201
+(FANO till 2019) of Russian Federation, Ministry of                    (2017).
+Science and Higher Education of Russian Federation                [28] A. A. Shikhin et al., Phys. Part. Nucl. 49, 799 (2018).
+under agreement no. 14.619.21.0009 (unique project                [29] J. N. Abdurashitov et al., Phys. Rev. C 60, 055801
+                                                                       (1999).
+identifier no.RFMEFI61917X0009), State Corporation
+                                                                  [30] S. R. Elliott, Nucl. Instr. and Meth. A 290, 158 (1990),
+ROSATOM, and the Office of Nuclear Physics of the US                   erratum Nucl. Instr. and Meth. A 297, 536 (1990).
+Department of Energy.                                             [31] 1 SNU corresponds to one neutrino capture per second
+                                                                       in a target that contains 1036 atoms of the neutrino ab-
+                                                                       sorbing isotope, in our case 71 Ga.
+                                                                  [32] V. Barinov et al., “Search for sterile neutrinos in the best
+                                                                       experiment,” (2021), citation will be replaced with long
+   a
+     gavrin@inr.ru                                                     paper information.
+ [1] K. N. Abazajian et al., “Light sterile neutrinos: A white    [33] J. Bahcall, Phys. Rev. C 56, 3391 (1997).
+     paper,” (2012), arXiv:1204.5379 [hep-ph].                    [34] W. Haxton, Phys. Lett. B 431, 110 (1998).
+ [2] S. Gariazzo, C. Giunti, M. Laveder, Y. F. Li, and            [35] M. Alanssari, D. Frekers, T. Eronen, L. Canete,
+     E. M. Zavanin, Journal of Physics G: Nuclear and Parti-           J. Hakala, M. Holl, A. Jokinen, A. Kankainen,
+     cle Physics 43, 033001 (2015).                                    J. Koponen, I. Moore, D. Nesterenko, I. Pohjalainen,
+ [3] C. Giunti and T. Lasserre, Annual Review of Nuclear and           J. Reinikainen, S. Rinta-Antila, and A. Voss, Interna-
+     Particle Science 69, 163 (2019).                                  tional Journal of Mass Spectrometry 406, 1 (2016).
+ [4] S. Böser, C. Buck, C. Giunti, J. Lesgourgues, L. Ludhova,   [36] G. L. Fogli, E. Lisi, A. Marrone, D. Montanino, and
+     S. Mertens, A. Schukraft, and M. Wurm, Progress in                A. Palazzo, Phys. Rev. D 66, 053010 (2002).
+     Particle and Nuclear Physics 111, 103736 (2020).             [37] M. Altmann et al., Phys. Lett. B 616, 174 (2005).
+ [5] A. Diaz, C. Argüelles, G. Collin, J. Conrad, and M. Shae-   [38] M. Andriamirado, A. B. Balantekin, H. R. Band, C. D.
+     vitz, Physics Reports 884, 1 (2020).                              Bass, D. E. Bergeron, D. Berish, N. S. Bowden, J. P.
+ [6] S.-H. Seo, “Review of sterile neutrino experiments,”              Brodsky, C. D. Bryan, T. Classen, et al. (PROSPECT
+     (2020), arXiv:2001.03349 [hep-ex].                                Collaboration), Phys. Rev. D 103, 032001 (2021).
+ [7] B. Dasgupta and J. Kopp, Physics Reports 928, 1 (2021).      [39] N.      a.   Skrobova,      International     Journal     of
+ [8] J. Abdurashitov et al., Phys. Rev. C 80, 015807 (2009).           Modern       Physics     A      35,     2044015      (2020),
+ [9] F. Kaether et al., Phys. Lett. B 685, 47 (2010).                  https://doi.org/10.1142/S0217751X20440157.
+[10] W. Hampel and L. P. Remsberg, Phys. Rev. C 31, 666           [40] H. Almazán, L. Bernard, A. Blanchet, A. Bonhomme,
+     (1985).                                                           C. Buck, P. del Amo Sanchez, I. El Atmani, J. Haser,
+[11] J. N. Abdurashitov et al., Phys. Rev. C 59, 2246 (1999).          F. Kandzia, S. Kox, et al. (STEREO Collaboration),
+                                                                                                                           7
+
+     Phys. Rev. D 102, 052002 (2020).                                 D 83, 073006 (2011).
+[41] M. Aker, K. Altenmüller, A. Beglarian, J. Behrens,         [44] C. A. Argüelles, I. Esteban, M. Hostert, K. J. Kelly,
+     A. Berlev, U. Besserer, B. Bieringer, K. Blaum, F. Block,        J. Kopp, P. A. N. Machado, I. Martinez-Soler, and
+     B. Bornschein, et al. (KATRIN Collaboration), Phys.              Y. F. Perez-Gonzalez, “Microboone and the νe inter-
+     Rev. Lett. 126, 091803 (2021).                                   pretation of the miniboone low-energy excess,” (2021),
+[42] Z. Atif, J. Choi, H. Jang, J. Jang, S. Jeon, K. Joo,             arXiv:2111.10359 [hep-ph].
+     K. Ju, D. Jung, J. Kim, J. Kim, et al., arXiv preprint      [45] C. Giunti, Y. Li, C. Ternes, and Y. Zhang, Physics Let-
+     arXiv:2011.00896 (2020).                                         ters B 816, 136214 (2021).
+[43] G. Mention, M. Fechner, T. Lasserre, T. A. Mueller,         [46] A. Serebrov and R. Samoilov, JETP Letters 112, 199
+     D. Lhuillier, M. Cribier, and A. Letourneau, Phys. Rev.          (2020).
+

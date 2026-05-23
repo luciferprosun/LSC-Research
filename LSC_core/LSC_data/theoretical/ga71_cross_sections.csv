@@ -1,0 +1,8 @@
+author,year,sigma_51Cr_1e-45_cm2,sigma_37Ar_1e-45_cm2,Qec_71Ge_keV,source
+Bahcall,1997,5.81 +0.21/-0.16,7.00 +0.49/-0.21,232.69(15),Haxton/Elliott/Gavrin review Table 5.1
+Haxton,1998,6.39 +/- 0.68,-,232.69(15),Haxton/Elliott/Gavrin review Table 5.1
+Barinov et al.,2018,5.91 +/- 0.11,7.14 +/- 0.15,233.5(1.2),Haxton/Elliott/Gavrin review Table 5.1
+Kostensalo et al.,2019,5.67 +/- 0.06,6.80 +/- 0.08,232.49(22),Haxton/Elliott/Gavrin review Table 5.1
+Semenov,2020,5.94 +/- 0.12,7.17 +/- 0.15,232.44(9),Haxton/Elliott/Gavrin review Table 5.1
+Haxton et al.,2023,5.71 +0.27/-0.10,6.88 +0.34/-0.13,232.44(9),Haxton/Elliott/Gavrin review Table 5.1
+Ground-state only,2023,5.39 +/- 0.06,6.45 +/- 0.07,-,Haxton/Elliott/Gavrin review Eq. 5.4 (95% C.L.)

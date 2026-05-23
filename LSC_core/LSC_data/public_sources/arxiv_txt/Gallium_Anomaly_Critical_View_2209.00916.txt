@@ -1,0 +1,1577 @@
+                                         Gallium Anomaly: Critical View from the Global Picture of νe and ν̄e Disappearance
+
+                                                                 C. Giunti,1, ∗ Y.F. Li,2, 3, † C.A. Ternes,1, 4, ‡ O. Tyagi,1, 5, § and Z. Xin2, 3, ¶
+                                                   1
+                                                       Istituto Nazionale di Fisica Nucleare (INFN), Sezione di Torino, Via P. Giuria 1, I–10125 Torino, Italy
+                                                                2
+                                                                  Institute of High Energy Physics, Chinese Academy of Sciences, Beijing 100049, China
+                                                           3
+                                                             School of Physical Sciences, University of Chinese Academy of Sciences, Beijing 100049, China
+                                                                  4
+                                                                    Dipartimento di Fisica, Università di Torino, via P. Giuria 1, I–10125 Torino, Italy
+                                                                   5
+                                                                     School of Physical Sciences, Jawaharlal Nehru University, New Delhi 110067, India
+                                                                                            (Dated: Wednesday 02/11/22, 00:54)
+                                                            The significance of the Gallium Anomaly, from the BEST, GALLEX, and SAGE radioactive
+                                                         source experiments, is quantified using different theoretical calculations of the neutrino detection
+                                                         cross section, and its explanation due to neutrino oscillations is compared with the bounds from the
+                                                         analyses of reactor rate and spectral ratio data, β-decay data, and solar neutrino data. In the 3+1
+                                                         active-sterile neutrino mixing scheme, the Gallium Anomaly is in strong tension with the individual
+arXiv:2209.00916v3 [hep-ph] 1 Nov 2022
+
+
+
+
+                                                         and combined bounds of these data sets. In the combined scenario with all available data, the
+                                                         parameter goodness of fit is below 0.042%, corresponding to a severe tension of 4–5σ, or stronger.
+                                                         Therefore, we conclude that one should pursue other possible solutions beyond short-baseline oscil-
+                                                         lations for the Gallium Anomaly. We also present a new global fit of νe and ν̄e disappearance data,
+                                                         showing that there is a 2.6–3.3σ preference in favor of short-baseline oscillations, which is driven by
+                                                         an updated analysis of reactor spectral ratio data.
+
+
+                                                                      Contents                                It was motivated by anomalies found in short-baseline
+                                                                                                              neutrino oscillation experiments: the Gallium Anomaly,
+                                                                                                              the Reactor Antineutrino Anomaly, and the LSND and
+                                            I. Introduction                                             1     MiniBooNE anomalies (see the reviews in Refs. [1–6]).
+                                                                                                              Most puzzling is the large Gallium Anomaly, which has
+                                           II. The Gallium Anomaly                                      2     been recently revived by the results of the BEST experi-
+                                                                                                              ment [7, 8]. In this paper we discuss the status of short-
+                                          III. The reactor rates constraints                            4     baseline νe and ν̄e disappearance and we compare the
+                                                                                                              neutrino oscillation explanation of the Gallium Anomaly
+                                          IV. Short-baseline reactor spectral ratios                    5     with the constraints from other experiments.
+                                           V. Combined short-baseline reactor spectral ratios
+                                              and rates                                       6
+                                                                                                                 The standard paradigm in the phenomenology of mas-
+                                          VI. The KATRIN limit                                          8     sive neutrinos is the three-neutrino mixing scheme in
+                                                                                                              which the three well known active flavor neutrinos νe , νµ ,
+                                         VII. Combination of short-baseline reactor data and                  and ντ take part in the weak interactions of the Standard
+                                              Tritium constraints                            11               Model and are unitary superpositions of three massive
+                                                                                                              neutrinos ν1 , ν2 , and ν3 with respective masses m1 , m2 ,
+                                         VIII. The solar neutrino bound                                13     and m3 . The two independent squared-mass differences
+                                                                                                              ∆m221 ≈ 7.4 × 10−5 eV2 and |∆m231 | ≈ 2.5 × 10−3 eV2
+                                          IX. Global νe and ν̄e disappearance analysis                 15
+                                                                                                              (with ∆m2kj ≡ m2k − m2j ) generate the oscillations ob-
+                                           X. Summary and conclusions                                  17     served in solar, atmospheric and long-baseline neutrino
+                                                                                                              oscillation experiments (see e.g., Ref. [9] and the recent
+                                                References                                             19     three-neutrino global analyses in Refs. [10–12]). Short-
+                                                                                                              baseline (SBL) oscillations that could explain the Reactor
+                                                                                                              Antineutrino Anomaly and the Gallium Anomaly require
+                                                                 I.   Introduction                            the existence of at least one additional squared-mass dif-
+                                                                                                              ference ∆m2SBL & 1 eV2 . In the minimal 3+1 scenario
+                                           The possible existence of light sterile neutrinos is a             that we consider here there is a non-standard massive
+                                         hot topic of current research in high-energy physics.                neutrino ν4 with mass m4 & 1 eV which generates the
+                                                                                                              short-baseline squared-mass difference ∆m2SBL ≃ ∆m241 .
+                                                                                                              In the flavor basis, the new neutrino corresponds to
+                                         ∗ carlo.giunti@to.infn.it                                            a sterile neutrino νs which does not take part in the
+                                         † liyufeng@ihep.ac.cn                                                weak interactions of the Standard Model (see the re-
+                                         ‡ ternes@to.infn.it                                                  views in Refs. [1–6]). In this framework, the effective
+                                         § oddhar89 sps@jnu.ac.in
+                                                                                                              short-baseline survival probability of electron neutrinos
+                                         ¶ xinzhao@ihep.ac.cn
+                                                                                                              and antineutrinos relevant for reactor and Gallium ex-
+                                                                                                                           2
+
+periments is given by                                            through the process νe + 71 Ga → e− + 71 Ge. Two source
+                                                                 experiments have been done by the GALLEX collabora-
+                                         ∆m241 L
+                                                  
+          Pee ≃ 1 − sin2 2ϑee sin2                     .   (1)   tion using an intense artificial 51 Cr radioactive source
+                                          4E                     placed inside the detector. This source emitted elec-
+                                                                 tron neutrinos through the electron capture (EC) pro-
+The effective mixing angle ϑee depends on the element
+                                                                 cess e− + 51 Cr → 51 V + νe . The SAGE collabora-
+Ue4 of the 4 × 4 mixing matrix U through the relation
+                                                                 tion performed a source experiment with a 51 Cr radioac-
+sin2 2ϑee = 4|Ue4 |2 (1 − |Ue4 |2 ).
+                                                                 tive source and another with a 37 Ar radioactive source,
+   Currently, the Reactor Antineutrino Anomaly is re-
+                                                                 which emitted electron neutrinos through the EC pro-
+garded to be resolved or, at least, diminished with the
+                                                                 cess e− + 37 Ar → 37 Cl + νe . The deficits of the observed
+new refinements of reactor flux models [13, 14], but the
+                                                                 rates with respect to the rates calculated from the well-
+Gallium Anomaly is reinforced by the new measurements
+                                                                 measured activity of the sources and different cross sec-
+of the BEST experiment [7, 8]. Therefore, it is desir-
+                                                                 tions for the detection process (see Tab. I) have been
+able to pay special attention to the Gallium Anomaly,
+                                                                 discussed in many papers (see the reviews in Refs. [1–6]).
+and look for possible viable solutions. In this work, we
+                                                                 The deficits obtained using the earliest Bahcall cross sec-
+first evaluate the statistical significance of the Gallium
+                                                                 tion [16] are illustrated in Fig. 1(a), where we plotted the
+Anomaly with different calculations of the neutrino de-
+                                                                 ratios of observed and predicted rates versus the average
+tection cross section. Then, we compare the neutrino
+                                                                 path lengths of the neutrinos (about 1.9 m for GALLEX
+oscillation explanation of the Gallium Anomaly with the
+                                                                 and 0.6 m for SAGE). The figure shows also the results of
+bounds from several classes of νe and ν̄e disappearance
+                                                                 the recent BEST source experiment [7, 8], where a larger
+experiments. In particular, we compare it with the above
+                                                                 deficit was observed, confirming the Gallium Anomaly.
+mentioned Reactor Antineutrino Anomaly and also with
+                                                                 The two BEST values in Fig. 1(a) show the ratio of ob-
+the results of an updated analysis of reactor spectral ra-
+                                                                 served and predicted rates in the two nested 71 Ga vol-
+tio data. Interestingly, the preference for short-baseline
+                                                                 umes of the experiment, which correspond to average
+neutrino oscillations is reinforced when considering the
+                                                                 neutrino path lengths of about 0.5 m and 1.1 m [7, 8].
+newest spectral ratio data, as will be detailed below. We
+                                                                 Although the ratios shown in Fig. 1(a) exhibit some vari-
+also consider data from tritium experiments and from
+                                                                 ation with distance, we cannot see a clear oscillatory
+experiments measuring solar neutrinos, before combin-
+                                                                 behavior. Taking into account the large error bars and
+ing all data to a global νe and ν̄e disappearance fit. The
+                                                                 a 2.8% correlated systematic uncertainty of the Bahcall
+consistency of a solution of the Gallium Anomaly with
+                                                                 cross section, the data can be fitted with a constant aver-
+3+1 active-sterile neutrino mixing will be compared and
+                                                                 age ratio R = 0.80 ± 0.04. We considered the systematic
+discussed at each step.
+                                                                 uncertainty of the 51 Cr cross section as correlated among
+   This work is organized as follows. In Section II, we
+                                                                 all the experiments and we added in quadrature the small
+discuss the analysis of Gallium data for several cross sec-
+                                                                 residual systematic uncertainty of the 37 Ar cross section
+tion models and we quantify the significance of the Gal-
+                                                                 to the uncertainty of the SAGE 37 Ar measurement.
+lium Anomaly. In Sections III and IV we compare the
+results of the Gallium experiments with those obtained              From the absence of a clear oscillatory pattern as a
+from the analysis of reactor rate and spectral ratio data,       function of distance in Fig. 1(a) and, in particular, the
+respectively. Section V contains the combined analysis           quasi-equality of the two BEST measurements at differ-
+of all reactor data. In Section VI we detail the analysis        ent distances, it follows that there is no smoking-gun
+procedure for the KATRIN data, and in Section VII we             evidence of oscillations in the Gallium data. After the
+discuss the comparison of the regions of parameter space         BEST measurements, the Gallium Anomaly is still an
+preferred by KATRIN and other β-decay experiments in             anomaly based on the absolute comparison of observed
+combination with reactor data with those preferred by            and predicted rates, as it was when only the GALLEX
+the Gallium data. Section VIII discusses the updated so-         and SAGE data were available. Therefore, a crucial role
+lar neutrino bounds. Finally, in Section IX we combine           is played by the theoretical detection cross section, for
+all the data discussed in previous sections to a global          which there are the different model calculations listed in
+3+1 νe and ν̄e disappearance fit and we compare the re-          Tab. I. The difference between these cross section mod-
+sults with those obtained from the Gallium data. We              els is the contribution to the cross section coming from
+close with a discussion and a summary of our results in          the transitions from the ground state of 71 Ga to excited
+Section X.                                                       states of 71 Ge. As shown in the first line of Tab. I, the
+                                                                 ground-state to ground-state cross section is known with
+                                                                 a very small uncertainty from the measured lifetime of
+              II.   The Gallium Anomaly                          71
+                                                                    Ge [16]. The table shows the relative contributions
+                                                                 δexc of the transitions to the excited states in the dif-
+  The Gallium Anomaly was originally [20–22] a                   ferent calculations of the cross section. These relative
+deficit of events observed in the GALLEX [23–25] and             contributions vary from about 2-3% in the Shell Model
+SAGE [20, 26–28] source experiments aimed at testing             calculation of Kostensalo et al. [19] to about 13-14% in
+the solar neutrino detection done in these experiments           the Shell Model calculation of Haxton [17].
+                                                                                                                                                        3
+
+                                                                                      51                         37
+                                                                                           Cr                         Ar
+                   Model                                      Method               σtot           δexc       σtot           δexc        R        GA
+                                                                  71
+                   Ground State [15]                         T1/2 ( Ge)      5.539 ± 0.019         −     6.625 ± 0.023       −     0.844 ± 0.031 5.0σ
+                                                        71
+                   Bahcall (1997) [16]                       Ga(p, n)71 Ge    5.81 ± 0.16        4.7%     7.00 ± 0.21       5.4% 0.802 ± 0.037 5.4σ
+                   Haxton (1998) [17]                    Shell Model          6.39 ± 0.65 13.3%           7.72 ± 0.81 14.2% 0.703 ± 0.078 3.8σ
+                                                   71
+                   Frekers et al. (2015) [18]           Ga(3 He, 3 H)71 Ge    5.92 ± 0.11        6.4%     7.15 ± 0.14       7.3% 0.788 ± 0.032 6.5σ
+                   Kostensalo et al. (2019) [19]         Shell Model          5.67 ± 0.06        2.3%     6.80 ± 0.08       2.6% 0.824 ± 0.031 5.6σ
+                                                   71         3    3   71
+                   Semenov (2020) [15]                  Ga( He, H) Ge 5.938 ± 0.116 6.7% 7.169 ± 0.147 7.6% 0.786 ± 0.033 6.6σ
+
+TABLE I. νe + 71 Ga → 71 Ge + e− cross sections in units of 10−45 cm2 and the corresponding relative contributions δexc of
+the transitions to the excited states. Also shown are the average ratio R of observed and predicted events and the statistical
+significance of the corresponding Gallium Anomaly.
+                   1.00
+
+
+
+
+                                                                                                102
+                                                                                                         2σ (95.45% CL)
+                                                                          GALLEX
+                                                                            Cr                               Ground State
+                   0.95
+
+
+
+
+                                                                                                             Bahcall
+                             SAGE                                                                            Haxton
+                             Cr−Ar                                                                           Frekers
+                                                                                                             Kostensalo
+                   0.90
+
+
+
+
+                                                                                                             Semenov
+ R = N exp N cal
+
+
+
+
+                                                                                     [eV2]
+                                                                                                10
+                   0.85
+
+
+
+
+                                                                                     ∆m 41
+                                                                                        2
+                   0.80
+                   0.75
+
+
+
+
+                           Cr−R1                             R = 0.80 ± 0.04
+                           BEST                                                                  1
+                   0.70
+
+
+
+
+                                          Cr−R2
+                                          BEST
+
+
+                          0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0                                                10−1                                       1
+                                                                                                                                   2
+                                                L [m]                                                                         sin 2ϑee
+                                          (a)                                                                               (b)
+
+FIG. 1. (a) Ratios of observed and predicted event rates in the Gallium source experiments obtained using the Bahcall cross
+sections [16]. (b) Contours enclosing the 2σ allowed regions in the (sin2 2ϑee , ∆m241 ) plane obtained from the Gallium data
+with the different cross sections in Tab. I. The best-fit points are indicated by crosses. Note that the Frekers (magenta) and
+Semenov (orange) contours are almost superimposed.
+
+
+  Table I shows also the values of the average ratio R of                                 sidered the possibility that the cross section is dominated
+observed and predicted events obtained with the different                                 by the transition to the ground state of 71 Ge, with negli-
+cross section models and the statistical significance of the                              gible contributions of the transitions to the excited states
+corresponding Gallium Anomaly. One can see that the                                       of 71 Ge. The value of the Ground State cross section is
+statistical significance of the Gallium Anomaly is large,                                 taken from the recent estimate in Ref. [15]. This is an
+about 5-6σ, for all the cross section models, except for                                  extreme possibility that is justified by the reliability of
+the Haxton cross section model, because of its large un-                                  the cross section to the ground state of 71 Ge discussed
+certainties, in spite of the larger Haxton cross sections.                                above and by the uncertainties of the cross sections to the
+Let us however note that the Shell Model cross section of                                 excited states of 71 Ge, which depend on the methods and
+Haxton [17], calculated in 1998, should be considered as                                  assumptions of the different models. The Ground State
+superseded by the more recent Shell Model cross section                                   model corresponds to the minimum possible value of the
+of Kostensalo et al. [19], which was calculated in 2019                                   cross section and gives the maximum possible value of
+using a state-of-the-art code and recently developed two-                                 the average ratio R of observed and predicted events. As
+nucleon interactions.                                                                     one can see from Tab. I, even in this extreme case the
+  In the first line of Tab. I (Ground State model) we con-                                value of R is 5.0σ below one. This is a strong signal of
+                                                                                                                                   4
+
+the seriousness of the Gallium Anomaly.                                 102
+                                                                               Reactor
+   The Gallium Anomaly can be explained by short-
+                                                                                    HM
+baseline neutrino oscillations in the 3+1 active-sterile                            EF
+neutrino mixing framework described briefly in Sec-                                 HKSS
+                                                                                    KI
+tion I. Fig. 1(b) shows the 2σ allowed regions in the
+(sin2 2ϑee , ∆m241 ) plane obtained from the analyses of the             10
+
+
+
+
+                                                                [eV2]
+Gallium data with the different cross sections in Tab. I.
+One can see that in all cases there is a clear indication of
+a relatively large value of sin2 2ϑee for ∆m241 & 0.6 eV2 .
+The minimum 2σ value of sin2 2ϑee is about 0.14 in the
+
+
+
+
+                                                                ∆m 41
+                                                                   2
+case of the Ground State model. This large value of                       1
+sin2 2ϑee is required to produce an oscillation amplitude
+that is sufficient to explain the deficit represented by the
+Ground State value of R in Tab. I at the 2σ level. The                                                             Gallium
+smaller values of R for the other cross section models                                                              Ground State
+                                                                                                                    Bahcall
+correspond to allowed regions that cover larger values of
+                                                                        10−1   2σ                                   Kostensalo
+sin2 2ϑee . The Kostensalo Shell Model cross section re-                                                            Semenov
+quires values of sin2 2ϑee that are only slightly larger than
+those of the Ground State cross section, sin2 2ϑee & 0.17,                      10−2                    10−1                       1
+because of the small contribution of the transitions to                                             2
+the excited states of 71 Ge in this cross section model.                                        sin 2ϑee
+The older Shell Model cross section of Haxton, which
+has much larger contributions of the transitions to the         FIG. 2.      Contours delimiting the 2σ allowed regions in
+excited states of 71 Ge, gives a broad allowed region that      the (sin2 2ϑee , ∆m241 ) plane obtained from the Gallium data
+spans values of sin2 2ϑee from about 0.18 to about 0.95,        with different cross sections compared with those obtained in
+                                                                Ref. [14] from the analysis of short-baseline reactor rate data.
+because of the large cross section uncertainties shown in
+                                                                The best-fit points are indicated by crosses.
+Tab. I. The Bahcall cross section implies sin2 2ϑee & 0.17,
+and the almost-equal Frekers and Semenov cross sections
+give sin2 2ϑee & 0.23. Our results on the significance of
+                                                                respect to the predictions. Recent theoretical and ex-
+the Gallium anomaly are in reasonable agreement with
+                                                                perimental developments led to new reactor flux mod-
+the results obtained in Ref. [29].
+                                                                els with enhanced (HKSS model of Hayen, Kostensalo,
+   In the following, when we will compare the Gallium
+                                                                Severijns, and Suhonen [33]) or diminished (EF model
+Anomaly with the results of other experiments, we will
+                                                                of Estienne, Fallot et al [34] and KI model of Kopeikin
+consider only the following four cross section models:
+                                                                et al. [35]) Reactor Antineutrino Anomaly. In particular,
+                                                                the EF and KI flux models give average ratios of observed
+Ground State: This is a significant extreme case as dis-
+                                                                and predicted events that are only about 1σ smaller than
+    cussed above.
+                                                                unity, hinting at the demise of the Reactor Antineutrino
+Bahcall: It is the first and most used cross section            Anomaly [13, 14]. Here we use the results of the analy-
+    model [16].                                                 sis in Ref. [14], where it was shown that all the reactor
+                                                                flux models imply upper bounds for the 3+1 active-sterile
+Kostensalo: It is the most recent Shell Model calcula-          neutrino mixing parameter sin2 2ϑee that are smaller than
+    tion [19], which supersedes the much older Haxton           about 0.25 at 2σ. This bound is in tension with the large
+    calculation [17], as discussed above.                       values of sin2 2ϑee which are required to explain the Gal-
+                                                                lium Anomaly, as discussed in Section II.
+Semenov: It is a recent [15] reevaluation of the cross             Figure 2 shows a comparison of the 2σ allowed regions
+    sections which uses the 71 Ga(3 He, 3 H)71 Ge data of       in the (sin2 2ϑee , ∆m241 ) plane obtained from the analy-
+    Frekers et al. [18] and supersedes their evaluation         ses of reactor rates and Gallium data. One can see that
+    of the cross section.                                       there is only a small overlap of the reactor and Gallium
+                                                                regions for some models. The largest overlaps occur for
+                                                                the Ground State Gallium cross section model, whose al-
+          III.   The reactor rates constraints                  lowed region extends to the smallest values of sin2 2ϑee al-
+                                                                lowed by the Gallium Anomaly, and for the HKSS reactor
+   The phenomenology of reactor neutrinos focused on            flux model, which gives the largest Reactor Antineutrino
+the Reactor Antineutrino Anomaly in 2011 [30], after            Anomaly.
+the reevaluations of the predicted reactor antineutrino            Table II shows the χ2 difference ∆χ2PG of the param-
+fluxes by Mueller et al. [31] and Huber [32] (HM model),        eter goodness of fit test [36] between the reactor rates
+which led to a deficit of about 2.5σ of observed event          and the Gallium data corresponding to the models in
+rates in short-baseline reactor neutrino experiments with       Fig. 2. Table II shows also the corresponding values of
+                                                                                                                             5
+
+                                               HM          HKSS               EF              KI
+                                       ∆χ2PG GoFPG ∆χ2PG GoFPG ∆χ2PG GoFPG ∆χ2PG GoFPG
+                        Ground State     7.2    2.8%    5.4    6.8%     9.1    1.1%    11.9    0.26%
+                           Bahcall      10.9    0.42%   8.9    1.2%    12.9    0.16%   16.3   0.029%
+                          Kostensalo     9.6    0.83%   7.5    2.4%    11.5    0.31%   15.3   0.049%
+                           Semenov      15.1 0.052% 12.6       0.18%   17.0    0.02%   22.5 0.0013%
+
+TABLE II. χ2 difference ∆χ2PG of the parameter goodness of fit test [36] between the reactor rate data and the Gallium data
+corresponding to four different reactor flux predictions (HM, HKSS, EF, and KI) discussed in the text and four of the different
+Gallium detection cross sections in Tab. I. The values of the corresponding parameter goodness of fit GoFPG are calculated
+with two degrees of freedom corresponding to the two oscillation parameters sin2 2ϑee and ∆m241 which are common in the
+reactor rates and Gallium data analyses.
+
+
+the parameter goodness of fit GoFPG , which quantifies                 IV.     Short-baseline reactor spectral ratios
+the tension between the fits of reactor rates and Gallium
+data in the different models. Considering the extreme
+                                                                     Short-baseline oscillations of reactor antineutrinos can
+case of Ground State Gallium cross section model, the
+                                                                  be probed in a model-independent way by comparing
+largest tension is obtained with the KI reactor flux model
+                                                                  the rates or spectra measured at different distances from
+(GoFPG = 0.26%). Indeed, one can see from Fig. 2 that
+                                                                  the reactor antineutrino source. This is the approach
+the corresponding 2σ allowed regions have only a very
+                                                                  adopted by the recent DANSS [39, 40], PROSPECT [41,
+marginal overlap for ∆m241 ≃ 1 eV2 .
+                                                                  42], and STEREO [43, 44] experiments. Important re-
+   The more realistic Bahcall, Kostensalo, and Semenov            sults have been obtained also by the NEOS collabora-
+cross section models give larger tensions between the re-         tion [45] and by a joint analysis of the RENO and NEOS
+actor rates and Gallium data. If we consider as severe            collaborations [46]. In 2017 [45] the NEOS collaboration
+a tension with a GoFPG smaller than 1%, for the Bah-              published the results of the comparison of NEOS data at
+call and Kostensalo cross section models there is a severe        about 24 m from the reactor source with the prediction
+tension between Gallium data and reactor rates for all re-        obtained from the neutrino flux measured in the Daya
+actor flux models, except the HKSS model, while for the           Bay experiment [47] at a distance of about 550 m from
+Semenov cross section model there is a severe tension for         the reactor source, where the short-baseline oscillations
+all of the reactor flux models. One can also notice that          are averaged. Recently, the RENO and NEOS collabo-
+the KI reactor flux model gives the maximal tension for           rations published a joint paper [46] with the results of
+all Gallium cross section models and it is always severe.         the comparison of NEOS data with the prediction ob-
+The EF reactor flux model gives a severe tension for all          tained from the neutrino flux measured in the RENO ex-
+the Gallium cross section models, except for the Ground           periment at a distance of about 419 m from the reactor
+State model, where it is a marginal 1.1%.                         source, which is in the same reactor complex of NEOS.
+                                                                  This comparison allowed the RENO and NEOS collab-
+   Since the EF and KI reactor flux models are those that         orations to reduce the systematic uncertainties with re-
+may have solved the Reactor Antineutrino Anomaly [13,             spect to the NEOS/Daya Bay analysis.
+14, 29] and are currently believed to represent reliable             In the following we consider both the NEOS/Daya Bay
+replacements of the standard HM model, we conclude                and NEOS/RENO data, because it is obviously unknown
+that the tension between Gallium data and reactor rates           which one of the Daya Bay and RENO neutrino spectra
+is a serious issue in the framework of 3+1 active-sterile         is more accurate. For NEOS/Daya Bay we use the χ2
+neutrino oscillations.                                            table kindly provided by the NEOS collaboration, as al-
+   Let us also emphasize that extending the 3+1 model             ready done in Refs. [48–51]. For NEOS/RENO we per-
+with the introduction of more sterile neutrinos does not          formed a fit using the information in the data release of
+help, because any disappearance of neutrinos in Gallium           Ref. [46]. We verified that our fit reproduces with good
+experiments must correspond to an antineutrino disap-             approximation the results published in Ref. [46]. For the
+pearance of the same size in reactor experiments. A pos-          DANSS experiment we use the χ2 table kindly provided
+sible loophole is a violation of the CPT symmetry [37],           by the DANSS collaboration, which corresponds to the
+which implies the equality of the disappearance probabil-         latest results presented at the recent ICHEP 2022 confer-
+ities of neutrinos and antineutrinos (see, e.g., Ref. [38]).      ence [40]. For the PROSPECT experiment we performed
+Although this loophole may resolve the tension between            a fit using the information in the data release of Ref. [42].
+the Gallium neutrino data and reactor antineutrino rates,         For the STEREO experiment we use the χ2 table in the
+it cannot explain the tension between the Gallium neu-            data release of Ref. [44].
+trino data and the solar neutrino bound discussed in Sec-            In this analysis we do not consider the controversial
+tion VIII.                                                        results of the Neutrino-4 experiment: the Neutrino-4 col-
+                                                                                                                          6
+
+laboration claimed a 2.9σ evidence of short-baseline neu-             STEREO, and Bugey-3 data.
+trino oscillations with large mixing (sin2 2ϑee = 0.36 ±
+0.12) at ∆m241 = 7.3 ± 1.17 [52]. However, these results        RSRF(N/R): combined reactor spectral ratio fit of the
+were criticized in Refs. [53–56]. In particular, the energy        NEOS/RENO, DANSS, PROSPECT, STEREO,
+resolution of the detector was not taken into account in           and Bugey-3 data.
+the analysis of the Neutrino-4 collaboration, as it is clear
+from a sentence in Ref. [52], where they confuse energy            As shown in Fig. 4, these combined fits of the data
+binning with taking into account the energy resolution of       of reactor spectral ratio experiments favor short-baseline
+the detector. A combined analysis of spectral ratio data        neutrino oscillations at values of ∆m241 which are com-
+including Neutrino-4 (but not the latest DANSS data)            patible with the neutrino oscillation interpretation of the
+has been performed in Ref. [29].                                Gallium data discussed in Section II, but the required
+   Figure 3 shows the allowed regions in the                    values of the mixing angle are smaller. Therefore, there
+(sin2 2ϑee , ∆m241 ) plane obtained from the combined           is a tension between the results of reactor spectral ra-
+analysis of the NEOS/Daya Bay or NEOS/RENO spec-                tio experiments and those of the Gallium experiments.
+tral ratio data with those of the other experiments. For        This tension is quantified by the values of the parame-
+completeness, besides the data of the recent DANSS [40],        ter goodness of fit in Tab. III. For all the four Gallium
+PROSPECT [42], and STEREO [44] experiments men-                 detection cross section models, the parameter goodness
+tioned above, we considered also the 40/50 m spectral           of fit is well below 1% for RSRF(N/DB), whereas it is
+ratio data of the old Bugey-3 experiment [57], as already       slightly above 1% for RSRF(N/R). The larger compat-
+done in Refs. [48–51]. Figure 3 shows also the contours         ibility of RSRF(N/R) with the Gallium data may seem
+of the 2σ allowed regions of each experiments. One can          contradictory with the smaller statistical significance of
+see that at 2σ PROSPECT, STEREO, and Bugey-3                    short-baseline neutrino oscillations of RSRF(N/R) (2.6σ)
+produce only exclusion curves, whereas NEOS/Daya                with respect to RSRF(N/DB) (3.1σ). However, one can
+Bay, NEOS/RENO, and DANSS yield closed contours.                see from Fig. 4 that the 3σ allowed region of RSRF(N/R)
+   The result of the combined fit is different when we          extends to large values of sin2 2ϑee for large values of
+consider NEOS/Daya Bay or NEOS/RENO. The com-                   ∆m241 , leading to a relative compatibility with the Gal-
+bined fit with NEOS/Daya Bay (Fig. 3(a)) results in             lium allowed regions. On the other hand, the 3σ allowed
+a 3.1σ indication in favor of short-baseline oscillations       regions of RSRF(N/DB) are closed and lie at values of
+with best-fit parameters values sin2 2ϑee = 0.022 and           sin2 2ϑee that are incompatible with the Gallium allowed
+∆m241 = 1.29 eV2 . One can see that the surrounding             regions.
+region is the locus of a remarkable overlap of relatively          Note that since the data sets considered in this paper
+large 2σ allowed regions of NEOS/Daya Bay and DANSS,            are not the same as those of Ref. [29], we obtain quanti-
+which are not excluded by the 2σ exclusion curves of            tatively different results. As noted above, the combined
+PROSPECT, STEREO, and Bugey-3. In the combined                  analysis of reactor spectral ratios in Ref. [29] includes
+fit with NEOS/RENO (Fig. 3(b)), the best-fit is approxi-        the Neutrino-4 data, which shift the best fit value into
+mately the same, sin2 2ϑee = 0.017 and ∆m241 = 1.32 eV2 ,       the region allowed by the analysis of the Gallium data
+but the indication in favor of short-baseline oscillations      (see Tab. 1 of Ref. [29]). As can be seen in the lower
+is only of 2.6σ. Therefore, in Fig. 3(b) the combined           right panel of Fig. 2 of Ref. [29], the 2σ island around
+3σ allowed region is not bounded on the left, allowing a        the best fit value lies at relatively large mixing and has a
+vanishing sin2 2ϑee which corresponds to the absence of         sizable overlap with the region preferred by the Gallium
+short-baseline oscillations.                                    analysis, shown in the left panel of Fig. 4 of Ref. [29].
+   Note that a more reliable estimate of the statistical        Therefore, the authors of Ref. [29] obtain a large param-
+significance of the indications in favor of neutrino oscilla-   eter goodness of fit p-value for the combined analysis of
+tions would require Monte Carlo simulations, because of         the reactor spectral ratio data and Gallium data (see
+the violation of Wilks’ theorem [29, 51, 58, 59]. However,      Tab. 5 of Ref. [29]). In our combined reactor spectral ra-
+these simulations are very difficult, because they require      tio analysis, using the newest DANSS data and omitting
+detailed knowledge of all the experimental features and         the Neutrino-4 data leads to regions which are quite small
+huge computing times. Therefore, in this work we discuss        at the 2σ level (even at the 3σ level for RSRF(N/DB))
+only the results obtained assuming the standard χ2 dis-         and far away from the Gallium allowed regions. There-
+tribution, as done in the great majority of publications.       fore, we find a significant tension between the fits of the
+   In the following we discuss the compatibility of the re-     reactor spectral ratio data and the Gallium data.
+sults of the fits of reactor spectral ratio data with the
+neutrino oscillation interpretation of the Gallium data
+and we perform combined fits with other experimental            V.   Combined short-baseline reactor spectral ratios
+results. For convenience, we introduce the following no-                              and rates
+tation:
+RSRF(N/DB): combined reactor spectral ratio fit                   It is interesting to combine the results of the analy-
+   of the NEOS/Daya Bay, DANSS, PROSPECT,                       ses of the reactor spectral ratio data with the results of
+                                                                                                                                                   7
+
+          10                                                                                  10
+                      Combined                                                                         Combined
+                           1σ                                                                               1σ
+                           2σ                                                                               2σ
+                           3σ                                                                               3σ
+ [eV2]
+
+
+
+
+                                                                                     [eV2]
+           1                                                                                   1
+ ∆m 41
+
+
+
+
+                                                                                     ∆m 41
+    2
+
+
+
+
+                                                                                        2
+                                 2σ                                                                               2σ
+                           NEOS/Daya Bay (2017)                                                             NEOS/RENO (2021)
+                           DANSS (2022)                                                                     DANSS (2022)
+                           PROSPECT (2020)                                                                  PROSPECT (2020)
+                           STEREO (2020)                                                                    STEREO (2020)
+                           Bugey−3 (1995)                                                                   Bugey−3 (1995)
+
+         10−1                                                                                10−1
+                     −4                −3                −2             −1
+                10                10                10             10            1                  10−4               10−3          10−2   10−1   1
+                                                  sin22ϑee                                                                       sin22ϑee
+                                             (a)                                                                               (b)
+
+FIG. 3. Allowed regions in the (sin2 2ϑee , ∆m241 ) plane obtained from the combined analysis of the (a) NEOS/Daya Bay [45]
+or (b) NEOS/RENO [46] spectral ratio data with those of the DANSS [40], PROSPECT [42], STEREO [44], and Bugey-3 [57]
+experiments. Also shown are the contours of the 2σ allowed regions of each experiments. Closed contours surround the allowed
+region and open contours exclude the region on the right.
+
+                                                                             RSRF(N/DB) RSRF(N/R)
+                                                                             ∆χ2PG GoFPG ∆χ2PG GoFPG
+                                                              Ground State 12.95 0.15%          8.91       1.2%
+                                                                Bahcall      12.86 0.16%        8.74       1.3%
+                                                               Kostensalo    12.91 0.16%        8.89       1.2%
+                                                                Semenov      12.88 0.16%        8.70       1.3%
+
+TABLE III. χ2 difference ∆χ2PG of the parameter goodness of fit test [36] applied to the comparison of the neutrino oscillation
+fits of the reactor spectral ratio data and the Gallium data with the four Gallium detection cross sections in Tab. I. The values
+of the corresponding parameter goodness of fit GoFPG are calculated with two degrees of freedom corresponding to the two
+common oscillation parameters sin2 2ϑee and ∆m241 . The column titles RSRF(N/DB) and RSRF(N/R) indicate, respectively,
+the combined fits of NEOS/Daya Bay and NEOS/RENO data with those of the other reactor spectral ratio experiments
+discussed in the text (DANSS, PROSPECT, STEREO, and Bugey-3).
+
+
+the analyses of the reactor rate data discussed in Sec-                                island at ∆m241 ≃ 12 eV2 and sin2 2ϑee = 0.13 − 0.17,
+tion III and to compare the combination with the results                               indicating a larger compatibility with the Gallium data.
+of the analyses of the Gallium data discussed in Sec-                                  However, in this case the best-fit point lies in the second
+tion II. Fig. 5 shows the comparison of the corresponding                              2σ-allowed island at sin2 2ϑee = 0.04. Figure 5(c) shows
+2σ and 3σ allowed regions.                                                             the 3σ-allowed regions obtained with the combined anal-
+  Comparing Fig. 5(a) with Fig. 4, one can see that                                    ysis of RSRF(N/DB) and reactor rates. One can see that
+the addition of the reactor rate data leads to a bet-                                  the HM and HKSS reactor flux models give large 3σ-
+ter localization of the reactor 2σ allowed regions in the                              allowed regions at large values of ∆m241 , which include
+RSRF(N/DB) analysis, for all the reactor flux models. In                               relatively large values of sin2 2ϑee and partially overlap
+this case there are only two 2σ-allowed islands at ∆m241 ≃                             with the Gallium 3σ-allowed regions. Also the EF re-
+1.3 eV2 and ∆m241 ≃ 0.4 eV2 for the HM, EF, and KI re-                                 actor flux model has some small 3σ-allowed regions at
+actor flux models. The first 2σ-allowed island surrounds                               large values of ∆m241 , but there is only little overlap with
+the best-fit point at sin2 2ϑee = 0.022. With the HKSS                                 the Gallium 3σ-allowed regions and only when consider-
+reactor flux models there is also a third small 2σ-allowed                             ing the extreme Ground State cross section model. The
+                                                                                                                           8
+
+                  Reactor              Gallium                     fore, as shown in Tab. IV, the tension between reactor
+                   RSRF(N/DB)          Ground State                and Gallium data is smaller for the combined analyses
+        10         RSRF(N/R)           Bahcall
+                                       Kostensalo
+                                                                   of RSRF(N/R) and reactor rates than for the combined
+              Dotted: 1σ               Semenov                     analyses of RSRF(N/DB) and reactor rates. One can see
+              Dashed: 2σ                                           from Tab. IV that nevertheless the tension is very strong
+              Solid: 3σ                                            and unacceptable in the case of the reactor RSRF(N/R)
+[eV2]
+
+
+
+
+                                                                   + KI fit. The tension is smaller, but still with GoFPG
+                                                                   well below 0.1% in the case of the reactor RSRF(N/R) +
+                                                                   EF fit. The GoFPG is also below 1% for the RSRF(N/R)
+∆m 41
+
+
+
+
+                                                                   + HM fit. Only when considering the RSRF(N/R) +
+   2
+
+
+
+
+                                                                   HKSS fit and the Ground State Gallium cross section
+        1
+                                                                   model we find GoFPG > 1%.
+
+
+                                                                                  VI.    The KATRIN limit
+
+                                                                      The Karlsruhe Tritium Neutrino (KATRIN) experi-
+                                                                   ment provides the current strongest laboratory limit on
+              10−3              10−2                  10−1     1   the absolute mass of light neutrinos. It aims to measure
+                                        2                          the end point region of the spectrum of molecular tri-
+                                 sin 2ϑee
+                                                                   tium β-decay (T2 → 3 HeT+ + e− + ν̄e ) with high enough
+FIG. 4.     Contours delimiting the 1σ, 2σ, and 3σ allowed         precision to discern the shape distortion caused by tiny
+regions in the (sin2 2ϑee , ∆m241 ) plane obtained from the Gal-   neutrino masses. The first (second) data taking cam-
+lium data with different cross sections compared with those        paign set an upper bound of 1.1 eV (0.9 eV) at 90% C.L.
+obtained from the two analyses of reactor spectral ratio data      on the effective electron neutrino mass mβ , which, in the
+discussed in the text. The best-fit points are indicated by        standard three-neutrino mixing framework is defined as
+crosses.
+                                                                                                3
+                                                                                                X
+                                                                                        m2β =         |Uei |2 m2i .      (2)
+                                                                                                i=1
+KI reactor flux model does not yield any 3σ-allowed re-
+gion at large values of ∆m241 and is in strongest tension          An upper bound of 0.8 eV at 90% C.L. is obtained when
+with the Gallium 3σ-allowed region. The tension in the             data from both campaigns are combined [60]. Data from
+different cases is quantified by the values of the param-          KATRIN has already been used to search for light sterile
+eter goodness of fit in Tab. IV, where one can see that            neutrinos, see Refs. [50, 61, 62]. In this work we use the
+the fits with all the Gallium cross section models are in          data from the second campaign to constrain ∆m241 and
+very strong and unacceptable tension with the reactor              sin2 2ϑee . While we follow the general analysis approach
+RSRF(N/DB) + KI fit. The tension is smaller, but still             of the KATRIN Collaboration, as described in Ref. [62],
+very strong and unacceptable in the case of the reactor            there are some differences which we discuss below.
+RSRF(N/DB) + EF fit. The GoFPG is below 0.1% for                      The differential spectrum Rβ (E) of β-decay can be cal-
+the RSRF(N/DB) + HM fit and also below 1% for the                  culated using Fermi’s Golden Rule:
+RSRF(N/DB) + HKSS fit.
+                                                                                   G2F cos2 θC
+   Let us now discuss the results of the combined analysis           Rβ (E, m2β ) =            |Mnuc |2 F (E, Z)
+                                                                                       2π 3 p
+of RSRF(N/R) and the reactor rates, that are shown in
+Figs. 5(b) and 5(d). Comparing with Figs. 5(a) and 5(c),                        × (E + me ) (E + me )2 − m2e
+one can see that the constraints on the mixing parameters                              X        q
+                                                                                    ×      Pj j 2j − m2β Θ(j − m2β ). (3)
+are looser than in the combined analysis of RSRF(N/DB)
+                                                                                          j
+and reactor rates. In particular, from Fig. 5(b) one can
+see that the combined analyses of RSRF(N/R) and re-                Here GF is the Fermi constant, θC is the Cabibbo angle,
+actor rates with the HM and HKSS reactor flux models               Mnuc is the nuclear matrix element, me is the electron
+yields large 2σ-allowed regions at large values of ∆m241           mass, E is the kinetic energy of the emitted electron,
+and relatively large values of sin2 2ϑee , with partial over-      F (E, Z) is the relativistic Fermi function, j = E0 − E −
+laps with the Gallium 2σ-allowed regions obtained with             Vj are the neutrino energies, where E0 is the end point
+the Ground State, Bahcall, and Kostensalo Gallium cross            energy of gaseous molecular tritium (T2 ) and Vj are the
+section models. Figure 5(d) shows that the combined                energies of the various excited final states which occur
+analyses of RSRF(N/R) and reactor rates with all the               with probabilities Pj [63]. Measurements of the atomic
+reactor flux models yield only exclusion curves at 3σ,             mass difference of tritium and 3 He [64] have found the Q-
+but there are significant overlaps of the allowed regions          value to be 18575.72±0.07 eV. This Q-value corresponds
+with some of the Gallium 3σ-allowed regions. There-                to the end point E0 = 18574.21 ± 0.6 eV [60].
+                                                                                                                                                                     9
+
+
+                               Reactor                                                                             Reactor
+                              RSRF(N/DB)+HM                                                                       RSRF(N/R)+HM
+          10                  RSRF(N/DB)+EF                                                   10                  RSRF(N/R)+EF
+                              RSRF(N/DB)+HKSS                                                                     RSRF(N/R)+HKSS
+                              RSRF(N/DB)+KI                                                                       RSRF(N/R)+KI
+ [eV2]
+
+
+
+
+                                                                                     [eV2]
+ ∆m 41
+
+
+
+
+                                                                                     ∆m 41
+              1                                                                                   1
+    2
+
+
+
+
+                                                                                        2
+                                                                  Gallium                                                                             Gallium
+                                                                  Ground State                                                                        Ground State
+                                                                  Bahcall                                                                             Bahcall
+                                                                  Kostensalo                                                                          Kostensalo
+                         2σ                                       Semenov
+                                                                                                             2σ                                       Semenov
+          −1                                                                                  −1
+         10                                                                                  10
+                               10−2                   10−1                       1                                 10−2                   10−1                       1
+                                                  2                                                                                   2
+                                                sin 2ϑee                                                                            sin 2ϑee
+                                           (a)                                                                                 (b)
+
+                                                                                                                   Reactor
+                         3σ                                                                                       RSRF(N/R)+HM            3σ
+          10                                                                                  10                  RSRF(N/R)+EF
+                                                                                                                  RSRF(N/R)+HKSS
+                                                                                                                  RSRF(N/R)+KI
+ [eV2]
+
+
+
+
+                                                                                     [eV2]
+
+
+
+
+              1                                                                                   1
+ ∆m 41
+
+
+
+
+                                                                                     ∆m 41
+    2
+
+
+
+
+                                                                                        2
+
+
+
+
+                               Reactor                            Gallium                                                                             Gallium
+                              RSRF(N/DB)+HM                       Ground State                                                                        Ground State
+          −1                  RSRF(N/DB)+EF                       Bahcall                     −1                                                      Bahcall
+         10                   RSRF(N/DB)+HKSS                     Kostensalo                 10                                                       Kostensalo
+                              RSRF(N/DB)+KI                       Semenov                                                                             Semenov
+
+
+
+                  10−3                   10−2              10−1                  1                    10−3                   10−2              10−1                  1
+                                                  2                                                                                   2
+                                                sin 2ϑee                                                                            sin 2ϑee
+                                           (c)                                                                                 (d)
+
+FIG. 5. Comparison of the contours delimiting the [(a) and (b)] 2σ and [(c) and (d)] 3σ allowed regions in the (sin2 2ϑee , ∆m241 )
+plane obtained from the combined analysis of the data of the reactor rate experiments with different flux models and the spectral
+ratio experiments with those obtained from the Gallium data with different cross sections. The figures differ by the use of
+[(a) and (c)] NEOS/Daya Bay [45] or [(b) and (d)] NEOS/RENO [46] spectral ratio data. The best-fit points are indicated by
+crosses.
+
+
+  The KATRIN detector measures the integral spectrum                                  which, at a retarding potential qUi , is given by
+
+                                                                                                                               Z E0
+                                                                                         Rmodel (qUi ) = Asig NT                      Rβ (E)f (E − qUi )dE
+                                                                                                                                qUi
+                                                                                                                                                + Rbg (qUi ) . (4)
+                                                                                                                                  10
+
+                                                            RSRF(N/DB) + Reactor Rates
+                                             HM               HKSS                  EF                KI
+                                     ∆χ2PG    GoFPG      ∆χ2PG    GoFPG    ∆χ2PG    GoFPG     ∆χ2PG    GoFPG
+                    Ground State 14.30        0.078%     11.36    0.34%     19.57   0.0056%   21.81    0.0018%
+                        Bahcall      18.33     0.01%     15.16 0.051% 23.60 0.00075% 26.02            0.00022%
+                      Kostensalo     17.04     0.02%     13.80    0.1%      22.30   0.0014%   27.51   0.00011%
+                       Semenov       23.22 0.00091% 19.39 0.0061% 28.28 0.000072% 36.85 0.00000099%
+                                                             RSRF(N/R) + Reactor Rates
+                                             HM               HKSS                  EF                KI
+                                     ∆χ2PG    GoFPG      ∆χ2PG GoFPG ∆χ2PG          GoFPG     ∆χ2PG    GoFPG
+                    Ground State 10.12         0.63%      6.94    3.1%      15.59   0.041%    21.04    0.0027%
+                        Bahcall      14.14    0.085%     10.72    0.47%     19.61   0.0055%   25.63   0.00027%
+                      Kostensalo     12.84     0.16%      9.36    0.93%     18.30   0.011%    24.89   0.00039%
+                       Semenov       19.04 0.0073% 15.00 0.055% 24.29 0.00053% 32.99 0.0000068%
+
+TABLE IV. χ2 difference ∆χ2PG of the parameter goodness of fit test [36] applied to the comparison of the neutrino oscillation
+fits of the reactor rates and spectral ratio data with the Gallium data using the four Gallium detection cross sections in Tab. I.
+The values of the corresponding parameter goodness of fit GoFPG are calculated with two degrees of freedom corresponding
+to the two common oscillation parameters sin2 2ϑee and ∆m241 . The column titles RSRF(N/DB) and RSRF(N/R) indicate,
+respectively, the combined fits of NEOS/Daya Bay and NEOS/RENO data with those of the other reactor spectral ratio
+experiments discussed in the text (DANSS, PROSPECT, STEREO, and Bugey-3). The column titles HM, HKSS, EF, and KI
+refer to the four reactor neutrino fluxes discussed in Section III.
+
+
+The differential spectrum Rβ (E) is convoluted with the                  fixed ∆m241 and |Ue4 |2 pairs, minimizing the function
+experimental response function f (E −qUi ). The response
+function describes the probability for an electron emitted                         ~ T C −1 [∆R]
+                                                                            χ2 = [∆R]         ~
+with kinetic energy E to reach the detector when the re-                     qU 2      Penn      2                  2
+                                                                              m           m      −3        E0 − 18574.21
+tarding potential is qUi . We use the green dotted line                   +           +                +                    ,
+in Fig. 5 of Ref. [60] for the response function. In the                      4.74             3                0.6
+above equation, NT and Asig are the effective number of                                                                     (7)
+tritium atoms in the source and the signal amplitude re-                           ~ =R ~ obs (qU
+                                                                                                ~ )−R~ pred (qU
+                                                                                                              ~ , ~η ), mqU and mPenn
+                                                                         where ∆R
+spectively. Since we are interested in performing a shape
+                                                                         are the slopes of the background components and C −1 is
+only analysis, NT and Asig are combined into a normal-
+                                                                         the (inverse) covariance matrix provided by the collabo-
+ization factor N which is left free in the analysis. The
+                                                                         ration. To verify our analysis method we first reproduced
+background rate Rbg (qUi ) has three components
+                                                                         the standard three-neutrino results and obtained an up-
+               base    qU           Penning                              per bound of mβ < 0.83 eV at 90% C.L. and a best fit
+ Rbg (qUi ) = Rbg   + Rbg (qUi ) + Rbg      (t(qUi )), (5)               m2β = 0.1 eV2 . These results validate our analysis and so
+                                                                         we proceed with the sterile analysis.
+where t(qUi ) is the time spent at the retarding poten-                     There are six nuisance parameters, the overall nor-
+tial qUi . The dominant contribution comes from the                      malization N , the end point E0 , the three background
+                       base
+flat constant rate Rbg      . A hypothetical qU -dependent               parameters and the effective neutrino mass-squared m2β ,
+                qU
+background Rbg (qUi ), with slope constrained to (0.0 ±                  which are marginalized over. We performed two anal-
+4.74) mcps/keV, and a scan-time dependent background                     yses. In one we fixed mβ = 0 (so that ∆m241 = m24 )
+  Penning
+Rbg       (t(qUi )), constrained to (3 ± 3) µcps/s, give                 and in the other mβ was left free and marginalized
+smaller contributions. Pull terms are added to the                       over. The contours resulting from these analyzes are
+χ2 function to account for the constraints on the sub-                   shown in Fig. 6. The red exclusion curves correspond
+dominant background rates.                                               to the analysis where we fix mβ = 0. The results
+   For the case of a sterile neutrino with mass m4 and                   of our analysis are in excellent agreement with the re-
+active-sterile mixing |Ue4 |, the expected rate is                       sults obtained by the KATRIN collaboration [62] in this
+                                                                         case. We find that KATRIN data alone disfavor the pre-
+                                                                         ferred region from Gallium experiments for mass split-
+  Rpred (E, m2β , m24 , |Ue4 |2 ) = (1 − |Ue4 |2 ) Rβ (E, m2β )          tings ∆m241 & 100 eV2 . The global minimum of the
+                                     + |Ue4 |2 Rβ (E, m24 ) . (6)        χ2 function is χ2 = 27.59 at ∆m241 = 50.6 eV2 and
+                                                                         sin2 2ϑee = 0.05 (|Ue4 |2 = 0.013). The significance over
+To infer the parameters of interest, we perform fits with                the null hypothesis is ∆χ2 = 0.38. The blue contours in
+                                                                                                                                 11
+
+                                                         RSRF(N/DB) + Reactor Rates + Tritium
+                                              HM               HKSS                 EF                 KI
+                                      ∆χ2PG      GoFPG     ∆χ2PG   GoFPG    ∆χ2PG    GoFPG     ∆χ2PG   GoFPG
+                    Ground State 15.69           0.039%    13.17   0.14%    20.82    0.003%    21.82   0.0018%
+                        Bahcall       19.86 0.0049% 17.19 0.019% 25.06 0.00036% 26.03                  0.00022%
+                       Kostensalo     18.63      0.009%    15.87 0.036% 23.83 0.00067% 27.52           0.00011%
+                       Semenov        25.22 0.00033% 21.94 0.0017% 30.42 0.000025% 37.42 0.00000075%
+                                                          RSRF(N/R) + Reactor Rates + Tritium
+                                              HM               HKSS                 EF                 KI
+                                      ∆χ2PG      GoFPG     ∆χ2PG GoFPG ∆χ2PG         GoFPG     ∆χ2PG   GoFPG
+                    Ground State 11.56           0.31%      8.72   1.3%     16.96    0.021%    21.49   0.0022%
+                        Bahcall       15.76      0.038%    12.74   0.17%    21.19    0.0025%   26.08   0.00022%
+                       Kostensalo     14.49      0.071%    11.40   0.33%    19.97    0.0046%   25.37   0.00031%
+                       Semenov        21.04 0.0027% 17.45 0.016% 26.45 0.00018% 33.56 0.0000052%
+
+TABLE V. χ2 difference ∆χ2PG of the parameter goodness of fit test [36] applied to the comparison of the neutrino oscillation
+fits of the reactor rates, spectral ratio data, and tritium data with the Gallium data using the four Gallium detection cross
+sections in Tab. I. The values of the corresponding parameter goodness of fit GoFPG are calculated with two degrees of freedom
+corresponding to the two common oscillation parameters sin2 2ϑee and ∆m241 . The column titles RSRF(N/DB) and RSRF(N/R)
+indicate, respectively, the combined fits of NEOS/Daya Bay and NEOS/RENO data with those of the other reactor spectral
+ratio experiments discussed in the text (DANSS, PROSPECT, STEREO, and Bugey-3). The column titles HM, HKSS, EF,
+and KI refer to the four reactor neutrino fluxes discussed in Section III.
+
+
+                                                                          The analysis with free mβ gives minimum χ2 = 25.27
+          3
+        10                                                                at ∆m241 = 87.8 eV2 (m24 = 88.7 eV2 , m2β = 0.9 eV2 ) and
+                                                                          sin2 (ϑee ) = 0.11 (|Ue4 |2 = 0.029). The preference over
+                                                                          the no sterile hypothesis is larger (∆χ2 = 2.7) but still
+                                                                          not very significant. This explains the closed 1σ con-
+                                                                          tour in Fig. 6. Such a small preference has already been
+[eV2]
+
+
+
+
+        102                                                               observed in former analyses [50] of KATRIN data. We
+                                                                          consider these results more accurate than the collabora-
+                                                                          tion’s result, since we do not allow for any parameters to
+∆m 41
+   2
+
+
+
+
+                                                                          go into an unphysical region of the parameter space in
+              Dotted: 1σ
+              Dashed: 2σ                                                  the marginalization process. The bounds become rapidly
+        10    Solid: 3σ                                                   weak beyond ∆m241 ∼ 103 eV2 because the decay spec-
+                                                                          trum is only available up to 40 eV away from the end
+                   KATRIN                                                 point.
+                    Fixed m β = 0
+                    Free m β
+         1                                                                 VII.     Combination of short-baseline reactor data
+                                                                                            and Tritium constraints
+                10−2                      10−1                     1
+                                      2
+                                    sin 2ϑee                                 Before the on-going KATRIN experiment, there have
+                                                                          been many experiments on the search of the effects of
+FIG. 6. Contours delimiting the 1σ, 2σ, 3σ allowed regions                neutrino masses in β decays, following the basic idea
+in the (sin2 2ϑee , ∆m241 ) plane obtained from the analysis of           presented by Enrico Fermi in 1933 in the same arti-
+KATRIN run 2 data. Red curves correspond to the analysis                  cle in which he formulated the theory of weak interac-
+with fixed mβ = 0, while the blue curves are obtained after
+                                                                          tions [65]. The strongest limits have been obtained in
+marginalizing over a free mβ . The best-fit points are indicated
+by crosses.
+                                                                          Tritium β-decay experiments (see, e.g., the recent review
+                                                                          in Ref. [66]). Some experiments have measured the elec-
+                                                                          tron spectrum in a large energy interval below the end
+                                                                          point. Since none of these experiments found a deviation
+Fig. 6 are obtained when marginalizing over the free mβ .                 of the electron spectrum from that predicted in the case
+In contrast to the collaboration’s approach, we require                   of massless neutrino, they produced bounds on the mix-
+that the neutrino mass is real (m2β ≥ 0) and m4 > mβ .                    ing of a heavy neutrino with the electron neutrino which
+                                                                                                                                                                    12
+
+
+         102                                                                                 102
+                         Tritium        2σ                                                                   Tritium       2σ
+                            Mainz                                                                               Mainz
+                            Troitsk                                                                             Troitsk
+                            KATRIN                                                                              KATRIN
+
+                                                                                                             Reactor + Tritium
+          10                                                                                  10                RSRF(N/R)+HM
+                                                                                                                RSRF(N/R)+EF
+ [eV2]
+
+
+
+
+                                                                                     [eV2]
+                                                                                                                RSRF(N/R)+HKSS
+                                                                                                                RSRF(N/R)+KI
+ ∆m 41
+
+
+
+
+                                                                                     ∆m 41
+    2
+
+
+
+
+                                                                                        2
+              1                                                                                   1
+
+
+
+                          Reactor + Tritium                       Gallium                                                                            Gallium
+
+          −1                RSRF(N/DB)+HM                         Ground State                −1                                                     Ground State
+         10                 RSRF(N/DB)+EF                         Bahcall                    10                                                      Bahcall
+                            RSRF(N/DB)+HKSS                       Kostensalo                                                                         Kostensalo
+                            RSRF(N/DB)+KI                         Semenov                                                                            Semenov
+
+
+
+                  10−3                10−2                 10−1                  1                    10−3                10−2                10−1                  1
+                                                    2                                                                                  2
+                                                sin 2ϑee                                                                           sin 2ϑee
+                                              (a)                                                                                (b)
+
+         102                                                                                 102
+                         Tritium        3σ                                                                   Tritium       3σ
+                            Mainz                                                                               Mainz
+                            Troitsk                                                                             Troitsk
+                            KATRIN                                                                              KATRIN
+
+                                                                                                             Reactor + Tritium
+          10                                                                                  10                RSRF(N/R)+HM
+                                                                                                                RSRF(N/R)+EF
+ [eV2]
+
+
+
+
+                                                                                     [eV2]
+
+
+
+
+                                                                                                                RSRF(N/R)+HKSS
+                                                                                                                RSRF(N/R)+KI
+ ∆m 41
+
+
+
+
+                                                                                     ∆m 41
+    2
+
+
+
+
+                                                                                        2
+
+
+
+
+              1                                                                                   1
+
+
+
+                          Reactor + Tritium                       Gallium                                                                            Gallium
+
+          −1                RSRF(N/DB)+HM                         Ground State                −1                                                     Ground State
+         10                 RSRF(N/DB)+EF                         Bahcall                    10                                                      Bahcall
+                            RSRF(N/DB)+HKSS                       Kostensalo                                                                         Kostensalo
+                            RSRF(N/DB)+KI                         Semenov                                                                            Semenov
+
+
+
+                  10−3                10−2                 10−1                  1                    10−3                10−2                10−1                  1
+                                                    2                                                                                  2
+                                                sin 2ϑee                                                                           sin 2ϑee
+                                              (c)                                                                                (d)
+
+FIG. 7. Comparison of the contours delimiting the [(a) and (b)] 2σ and [(c) and (d)] 3σ allowed regions in the (sin2 2ϑee , ∆m241 )
+plane obtained from the combined analysis of the data of the reactor rate experiments with different flux models, the spectral
+ratio experiments, and the Tritium experiments with those obtained from the Gallium data with different cross sections. The
+figures differ by the use of [(a) and (c)] NEOS/Daya Bay [45] or [(b) and (d)] NEOS/RENO [46] spectral ratio data. The
+best-fit points are indicated by crosses.
+
+
+depend on the mass of the heavy neutrino. In the frame-                                  In this section we present the results of the com-
+work of 3+1 active-sterile neutrino mixing, the results of                            bined analysis of short-baseline reactor data and the Tri-
+these experiments imply bounds on |Ue4 |2 and the corre-                              tium data. We assume that the three standard neutrino
+sponding sin2 2ϑee = 4|Ue4 |2 (1 − |Ue4 |2 ) which depend on                          masses m1 , m2 , and m3 are much lighter than m4 , so
+the value of m4 .                                                                     that ∆m241 ≃ m24 .
+                                                                                                                                       13
+
+        102                                                      the framework of short-baseline active-sterile oscillations.
+                 Tritium (3σ)
+                                                                 This can be seen by comparing the values of the param-
+                      Mainz
+                      Troitsk                                    eter goodness of fit in Tabs. IV and V.
+                      KATRIN                                        For completeness, in Fig. 8 we show the regions in
+                                                                 the (sin2 2ϑee , ∆m241 ) plane which are allowed at 3σ by
+                                                                 the combined analysis of the Gallium data with different
+         10
+[eV2]
+
+
+
+
+                                                                 cross sections and the data of the Mainz, Troitsk, and
+                                                                 KATRIN Tritium experiments. Comparing the combined
+                                                                 allowed regions with those in Fig. 7, one can see that the
+                                                                 Tritium bounds reduce the Gallium allowed regions at
+∆m 41
+   2
+
+
+
+
+                                                                 large values of ∆m241 , limiting the 3σ allowed regions at
+          1                                                      ∆m241 . 30 eV2 . This figure is useful for discussions of
+                                                                 the Gallium Anomaly in which the bounds from other
+               Gallium + Tritium (3σ)                            experiments (i.e. those of the reactor experiments dis-
+                      Ground State                               cussed above and the solar neutrino bound discussed in
+                      Bahcall
+                      Kostensalo
+                                                                 Section VIII) are not considered.
+                      Semenov
+
+        10−1
+                                                                             VIII.      The solar neutrino bound
+                                10−1                         1
+                                        sin22ϑee                    Solar neutrinos provide a robust method to constrain
+                                                                 νe disappearance at short baselines [73–78]. The so-
+FIG. 8. Contours delimiting the 3σ allowed regions in the        lar neutrino data include the measurements from three
+(sin2 2ϑee , ∆m241 ) plane obtained from the combined analysis   distinct channels, i.e., charged current (CC) interac-
+of the Gallium data with different cross sections and the Tri-
+                                                                 tions [25, 28, 79, 80], neutral current (NC) interac-
+tium data. The figure shows also the 3σ exclusion curves of
+the Mainz, Troitsk, and KATRIN Tritium experiments.              tions [80], and electron-scattering (ES) interactions [80–
+                                                                 86]. Each of the detection channels is sensitive to a differ-
+                                                                 ent combination of the electron neutrino νe , and the other
+   Besides the KATRIN bounds presented in Section VI,            active neutrinos νµ , ντ . In the framework of the 3+1 neu-
+we consider the bounds of the previous Tritium exper-            trino mixing scheme, both the electron neutrino survival
+iments Mainz [67] and Troitsk [68, 69]. For these ex-            probability Pee and the electron-to-sterile neutrino tran-
+periments, we use the results obtained in Ref. [70] and          sitional probability Pes can be constrained with these
+already used in several papers (e.g., Refs. [48, 50]). The       CC, NC and ES measurements. In this work, we employ
+reason for considering also the Troitsk bound is illus-          the simplified treatment of the solar neutrino analysis
+trated in Fig. 7, where one can see that the Troitsk bound       proposed in Ref. [77], where only the asymptotic values of
+is competitive with the KATRIN limit at large values of          Pee and Pes at the high and low energies are employed to
+∆m241 and cannot be neglected. For completeness we con-          constrain the relevant mixing parameters. This method
+sider also the less strong Mainz bound, which is shown           has been proven to consistently reproduce the full data
+in Fig. 7, because Mainz and Troitsk have been contem-           analysis treatment [77], since the eV-scale sterile neutri-
+porary and competitive experiments of the generation             nos do not modify the energy dependence of the MSW
+before KATRIN.                                                   resonance region in the oscillation probabilities [73].
+   In Fig. 7 we show the combined 2σ and 3σ allowed                 In the 3+1 mixing scheme, the solar neutrino oscilla-
+regions in the (sin2 2ϑee , ∆m241 ) plane obtained from the      tion probabilities Pee and Pes can be written as
+data of the reactor rate experiments with different flux                   4
+                                                                           X                                 4
+                                                                                                             X
+                                                                                   m 2
+models, the spectral ratio experiments, and the three Tri-         Pee =         |Uek | |Uek |2 ,   Pes =            m 2
+                                                                                                                   |Uek | |Usk |2 ,    (8)
+tium experiments KATRIN, Troitsk and Mainz. Com-                           k=1                               k=1
+paring Fig. 7(c) with Fig. 5(c), one can see that when the                m
+NEOS/Daya Bay data are used (RSRF(N/DB) fit) the                 where Uek  is the mixing element in matter at the produc-
+large-∆m241 3σ allowed regions in the cases of the HM and        tion point of solar neutrinos. By using the parametriza-
+HKSS reactor flux models are limited by the bounds of            tion of the mixing matrix U in Ref. [73], the low energy
+the Tritium experiments. When the NEOS/RENO data                 (LE) and high energy (HE) asymptotic values of Pee and
+are used (RSRF(N/R) fit), all the reactor flux models            Pes can be easily calculated as
+give 3σ exclusion curves. Comparing Figs. 7(b) and 7(d)                  LE
+                                                                        Pee = c412 c413 c414 + s412 s413 c414 + s413 c414 + s414 ,     (9)
+with Figs. 5(b) and 5(d), one can see that the Tritium
+                                                                        HE
+data allow us to improve the exclusion of large mixing                 Pee  = s212 c413 c414 + s413 c414 + s414 ,                     (10)
+for large values of ∆m241 .                                              LE
+                                                                       Pes  = c412 c413 + s412 c413 + s413 + 1 s214 c214 ,
+                                                                                                                  
+                                                                                                                                      (11)
+   The addition of the Tritium bounds increases the ten-                HE
+                                                                            = s212 c413 + s413 + 1 s214 c214 ,
+                                                                                                       
+sion between the reactor data and the Gallium data in                  Pes                                                            (12)
+                                                                                                                                14
+
+
+        0.4                                                            25
+                                                         1                        sin2 13 from reactor ( e e)
+                                                         2                        sin2 13 from T2K+NOvA ( e)
+                                                         3             20         free sin2 13
+        0.3
+
+                                                                       15
+ sin22 ee
+
+
+
+
+        0.2
+
+
+
+
+                                                                   2
+                                                                       10
+
+        0.1
+                                                                        5
+
+        0.00.0    0.02      0.04        0.06      0.08       0.1        00.0         0.1            0.2      0.3          0.4
+                               sin2 13                                                        sin22 ee
+                              (a)                                                                 (b)
+
+FIG. 9.     (a) Allowed region in the (sin2 ϑ13 , sin2 2ϑee ) plane from the global solar data with free sin2 ϑ12 . (b) The one-
+dimensional ∆χ2 profiles of sin2 2ϑee , where the red line corresponds to the analysis including the sin2 ϑ13 constraint from PDG
+2020 [71], the blue line is for the case of sin2 ϑ13 constrained by neutrino data from T2K and NOvA [72], and the green line
+corresponds to the case with unconstrained sin2 ϑ13 .
+
+                                                   Solar-only      S+ϑ13 (T&N)    S+ϑ13 (R)
+                                                  ∆χ2PG GoFPG ∆χ2PG GoFPG ∆χ2PG GoFPG
+                                    Ground State 7.31    2.6%      10.65 0.49% 10.32 0.57%
+                                      Bahcall     10.30 0.58% 14.14 0.085% 13.78           0.1%
+                                     Kostensalo   9.03   1.1%      12.79 0.17% 12.43       0.2%
+                                      Semenov     12.70 0.17% 17.24 0.018% 16.83 0.022%
+
+TABLE VI. χ2 difference ∆χ2PG of the parameter goodness of fit test [36] applied to the comparison of the solar neutrino
+bounds and the neutrino oscillation explanation of the Gallium data with the four Gallium detection cross sections in Tab. I.
+The values of the corresponding parameter goodness of fit GoFPG are calculated with two degrees of freedom corresponding to
+the two common oscillation parameters sin2 2ϑee and ∆m241 . The Solar-only, S+ϑ13 (T&N), and S+ϑ13 (R) column titles refer,
+respectively, to the free sin2 ϑ13 analysis, the analysis with sin2 ϑ13 constrained by neutrino data from T2K and NOvA, and
+the analysis with sin2 ϑ13 constrained by reactor data.
+
+
+where sij ≡ sin ϑij and cij ≡ cos ϑij (1 ≤ i, j ≤ 4) have                 sumed to not significantly deviate from the current
+been used, and ϑm                      m
+                  12 (LE) = ϑ12 and ϑ12 (HE) = π/2 are                    allowed region of the large mixing angle solution of
+employed. Before doing the numerical analysis, we make                    the MSW resonance, and thus does not alter the
+the following comments on the analysis method:                            asymptotic values of oscillation probabilities. This
+                                                                          assumption is seen to be valid by considering the
+A: ϑ24 = 0 and ϑ34 = 0 are used in the above calcu-
+                                                                          allowed range of ∆m221 from the solar-only analy-
+     lations, which have been proven to have no visible
+                                                                          sis [10–12, 94].
+     effects [75–78] on the solar neutrino data when con-
+     sidering the corresponding constraints of ϑ24 and                The χ2 function employed in this analysis is
+     ϑ34 from measurements of accelerator νµ disappear-                                          X            −1
+     ance [87, 88], atmospheric neutrinos [89, 90] and                χ2 s212 , s213 , sin2 2ϑee = (Oa − Pa )Vab  (Ob − Pb ) ,
+     long-baseline accelerator NC interactions [91, 92].                                           a,b
+                                                                                                                              (13)
+B: KamLAND data [93] is not included in the analy-                                                                        
+    sis. But the value of ∆m221 has been implicitly as-             where Pa =       LE
+                                                                                    Pee    HE
+                                                                                        , Pee    LE
+                                                                                              , Peµ    LE
+                                                                                                    + Peτ    HE
+                                                                                                          , Peµ + Peτ  HE
+                                                                                                                              , Oa
+                                                                                                                                 15
+
+are the measurements of the asymptotic values of os-                                           Global RSRF(N/DB) Fit
+cillation probabilities from the full solar neutrino anal-                                     HM HKSS EF           KI
+ysis, and Vab is the covariance matrix taking into ac-                           χ2min         393.5 395.2 391.2 391.4
+count possible correlations [77]. The transition probabil-
+                                                                                 GoF           43%    40%    46%    46%
+ity Peµ + Peτ is given by 1 − Pee − Pes . In the following,                     2
+the notation of sin2 2ϑee ≡ 4s214 (1 − s214 ) will be used for              (sin 2ϑee )b.f.    0.022 0.022 0.022 0.022
+consistency with previous sections.                                        (∆m241 )b.f. /eV2 1.29     1.29   1.29   1.29
+   Figure 9(a) illustrates the allowed regions in the                          ∆χ24ν -3ν       13.8   14.1   12.6   12.9
+(sin2 ϑ13 , sin2 2ϑee ) plane obtained from the analysis of                    nσ4ν -3ν         3.3   3.3    3.1    3.2
+solar neutrino data where sin2 ϑ12 has been marginalized                                       Global RSRF(N/R) Fit
+over. The green solid, dashed and dotted lines show the
+                                                                                               HM HKSS EF           KI
+allowed regions at 1σ, 2σ and 3σ confidence levels, re-
+spectively. One can see that sin2 2ϑee and sin2 ϑ13 are                          χ2min         386.5 388.3 384.0 384.2
+essentially degenerate as already revealed in Eqs. (9-12).                       GoF           53%    50%    56%    56%
+The allowed region is located in the lower-left corner of                   (sin2 2ϑee )b.f.   0.017 0.019 0.017 0.017
+Fig. 9(a), which indicates that sin2 2ϑee & 0.2 is practi-                 (∆m241 )b.f. /eV2 1.32     1.32   1.32   1.32
+cally ruled out at the 2σ confidence level, independently
+                                                                               ∆χ24ν -3ν       10.1   10.3   9.1    9.3
+of the value of sin2 ϑ13 . The bound on sin2 2ϑee becomes
+more stringent as sin2 ϑ13 increases.                                          nσ4ν -3ν         2.7   2.8    2.6    2.6
+   In Fig. 9(b) the one-dimensional χ2 profiles of sin2 2ϑee     TABLE VII. Results of the global νe and ν̄e disappear-
+obtained from solar neutrino data are illustrated. The           ance fits obtained using NEOS/Daya Bay (RSRF(N/DB)) or
+green line is obtained using only solar neutrino data, in        NEOS/RENO (RSRF(N/R)) data. The column titles HM,
+which no external information on ϑ13 has been imposed.           HKSS, EF, and KI refer to the four reactor neutrino fluxes dis-
+As can be seen, this bound is already in tension with the        cussed in Section III. The table show the minimum value χ2min
+preferred region of the Gallium experiments discussed in         of χ2 , the goodness of fit (GoF) with 390 degrees of freedom
+Section II. In the first column of Tab. VI we report the         (the number of data points minus two, corresponding to the
+parameter goodness of fit taking into account only solar         two fitted mixing parameters), the best-fit values of sin2 2ϑee
+neutrino data. As can be seen the GoFPG is below 1% for          and ∆m241 , the χ2 difference ∆χ24ν -3ν between the 3+1 4ν fit
+the Bahcall and Semenov cross section models. Using the          and the 3ν fit, and the statistical significance (nσ4ν -3ν ) of the
+                                                                 corresponding indication in favor of 3+1 4ν mixing.
+Kostensalo cross section model, we find GoFPG ∼ 1%.
+Only the extreme case of the Ground State cross section
+gives GoFPG > 1%.
+                                                                 tor constraint on ϑ13 is used, which can also be seen by
+   The red line in Fig. 9(b) represents the result when
+                                                                 comparing the central and right columns of Tab. VI. As a
+taking into account the reactor antineutrino constraint
+                                                                 consequence, the CPT-violating solution [37] is ruled out
+on sin ϑ13 from PDG 2020 [71], i.e. sin2 ϑ13 = (2.20 ±
+                                                                 by current solar data in combination with the constraint
+0.07) × 10−2 . We find that values sin2 2ϑee > 0.1 are
+                                                                 on ϑ13 from the neutrino data of T2K and NOvA [72].
+excluded at 2σ and therefore the tension with Gallium
+data is further increased. As shown in the right column
+of Tab. VI, the tension becomes unacceptable for all of
+the cross section models.                                            IX.    Global νe and ν̄e disappearance analysis
+   The tension between reactor antineutrino data and
+Gallium neutrino data was already discussed in Ref. [37].           In this Section we present the results of the global anal-
+Therein the authors proposed a CPT-violating solution,           ysis of the νe and ν̄e disappearance data in the framework
+where the parameters characterizing neutrino oscillations        of 3+1 active-sterile neutrino mixing. The data that we
+could differ from their antineutrino counterparts [95]. We       consider are the reactor rates discussed in Section III,
+show that using the newest solar neutrino data, this so-         the reactor spectral ratio data discussed in Section IV,
+lution is not viable anymore. The blue line in Fig. 9(b)         the Tritium limits discussed in Sections VI and VII, and
+shows the result of our solar neutrino analysis by con-          the solar neutrino bound discussed in Section VIII. We
+sidering the bound on ϑ13 obtained from the analysis of          will discuss the global tension between the data that we
+the neutrino mode data collected in T2K and NOvA [72],           consider and the Gallium data if the Gallium Anomaly
+i.e., sin2 ϑ13 = (2.60+1.03
+                        −0.48 ) × 10
+                                     −2
+                                        . One can see that the   is considered as due to 3+1 active-sterile neutrino mix-
+bound is even slightly stronger than the former one. This        ing. Since the tension is very strong, we cannot include
+is due to the fact that T2K+NOvA in neutrino mode                the Gallium data in a global fit in the framework of 3+1
+measure a best fit value which is slightly larger than the       active-sterile neutrino mixing, and we presume that the
+reactor antineutrino measurement and, as can be seen             Gallium Anomaly is due to other reasons.
+from Fig. 9(a), larger values of sin2 ϑ13 require smaller           The results of the global fits that we obtained with
+values of sin2 2ϑee . As a result the tension with Gallium       different data sets (NEOS/Daya Bay or NEOS/RENO)
+data is basically the same as in the case where the reac-        and different reactor flux models are listed in Tab. VII.
+                                                                                                                                                                     16
+
+
+         102                                                                                102
+                           Tritium + Solar         2σ                                                         Tritium + Solar         2σ
+                                                                                                        Reactor + Tritium + Solar
+                                                                                                              RSRF(N/R)+HM
+                                                                                                              RSRF(N/R)+EF
+          10                                                                                 10               RSRF(N/R)+HKSS
+                                                                                                              RSRF(N/R)+KI
+ [eV2]
+
+
+
+
+                                                                                    [eV2]
+ ∆m 41
+
+
+
+
+                                                                                    ∆m 41
+    2
+
+
+
+
+                                                                                       2
+              1                                                                                  1
+
+
+
+                     Reactor + Tritium + Solar                   Gallium                                                                              Gallium
+
+          −1               RSRF(N/DB)+HM                         Ground State                −1                                                       Ground State
+         10                RSRF(N/DB)+EF                         Bahcall                    10                                                        Bahcall
+                           RSRF(N/DB)+HKSS                       Kostensalo                                                                           Kostensalo
+                           RSRF(N/DB)+KI                         Semenov                                                                              Semenov
+
+
+
+                  10−3                 10−2               10−1                  1                    10−3                 10−2                 10−1                  1
+                                                    2                                                                                  2
+                                               sin 2ϑee                                                                             sin 2ϑee
+                                             (a)                                                                                (b)
+
+         102                                                                                102
+                           Tritium + Solar         3σ                                                         Tritium + Solar         3σ
+                                                                                                        Reactor + Tritium + Solar
+                                                                                                              RSRF(N/R)+HM
+                                                                                                              RSRF(N/R)+EF
+          10                                                                                 10               RSRF(N/R)+HKSS
+                                                                                                              RSRF(N/R)+KI
+ [eV2]
+
+
+
+
+                                                                                    [eV2]
+ ∆m 41
+
+
+
+
+                                                                                    ∆m 41
+    2
+
+
+
+
+                                                                                       2
+
+
+
+
+              1                                                                                  1
+
+
+
+                     Reactor + Tritium + Solar                   Gallium                                                                              Gallium
+
+          −1               RSRF(N/DB)+HM                         Ground State                −1                                                       Ground State
+         10                RSRF(N/DB)+EF                         Bahcall                    10                                                        Bahcall
+                           RSRF(N/DB)+HKSS                       Kostensalo                                                                           Kostensalo
+                           RSRF(N/DB)+KI                         Semenov                                                                              Semenov
+
+
+
+                  10−3                 10−2               10−1                  1                    10−3                 10−2                 10−1                  1
+                                                    2                                                                                  2
+                                               sin 2ϑee                                                                             sin 2ϑee
+                                             (c)                                                                                (d)
+
+FIG. 10. Comparison of the contours delimiting the [(a) and (b)] 2σ and [(c) and (d)] 3σ allowed regions in the (sin2 2ϑee , ∆m241 )
+plane obtained from the combined analysis of the data of the reactor rate experiments with different flux models, the spectral
+ratio experiments,reactor the Tritium experiments, and the solar bound with those obtained from the Gallium data with
+different cross sections. Also shown is the 3σ bound obtained from the combination of the Tritium and solar bounds. The
+figures differ by the use of [(a) and (c)] NEOS/Daya Bay [45] or [(b) and (d)] NEOS/RENO [46] spectral ratio data. The
+best-fit points are indicated by crosses.
+
+
+One can see that the goodness of fit is high. There is a                             are used. The values of the best-fit points are in any case
+3.1–3.3σ indication in favor of 3+1 active-sterile neutrino                          around sin2 2ϑee ≃ 0.02 and ∆m241 ≃ 1.3 eV2 .
+mixing in the global fits with the NEOS/Daya Bay data.
+The indication decreases to 2.6–2.8σ if the NEOS/RENO                                  Figure 10 shows the 2σ and 3σ allowed regions in
+                                                                                     the (sin2 2ϑee , ∆m241 ) plane obtained from the global fits
+                                                                                                                        17
+
+with different neutrino flux models and considering ei-         source experiments. This means that ν4 is not almost en-
+ther the NEOS/Daya Bay [45] spectral ratio (Figs. 10(a)         tirely sterile, as it would be required for considering 3+1
+and 10(c)) or the NEOS/RENO [46] spectral ratio                 active-sterile mixing as a perturbation of standard three-
+(Figs. 10(b) and 10(d)). Comparing Fig. 10 with Fig. 7,         neutrino mixing. This is required for the explanation of
+one can see that the addition of the solar bound has the        the neutrino oscillations observed in solar, atmospheric
+effect of reducing the allowed regions for sin2 2ϑee & 0.1.     and long-baseline neutrino oscillation experiments. In
+In the case of the fit with the NEOS/Daya Bay spectral          Section VIII, we have shown that the neutrino oscillation
+ratio, comparing Figs. 10(a) and 10(c) with Figs. 7(a)          explanation of the Gallium Anomaly is in strong tension
+and 7(c), one can see that the solar bound has the effect       with the solar bound on active-sterile neutrino mixing.
+of moving the best-fit points obtained with the HM and             We also considered the results of reactor neutrino ex-
+HKSS reactor neutrino fluxes from the allowed island at         periments and we presented the results of 3+1 fits of the
+∆m241 ≃ 0.4 eV2 to the allowed island at ∆m241 ≃ 1.3 eV2 ,      measured rates and the ratios of spectra measured at dif-
+leading to an approximate coincidence of the best-fit           ferent distances. In Section III, we have shown that the
+points obtained with all the four reactor neutrino fluxes.      measured reactor rates imply upper bounds for active-
+From Figs. 10(b) and 10(d) one can see that in the analy-       sterile mixing that are in tension with the results of the
+sis with the NEOS/RENO spectral ratio there is a similar        Gallium experiments for all the cross section models of
+approximate coincidence of the best-fit points obtained         neutrino detection in the Gallium source experiments and
+with all the four reactor neutrino fluxes.                      all the reactor neutrino flux models.
+   The restrictions of the solar neutrino constraint in-           In Section IV, we presented the results of a global
+crease the tension with the results of the Gallium exper-       fit of the most recent available data of the reactor neu-
+iments in the framework of 3+1 active-sterile neutrino          trino experiments which measured the ratio of the neu-
+mixing, as one can see comparing the parameter good-            trino spectra at different distances in order to probe neu-
+ness of fit in Tab. VIII with those in Tab. V, which were       trino oscillations independently from the absolute values
+obtained without the solar bound. From Tab. VIII, one           of the neutrino fluxes. Our analysis updates the one of
+can see that the global fit gives values of parameter good-     Ref. [29] by taking into account the newest DANSS data
+ness of fit that are well below 1% for all the fits with dif-   which have important effects on the combined analysis
+ferent data combinations. The values of the parameter           of spectral ratio data, as discussed in Section IV. We
+goodness of fit in Tab. VIII quantify the tension between       have shown that the results depend significantly on the
+the 3σ Gallium allowed regions and the 3σ global allowed        choice to consider either the NEOS/Daya Bay [45] or
+regions, which have only marginal overlaps in Fig. 10.          NEOS/RENO [46] spectral ratio data. In the case of
+   In Fig. 10 one can notice the curious approximate co-        the NEOS/Daya Bay, there is a 3.1σ indication in fa-
+incidence of the values of ∆m241 for the global best-fit        vor of short-baseline oscillations with best-fit parameter
+points ((∆m241 )b.f. = 1.3 eV2 ) and the Gallium best-fit       values sin2 2ϑee = 0.022 and ∆m241 = 1.29 eV2 , which is
+points ((∆m241 )b.f. = 1.3 eV2 for Bahcall, Kostensalo and      driven by the overlap of the surrounding allowed regions
+Semenov, and (∆m241 )b.f. = 1.2 eV2 for Ground State).          of NEOS/Daya Bay and DANSS [40]. On the other hand,
+This coincidence has no meaning in the framework of             the overlap of the NEOS/RENO and DANSS allowed re-
+3+1 active-sterile neutrino mixing, because the best-fit        gions is smaller and leads to an indication in favor of
+values of the unique mixing parameter sin2 2ϑee are too         short-baseline oscillations of only 2.6σ with best-fit pa-
+different and the 3σ allowed regions are well separated         rameters values sin2 2ϑee = 0.017 and ∆m241 = 1.32 eV2 .
+for ∆m241 ≈ 1.3 eV2 .                                           Although the NEOS/RENO comparison may be favored
+                                                                by the smaller systematic uncertainties which were esti-
+                                                                mated by the NEOS and RENO collaborations using the
+            X.    Summary and conclusions                       fact that the two experiments detect neutrino fluxes from
+                                                                similar reactors in the same complex, we think that we
+   In this paper we discussed in a systematic way the re-       cannot dismiss the NEOS/Daya Bay data, which should
+sults of νe and ν̄e disappearance experiments which are         be considered as a different measurement based on the
+relevant for the hypothetical existence of short-baseline       Daya Bay neutrino flux measurement. Since we cannot
+neutrino oscillations due to 3+1 active-sterile neutrino        combine the two measurements because the NEOS data
+mixing. We started in Section II with the analysis of           would be double counted, we remain with the ambiguity
+the results of the Gallium source experiments, motivated        of the two different results which hopefully will be solved
+by the recent results of the BEST experiment [7, 8],            by future measurements.
+which revived the Gallium Anomaly confirming the re-               We have also shown that the results of the reactor
+sults of the GALLEX [23–25] and SAGE [20, 26–28] ex-            spectral ratio experiments are in tension with the neu-
+periments. We have shown that the explanation of the            trino oscillation explanation of the Gallium Anomaly and
+Gallium Anomaly in the framework of 3+1 active-sterile          the tension is stronger when the NEOS/Daya Bay data
+neutrino mixing requires rather large values of the mixing      are considered, with about 0.15% parameter goodness
+between νe and the new massive neutrino ν4 for all the          of fit for all the Gallium detection cross section models,
+cross section models of neutrino detection in the Gallium       whereas considering the NEOS/RENO data we obtain
+                                                                                                                                 18
+
+                                        Global Fit: RSRF(N/DB) + Reactor Rates + Tritium + Solar
+                                        HM                  HKSS                EF                     KI
+                               ∆χ2PG     GoFPG      ∆χ2PG    GoFPG      ∆χ2PG     GoFPG       ∆χ2PG     GoFPG
+                Ground State 21.54      0.0021%     19.51    0.0058%    21.92    0.0017%      21.90    0.0018%
+                   Bahcall      25.99   0.00023%    23.88 0.00065% 26.13         0.00021%     26.11    0.00021%
+                 Kostensalo     25.05   0.00036%    22.77    0.0011%    27.62    0.0001%      27.60    0.0001%
+                  Semenov       32.52 0.0000087% 29.93 0.000032% 37.69 0.00000065% 38.81 0.00000037%
+                                         Global Fit: RSRF(N/R) + Reactor Rates + Tritium + Solar
+                                        HM                  HKSS                EF                     KI
+                               ∆χ2PG     GoFPG      ∆χ2PG    GoFPG      ∆χ2PG     GoFPG       ∆χ2PG     GoFPG
+                Ground State 17.61       0.015%     15.53    0.042%     22.56    0.0013%      22.66    0.0012%
+                   Bahcall      22.07   0.0016%     19.90    0.0048%    26.82    0.00015%     26.80    0.00015%
+                 Kostensalo     21.11   0.0026%     18.77    0.0084%    26.27    0.0002%      28.45   0.000066%
+                  Semenov       28.57 0.000062% 25.93 0.00023% 34.00 0.0000041% 38.24 0.0000005%
+
+TABLE VIII. χ2 difference ∆χ2PG of the parameter goodness of fit test [36] applied to the comparison of the neutrino oscillation
+fits of the reactor rates, spectral ratio data, tritium data, and solar bound with the Gallium data using the four Gallium detection
+cross sections in Tab. I. The values of the corresponding parameter goodness of fit GoFPG are calculated with two degrees
+of freedom corresponding to the two common oscillation parameters sin2 2ϑee and ∆m241 . The column titles RSRF(N/DB)
+and RSRF(N/R) indicate, respectively, the combined fits of NEOS/Daya Bay and NEOS/RENO data with those of the other
+reactor spectral ratio experiments discussed in the text (DANSS, PROSPECT, STEREO, and Bugey-3). The column titles
+HM, HKSS, EF, and KI refer to the four reactor neutrino fluxes discussed in Section III.
+
+
+about 1.3%. The tensions increase significantly when we                We presented in Section VIII the updated solar neu-
+consider the combined analysis of reactor spectral ratios           trino bound on the mixing of ν4 with νe , which is in
+and rates discussed in Section V. In particular, consid-            good agreement with the bound from Ref. [77]. Finally,
+ering the recent reactor flux models of Estienne, Fallot            we discuss in Section IX the results of the global fit of
+et al [34] (EF) and of Kopeikin et al. [35] (KI), the pa-           the νe and ν̄e disappearance data. We have quantified
+rameter goodness of fit is about 0.04% or much lower,               the tension of the solar neutrino bound with the neu-
+depending on the consideration of the NEOS/Daya Bay                 trino oscillation explanation of the Gallium Anomaly and
+or NEOS/RENO data and a specific Gallium detection                  we have shown that the tension is dramatic in the case
+cross section model. The minimal tension is obtained                of the global fit, with values of the parameter goodness
+with the extreme Ground State Gallium detection cross               of fit well below 1% for all the cases with different data
+section model, with the parameter goodness of fit be-               choices (NEOS/Daya Bay or NEOS/RENO), different re-
+tween about 0.002% and 0.04%, and the maximal tension               actor flux models, and different Gallium detection cross
+is obtained with the Semenov model [15] with parameter              sections.
+goodness of fits between about 10−6 % and 5 × 10−4 %.                  In conclusion, we think that the results presented in
+   In Section VI, we presented the results of the analysis          this paper show the present status of our knowledge on
+of the recent KATRIN data [60, 62] on the measurement               short-baseline νe and ν̄e disappearance in the framework
+of neutrino masses through their effects on the β-decay             of 3+1 active-sterile neutrino mixing and the dramatic
+spectrum of Tritium. We derived limits on 3+1 active-               tension between the neutrino oscillation explanation of
+sterile neutrino mixing which we consider more reliable             the Gallium Anomaly and the results of the other ex-
+than those presented in Ref. [62] by the KATRIN collab-             periments. We conclude that it is very likely that the
+oration, because we did not consider unphysical negative            Gallium Anomaly is not due to neutrino oscillations and
+mass-squared values. We have shown that the KATRIN                  some other explanation must be found.
+data exclude large values of ∆m241 , between about a few
+eV2 and 103 eV2 , for large mixing. Moreover, in Sec-
+tion VII we presented the results of a combined analysis                                 Acknowledgments
+of the reactor data and the data of the Tritium exper-
+iments, considering not only the KATRIN experiment,                   We would like to thank: Mikhail Danilov and Nataliya
+but also the previous Mainz [67] and Troitsk [68, 69],              A. Skrobova for sending us the DANSS χ2 table; Kim
+which are relevant. We have shown that with this set of             Yeongduk, Soo-Bong Kim, Jonghee Yoo, Yoomin Oh,
+data, the tension with the neutrino oscillation explana-            and all the NEOS and RENO collaborations for provid-
+tion of the Gallium Anomaly is increased with respect to            ing helpful information on the NEOS+RENO data anal-
+that obtained with the reactor data alone.                          ysis; Thierry Lasserre and Lisa Schlüter for providing
+                                                                                                                            19
+
+useful information on the KATRIN data, and Sanshiro              research grant TAsP (Theoretical Astroparticle Physics)
+Enomoto, Leonard Köllenberger, and Alexey Lokhov for            funded by Istituto Nazionale di Fisica Nucleare (INFN).
+useful discussions on the KATRIN data analysis at the            The work of Y.F.Li and Z.Xin was supported by Na-
+NuMass 2022 workshop. C.G. and C.A.T. are supported              tional Natural Science Foundation of China under Grant
+by the research grant “The Dark Universe: A Syn-                 Nos. 12075255 and 11835013, by the Key Research Pro-
+ergic Multimessenger Approach” number 2017X7X85K                 gram of the Chinese Academy of Sciences under Grant
+under the program “PRIN 2017” funded by the Ital-                No. XDPB15. O.T. is supported by a grant funded by
+ian Ministero dell’Istruzione, Università e della Ricerca       Italian Ministero degli Affari Esteri e della Cooperazione
+(MIUR). C.A.T. also acknowledges support from Depart-            Internazionale (MAECI) and also by the Indian Prime
+ments of Excellence grant awarded by MIUR and the                Minister’s Research Fellow (PMRF) program.
+
+
+
+
+ [1] S. Gariazzo, C. Giunti, M. Laveder, Y. F. Li, and E. Za-         (2007), hep-ph/0610352.
+     vanin, J. Phys. G43, 033001 (2016), arXiv:1507.08204        [23] P. Anselmann et al. (GALLEX), Phys. Lett. B342, 440
+     [hep-ph].                                                        (1995).
+ [2] M. Gonzalez-Garcia, M. Maltoni, and T. Schwetz, Nucl.       [24] W. Hampel et al. (GALLEX), Phys. Lett. B420, 114
+     Phys. B908, 199 (2016), arXiv:1512.06856 [hep-ph].               (1998).
+ [3] C. Giunti and T. Lasserre, Ann. Rev. Nucl. Part. Sci. 69,   [25] F. Kaether, W. Hampel, G. Heusser, J. Kiko, and
+     163 (2019), arXiv:1901.08330 [hep-ph].                           T. Kirsten, Phys. Lett. B 685, 47 (2010), arXiv:1001.2731
+ [4] A. Diaz, C. Arguelles, G. Collin, J. Conrad, and M. Shae-        [hep-ex].
+     vitz, Phys.Rept. 884, 1 (2020), arXiv:1906.00045 [hep-      [26] J. N. Abdurashitov et al. (SAGE), Phys. Rev. Lett. 77,
+     ex].                                                             4708 (1996).
+ [5] S. Boser, C. Buck, C. Giunti, J. Lesgourgues,               [27] J. N. Abdurashitov et al. (SAGE), Phys. Rev. C59, 2246
+     L. Ludhova, S. Mertens, A. Schukraft,                and         (1999), hep-ph/9803418.
+     M. Wurm, Prog.Part.Nucl.Phys. 111, 103736 (2020),           [28] J. N. Abdurashitov et al. (SAGE), Phys. Rev. C 80,
+     arXiv:1906.01739 [hep-ex].                                       015807 (2009), arXiv:0901.2200 [nucl-ex].
+ [6] B. Dasgupta and J. Kopp, Phys.Rept. 928, 63 (2021),         [29] J. M. Berryman, P. Coloma, P. Huber, T. Schwetz, and
+     arXiv:2106.05913 [hep-ph].                                       A. Zhou, JHEP 02, 055 (2022), arXiv:2111.12530 [hep-
+ [7] V. Barinov et al. (BEST), Phys.Rev.Lett. 128, 232501             ph].
+     (2022), arXiv:2109.11482 [nucl-ex].                         [30] G. Mention et al., Phys. Rev. D83, 073006 (2011),
+ [8] V. V. Barinov et al.,             (2022), 10.1103/Phys-          arXiv:1101.2755 [hep-ex].
+     RevC.105.065502, arXiv:2201.07364 [nucl-ex].                [31] T. A. Mueller et al., Phys. Rev. C83, 054615 (2011),
+ [9] R. L. Workman (Particle Data Group), PTEP 2022,                  arXiv:1101.2663 [hep-ex].
+     083C01 (2022).                                              [32] P. Huber, Phys. Rev. C84, 024617 (2011),
+[10] P. F. de Salas, D. V. Forero, S. Gariazzo, P. Martinez-          arXiv:1106.0687 [hep-ph].
+     Mirave, O. Mena, C. A. Ternes, M. Tortola, and J. W. F.     [33] L. Hayen, J. Kostensalo, N. Severijns, and J. Suhonen,
+     Valle, JHEP 2021, 071 (2020), arXiv:2006.11237 [hep-             Phys.Rev. C100, 054323 (2019), arXiv:1908.08302 [nucl-
+     ph].                                                             th].
+[11] I. Esteban, M. C. Gonzalez-Garcia, M. Maltoni,              [34] M. Estienne, M. Fallot, et al., Phys. Rev. Lett. 123,
+     T. Schwetz, and A. Zhou, JHEP 09, 178 (2020),                    022502 (2019), arXiv:1904.09358 [nucl-ex].
+     arXiv:2007.14792 [hep-ph].                                  [35] V. Kopeikin, M. Skorokhvatov, and O. Titov, Phys. Rev.
+[12] F. Capozzi, E. Di Valentino, E. Lisi, A. Marrone, A. Mel-        D 104, L071301 (2021), arXiv:2103.01684 [nucl-ex].
+     chiorri, and A. Palazzo, Phys. Rev. D 104, 083031           [36] M. Maltoni and T. Schwetz, Phys. Rev. D68, 033020
+     (2021), arXiv:2107.00532 [hep-ph].                               (2003), hep-ph/0304176.
+[13] J. M. Berryman and P. Huber, JHEP 2101, 167 (2021),         [37] C. Giunti and M. Laveder, Phys. Rev. D82, 113009
+     arXiv:2005.01756 [hep-ph].                                       (2010), arXiv:1008.4750 [hep-ph].
+[14] C. Giunti, Y. Li, C. Ternes, and Z. Xin, Phys.Lett.B        [38] C.        Giunti        and       C.       W.       Kim,
+     829, 137054 (2022), arXiv:2110.06820 [hep-ph].                   Fundamentals of Neutrino Physics and Astrophysics
+[15] S. V. Semenov, Phys. Atom. Nucl. 83, 1549 (2020).                (Oxford University Press, Oxford, UK, 2007) pp. 1–728.
+[16] J. N. Bahcall, Phys. Rev. C56, 3391 (1997), hep-            [39] I. Alekseev et al. (DANSS), Phys.Lett. B787, 56 (2018),
+     ph/9710491.                                                      arXiv:1804.04046 [hep-ex].
+[17] W. C. Haxton, Phys. Lett. B431, 110 (1998), nucl-           [40] M. Danilov, (2022), talk presented at ICHEP 2022, 41th
+     th/9804011.                                                      International Conference on High Energy Physics, 6-13
+[18] D. Frekers et al., Phys. Rev. C91, 034608 (2015).                July 2022, Bologna, Italy.
+[19] J. Kostensalo, J. Suhonen, C. Giunti, and P. C. Sri-        [41] J. Ashenfelter et al. (PROSPECT), Phys.Rev.Lett. 121,
+     vastava, Phys.Lett. B795, 542 (2019), arXiv:1906.10980           251802 (2018), arXiv:1806.02784 [hep-ex].
+     [nucl-th].                                                  [42] M. Andriamirado et al. (PROSPECT), Phys.Rev. D103,
+[20] J. N. Abdurashitov et al. (SAGE), Phys. Rev. C73,                032001 (2021), arXiv:2006.11210 [hep-ex].
+     045805 (2006), nucl-ex/0512041.                             [43] H. Almazan et al. (STEREO), Phys.Rev.Lett. 121,
+[21] M. Laveder, Nucl. Phys. Proc. Suppl. 168, 344 (2007).            161801 (2018), arXiv:1806.02096 [hep-ex].
+[22] C. Giunti and M. Laveder, Mod. Phys. Lett. A22, 2499        [44] H. Almazan Molina et al. (STEREO), Phys.Rev. D102,
+                                                                                                                          20
+
+     052002 (2020), arXiv:1912.06582 [hep-ex].                        083C01 (2020).
+[45] Y. Ko et al. (NEOS), Phys.Rev.Lett. 118, 121802 (2017),     [72] G. Barenboim, C. A. Ternes, and M. A. Tórtola, JHEP
+     arXiv:1610.05134 [hep-ex].                                       07, 155 (2020), arXiv:2005.05975 [hep-ph].
+[46] Z. Atif et al. (RENO, NEOS), Phys. Rev. D 105, L111101      [73] C. Giunti and Y. F. Li, Phys. Rev. D 80, 113007 (2009),
+     (2022), arXiv:2011.00896 [hep-ex].                               arXiv:0910.5856 [hep-ph].
+[47] F. An et al. (Daya Bay), Chin.Phys. C41, 013002 (2017),     [74] C. Giunti, M. Laveder, Y. F. Li, Q. Y. Liu, and H. W.
+     arXiv:1607.05378 [hep-ex].                                       Long, Phys. Rev. D 86, 113014 (2012), arXiv:1210.5715
+[48] S. Gariazzo, C. Giunti, M. Laveder, and Y. F. Li, JHEP           [hep-ph].
+     1706, 135 (2017), arXiv:1703.00860 [hep-ph].                [75] A. Palazzo, Phys. Rev. D 83, 113013 (2011),
+[49] S. Gariazzo, C. Giunti, M. Laveder, and Y. F. Li,                arXiv:1105.1705 [hep-ph].
+     Phys.Lett. B782, 13 (2018), arXiv:1801.06467 [hep-ph].      [76] A. Palazzo, Phys. Rev. D 85, 077301 (2012),
+[50] C. Giunti, Y. Li, and Y. Zhang, JHEP 2005, 061 (2020),           arXiv:1201.4280 [hep-ph].
+     arXiv:1912.12956 [hep-ph].                                  [77] K. Goldhagen, M. Maltoni, S. E. Reichard,           and
+[51] C. Giunti, Phys.Rev. D101, 095025 (2020),                        T. Schwetz, Eur. Phys. J. C 82, 116 (2022),
+     arXiv:2004.07577 [hep-ph].                                       arXiv:2109.14898 [hep-ph].
+[52] A. Serebrov et al., Phys.Rev.D 104, 032003 (2021),          [78] M. Dentler, A. Hernández-Cabezudo, J. Kopp, P. A. N.
+     arXiv:2005.05301 [hep-ex].                                       Machado, M. Maltoni, I. Martinez-Soler,             and
+[53] M. Danilov, J.Phys.Conf.Ser. 1390, 012049 (2019),                T. Schwetz, JHEP 08, 010 (2018), arXiv:1803.10661 [hep-
+     arXiv:1812.04085 [hep-ex].                                       ph].
+[54] M. Andriamirado et al. (PROSPECT, STEREO),                  [79] B. T. Cleveland, T. Daily, R. Davis, Jr., J. R. Distel,
+     (2020), arXiv:2006.13147 [hep-ex].                               K. Lande, C. K. Lee, P. S. Wildenhain, and J. Ullman,
+[55] M. V. Danilov and N. A. Skrobova, JETP Lett. 112, 452            Astrophys. J. 496, 505 (1998).
+     (2020).                                                     [80] B. Aharmim et al. (SNO), Phys. Rev. C 88, 025501
+[56] C. Giunti, Y. F. Li, C. A. Ternes, and Y. Y. Zhang, Phys.        (2013), arXiv:1109.0763 [nucl-ex].
+     Lett. B 816, 136214 (2021), arXiv:2101.06785 [hep-ph].      [81] J. Hosaka et al. (Super-Kamiokande), Phys. Rev. D 73,
+[57] B. Achkar et al. (Bugey), Nucl. Phys. B434, 503 (1995).          112001 (2006), arXiv:hep-ex/0508053.
+[58] M. Agostini and B. Neumair, Eur.Phys.J. C80, 750            [82] J. P. Cravens et al. (Super-Kamiokande), Phys. Rev. D
+     (2020), arXiv:1906.11854 [hep-ex].                               78, 032002 (2008), arXiv:0803.4312 [hep-ex].
+[59] P. Coloma, P. Huber, and T. Schwetz, Eur.Phys.J. C81,       [83] K. Abe et al. (Super-Kamiokande), Phys. Rev. D 83,
+     2 (2021), arXiv:2008.06083 [hep-ph].                             052010 (2011), arXiv:1010.0118 [hep-ex].
+[60] M. Aker et al. (KATRIN), Nature Phys. 18, 160 (2022),       [84] G. Bellini et al., Phys. Rev. Lett. 107, 141302 (2011),
+     arXiv:2105.08533 [hep-ex].                                       arXiv:1104.1816 [hep-ex].
+[61] M. Aker et al. (KATRIN), Phys. Rev. Lett. 126, 091803       [85] G. Bellini et al. (Borexino), Phys. Rev. D 82, 033006
+     (2021), arXiv:2011.05087 [hep-ex].                               (2010), arXiv:0808.2868 [astro-ph].
+[62] M. Aker et al. (KATRIN), Phys.Rev.D 105, 072004             [86] G. Bellini et al. (BOREXINO), Nature 512, 383 (2014).
+     (2022), arXiv:2201.11593 [hep-ex].                          [87] F. Dydak et al., Phys. Lett. B 134, 281 (1984).
+[63] A. Saenz, S. Jonsell, and P. Froelich, Phys. Rev. Lett.     [88] K. B. M. Mahn et al. (SciBooNE, MiniBooNE), Phys.
+     84, 242 (2000).                                                  Rev. D 85, 032007 (2012), arXiv:1106.5685 [hep-ex].
+[64] E. G. Myers, A. Wagner, H. Kracke, and B. A. Wesson,        [89] K. Abe et al. (Super-Kamiokande), Phys. Rev. D 91,
+     Phys. Rev. Lett. 114, 013003 (2015).                             052019 (2015), arXiv:1410.2008 [hep-ex].
+[65] E. Fermi, Nuovo Cim. 11, 1 (1934).                          [90] M. G. Aartsen et al. (IceCube), Phys. Rev. Lett. 125,
+[66] J. A. Formaggio, A. L. C. de Gouvea, and R. G. H.                141801 (2020), arXiv:2005.12942 [hep-ex].
+     Robertson, Phys.Rept. 914, 1 (2021), arXiv:2102.00594       [91] P. Adamson et al. (MINOS), Phys. Rev. Lett. 107,
+     [nucl-ex].                                                       011802 (2011), arXiv:1104.3922 [hep-ex].
+[67] C. Kraus, A. Singer, K. Valerius, and C. Weinheimer,        [92] P. Adamson et al. (NOvA), Phys. Rev. D 96, 072006
+     Eur.Phys.J. C73, 2323 (2013), arXiv:1210.4194 [hep-ex].          (2017), arXiv:1706.04592 [hep-ex].
+[68] A. Belesev, A. Berlev, E. Geraskin, A. Golubev,             [93] A. Gando et al. (KamLAND), Phys. Rev. D 88, 033001
+     N. Likhovid, et al., JETP Lett. 97, 67 (2013),                   (2013), arXiv:1303.4667 [hep-ex].
+     arXiv:1211.7193 [hep-ex].                                   [94] F. Vissani, Nucl. Phys. Atom. Energy 18, 303 (2017),
+[69] A. Belesev et al., J. Phys. G41, 015001 (2014),                  arXiv:1709.05813 [hep-ph].
+     arXiv:1307.5687 [hep-ex].                                   [95] G. Barenboim and J. Lykken, Phys. Lett. B554, 73
+[70] C. Giunti, M. Laveder, Y. F. Li, and H. Long, Phys.              (2003), hep-ph/0210411.
+     Rev. D87, 013004 (2013), arXiv:1212.3805 [hep-ph].
+[71] P. Zyla et al. (Particle Data Group), PTEP 2020,
+

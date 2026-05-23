@@ -1,0 +1,12 @@
+{
+  "sigma_portal": "public_sources/nndc/sigma_index.html",
+  "ga71_p_n_reference_page": "public_sources/nndc/71GA_p_n_refs.html",
+  "ge71_adopted_levels_pdf": "public_sources/nndc/71Ge_adopted.pdf",
+  "ga71_3he_t_pdf": "public_sources/nndc/71Ga_3He_t.pdf",
+  "findings": [
+    "NNDC Sigma public basic search exposes neutron/proton reaction retrieval, including (n,p) as a search class.",
+    "ENSDF adopted 71Ge evaluation explicitly lists 2022Ba21/2022Ba17 as 71Ge(nu,e) from 51Cr decay in BEST.",
+    "ENSDF also lists 71Ga(3He,t) and 71Ga(p,n) / 71Ga(p,ng) references relevant to excited-state strength constraints.",
+    "A ready-made NNDC numeric table for 71Ga(nu,e) cross sections was not found on the public Sigma endpoint used here."
+  ]
+}

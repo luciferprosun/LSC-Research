@@ -1,0 +1,804 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Sigma Periodic Table Browse</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"><!-- end: prevent caching -->
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link rel="stylesheet" type="text/css" media="all" href="css/generic_style.css">
+	<link rel="stylesheet" type="text/css" media="print" href="css/generic_print.css">
+	<style type="text/css">
+		A:link {text-decoration: none; color:#3366FF;}
+		A:visited {text-decoration: none; color:#3366FF;}
+	</style>
+	<script type="text/javascript" src="js/switchcontent.js" >
+		/***********************************************
+		* Switch Content script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+		* This notice must stay intact for legal use. Last updated Jan 25th, 2007.
+		* Visit http://www.dynamicdrive.com/ for full source code
+		***********************************************/
+	</script>
+	<style>
+		.showstate {
+			/* Definition for state toggling image */
+			cursor:hand;
+			cursor:pointer;
+			float: left;
+			margin-top: 2px;
+			margin-right: 3px;
+		}
+		.headers {
+			width: 400px;
+			font-size: 120%;
+			font-weight: regular;
+			color: green;
+			border: 0px solid black;
+			background-color: white;
+		}
+		.headers1 {
+			width: 400px;
+			font-size: 100%;
+			font-weight: regular;
+			color: blue;
+			border: 0px solid black;
+			background-color: "#ffffcc";
+		}
+		.headers2{
+			width: 400px;
+			font-size: 84%;
+			font-weight: regular;
+			color: #333;
+			border: 0px solid black;
+			background-color: white;
+		}
+		.switchcontent{
+			border-left: 0px solid black;
+			border-right: 0px solid black;
+			border-top: 0px solid black;
+			border-bottom: 0px solid black;
+			width: 400px;
+		}
+	</style>
+	<script>
+		var lib		="endfb7.1";
+		var nsub	="10";
+		var id		= lib + '-' + nsub;
+
+		function changeLib(newLib){
+			lib = newLib.options[newLib.selectedIndex].value;
+			updStyle();
+		}
+
+		function changeNSub(newNSub){
+			nsub = newNSub.options[newNSub.selectedIndex].value;
+			updStyle();
+		}
+
+		function updStyle() {
+			let oldid = id;
+			let thisElement = document.getElementById(id);
+			if ( thisElement != null ) {
+				let thisMenu = document.getElementById(id).style;
+				thisMenu.display = "none";
+			}
+
+			id = lib + '-' + nsub;
+			thisElement = document.getElementById(id);
+			if ( thisElement != null ) {
+				thisMenu = document.getElementById(id).style;
+				thisMenu.display = "block";
+			}
+
+			if ( oldid != id ) {
+				let rMenu = document.getElementById('results').style;
+				rMenu.display = "none";
+
+				for (let i = 0; i < 0; i++) {
+					let menui = 'menu' + i;
+					let cin = document.getElementById(menui);
+
+					if ( cin != null ) {
+						let thisMenu = document.getElementById(menui).style;
+						thisMenu.display = "none";
+
+						let aMenu = document.getElementById('amenu' + i).style;
+						aMenu.display = "none";
+					}
+				}
+			}
+		}
+
+		function toggleMenu(currMenu) {
+			if (! document.getElementById) { return true; }
+
+			for (let i = 0; i <0; i++) {
+				menui = 'menu' + i;
+
+				let cin = document.getElementById(menui);
+				if ( cin != null ) {
+					let thisMenu = document.getElementById(menui).style;
+					thisMenu.display = "none";
+
+					let aMenu = document.getElementById('amenu' + i).style;
+					aMenu.background = "#ffffff";
+					aMenu.border = "solid 1px #ffffff";
+				}
+			}
+
+			let thisMenu = document.getElementById(currMenu).style;
+
+			if (thisMenu.display == "block") {
+				thisMenu.display = "none";
+			} else {
+				thisMenu.display = "block";
+				thisMenu.background = "#ceefbd";
+				thisMenu.border = "solid 1px blue";
+				thisMenu.width="250px";
+				thisMenu.height="400px";
+				thisMenu.overflow="auto";
+				let aMenu = document.getElementById('a' + currMenu).style;
+				aMenu.background = "#ceefbd";
+				aMenu.border = "solid 1px blue";
+			}
+			return false;
+		}
+	</script>
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/common/images/NNDC_Barn_Logomark_RGB.svg"
+    >
+    <link rel="alternate icon" href="/common/images/favicon.ico">
+    <link rel="stylesheet" href="/common/styles/style.css">
+    <link rel="stylesheet" href="/common/styles/lib/all.min.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGFQT4RH2M"></script>
+	<script async src="js/google-analytics.js"></script>
+</head>
+<body>
+	
+    <header id="header"></header>
+    <main>
+        <table cellpadding=0 cellspacing=2 border=0 bordercolor=blue id="menu">
+            <tr>
+                <td valign=top>
+                    <table cellspacing=0 cellpadding=0 border=0 align=center>
+                        <tr valign=top align=left>
+                            <td align="center" valign="center">
+                                <img src="TabImages/sigmagen.png" border=0  align="center">
+                                &nbsp;
+                            </td>
+                            <td align="left" valign="middle" nowrap>
+                                <font color=green size=4><b>Evaluated Nuclear Data File (ENDF) Retrieval & Plotting</b></font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <table cellpadding="0" cellspacing="0" border="0" ALIGN="left" width="100%" bgcolor="#FFFFFF">
+                        <tr height="1">
+                            <td colspan="1" width="10">&nbsp;</td>
+
+                            <td rowspan="2" width="731" nowrap>
+                                <a href="index.jsp"><img src="TabImages/periodictablebrowse0_a.PNG" width="155" height="24" hspace="0" vspace="0" border="0" alt="Periodic Table Browse"></a><a href="tree/index.html"><img src="TabImages/directorytreebrowse1_ia.PNG" width="155" height="24" hspace="0" vspace="0" border="0" alt="Directory Tree Browse"></a><a href="basicsearch.jsp"><img src="TabImages/basicretrieval2_ia.PNG" width="112" height="24" hspace="0" vspace="0" border="0" alt="Basic Retrieval"></a><a href="search.jsp"><img src="TabImages/advancedretrieval3_ia.PNG" width="136" height="24" hspace="0" vspace="0" border="0" alt="Advanced Retrieval"></a><a href="plotCart.jsp"><img src="TabImages/plotcart4_ia.PNG" width="76" height="24" hspace="0" vspace="0" border="0" alt="Plot Cart"></a><a href="MathOps.jsp"><img src="TabImages/computations5_ia.GIF" width="97" height="24" hspace="0" vspace="0" border="0" alt="Computations" Z-index=-1></a></td>
+                            <td colspan="1">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+	<div id="center_col">
+		<table cellspacing=0 cellpadding=4 border=0 bordercolor=red>
+			<form method="post" action="index.jsp">
+				<!-- the browsing cell -->
+				<tr>
+					<td align=center>
+						Select first a library, then a sublibrary and finally click on a chemical element to obtain results.<br>
+						Data are available for materials with a cyan background.<br>
+						&nbsp;
+						<p>
+							<u>Library</u>:
+							<select name="lib" onChange="changeLib(this.form.lib)" >
+								<option value="endfb7.1" selected >ENDF/B-VII.1(USA, 2011)</option>
+								<option value="endfb7.0"  >ENDF/B-VII.0 (USA, 2006)</option>
+								<option value="jeff3.1"  >JEFF-3.1 (Europe, 2005)</option>
+								<option value="jendl4.0"  >JENDL-4.0 (Japan, 2010)</option>
+								<option value="jendl3.3"  >JENDL-3.3 (Japan, 2002)</option>
+								<option value="rosfond"  >ROSFOND (Russia, 2008)</option>
+								<option value="cendl3.1"  >CENDL-3.1 (China, 2009)</option>
+								<option value="endfb6.8"  >ENDF/B-VI.8 (USA, 2001)</option>
+							</select>
+							&nbsp;&nbsp;
+							<u>Sublibrary</u>:
+							<select name="nsub" onChange="changeNSub(this.form.nsub)">
+								<option value="10" selected >Neutron reactions</option>
+								<option value="12"  >Thermal neutron scattering</option>
+								<option value="19"  >Neutron cross section standards</option>
+								<option value="0"  >Photonuclear reactions</option>
+								<option value="10010"  >&nbsp;&nbsp;Proton reactions</option>
+								<option value="10020"  >&nbsp;&nbsp;Deuteron reactions</option>
+								<option value="10030"  >&nbsp;&nbsp;Triton reactions</option>
+								<option value="20030"  >&nbsp;&nbsp;He-3 reactions</option>
+								<option value="20040"  >&nbsp;&nbsp;Alpha reactions</option>
+								<option value="4"  >&nbsp;&nbsp;Decay data</option>
+								<option value="11"  >&nbsp;&nbsp;Neutron-induced fission yields</option>
+								<option value="5"  >&nbsp;&nbsp;Spontaneous fission yields</option>
+								<option value="3"  >&nbsp;&nbsp;Photo-atomic</option>
+								<option value="6"  >&nbsp;&nbsp;Atomic relaxation</option>
+								<option value="113"  >&nbsp;&nbsp;Electro-atomic</option>
+							</select>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr bgcolor=white>
+						<td valign=top>
+
+							<span class="pic" id="endfb7.1-10" style="display:block;">
+								<input type="image" src="chartImages/120-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-11" style="display:none;">
+								<input type="image" src="chartImages/120-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-19" style="display:none;">
+								<input type="image" src="chartImages/120-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-4" style="display:none;">
+								<input type="image" src="chartImages/120-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-0" style="display:none;">
+								<input type="image" src="chartImages/120-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-3" style="display:none;">
+								<input type="image" src="chartImages/120-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-5" style="display:none;">
+								<input type="image" src="chartImages/120-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-6" style="display:none;">
+								<input type="image" src="chartImages/120-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-12" style="display:none;">
+								<input type="image" src="chartImages/120-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-10010" style="display:none;">
+								<input type="image" src="chartImages/120-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-10020" style="display:none;">
+								<input type="image" src="chartImages/120-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-10030" style="display:none;">
+								<input type="image" src="chartImages/120-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-20030" style="display:none;">
+								<input type="image" src="chartImages/120-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-20040" style="display:none;">
+								<input type="image" src="chartImages/120-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.1-113" style="display:none;">
+								<input type="image" src="chartImages/120-113.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-10" style="display:none;">
+								<input type="image" src="chartImages/100-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-11" style="display:none;">
+								<input type="image" src="chartImages/100-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-19" style="display:none;">
+								<input type="image" src="chartImages/100-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-4" style="display:none;">
+								<input type="image" src="chartImages/100-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-0" style="display:none;">
+								<input type="image" src="chartImages/100-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-3" style="display:none;">
+								<input type="image" src="chartImages/100-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-5" style="display:none;">
+								<input type="image" src="chartImages/100-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-6" style="display:none;">
+								<input type="image" src="chartImages/100-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-12" style="display:none;">
+								<input type="image" src="chartImages/100-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-10010" style="display:none;">
+								<input type="image" src="chartImages/100-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-10020" style="display:none;">
+								<input type="image" src="chartImages/100-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-10030" style="display:none;">
+								<input type="image" src="chartImages/100-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-20030" style="display:none;">
+								<input type="image" src="chartImages/100-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-20040" style="display:none;">
+								<input type="image" src="chartImages/100-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb7.0-113" style="display:none;">
+								<input type="image" src="chartImages/100-113.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-10" style="display:none;">
+								<input type="image" src="chartImages/400-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-11" style="display:none;">
+								<input type="image" src="chartImages/400-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-19" style="display:none;">
+								<input type="image" src="chartImages/400-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-4" style="display:none;">
+								<input type="image" src="chartImages/400-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-0" style="display:none;">
+								<input type="image" src="chartImages/400-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-3" style="display:none;">
+								<input type="image" src="chartImages/400-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-5" style="display:none;">
+								<input type="image" src="chartImages/400-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-6" style="display:none;">
+								<input type="image" src="chartImages/400-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-12" style="display:none;">
+								<input type="image" src="chartImages/400-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-10010" style="display:none;">
+								<input type="image" src="chartImages/400-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-10020" style="display:none;">
+								<input type="image" src="chartImages/400-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-10030" style="display:none;">
+								<input type="image" src="chartImages/400-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-20030" style="display:none;">
+								<input type="image" src="chartImages/400-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-20040" style="display:none;">
+								<input type="image" src="chartImages/400-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="endfb6.8-113" style="display:none;">
+								<input type="image" src="chartImages/400-113.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-10" style="display:none;">
+								<input type="image" src="chartImages/200-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-11" style="display:none;">
+								<input type="image" src="chartImages/200-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-19" style="display:none;">
+								<input type="image" src="chartImages/200-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-4" style="display:none;">
+								<input type="image" src="chartImages/200-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-0" style="display:none;">
+								<input type="image" src="chartImages/200-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-3" style="display:none;">
+								<input type="image" src="chartImages/200-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-5" style="display:none;">
+								<input type="image" src="chartImages/200-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-6" style="display:none;">
+								<input type="image" src="chartImages/200-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-12" style="display:none;">
+								<input type="image" src="chartImages/200-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-10010" style="display:none;">
+								<input type="image" src="chartImages/200-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-10020" style="display:none;">
+								<input type="image" src="chartImages/200-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-10030" style="display:none;">
+								<input type="image" src="chartImages/200-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-20030" style="display:none;">
+								<input type="image" src="chartImages/200-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-20040" style="display:none;">
+								<input type="image" src="chartImages/200-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="jeff3.1-113" style="display:none;">
+								<input type="image" src="chartImages/200-113.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-10" style="display:none;">
+								<input type="image" src="chartImages/300-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-11" style="display:none;">
+								<input type="image" src="chartImages/300-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-19" style="display:none;">
+								<input type="image" src="chartImages/300-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-4" style="display:none;">
+								<input type="image" src="chartImages/300-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-0" style="display:none;">
+								<input type="image" src="chartImages/300-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-3" style="display:none;">
+								<input type="image" src="chartImages/300-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-5" style="display:none;">
+								<input type="image" src="chartImages/300-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-6" style="display:none;">
+								<input type="image" src="chartImages/300-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-12" style="display:none;">
+								<input type="image" src="chartImages/300-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-10010" style="display:none;">
+								<input type="image" src="chartImages/300-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-10020" style="display:none;">
+								<input type="image" src="chartImages/300-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-10030" style="display:none;">
+								<input type="image" src="chartImages/300-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-20030" style="display:none;">
+								<input type="image" src="chartImages/300-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-20040" style="display:none;">
+								<input type="image" src="chartImages/300-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl3.3-113" style="display:none;">
+								<input type="image" src="chartImages/300-113.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-10" style="display:none;">
+								<input type="image" src="chartImages/310-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-11" style="display:none;">
+								<input type="image" src="chartImages/310-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-19" style="display:none;">
+								<input type="image" src="chartImages/310-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-4" style="display:none;">
+								<input type="image" src="chartImages/310-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-0" style="display:none;">
+								<input type="image" src="chartImages/310-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-3" style="display:none;">
+								<input type="image" src="chartImages/310-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-5" style="display:none;">
+								<input type="image" src="chartImages/310-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-6" style="display:none;">
+								<input type="image" src="chartImages/310-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-12" style="display:none;">
+								<input type="image" src="chartImages/310-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-10010" style="display:none;">
+								<input type="image" src="chartImages/310-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-10020" style="display:none;">
+								<input type="image" src="chartImages/310-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-10030" style="display:none;">
+								<input type="image" src="chartImages/310-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-20030" style="display:none;">
+								<input type="image" src="chartImages/310-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-20040" style="display:none;">
+								<input type="image" src="chartImages/310-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="jendl4.0-113" style="display:none;">
+								<input type="image" src="chartImages/310-113.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-10" style="display:none;">
+								<input type="image" src="chartImages/500-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-11" style="display:none;">
+								<input type="image" src="chartImages/500-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-19" style="display:none;">
+								<input type="image" src="chartImages/500-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-4" style="display:none;">
+								<input type="image" src="chartImages/500-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-0" style="display:none;">
+								<input type="image" src="chartImages/500-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-3" style="display:none;">
+								<input type="image" src="chartImages/500-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-5" style="display:none;">
+								<input type="image" src="chartImages/500-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-6" style="display:none;">
+								<input type="image" src="chartImages/500-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-12" style="display:none;">
+								<input type="image" src="chartImages/500-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-10010" style="display:none;">
+								<input type="image" src="chartImages/500-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-10020" style="display:none;">
+								<input type="image" src="chartImages/500-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-10030" style="display:none;">
+								<input type="image" src="chartImages/500-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-20030" style="display:none;">
+								<input type="image" src="chartImages/500-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-20040" style="display:none;">
+								<input type="image" src="chartImages/500-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="rosfond-113" style="display:none;">
+								<input type="image" src="chartImages/500-113.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-10" style="display:none;">
+								<input type="image" src="chartImages/700-10.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-11" style="display:none;">
+								<input type="image" src="chartImages/700-11.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-19" style="display:none;">
+								<input type="image" src="chartImages/700-19.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-4" style="display:none;">
+								<input type="image" src="chartImages/700-4.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-0" style="display:none;">
+								<input type="image" src="chartImages/700-0.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-3" style="display:none;">
+								<input type="image" src="chartImages/700-3.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-5" style="display:none;">
+								<input type="image" src="chartImages/700-5.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-6" style="display:none;">
+								<input type="image" src="chartImages/700-6.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-12" style="display:none;">
+								<input type="image" src="chartImages/700-12.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-10010" style="display:none;">
+								<input type="image" src="chartImages/700-10010.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-10020" style="display:none;">
+								<input type="image" src="chartImages/700-10020.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-10030" style="display:none;">
+								<input type="image" src="chartImages/700-10030.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-20030" style="display:none;">
+								<input type="image" src="chartImages/700-20030.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-20040" style="display:none;">
+								<input type="image" src="chartImages/700-20040.png" name="chart">
+							</span>
+
+							<span class="pic" id="cendl3.1-113" style="display:none;">
+								<input type="image" src="chartImages/700-113.png" name="chart">
+							</span>
+
+         <p>
+	 <hr width="80%" size="1" color="#083194" noshade>
+
+         <table align=center width = "80%" cellspacing=1 bgcolor=navy>
+           <tr><td bgcolor="#ffffcc" nowrap>
+        <a name="New"><font color=blue>Version History:<br>
+     	<font id="bobcontent5-title" class="headers1">New:(December 2011)</font><br>
+	<div id="bobcontent5" class="switchgroup1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>ENDF/B-VII.1 evaluated neutron library.</font><br>
+		 </div>
+     	<font id="bobcontent4-title" class="headers1">New in version 3.1 (October 2009)</font><br>
+	<div id="bobcontent4" class="switchgroup1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>ROSFOND evaluated neutron library.</font><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>CENDL-3.1 evaluated neutron library.</font><br>
+	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Fission yields.</font><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Pre-calculated integral quantities.</font><br>
+	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Improved zooming.</font>
+	 </div>
+     	<font id="bobcontent3-title" class="headers1">New in version 3.0 (February 2009)</font><br>
+	<div id="bobcontent3" class="switchgroup1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Energy-angle distributions (MF=6).</font><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Visualization of covariances (MF=33 with LB=1,5; applies to ~80% of cases).<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visualization of resonance data (MF=32) is not yet available.</font><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Thermal neutron cross sections & resonance integrals for (n,&gamma;), (n,total fission).</font>
+	 </div>
+	<font id="bobcontent2-title" class="headers1">New in version 2.0 (April 2008)</font><br>
+	<div id="bobcontent2" class="switchgroup1">
+	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Angular distributions of emitted neutrons (if available in MF=4).</font><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Energy distributions of emitted neutrons and photons (if available in MF=5).</font><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Computations (mathematical operations) on cross sections (MF=3).</font>
+	</div>
+	<font id="bobcontent1-title" class="headers1">New in version 1.0 (April 2007)</font>
+	<div id="bobcontent1" class="switchgroup1">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Interactive access to ENDF/B-VII.0, JEFF-3.1, JENDL-3.3, ENDF/B-VI.8 libraries.</font><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Neutron cross section distributions (MF=3).</font><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#149;&nbsp;<font color=blue>Experimental data in EXFOR format.</font>
+	</div>
+             </font>
+             </td><tr>
+	 </table>
+
+
+	<script>
+		//Limit scanning of switch contents to just "div" elements
+		var bobexample = new switchcontent("switchgroup1", "div");
+		bobexample.setStatus('<img src="TabImages/minus.gif" />', '<img src="TabImages/plus.gif" />');
+		bobexample.setColor('red', 'blue');
+
+		//Allow more than 1 content to be open simultanously
+		bobexample.collapsePrevious(false);
+		//1st and 2nd contents within group should be expanded by default
+		bobexample.defaultExpanded(0);
+
+		bobexample.init();
+	</script>
+
+	 <hr width="80%" size="1" color="#083194" noshade>
+       </td>
+       <td valign=top align=center >
+
+       
+       </td>
+       <td valign=top>
+
+					</td>
+				</tr>
+			</table>
+		</form>
+	</main>
+	<footer id="footer"></footer>
+</body>
+<script src="/common/js/nndcMenu.js"></script>
+</html>
+

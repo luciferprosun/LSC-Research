@@ -1,0 +1,7 @@
+measurement,activity_1e15_bq,activity_mci,measured_over_expected,source
+SAGE Cr,19.11 +/- 0.22,0.5166 +/- 0.0060,0.95 +/- 0.12,Haxton/Elliott/Gavrin review Table 3.1
+SAGE Ar,15.1 +/- 0.7,0.409 +/- 0.002,0.79 +0.09/-0.10,Haxton/Elliott/Gavrin review Table 3.1
+GALLEX Cr-1,63.4 +1.1/-1.6,1.714 +0.03/-0.043,0.953 +/- 0.11,Haxton/Elliott/Gavrin review Table 3.1
+GALLEX Cr-2,69.1 +3.3/-2.1,1.868 +0.09/-0.057,0.812 +0.10/-0.11,Haxton/Elliott/Gavrin review Table 3.1
+BEST-inner,116.23 +/- 0.03,3.1414 +/- 0.008 (OCR in review; see BEST paper for 3.414),0.79 +/- 0.05,Haxton/Elliott/Gavrin review Table 3.1 + BEST paper correction
+BEST-outer,116.23 +/- 0.03,3.1414 +/- 0.008 (OCR in review; see BEST paper for 3.414),0.77 +/- 0.05,Haxton/Elliott/Gavrin review Table 3.1 + BEST paper correction

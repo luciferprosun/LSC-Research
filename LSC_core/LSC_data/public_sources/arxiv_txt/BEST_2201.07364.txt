@@ -1,0 +1,2037 @@
+                                          A Search for Electron Neutrino Transitions to Sterile States in the BEST Experiment
+
+                                                        V.V. Barinov, S.N. Danshin, V.N. Gavrin,∗ V.V. Gorbachev, D.S. Gorbunov,
+                                                   T.V. Ibragimova, Yu.P. Kozlova, L.V. Kravchuk, V.V. Kuzminov, B.K. Lubsandorzhiev,
+                                                            Yu.M. Malyshkin, I.N. Mirmov, A.A. Shikhin, and E.P. Veretenkin
+                                                     Institute for Nuclear Research of the Russian Academy of Sciences, Moscow 117312, Russia
+
+                                                                                              B.T. Cleveland
+                                                                               SNOLAB, Sudbury, ON P3Y 1N2, Canada
+
+                                                                                                  H. Ejiri
+                                                                Research Center for Nuclear Physics, Osaka University, Osaka, Japan
+
+                                                                              S.R. Elliott, I. Kim, and R. Massarczyk
+arXiv:2201.07364v3 [nucl-ex] 7 May 2022
+
+
+
+
+                                                                       Los Alamos National Laboratory, Los Alamos, NM, USA
+
+                                                                                                D. Frekers
+                                                   Institut für Kernphysik, Westfälische Wilhelms-Universität Munster, D-48149 Munster, Germany
+
+                                                                                               W.C. Haxton
+                                                  Nuclear Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA and
+                                                            Department of Physics, University of California, Berkeley, CA 94720, USA
+
+                                                                                  V.A. Matveev and G.V. Trubnikov
+                                                 Joint Institute for Nuclear Research (JINR) Joliot-Curie 6, 141980, Dubna, Moscow Region, Russia
+
+                                                                                                 J.S. Nico
+                                                   National Institute of Standards and Technology, 100 Bureau Dr, Gaithersburg, MD 20899, USA
+
+                                                                              A.L. Petelin, V.A. Tarasov, and A.I. Zvir
+                                                  JSC ‘State Scientific Center Research Institute of Atomic Reactors’, Dimitrovgrad, 433510, Russia
+
+                                                                                            R.G.H. Robertson
+                                                             Center for Experimental Nuclear Physics and Astrophysics, and Department
+                                                                  of Physics, University of Washington, Seattle, WA 98195, USA
+
+                                                                                                D. Sinclair
+                                                                Carleton University 1125 Colonel By Drive Ottawa, K1S 5B6, Canada
+
+                                                                                              J.F. Wilkerson
+                                                Department of Physics and Astronomy, University of North Carolina, Chapel Hill, NC 27599, USA and
+                                                                Triangle Universities Nuclear Laboratory, Durham, NC 27708, USA
+                                                                                          (Dated: May 10, 2022)
+                                                     The Baksan Experiment on Sterile Transitions (BEST) probes the gallium anomaly and its
+                                                   possible connections to oscillations between active and sterile neutrinos. Based on the Gallium-
+                                                   Germanium Neutrino Telescope (GGNT) technology of the SAGE experiment, BEST employs two
+                                                   zones of liquid Ga target to explore neutrino oscillations on the meter scale. Oscillations on this
+                                                   short scale could produce deficits in the 71 Ge production rates within the two zones, as well as a
+                                                   possible rate difference between the zones.
+                                                     From July 5th to October 13th 2019, the two-zone target was exposed to a primarily monoener-
+                                                   getic, 3.4-MCi 51 Cr neutrino source 10 times for a total of 20 independent 71 Ge extractions from
+                                                   the two Ga targets. The 71 Ge production rates from the neutrino source were measured from July
+                                                   2019 to March 2020. At the end of these measurements, the counters were filled with 71 Ge doped
+                                                   gas and calibrated during November 2020. In this paper, results from the BEST sterile neutrino
+                                                   oscillation experiment are presented in details. The ratio of the measured 71 Ge production rates
+                                                   to the predicted rates for the inner and the outer target volumes are calculated from the known
+                                                   neutrino capture cross section. Comparable deficits in the measured ratios relative to predicted
+                                                   values are found for both zones, with the 4σ deviations from unity consistent with the previously
+                                                   reported gallium anomaly. If interpreted in the context of neutrino oscillations, the deficits give best
+                                                                                                                          2
+
+             fit oscillation parameters of ∆m2 = 3.3+∞        2        2        +0.15
+                                                       −2.3 eV and sin 2θ = 0.42−0.17 , consistent with νe → νs
+             oscillations governed by a surprisingly large mixing angle.
+
+
+                  I.   INTRODUCTION                             commonly known as the gallium anomaly. The experi-
+                                                                mental design is presented in Fig. 1, with the flowchart
+   Sterile neutrinos (νs ) are hypothetical fermions which      showing the experimental steps in Fig. 2. About 47
+are singlets with respect to the Standard Model (SM)            tonnes of liquid Ga metal, divided into two concentric
+gauge groups [1–7]. Lacking electric, color, or hyper-          zones, serve as the target for the charged-current reac-
+charges, they would not participate in electromagnetic,         tion 71 Ga(ν, e) 71 Ge. The decay of the mainly monoen-
+strong or weak interactions, but could thorough their           ergetic neutrino source of the 51 Cr isotope is via elec-
+gravitational interactions have consequences for astro-         tron capture with the emission of νe in four spectral
+physics. In particular, sterile neutrinos could play a role     lines. The νe energies and their branching ratios are:
+in the formation of large-scale structure while evading         747 keV (81.63%), 427 keV (8.95%), 752 keV (8.49%)
+the strong three-flavor constraints imposed from multi-         and 432 keV (0.93%) [31]. The source was placed at the
+ple experiments [8–14]. Sterile neutrinos naturally arise       center of the two zones of the Ga target, irradiating the
+in many extensions of the Standard Model and have been          two volumes simultaneously. This allows the production
+invoked to account for various anomalies, including (for        rates of 71 Ge to be measured at two different distances.
+specific parameters) dark matter.                               As the sizes of the two target zones are roughly at a me-
+   The existence of singlet state neutrinos is theoreti-        ter scale, BEST has a high sensitivity to the oscillatory
+cally well-motivated. Neutrinos are the only fermions           behaviour in the νe flux at the same scale, which corre-
+known to have an intrinsic left-handed chirality. When          sponds to ∆m2 ≈ 1 eV2 . Neutrino oscillations at this
+their right-handed counterparts are considered, the sim-        short scale would be indicated by deficits in the 71 Ge
+plest neutrino mass generation model of the type-I seesaw       production rates within the two zones, as well as the dif-
+mechanism is allowed [15–18]. The inactive right-handed         ferences between them. The use of an electron capture νe
+neutrinos have so-called Majorana masses independent of         source is a powerful technique to search for neutrino oscil-
+the Higgs mechanism and can generate neutrino masses            lations. The νe spectrum is simple, being comprised of a
+at any scale. Assuming the existence of sterile neutri-         dominant monoenergetic component and 3 sub-dominant
+nos can therefore not only explain the non-zero mass of         lines. It is a well-understood spectrum relying on well-
+neutrinos but also account for neutrino masses being at         known nuclear and atomic physics parameters.
+least 5 orders of magnitude smaller than the electron rest         In this article, we present the results from the BEST
+mass.                                                           νs oscillation search experiment. Section II describes the
+   All plausible couplings of sterile neutrinos are weak        geometry of the two-zone gallium target which is irradi-
+and are thought to be beyond the detection capability           ated by a 51 Cr νe source. Section III reviews how the
+                                                                71
+of the current detectors. Hence, the only possibility for          Ge atoms are extracted from the target volumes and
+detecting sterile neutrinos is to observe the mixing with       transferred to the proportional counters. Section IV is
+active neutrinos. In general, extensions of the SM to in-       devoted to a description of the counter systems which
+clude sterile neutrinos do not impose strong constraints        measure the 71 Ge decay rates. In Section V, techniques
+on their masses. While sterile neutrinos have been pro-         of candidate event selection and analysis to set the ex-
+posed with masses ranging from sub-eV to GUT scales,            clusion within the (∆m2 , sin2 (2θ)) oscillation parameter
+the 1 eV scale is particularly interesting as multiple phys-    space are introduced. We discuss the first result from the
+ical phenomena can be explained by a single hypoth-             BEST experiment in Section VI, and conclude in Sec-
+esis. Such indications include unexplained excesses in          tion VII that our result is consistent with the neutrino
+the electron neutrino fluxes in LSND [19, 20] and Mini-         oscillation hypothesis with ∆m2 > 1 eV2 sterile neutri-
+BooNE experiments; reactor antineutrino anomalies at            nos.
+10-100 m oscillation lengths [21–23]; and the anomalous
+deficits in the radiochemical-source measurements of the
+                                                                              II.   TARGET GEOMETRY
+SAGE [24, 25] and the GALLEX [26, 27] experiments.
+Recent results from MicroBooNE indicate a discrepancy
+with the MiniBooNE result [28], but do not rule out the            The Baksan Neutrino Observatory (BNO) is located
+sterile neutrino hypothesis [29, 30].                           in a dedicated underground laboratory in the northern
+   The Baksan Experiment on Sterile Transitions (BEST)          Caucasus mountains of Russia. Located 3.5 km below the
+is a two-distance oscillation experiment designed to ex-        surface, the deep underground laboratory has an overbur-
+plore the deficit of electron neutrinos (νe ) previously re-    den of 4700 meters-water-equivalent (mwe), resulting in
+ported in the SAGE and GALLEX source experiments,               muon flux in the laboratory of (3.03 ± 0.10) × 10−9 /(cm2
+                                                                s) [25]. The entirety of the laboratory is lined with 60 cm
+                                                                of radiopure concrete and 6 mm steel shell to reduce γ
+                                                                and neutron backgrounds from rocks.
+∗ gavrin@inr.ru
+                                                                   The concentric two-zone gallium target of the BEST
+                                                                                                                                          3
+
+
+
+
+            FIG. 1. The Ga target and extraction piping diagram also indicating the source handling apparatus.
+
+
+                                       Liquid Transport Back to Target Volumes
+
+
+                                                                                      71Ge Extraction       71Ge Decay Counting
+             Source Exposure on 71Ga              Liquid Transport to
+                                                                                    from liquid (25 h)            (60-150 d)
+                  Target (9.18 d)                  Reactors (4.5 h)
+                                                                                  Efficiency: (95±1.6)%      Efficiency: 33-38%
+
+
+FIG. 2. Flowchart showing the experimental steps of the BEST experiment. Time spent on each step and relevant efficiencies
+are also presented.
+
+
+experiment is located in the main hall of the labora-                            Russia. The activity (A) of the source is measured by
+tory. The inner spherical volume with inner diame-                               calorimetric method based on the heat released by the
+ter 133.5 cm contains (7.4691±0.0631) t of liquid Ga,                            source [33, 34]. At the end of each extraction, the source
+and the outer cylindrical volume with inner diameter                             is moved into a lead container for the activity measure-
+218 cm and maximum Ga target height 211.2 cm con-                                ment. The γ spectrum is measured at 21.65 m distance
+tains (39.9593±0.0024) t of Ga. The Ga metal, heated                             with a Ge detector for an hour. After the spectral mea-
+to 30.0 °C, remains molten inside the volumes. The car-                          surement, the source is moved to the calorimeter to mea-
+rier Ge and any produced 71 Ge was extracted at the end                          sure the heat emitted by the source for 20-21 hours. The
+of each exposure for the calculation of production rates.                        tungsten shield of the source does not affect calorimetry
+The extraction procedures are explained in Sec.V G 1,                            as the shield is included within the calorimeter. More-
+and discussed more thoroughly in Ref. [32].                                      over, it helps by absorbing gamma radiation from impuri-
+   The 51 Cr source with known activity was contained                            ties in the source, increasing the accuracy of determining
+in a cylindrical cartridge with a radius of 4.3 cm and                           the heat release from 51 Cr. Ten calorimetric measure-
+height of 10.8 cm. This source assembly was placed in                            ments were performed after nine days of irradiation of
+a specially constructed tungsten radiation shield with a                         gallium targets. The decay of 51 Cr (≈90% to the ground
+thickness of ≈30 mm and a weight of 42.8 kg, which                               state and ≈10% to the excited state) releases on average
+provides radiation safety from gamma activity from the                           (36.750 ± 0.084) keV per decay event. From spectromet-
+source, and a steel shell with a special cap for capturing                       ric measurements of gamma radiation of the source, the
+the source by a manipulator. The assembly was placed                             heat contribution from radioactive impurities is found to
+at the center of the two zones to irradiate both volumes                         be (3.7 ± 0.5) mW, which is 5 × 10−6 of the initial 51 Cr
+simultaneously.                                                                  source power. The measured activity of the source at
+                                                                                 the reference time is (3.414±0.008) MCi. The measured
+   The source was delivered to BNO on July 5, 2019
+                                                                                 half-life of the 51 Cr source is (27.710±0.017) days, which
+and was placed into the two-zone target at 14:02 lo-
+                                                                                 is in a good agreement with the known 51 Cr half-life of
+cal time (UTC+3) that same day, and this is our cho-
+                                                                                 (27.704±0.017) days [35]. A full description of the source
+sen reference time for the source strength. The source
+                                                                                 and the calorimetric measurements of its intensity can be
+was manufactured by irradiating 4 kg of 50 Cr-enriched
+                                                                                 found in Refs. [33, 34].
+metal for 100 d in a reactor at the State Scientific Cen-
+ter Research Institute of Atomic Reactors, Dimitrovgrad,
+                                                                                                                        4
+
+                     71
+              III.        Ge EXTRACTION                        in exposures with a source. This contribution was also
+                                                               accounted for.
+   Between July 5th and October 13th 2019, the two-zone
+target was exposed to the source 10 times with an average
+exposure time of 9.18 d. The irradiation schedule was de-                    IV.   COUNTING OF 71 Ge
+vised to maximize the number of extracted 71 Ge atoms.
+The extraction was carried out at the end of each expo-           The decay process 71 Ge + e− →71 Ga +ν has a half-
+sure. The first extraction counting periods were shorter       life of 11.4 d [39]. Two peaks at 10.4 keV (K peak)
+in time due to the limited number of available counters.       and 1.2 keV (L peak) are observable in the proportional
+The shorter counting time has almost no effect on the          counters. The K-capture, which constitutes ≈88% of all
+number of calculated 71 Ge decays but increases the sta-       decays, can release 10.4 keV Auger electrons (41.5%),
+tistical uncertainty due to the lower statistics of the mea-   1.2 keV Auger electrons with 9.2 keV X rays (41.2%), or
+sured counter background. After each exposure period,          0.1 keV Auger electrons with 10.3 keV X rays (5.3%) [32].
+the Ga targets were transferred to chemical reactor ves-       On the other hand, L and M captures give almost entirely
+sels, and the produced 71 Ge atoms were extracted from         Auger electrons of energies 1.2 keV and 0.12 keV respec-
+Ga with the technique almost identical to the one used         tively [32]. Since the proportional counters have much
+for the SAGE experiment [25, 32]. Here we provide an           higher efficiency for Auger electrons than for the X rays,
+overview.                                                      the number of K and L peak counts are almost equal. The
+   The Ge carrier and the 71 Ge atoms produced by the          pulse shapes recorded from the counters are analyzed to
+neutrino capture reaction are extracted from the Ga tar-       suppress the contribution from unwanted backgrounds.
+gets into an aqueous solution by adding a weak acidic             The design of the proportional counters used is de-
+solution of H2 O2 [36, 37], ensuring independent extrac-       scribed in detail in Refs. [32, 40, 41]. The propor-
+tions of 71 Ge atoms from each zone of the Ga target.          tional counters, filled with GeH4 from each extraction,
+The acid oxidizes the Ge metal and GeH4 is synthesized         are placed in the well of a NaI veto detector within a
+in gaseous form. Gallium is pumped out of the vessels          large passive shield. To suppress the 222 Rn background,
+until the aqueous acidic solution on the surface of gal-       the shield volume is purged with boil-off gas from the liq-
+lium begins to be pumped out. The GeH4 is then mixed           uid nitrogen. The average counting time for the first four
+with Xe gas and introduced into a low-background pro-          runs is approximately 50 d and was extended to about
+portional counter.                                             140 d in the later six runs to account for the decreased
+   The extraction efficiency of Ge from a large mass of        source strength. Calibration data with an 55 Fe source
+Ga is determined with high accuracy using mass spec-           were taken once every 2 weeks throughout the measure-
+trometry [38]. For BEST, the process of the efficiency         ments to ensure the stability of counting. Mean varia-
+estimation follows the same procedure as was used in           tions of the positions of the calibration peak during full
+SAGE. A known amount of stable 72 Ge (2.4 µmol, 92%)           counting period were 1.4% and 1.3% for the inner and
+and 76 Ge (2.4 µmol, 95%) carriers were added to the vol-      the outer volumes and taken into account in analysis.
+ume in form of Ga-Ge alloy as the stable Ge carrier, and       Two periods during the counting were excluded from the
+the molten Ga was stirred thoroughly to disperse the Ge        analysis due to identified issues:
+throughout the volumes [32]. The total extraction effi-
+ciency is given by the ratio of the amount of Ge in the           1. The time response of all slots in high-gain channel
+synthesized GeH4 to the initial amount of Ge in the Ga               (L-peak) was slow between 2019-08-23 07:03 and
+targets at the beginning of the exposure. Taking into                2019-09-14 14:49.
+account all the factors that can affect the extraction effi-
+ciency including the temperature, the amount of oxidiz-           2. There was a failure in the low gain channel (K-
+ing agent (H2 O2 ), and the volume of the aqueous phase              peak) between 2019-11-06 21:10 and 2019-11-09
+which defines the time of later concentration of Ge, the             20:45.
+extraction procedure reached (98±0.2)% efficiency from
+Ga, and the total efficiency including synthesis reached       The livetime of some runs were affected accordingly.
+(95 ± 1.6) %. The extraction and exposure details for             After the counting of the extraction samples from the
+the inner and outer targets are summarized in Tables I         Cr experiment was completed in the spring-fall of 2020,
+and II, respectively. Due to the inefficiency of the extrac-   the counting efficiency was directly measured for each
+tion, a small proportion of the carrier Ge is still present    counter. The volume efficiencies, accounting for the dead
+within the Ga. The numbers of these carryover atoms            volume near the cathode, were directly measured with
+were estimated and accounted for in the production rate        37
+                                                                  Ar. The event selection efficiencies of the waveform
+calculation.                                                   analysis were measured with 71 Ge calibrations. The rise-
+   At each source exposure, gallium was pumped with the        time (TN ) values from the 71 Ge calibration data were
+same levels into the two volumes, which were monitored         arranged in ascending order and an upper limit set such
+by level sensors in the zones. Therefore, a larger mass of     that 4% of the calibration events were excluded [25]. De-
+gallium was irradiated in solar neutrino exposures than        tails of the event selection and the 71 Ge calibration runs
+                                                                                                                                    5
+
+
+TABLE I. Extraction and exposure details for the inner target. The times of exposure are given in days of year 2019. A mass
+of (7.4691±0.0631) t of liquid Ga was irradiated by the neutrino source in the inner target.
+               Extraction              Source exposure                   Solar exposure                Extraction efficiency
+                                      Begin         End           Begin          End      Ga mass
+          Name    Date (2019)                                                                         from Ga     into GeH4
+                                  (day in year) (day in year) (day in year) (day in year) (tonnes)
+          Inner-1 15 Jul 16:01       186.585       196.376       183.667       196.667      7.594     0.9747(97) 0.9460(123)
+          Inner-2 25 Jul 16:32       197.362       206.372       196.689       206.689      7.586     0.9814(98) 0.9559(124)
+          Inner-3 04 Aug 16:37       207.282       216.374       206.792       216.692      7.578     0.9795(98) 0.9673(126)
+          Inner-4 14 Aug 15:35       217.286       226.371       216.749       226.649      7.57      0.9801(98) 0.9515(124)
+          Inner-5 24 Aug 17:17       227.258       236.458       226.620       236.720      7.562     0.9808(98) 0.9554(124)
+          Inner-6 03 Sep 15:18       237.342       246.369       236.738       246.638      7.554     0.9818(98) 0.9548(124)
+          Inner-7 13 Sep 15:11       247.243       256.368       246.733       246.733      7.546     0.9813(98) 0.9381(122)
+          Inner-8 23 Sep 15:17       257.241       266.369       256.737       266.637      7.538     0.9835(98) 0.9789(127)
+          Inner-9 03 Oct 15:00       267.24        276.369       266.725       276.625      7.529     0.9824(98) 0.9545(123)
+         Inner-10 13 Oct 14:59       277.201       286.367       276.724       286.624      7.521     0.9806(98) 0.9372(122)
+
+
+TABLE II. Extraction and exposure details for the outer target. The times of exposure are given in days of year 2019. A mass
+of (39.9593±0.0024) t of liquid Ga was irradiated by the neutrino source in the outer target.
+               Extraction              Source exposure                   Solar exposure                Extraction efficiency
+                                      Begin         End           Begin          End      Ga mass
+          Name     Date (2019)                                                                         from Ga    into GeH4
+                                  (day in year) (day in year) (day in year) (day in year) (tonnes)
+         Outer-1 15 Jul 13:59        186.585       196.376       183.783       196.583     44.237     0.9868(99) 0.9503(124)
+         Outer-2 25 Jul 13:51        197.362       206.372       196.877       206.577     44.191     0.9841(98) 0.9581(125)
+         Outer-3 04 Aug 12:47        207.282       216.374       206.833       216.533     44.145     0.9881(99) 0.9668(126)
+         Outer-4 14 Aug 12:51        217.286       226.371       216.835       226.535     44.098     0.9858(99) 0.9622(125)
+         Outer-5 24 Aug 14:35        227.258       236.458       226.808       236.608     44.052     0.9871(99) 0.9609(125)
+         Outer-6 03 Sep 12:35        237.342       246.369       236.924       246.524     44.004     0.9893(99) 0.9253(120)
+         Outer-7 13 Sep 12:29        247.243       256.368       246.82        256.520     43.954     0.9904(99) 0.9514(124)
+         Outer-8 23 Sep 12:32        257.241       266.369       256.822       266.522     43.906     0.9897(99) 0.9897(129)
+         Outer-9 03 Oct 12:27        267.24        276.369       266.819       276.519     43.857     0.9881(99) 0.9664(126)
+         Outer-10 13 Oct 12:26       277.201       286.367       276.818       286.518     43.807     0.9877(99) 0.9538(124)
+
+
+
+to verify the selection scheme are summarized in Sec. V B           accounted for by the estimated systematic uncertainties
+and Appx. A respectively.                                           in the efficiencies for those cuts.
+   The calculated counting efficiency using the measured               Pulses from the proportional counters are digitized at
+pressure in the counter, GeH4 fraction, and 37 Ar volume            two different gains. The higher gain channel is chosen
+efficiency was determined for each extraction. They are             for the 71 Ge L-peak, and the lower gain channel is used
+summarized in Tables III and IV with other counting pa-             for the K-peak analysis. The pulse shape analysis is
+rameters. Values of the exponentially weighted livetime             performed to differentiate the 71 Ge signals from back-
+∆ are also presented for each extraction                            grounds.
+                                                                       The analytic form of pulse shapes used in the BEST
+                     n
+                                                                    analysis is derived from the model studied in Ref. [42]
+                     X                                              where
+               ∆=          (e−λtbk − e−λtek ) ,             (1)
+                     k=1                                                                     ht + t      t      t i
+                                                                                                  0
+                                                                      V (0 < t < TN ) = V0        ln 1 +      −       ,
+                                                                                            TN           t0      TN
+where the sum is over n counting intervals, each of which                             h      t − TN          t + t0        TN i
+has a starting time tbk and an ending time tek . λ is the             V (t > TN ) = V0 ln 1 +           −1−          ln 1 −         ,
+                                                                                                 t0              TN         t + t0
+decay constant of 71 Ge.                                                                                                           (2)
+                                                                    with V (t < 0) = 0. Here, TN is the rise-time, which
+                                                                    is the duration over which the ionization arrives at the
+                    V.      ANALYSIS                                anode, t0 is the time inversely proportional to the ion
+                                                                    mobility, and V0 is the voltage proportional to the to-
+   A primary analysis on the BEST data was performed                tal amount of ionization. We fit every pulse that is not
+by the analysis group in the Institute for Nuclear Re-              identified as saturation or breakdown to Eq. 2. The fit is
+search, Russia, and was verified by an independent analy-           made from 40 ns before the time of pulse onset to 400 ns
+sis carried out by a separate analysis group in Los Alamos          after onset. Five parameters are determined by the fit:
+National Laboratory. Both of the analyses obtained sim-             tonset , Vonset , V0 , t0 , and TN . The integral of the fit func-
+ilar results to within about 2%. This difference is due to          tion over pulse waveform for 800 ns after the onset is
+minor event-selection differences at the edges of the se-           the energy parameter [24]. The TN value is used as a
+lection borders in energy and rise time. This difference is         background rejection parameter.
+                                                                                                                              6
+
+
+TABLE III. Counting parameters for the inner target. ∆ is the exponentially weighted live time. The live time and ∆ include
+all time cuts. The counter efficiency for each extraction has the same fractional uncertainty of −2.1/ + 2.3%, as explained in
+details in Sec. V G.
+                                                  Counter efficiency
+             Extraction     Counter filling                            Day counting Live time (days)         ∆
+                                               (after event selection)
+                                                                           began
+                                       GeH4
+                  Counter Pressure                                     (day in year)
+            Run                      fraction K-peak       L-peak                    K-peak L-peak K-peak L-peak
+                    name (mmHg)
+                                        (%)
+          Inner-1 YCT92       630       8.8     0.3663     0.3803          197.66     54.478 34.364 0.8102 0.7450
+          Inner-2 YCT2        640       9.5     0.3647     0.3785         207.623     53.706 29.834 0.7839 0.6542
+          Inner-3 YCN43       650       9.3     0.3605     0.3599         217.693     50.525 50.525 0.7143 0.7143
+          Inner-4 YCT97       640       9.2     0.3679     0.3769         227.644     52.808 29.884 0.7872 0.3672
+          Inner-5 YCN46       650       9.5     0.3649     0.3654         237.790    150.436 150.436 0.7470 0.7470
+          Inner-6 YCN42       640       9.8     0.3577     0.3604         247.597    140.143 133.113 0.7717 0.3892
+          Inner-7 YCT92       640       9.3     0.3676     0.3793         257.617    129.483 130.843 0.7493 0.6776
+          Inner-8 YCT2        645       9.5     0.3656     0.3779         267.634    129.060 131.764 0.7754 0.7855
+          Inner-9 YCN43       640       9.1      0.359     0.3610         277.678    152.034 152.034 0.8019 0.8019
+         Inner-10 YCT97       650       9.1     0.3698     0.3755         287.625    144.446 147.014 0.7629 0.7955
+
+
+TABLE IV. Counting parameters for the outer target. ∆ is the exponentially weighted live time. The live time and ∆ include
+all time cuts. The counter efficiency for each extraction has the same fractional uncertainty of −2.1/ + 2.3%, as explained in
+details in Sec. V G.
+                                                   Counter efficiency
+            Extraction       Counter filling                            Day counting Live time (days)        ∆
+                                                (after event selection)
+                                                                            began
+                                       GeH4
+                   Counter Pressure                                     (day in Year)
+           Run                        fraction K-peak       L-peak                    K-peak L-peak K-peak L-peak
+                    Name (mmHg)
+                                        (%)
+         Outer-1 YCN113        635       9.5     0.3422     0.3596          197.66     53.788 33.662 0.7648 0.6996
+         Outer-2 YCT3          635       9.5     0.3707     0.3792         207.623     54.376 30.640 0.8043 0.6755
+         Outer-3 YCNA9         640      10.5     0.2933     0.3358         217.693     51.070 51.070 0.7650 0.7650
+         Outer-4 YCT9          635       9.6     0.3658      0.381         227.644     52.981 30.423 0.7820 0.3755
+         Outer-5 YCN41         635      10.0     0.3568     0.3727         237.790    147.774 147.774 0.8025 0.8025
+         Outer-6 YCT4          630       9.0     0.3585     0.3577         247.597    139.382 131.148 0.8012 0.3843
+         Outer-7 YCN113        630      10.3     0.3407     0.3607         257.617    134.985 136.161 0.7977 0.7108
+         Outer-8 YCT3          640       9.5     0.3716     0.3785         267.634    129.098 131.802 0.8298 0.8398
+         Outer-9 YCNA9         635       9.9      0.293     0.3360         277.678    155.439 155.439 0.7865 0.7865
+        Outer-10 YCT9          645       9.5     0.3677     0.3797         287.625    143.604 146.307 0.7567 0.7905
+
+
+                      A.    Calibration                               Vcrit2 = 6G + P/3 + 824. The typical corrections for the
+                                                                      K-peak position and the resolution are 2% and 15%, re-
+   Following the procedure described in Ref. [24], we first           spectively, and no corrections are required for the L peak
+find the position and the width of the 5.895 keV calibra-             as the critical voltages are much higher than for the K
+tion peak in each calibration run. The expected locations             peak.
+for the 71 Ge K and L peaks are then calculated from the                We determine the proper energy scaling for each ex-
+energy ratios with corrections for the non-linearity fac-             traction from 55 Fe calibrations. The extrapolations were
+tors as described in Ref. [32]. For the counters with the             verified with 71 Ge filled counters operated after the
+GeH4 fraction G, counter pressure P , and operating volt-             BEST extraction counting ended. This additional study
+age V , the non-linearity factors for the location PK and             enabled the comparison between the 71 Ge K and L peak
+the resolution RK of the K peak follow the empirical for-             2 FWHM regions predicted by extrapolation and the true
+mulas reported in Ref. [32] as                                        peak positions. All counters used in the experiment un-
+                                                                      derwent the performance study. Details of the counter
+                                                                      calibration using 71 Ge isotope are described in Appx. A.
+  PK (71 Ge)   10.367
+             =        [1 − (4.5G + 2.78)(V − Vcrit1 ) × 10−6 ] ,
+   P (55 Fe)   5.895
+               r
+  RK (71 Ge)      5.895                                                                 B.   Event selection
+             =           [1 + 1.5 × 10−3 (V − Vcrit2 )] ,
+   R(55 Fe)      10.367
+                                                                (3)
+                                                                        Events are further selected to reduce the background
+where the corrections are applied if V is above the re-               that mimics 71 Ge-induced events. The event selection
+spective critical voltages Vcrit1 = 10.5G + 0.6P + 588 and            algorithm uses the SAGE analysis [24], which has been
+                                                                                                                                                                7
+
+                                                                pulses have amplitudes greater than 16 keV and relatively
+TABLE V. The cut values on TN of the pulses for 71 Ge K and     flat shape at the end of the pulse. The events from high-
+L peak for each counting in the inner target. Events with TN
+                                                                voltage breakdown have a characteristic waveform that
+values greater than each cut value are selected out.
+                                                                rises steeply and stays flat at the end. While the posi-
+               Counter Filling                 TN
+                                 GeH4
+                                                                tive ions from the real 71 Ge events are collected smoothly
+    Extraction Counter Pressure          K-peak L-peak          over time with resulting extended rise time, events from
+                                fraction
+       name     name (mmHg)               (ns)    (ns)
+                                  (%)                           high-voltage breakdown have a characteristic waveform
+      Inner-1  YCT92     630       8.8    17.6    13.0          that rises steeply and stays flat at the end after the ris-
+      Inner-2   YCT2     640       9.5    16.6    10.1          ing edge. Because both types of background events have
+      Inner-3  YCN43     650       9.3    13.2    10.0
+      Inner-4  YCT97     640       9.2    17.3    11.4
+                                                                a characteristic shape at the end of the waveform, we
+      Inner-5  YCN46     650       9.5    15.2    11.3          analyze the pulses between 500 and 1000 ns after the
+      Inner-6  YCN42     640       9.8    13.2     9.1          digitization begins. Typical waveforms of an α-induced
+      Inner-7  YCT92     640       9.3    17.6    13.0          saturated pulse and a background that originates from
+      Inner-8   YCT2     645       9.5    16.6    10.1          high-voltage breakdown are shown in Fig. 3. They are
+      Inner-9  YCN43     640       9.1    13.2    10.0
+     Inner-10 YCT97      650       9.1    17.3    11.4          easily distinguishable from the typical pulse shape of true
+                                                                71
+                                                                   Ge candidate event shown in Fig. 4.
+
+TABLE VI. The cut values on TN of the pulses for 71 Ge K                              0
+                                                                                                                                                    saturated
+
+
+
+
+                                                                Voltage (a.u.)
+and L peak for each counting in the outer target. Events with
+TN values greater than each cut value are selected out.                             100
+               Counter Filling                 TN
+                                 GeH4                                               200
+    Extraction Counter Pressure          K-peak L-peak
+      name      name (mmHg)
+                                fraction
+                                          (ns)   (ns)                                       0         200      400               600      800           1000
+                                  (%)                                                                                Time (ns)
+     Outer-1 YCN113      635       9.5    13.6    9.1
+     Outer-2    YCT3     635       9.5    16.4   10.3                                                                                           HV breakdown
+                                                                                      0
+                                                                   Voltage (a.u.)
+
+     Outer-3 YCNA9       640      10.5    18.8   13.2
+     Outer-4    YCT9     635       9.6    14.9    9.1
+     Outer-5 YCN41       635      10.0    13.4   10.3                                20
+     Outer-6    YCT4     630       9.0    13.2   10.2
+     Outer-7 YCN113      630      10.3    13.6    9.1                                       0         200      400               600      800           1000
+     Outer-8    YCT3     640       9.5    16.4   10.3                                                                Time (ns)
+     Outer-9 YCNA9       635       9.9    18.8   13.2
+     Outer-10   YCT9     645       9.5    14.9    9.1
+                                                                FIG. 3. Flat-top pulses measured in proportional counters.
+                                                                Top: Saturated event induced by high-energy α-particles.
+                                                                Bottom: Background candidate event that originates from
+continuously updated throughout the last 20 years. Some         high-voltage breakdown.
+of the updates were reported in [41].
+   We implement five event selection cuts to remove non-
+physical signals: 1) flatness cut, 2) shield-open cut, 3)
+                                                                                      0
+NaI veto cut, 4) setting the energy windows for the Ge L                                                                                                Sig
+                                                                Voltage (a.u.)
+
+
+
+
+and K peaks and 5) rise-time cut. These cuts effectively                             50
+remove the background events. The first three types of                              100
+cuts affects only the background level of the counters, and
+                                                                                    150
+do not affect the selection of real events from 71 Ge de-                             100       125    150   175       200         225   250      275         300
+cays. Therefore the efficiency of such cuts can be consid-                                                           Time (ns)
+ered equal to 100%. The use of such cuts off reduces the                              0
+                                                                                                                                                        Bkg
+                                                                Voltage (a.u.)
+
+
+
+
+background of the counters and, accordingly, the magni-                              50
+tude of the statistical error.
+                                                                                    100
+                                                                                    150
+                                                                                      100       125    150   175       200         225   250      275         300
+                      1.   Flatness cut                                                                              Time (ns)
+
+   The first step of event selection is to identify two         FIG. 4. Typical pulse shapes measured in proportional coun-
+types of background events: saturation waveforms that           ters. Top: 71 Ge K peak candidate event with TN = 7.44 ns.
+are mostly from high energy α-particles and those that          Bottom: Background candidate event induced by either
+originate from high-voltage breakdown. The α-particles,         Compton scattering or high-energy β-particles in K peak en-
+either from the decay of internal 222 Rn or the natural         ergy region. The slow background event with extended ion-
+radioactivity in the counter material, can easily be iden-      ization has much slower fall time (TN = 30.67 ns) when the
+tified by examining the end of the waveforms. Saturated         pulse begins at ≈200 ns than the true 71 Ge candidate event.
+                                                                                                                            8
+
+                     2.   Shield-open cut
+
+   Next, we apply a cut to remove data during periods
+of expected high backgrounds. When counters were cali-
+brated, they were exposed to the laboratory atmosphere
+with an average Rn content of 2 pCi/liter. Events pro-
+duced by 222 Rn daughters can produce false 71 Ge signals
+that mimic our signal, and hence the effect of external
+Rn is minimized by making a time cut on the data for
+2.6 h after any shield opening. The estimated effective-
+ness of this time cut is nearly 100%. Any rejected period
+are considered in our exposure calculation, and there is
+no efficiency associated with it. The uncertainty is found
+to be negligible [43].
+
+
+               3.   Time cut of Radon chains
+
+   We apply an additional time cut to minimize the num-
+ber of false 71 Ge signals from internal radon and its
+daughters [32]. The first two decays in the 222 Rn chain
+are α decays producing off-scale pulses that saturate the
+detector. Since 222 Rn decays to 210 Pb (T1/2 − 22-y) typ-     FIG. 5. Upper panel: energy vs rise-time histogram of all
+ically in about an hour, removing a few hours around           events of the inner target after the shield-open cut observed
+each saturated event effectively rejects the false 71 Ge       in all ten exposures during the first 30 days after extraction.
+events from the radon chain. We remove all data from           The live time is 245 days, and 1364 events are shown. Lower
+15 minutes before each saturation event to 3 hours af-         panel: the same histogram for the 481 events that occurred
+ter it [32, 41]. The probability that the decays of the        during an equal live-time interval beginning at 40 days after
+elements of this chain will be registered after such cut       extraction.
+off is 1.1% for 214 Pb and 3.5% for 214 Bi and 214 Po [44]
+We treat them as the systematic uncertainties related to
+internal radon.                                                didates only if their energy is within ± 1 FWHM ((98%
+                                                               acceptance) of the central peak energy.
+
+                          4.   NaI veto
+                                                                                     6.   Rise-time cut
+
+  Background events from β decays from the counter                The electron capture process produces point-like ion-
+walls, which are accompanied by γ rays are tagged and          ization in the counter. Pulses from the 71 Ge electron
+vetoed by the surrounding NaI detector. Since 71 Ge has        capture decay should therefore be fast, and TN val-
+no γ rays associated with its decay other than internal        ues should be near zero. On the other hand, back-
+bremsstrahlung, all events coincident with a NaI detector      grounds from Compton scattering or from high-energy
+response are eliminated.                                       β-particles traversing the counter produce extended ion-
+                                                               izations, leading to slow pulses with large TN . Figure 4
+                                                               illustrates the difference in pulse shapes of the point-like
+ 5.   Setting the energy windows for the Ge L and K peaks      71
+                                                                  Ge candidate event with TN = 7.44 ns and the back-
+                                                               ground showing the characteristic of extended ionization
+   The measure of energy is the integral of the pulse wave-    with TN = 30.67 ns. Both events fall into the K peak en-
+form for 800 ns after the pulse onset. The locations of the    ergy region with 9.64 keV, but the background candidate
+energy acceptance windows for 71 Ge events in the L and        event has much slower fall time when the pulse begins at
+K peaks were set from the 55 Fe calibration as described       ≈200 ns than the true 71 Ge candidate.
+in Sec. V A. If the peak position changes from one cal-           The cut value for the TN for each counter is obtained
+ibration to the next, then the energy window for event         from separate measurements by filling counters with a
+selection is slid linearly in time between the two calibra-    typical gas mixture (see Tables V and VI) and adding a
+tions. The resolution at each peak is held constant and        trace of active 71 GeH4 . The counters were filled with a
+is set to be the average of the resolutions of 55 Fe for all   mixture (%GeH4 ∼10% and pressure ≈650 mmHg) very
+counter calibrations, scaled to the L- or K-peak energy as     similar to the mixture used in the BEST extractions.
+described in Sec. V A. Events are then accepted as can-        Each proportional counter was installed into the same
+                                                                                                                                                                                        9
+
+                                                                                                     1 6 0
+
+                                                                                                     1 4 0
+
+                                                                                                     1 2 0
+
+
+
+
+                                                                  C o u n ts p e r b in 0 .2 k e V
+                                                                                                     1 0 0
+
+                                                                                                       8 0
+
+                                                                                                       6 0
+
+                                                                                                       4 0
+
+                                                                                                       2 0
+
+                                                                                                          0
+                                                                                                              0    1   2   3   4   5        6       7       8   9   1 0   1 1   1 2   1 3
+                                                                                                                                       E n e rg y , k e V
+                                                                                                     1 6 0
+
+                                                                                                     1 4 0
+
+                                                                                                     1 2 0
+
+FIG. 6. Upper panel: energy vs rise-time histogram of all         C o u n ts p e r b in 0 .2 k e V   1 0 0
+events of the outer target after the shield-open cut observed
+in all ten exposures during the first 30 days after extraction.                                        8 0
+The live time is 249 days, and 1387 events are shown. Lower
+panel: the same histogram for the 504 events that occurred                                             6 0
+during an equal live-time interval beginning at 40 days after
+extraction.                                                                                            4 0
+
+                                                                                                       2 0
+TABLE VII. A summary of event selection cuts and their
+individual acceptances.                                                                                   0
+                                                                                                              0    1   2   3   4   5        6       7       8   9   1 0   1 1   1 2   1 3
+               Cut           Efficiency (%)                                                                                            E n e rg y , k e V
+               Energy window 98±1.3
+               Rise-time     96                                   FIG. 7. Plots with energy spectra of selected events for whole
+                                                                  dataset showing K and L peaks. Top: Energy spectrum of
+                                                                  the inner target. Bottom: Energy spectrum of the outer
+                                                                  target.
+
+channel of the counting system with approximately the
+same high voltage as used in the BEST measurements.               55
+                                                                    Fe calibrations are shown as darkened.
+The cut values for the K and L peaks are set such that
+                                                                    Figure 7 shows the energy spectra of the selected K
+4% of the slowest events in 71 Ge calibration data are ex-
+                                                                  and L peak candidate events for the inner and the outer
+cluded. The derived typical cut values for K and L peaks
+                                                                  targets. We note that the event selection windows were
+were 13.2 ns and 9.1 ns respectively. However, the cut
+                                                                  determined from post-experiment calibrations, and hence
+values vary by detector, and individual TN values were
+                                                                  the cut boundary parameters were effectively blind dur-
+used for each counter. The cut values on TN windows
+                                                                  ing the analysis. No additional blindness scheme was
+for K and L peak for each counter are given in Tables V
+                                                                  implemented.
+and VI.
+   Table VII summarizes the event selection cuts applied
+in the BEST analysis and their individual acceptances.
+Figures 5 and 6 show the histograms of all events from                                                            C.   Neutrino-Nucleon Cross Section
+the inner and the outer zones, after the first four cuts, for
+the earlier and the later counting times. The number of             The neutrino-nucleon cross section (σ) has to be cal-
+events outside the peaks is about the same in both panels         culated from nuclear physics input. The bulk of the cross
+as these are mainly due to background. The expected               section is in the ground-state to ground-state transition
+location of the 71 Ge K and L peaks as predicted by the           determined from the matrix element for the decay of
+                                                                                                                                 10
+
+                                                               tainty compared to the other uncertainties in this work
+TABLE VIII. A summary of the published neutrino-nucleon
+                                                               and we ignore it.
+cross section estimates for 71 Ga in units of 10−45 cm2 .
+                                                                 The Semenov et al. and Kostensalo et al. results differ
+                                                               by about 4%, which is about 2-3 times larger than the
+          Reference Cross Section Q-value (keV)
+                                                               uncertainty estimated for each. Interestingly, the original
+          [45]      5.81+0.21
+                        −0.16     232.69(15)                   Bahcall number is half way between these two results
+          [49]      5.93±0.14     232.69(15)
+                                                               with a ±4% uncertainty. We therefore use the Bahcall σ
+          [51]      5.910 ± 0.114 233.5(1.2)
+          [52]      5.67±0.06     232.49(22)                   value and the associated conservative uncertainties from
+          [53]      5.938±0.116 232.443(93)                    his estimate of [(5.81+0.21
+                                                                                     −0.16 )×10
+                                                                                                −45
+                                                                                                    ] cm2 . The recent cross
+                                                               section estimates are summarized in Table VIII.
+
+
+71                                                                      D.      Energy-weighted Likelihood Fits
+  Ge. When the original gallium anomaly was observed,
+there was concern that the transition strengths to ex-
+cited states were not fully understood. The cross section         The time sequence of the candidate 71 Ge events are
+was first estimated in the seminal work of Bahcall [45].       analyzed with a maximum likelihood method to separate
+He derived the ground state contribution from the 71 Ge        the 71 Ge decay with 11.4 day half-life from remaining
+half-life, but the excited state contributions were esti-      background, which is constant over time. The likelihood
+mated from charge exchange (i.e. (p,n)) reactions. Bah-        fit takes into account the decay of 51 Cr during the expo-
+call considered a number of possible uncertainties, the        sure period.
+largest coming from the excited state contributions due           In general, the likelihood function (L) used in the
+to the quality of the (p,n) data available at that time. For   BEST analysis can be written for a single run as
+the central value, Bahcall used the best estimate of the
+transition strength values to the first two excited states                       R                      l
+                                                                      L = e− counting time P (t,E)dt
+                                                                                                        Y
+and a Q-value of (232.69±0.15) keV. Other excited states                                                     P (ti , Ei )dti ,   (4)
+are too high in energy to contribute for 51 Cr ν’s energy.                                               i
+Bahcall estimated the uncertainty to be the change in σ
+(-1.6/+2.8%) if one ignores the excited states. Other un-      where l is the total number of observed events, ti is the
+certainties came from forbidden corrections to the beta        time of event i, and P (t, E) is the total probability that
+decay matrix elements (2.3%) with small uncertainties          an event with energy E will occur at time t. If the events
+associated with the Qval (0.05%), the reaction thresh-         that pass all selection criteria are classified as either the
+old (0.2%), and the 71 Ge half life (0.3%). He considered      signal or the background, the function P (t, E) can be
+part of the excited state uncertainty as one-sided, hence      generalized to the form
+the asymmetric uncertainties. The charge exchange data
+has been improved [46] by recent work [47–49] indicat-                       P (t, E) = wp (E)pe−λt + wb (E)b ,                 (5)
+ing that they are not the cause of the discrepancy. How-
+ever, the excited-state contribution uncertainty is critical   where p and b are the production rate and the back-
+because the (p,n) measurements have a significant can-         ground rate, respectively;  is the overall efficiency; and
+cellation between the Gamow-Teller and tensor matrix           the terms wp (E) and wb (E), called the weight factors,
+elements resulting in an underestimate of the transition       are the energy-dependent probabilities that the event is
+strengths [50]. The (p,n) cross section could be entirely      due to signal or to background, respectively. The func-
+due to the tensor interaction, in which case (either) ex-      tional form of wp (E) must be obtained from an exper-
+cited state contribution to neutrino absorption might be       iment in which only signal is present, and the form of
+zero. Unfortunately, there is no direct measurement of         wb (E) is measured when only background is present. It
+the cross section at this energy that is not subject to the    is assumed that both weight factors are independent of
+caveats of neutrino oscillation physics.                       time and are normalized such that
+   Kostensalo et al. [52] used a more recent Qval =
+(232.49 ± 0.22) keV [54] and a nuclear shell model cal-                 Z Ehi                   Z Ehi
+culation with wave functions obtained using recent two-                          wp (E)dE =             wb (E)dE = 1 ,           (6)
+nucleon interactions to calculate the transition strengths.               Elo                     Elo
+The shell model calculations thus avoid the drawback of
+using the (p,n) measurements but need to be experimen-         where the integrals extend over the range Elo to Ehi used
+tally confirmed by indirect means, such as state ener-         in event selection (±1 FWHM for this analysis).
+gies and electromagnetic properties. The paper of Se-             Combining Eq. 4, 5 and 6, the likelihood function is
+menov et al. [53] reproduces Bahcall’s approach but uses       generalized to
+modern values for the transition strengths and a Q-value
+                                                                                     l
+of (232.443±0.093) keV [55]. This small difference in             L = e−p∆/λ−bτ
+                                                                                     Y 
+                                                                                        wp (Ei )pe−λti + wb (Ei )b dti dEi ,
+                                                                                                                   
+                                                                                                                                 (7)
+Q-value between the estimates generates a small uncer-                                i
+                                                                                                                               11
+
+                                                                for the non-trivial shapes of the Ga targets, a Monte
+                                                                Carlo integration technique was adapted for the neutrino
+                                                                capture rate calculations in the target zones. Calcula-
+                                                                tions with the nominal geometry described in Fig. 8 yield
+                                                                1.22545 m3 and 6.5561 m3 , which correspond to 7.4691 t
+                                                                and 39.9593 t of liquid Ga. The measured masses of the
+                                                                targets are 7.4060 t and 39.9617 t for the inner and outer
+                                                                zones, respectively, with negligible uncertainty for both
+                                                                masses.
+                                                                   We attribute the discrepancy of the measured and the
+                                                                calculated mass values to the uncertainty in the dimen-
+                                                                sional measurements, especially in the shell thickness of
+                                                                the spherical volume. In a study to explore how sensitive
+                                                                the Monte Carlo results are to various alterations in ge-
+                                                                ometry, modifying the spherical shell thickness from the
+                                                                nominal value of 0.50 cm to 0.68 cm was found to neutral-
+                                                                ize the difference in the mass values. We include the error
+                                                                of inaccurate knowledge of the sphere shell thickness as a
+                                                                systematic uncertainty of the path length, which for the
+                                                                sphere amounts to 0.4% and for the cylinder is negligible.
+                                                                Accounting also for the uncertainties in gallium weighing,
+                                                                we use (7.4691±0.0631) t and (39.9593±0.0024) t as the
+FIG. 8. The geometrical dimensions of the Ga targets. All       nominal masses of the inner and the outer targets.
+dimensions are in centimeters. There is an empty segment in        The effective path length in a volume, or the average
+the spherical vessel due to the thickened wall and the bottom
+                                                                path length the νe takes through the Ga target, is calcu-
+of the re-entrant tube.
+                                                                lated by the integral
+
+where ∆ is the probability an event will occur while                                             Z
+                                                                                                     1
+counting is in progress and τ is the total counting time.                            < L >=            2
+                                                                                                         d~x ,               (10)
+                                                                                                  V 4πd
+For maximization purposes, the likelihood function can
+be arbitrary up to a constant. Hence, Eq. 7 can be di-          where d is the distance between emission in the source
+         Ql
+vided by i wb (Ei )dti dEi and written as                       and absorption in the Ga targets
+                                                                  We carry out the Monte Carlo integration to yield the
+                         l
+                                                                path length values for the inner and the outer volumes.
+                         Y  wp (Ei )                           Taking into account both the statistical uncertainty due
+        L = e−p∆/λ−bτ                   pe−λti + b ,
+                                                    
+                                                         (8)
+                              wb (Ei )                          to the 107 sample Monte Carlo integration and the sys-
+                          i
+                                                                tematic uncertainty from the dimensional uncertainties
+which is the standard function that is used by all ra-          of the apparatus, the average path lengths for the two
+diochemical solar neutrino experiments to analyze their         volumes are
+counting data where the usual term e−λti has been re-
+placed by
+                                                                             < L >in = (52.03 ± 0.18) cm , and
+                                                                                                                             (11)
+                                                                            < L >out = (54.41 ± 0.18) cm .
+                       wp (Ei ) −λti
+                                e    .                   (9)      The neutrino capture rate rj in the volume Vj can be
+                       wb (Ei )
+                                                                written as
+   The signal and the background weight factors were
+determined by examining the energy spectra for each                             4 Z
+counter. The use of the energy weight factors shifts the                 rj =
+                                                                                X
+                                                                                          F Pee (~x, Eνk )σk nd~x
+results by values that are quite compatible with the sta-                            Vj
+                                                                                 k
+tistical uncertainty.                                                                                                        (12)
+                                                                                       4     N
+                                                                                 1 X X pk Pee (d, Eνk )
+                                                                            ≈ V0                        Θj (~xi ) ,
+                                                                                 N   i=1
+                                                                                              d2
+                                                                                       k
+        E.   Predicted 71 Ge Production Rates
+                                                                where F is the flux of νe , Pee (~x, Eνk ) is the oscillation sur-
+   The expected 71 Ge production rates depend on various        vival probability of νe with energy Eνk , pk is the branch-
+physical constants presented in Table IX and the geome-         ing ratio for the νe with energy Eνk , σk is the cross sec-
+tries of the targets, illustrated in Fig. 8. To account         tion, n is the 71 Ga number density, and Θ(~xi ) = 1 if ~xi
+                                                                                                                                   12
+
+
+TABLE IX. Values and uncertainties of the terms that enter the calculation of the predicted production rate. All uncertainties
+are symmetric except for the cross section.
+                                                                                              Uncertainty
+                                                                                 Value Magnitude         %
+               Ga density ρ (g Ga/cm3 )                                          6.095     0.002       0.033
+               Avogadro’s number N0 (1023 atoms Ga/mol)                          6.0221      0.0         0.0
+               Ga molecular weight M (g Ga/mol)                                69.72307 0.00013       0.0002
+               71
+                  Ga Atomic abundance f1 (atoms 71 Ga/100 atoms Ga) [56]        39.8921   0.0062       0.016
+               Atomic density D = ρN0 f1 /M (1022 atoms 71 Ga/cm3 )              2.1001   0.0008       0.037
+               Source activity at reference time A, MCi                          3.414     0.008        0.23
+               Cross section σ (10−45 cm2 / (71 Ga atom 51 Cr decay)), Bahcall    5.81  +0.21,-0.16 +3.6,-2.8
+               Path length in Ga < Lin > (cm)                                    52.03      0.18         0.3
+               Path length in Ga < Lout > (cm)                                   54.41      0.18         0.3
+               Predicted production rate (71 Ge atoms/d), rIn                          69.4     +2.5,-2.0   +3.6,-2.8
+               Predicted production rate (71 Ge atoms/d), rOut                         72.6     +2.6,-2.1   +3.6,-2.8
+
+
+is within V and 0 otherwise. The summation over k is                     The background from solar neutrino capture conforms
+for the four neutrino energies and their branching ratios              to (66.1±3.1) solar neutrino unit (SNU 1 ) [41] as ex-
+747 keV (81.63%), 427 keV (8.95%), 752 keV (8.49%) and                 plained below, and was taken into account when deter-
+432 keV (0.93%) [31]. The summation over i is for the                  mining the production rate from the source. In general,
+Monte Carlo integration over N samples. For the no os-                 the contribution from the solar neutrino capture is 0.6
+cillation case, the survival probability at a short distance           and 3.2 counts for the inner and the outer targets. These
+is simply Pee (d) = 1. In the case where only one sterile              are 0.8% and 4.6% of the total numbers fit to 71 Ge, re-
+mass eigenstate m4 is introduced to the standard three                 spectively. Due to the inefficiency of extractions, there
+active mass states and m4  m1 , m2 , m3 , the survival                are also residual 71 Ge atoms that carryover from one ex-
+probability of any active neutrino at a short distance d               traction to the next. The contribution from the carryover
+is governed by the two-neutrino oscillation model                      atom was typically less than 1 count for each volume and
+                                                                       was also taken into account.
+                                                                         The best fit production rates of 71 Ge from the com-
+                                           ∆m2 [eV2 ]d[m]
+                                                           
+                        2     2                                        bined data analysis for each target at the reference time
+  Pee (Eν , d) = 1 − sin 2θsin        1.27                       ,
+                                            Eν [MeV]                   are
+                                                      (13)
+where ∆m2 is the mass squared difference between the
+                                                                                    rIn-fit = (54.9 ± 2.5) atoms/d ,
+active and the inactive state, θ is the mixing angle, and                                                                         (15)
+Eν is the neutrino energy.                                                          rOut-fit = (55.6 ± 2.7) atoms/d .
+   Using the source activity of (3.414±0.008) MCi, the
+neutrino-nucleus cross section, and combining the uncer-               The stated uncertainty is statistical and is given with
+tainty in quadrature, Eq. 12 gives the predicted produc-               68% confidence. The fit values of 71 Ge half-life from
+tion rates of                                                          the inner and the outer targets are (11.11 ± 0.69) d and
+                                                                       (11.05 ± 0.72) d. These are in good agreement with the
+                                                                       accepted half-life of (11.43 ± 0.03) d [39].
+                               +2.5
+             rIn-predic = (69.4−2.0 ) atom/d ,
+                                                                (14)
+             rOut-predic = (72.6+2.6
+                                −2.1 ) atom/d .                                         G.    Systematic Studies
+
+  The uncertainties are dominated by the cross-section                    The systematic uncertainties are categorized into four
+uncertainty, and thus are strongly correlated in these pre-            basic types: 1) uncertainties related to the chemical ex-
+dictions for the two volumes.                                          traction efficiency (δG ), 2) uncertainties in the counting
+                                                                       efficiency (δC ), 3) uncertainties arising from background
+                                                                       phenomena (δN ), and the average path uength uncer-
+        F.   Measured 71 Ge Production Rates                           tainty. The uncertainties related to the measurement are
+                                                                       summarized in Table XII, while item 4) is related to the
+   The results of the likelihood fits for individual runs and          prediction.
+the combined fits are presented in Tables X and XI. For
+each run and also for the combined runs, the likelihood
+fits to the time distribution of the candidate events were
+                                                                       1 1 SNU = 1 interaction per 1036 target atoms per second
+performed as described in Refs. [24, 25].
+                                                                                                                             13
+
+
+TABLE X. A summary of the likelihood fits for the production rate for the inner target from each extraction and the combined
+fit of all extractions, in K and L peak independently and combined. The production rates for each exposure for the K and
+L-peaks are referred to its starting time, taking into account the total detection efficiency. The production rate for their
+combined result is referred to the reference time. All production rates for the K+L-peak are referred to the reference time. The
+stated uncertainties are statistical and given in 68% confidence. The Cramér-von Mises statistics N w2 measures the goodness
+of fit of the sequence of event times. The probability was inferred from N w2 by simulation.
+         K-peak
+                                                                                 71
+                     Number of Number 51                                              Ge Production
+                                         Cr source Solar ν                                                Probability
+          Extraction candidate fit to                       Carryover                  decay rate   N w2
+                                71    production production                                                  (%)
+                       events      Ge                                                 (atoms/day)
+                                                                                            +6.3
+           Inner-1       88     88.0      87.6       0.4       0.0                      48.2−4.2    0.110     49
+           Inner-2         81        70.2       68.1         0.4         1.7            40.5+5.6
+                                                                                            −6.8    0.081      58
+           Inner-3         69        61.2       60.1         0.3         0.8            39.0+5.9
+                                                                                            −6.1    0.124      35
+           Inner-4         65        65.0       63.9         0.3         0.8            37.5+5.6
+                                                                                            −4.2    0.057      82
+           Inner-5         57        32.5       31.6         0.3         0.6            19.5+3.6
+                                                                                            −4.6    0.107      23
+           Inner-6         44        36.4       35.7         0.2         0.5            22.0+3.7
+                                                                                            −4.4    0.026      96
+           Inner-7         43        23.0       22.4         0.3         0.3            14.0+3.1
+                                                                                            −3.9    0.048      70
+           Inner-8         28        15.9       15.3         0.3         0.3             8.9+2.6
+                                                                                            −3.3    0.160      11
+           Inner-9         40        6.3         5.8         0.3         0.2             3.4+2.0
+                                                                                            −2.9    0.071      54
+           Inner-10        28        13.3       12.9         0.3         0.1             7.8+2.3
+                                                                                            −3.0    0.031      91
+          Comb. K         543       411.6       403.2        3.0         5.4            58.5+3.4
+                                                                                            −3.5    0.095      44
+         L-peak
+                                                                                 71
+                     Number of Number 51                                              Ge Production
+                                         Cr source Solar ν                                                Probability
+          Extraction candidate fit to                       Carryover                  decay rate   N w2
+                                71    production production                                                  (%)
+                       events      Ge                                                 (atoms/day)
+           Inner-1       92     89.5      89.2       0.4       0.0                      51.4+8.3
+                                                                                            −4.1    0.353     6
+           Inner-2         48        42.5       40.8         0.4         1.4            28.0+5.2
+                                                                                            −5.7    0.023      99
+           Inner-3         63        56.2       55.1         0.3         0.8            35.8+6.1
+                                                                                            −5.8    0.079      58
+           Inner-4         28        19.5       19.0         0.2         0.3            23.3+6.2
+                                                                                            −7.4    0.101      36
+           Inner-5         77        27.5       26.6         0.3         0.6            16.4+3.4
+                                                                                            −4.6    0.046      74
+           Inner-6         37        11.6       11.2         0.2         0.2            13.7+4.6
+                                                                                            −6.0    0.115      20
+           Inner-7         48        22.1       21.5         0.3         0.3            14.4+3.5
+                                                                                            −4.5    0.142      9
+           Inner-8         31        17.6       17.0         0.3         0.3             9.4+2.3
+                                                                                            −3.1    0.066      53
+           Inner-9         66        17.4       16.9         0.3         0.2             9.9+2.9
+                                                                                            −3.7    0.209      5
+           Inner-10        60        11.4       11.0         0.3         0.2             6.3+2.4
+                                                                                            −3.2    0.085      44
+           Comb. L        550       311.3       304.0        3.0         4.3            50.7+3.7
+                                                                                            −3.7     0.07      48
+         K+L-peak
+                                                                                 71
+                     Number of Number 51                                              Ge Production
+                                         Cr source Solar ν                                                Probability
+          Extraction candidate fit to                       Carryover                  decay rate   N w2
+                                71    production production                                                  (%)
+                       events      Ge                                                 (atoms/day)
+           Inner-1      180     176.3     175.5      0.8       0.0                      49.4+4.0
+                                                                                            −4.2    0.398     6
+           Inner-2        129       111.5       107.7        0.8         3.1            44.9+5.6
+                                                                                            −5.9    0.065      70
+           Inner-3        132       117.6       115.3        0.7         1.6            62.9+7.1
+                                                                                            −7.4    0.056      76
+           Inner-4         93        87.3       85.6         0.6         1.1           73.3+8.0
+                                                                                           −8.6     0.077      59
+           Inner-5        134        60.2       58.4         0.6         1.2           49.8+7.7
+                                                                                           −8.2     0.033      92
+           Inner-6         81        48.8       47.7         0.4         0.7           69.5+11.0
+                                                                                           −12.0    0.067      49
+           Inner-7         91        45.0       43.9         0.5         0.6           64.6+11.6
+                                                                                           −12.6    0.127      13
+           Inner-8         59        33.6       32.4         0.6         0.6           53.8+11.0
+                                                                                           −12.2    0.037      87
+           Inner-9        106        23.7       22.7         0.6         0.4           49.9+14.9
+                                                                                           −16.5    0.164      10
+           Inner-10        88        25.2       24.3         0.6         0.3           69.1+17.3
+                                                                                           −19.4    0.108      26
+         Comb. K+L        1093      724.0       708.2        6.1         9.7           54.9+2.4
+                                                                                           −2.5     0.099      28
+                                                                                                                             14
+
+
+TABLE XI. A summary of the likelihood fits for the production rate for the outer target from each extraction and the combined
+fit of all extractions, in K and L peak independently and combined. The production rates for each exposure for the K and
+L-peaks are referred to its starting time, taking into account the total detection efficiency. The production rate for their
+combined result is referred to the reference time. All production rates for the K+L-peak are referred to the reference time. The
+stated uncertainties are statistical and given in 68% confidence. The Cramér-von Mises statistics N w2 measures the goodness
+of fit of the sequence of event times. The probability was inferred from N w2 by simulation.
+         K-peak
+                                                                                 71
+                     Number of Number 51                                              Ge Production
+                                         Cr source Solar ν                                                Probability
+          Extraction candidate fit to                       Carryover                  decay rate   N w2
+                                71    production production                                                  (%)
+                       events      Ge                                                 (atoms/day)
+                                                                                            +6.1
+           Outer-1       89     77.3      75.4       1.8       0.1                      46.8−7.5    0.051     83
+           Outer-2         99        89.1       86.3         1.8         1.0            49.1+5.1
+                                                                                            −7.5    0.070      67
+           Outer-3         62        48.1       46.1         1.3         0.7            34.3+5.7
+                                                                                            −8.2    0.158      20
+           Outer-4         64        55.2       53.0         1.7         0.5            31.2+4.6
+                                                                                            −6.1    0.037      90
+           Outer-5         50        28.4       26.2         1.7         0.5            15.3+2.5
+                                                                                            −5.0    0.148      9
+           Outer-6         50        43.6       41.6         1.6         0.4            25.4+3.1
+                                                                                            −5.4    0.085      53
+           Outer-7         28        20.5       18.7         1.6         0.2            11.6+1.7
+                                                                                            −4.2    0.227      6
+           Outer-8         33        25.0       22.9         1.9         0.2            12.1+1.7
+                                                                                            −4.0    0.130      25
+           Outer-9         23        10.6        9.1         1.4         0.1             6.6+0.0
+                                                                                            −4.0    0.055      63
+           Outer-10        27        16.7       14.9         1.7         0.1             9.0+1.6
+                                                                                            −4.0    0.043      78
+          Comb. K         524       415.4       395.1        16.6        3.7            59.4+3.6
+                                                                                            −3.7    0.066      58
+         L-peak
+                                                                                 71
+                     Number of Number 51                                              Ge Production
+                                         Cr source Solar ν                                                Probability
+          Extraction candidate fit to                       Carryover                  decay rate   N w2
+                                71    production production                                                  (%)
+                       events      Ge                                                 (atoms/day)
+           Outer-1       92     51.5      49.6       1.8       0.1                      32.1+6.9
+                                                                                            −9.1    0.216     11
+           Outer-2         75        75.0       72.6         1.5         0.9            48.1+7.5
+                                                                                            −4.9    0.035      95
+           Outer-3         54        45.9       43.6         1.5         0.8            28.4+4.2
+                                                                                            −6.2    0.202      15
+           Outer-4         34        27.0       25.9         0.8         0.3            30.4+6.0
+                                                                                            −8.5    0.159      18
+           Outer-5         70        35.6       33.3         1.8         0.5            18.6+2.6
+                                                                                            −5.3    0.045      74
+           Outer-6         47        18.3       17.3         0.8         0.2            22.1+5.1
+                                                                                            −8.1    0.147      9
+           Outer-7         41        17.2       15.5         1.5         0.2            10.2+2.1
+                                                                                            −4.6    0.071      47
+           Outer-8         35        18.0       15.9         1.9         0.2             8.1+1.4
+                                                                                            −3.8    0.060      58
+           Outer-9         43        9.1         7.3         1.7         0.1             4.6+1.5
+                                                                                            −4.0    0.080      44
+           Outer-10        54        14.6       12.6         1.9         0.1             7.1+1.6
+                                                                                            −4.0    0.038      85
+           Comb. L        545       320.6       302.0        15.3        3.3            50.9+3.9
+                                                                                            −3.9    0.062      54
+         K+L-peak
+                                                                                 71
+                     Number of Number 51                                              Ge Production
+                                         Cr source Solar ν                                                Probability
+          Extraction candidate fit to                       Carryover                  decay rate   N w2
+                                71    production production                                                  (%)
+                       events      Ge                                                 (atoms/day)
+           Outer-1      181     133.4     129.6      3.7       0.1                      41.1+5.2
+                                                                                            −5.3    0.191     18
+           Outer-2        174       163.8       158.6        3.3         1.9            63.6+5.5
+                                                                                            −5.7    0.065      73
+           Outer-3        116        92.5       88.2         2.8         1.5            51.4+6.9
+                                                                                            −7.3    0.123      32
+           Outer-4         98        82.3       78.9         2.5         0.8           66.6+9.2
+                                                                                           −9.8     0.045      84
+           Outer-5        120        64.0       59.5         3.5         1.0           46.9+7.2
+                                                                                           −7.9     0.068      48
+           Outer-6         97        62.3       59.3         2.6         0.4           87.3+12.3
+                                                                                           −13.2    0.095      30
+           Outer-7         69        38.0       34.4         3.2         0.4           50.4+9.6
+                                                                                           −10.6    0.132      13
+           Outer-8         68        43.4       39.2         3.9         0.4           59.7+10.8
+                                                                                           −11.7    0.072      50
+           Outer-9         66        20.2       17.0         3.0         0.2           43.0+13.5
+                                                                                           −15.3    0.044      80
+           Outer-10        81        31.8       28.0         3.6         0.2           78.8+18.1
+                                                                                           −20.0    0.028      96
+         Comb. K+L        1069      738.8       699.8        32.2        6.8           55.6+2.6
+                                                                                           −2.7     0.079      32
+                                                                                                                     15
+
+
+      TABLE XII. Summary of the contributions to the systematic uncertainty in the measured neutrino capture rate.
+                         Origin of uncertainty                              Uncertainty (%)
+                         Chemical Extraction Efficiency
+                              Efficiency of extraction from Ga metal, δG1        ±1.0
+                              Efficiency of synthesis into GeH4 , δG2            ±1.3
+                              Carrier carryover, δG3                          negligible
+                              Mass of Ga, δG4                                 negligible
+                                             Chemical Extraction Subtotal        ±1.6
+                         Counting Efficiency
+                              Calculated Efficiency
+                                 Volume Efficiency, δC1                       -1.5, +1.8
+                                 Peak Efficiency, δC2                            ±1.3
+                                 Simulations to adjust for counter filling,
+                                                                                 ±0.6
+                                 Monte Carlo interpolation, δC3
+                              Calibration Statistics
+                                 Gain Variation, δC4                             +0.4
+                                 Resolution, δC5                                 ±0.3
+                                 Centroid, δC6                                   ±0.1
+                                 Rise time cut, δC7                           negligible
+                                              Counting Efficiency Subtotal    -2.1, +2.3
+                         Background Discrimination
+                              Residual Radon after Time Cuts, δN 1              −0.04
+                              Solar Neutrino Background, δN 2                   ±0.20
+                              71
+                                 Ge carryover, δN 3                             ±0.05
+                                      Background Discrimination Subtotal         ±0.2
+                         Total Systematic Uncertainty                         -2.7, +2.9
+
+
+                1.   Extraction Efficiencies                  determined using the calibrated stem of the Toepler
+                                                              pump, which is the main apparatus in the gas pumping
+i. Extraction efficiency from Ga metal, δG1                   system and the preparation of the working mixture
+                                                              of the counter. In the Topler pump, there are two
+   Special Ge carriers were produced with a known num-
+                                                              calibrated stems with measured volumes. Their volumes
+ber of 71 Ge contents [32]. These carriers were added to
+                                                              sizes were obtained by a large series of calibration
+the reactors, and the numbers of 71 Ge atoms extracted
+                                                              measurements with uncertainty not higher than 1%.
+were counted and compared to the added numbers of
+71                                                            The calculation is based on the difference in mercury
+   Ge atoms. The ratio of extracted and added Ge atoms
+                                                              levels in the evacuated part of the Toepler pump,
+determines the extraction efficiency.
+                                                              which is a manometric tube with a linear scale, and a
+   Two types of carrier with different enrichment in Ge       calibrated stems of a precisely known volume, in which
+isotopes 72 Ge and 76 Ge were used for the experiment.        germane is located before being placed in the counter.
+Both ligatures were made in 2015 and were used in             Division value of the vertical scale of the pressure gauge
+preliminary solar measurements. Ge extraction efficiency      tube is 1 mm, and the measurement error is half of 1
+was determined by a mass spectrometric method of              division, i.e. 0.5 mm. Measurement of the volume of
+extraction efficiency determination, which is based on        germane is carried out in two calibrated volumes of the
+isotopic measurements [38]. In this method, the effi-         Topler pump, that reduces the measurement error to
+ciency of extraction of Ge from the Ga is calculated from     δG2 = ±1.3%.
+the measured mass and isotopic content of added and
+extracted Ge and all relevant uncertainties (uncertainty      iii. Carrier carryover, δG3
+in the total mass of Ge in the carrier, uncertainty in the
+Ge isotopic fractions of the carrier, uncertainty in the        The uncertainty of the amount of residual Ge carrier
+mass of Ge in the extracted sample, and uncertainty in        remaining from previous extractions δG3 with the
+the Ge isotopic fractions of the measured sample) are         mass spectrometric analysis, which is the part of the
+take into account. The uncertainty of the extraction          uncertainty in δG1 . Therefore, we assign negligible
+efficiency is δG1 = ±1.0 %.                                   uncertainty to δG3 .
+
+ii. Efficiency of synthesis into GeH4 , δG2                   iv. Mass of Ga, δG4
+   An uncertainty in how much extracted carrier has              The gallium target mass affects the results of measure-
+been synthesized into GeH4 . The amount of germanium          ments of the neutrino capture rate indirectly via neutrino
+entering the counter is calculated from the volume            path length from a radioactive source through the gal-
+of synthesized germane. The volume of germane is              lium target in two zones. This uncertainty δG4 is taken
+                                                                                                                     16
+
+into account in determining the average neutrino path        Considering that four counters were used twice in the
+length in the gallium targets, which is given in Sec. V E.   BEST measurements this counting systematic uncer-
+                                                             tainty should be increased by 18%, δC2 = ±1.3%.
+
+                2.   Counting Efficiencies                   iii. Monte Carlo Interpolation, δC3
+                                                                The counting efficiency is closely related to the
+  Uncertainties associated with the counting efficiencies    pressure (P ) and the percentage (G) of germane in
+of pulses from 71 Ge decays in proportional counters         the gas mixture [32]. The connection was obtained in
+constitute the second group of uncertainties, δC .           measurements of volume efficiencies in a wide range
+                                                             of parameters for different counters. To obtain the
+i. Volume efficiency, δC1                                    counting efficiencies for arbitrary parameters of the gas
+                                                             mixture, Monte Carlo calculations are used. Varying
+   The volume efficiencies of the counters were mea-
+                                                             the expression obtained in the analysis of measurements
+sured at the end of the BEST measurements using
+                                                             in accordance with the uncertainties of the pressure and
+two isotopes, 37 Ar and 71 Ge. Here, the volume effi-
+                                                             the percentage of germane (δP = δG = 2%), we obtain
+ciency is defined as the probability that the decay of
+                                                             δC3 = ±0.6% for the K peak and ±0.4% for the L peak.
+a radioactive atom in the volume of a proportional
+counter would produce a detectable signal [32]. This
+                                                             iv. Gain variation, δC4
+efficiency was calculated for each detector by comparing
+the measured count rate in each count to the count              During long-term measurements, the gain of the
+rate in the high-efficiency standardization counter. A       counting system may drift resulting in uncertainty in
+purified 37 Ar gas was mixed with 90% Ar plus 10%            energy determination. The drifts in the positions of the
+                                                             55
+CH4 , and the mixture is placed into counters under             Fe calibration peak were measured during the first
+test. All counters were filled in turn with the same gas     month of each counting. The average percentage of
+mixture. Three spectra were taken from each counter          deviation from the mean values was ±1.1%. To measure
+with each filling: the first with the voltage adjusted so    the uncertainty due to the energy determination, the
+that the 37 Ar K peak is set at the middle of the scale      calibration peak positions were shifted by ±1.1% and
+to see all pulses with energies above the K peak, the        the capture rates in the inner and the outer targets
+second that both L and K peaks were on the scale, and        were obtained. This variation study yielded the gain
+the third with the L peak, whose energy is 270 eV, at        variation uncertainty of δC4 = +0.4%. This uncertainty
+about mid-scale. After the measurements, the mixture         is one-sided because the gain drift can only reduce the
+is transferred to the specially designed standardization     number of selected events.
+counter with a volume efficiency of (99.5±0.6)%, with
+a very high transfer efficiency Etransfer > 99.5%. The       v. Resolution and centroid, δC5 and δC6
+standardization counter is brought to about the same           The systematic uncertainty of the energy resolution of
+pressure as in the test counter and the same spectra         the calibrations was determined similarly to item iv. The
+are measured. The ratio between the event rate above         average percentage of deviation of the resolution of the
+a certain threshold in the test counter, Rtest , is then     calibration peaks in the first month of measurements was
+compared with the event rate above the same threshold        ± 2%, which gives the value δC5 = ±0.3%. Similarly,
+in the standardization counter, Rtest . After minor cor-     the deviation of the centroid of the calibration peaks
+rections, the volume efficiency of the counter is given by   gives the value δC6 = ±0.1%.
+V = 0.995Rtest Etransfer D/Rstandard where D is the de-
+cay factor of the 37 between the two measurements [32].      vi. Rise time cut, δC7
+Additional measurements with 71 GeH4 mixed with                At the end of the measurement, an additional study
+Xe-GeH4 were carried out using a similar technique de-       using 71 Ge was carried out to determine the rise time
+scribed above for verification. The uncertainty assigned     (TN ) values of pulses inside the 2 FWHM regions of the
+to volume efficiency is δC1 = +1.5/ − 1.3%. Considering      L and K peaks of 71 Ge. Therefore, in contrast to the
+that four counters were used twice in the BEST mea-          previous SAGE experiments where the average TN limits
+surements this counting systematic uncertainty should        were used [32], there is no uncertainty associated with the
+be increased by 18%, δC1 = +1.8/ − 1.5%.                     incorrect determination of the TN limit interval. Hence,
+                                                             we assign negligible uncertainty to δC7 .
+ii. Counting efficiency in peaks, δC2
+   The peak counting efficiency is the ratio of the number
+of registered pulses falling inside the ±FWHM of the                       3.   Background Discrimination
+energy range of K and L peaks of 71 Ge to the total num-
+ber of counts. The value was determined by additional          Uncertainties arising from background discrimination
+measurement using 71 Ge for each counter. The details        constitute the third group of uncertainties, δN .
+of the measurement are described in Appx. A. The
+average uncertainty for peak efficiencies was δC2 ± 1.1%.    i. Residual radon after the time cuts, δN 1
+                                                                                                                             17
+
+   The number of false 71 Ge events due to internal 222 Rn     which leads to a systematic uncertainty in the neutrino
+is equal to the number of detected saturated pulses in-        path length in the inner target of 0.3%. For the external
+duced by Rn decay (NRn ) multiplied by the survival prob-      target, the corresponding uncertainty is 0.
+ability of false events after the event selection αK+L [32].      The outer radius of the spherical vessel was measured
+The fraction of the false events to the total number of        in a direct way, with a ruler, when the sphere vessel
+events N in K and L peaks is treated as a systematic           was available for measurements in the underground
+uncertainty                                                    laboratory of the GGNT. The surface of the sphere was
+                                                               covered with a layer of epoxy resin. The maximum
+                                                               irregularities of the coating did not exceed 1 mm, which
+                   NRn × αK+L
+            δN 1 =                                             varies the average neutrino path length in the outer
+                        N                                      target of the cylindrical zone by 0.2%. Variations in the
+                   425.9 × (4.3 + 7.8) × 10−4          (16)    internal dimensions of the cylindrical zone, as well as
+                 =
+                         738.8 + 724.0                         possible inaccuracies in the relative position of the axes
+                 = 0.035% .                                    of the two zones of the target do not exceed 1 mm. A
+                                                               change in the dimensions of the cylindrical zone within
+This uncertainty is one-sided negative because the effect      the indicated values leads to a change in the average
+of the residual Rn is a reduction in the detected number       neutrino path length by approximately the same 0.18
+of events.                                                     cm. Therefore, we take the total uncertainty of the
+                                                               average neutrino path length in the cylindrical zone to
+ii. Solar neutrinos, δN 2 Solar neutrinos are the              be 0.3%, i.e., the uncertainties of the average neutrino
+largest source of background in the BEST experiment.           path length in both target zones are assumed to be equal.
+They interact with the Ga targets at a constant rate,
+and this background is taken into account in the               The total systematic uncertainty, added in quadra-
+analysis of each measurement. During solar neutrino            ture, is −2.7/ + 2.9%. Including both the statistical and
+measurements, the number of solar-neutrino-induced             systematic uncertainties, we obtain 71 Ge production
+events in the inner and outer target zones was obtained        rates of
+to be 6.1 (see Table X) and 32.2 (see Table XI). These
+values are compared with the total number of pulses
+                                                                   rIn−meas. = 54.9 ± 2.5(stat.)+1.6
+                                                                                                           
+recorded in K and L peaks - 724.0 and 738.8. The solar                                          −1.5 (syst.) atoms/d
+                                                                             = 54.9+3.0
+                                                                                       
+neutrino flux and thus the uncertainty associated with it                          −2.9 atoms/d ,
+are obtained from previous gallium solar measurements             rOut−meas. = 55.6 ± 2.7(stat.)+1.6
+                                                                                                           
+                                                                                                −1.5 (syst.) atoms/d
+as (66.1 ± 3.1) SNU [32], the uncertainties are calculated
+                                                                             = 55.6+3.1
+                                                                                       
+to be δN 2 = 6.1/724.0 × 3.1/66.1 = 0.04% for the inner                            −3.1 atoms/d .
+zone and δN 2 = 32.2/738.8 × 3.1/66.1 = 0.2% for the                                                               (18)
+outer zone.
+                                                                  Various efficiencies for individual extraction are col-
+    71
+iii. Ge carryover, δN 3                                        lected and summarized in Table XIII. The fractional un-
+   The uncertainty associated with the 71 Ge remaining         certainties are the same for every extractions and given
+after extractions is found as the product of the statistical   in Table XII. The saturation factor in the table repre-
+uncertainty and the ratio of the carryover events (NCO )       sents the saturation in production rate due to 71 Ge and
+                                                               51
+to the total number of recorded events (N )                       Cr activities and is given by
+
+
+                              NCO                               fs = exp(−λ51 (ts − T ))
+                     δN 3 =       × δN ,               (17)          × [exp(−λ51 θCr ) − exp(−λ71 θCr )]/(1 − λ51 /λ71 ) ,
+                               N
+                 √                                                                                                   (19)
+where δN = 1/ N [32]. We obtain 0.03% and 0.05%
+uncertainties for the inner and the outer zones.               where λ51 and λ71 are the decay constants of 51 Cr and
+                                                               71
+                                                                  Ge, ts is the start time of each source exposure, T is the
+                                                               source activity reference time and θCr is the time of expo-
+           4.   Average Path Length Uncertainty                sure of the Ga to the 51 Cr source [24]2 . All parameters
+                                                               considered in the calculation of fs are very well estab-
+   The mass of the internal target obtained from the con-      lished, and therefore its uncertainty is negligible. The
+sidered geometry is 63.1 kg more gallium than compared
+with the mass measurement. Such a difference in the
+target gallium mass will have the maximum effect on the        2 One should note that there is a typographical error in Eq. 4 of
+change in the path length if we assume a change in the           Ref. [24]. There is a missing division sign in the denominator,
+inner radius of the sphere by 0.18 cm. We take the re-           which is corrected in Eq. 19 here in this work. The correct de-
+sulting change in the radius as the radius uncertainty,          nominator is (1 − λ51 /λ71 ).
+                                                                                                                                   18
+
+
+TABLE XIII. Summary of BEST detection efficiencies. The extraction efficiency values are taken from Tables I and II. The
+counter efficiency values and ∆ are taken from Tables III and IV. Same fractional uncertainties listed in Table XII are assigned
+to each extraction. The saturation factor is obtained from Eq. 19 with negligible uncertainty.
+                         Extraction              Counter          Total detection Counter             Total detection
+                                     Saturation
+           Extraction efficiency                efficiency ∆K        efficiency    efficiency ∆L         efficiency
+                                       factor
+                        (into GeH4 )            (K peak)             (K peak)      (L peak)              (L peak)
+           Inner-1          0.946      0.3924     0.3663 0.8100        0.1101        0.3803 0.7450         0.1052
+           Inner-2         0.9559      0.3731     0.3647 0.7839        0.1020        0.3785 0.6542         0.0883
+           Inner-3         0.9673      0.3752     0.3605 0.7143        0.0935        0.3599 0.7143         0.0933
+           Inner-4         0.9515      0.3750     0.3679 0.7870        0.1033        0.3769 0.3669         0.0493
+           Inner-5         0.9554      0.3779     0.3649 0.7470        0.0984        0.3654 0.7470         0.0986
+           Inner-6         0.9548      0.3735     0.3577 0.7714        0.0984        0.3604 0.3891         0.0500
+           Inner-7         0.9381      0.3760     0.3676 0.7495        0.0972        0.3793 0.6739         0.0902
+           Inner-8         0.9789      0.3761     0.3656 0.7754        0.1044        0.3779 0.7865         0.1094
+           Inner-9         0.9545      0.3761      0.359 0.8015        0.1033        0.361 0.8015          0.1039
+           Inner-10        0.9372      0.3770     0.3698 0.7629        0.0997        0.3755 0.8002         0.1062
+           Outer-1         0.9503      0.3924     0.3422 0.7646        0.0976        0.3596 0.6996         0.0938
+           Outer-2         0.9581      0.3731     0.3707 0.8043        0.1066        0.3792 0.6755         0.0916
+           Outer-3         0.9668      0.3752     0.2933 0.7650        0.0814        0.3358 0.7650         0.0932
+           Outer-4         0.9622      0.3750     0.3658 0.7819        0.1032        0.381 0.3755          0.0516
+           Outer-5         0.9609      0.3779     0.3568 0.8025        0.1040        0.3727 0.8025         0.1086
+           Outer-6         0.9253      0.3735     0.3585 0.8009        0.0992        0.3577 0.3845         0.0475
+           Outer-7         0.9514      0.3760     0.3407 0.7976        0.0972        0.3607 0.7107         0.0917
+           Outer-8         0.9897      0.3761     0.3716 0.8295        0.1147        0.3785 0.8406         0.1184
+           Outer-9         0.9664      0.3761      0.293 0.7865        0.0838        0.336 0.7865          0.0961
+           Outer-10        0.9538      0.3770     0.3677 0.7567        0.1001        0.3797 0.7940         0.1084
+
+
+total efficiency is the product of the chemical extrac-                             H.    Oscillation Analysis
+tion efficiency, the saturation factor, and the counting
+efficiency [24]. The typical value of the total efficiency          For n = 1, . . . , N experiments (the two BEST volumes
+is (10.0±0.3%), where systematic uncertainties are in-            are treated separately), oscillation parameters are esti-
+cluded.                                                           mated by a global minimization of
+   Fig. 9 shows the K+L production rate fits for the inner
+and the outer zones. The upper panel for each zone shows            χ2 (∆m2 , sin2 2θ) = (rmeas. − rcalc. )T V−1 (rmeas. − rcalc. ) ,
+the production rate at the start of each exposure, and the                                                                        (21)
+lower panel shows the rate normalized to the reference            where rmeas. (rcalc. ) is the vector of the measured (calcu-
+time. The results are plotted at the start of each exposure       lated) rates with ricalc. (∆m2 , sin2 2θ) and V is the covari-
+where the production rates are fit to. The vertical lines         ance matrix with
+represent the uncertainty of the fits, while horizontal lines
+only define the exposure period. The ratio of measured                             Vnk = δnk ε2n + εnCS × εkCS ,                 (22)
+to predicted production rates are
+                                                                  where ε2n = ε2n,stat + ε2n,syst are uncorrelated uncertain-
+                                                                  ties comprised of statistical and systematic measurement
+                          +3.0
+                      54.9−2.9         +0.05
+                                                                  uncertainties, and εnCS represent the correlated uncer-
+              RIn =       +2.5   = 0.79−0.05 ,                    tainties of σ [57]. For Ga source experiments, the cross-
+                      69.4−2.0
+                                                         (20)     section uncertainties are the only significant contribution
+                           +3.1
+                       55.6−3.1     +0.05                         to the correlated uncertainty. The uncertainties of the
+              ROut =          = 0.77−0.05 .
+                     72.6+2.6
+                         −2.1
+                                                                  Bahcall cross-section for measurements with a chromium
+                                                                  source are equal to +3.6/–2.8%, and hence we use ±3.6%
+These are 4.2 σ and 4.8 σ less than unity, respectively.          for the calculation. In the measurement with an ar-
+As a cross-check, the 51 Cr half-life was left free and fit-      gon source, the cross-section uncertainties do not change
+ted to the data. The values of half-life from fits to the         the values of the shown uncertainty due to their relative
+inner and the outer targets were (30.97 ± 3.90) d and             smallness.
+(31.55 ± 2.89) d. They agree with the known 51 Cr half-              Fig. 10 illustrates the exclusion contours corresponding
+life of (27.704±0.004) [35].                                      to 1σ, 2σ, and 3σ confidence levels with the two BEST
+   The ratio between the inner and the outer zones                results assuming the correlated cross section uncertain-
+Rout /Rin = (0.77 ± 0.05)/(0.79 ± 0.05) = 0.97 ± 0.08 is          ties. The best-fit result is at sin2 2θ = 0.42+0.15     2
+                                                                                                                −0.17 , ∆m =
+                                                                     +∞
+unity within uncertainty, and hence there is no difference        3.3−2.3 eV , and the contours refer to χ = χmin + ∆χ2
+                                                                              2                               2     2
+
+in the capture rates between the two zones.                       for which ∆χ2 = 2.30, 6.18, 11.83 with two degrees of
+                                                                                                                                                                                                19
+
+                                                       Production rates for the inner target                                   10
+                                                                                                     predicted                                                                             3σ
+                                       80
+        Production rate (71 Ge atoms/day)
+                                                                                                     measured                   9                                                          2σ
+                                                                                                                                8                                                          1σ
+                                       60
+                                                                                                                                                                                           b.f.p.
+                                                                                                                                7
+                                       40
+                                                                                                                                6
+
+
+
+
+                                                                                                                   ∆m2 (eV2)
+                                       20                                                                                       5
+
+                                            0 0                                                                                 4
+                                                  20     40         60         80        100   120           140
+                                                                                                                                3
+                                                                                                     predicted
+                               100
+Production rate (71 Ge atoms/day)
+
+
+
+
+                                                                                                     measured                   2
+                                                                                                     all K
+                                       80                                                            all L
+                                                                                                                                1
+                                       60                                                                                       0
+                                                                                                                                    0.0   0.1   0.2   0.3   0.4   0.5   0.6   0.7   0.8   0.9   1.0
+                                       40                                                                                                                                                 sin22
+                                       20
+                                                                                                                   FIG. 10. Allowed regions for two BEST results. The best-
+                                            0 0   20     40        60        80        100     120           140   fit point is sin2 2θ = 0.42+0.15     2     +∞     2
+                                                                                                                                              −0.17 , ∆m = 3.3−2.3 eV and is
+                                                       Time since 14:02 on 05 Jul 2019 (d)                         indicated by a point.
+                                                       Production rates for the outer Target
+                                                                                                     predicted                 10
+                                       80
+        Production rate (71 Ge atoms/day)
+
+
+
+
+                                                                                                     measured                                                                              3σ
+                                                                                                                                9                                                          2σ
+                                       60                                                                                                                                                  1σ
+                                                                                                                                8
+                                                                                                                                                                                           b.f.p.
+                                       40                                                                                       7
+                                                                                                                                6
+                                                                                                                   ∆m2 (eV2)
+
+
+
+
+                                       20
+                                                                                                                                5
+                                            0 0   20     40         60         80        100   120           140                4
+                                                                                                     predicted
+                               100                                                                                              3
+Production rate (71 Ge atoms/day)
+
+
+
+
+                                                                                                     measured
+                                                                                                     all K
+                                       80                                                            all L                      2
+                                                                                                                                1
+                                       60
+                                                                                                                                0
+                                       40                                                                                           0.0   0.1   0.2   0.3   0.4   0.5   0.6   0.7   0.8   0.9   1.0
+                                                                                                                                                                                          sin22
+                                       20
+
+                                            0 0   20     40        60        80        100     120           140   FIG. 11. Allowed regions for two GALLEX, two SAGE and
+                                                       Time since 14:02 on 05 Jul 2019 (d)                         two BEST results. The best-fit point is sin2 2θ = 0.34+0.14
+                                                                                                                                                                         −0.09 ,
+                                                                                                                   ∆m2 = 1.25+∞       2
+                                                                                                                              −0.25 eV and is indicated by a point.
+
+FIG. 9. Top: the measured K+L peak rates of the inner tar-
+get volume. Middle-top: the production rates of the inner
+target volume normalized to the reference time. The com-                                                           95.45% (2σ) and 99.73% (3σ), respectively [58]. This
+bined results for events in the L and K peaks are shown sepa-                                                      approximation is based on Wilks’ theorem. A concern
+rately and compared to the predicted rate. Middle-bottom:                                                          about the applicability of Wilks’ theorem in the oscilla-
+the measured K+L peak rates of the outer target volume.                                                            tion analysis [59] was investigated and found to have a
+Bottom: the production rates of the outer target volume                                                            small effect on the analysis [60].
+normalized to the reference time. The combined results for                                                            We also combine the BEST results with the previous
+events in the L and K peaks are shown separately and com-
+                                                                                                                   SAGE and GALLEX source experiments to plot com-
+pared to the predicted rate. The blue (red) region represents
+the predicted (measured) production rate. The dotted lines                                                         bined exclusion plots. Table XIV and Fig. 12 summarize
+enclose the ±1σ uncertainty regions.                                                                               results from all gallium anomaly experiments, including
+                                                                                                                   the SAGE [24, 25] and the GALLEX results [27].
+                                                                                                                      If the cross-section uncertainties are considered to be
+                                                                                                                   completely uncorrelated to each other and to the other
+freedom have the coverage probability of 68.27% (1σ),                                                              uncertainties, they can be added in quadrature as
+                                                                                                                                                     20
+
+
+            TABLE XIV. Results of all six Ga source experiments.
+              Experiment                       R                                      DANSS 90%        MicroBooNE (sin2 2 ee = 0)     All Ga 3
+              SAGE-Cr [24]                0.95 ± 0.12                                 Prospect 95%     MicroBooNE (sin2 2 ee marg.)   All Ga 2
+                                                                                      Stereo 95%       RAA 95% (allowed)              All solar e 's 95%
+              SAGE-Ar [25]     0.79 ± 0.095 (+0.09 / -0.10)
+                                                                                      RENO+NEOS 95%    Neutrino-4 2 (allowed)         Excluded by VSBL
+              GALLEX-Cr1 [27]            0.953 ± 0.11                                 KATRIN 95%
+              GALLEX-Cr2 [27]            0.812 ± 0.11
+              BEST-Inner                 0.791 ± 0.05
+              BEST-Outer                 0.766 ± 0.05
+
+              1.2                                                                          101
+
+              1.1
+
+
+
+
+                                                                              m 2 (eV2 )
+              1.0
+                                                                                           100
+r meas. /r pred.
+
+
+
+
+              0.9
+              0.8
+              0.7                                                                      10 101 3       10 2                10 1            100
+                                                                                                              sin2 2
+              0.6
+                    r
+
+
+                                r
+
+
+                                          r1
+
+
+                                                   r2
+
+
+                                                             er
+
+
+                                                                         r
+                    -C
+
+
+                            -A
+
+
+
+
+                                                                      ute
+                                                         Inn
+                                        -C
+
+
+                                                   -C
+                   GE
+
+
+                            GE
+
+
+
+
+                                                                  -O
+
+
+                                                                              FIG. 13. Exclusion contours of all gallium anomaly experi-
+                                      EX
+
+
+                                               EX
+
+
+                                                        T-
+
+
+                                                                  ST
+            SA
+
+
+                          SA
+
+
+
+
+                                                         S
+                                    LL
+
+
+                                              LL
+
+
+
+
+                                                                              ments: two GALLEX, two SAGE and two BEST results. The
+                                                      BE
+
+
+                                                                 BE
+                                  GA
+
+
+                                             GA
+
+
+
+
+                                                                              blue solid line and the blue dotted line show the 2σ and 3σ
+                                                                              confidence level, respectively. The figure also presents the ex-
+ FIG. 12. Ratios of measured and predicted 71 Ge production                   clusion contours from Prospect [61], DANSS [62], Stéréo [63],
+ rates in all Ga source experiments. The combined result is                   KATRIN [64], the combined analysis of RENO and NEOS
+ shown as a blue band.                                                        data [65], reactor anti-neutrino anomalies (RAA) [22], inter-
+                                                                              pretations of the MicroBooNE result for the oscillation hy-
+                                                                              pothesis with fixed mixing angle (sin2 2θ) and profiled over
+                                                                              the angle [30], and the model-independent 95% upper bound
+                                 q                                            on sin2 2θ from all solar neutrino experiments [66]. The 2σ
+                          σi =     2
+                                  σi,others + (0.032 × Ri )2 ,         (23)   allowed region of Neutrino-4 [67] is also presented and the
+                                                                              grey shading represents the merged exclusion of the very short
+ and thePcombined result R0 is obtained by the sum                            baseline (VSBL) null results.
+ R0p=         (w · Ri ), where wi = (σ0 /σi )2 and σ0 =
+       P i 2i
+ 1/      i (1/σi ). The result is given as R0 ± σ0 = 0.81 ±
+ 0.03. The total uncertainty is 4.0%.                                            Fig. 11 presents the combined result from all gallium
+    If we consider the correlation between systematic un-                     source experiments; SAGE, GALLEX and BEST, con-
+ certainties, the average value of R0,Cr is obtained first,                   sidering the correlated cross section uncertainties. The
+ and then combined with the SAGE-Ar experiment after-                         best-fit result from the combined analysis of all Ga source
+ ward. The uncertainty from the cross section evaluation                      experiments is sin2 2θ = 0.34+0.14       2         +∞
+                                                                                                            −0.09 , ∆m = 1.25−0.25 eV .
+                                                                                                                                          2
+
+ is the only significant contribution to the correlated un-                      Fig. 13 compares the combined result from all gal-
+ certainty, and hence the combined result of all six gallium                  lium anomaly experiments to some other sterile neu-
+ anomaly experiments is given as                                              trino search experiments.       The exclusion curves of
+                                                                              Prospect [61], DANSS [62], Stéréo [63], KATRIN [64],
+                           σ 2              σ 2                           the combined analysis of RENO and NEOS data [65].
+                            R                  R
+                   R0 =            · RCr +
+                                      · RAr ± σR ,       (24)                 One can see that the gallium anomaly result is still in
+               σCr              σAr                                           a strong tension with these experiments except a tiny
+                 p
+                         2 + 1/σ 2 ), R
+                                             PCr                              region above 8 eV2 . The interpretations of the Micro-
+ where σR = 1/ (1/σCr            Ar q Cr =      i (wi · Ri ),
+                                      PCr                                     BooNE result for the oscillation hypothesis either fixed
+                       2                       2
+ wi = (σ0 /σi,others ) , σ0 = 1/        i (1/σi,others ) and                  or profiled over the mixing angle (sin2 2θ) [30] are also pre-
+ σCr = σ0 + 0.032 · RCr , with the uncertainty of the to-                     sented. These results do not either favor or exclude the
+ tal Cr measurements is obtained by summing over. The                         allowed region for the gallium anomaly experiments. The
+ combined result of all six measurements is obtained as                       95% allowed region from the reactor antineutrino anoma-
+ R0 = 0.80 ± 0.047. The total uncertainty is 6.1%, which                      lies (RAA) [22] is also illustrated in the figure. One can
+ is larger than the uncorrelated estimation. The result is                    see that the tension between the Ga anomalies and the
+ illustrated in Fig. 12 as a blue band.                                       RAA still persists. The figure also shows the 2σ allowed
+                                                                                                                       21
+
+region of Neutrino-4 [67] and the model-independent 95%        neutrino source which would be challenging. The use of
+solar neutrino upper bound on sin2 2θ [66]. The Neutrino-      neutrino source with larger neutrino energy could also be
+4 allowed region is within the 3σ bound, and therefore is      considered.
+not excluded by the gallium anomaly experiments. The
+model-independent 95% solar neutrino bound on sin2 2θ
+excludes most of the 2σ allowed region, but the parame-                         VII.   CONCLUSION
+ter space near ∆m2 ≈ 1 eV2 is not entirely excluded.
+                                                                  The first result from the BEST sterile neutrino oscilla-
+                                                               tion experiment was presented. We report 21% and 23%
+                  VI.    DISCUSSION
+                                                               deficits of the 71 Ge production rates based on the cross
+                                                               section [45] in the inner and the outer zones of the BEST
+   The deficits in the production rates observed in both       Ga target. The values are consistent with the previously
+volumes are consistent with the results from previ-            reported gallium anomaly from SAGE and GALLEX ex-
+ous gallium source experiments, confirming the gallium         periments, with higher significance. The weighted av-
+anomaly. While no difference in the production rates           erage value of the neutrino capture rate relative to the
+in the two target zones is observed and the oscillation        expected value for all Ga experiments is 0.80 ± 0.05,
+length cannot be well constrained, the large deviation of      which corresponds to a 4σ deviation from unity. If at-
+R’s from unity indicates that the oscillation hypothesis       tributed to the neutrino oscillation to sterile state, the
+is favored over no-oscillation hypothesis to the extent of     result corresponds to the best fit of ∆m2 = 3.3+∞         2
+                                                                                                                 −2.3 eV
+current knowledge. Effects from systematic errors in the       and sin2 2θ = 0.42+0.15
+                                                                                     −0.17 . No difference in the capture
+extraction efficiency, the counting efficiency, Ga target      rates from the two zones at different distances is ob-
+mass, the geometry of the system, the source strength          served. This indicates a neutrino oscillation at a scale
+and the counting system operation have been thoroughly         shorter than the BEST dimensions.
+considered and confirmed by additional measurements
+                                                                  The allowed region in the (∆m2 , sin2 2θ) parameter
+to be small (see Tables IX and XII) compared to the
+                                                               space for all combined Ga source experiments shows that
+observed deficits. In addition, GALLEX’s 71 As exper-
+                                                               the Ga anomalies are still in tension with most other
+iment [68] ruled out any chemical effects of ’hot atoms’
+                                                               sterile neutrino search experiments. On the other hand,
+that would make it difficult to extract 71 Ge atoms formed
+                                                               the Neutrino-4 allowed region coincides with the gallium
+during neutrino capture. Since the physics processes in-
+                                                               anomaly result, and therefore is not rejected by the Ga
+volved in the Ga experiments are simple and understood
+                                                               source experiments. The value of ∆m2 should be bet-
+very well, it is hard to attribute the result to some unac-
+                                                               ter constrained to conclusively determine whether the
+counted effects. The 71 Ge decay rate is very well known,
+                                                               Neutrino-4 result is accepted or rejected by the Ga source
+and the neutrino-nucleon cross-section σ to the ground
+                                                               experiments.
+state in 71 Ga is hence also well determined. The σ cannot
+                                                                  Ga source experiments are unique in their capability of
+be reduced below the ground state value by considering
+                                                               searching for the very short range neutrino oscillation at
+the excited state contribution to be zero. The transition
+                                                               a meter scale, and the simplicity of the physics involved.
+to excited states cannot decrease the overall value of the
+                                                               They can provide critical information on the field of the
+total σ and hence cannot be the origin of the reported
+                                                               sterile neutrino search experiments, providing a key to
+deficits. When the solar neutrino flux measured by the
+                                                               detect the neutrino oscillation to sterile states and the
+SAGE [41] is compared to the Borexino [69] result, the
+                                                               opportunity of resolving the existing tension between the
+two experiments claim similar pp flux. SAGE measured
+                                                               reactor antineutrino experiments and other experiments.
+the pp flux produced in the Sun to be (6.0±0.84)×1010
+                                                 +0.3          Further study with other neutrino sources will enhance
+/ (cm2 s), while Borexino yielded 6.1 ± 0.05−0.5      × 1010
+       2                                                       our knowledge on the gallium anomaly, and hence lead to
+/ (cm s). However, the uncertainties are too large to          an irreplaceable contribution to the pursuit of the physics
+either confirm or exclude the overall efficiency as expla-     beyond the Standard Model.
+nation of the gallium anomaly. Other explanations with-
+out sterile neutrinos are possible but would inevitably
+require some fundamental misunderstanding of nuclear
+or atomic physics.                                                            ACKNOWLEDGMENTS
+   After the BEST measurements the gallium anomaly is
+more significant; the weighted average value of the neu-          We thank V. A. Rubakov for constant stimulation
+trino capture rate relative to the expected value for all      of our interest and for fruitful discussions. This work
+Ga experiments is 0.80 ± 0.05. The result indicates that       is supported by Federal Agency for Scientific Organi-
+the oscillation length is similar to, or smaller than, the     zations (FANO), Ministry of Education and Science of
+volume of the BEST targets. Hence, ∆m2 is unbounded            Russian Federation under agreement no. 14.619.21.0009
+from above by the BEST experiment. A future Ga ex-             (unique project identifier no. RFMEFI61917X0009),
+periment with shorter baseline would help constraining         State Atomic Energy Corporation Rosatom, and the Of-
+the value of ∆m2 , but it would require the use of stronger    fice of Nuclear Physics of the US Department of Energy.
+                                                                                                                                      22
+
+
+                                      TABLE XV. A summary of the 71 Ge counter calibration.
+                              55 Fe                           L-peak                                      K-peak
+      Counter                                       Position          Resolution               Position           Resolution
+                                              Pred.               Pred.                   Pred.               Pred.
+                                     En
+                    Pos. Resol.               from True           from True               from True           from True
+                                non-linearity 55            Ratio 55           Ratio       55 Fe        Ratio 55           Ratio
+                   (a.u.) (%)                    Fe (a.u.)           Fe (%)                      (a.u.)          Fe (%)
+                                   factor
+                                              (a.u.)               (%)                    (a.u.)               (%)
+      sys2z
+      YCN43        437.39   18.2       0.982    86.81 87.16   1.00   40.92 40.29   0.98   755.35 725.50   0.96   15.88 12.98   0.82
+      YCNA9        431.86   19.7       0.938    85.71 86.32   1.01   44.29 42.57   0.96   712.39 728.84   1.02   17.19 16.02   0.93
+      YCN41        442.80   18.0       0.967    87.88 87.00   0.99   40.40 37.24   0.92   753.01 732.49   0.97   15.68 13.34   0.85
+      YCN46        448.93   18.5       0.915    89.10 90.61   1.02   41.48 39.62   1.04   722.39 748.55   0.96   16.10 14.16   0.88
+      Mean sys2z                                              1.00                 0.96                   1.00                 0.87
+      std                                                     0.01                 0.03                   0.04                 0.05
+      sys3
+      YCN113       337.36   18.8       0.982    66.96 57.71   0.86   42.09 42.13   1.00   582.61 564.38   0.97   16.34 14.13   0.86
+      YCT92        334.67   18.9       0.964    66.42 56.72   0.85   42.40 41.88   0.99   567.37 563.97   0.99   16.46 13.90   0.84
+      YCT3         342.65   19.3       0.932    68.01 58.24   0.86   43.23 40.61   0.94   561.61 576.97   1.03   16.78 14.19   0.85
+      YCT2         337.00   18.8       0.982    66.89 57.77   0.86   42.24 41.62   0.99   581.98 563.33   0.97   16.40 14.05   0.86
+      YCT9         334.80   19.1       0.978    66.45 57.97   0.87   42.90 39.42   0.92   575.83 569.62   0.99   16.65 13.89   0.83
+      YCT97        332.81   18.6       0.932    66.05 57.11   0.86   41.64 38.75   0.93   545.48 559.25   1.03   16.16 13.51   0.84
+      Mean sys3                                               0.86                 0.96                   1.00                 0.85
+      std                                                     0.01                 0.03                   0.03                 0.01
+
+
+
+                TABLE XVI. A summary of the TN event selection efficiency test using 71 Ge calibration data.
+                          Num. Ev.   L-peak    Num. Ev           Num. Ev. K-peak          Num. Ev
+                Counter                                    ratio                                      ratio
+                           L- all  TN cut (ns) L- selected         k- all   TN cut (ns) k- selected
+                sys2z
+                YCN43       495        10          463     0.94      489        13.2          468     0.96
+                YCNA9       1281      13.2        1244     0.97     1167        18.8         1142     0.98
+                YCN41       1353      10.3        1299     0.96     1434        13.4         1374     0.96
+                YCN46       941       11.3         897     0.95      865        15.2          837     0.97
+                mean 2z                                    0.95                                       0.97
+                std                                        0.01                                       0.01
+                sys3
+                YCN113      1643       9.1        1626     0.99     1488        13.6         1426     0.96
+                YCT92       265       13.0         250     0.94      243        17.6          237     0.98
+                YCT4        508       10.2         497     0.98      328        13.2          313     0.95
+                YCT3        314       10.3         297     0.95      258        16.4          252     0.98
+                YCT2        1475      10.1        1415     0.96     1483        16.6         1427     0.96
+                YCT9        397        9.1         388     0.98      341        14.9          322     0.94
+                YCT97       1622      11.4        1551     0.96     1607        17.3         1562     0.97
+                mean sys3                                  0.96                                       0.96
+                std                                        0.02                                       0.02
+
+
+             Appendix A: 71 Ge Calibration                            account the counter non-linearity factors, are presented
+                                                                      with the true location of the X-ray peaks. Means and
+        1.   Correction for Energy Calibration
+                                                                      standard deviations of the two types of counter systems:
+                                                                      sys2z (new) and sys3 (old), are also presented for each
+                                                                      peak. These values are used as correction factors for the
+   To verify the extrapolation for the K and L peak re-               event selection.
+gions from the 55 Fe calibration peak, counters were filled
+with 71 Ge for additional analysis. Positions and resolu-
+tions of the peaks from extrapolation were compared to                        2.    Rise time window TN Selection Test
+the true 71 Ge peaks. This analysis also enables to select
+events with real TN limits and verify the accepted value                The 71 Ge calibration data is also used as a test to the
+of 96% acceptance.                                                    TN limits event selection windows. The cutoff values,
+   Table XV summarizes the positions and the resolutions              determined as the ratio of TN selected events to all events
+of the 55 Fe calibration and the 71 Ge K and L peaks. The             without selection, is expected to be close to 96%. The
+values predicted from the calibration peak, taking into               values presented in Table XVI agrees with 96% within
+                                                                                                                                            23
+
+
+                              TABLE XVII. BEST results without the first Cr extractions
+                                                 Number of events assigned to
+                                                                              71
+                                                                                 Ge
+                      Number of Number 51
+                                          Cr source Solar ν                Production
+          Extraction candidate fit to                          Carryover               N w2 Probability (%)
+                                 71    production production               decay rate
+                       events       Ge
+                                                                          (atoms/day)
+          Inner 9 Ex.       913 553.9      538.9      5.3         9.7       57.7+3.2
+                                                                                 −3.1  0.093      26
+          Outer 9 Ex.       889 599.7      564.5      28.5        6.6       59.8+3.1
+                                                                                 −3.2  0.058      59
+
+
+uncertainty. Hence the TN event selection efficiency is                    10
+verified.                                                                                                                              3σ
+                                                                            9                                                          2σ
+                                                                            8                                                          1σ
+Appendix B: Results without the First Data Points                                                                                      b.f.p.
+                                                                            7
+                                                                            6
+
+
+
+
+                                                               ∆m2 (eV2)
+   In Fig. 9, it seems that the most significant contri-
+butions to the deficit for both the inner and the outer                     5
+volumes originate from the first extractions. To examine
+                                                                            4
+the effect of the first extraction, we carried out an analy-
+sis leaving out the first extraction. For the 9 runs of each                3
+target without the first extractions, the combined best
+                                                                            2
+fit rates are:
+                                                                            1
+
+       rIn−meas. = 57.7 ± 3.2 atoms71 Ge/day ,                              0
+                                                       (B1)                     0.0   0.1   0.2   0.3   0.4   0.5   0.6   0.7   0.8   0.9   1.0
+                                       71
+     rOut−meas. = 59.8 ± 3.2 atoms Ge/day .                                                                                           sin22
+                                                                           10
+These are 3% and 6% increase in rates, respectively. The                                                                               3σ
+statistical uncertainty with 68% confidence increases by                    9                                                          2σ
+19% in the two volumes. The quadratic combination of                        8                                                          1σ
+all systematic uncertainties is -2.7/+2.9%. The values                                                                                 b.f.p.
+                                                                            7
+are summarized in Table XVII.
+   The measured production rates in the K and L peaks,                      6
+                                                               ∆m2 (eV2)
+
+
+
+
+including both statistical and systematic uncertainties
+                                                                            5
+combined in quadrature are
+                                                                            4
+                                     +1.7                                   3
+        rIn−meas. = 57.7 ± 3.2(stat.)−1.6 (syst.)
+                 = 57.7+3.6       71
+                       −3.6 atoms Ge/day ,
+                                                                            2
+                                    +1.7
+                                                       (B2)
+      rOut−meas. = 59.8 ± 3.2(stat.)−1.6 (syst.)                            1
+                       +3.6       71                                        0
+                 = 59.8−3.6 atoms Ge/day .
+                                                                                0.0   0.1   0.2   0.3   0.4   0.5   0.6   0.7   0.8   0.9   1.0
+  The ratio of measured to predicted production rates                                                                                 sin22
+are
+                                                               FIG. 14. Top: Allowed regions for two BEST results with-
+                                                               out the first extractions. The best-fit point is sin2 2θ=0.35,
+                          +3.6
+                      57.7−3.6                                 ∆m2 =6.7 eV2 and is indicated by a point. Bottom: Al-
+                                       +0.06
+              RIn =       +2.5   = 0.83−0.06 ,                 lowed regions for two GALLEX, two SAGE and two BEST
+                      69.4−2.0                                 results without the first extractions. The best-fit point is
+                                                       (B3)
+                           +3.6
+                       59.8−3.6                                sin2 2θ=0.31, ∆m2 = 2.85 eV2 and is indicated by a point.
+                                    +0.06
+              ROut =          = 0.82−0.06 .
+                     72.6+2.6
+                         −2.1
+
+These are 2.9σ and 3.1σ less than unity. The ratio of                 Appendix C: 51 Cr Branching Ratio Uncertainty
+the outer to the inner result is 0.99 ± 0.08 and there is
+no difference in the capture rates in the two zones. In           The calorimetric heat measurement relies on the
+Fig. 14, the allowed region for the BEST result and for        branching ratio of the 320 keV 51 Cr emission to normal-
+all gallium anomaly experiments are illustrated.               ize to activity. If the branching value is in error, so would
+                                                                                                                                24
+
+be the source strength.
+                                                                   TABLE XVIII. A summary of the branching ratio of the
+                                                                   320 keV emission from 51 Cr.
+                                                                    Branching ratio Reference Method
+                                                                    0.1030(19)      [70]      Ge(Li)
+                                                                    0.0990(8)       [71]      NaI
+                                                                    0.1008(11)      [71]      HPGe
+                                                                    0.099(1)        [72]      HPGe (Beta-gamma coincidence)
+                                                                    0.0987(3)       [73]      Si(Li) with fixed activity
+
+                                                                     Table XVIII summarizes various measurements of the
+                                                                   branching ratio to the excited state. The branching ratios
+                                                                   are claimed to be known to a precision ∼0.1%, and vary
+                                                                   within themselves by 4%. This is much smaller than the
+                                                                   observed gallium anomaly and is not enough to explain
+                                                                   our results.
+
+
+
+
+ [1] B. Pontecorvo, Neutrino experiments and the problem of             ph.CO].
+     conservation of leptonic charge, Sov. Phys. JETP 26, 165      [14] M. M. Ivanov, M. Simonović, and M. Zaldarriaga, Cos-
+     (1968).                                                            mological Parameters and Neutrino Masses from the Fi-
+ [2] S. Gariazzo, C. Giunti, M. Laveder, Y. F. Li, and E. M.            nal Planck and Full-Shape BOSS Data, Phys. Rev. D
+     Zavanin, Light sterile neutrinos, Journal of Physics G:            101, 083504 (2020), arXiv:1912.08208 [astro-ph.CO].
+     Nuclear and Particle Physics 43, 033001 (2015).               [15] S. L. Glashow, The future of elementary particle physics,
+ [3] C. Giunti and T. Lasserre, ev-scale sterile neutri-                in Quarks and Leptons, edited by M. Lévy, J.-L. Basde-
+     nos, Annual Review of Nuclear and Particle Science                 vant, D. Speiser, J. Weyers, R. Gastmans, and M. Jacob
+     69, 163 (2019), https://doi.org/10.1146/annurev-nucl-              (Springer US, Boston, MA, 1980) pp. 687–713.
+     101918-023755.                                                [16] J.
+                                                                        NSchechter and J. W. F. Valle, Neutrino masses in su(2)
+ [4] S. Böser, C. Buck, C. Giunti, J. Lesgourgues, L. Ludhova,             u(1) theories, Phys. Rev. D 22, 2227 (1980).
+     S. Mertens, A. Schukraft, and M. Wurm, Status of light        [17] R. N. Mohapatra and G. Senjanović, Neutrino mass and
+     sterile neutrino searches, Progress in Particle and Nuclear        spontaneous parity nonconservation, Phys. Rev. Lett. 44,
+     Physics 111, 103736 (2020).                                        912 (1980).
+ [5] A. Diaz, C. Argüelles, G. Collin, J. Conrad, and M. Shae-    [18] P. Minkowski, µ → eγ at a rate of one out of 109 muon
+     vitz, Where are we with light sterile neutrinos?, Physics          decays?, Physics Letters B 67, 421 (1977).
+     Reports 884, 1 (2020).                                        [19] C. Athanassopoulos, L. B. Auerbach, R. L. Burman,
+ [6] S.-H. Seo, Review of sterile neutrino experiments, in              I. Cohen, D. O. Caldwell, B. D. Dieterle, J. B. Donahue,
+     PARTICLE PHYSICS at the Year of 150th Anniversary                  A. M. Eisner, A. Fazely, F. J. Federspiel, et al. (LSND
+     of the Mendeleev’s Periodic Table of Chemical Elements:            Collaboration), Evidence for ν µ → ν e oscillations from
+     Proceedings of the Nineteenth Lomonosov Conference on              the lsnd experiment at the los alamos meson physics fa-
+     Elementary Particle Physics (World Scientific, 2021) pp.           cility, Phys. Rev. Lett. 77, 3082 (1996).
+     10–16.                                                        [20] A. Aguilar, L. B. Auerbach, R. L. Burman, D. O. Cald-
+ [7] B. Dasgupta and J. Kopp, Sterile neutrinos, arXiv                  well, E. D. Church, A. K. Cochran, J. B. Donahue,
+     preprint arXiv:2106.05913 (2021).                                  A. Fazely, G. T. Garvey, R. M. Gunasingha, et al. (LSND
+ [8] P. Janot and S. Jadach, Improved Bhabha cross section              Collaboration), Evidence for neutrino oscillations from
+     at LEP and the number of light neutrino species (2020),            the observation of ν e appearance in a ν µ beam, Phys.
+     arXiv:1912.02067 [hep-ph].                                         Rev. D 64, 112007 (2001).
+ [9] J. Abdallah et al. (DELPHI), Photon events with miss-         [21] T. A. Mueller, D. Lhuillier, M. Fallot, A. Letourneau,
+     ing energy in e+ − e− collisions at s1/2 = 130 GeV to              S. Cormon, M. Fechner, L. Giot, T. Lasserre, J. Martino,
+     209 GeV, Eur. Phys. J. C 38, 395 (2005), arXiv:hep-                G. Mention, A. Porta, and F. Yermia, Improved predic-
+     ex/0406019.                                                        tions of reactor antineutrino spectra, Phys. Rev. C 83,
+[10] P. Achard et al. (L3), Single photon and multiphoton               054615 (2011).
+     events with missing energy in e+ e− collisions at LEP,        [22] G. Mention, M. Fechner, T. Lasserre, T. A. Mueller,
+     Phys. Lett. B 587, 16 (2004), arXiv:hep-ex/0402002.                D. Lhuillier, M. Cribier, and A. Letourneau, Reactor an-
+[11] Precision electroweak measurements on the Z resonance,             tineutrino anomaly, Phys. Rev. D 83, 073006 (2011).
+     Physics Reports 427, 257 (2006).                              [23] P. Adamson, F. P. An, I. Anghel, A. Aurisano, A. B.
+[12] N. Aghanim et al. (Planck), Planck 2018 results. VI.               Balantekin, H. R. Band, G. Barr, M. Bishai, A. Blake,
+     Cosmological parameters, Astron. Astrophys. 641, A6                S. Blyth, et al. (Daya Bay Collaboration and MINOS
+     (2020), arXiv:1807.06209 [astro-ph.CO].                            Collaboration), Limits on active to sterile neutrino oscil-
+[13] B. D. Fields, K. A. Olive, T.-H. Yeh, and C. Young, Big-           lations from disappearance searches in the MINOS, Daya
+     Bang Nucleosynthesis after Planck, JCAP 03, 010, [Er-              Bay, and Bugey-3 experiments, Phys. Rev. Lett. 117,
+     ratum: JCAP 11, E02 (2020)], arXiv:1912.01132 [astro-              151801 (2016).
+                                                                                                                                  25
+
+[24] J. N. Abdurashitov, V. N. Gavrin, S. V. Girin, V. V. Gor-         lation of the gallium-germanium solar neutrino tele-
+     bachev, T. V. Ibragimova, A. V. Kalikhov, N. G. Khair-            scope, AIP Conference Proceedings 126, 175 (1985),
+     nasov, T. V. Knodel, V. N. Kornoukhov, I. N. Mirmov,              https://aip.scitation.org/doi/pdf/10.1063/1.35146.
+     et al. (The SAGE Collaboration), Measurement of the          [38] B. Cleveland, V. Gavrin, V. Gorbachev, T. Ibragimova,
+     response of a gallium metal solar neutrino experiment             T. Knodel, Y. Malyshkin, I. Mirmov, and E. Veretenkin,
+     to neutrinos from a 51 Cr source, Phys. Rev. C 59, 2246           Use of enriched isotopes to measure efficiency of chemical
+     (1999).                                                           extraction in the SAGE solar neutrino experiment, Inter-
+[25] J. N. Abdurashitov, V. N. Gavrin, S. V. Girin, V. V.              national Journal of Mass Spectrometry 392, 41 (2015).
+     Gorbachev, P. P. Gurkina, T. V. Ibragimova, A. V. Ka-        [39] W. Hampel and L. P. Remsberg, Half-life of 71 Ge, Phys.
+     likhov, N. G. Khairnasov, T. V. Knodel, V. A. Matveev,            Rev. C 31, 666 (1985).
+     et al., Measurement of the response of a ga solar neutrino   [40] S. Danshin, A. Kopylov, and V. Yants, Small gas propor-
+     experiment to neutrinos from a 37 Ar source, Phys. Rev.           tional counters filled with an Ar-CO2 mixture for count-
+     C 73, 045805 (2006).                                              ing of ultra-low activities of 37 Ar, Nuclear Instruments
+[26] W. Hampel, G. Heusser, J. Kiko, T. Kirsten, M. Lauben-            and Methods in Physics Research Section A: Acceler-
+     stein, E. Pernicka, W. Rau, U. Rönn, C. Schlosser,               ators, Spectrometers, Detectors and Associated Equip-
+     M. Wójcik, et al., Final results of the 51 Cr neutrino           ment 349, 466 (1994).
+     source experiments in GALLEX, Physics Letters B 420,         [41] J. N. Abdurashitov, V. N. Gavrin, V. V. Gorbachev, P. P.
+     114 (1998).                                                       Gurkina, T. V. Ibragimova, A. V. Kalikhov, N. G. Khair-
+[27] F. Kaether, W. Hampel, G. Heusser, J. Kiko, and                   nasov, T. V. Knodel, I. N. Mirmov, A. A. Shikhin, et al.
+     T. Kirsten, Reanalysis of the GALLEX solar neutrino               (SAGE Collaboration), Measurement of the solar neu-
+     flux and source experiments, Physics Letters B 685, 47            trino capture rate with gallium metal. III. results for the
+     (2010).                                                           2002–2007 data-taking period, Phys. Rev. C 80, 015807
+[28] P. Abratenko, R. An, J. Anthony, L. Arellano, J. Asaadi,          (2009).
+     A. Ashkenazi, S. Balasubramanian, B. Baller, C. Barnes,      [42] S. R. Elliott, An analytical expression for the extended
+     G. Barr, et al., Search for an excess of electron neutrino        pulse shape in a proportional counter, Nucl. Instr. and
+     interactions in MicroBooNE using multiple final state             Meth. A 290, 158 (1990), erratum Nucl. Instr. and Meth.
+     topologies, arXiv preprint arXiv:2110.14054 (2021).               A 297, 536 (1990).
+[29] P. B. Denton, Sterile neutrino searches with Mi-             [43] V. Gavrin and V. Gorbachev, Background of external
+     croBooNE: Electron neutrino disappearance (2021),                 γ radiation in the proportional counters of the SAGE
+     arXiv:2111.05793 [hep-ph].                                        experiment, Physics of Atomic Nuclei 66, 268 (2003).
+[30] C. A. Argüelles, I. Esteban, M. Hostert, K. J. Kelly,       [44] V. Gavrin, V. Gorbachev, and I. Mirm, Effect of radon on
+     J. Kopp, P. A. N. Machado, I. Martinez-Soler, and                 SAGE results, Physics of Atomic Nuclei 65, 843 (2002).
+     Y. F. Perez-Gonzalez, MicroBooNE and the νe inter-           [45] J. N. Bahcall, Gallium solar neutrino experiments: Ab-
+     pretation of the MiniBooNE low-energy excess (2021),              sorption cross sections, neutrino spectra, and predicted
+     arXiv:2111.10359 [hep-ph].                                        event rates, Phys. Rev. C 56, 3391 (1997).
+[31] M. A. Acero, C. Giunti, and M. Laveder, Limits on νe and     [46] H. Ejiri, H. Akimune, Y. Arimoto, I. Daito, H. Fu-
+     ν e disappearance from gallium and reactor experiments,           jimura, Y. Fujita, M. Fujiwara, K. Fushimi, M. Green-
+     Phys. Rev. D 78, 073009 (2008).                                   field, M. Harakeh, et al., Spin-isospin responses of 71 Ga
+[32] J. N. Abdurashitov, V. N. Gavrin, S. V. Girin, V. V. Gor-         for solar neutrinos studied by 71 Ga (3 He, tγ) 71 Ge reac-
+     bachev, T. V. Ibragimova, A. V. Kalikhov, N. G. Khair-            tion, Physics Letters B 433, 257 (1998).
+     nasov, T. V. Knodel, I. N. Mirmov, A. A. Shikhin, et al.     [47] D. Frekers, H. Ejiri, H. Akimune, T. Adachi, B. Bilgier,
+     (SAGE Collaboration), Measurement of the solar neu-               B. Brown, B. Cleveland, H. Fujita, Y. Fujita, M. Fuji-
+     trino capture rate with gallium metal, Phys. Rev. C 60,           wara, et al., The 71 Ga(3 He,t) reaction and the low-energy
+     055801 (1999).                                                    neutrino response, Physics Letters B 706, 134 (2011).
+[33] J. Kozlova, E. Veretenkin, V. Gavrin, A. Zvir, T. Ibrag-     [48] D. Frekers, M. Simon, C. Andreoiu, J. Bale, M. Brodeur,
+     imova, and V. Tarasov, Measurement of activity of an              T. Brunner, A. Chaudhuri, U. Chowdhury, J. Crespo
+     artificial neutrino source in the BEST experiment by the          López-Urrutia, P. Delheij, et al., Penning-trap Q-value
+     calorimetric method, Physics of Atomic Nuclei 83, 958             determination of the Ga71(ν, e− )Ge71 reaction using
+     (2020).                                                           threshold charge breeding of on-line produced isotopes,
+[34] V. Gavrin, T. Ibragimova, J. Kozlova, V. Tarasov,                 Physics Letters B 722, 233 (2013).
+     E. Veretenkin, and A. Zvir, Measurement of neutrino          [49] D. Frekers, T. Adachi, H. Akimune, M. Alanssari, B. A.
+     source activity in the experiment BEST by calorimetric            Brown, B. T. Cleveland, H. Ejiri, H. Fujita, Y. Fu-
+     method, Journal of Instrumentation 16 (04), P04012.               jita, M. Fujiwara, et al., Precision evaluation of the
+[35] C. Zhou, Nucl. Data Sheets 63, 229 (1991).                        71
+                                                                          Ga(νe , e− ) solar neutrino capture rate from the (3 He, t)
+[36] J. N. Bahcall, B. T. Cleveland, R. Davis, I. Dostrovsky,          charge-exchange reaction, Phys. Rev. C 91, 034608
+     J. C. Evans, W. Frati, G. Friedlander, K. Lande, J. K.            (2015).
+     Rowley, R. W. Stoenner, and J. Weneser, Proposed solar-      [50] W. Haxton, Cross section uncertainties in the gallium
+     neutrino experiment using 71 Ga, Phys. Rev. Lett. 40,             neutrino source experiments, Physics Letters B 431, 110
+     1351 (1978).                                                      (1998).
+[37] I. R. Barabanov, E. P. Veretenkin, V. N. Gavrin,             [51] V. Barinov, B. Cleveland, V. Gavrin, D. Gorbunov, and
+     S. N. Danshin, L. A. Eroshkina, G. T. Zatsepin,                   T. Ibragimova, Revised neutrino-gallium cross section
+     Y. I. Zakharov, S. A. Klimova, Y. B. Klimov,                      and prospects of best in resolving the gallium anomaly,
+     T. V. Knodel, A. V. Kopylov, I. V. Orekhov,                       Phys. Rev. D 97, 073001 (2018).
+     A. A. Tikhonov, and M. I. Churmaeva, Pilot instal-           [52] J. Kostensalo, J. Suhonen, C. Giunti, and P. Srivastava,
+                                                                                                                                 26
+
+     The gallium anomaly revisited, Physics Letters B 795,              102, 052002 (2020).
+     542 (2019).                                                   [64] M. Aker, K. Altenmüller, A. Beglarian, J. Behrens,
+[53] S. Semenov, Cross section of neutrino absorption by the            A. Berlev, U. Besserer, B. Bieringer, K. Blaum, F. Block,
+     gallium-71 nucleus, Physics of Atomic Nuclei 83, 1549              B. Bornschein, et al. (KATRIN Collaboration), Bound
+     (2020).                                                            on 3 + 1 active-sterile neutrino mixing from the first
+[54] K. Abusaleem and B. Singh, Nuclear data sheets for A               four-week science run of KATRIN, Phys. Rev. Lett. 126,
+     = 71, Nuclear Data Sheets 112, 133 (2011).                         091803 (2021).
+[55] M. Alanssari, D. Frekers, T. Eronen, L. Canete,               [65] Z. Atif, J. Choi, H. Jang, J. Jang, S. Jeon, K. Joo, K. Ju,
+     J. Hakala, M. Holl, A. Jokinen, A. Kankainen,                      D. Jung, J. Kim, J. Kim, et al., Search for sterile neutrino
+     J. Koponen, I. Moore, D. Nesterenko, I. Pohjalainen,               oscillation using RENO and NEOS data, arXiv preprint
+     J. Reinikainen, S. Rinta-Antila, and A. Voss, Precision            arXiv:2011.00896 (2020).
+     Ga71–Ge71 mass-difference measurement, International          [66] C. Giunti, Y. Li, C. Ternes, and Y. Zhang, Neutrino-4
+     Journal of Mass Spectrometry 406, 1 (2016).                        anomaly: Oscillations or fluctuations?, Physics Letters
+[56] L. Machlan, J. Gramlich, L. Powell, and G. Lambert,                B 816, 136214 (2021).
+     Absolute isotopic abundance ratio and atomic weight of        [67] A. Serebrov and R. Samoilov, Analysis of the results of
+     a reference sample of gallium, Journal of Research of the          the Neutrino-4 experiment on the search for the sterile
+     National Bureau of Standards 91, 323 (1986).                       neutrino and comparison with results of other experi-
+[57] G. L. Fogli, E. Lisi, A. Marrone, D. Montanino, and                ments, JETP Letters 112, 199 (2020).
+     A. Palazzo, Getting the most from the statistical analy-      [68] W. Hampel, J. Handt, G. Heusser, D. Kaether, J. Kiko,
+     sis of solar neutrino oscillations, Phys. Rev. D 66, 053010        T. Kirsten, M. Laubenstein, E. Neder, E. Pernicka,
+     (2002).                                                            W. Rau, et al., Verification tests of the GALLEX solar
+[58] K. Olive, Review of particle physics, Chinese Physics C            neutrino detector, with 71 Ge produced in-situ from the
+     38, 090001 (2014).                                                 beta-decay of 71 As, Physics Letters B 436, 158 (1998).
+[59] P. Coloma, P. Huber, and T. Schwetz, Statistical inter-       [69] M. Agostini, K. Altenmüller, S. Appel, D. Jeschke,
+     pretation of sterile neutrino oscillation searches at reac-        B. Neumair, L. Oberauer, L. Papp, S. Schönert, F. von
+     tors, The European Physical Journal C 81, 1 (2021).                Feilitzsch, V. Atroshchenko, et al., Comprehensive mea-
+[60] J. M. Berryman, P. Coloma, P. Huber, T. Schwetz, and               surement of pp-chain solar neutrinos, Nature 562, 505
+     A. Zhou, Statistical significance of the sterile-neutrino          (2018).
+     hypothesis in the context of reactor and gallium data         [70] S. Fisher and R. Hershberger, Branching ratios for ec
+     (2021), arXiv:2111.12530 [hep-ph].                                 decay of 7 be and 51 cr, Nuclear Physics A 423, 121 (1984).
+[61] M. Andriamirado, A. B. Balantekin, H. R. Band, C. D.          [71] A. Konstantinov, T. Sazonova, S. Sepman, A. Zanevsky,
+     Bass, D. E. Bergeron, D. Berish, N. S. Bowden, J. P.               and N. Karmalitsyn, Determination of x-ray and gamma-
+     Brodsky, C. D. Bryan, T. Classen, et al. (PROSPECT                 ray emission probabilities of 51 Cr and 88 Y, Nuclear In-
+     Collaboration), Improved short-baseline neutrino oscilla-          struments and Methods in Physics Research Section A:
+     tion search and energy spectrum measurement with the               Accelerators, Spectrometers, Detectors and Associated
+     PROSPECT experiment at HFIR, Phys. Rev. D 103,                     Equipment 339, 200 (1994).
+     032001 (2021).                                                [72] P. Yalçin and Y. Kurucu, Emission probabilities of k x-
+[62] N. a. Skrobova, New results from the DANSS experiment,             and γ-rays following 51 Cr and 67 Ga decay, Applied Ra-
+     International Journal of Modern Physics A 35, 2044015              diation and Isotopes 62, 63 (2005).
+     (2020), https://doi.org/10.1142/S0217751X20440157.            [73] D. S. Moreira, M. F. Koskinas, I. M. Yamazaki, and
+[63] H. Almazán, L. Bernard, A. Blanchet, A. Bonhomme,                 M. S. Dias, Determination of 51 Cr and 241 Am x-ray and
+     C. Buck, P. del Amo Sanchez, I. El Atmani, J. Haser,               gamma-ray emission probabilities per decay, Applied Ra-
+     F. Kandzia, S. Kox, et al. (STEREO Collaboration), Im-             diation and Isotopes 68, 596 (2010), the 7th International
+     proved sterile neutrino constraints from the STEREO ex-            Topical Meeting on Industrial Radiation and Radio iso-
+     periment with 179 days of reactor-on data, Phys. Rev. D            tope Measurement Application(IRRMA-7).
+

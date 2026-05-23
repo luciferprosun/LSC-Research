@@ -1,0 +1,19 @@
+Subject: Data Request — LSC Framework Validation (BEST Experiment)
+
+Dear Dr. {LAST_NAME},
+
+I am writing regarding the LSC phenomenological framework (DOI: https://doi.org/10.5281/zenodo.20037838), which analyses detector-frame anisotropy in gallium-source neutrino experiments.
+
+I would like to kindly request access to the following data from the BEST experiment:
+1. Zone-separated event counts (inner/outer ratio R)
+2. Full covariance matrices (statistical + systematic)
+3. Source activity calibration data (Cr-51)
+
+This data would be used exclusively for academic validation of the LSC framework, with full attribution to the BEST collaboration.
+
+I am happy to discuss potential collaboration on any resulting publication.
+
+Best regards,
+Lukasz Zuchowski
+Independent Research
+tonystarrkarc@gmail.com

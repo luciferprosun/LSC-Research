@@ -1,0 +1,80 @@
+{
+  "source": {
+    "paper": "Results from the Baksan Experiment on Sterile Transitions (BEST)",
+    "arxiv": "2109.11482",
+    "pdf": "public_sources/arxiv/BEST_2109.11482.pdf",
+    "text": "public_sources/arxiv_txt/BEST_2109.11482.txt"
+  },
+  "reference_time_source_activity_mci": {
+    "value": 3.414,
+    "uncertainty": 0.008
+  },
+  "measured_production_rates_atoms_per_day": {
+    "inner": {
+      "value": 54.9,
+      "stat_plus": 2.5,
+      "stat_minus": 2.4,
+      "syst": 1.4
+    },
+    "outer": {
+      "value": 55.6,
+      "stat_plus": 2.7,
+      "stat_minus": 2.6,
+      "syst": 1.4
+    }
+  },
+  "predicted_production_rates_atoms_per_day": {
+    "inner": {
+      "value": 69.4,
+      "plus": 2.5,
+      "minus": 2.0
+    },
+    "outer": {
+      "value": 72.6,
+      "plus": 2.6,
+      "minus": 2.1
+    }
+  },
+  "measured_to_predicted_ratios": {
+    "Rin": {
+      "value": 0.79,
+      "uncertainty": 0.05
+    },
+    "Rout": {
+      "value": 0.77,
+      "uncertainty": 0.05
+    },
+    "outer_to_inner_ratio": {
+      "value": 0.97,
+      "uncertainty": 0.08
+    }
+  },
+  "fit_half_life_days": {
+    "ge71_inner_fit": {
+      "value": 11.11,
+      "uncertainty": 0.69
+    },
+    "ge71_outer_fit": {
+      "value": 11.05,
+      "uncertainty": 0.72
+    },
+    "cr51_cross_check_inner": {
+      "value": 30.97,
+      "uncertainty": 3.9
+    },
+    "cr51_cross_check_outer": {
+      "value": 31.55,
+      "uncertainty": 2.89
+    },
+    "cr51_known": {
+      "value": 27.704,
+      "uncertainty": 0.004
+    }
+  },
+  "covariance_matrix_publication_status": {
+    "numeric_matrix_published": false,
+    "formula_published": "V_nk = delta_nk * epsilon_n^2 + epsilon_n_CS * epsilon_k_CS",
+    "reference": "Phys. Rev. C 105, 065502 (2022), Eq. 22",
+    "note": "The paper publishes the covariance construction and uncertainty components, but not a full numeric covariance matrix table."
+  }
+}

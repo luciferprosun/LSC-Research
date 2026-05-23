@@ -1,0 +1,193 @@
+[
+  {
+    "title": "BEST sensitivity to O(1) eV sterile neutrino; BEST sensitivity to O(1) eV sterile neutrino",
+    "dois": [
+      "10.1103/PhysRevD.93.073002"
+    ],
+    "arxiv_ids": [
+      "1602.03826"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/1602.03826.pdf",
+      "https://doi.org/10.1103/PhysRevD.93.073002"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1421131?format=json"
+  },
+  {
+    "title": "Gallium Anomaly and the BEST-2 Experiment with a $^{58}$Co Source",
+    "dois": [
+      "10.1134/S1063779624702411"
+    ],
+    "arxiv_ids": [],
+    "fulltext_links": [
+      "https://doi.org/10.1134/S1063779624702411"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/2939790?format=json"
+  },
+  {
+    "title": "Revised neutrino-gallium cross section and prospects of BEST in resolving the Gallium anomaly",
+    "dois": [
+      "10.1103/PhysRevD.97.073001"
+    ],
+    "arxiv_ids": [
+      "1710.06326"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/1710.06326.pdf",
+      "https://doi.org/10.1103/PhysRevD.97.073001"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1631175?format=json"
+  },
+  {
+    "title": "BEST impact on sterile neutrino hypothesis; BEST Impact on Sterile Neutrino Hypothesis",
+    "dois": [
+      "10.1103/PhysRevD.105.L051703"
+    ],
+    "arxiv_ids": [
+      "2109.14654"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/2109.14654.pdf",
+      "https://doi.org/10.1103/PhysRevD.105.L051703"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1935810?format=json"
+  },
+  {
+    "title": "Determination of Neutrino Oscillation Parameters of Transitions to Sterile States in the BEST-2 Experiment",
+    "dois": [
+      "10.1134/S1063778823060194"
+    ],
+    "arxiv_ids": [],
+    "fulltext_links": [
+      "https://doi.org/10.1134/S1063778823060194"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/2761555?format=json"
+  },
+  {
+    "title": "Gallium experiments with artificial neutrino sources as a tool for investigation of transition to sterile states; Gallium experiments with artificial neutrino sources as a tool for investigation of transition to sterile states",
+    "dois": [],
+    "arxiv_ids": [
+      "1006.2103"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/1006.2103.pdf"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/857630?format=json"
+  },
+  {
+    "title": "BEST potential in testing the eV-scale sterile neutrino explanation of reactor antineutrino anomalies; BEST potential in testing eV-scale sterile neutrino explanation of reactor antineutrino anomalies",
+    "dois": [
+      "10.1103/PhysRevD.99.111702"
+    ],
+    "arxiv_ids": [
+      "1905.07437"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/1905.07437.pdf",
+      "https://doi.org/10.1103/PhysRevD.99.111702"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1735722?format=json"
+  },
+  {
+    "title": "The history, present and future of SAGE (Soviet-American Gallium Experiment)",
+    "dois": [
+      "10.1142/9789811204296_0002"
+    ],
+    "arxiv_ids": [],
+    "fulltext_links": [
+      "https://doi.org/10.1142/9789811204296_0002"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1735037?format=json"
+  },
+  {
+    "title": "On the gallium experiment BEST-2 with a $^{65}$Zn source to search for neutrino oscillations on a short baseline",
+    "dois": [],
+    "arxiv_ids": [
+      "1807.02977"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/1807.02977.pdf"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1681437?format=json"
+  },
+  {
+    "title": "Gallium neutrino absorption cross section and its uncertainty; The Gallium Neutrino Absorption Cross Section and its Uncertainty",
+    "dois": [
+      "10.1103/PhysRevC.108.035502"
+    ],
+    "arxiv_ids": [
+      "2303.13623"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/2303.13623.pdf",
+      "https://doi.org/10.1103/PhysRevC.108.035502"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/2645658?format=json"
+  },
+  {
+    "title": "The gallium anomaly reassessed using a Bayesian approach",
+    "dois": [],
+    "arxiv_ids": [
+      "2001.10064"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/2001.10064.pdf"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1777629?format=json"
+  },
+  {
+    "title": "Towards resolving the gallium anomaly; Towards Resolving the Gallium Anomaly",
+    "dois": [
+      "10.1007/JHEP05(2023)143"
+    ],
+    "arxiv_ids": [
+      "2303.05528"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/2303.05528.pdf",
+      "https://doi.org/10.1007/JHEP05(2023)143"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/2640713?format=json"
+  },
+  {
+    "title": "No CC-NSI explanation of the Gallium anomaly; An alternative explanation of the Gallium anomaly",
+    "dois": [],
+    "arxiv_ids": [
+      "2203.13659"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/2203.13659.pdf"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/2058442?format=json"
+  },
+  {
+    "title": "The gallium anomaly revisited; Corrigendum to \u201cThe gallium anomaly revisited\u201d [Phys. Lett. B 795 (2019) 542\u2013547]",
+    "dois": [
+      "10.1016/j.physletb.2019.06.057",
+      "10.1016/j.physletb.2023.138190"
+    ],
+    "arxiv_ids": [
+      "1906.10980"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/1906.10980.pdf",
+      "https://doi.org/10.1016/j.physletb.2019.06.057",
+      "https://doi.org/10.1016/j.physletb.2023.138190"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/1741409?format=json"
+  },
+  {
+    "title": "A decoherence explanation of the gallium neutrino anomaly; A decoherence explanation of the gallium neutrino anomaly",
+    "dois": [
+      "10.21468/SciPostPhys.15.4.172"
+    ],
+    "arxiv_ids": [
+      "2306.09422"
+    ],
+    "fulltext_links": [
+      "https://arxiv.org/pdf/2306.09422.pdf",
+      "https://doi.org/10.21468/SciPostPhys.15.4.172"
+    ],
+    "inspire_json": "https://inspirehep.net/api/literature/2669582?format=json"
+  }
+]
