@@ -18,4 +18,4 @@ Primary scientific ancestry preserved in this repository:
 
 - `MHLM_MDLH` may cite LSC as case-study material
 - `AOIA-Core` may cite LSC only as external knowledge or analysis target
-- this repository does not import MHLM framing into canonical root authority
+- mixed continuity documents were excluded from canonical LSC content and preserved in archive during extraction

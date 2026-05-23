@@ -1,14 +1,9 @@
 cff-version: 1.2.0
-title: "LLM/MHLM Main Project: Unified LSC and MHLM Research Framework"
-message: "If you use this repository, please cite the relevant version and DOI lineage."
+title: "LSC Research"
+message: "If you use this repository, cite the relevant LSC scientific release and repository snapshot."
 type: software
 authors:
   - family-names: "LuciferSun"
-    affiliation: "Independent Research"
-repository-code: "https://github.com/luciferprosun/LLM-MHLM-Main-Project"
-keywords:
-  - neutrino phenomenology
-  - scientific reproducibility
-  - ai epistemology
-  - mdlh
-license: MIT
+repository-code: "https://github.com/luciferprosun/LSC-Research"
+license: "MIT"
+abstract: "Standalone scientific repository for the LSC neutrino and Gallium research line, extracted from mixed historical roots while preserving scientific lineage and release continuity."
