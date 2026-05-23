@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "LSC 6.2.0: A Phenomenological Framework for Neutrino Propagation and Detector-Frame Tensor Anisotropy",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "description": "<p>LSC 6.2.0 is the latest preprint-stage continuation of the public LSC 6.0 phenomenological framework. It introduces a detector-frame tensor anisotropy formulation that separates propagation-level true energy from detector-level reconstructed energy. The draft is prepared for arXiv submission and is currently awaiting category endorsement.</p><p>The model is not presented as confirmed new physics. It is a testable phenomenological ansatz requiring independent review, numerical fitting, and constraints from BEST/GALLEX/SAGE gallium source data, KATRIN beta-spectrum measurements, IceCube anisotropy/systematic studies, and standard three-flavor oscillation data.</p><p>This record is intended to preserve continuity of the LSC research line for grant review and independent verification. The recommended Zenodo strategy is to publish it as a new version of the existing LSC 6.0 conceptual record.</p>",
+    "creators": [
+      {
+        "name": "LuciferSun",
+        "affiliation": "Independent Research"
+      }
+    ],
+    "publication_date": "2026-04-29",
+    "version": "6.2.0-preprint",
+    "language": "eng",
+    "keywords": [
+      "neutrino oscillations",
+      "phenomenological model",
+      "detector anisotropy",
+      "tensor response",
+      "gallium anomaly",
+      "KATRIN",
+      "IceCube",
+      "arXiv preprint",
+      "LSC framework"
+    ],
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.19780616",
+        "relation": "isNewVersionOf",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.19843361",
+        "relation": "isSupplementedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://doi.org/10.5281/zenodo.19602045",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://github.com/luciferprosun/LSC-6.0",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://arxiv.org/auth/endorse?x=7KLAMS",
+        "relation": "isReferencedBy",
+        "scheme": "url"
+      }
+    ],
+    "notes": "arXiv submission is prepared but awaiting category endorsement. This Zenodo package is intended as the stable citable preprint record while arXiv endorsement is pending."
+  }
+}

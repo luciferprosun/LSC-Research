@@ -1,0 +1,129 @@
+{
+  "anchor_rows": [
+    {
+      "kind": "anchor",
+      "name": "BEST_inner",
+      "observed_r": 0.79,
+      "predicted_r": 0.7900000000000003,
+      "pull": 2.8106912015826745e-16,
+      "residual": 2.220446049250313e-16
+    },
+    {
+      "kind": "anchor",
+      "name": "BEST_outer",
+      "observed_r": 0.77,
+      "predicted_r": 0.7699999999999998,
+      "pull": -2.8836961678575494e-16,
+      "residual": -2.220446049250313e-16
+    },
+    {
+      "kind": "anchor",
+      "name": "GALLEX_combined",
+      "observed_r": 0.882,
+      "predicted_r": 0.8820000000000008,
+      "pull": 8.811293846231401e-16,
+      "residual": 7.771561172376096e-16
+    },
+    {
+      "kind": "anchor",
+      "name": "SAGE_51Cr",
+      "observed_r": 0.95,
+      "predicted_r": 0.95,
+      "pull": 0.0,
+      "residual": 0.0
+    },
+    {
+      "kind": "anchor",
+      "name": "SAGE_37Ar",
+      "observed_r": 0.79,
+      "predicted_r": 0.7900000000000001,
+      "pull": 1.4053456007913372e-16,
+      "residual": 1.1102230246251565e-16
+    }
+  ],
+  "anchor_set": [
+    "BEST_inner",
+    "BEST_outer",
+    "GALLEX_combined",
+    "SAGE_51Cr",
+    "SAGE_37Ar"
+  ],
+  "coefficients": {
+    "beta_intercept": -0.13689793505874606,
+    "beta_length": -0.3983054826342134,
+    "beta_shape": -0.7126873203648743,
+    "beta_source": 0.14607627492352326,
+    "beta_zone": 0.019697438848611856
+  },
+  "condition_number": 78.22356558411498,
+  "loo_rows": [
+    {
+      "kind": "loo",
+      "name": "BEST_inner",
+      "observed_r": 0.79,
+      "predicted_r": 0.9658579380874833,
+      "pull": 0.22260498492086492,
+      "residual": 0.1758579380874833
+    },
+    {
+      "kind": "loo",
+      "name": "BEST_outer",
+      "observed_r": 0.77,
+      "predicted_r": 0.9415843423804166,
+      "pull": 0.22283680828625524,
+      "residual": 0.17158434238041653
+    },
+    {
+      "kind": "loo",
+      "name": "GALLEX_combined",
+      "observed_r": 0.882,
+      "predicted_r": 0.5836295143795934,
+      "pull": -0.33828853244944057,
+      "residual": -0.2983704856204066
+    },
+    {
+      "kind": "loo",
+      "name": "SAGE_51Cr",
+      "observed_r": 0.95,
+      "predicted_r": 0.7893426348140465,
+      "pull": -0.16911301598521414,
+      "residual": -0.16065736518595342
+    },
+    {
+      "kind": "loo",
+      "name": "SAGE_37Ar",
+      "observed_r": 0.79,
+      "predicted_r": 0.8178084209669149,
+      "pull": 0.035200532869512434,
+      "residual": 0.027808420966914826
+    }
+  ],
+  "source_mean_37ar_cm2": 7.01196e-45,
+  "source_mean_51cr_cm2": 5.749407e-45,
+  "validation_rows": [
+    {
+      "kind": "validation",
+      "name": "BEST_ratio",
+      "observed_r": 0.97,
+      "predicted_r": 0.9746835443037969,
+      "pull": 0.004828396189481357,
+      "residual": 0.004683544303796916
+    },
+    {
+      "kind": "validation",
+      "name": "GALLEX_Cr1",
+      "observed_r": 0.953,
+      "predicted_r": 0.8820000000000008,
+      "pull": -0.07450157397691415,
+      "residual": -0.07099999999999917
+    },
+    {
+      "kind": "validation",
+      "name": "GALLEX_Cr2",
+      "observed_r": 0.812,
+      "predicted_r": 0.8820000000000008,
+      "pull": 0.08620689655172503,
+      "residual": 0.07000000000000073
+    }
+  ]
+}

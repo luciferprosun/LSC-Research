@@ -1,0 +1,6 @@
+ArXiv-safe package generated from local LSC archive.
+Local source folder: /home/l/Desktop/prace dark neutrino /_CLEAN_ORGANIZED
+Zenodo LSC 4.2 DOI: https://doi.org/10.5281/zenodo.19602045
+Zenodo LSC 6.0 record: https://zenodo.org/records/19780616
+GitHub LSC 6.0 release: https://github.com/luciferprosun/LSC-6.0/releases/tag/v1.0.0
+All equations were rewritten in simplified LaTeX form for compilation stability.

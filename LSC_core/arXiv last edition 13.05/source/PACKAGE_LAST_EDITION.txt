@@ -1,0 +1,4 @@
+Package label: ostatnia edycja arxiv
+Created: 2026-05-08
+Source: LSC_ARXIV_SUBMISSION_READY.zip
+Note: Repacked final arXiv submission package; manuscript text synced to updated toy-validation outputs on 2026-05-13.

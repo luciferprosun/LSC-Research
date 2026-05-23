@@ -1,0 +1,324 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\title{A Detector-Response Ansatz for Gallium-Source Anomaly Validation}
+\author{Lukasz Zuchowski\\Independent researcher\\\texttt{lukasz.zuchowsky@gmail.com}}
+\date{May 7, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The gallium-source anomaly remains a useful stress test for low-energy neutrino
+calibration, detector modeling, and sterile-neutrino phenomenology.  This note
+presents the LSC 6.3.0 framework in a deliberately conservative form: not as a
+validated new-physics model, but as a detector-response ansatz intended for
+reproducible falsification.  The central object is a symmetric rank-2 response
+tensor whose trace and traceless components perturb reconstructed energy or rate
+predictions.  We outline the historical reduction of earlier propagation-centered
+LSC material into a detector-side validation program, define the minimal
+mathematical structure, and specify comparison models and veto tests needed
+before any physical interpretation is justified.  The proposed use of the
+framework is methodological: quantify whether trace-only or anisotropic
+detector-response terms improve gallium-source fits beyond scalar normalization,
+cross-section nuisance terms, sterile-neutrino benchmarks, and ordinary detector
+systematics.  A compact public-summary dataset and a standard-library Python
+validation script are included with the source package as reproducibility
+scaffolding.
+\end{abstract}
+
+\section{Scope and Scientific Status}
+
+This manuscript is based on the LSC 4.2--6.3.0 archival line and its associated
+continuity notes.  It does not claim a discovery of sterile neutrinos, exotic
+propagation, or a confirmed detector anisotropy.  The purpose is narrower: to
+state a reproducible phenomenological model class that can be tested against
+BEST, GALLEX, SAGE, and external constraints
+\cite{best2022,kaether2010,sagecr1999,sagear2006,katrin2022,icecube2020}.
+
+The motivating empirical setting is the gallium-source deficit observed in
+calibration experiments.  The standard scientific alternatives remain active:
+statistical fluctuation, source and cross-section systematics, detector modeling,
+and sterile-neutrino oscillation hypotheses \cite{giunti2011,best2022}.  The LSC
+ansatz should therefore be judged only by comparison with simpler models and by
+out-of-sample validation.
+
+\section{Public Summary Data}
+
+The accompanying file \texttt{data/gallium\_source\_summary.csv} contains the
+public summary ratios used in the toy validation.  The numbers are reproduced
+from the source-experiment literature and from the user-provided source report,
+with verification status recorded per row.  Because no official covariance
+matrix is included, the present validation uses diagonal uncertainties only.
+
+\begin{center}
+\begin{tabular}{lllll}
+\toprule
+Experiment & Source & Zone & Ratio & Total uncertainty \\
+\midrule
+GALLEX Cr1 & $^{51}$Cr & single & 0.953 & 0.110 \\
+GALLEX Cr2 & $^{51}$Cr & single & 0.812 & 0.105 \\
+SAGE Cr & $^{51}$Cr & single & 0.950 & 0.120 \\
+SAGE Ar & $^{37}$Ar & single & 0.791 & 0.084 \\
+BEST & $^{51}$Cr & inner & 0.791 & 0.055 \\
+BEST & $^{51}$Cr & outer & 0.766 & 0.055 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The BEST inner and outer ratios are reported by the collaboration as
+$R_{\rm in}=0.791\pm0.055$ and $R_{\rm out}=0.766\pm0.055$ \cite{best2022}.
+The GALLEX reanalysis reports pulse-shape ratios near 0.953 and 0.812
+\cite{kaether2010}.  The SAGE chromium and argon source values are included as
+legacy source-calibration inputs \cite{sagecr1999,sagear2006}.  These summary
+ratios are enough for a transparent toy comparison, but not for a full
+collaboration-grade likelihood.
+
+\section{Archival Reduction of the LSC Line}
+
+The source archive records a progression from broad propagation language toward
+a detector-response formulation.  LSC 4.2 used an effective Hamiltonian with
+vacuum, matter, gravitational, and LSC terms.  LSC 5.0 emphasized that small
+energy-response shifts can be amplified in event counts because charged-current
+cross sections scale strongly with energy.  LSC 5.5 introduced a tensor object
+for detector response, while LSC 6.0--6.3.0 moved the public formulation toward
+trace/traceless decomposition, null recovery, and validation against alternative
+models.
+
+For arXiv purposes, the older PBH-centered and speculative source narratives are
+not treated as central claims.  They are historical context only.  The current
+public object is a detector-response ansatz with explicit limitations and a
+defined validation program \cite{lsczenodo2026}.
+
+\section{Minimal Mathematical Structure}
+
+Let $\hat p$ denote a reconstructed direction or momentum unit vector in the
+detector frame.  A minimal detector-response perturbation can be written as
+\begin{equation}
+  \Delta_D(\hat p) = D_{ij}\hat p_i \hat p_j,
+  \label{eq:projection}
+\end{equation}
+where $D_{ij}$ is a symmetric response tensor.  The reconstructed energy may be
+modeled by the first-order rule
+\begin{equation}
+  E_{\rm rec} = E_{\rm true}\left(1 + \alpha_D D_{ij}\hat p_i\hat p_j\right),
+  \label{eq:energy}
+\end{equation}
+with $\alpha_D$ a dimensionless response amplitude.
+
+The trace and traceless pieces should be separated:
+\begin{equation}
+  D_{ij} = D_0 \delta_{ij} + A_{ij}, \qquad {\rm Tr}(A)=0.
+  \label{eq:decomp}
+\end{equation}
+In the simplest one-axis toy case,
+\begin{equation}
+  A_{ij} = \delta \left(n_i n_j - \frac{1}{3}\delta_{ij}\right),
+  \label{eq:axis}
+\end{equation}
+where $n$ is a preferred direction.  This form is not a derivation from detector
+microphysics; it is a compact falsifiable template.
+
+Event-rate perturbations may then be represented schematically as
+\begin{equation}
+  \frac{\Delta N}{N} \simeq A_G \delta_G + A_D \alpha_D \Delta_D,
+  \label{eq:rate}
+\end{equation}
+where $\delta_G$ denotes scalar normalization or cross-section nuisance effects
+and the second term captures anisotropic response.
+
+\section{Frame and Orientation Tests}
+
+A directional claim is meaningful only after defining the reference frame.  If a
+preferred vector is specified in a celestial frame, the detector-frame direction
+must be time dependent:
+\begin{equation}
+  n_{\rm lab}(t) = R_{\rm lab \leftarrow ICRS}(t) n_{\rm ICRS}.
+  \label{eq:frame}
+\end{equation}
+The corresponding signal template is
+\begin{equation}
+  S_a(t)= n_{{\rm lab},i}(t) A_{ij} n_{{\rm lab},j}(t).
+  \label{eq:sidereal}
+\end{equation}
+This is the main reason the LSC 6.3.0 archive treats orientation or sidereal
+structure as a discriminating test rather than as decoration.  Without
+geometry, time, and detector-orientation metadata, anisotropy claims should be
+treated as unsupported.
+
+\section{Comparison Models}
+
+The validation problem is not whether the ansatz can fit selected anchors, but
+whether it survives simpler alternatives after parameter penalties.  A minimum
+comparison set is:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Model & Meaning \\
+\midrule
+$M_0$ & published baseline or null expectation \\
+$M_1$ & scalar normalization nuisance only \\
+$M_2$ & cross-section nuisance only \\
+$M_3$ & sterile-neutrino benchmark \\
+$M_4$ & detector-systematics benchmark \\
+$M_5$ & LSC trace-only response \\
+$M_6$ & LSC trace plus traceless anisotropy \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For observed rate vector $R_{\rm obs}$, prediction $R_{\rm pred}(\theta,\eta)$,
+covariance $C$, physical parameters $\theta$, and nuisance parameters $\eta$,
+the basic statistic is
+\begin{equation}
+  \chi^2(\theta,\eta)=
+  \left[R_{\rm obs}-R_{\rm pred}(\theta,\eta)\right]^T
+  C^{-1}
+  \left[R_{\rm obs}-R_{\rm pred}(\theta,\eta)\right]
+  + {\rm penalty}(\eta).
+  \label{eq:chi2}
+\end{equation}
+
+\section{Toy Figures}
+
+The following diagrams are illustrative.  They are included to document the
+intended validation geometry, not to report an empirical fit.
+
+\begin{figure}[ht]
+\centering
+\setlength{\unitlength}{1mm}
+\begin{picture}(90,50)
+  \put(5,25){\vector(1,0){80}}
+  \put(45,5){\vector(0,1){40}}
+  \put(84,27){$\hat x$}
+  \put(47,44){$\hat y$}
+  \put(45,25){\line(2,1){25}}
+  \put(70,38){$n$}
+  \put(18,14){\framebox(54,22){}}
+  \put(31,11){\framebox(28,28){}}
+  \put(22,2){$1+\delta(\cos^2\phi-1/3)$}
+\end{picture}
+\caption{Toy angular projection of a traceless detector-response tensor.}
+\label{fig:tensor}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\setlength{\unitlength}{1mm}
+\begin{picture}(95,48)
+  \put(8,8){\vector(1,0){80}}
+  \put(8,8){\vector(0,1){34}}
+  \put(87,4){zone}
+  \put(2,42){rate ratio}
+  \put(22,6){1}
+  \put(38,6){2}
+  \put(54,6){3}
+  \put(70,6){4}
+  \multiput(8,24)(5,0){16}{\line(1,0){2}}
+  \put(84,23){$M_1$}
+  \qbezier(24,18)(40,22)(56,26)
+  \qbezier(56,26)(64,28)(72,31)
+  \put(84,30){$M_6$}
+  \put(24,16){\circle*{2}}
+  \put(40,22){\circle*{2}}
+  \put(56,27){\circle*{2}}
+  \put(72,34){\circle*{2}}
+\end{picture}
+\caption{Illustrative zone-level comparison between scalar and anisotropic templates.}
+\label{fig:zones}
+\end{figure}
+
+\section{Validation Protocol}
+
+A publication-grade validation program should include:
+\begin{enumerate}
+  \item frozen model specification before fitting;
+  \item null recovery when $D_{ij}\to 0$ and nuisance amplitudes vanish;
+  \item leave-one-out tests across calibration anchors;
+  \item parameter-penalized comparison against $M_0$--$M_4$;
+  \item transfer tests from BEST to GALLEX/SAGE where data permit;
+  \item external veto checks using KATRIN, IceCube, and standard oscillation constraints.
+\end{enumerate}
+
+The archive explicitly notes that exact reconstruction of selected anchors is
+not evidence of predictive validity.  Negative tests should be archived with the
+same priority as successful fits.
+
+\section{Minimal Toy Validation Output}
+
+The source package includes \texttt{scripts/validate\_gallium\_toy.py}, which
+uses only the Python standard library.  It reads the public-summary CSV and
+generates \texttt{outputs/model\_comparison.csv},
+\texttt{outputs/residuals.csv}, \texttt{outputs/model\_parameters.csv}, and
+\texttt{outputs/validation\_summary.md}.
+For the six-point diagonal-error dataset above, the weighted mean ratio is
+$0.8083\pm0.0309$.  The null model $R=1$ gives $\chi^2=42.2938$ for six points.
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Model & $\chi^2$ & parameters & AIC & AICc \\
+\midrule
+$M_0$: null ratio 1 & 42.294 & 0 & 42.294 & 42.294 \\
+$M_1$: nuisance only & 3.859 & 1 & 5.859 & 6.859 \\
+$M_3$: toy sterile averaged & 3.931 & 1 & 5.931 & 6.931 \\
+$M_5$: LSC trace only & 3.859 & 1 & 5.859 & 6.859 \\
+$M_6$: trace plus BEST anisotropy & 3.756 & 2 & 7.756 & 11.756 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In this updated toy test, the anisotropic template is fit as a common
+suppression plus an inner/outer BEST contrast term rather than by fixed
+hand-tuned offsets.  It slightly lowers $\chi^2$ but is not favored by AICc,
+and its leave-one-out predictive score is substantially worse than the simpler
+one-parameter nuisance model.  This is the intended validation pressure: LSC
+terms must beat simpler nuisance descriptions after penalty and under basic
+predictive stress, not merely reduce in-sample residuals.
+
+\section{Limitations}
+
+The current LSC 6.3.0 package is not a full official likelihood reproduction.
+The available data are sufficient for source-line loading, simple rate-ratio
+comparisons, toy modeling, and reproducibility engineering.  They are not
+sufficient for covariance-grade inference, extraction-by-extraction
+reproduction, or final physical exclusion contours.  A first-principles
+derivation of $D_{ij}$ from detector microphysics is also absent.
+
+These limitations are not cosmetic.  They determine the correct interpretation:
+the framework is a falsifiable validation scaffold, not a completed theory.
+
+\section{Reproducibility}
+
+The source continuity record for this draft is the LSC 6.3.0 archival package
+and the Zenodo continuity record \cite{lsczenodo2026}.  The present arXiv source
+package includes the manuscript, bibliography output, public-summary data,
+standard-library validation script, residual table, and model-comparison table.
+The extraction-level BEST file is included as a transcribed auxiliary table but
+is marked for manual verification before any precision claim.
+
+\section{Conclusion}
+
+The LSC detector-response ansatz is best viewed as a disciplined way to ask
+whether gallium-source anomalies contain response structure beyond scalar
+normalization and existing benchmark explanations.  Its useful contribution is
+not a claim of established new physics, but a set of tensor, frame, null, and
+comparison tests that make the hypothesis easier to reject or refine.
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

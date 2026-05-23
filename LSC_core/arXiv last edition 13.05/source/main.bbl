@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{best2022}
+V.~V. Barinov et~al.
+\newblock Results from the baksan experiment on sterile transitions (best).
+\newblock {\em Physical Review Letters}, 128:232501, 2022.
+
+\bibitem{kaether2010}
+F.~Kaether, W.~Hampel, G.~Heusser, J.~Kiko, and T.~Kirsten.
+\newblock Reanalysis of the gallex solar neutrino flux and source experiments.
+\newblock {\em Physics Letters B}, 685:47--54, 2010.
+
+\bibitem{sagecr1999}
+J.~N. Abdurashitov et~al.
+\newblock Measurement of the response of a gallium metal solar neutrino
+  experiment to neutrinos from a cr-51 source.
+\newblock {\em Physical Review C}, 59:2246--2263, 1999.
+
+\bibitem{sagear2006}
+J.~N. Abdurashitov et~al.
+\newblock Measurement of the response of a ga solar neutrino experiment to
+  neutrinos from an ar-37 source.
+\newblock {\em Physical Review C}, 73:045805, 2006.
+
+\bibitem{katrin2022}
+{KATRIN Collaboration}.
+\newblock Direct neutrino-mass measurement with sub-electronvolt sensitivity.
+\newblock {\em Nature Physics}, 18:160--166, 2022.
+
+\bibitem{icecube2020}
+{IceCube Collaboration}.
+\newblock Searches for sterile neutrinos with the icecube detector.
+\newblock {\em Physical Review Letters}, 125:141801, 2020.
+
+\bibitem{giunti2011}
+Carlo Giunti and Marco Laveder.
+\newblock Statistical significance of the gallium anomaly.
+\newblock {\em Physical Review C}, 83:065504, 2011.
+
+\bibitem{lsczenodo2026}
+{LSC archive}.
+\newblock Lsc 6.3.0 archival continuity record, 2026.
+\newblock Archival source and continuity record; not an independent validation
+  of the phenomenology.
+
+\end{thebibliography}

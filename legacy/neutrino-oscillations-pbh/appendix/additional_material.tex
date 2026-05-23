@@ -1,0 +1,43 @@
+\section{Additional Material}
+
+This section contains supplementary information and derivations that support the main body of the thesis.
+
+\subsection{Detailed Derivation of Effective Mixing Angles}
+
+Here we provide a more detailed step-by-step derivation of the effective mixing angles in the presence of matter potential induced by PBHs. Starting from the effective Hamiltonian, we diagonalize it to obtain the effective mass eigenstates and mixing angles.
+
+\begin{equation}
+\theta_m = \frac{1}{2} \arctan\left(\frac{\sin(2\theta_0)}{\cos(2\theta_0) - V_\mathrm{eff}/\Delta m^2_{21}}\right)
+\end{equation}
+
+where $V_\mathrm{eff}$ is the effective matter potential.
+
+\subsection{Numerical Stability Analysis}
+
+We performed a stability analysis of the numerical integration scheme used for solving the evolution equations. The adaptive Runge-Kutta method ensures high precision and stability even in regions with rapidly changing matter potential.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{example_stability_plot.png}
+    \caption{Example plot showing the stability of the numerical solution over varying distances.}
+    \label{fig:stability}
+\end{figure}
+
+\subsection{Data Tables}
+
+Additional data tables from simulations are provided below. These tables include detailed results for various PBH mass distributions and neutrino energies.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        PBH Mass (g) & Neutrino Energy (GeV) & Survival Probability & Resonance Radius (km) \\
+        \hline
+        $10^{15}$ & 10 & 0.75 & 120 \\
+        $10^{16}$ & 10 & 0.60 & 150 \\
+        $10^{17}$ & 10 & 0.45 & 180 \\
+        \hline
+    \end{tabular}
+    \caption{Simulation results for different PBH masses.}
+    \label{tab:sim_results}
+\end{table}

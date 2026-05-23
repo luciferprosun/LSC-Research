@@ -1,0 +1,6 @@
+model,parameter,value
+M1_nuisance_only,c0,0.808281
+M3_toy_sterile_averaged,c0,0.800000
+M5_lsc_trace_only,c0,0.808281
+M6_lsc_trace_plus_best_anisotropy,c0,0.808281
+M6_lsc_trace_plus_best_anisotropy,c1,0.012500

@@ -1,0 +1,9 @@
+name,experiment,source,observed_r,feature_length_inv,feature_shape,feature_source_norm,feature_zone_split,anchor,citation,notes
+BEST_inner,BEST,51Cr,0.790000,1.12359551,0.00000000,5.74940700,-1.00000000,True,BEST PRL 2022,Inner target volume.
+BEST_outer,BEST,51Cr,0.770000,0.88397790,0.15321369,5.74940700,1.00000000,True,BEST PRL 2022,Outer target volume.
+BEST_ratio,BEST,51Cr,0.970000,-0.23961761,0.15321369,0.00000000,2.00000000,False,BEST PRL 2022,Derived ratio R_outer / R_inner.
+GALLEX_Cr1,GALLEX,51Cr,0.953000,0.33898305,0.62070978,5.74940700,0.00000000,False,GALLEX reanalysis 2010,Cr1 reanalysis/common-gallium value.
+GALLEX_Cr2,GALLEX,51Cr,0.812000,0.33898305,0.62070978,5.74940700,0.00000000,False,GALLEX reanalysis 2010,Cr2 reanalysis/common-gallium value.
+GALLEX_combined,GALLEX,51Cr,0.882000,0.33898305,0.62070978,5.74940700,0.00000000,True,GALLEX reanalysis 2010,Combined reanalysis value.
+SAGE_51Cr,SAGE,51Cr,0.950000,1.39372822,0.13544669,5.74940700,0.00000000,True,SAGE PRL 1996 / PRC 1999,Cr-51 source calibration.
+SAGE_37Ar,SAGE,37Ar,0.790000,1.39372822,0.13544669,7.01196000,0.00000000,True,SAGE PRC 2006,Ar-37 source calibration.

@@ -1,0 +1,57 @@
+{
+  "title": "LSC 6.0: Unified Curvature-Coupled Neutrino Model",
+  "description": "LSC 6.0 is a phenomenological neutrino model repository connected to the LSC publication line. It presents a curvature-coupled energy-reconstruction framework for the Gallium anomaly, links to the LSC 6.0 Zenodo working paper, and includes theory notes, release files, version history, and a toy simulation.",
+  "creators": [
+    {
+      "name": "LuciferSun",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "keywords": [
+    "neutrino physics",
+    "gallium anomaly",
+    "BEST experiment",
+    "KATRIN",
+    "IceCube",
+    "phenomenological model",
+    "anisotropy",
+    "detector physics",
+    "curvature-coupled reconstruction",
+    "LSC framework"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19780616",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.19602045",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-6.0",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-6.0/releases/tag/v1.0.0",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.facebook.com/ProximaCentauri333",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.linkedin.com/in/%C5%82ukasz-%C5%BCuchowski-807160316/",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ],
+  "communities": [],
+  "grants": []
+}

@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\title{LSC 6.2.1 Codex Analysis}
+\author{Open working package}
+\date{\today}
+\maketitle
+
+\section*{Scope}
+This report is an exploratory fit to the BEST, GALLEX and SAGE gallium source data.
+It is not a claim of confirmed new physics. The aim is to test whether a compact
+phenomenological ansatz can reproduce the main source-calibration ratios while
+keeping the calibration trail readable.
+
+\section*{Data Anchors}
+The anchor set uses five independent constraints:
+BEST inner, BEST outer, GALLEX combined reanalysis, SAGE $^51$Cr and SAGE $^37$Ar.
+BEST ratio and the GALLEX Cr1/Cr2 split are kept as diagnostics.
+
+\section*{Model}
+The fit is performed in linearized form:
+\[
+-\ln R = \beta_L L^-1_{\mathrm eff} + \beta_S A_{\mathrm shape} +
+\beta_\sigma \, \sigma_{\mathrm norm} + \beta_Z Z_{\mathrm BEST} + \beta_0.
+\]
+Here $L_{\mathrm eff}$ is a geometry proxy, $A_{\mathrm shape}$ is a second-moment
+anisotropy proxy, $\sigma_{\mathrm norm}$ is the mean source-line cross section in
+units of $10^{-45}\mathrm{cm}^2$, and $Z_{\mathrm BEST}$ splits the BEST inner and
+outer zones.
+
+\subsection*{Geometry Proxy}
+For this first-pass package:
+\[
+L_{\mathrm eff} =
+\begin{cases}
+4R/3 & \text{sphere} \\
+(R + H/2)/2 & \text{cylindrical or tank geometry}
+\end{cases}
+\]
+\[
+A_{\mathrm shape} = \frac{\left| \langle z^2 \rangle - \langle x^2 \rangle \right|}
+{\langle z^2 \rangle + 2 \langle x^2 \rangle},
+\quad
+\langle x^2 \rangle = R^2/4,\quad \langle z^2 \rangle = H^2/12.
+\]
+
+\section*{Fitted Coefficients}
+\begin{tabular}{lr}
+\toprule
+coefficient & value \\
+\midrule
+beta\_length & -0.39830548 \\beta\_shape & -0.71268732 \\beta\_source & 0.14607627 \\beta\_zone & 0.01969744 \\beta\_intercept & -0.13689794 \\
+\bottomrule
+\end{tabular}
+
+\section*{Anchor Predictions}
+\begin{longtable}{lrrr}
+\toprule
+case & observed & predicted & residual \\
+\midrule
+\endfirsthead
+\toprule
+case & observed & predicted & residual \\
+\midrule
+\endhead
+BEST\_inner & 0.790000 & 0.790000 & +0.000000 \\BEST\_outer & 0.770000 & 0.770000 & -0.000000 \\GALLEX\_combined & 0.882000 & 0.882000 & +0.000000 \\SAGE\_51Cr & 0.950000 & 0.950000 & +0.000000 \\SAGE\_37Ar & 0.790000 & 0.790000 & +0.000000 \\
+\bottomrule
+\end{longtable}
+
+\section*{Validation Predictions}
+\begin{longtable}{lrrr}
+\toprule
+case & observed & predicted & residual \\
+\midrule
+\endfirsthead
+\toprule
+case & observed & predicted & residual \\
+\midrule
+\endhead
+BEST\_ratio & 0.970000 & 0.974684 & +0.004684 \\GALLEX\_Cr1 & 0.953000 & 0.882000 & -0.071000 \\GALLEX\_Cr2 & 0.812000 & 0.882000 & +0.070000 \\
+\bottomrule
+\end{longtable}
+
+\section*{Leave-One-Out Stability}
+\begin{longtable}{lrrr}
+\toprule
+omitted case & observed & predicted & residual \\
+\midrule
+\endfirsthead
+\toprule
+omitted case & observed & predicted & residual \\
+\midrule
+\endhead
+BEST\_inner & 0.790000 & 0.965858 & +0.175858 \\BEST\_outer & 0.770000 & 0.941584 & +0.171584 \\GALLEX\_combined & 0.882000 & 0.583630 & -0.298370 \\SAGE\_51Cr & 0.950000 & 0.789343 & -0.160657 \\SAGE\_37Ar & 0.790000 & 0.817808 & +0.027808 \\
+\bottomrule
+\end{longtable}
+
+\section*{Interpretation}
+The exact anchor fit means the main question is not whether the algebra can absorb the
+anchors. It is whether the same coefficients survive perturbation. The leave-one-out run
+shows that the package is still sensitive to the selected anchor set, especially around
+GALLEX. That is useful: it tells us where the next 6.2.1 iteration needs extra nuisance
+structure or additional event-level data.
+
+\section*{Source Notes}
+\begin{itemize}
+\item BEST: \href{https://doi.org/10.1103/PhysRevLett.128.232501}{Phys. Rev. Lett. 128, 232501 (2022)}
+\item GALLEX final and reanalysis: \href{https://doi.org/10.1016/S0370-2693(97)01562-1}{Phys. Lett. B 420, 114-126 (1998)} and \href{https://doi.org/10.1016/j.physletb.2010.01.030}{Phys. Lett. B 685, 47-54 (2010)}
+\item SAGE Cr-51: \href{https://doi.org/10.1103/PhysRevC.59.2246}{Phys. Rev. C 59, 2246 (1999)}
+\item SAGE Ar-37: \href{https://doi.org/10.1103/PhysRevC.73.045805}{Phys. Rev. C 73, 045805 (2006)}
+\item Gallium source cross sections: \href{https://doi.org/10.1103/PhysRevC.56.3391}{Phys. Rev. C 56, 3391 (1997)}
+\end{itemize}
+
+\end{document}

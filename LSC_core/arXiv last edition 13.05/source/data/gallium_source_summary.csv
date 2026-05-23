@@ -1,0 +1,7 @@
+experiment,source,zone,ratio,total_uncertainty,stat_uncertainty,systematic_uncertainty,activity_mci,doi,arxiv_id,source_location,verification_status
+GALLEX Cr1,51Cr,Single,0.953,0.110,0.110,,1.714,10.1016/j.physletb.2010.01.030,1001.2731,Reanalysis table reported by user/Gemini; ScienceDirect snippet confirms 0.953 +/- 0.11,source_checked_partial
+GALLEX Cr2,51Cr,Single,0.812,0.105,0.105,,1.868,10.1016/j.physletb.2010.01.030,1001.2731,Reanalysis table reported by user/Gemini; ScienceDirect snippet confirms 0.812 +0.10/-0.11,source_checked_partial
+SAGE Cr,51Cr,Single,0.950,0.120,0.120,,0.517,10.1103/PhysRevC.59.2246,hep-ph/9803418,Table II / page 2252 reported by user/Gemini,needs_manual_source_check
+SAGE Ar,37Ar,Single,0.791,0.084,0.081,,0.409,10.1103/PhysRevC.73.045805,nucl-ex/0512041,Table II / page 4 reported by user/Gemini; NIST confirms publication metadata,source_checked_partial
+BEST Inner,51Cr,Inner,0.791,0.055,0.044,0.025,3.414,10.1103/PhysRevLett.128.232501,2109.11482,PRL Table 1 / NIST publication page confirms R_in=0.791 +/- 0.055,source_checked
+BEST Outer,51Cr,Outer,0.766,0.055,0.045,0.025,3.414,10.1103/PhysRevLett.128.232501,2109.11482,PRL Table 1 / NIST publication page confirms R_out=0.766 +/- 0.055,source_checked

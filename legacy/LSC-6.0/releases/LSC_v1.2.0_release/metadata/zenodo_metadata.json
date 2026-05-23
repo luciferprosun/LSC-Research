@@ -1,0 +1,19 @@
+{
+  "title": "LSC Framework v1.2.0: Computational Extension and Reproducibility Update",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Incremental update of the LSC framework including computational modeling and reproducibility package. arXiv submission in progress (endorsement pending).",
+  "creators": [
+    {
+      "name": "LuciferSun",
+      "affiliation": "Independent Research"
+    }
+  ],
+  "keywords": [
+    "neutrino physics",
+    "computational physics",
+    "LSC",
+    "PBH",
+    "oscillations"
+  ]
+}

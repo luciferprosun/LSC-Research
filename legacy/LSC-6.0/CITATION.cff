@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "LSC 6.0: Unified Curvature Model for Neutrino Anomalies"
+message: "If you use LSC 6.0, please cite it."
+type: software
+authors:
+  - family-names: "LuciferSun"
+    affiliation: "Independent Researcher, Poznan, Poland"
+    email: "tonystarrkarc@gmail.com"
+doi: "10.5281/zenodo.19785745"
+license: MIT
+keywords:
+  - neutrino
+  - anomaly
+  - BSM
+  - SME
+repository-code: "https://github.com/luciferprosun/LSC-6.0"

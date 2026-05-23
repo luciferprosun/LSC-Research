@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.2.0",
+  "required_top_level": [
+    "schema_version",
+    "unit_conventions",
+    "experiments"
+  ],
+  "experiment_required_fields": [
+    "experiment_name",
+    "measured_results"
+  ],
+  "measured_result_fields": [
+    "label",
+    "R",
+    "R_error or (R_error_plus,R_error_minus)"
+  ]
+}

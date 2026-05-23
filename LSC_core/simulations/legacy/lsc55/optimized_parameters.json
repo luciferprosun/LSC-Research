@@ -1,0 +1,75 @@
+{
+  "models": {
+    "LSC_42": {
+      "description": "Gravitational coupling model",
+      "H_LSC": "\u03b1_LSC * (GM/rc\u00b2) * (E/1PeV)",
+      "resonance": "\u0394m\u00b2 cos(2\u03b8) = 2E(V_matter + V_LSC)"
+    },
+    "LSC_50": {
+      "description": "Detector framework with D_\u03bc\u03bd tensor",
+      "D_tensor_4x4": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.011,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.0055,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          -0.0055
+        ]
+      ]
+    },
+    "LSC_55": {
+      "description": "Integrated anisotropy model",
+      "linear_form": "R = (1-\u03b4)[1 - \u03b1(D_xx sin\u00b2\u03b8 cos\u00b2\u03c6 + D_yy sin\u00b2\u03b8 sin\u00b2\u03c6 + D_zz cos\u00b2\u03b8)]",
+      "exponential_form": "R = (1-\u03b4) exp(-\u03b1 D_\u03bc\u03bd p^\u03bc p^\u03bd)"
+    }
+  },
+  "fits": {
+    "BEST": {
+      "delta_nuclear": 0.21,
+      "alpha_optimal": 5.320180123926299e-06,
+      "mean_R": 0.7899999788071318,
+      "R_target": 0.79,
+      "delta_R": 6.302826444426479e-06,
+      "delta_R_percent": 0.0007978261536086993,
+      "validation_passed": true
+    },
+    "GALLEX": {
+      "delta_nuclear": 0.13,
+      "alpha_optimal": 5.320180123926299e-06,
+      "mean_R": 0.8699999766610185,
+      "R_target": 0.87,
+      "delta_R": 6.941087350220698e-06,
+      "delta_R_percent": 0.0007978261536120916,
+      "validation_passed": true
+    }
+  },
+  "D_tensor": {
+    "D_xx": 1.0,
+    "D_yy": -0.5,
+    "D_zz": -0.5
+  },
+  "physical_constants": {
+    "dm2_21_eV2": 7.53e-05,
+    "theta_12_rad": 0.5836,
+    "G_Newton": 6.674e-11,
+    "M_sun_kg": 1.989e+30,
+    "r_core_m": 139200000.0
+  }
+}

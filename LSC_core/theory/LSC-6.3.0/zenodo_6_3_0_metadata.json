@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "LSC 6.3.0 Unified BEST-2 Continuation: Trace-Anisotropy Separation and Validation Protocol",
+    "upload_type": "publication",
+    "publication_type": "workingpaper",
+    "description": "<p>LSC 6.3.0 is a conservative continuation of the LSC 6.2.0 preprint-stage framework under the existing LSC concept DOI. It consolidates the post-6.2.0 correction path into a single BEST-2-oriented validation protocol.</p><p>The update does not claim confirmed new physics. It separates scalar trace response from traceless detector-frame anisotropy, defines a frozen prediction protocol before fitting, and requires comparison against normalization-only, cross-section, detector-systematics, sterile-neutrino, and null baselines. The work is intended as a falsifiable phenomenological framework for gallium-source residual analysis and future BEST-2-style testing.</p><p>The LSC v1.2.0 computational release is treated as a supplementary reproducibility record. The primary LSC publication identity remains the Zenodo concept DOI 10.5281/zenodo.19780615.</p>",
+    "creators": [
+      {
+        "name": "LuciferSun",
+        "affiliation": "Independent Research"
+      }
+    ],
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "version": "6.3.0-unified-continuation",
+    "language": "eng",
+    "keywords": [
+      "neutrino physics",
+      "gallium anomaly",
+      "BEST experiment",
+      "BEST-2",
+      "detector response",
+      "anisotropy",
+      "phenomenological model",
+      "model validation",
+      "LSC framework",
+      "AI-assisted research audit"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.19878587",
+        "relation": "isNewVersionOf",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.19780616",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.19843361",
+        "relation": "isSupplementedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.19602045",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://github.com/luciferprosun/LSC-the-saga-continue",
+        "relation": "isSupplementedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/luciferprosun/LSC-6.0",
+        "relation": "isSupplementedBy",
+        "scheme": "url"
+      }
+    ],
+    "notes": "Unvalidated phenomenological continuation. This record should be published only as a continuation of the existing LSC project. If avoiding a new version DOI is required, use this metadata as a description/related-identifier update on the current LSC 6.2.0 record instead of uploading new files."
+  }
+}
+

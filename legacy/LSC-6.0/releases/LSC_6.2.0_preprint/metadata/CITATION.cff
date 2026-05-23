@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "LSC 6.2.0: A Phenomenological Framework for Neutrino Propagation and Detector-Frame Tensor Anisotropy"
+message: "If you cite this preprint package, cite the Zenodo version DOI assigned at publication time."
+type: article
+authors:
+  - name: LuciferSun
+    affiliation: Independent Research
+version: "6.2.0-preprint"
+date-released: "2026-04-29"
+license: CC-BY-4.0
+repository-code: "https://github.com/luciferprosun/LSC-6.0"
+abstract: "LSC 6.2.0 is the latest preprint-stage continuation of the public LSC 6.0 phenomenological framework. It introduces detector-frame tensor anisotropy as a testable reconstruction-level ansatz and is prepared for arXiv submission while endorsement is pending."
+references:
+  - type: article
+    title: "LSC 6.0: A Phenomenological Framework for Neutrino Propagation and Anisotropic Detection"
+    doi: "10.5281/zenodo.19780616"
+  - type: article
+    title: "LSC Framework v1.2.0: Computational Extension and Reproducibility Update"
+    doi: "10.5281/zenodo.19843361"
+  - type: article
+    title: "LSC 4.2 ULTRA: Gravitationally Coupled Neutrino Oscillation Framework"
+    doi: "10.5281/zenodo.19602045"

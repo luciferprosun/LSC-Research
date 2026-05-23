@@ -1,0 +1,381 @@
+{
+  "schema_version": "0.1.0",
+  "created_utc": "2026-04-29",
+  "unit_conventions": {
+    "energy": "MeV",
+    "distance": "m",
+    "cross_section": "cm^2",
+    "activity": "MCi",
+    "mass": "metric_ton"
+  },
+  "normalization_notes": [
+    "Only values found in the cited sources are included.",
+    "Unknown or not-yet-extracted fields are null.",
+    "Cross sections are stored in cm^2; e.g. 60.8e-46 means 60.8 x 10^-46 cm^2.",
+    "Git-style code should treat reported R values as source-specific calibration ratios, not as independent detector efficiencies."
+  ],
+  "common_reaction": {
+    "target": "71Ga",
+    "reaction": "nu_e + 71Ga -> 71Ge + e-",
+    "threshold_MeV": 0.2325,
+    "threshold_note": "GALLEX/Gallium detector summaries give a threshold near 232.5 keV; exact convention may vary slightly by source."
+  },
+  "source_line_library": {
+    "51Cr": [
+      {
+        "energy_MeV": 0.7473,
+        "intensity": 0.8163,
+        "cross_section_cm2": 6.08e-45,
+        "source_transition": "K electron capture to 51V ground state"
+      },
+      {
+        "energy_MeV": 0.7521,
+        "intensity": 0.0849,
+        "cross_section_cm2": 6.15e-45,
+        "source_transition": "L electron capture to 51V ground state"
+      },
+      {
+        "energy_MeV": 0.4272,
+        "intensity": 0.0895,
+        "cross_section_cm2": 2.67e-45,
+        "source_transition": "K electron capture to 51V excited state near 320 keV"
+      },
+      {
+        "energy_MeV": 0.432,
+        "intensity": 0.0093,
+        "cross_section_cm2": 2.71e-45,
+        "source_transition": "L electron capture to 51V excited state near 320 keV"
+      }
+    ],
+    "37Ar": [
+      {
+        "energy_MeV": 0.811,
+        "intensity": 0.902,
+        "cross_section_cm2": 7.01e-45,
+        "source_transition": "electron capture to 37Cl"
+      },
+      {
+        "energy_MeV": 0.813,
+        "intensity": 0.098,
+        "cross_section_cm2": 7.03e-45,
+        "source_transition": "electron capture to 37Cl"
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "experiment_name": "BEST",
+      "full_name": "Baksan Experiment on Sterile Transitions",
+      "site": "Baksan Neutrino Observatory",
+      "target_material": "liquid gallium metal",
+      "detector_geometry": {
+        "shape": "two nested zones: inner sphere and outer cylinder",
+        "dimensions": {
+          "inner_zone": {
+            "shape": "sphere",
+            "radius_m": 0.6675,
+            "diameter_m": 1.335,
+            "gallium_mass_ton": 7.4691,
+            "mass_uncertainty_ton": 0.0631
+          },
+          "outer_zone": {
+            "shape": "cylinder",
+            "diameter_m": 2.18,
+            "radius_m": 1.09,
+            "height_m": 2.345,
+            "gallium_mass_ton": 39.9593,
+            "mass_uncertainty_ton": 0.0024
+          }
+        },
+        "average_baselines_m": {
+          "inner_zone": 0.5,
+          "outer_zone": 1.1,
+          "note": "Approximate average path lengths quoted in gallium-anomaly review literature."
+        }
+      },
+      "source_properties": {
+        "isotope": "51Cr",
+        "activity_MCi": 3.414,
+        "activity_uncertainty_MCi": 0.008,
+        "reference_time": "2019-07-05 14:02 Moscow time",
+        "source_core": {
+          "description": "26 irradiated Cr disks in stainless-steel cylinder, tungsten-alloy shield",
+          "active_core_radius_m": 0.043,
+          "active_core_height_m": 0.108,
+          "shield_thickness_m": 0.03
+        },
+        "energies_intensities": "source_line_library.51Cr"
+      },
+      "measured_results": [
+        {
+          "label": "inner_zone",
+          "production_rate_atoms_per_day": 54.9,
+          "stat_error_plus_atoms_per_day": 2.5,
+          "stat_error_minus_atoms_per_day": 2.4,
+          "syst_error_atoms_per_day": 1.4,
+          "R": 0.79,
+          "R_error": 0.05
+        },
+        {
+          "label": "outer_zone",
+          "production_rate_atoms_per_day": 55.6,
+          "stat_error_plus_atoms_per_day": 2.7,
+          "stat_error_minus_atoms_per_day": 2.6,
+          "syst_error_atoms_per_day": 1.4,
+          "R": 0.77,
+          "R_error": 0.05
+        },
+        {
+          "label": "outer_to_inner_ratio",
+          "R": 0.97,
+          "R_error": 0.07
+        }
+      ],
+      "cross_sections": {
+        "line_values": "source_line_library.51Cr",
+        "model_note": "BEST ratios used the known 71Ga capture cross section and experimental efficiencies; source-line cross sections above are Bahcall-interpolated values reported in sterile-neutrino review tables."
+      },
+      "references": [
+        {
+          "type": "journal",
+          "title": "Results from the Baksan Experiment on Sterile Transitions (BEST)",
+          "doi": "10.1103/PhysRevLett.128.232501",
+          "url": "https://doi.org/10.1103/PhysRevLett.128.232501"
+        },
+        {
+          "type": "journal",
+          "title": "Search for electron-neutrino transitions to sterile states in the BEST experiment",
+          "doi": "10.1103/PhysRevC.105.065502",
+          "arxiv": "2109.11482",
+          "url": "https://doi.org/10.1103/PhysRevC.105.065502"
+        },
+        {
+          "type": "institution_page",
+          "title": "BEST - Baksan Experiment on Sterile Transitions",
+          "url": "https://www.appec.org/news/best-baksan-experiment-on-sterile-transitions/"
+        }
+      ],
+      "extraction_status": {
+        "tables": "partial",
+        "figures": "not_extracted",
+        "missing": [
+          "full exposure-by-exposure 71Ge extraction table",
+          "counter-by-counter efficiencies",
+          "full covariance matrix"
+        ]
+      }
+    },
+    {
+      "experiment_name": "GALLEX",
+      "full_name": "Gallium Experiment at Gran Sasso",
+      "site": "Laboratori Nazionali del Gran Sasso",
+      "target_material": "GaCl3-HCl aqueous solution containing natural gallium",
+      "detector_geometry": {
+        "shape": "cylindrical tank",
+        "dimensions": {
+          "tank_height_m": 8.0,
+          "tank_diameter_m": 3.8,
+          "solution_volume_m3": 53.5,
+          "gallium_mass_ton": 30.3,
+          "solution_mass_ton": 101
+        },
+        "source_position": {
+          "description": "51Cr sources placed in reentrant tube in the center of Tank A",
+          "coordinates_m": null
+        }
+      },
+      "source_properties": {
+        "isotope": "51Cr",
+        "energies_intensities": "source_line_library.51Cr",
+        "source_runs": [
+          {
+            "label": "Cr1",
+            "activity_MCi": 1.714,
+            "activity_uncertainty_MCi": 0.036
+          },
+          {
+            "label": "Cr2",
+            "activity_MCi": 1.868,
+            "activity_uncertainty_MCi": 0.073
+          }
+        ]
+      },
+      "measured_results": [
+        {
+          "label": "Cr1_final_1998",
+          "R": 1.01,
+          "R_error_plus": 0.12,
+          "R_error_minus": 0.11,
+          "note": "Final GALLEX source-paper value."
+        },
+        {
+          "label": "Cr2_final_1998",
+          "R": 0.84,
+          "R_error_plus": 0.12,
+          "R_error_minus": 0.11,
+          "note": "Final GALLEX source-paper value."
+        },
+        {
+          "label": "Cr1_reanalysis_or_common_ga_anomaly_table",
+          "R": 0.953,
+          "R_error": 0.11,
+          "note": "Commonly used gallium-anomaly table value; differs from final-paper presentation because of later analysis conventions."
+        },
+        {
+          "label": "Cr2_reanalysis_or_common_ga_anomaly_table",
+          "R": 0.812,
+          "R_error": 0.10,
+          "note": "Commonly used gallium-anomaly table value; differs from final-paper presentation because of later analysis conventions."
+        },
+        {
+          "label": "combined_final_1998",
+          "R": 0.93,
+          "R_error": 0.08
+        },
+        {
+          "label": "combined_reanalysis_2010",
+          "R": 0.882,
+          "R_error": 0.078
+        }
+      ],
+      "cross_sections": {
+        "line_values": "source_line_library.51Cr",
+        "reported_integrated_51Cr_cross_section_cm2": 5.81e-45,
+        "reported_integrated_51Cr_cross_section_uncertainty_plus_cm2": 2.1e-46,
+        "reported_integrated_51Cr_cross_section_uncertainty_minus_cm2": 1.6e-46,
+        "note": "Integrated 51Cr value appears in GALLEX final-results discussion as a revised Bahcall value including estimated excited-state contribution."
+      },
+      "references": [
+        {
+          "type": "journal",
+          "title": "First results from the 51Cr neutrino source experiment with the GALLEX detector",
+          "doi": "10.1016/0370-2693(94)01586-2",
+          "url": "https://doi.org/10.1016/0370-2693(94)01586-2"
+        },
+        {
+          "type": "journal",
+          "title": "Final results of the 51Cr neutrino source experiments in GALLEX",
+          "doi": "10.1016/S0370-2693(97)01562-1",
+          "url": "https://doi.org/10.1016/S0370-2693(97)01562-1"
+        },
+        {
+          "type": "journal",
+          "title": "Reanalysis of the GALLEX solar neutrino flux and source experiments",
+          "doi": "10.1016/j.physletb.2010.01.030",
+          "url": "https://doi.org/10.1016/j.physletb.2010.01.030"
+        }
+      ],
+      "extraction_status": {
+        "tables": "partial",
+        "figures": "not_extracted",
+        "missing": [
+          "exact source coordinates for both GALLEX insertions",
+          "full exposure-level event table",
+          "full detector response/covariance model"
+        ]
+      }
+    },
+    {
+      "experiment_name": "SAGE",
+      "full_name": "Soviet-American / Russian-American Gallium Experiment",
+      "site": "Baksan Neutrino Observatory, GGNT laboratory",
+      "target_material": "liquid gallium metal",
+      "detector_geometry": {
+        "shape": "cylindrical reactor/tank used for source exposure",
+        "dimensions": {
+          "source_exposure_gallium_mass_ton": 13.1,
+          "cylinder_radius_m": 0.7,
+          "cylinder_height_m": 1.47,
+          "source_height_above_base_m": 0.72
+        },
+        "note": "Dimensions are for source-experiment modeling approximation; regular SAGE solar operations used a larger 50-57 ton gallium target distributed across reactors."
+      },
+      "source_properties": {
+        "source_runs": [
+          {
+            "label": "SAGE_51Cr",
+            "isotope": "51Cr",
+            "activity_MCi": 0.517,
+            "activity_uncertainty_MCi": 0.006,
+            "energies_intensities": "source_line_library.51Cr"
+          },
+          {
+            "label": "SAGE_37Ar",
+            "isotope": "37Ar",
+            "activity_MCi": 0.409,
+            "activity_uncertainty_MCi": 0.002,
+            "energies_intensities": "source_line_library.37Ar"
+          }
+        ]
+      },
+      "measured_results": [
+        {
+          "label": "SAGE_51Cr",
+          "production_rate_atoms_per_day": 14.0,
+          "production_rate_error_atoms_per_day": 1.7,
+          "R": 0.95,
+          "R_error": 0.12,
+          "original_error_components": {
+            "stat_error": 0.11,
+            "syst_error_plus": 0.05,
+            "syst_error_minus": 0.08
+          }
+        },
+        {
+          "label": "SAGE_37Ar",
+          "production_rate_atoms_per_day": 11.0,
+          "production_rate_error_atoms_per_day": 1.5,
+          "R": 0.79,
+          "R_error": 0.10,
+          "alternate_reported_R": 0.791,
+          "alternate_reported_R_error": 0.084
+        }
+      ],
+      "cross_sections": {
+        "line_values": {
+          "51Cr": "source_line_library.51Cr",
+          "37Ar": "source_line_library.37Ar"
+        }
+      },
+      "references": [
+        {
+          "type": "journal",
+          "title": "The Russian-American Gallium Experiment (SAGE) Cr neutrino source measurement",
+          "doi": "10.1103/PhysRevLett.77.4708",
+          "url": "https://doi.org/10.1103/PhysRevLett.77.4708"
+        },
+        {
+          "type": "journal",
+          "title": "Measurement of the response of a Ga solar neutrino experiment to neutrinos from an 37Ar source",
+          "doi": "10.1103/PhysRevC.73.045805",
+          "url": "https://doi.org/10.1103/PhysRevC.73.045805"
+        }
+      ],
+      "extraction_status": {
+        "tables": "partial",
+        "figures": "not_extracted",
+        "missing": [
+          "full run-by-run source exposure table",
+          "full 37Ar source preparation and impurity table",
+          "counter-level likelihood inputs"
+        ]
+      }
+    }
+  ],
+  "global_references": [
+    {
+      "type": "review",
+      "title": "White Paper on Light Sterile Neutrino Searches and Related Phenomenology",
+      "arxiv": "2203.07323",
+      "url": "https://cds.cern.ch/record/2805289/files/2203.07323.pdf",
+      "notes": "Contains compact tables of 51Cr/37Ar energies, branching ratios and 71Ga cross sections."
+    },
+    {
+      "type": "review",
+      "title": "The gallium anomaly",
+      "doi": "10.1016/j.ppnp.2023.104082",
+      "url": "https://doi.org/10.1016/j.ppnp.2023.104082",
+      "notes": "Useful overview of source preparation, source experiments and anomaly context."
+    }
+  ]
+}

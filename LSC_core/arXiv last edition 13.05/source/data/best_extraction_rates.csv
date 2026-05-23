@@ -1,0 +1,11 @@
+extraction,inner_rate_atoms_per_day,inner_uncertainty_atoms_per_day,outer_rate_atoms_per_day,outer_uncertainty_atoms_per_day,reference_time_offset_days,verification_status
+1,175.5,49.4,129.6,41.1,10.5,reported_by_user_gemini_needs_manual_source_check
+2,107.7,44.9,158.6,63.6,20.4,reported_by_user_gemini_needs_manual_source_check
+3,115.4,62.9,88.2,51.4,30.3,reported_by_user_gemini_needs_manual_source_check
+4,85.6,73.3,78.9,66.6,40.3,reported_by_user_gemini_needs_manual_source_check
+5,58.4,49.8,59.5,46.9,50.4,reported_by_user_gemini_needs_manual_source_check
+6,47.7,69.5,59.3,87.3,60.3,reported_by_user_gemini_needs_manual_source_check
+7,43.9,64.6,34.4,50.4,70.3,reported_by_user_gemini_needs_manual_source_check
+8,32.4,53.8,39.2,59.7,80.3,reported_by_user_gemini_needs_manual_source_check
+9,22.7,49.9,17.0,43.0,90.3,reported_by_user_gemini_needs_manual_source_check
+10,24.3,69.1,28.0,78.8,100.3,reported_by_user_gemini_needs_manual_source_check

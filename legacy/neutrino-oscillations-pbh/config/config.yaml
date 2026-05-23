@@ -1,0 +1,26 @@
+# Configuration for Neutrino Oscillation Project
+
+# Simulation parameters
+simulation:
+  energy_range: [1, 100] # GeV
+  distance_range: [1, 1000] # km
+  num_points: 1000
+
+# PBH parameters
+pbh:
+  mass_spectrum: 'power_law' # or 'monochromatic'
+  density_profile: 'nfw' # or 'einasto'
+  min_mass: 1e15 # grams
+  max_mass: 1e18 # grams
+
+# Neutrino parameters
+neutrino:
+  dm_squared: 2.5e-3 # eV^2
+  theta_12: 0.58 # radians (approx 33.82 degrees)
+  g_fermi: 1.1663787e-5 # GeV^-2
+
+# Output settings
+output:
+  plot_dir: 'plots/'
+  data_dir: 'data/'
+  log_level: 'INFO'

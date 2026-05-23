@@ -1,0 +1,12 @@
+{
+ "alpha_range": [0.0, 0.05],
+ "D_tensor": {
+   "D_xx": 1.0,
+   "D_yy": -0.5,
+   "D_zz": -0.5
+ },
+ "delta_nuclear": {
+   "BEST": 0.21,
+   "GALLEX": 0.13
+ }
+}
