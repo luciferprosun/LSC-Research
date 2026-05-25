@@ -1,0 +1,331 @@
+Audyt LSC v6.3.0 (Stan przed BEST-2)
+
+OSTATECZNY AUDYT NAUKOWY RAM LSC V6.3.0
+Ewalwacja Teoretyczna i Protokół Walidacji Przed Przebiegiem BEST-2
+
+Data audytu: 25 maja 2026 r.
+
+Status ramowy: Nieweryfikowana Hipoteza
+Fenomenologiczna
+
+Audytor prowadzący: Gemini Pro (Ekspert ds. Analizy
+
+Cel: Prerejestracja i Zamrożenie Modelu przed Analizą
+
+Epistemicznej)
+
+BEST-2
+
+1. Streszczenie Wykonawcze i Założenia Epistemiczne
+Niniejszy dokument stanowi rygorystyczny, konserwatywny i obiektywny audyt naukowy ram fenomenologicznych
+LSC (Liquid Scintillator Core / Local Space-time Coupling) w wersji 6.3.0. Zgodnie z najwyższymi standardami
+metodologicznymi fizyki eksperymentalnej, ramy LSC są traktowane wyłącznie jako niezweryfikowana
+struktura fenomenologiczna, a NIE jako potwierdzona teoria fizyczna.
+Ewolucja linii LSC doprowadziła do porzucenia pierwotnego języka opartego na silnej grawitacji wokół Pierwotnych
+Czarnych Dziur (PBH) z wersji 4.2 ULTRA na rzecz konkretnej fenomenologii odpowiedzi detektora. Wersja 6.3.0
+wprowadza matematyczny podział anomalii anizotropii na część śladową (izotropowe przesunięcie) oraz
+bezśladową (zależną od orientacji przestrzennej i czasu syderycznego). Głównym wnioskiem płynącym z
+wewnętrznych analiz struktury jest fakt, że proste dopasowania do punktów kotwiczenia (anchor fits) są
+niewystarczające; wymagana jest ścisła walidacja krzyżowa metodą "leave-one-out" między eksperymentami
+BEST, GALLEX i SAGE, aby zapobiec sztucznemu dopasowaniu parametrów do szumu statystycznego.
+
+2. Klasyfikacja Komponentów Modelu LSC
+W celu uniknięcia nadmiernej parametryzacji oraz eliminacji tzw. "przecieków historycznych", elementy wchodzące
+w skład repozytoriów LSC podzielono na cztery kategorie stabilności naukowej:
+• Naukowy Rdzeń Operacyjny (Core Theory): Jawne modelowanie modyfikacji wydajności detekcji w funkcji
+geometrii źródła, jawny podział tensorowy na ślad i strukturę bezśladową oraz wymóg stosowania macierzy
+kowariancji błędów systematycznych.
+• Elementy Spekulatywne: Fizyczna interpretacja pochodzenia tensora anizotropii detektora $D_{ij}$ oraz
+sprzężenia $ lpha_D$. Brak fundamentalnego lagranżjanu cząstkowego sprawia, że parametry te mają
+charakter czysto empiryczny.
+• Dziedzictwo Historyczne (Zdeprecjonowane): Język ugięcia metryki wokół PBH z wersji LSC 4.2. Efekty te są
+o wiele rzędów wielkości za małe w skali laboratoriów naziemnych i zostały całkowicie odcięte od rdzenia
+galowego.
+• Niedostatecznie Ograniczone Stopnie Swobody: Składniki bezśladowe tensora laboratoryjnego. Przy braku
+zewnętrznego
+
+zakotwiczenia
+
+geometrycznego,
+
+5
+
+niezależnych
+
+składowych
+
+symetrycznego
+
+tensora
+
+bezśladowego stwarza krytyczne ryzyko nadmiernego dopasowania (overfittingu).
+
+POUFNE // RAPORT TECHNICZNY DETEKCJI NEUTRIN
+
+Strona 1 z 5
+
+Audyt LSC v6.3.0 (Stan przed BEST-2)
+
+3. Audyt Matematyczny i Formalizmu Równań
+Przeanalizowano kluczowe równania matematyczne zamrożone w pakiecie LSC 6.3.0 pod kątem spójności
+wymiarowej i identyfikowalności fizycznej:
+
+A. Efektywna Rekonstrukcja Energii i Modyfikacja Fazy Oscylacji
+Równanie 53: E_eff(x) = E_true(x) * [1 + α_D * D_ij * p̂^i * p̂^j]
+
+Równanie 54: ΔΦ_ij = ∫ [Δm_ij^2 / (2 * E_eff(x))] dx
+
+Krytyka naukowa: Równanie 53 wprowadza modyfikację energii w zależności od wektora pędu neutrina $p̂$. W
+eksperymentach stacjonarnych z intensywnym źródłem sztucznym (np. BEST), strumień neutrin rozchodzi się
+izotropowo z punktu centralnego do koncentrycznych stref cylindrycznych lub sferycznych. Po pełnym całkowaniu
+przestrzennym po kącie bryłowym $\Omega$, wszelkie bezśladowe komponenty tensora $D_{ij}$ uśredniają się do
+zera dla idealnie symetrycznej geometrii. Oznacza to, że wpływ tego równania na całkowitą liczbę zliczeń może
+ujawnić się wyłącznie poprzez sprzężenie z asymetrią geometryczną komór ekstrakcji lub lokalnymi
+niejednorodnościami chemicznymi.
+
+B. Statystyczna Funkcja Likelihood i Brak Macierzy Kowariancji
+Równanie 55: χ² = ∑ [ (N_obs,k - N_pred,k(D_ij, δ_G))² / σ_k² ]
+
+Krytyka naukowa: Powyższa struktura $\chi^2$ jest fundamentalnie wadliwa dla precyzyjnych pomiarów fizyki
+neutrin na krótkiej bazie, ponieważ zakłada niezależne, diagonalne błędy $\sigma_k^2$. W eksperymentach
+galowych błędy systematyczne (aktywność źródła, wydajność chemiczna ekstrakcji germanu-71, przekrój czynny na
+wychwyt neutrina) są silnie skorelowane pomiędzy poszczególnymi dniami pomiarowymi oraz strefami (wewnętrzną i
+zewnętrzną). Równanie to musi zostać bezwzględnie zastąpione pełną macierzą kowariancji $V_{km}$, w
+przeciwnym razie ocena istotności statystycznej modelu LSC będzie sztucznie zawyżona.
+
+C. Modyfikacja Wydajności Detekcji i Degeneracja Parametrów
+Równanie 57: ε_LSC,a(E,t,Ω) = ε_0,a(E,t,Ω) * [1 + λ_0 * f_0(E,t) + λ_A * q_a(t,Ω) * f_A(E,t)]
+
+Krytyka naukowa: Jest to najbardziej niebezpieczny matematycznie punkt ram LSC 6.3.0. Ponieważ $\epsilon_{0,a}
+$ definiuje bazową wydajność detektora, wprowadzenie swobodnych parametrów $\lambda_0$ (izotropowe
+przesunięcie) oraz $\lambda_A$ (modulacja kierunkowa) pozwala modelowi LSC na idealne zamaskowanie i
+pochłonięcie dowolnych anomalii zliczeń, udając nową fizykę neutrinową. Bez niezależnej, przestrzennej kalibracji
+wydajności detektora, równanie to cierpi na całkowity brak unikalnej identyfikowalności fizycznej.
+
+POUFNE // RAPORT TECHNICZNY DETEKCJI NEUTRIN
+
+Strona 2 z 5
+
+Audyt LSC v6.3.0 (Stan przed BEST-2)
+
+4. Mapa Rekonstrukcji Danych i Zasobów Publicznych
+Aby powiązać luźne stopnie swobody modelu LSC i umożliwić jego jednoznaczne odróżnienie od hipotezy neutrina
+sterylnego
+
+(3+1)
+
+lub
+
+klasycznych
+
+błędów
+
+systematycznych,
+
+zmapowano
+
+publicznie
+
+dostępne
+
+dane
+
+eksperymentalne:
+
+Zasób / Zbiór Danych
+
+Dostępność i Znaczenie dla Walidacji
+
+Docelowy Element Kontrolny
+LSC
+
+Deficyt BEST 2022
+
+Kluczowy / Publiczny. Definiuje bezwzględną skalę
+
+Ogranicza składową śladową tensora
+
+(PRL 128, 232501)
+
+deficytu (~20-24%) w obu strefach komory galowej.
+
+$D_{ij}$ oraz parametr izotropowy $
+
+Główny punkt odniesienia dla amplitudy.
+
+\lambda_0$.
+
+Chronologia Ekstrakcji
+
+Dostępny w publikacjach. Pozwala na analizę
+
+Weryfikuje człon zależny od czasu
+
+BEST
+
+sekwencji czasowej (lipiec 2019 - marzec 2020) pod
+
+syderycznego: $\lambda_A * q_a(t,
+
+(20 serii pomiarowych)
+
+kątem efektów dobowych i syderycznych.
+
+\Omega)$.
+
+Dane kalibracyjne GALLEX /
+
+Publiczny (Archiwa historyczne). Kluczowy dla
+
+Blokuje nadmierną elastyczność
+
+SAGE
+
+walidacji krzyżowej "leave-one-out". Różne geometrie
+
+przestrzenną lokalnego wektora
+
+(Źródła Chromium-51 i
+
+komór blokują lokalne dopasowania szumu.
+
+odpowiedzi laboratorium.
+
+Czas połowicznego rozpadu
+
+Publiczny i precyzyjny. Pomiar $11.468 \pm 0.008$ dni
+
+Ustala stały parametr zaniku w
+
+71
+
+wyklucza błąd jądrowy jako przyczynę anomalii. Zamraża
+
+obliczeniach teoretycznych $N_{0,a}
+
+(Norman et al. 2024, PRC
+
+stałą rozpadu.
+
+$.
+
+Strumienie neutrin
+
+Pełna dostępność publiczna. Nakłada ekstremalnie
+
+Definiuje zewnętrzne,
+
+słonecznych
+
+rygorystyczne limity na całkowite znikanie neutrin
+
+nieprzekraczalne granice dla
+
+(Borexino, SNO, Super-K)
+
+elektronowych w funkcji odległości.
+
+amplitudy sprzężenia $ lpha_D$.
+
+Argon-37)
+
+Ge
+
+109)
+
+5. Minimalny Pakiet Zamrożenia Naukowego (MSFP) przed BEST-2
+Aby zachować rygor naukowy i zapobiec manipulacji parametrami po unblindingu danych BEST-2, w kodzie
+źródłowym analizatora należy bezwzględnie zaimplementować i zamrozić następujące restrykcje (MSFP):
+1. Ścisłe Ograniczenie Śladowe: Tensor $D_{ij}$ musi zostać zdefiniowany jako czysto bezśladowy ($Tr(D) =
+0$). Całość izotropowego przesunięcia wydajności detekcji musi zostać przypisana klasycznym poprawkom
+przekroju czynnego (np. Bahcall/Giunti), uniemożliwiając tensorowi LSC sztuczne pochłanianie globalnego
+deficytu.
+2. Wymóg Konkurencyjnych Linii Bazowych: Każde dopasowanie LSC musi być bezpośrednio porównywane z
+dwoma zamrożonymi benchmarkami:
+• M3 (Neutrino Sterylne): Model 3+1 z parametrami $\Delta m^2 \sim 1.25 ext{ eV}^2$ i $\sin^2(2 heta) \sim
+0.3$.
+• M4 (Systematyka Detektora): Model czysto klasycznego obniżenia wydajności chemicznej o 22%.
+3. Weto Identyfikowalności: Jeżeli poprawka jakości dopasowania $\Delta\chi^2$ dla modelu LSC (M6) w
+porównaniu do prostego przesunięcia systematycznego (M4) jest mniejsza niż 15.0 (dla 5 dodatkowych stopni
+swobody), model LSC musi zostać automatycznie odrzucony jako statystycznie nieznaczący.
+
+POUFNE // RAPORT TECHNICZNY DETEKCJI NEUTRIN
+
+Strona 3 z 5
+
+Audyt LSC v6.3.0 (Stan przed BEST-2)
+
+4. Zakotwiczenie we Współrzędnych J2000: Orientacja przestrzenna wektorów laboratoryjnych musi być na
+sztywno zsynchronizowana z niebiańskim układem odniesienia J2000. Rotacja fazy dopasowania w układzie
+detektora post-hoc jest niedozwolona.
+
+6. Celowane Ocena i Analiza Krytyczna (A do I)
+A. Główne Silne Strony Naukowe
+Ramy LSC 6.3.0 wprowadzają rygorystyczną dyscyplinę matematyczną poprzez jawne oddzielenie globalnej skali
+anomalii od efektów kierunkowych. Wymóg walidacji krzyżowej chroni przed błędami metodologicznymi, które
+często pojawiają się w pojedynczych analizach eksperymentalnych.
+
+B. Główne Słabości Naukowe
+Kluczową słabością jest geometryczne znoszenie się sygnału bezśladowego w komorach o wysokiej symetrii
+przestrzennej (takich jak sferyczne i cylindryczne strefy BEST). Sprawia to, że teoretyczna anizotropia staje się
+niemal niemierzalna w uśrednionych strumieniach całkowitych, sprowadzając model LSC do roli matematycznego
+artefaktu.
+
+C. Najbardziej Niebezpieczne Ryzyka Nadmiernego Dopasowania (Overfitting)
+Brak fizycznego zakotwiczenia składowych tensora anizotropii pozwala pięciu niezależnym parametrom
+dopasowywać się do fluktuacji tła kosmologicznego lub problemów z aparaturą liczącą (np. zjawiska martwego
+czasu detektorów proporcjonalnych), generując fałszywe sygnały nowej fizyki.
+
+D. Najważniejsze Brakujące Dane
+Krytycznym brakiem uniemożliwiającym niezależną weryfikację jest brak publicznej, pełnej macierzy kowariancji
+uwzględniającej korelacje błędów systematycznych pomiędzy strefami eksperymentu BEST oraz dokładnych
+znaczników czasu (timestamps) dla każdego zliczenia aktów rozpadu germanu.
+
+E. Najważniejsze Ograniczenia Zewnętrzne
+Dane z eksperymentów Borexino oraz precyzyjne limity kinematyczne masy neutrina z eksperymentu KATRIN
+stanowią potężną barierę dla LSC. Wszelkie modyfikacje energii neutrin rzędu kilku procent są w sposób
+jednoznaczny wykluczone przez globalne dopasowania parametrów oscylacji słonecznych i reaktorowych.
+
+F. Co MUSI Zostać Zamrożone Przed BEST-2
+Przed analizą danych z ery BEST-2 należy zamrozić geometryczne wektory pozycjonowania Laboratorium w
+Baksanie względem osi obrotu Ziemi oraz rozkład priorytetów (priors) dla parametrów anizotropii, uniemożliwiając
+manipulację statystyczną po odtajnieniu wyników.
+
+G. Co Powinno Zostać Usunięte lub Zdegradowane
+Wszelkie pozostałości pojęciowe dotyczące "efektywnego przesunięcia ku czerwieni" lub mikro-czarnych dziur (z
+wersji LSC 4.2) muszą zostać całkowicie usunięte z dokumentacji. Funkcja modyfikacji czasu $f_A(E,t)$ powinna
+zostać zdegradowana do wartości stałej, o ile inżynieryjne logi detektora nie wykażą realnych, mierzalnych wahań
+sprawności elektroniki.
+
+POUFNE // RAPORT TECHNICZNY DETEKCJI NEUTRIN
+
+Strona 4 z 5
+
+Audyt LSC v6.3.0 (Stan przed BEST-2)
+
+H. Czy Ramy Nadają Się do Publikacji jako Konserwatywna Fenomenologia
+Tak, ale z poważnymi zastrzeżeniami. Publikacja jest możliwa wyłącznie pod warunkiem przedstawienia modelu
+jako matematycznego narzędzia do nakładania górnych ograniczeń na potencjalną anizotropię przestrzeni, a nie
+jako dowodu na istnienie nowej fizyki. Praca musi otwarcie opisywać pełną degenerację parametrów z klasyczną
+systematyką detektora.
+
+I. Czy Ramy są Dojrzałe do Długoterminowej Archiwizacji w Stanie Zamrożenia
+Tak. Struktura matematyczna wersji LSC 6.3.0 jest wystarczająco spójna i zamknięta, aby stanowić trwały punkt
+odniesienia (freeze-state template). Spełnia ona kryteria odtwarzalności i pozwala na czyste porównanie
+teoretyczne w momencie, gdy publicznie pojawią się pełne i oficjalne dane z nowego przebiegu pomiarowego
+BEST-2.
+
+7. Wnioski Końcowe i Rekomendacja Audytorska
+Ramy fenomenologiczne LSC v6.3.0 wykazują zadowalającą strukturę formalną, lecz ich fizyczna unikalność jest
+skrajnie zagrożona przez wewnętrzne degeneracje z klasycznymi błędami aparatury. Rekomenduje się
+dopuszczenie pakietu do prerejestracji przed eksperymentem BEST-2 TYLKO I WYŁĄCZNIE pod warunkiem
+zaimplementowania pełnego protokołu MSFP oraz bezwzględnego odrzucenia wyników w przypadku
+niespełnienia kryterium istotności $\Delta\chi^2 > 15.0$. Model nie może być traktowany jako pretendent do miana
+nowej fizyki bez uprzedniego przejścia testu odporności walidacji krzyżowej względem historycznych danych
+GALLEX i SAGE.
+
+POUFNE // RAPORT TECHNICZNY DETEKCJI NEUTRIN
+
+Strona 5 z 5
+
+

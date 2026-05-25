@@ -1,9 +1,18 @@
 cff-version: 1.2.0
-title: "LSC Research"
-message: "If you use this repository, cite the relevant LSC scientific release and repository snapshot."
-type: software
+title: "LSC Research: Pre-BEST-2 Freeze and Validation Framework"
+message: "If you use this repository, cite the relevant LSC scientific release and this repository snapshot."
+type: dataset
 authors:
   - family-names: "LuciferSun"
 repository-code: "https://github.com/luciferprosun/LSC-Research"
 license: "MIT"
-abstract: "Standalone scientific repository for the LSC neutrino and Gallium research line, extracted from mixed historical roots while preserving scientific lineage and release continuity."
+version: "pre-BEST-2-freeze"
+date-released: "2026-05-25"
+abstract: "Canonical freeze-stage repository for the LSC neutrino and Gallium research line. The repository presents LSC as an unvalidated constrained phenomenological validation framework, not as confirmed new physics, and preserves canonical, validation, implementation, audit, provenance, data-requirement, and historical materials for pre-BEST-2 review."
+keywords:
+  - "LSC"
+  - "Gallium anomaly"
+  - "BEST"
+  - "BEST-2"
+  - "neutrino phenomenology"
+  - "validation framework"

@@ -1,0 +1,40 @@
+Audyt Danych LSC (Pre-BEST-2)
+Dokument audytu ramy LSC (wersja 6.3.0) przygotowany dla potrzeb walidacji
+eksperymentalnej.
+
+1. Podsumowanie
+LSC traktujemy jako ramę fenomenologiczną. Kluczowym problemem jest brak
+pełnych macierzy kowariancji oraz szczegółowych danych z ekstrakcji, co
+uniemożliwia obecnie rzetelną weryfikację statystyczną.
+
+2. Kluczowe brakujące dane
+Zbiór danych
+
+Status
+
+Znaczenie
+
+BEST
+
+FATAL
+
+Modelowanie stref wewnętrznych/zewnętrznych.
+
+Macierz Kowariancji
+
+FATAL
+
+Uniknięcie overfittingu szumu.
+
+Orientacja Detektora
+
+FATAL
+
+Mapowanie tensora anizotropii.
+
+3. Roadmapa
+Przed "zamrożeniem" BEST-2 wymagane jest: formalne zablokowanie parametrów
+modelu, uzyskanie archiwalnych danych z ekstrakcji oraz prerejestracja kryteriów
+sukcesu.
+
+

@@ -1,0 +1,77 @@
+{
+  "title": "LSC Pre-BEST-2 Freeze Package: Constrained Phenomenological Validation Framework for Gallium/BEST Neutrino Anomaly Analysis",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "description": "Local release-candidate metadata draft for a pre-BEST-2 freeze archive. The package presents LSC as a constrained phenomenological validation framework for comparing structured Gallium/BEST-style anomaly hypotheses against null, normalization-only, cross-section/systematics, sterile-neutrino, detector/systematics, and LSC-specific models. It includes canonicalization outputs, validation infrastructure, implementation templates, external-audit integration, provenance manifests, request-for-data materials, and final human-review checklists. The package does not claim confirmed new physics, sterile-neutrino exclusion, or a completed BEST-2 validation.",
+  "creators": [
+    {
+      "name": "Lukaszzz",
+      "affiliation": "Independent researcher / affiliation to be confirmed",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "LSC",
+    "neutrino phenomenology",
+    "Gallium anomaly",
+    "BEST",
+    "BEST-2",
+    "validation framework",
+    "detector systematics",
+    "covariance policy",
+    "pre-registration",
+    "freeze archive"
+  ],
+  "language": "eng",
+  "license": "license-to-be-confirmed-before-upload",
+  "version": "pre-BEST-2-freeze-release-candidate",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-Research",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://zenodo.org/records/20037838",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "https://zenodo.org/records/19879320",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "https://zenodo.org/records/19843361",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "https://zenodo.org/uploads/19769179",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication"
+    }
+  ],
+  "communities": [],
+  "notes": "Draft only. Do not upload without human review. Confirm authorship, affiliation, license, citation metadata, and final claim language before any Zenodo deposit.",
+  "archive_structure": [
+    "canonical",
+    "validation",
+    "implementation",
+    "audits",
+    "master_context",
+    "source_refs",
+    "provenance",
+    "reproducibility",
+    "metadata",
+    "release"
+  ],
+  "claim_boundary": {
+    "confirmed_new_physics": false,
+    "sterile_neutrino_exclusion": false,
+    "best2_validation_completed": false,
+    "framework_type": "constrained phenomenological validation framework"
+  }
+}
+
