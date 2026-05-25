@@ -1,0 +1,72 @@
+{
+  "title": "LSC Pre-BEST-2 Freeze & Validation Framework",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "description": "This update consolidates the LSC 6.3.0 pre-BEST-2 freeze-stage framework as an unvalidated constrained phenomenological validation framework for Gallium/BEST-style neutrino anomaly analysis. It modernizes the existing archival package with the finalized GitHub freeze repository, canonical freeze documents, validation infrastructure, implementation templates, provenance manifests, audit summaries, request-for-data materials, checksums, and release discipline. The framework is preserved for future BEST-2-era comparison and validation work. It does not claim confirmed new physics, does not claim that the Gallium/BEST anomaly is solved, and does not claim sterile-neutrino exclusion. Full likelihood validation remains blocked by missing covariance matrices, extraction-level data, orientation/timestamp metadata, exposure-level information, calibration/systematics datasets, and external mappings to KATRIN, IceCube, SME/Lorentz-style constraints, solar-neutrino consistency, and standard oscillation fits.",
+  "creators": [
+    {
+      "name": "LuciferSun",
+      "affiliation": "Independent Research / affiliation to be confirmed",
+      "orcid": ""
+    },
+    {
+      "name": "flAmeBorn",
+      "affiliation": "Independent Research / affiliation to be confirmed",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "LSC",
+    "LSC 6.3.0",
+    "Pre-BEST-2 freeze",
+    "neutrino phenomenology",
+    "Gallium anomaly",
+    "BEST",
+    "BEST-2",
+    "validation framework",
+    "detector systematics",
+    "M4 baseline",
+    "covariance limitations",
+    "provenance",
+    "reproducibility"
+  ],
+  "language": "eng",
+  "license": "cc-by-4.0",
+  "version": "6.3.0-pre-BEST2-freeze-update",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-Research",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://zenodo.org/records/20037838",
+      "relation": "isNewVersionOf",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "https://zenodo.org/records/19879320",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "https://zenodo.org/records/19843361",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication"
+    },
+    {
+      "identifier": "https://zenodo.org/uploads/19769179",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication"
+    }
+  ],
+  "notes": "Final local metadata draft only. Do not upload without explicit human approval. Authorship is LuciferSun and flAmeBorn. Confirm affiliations, license, DOI relation type, final file set, and claim language before any Zenodo update.",
+  "claim_boundary": {
+    "confirmed_new_physics": false,
+    "sterile_neutrino_exclusion": false,
+    "gallium_anomaly_solved": false,
+    "best2_validation_completed": false,
+    "framework_type": "unvalidated constrained phenomenological validation framework"
+  }
+}

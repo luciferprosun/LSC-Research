@@ -8,6 +8,15 @@ LSC is preserved here as an unvalidated, constrained phenomenological validation
 
 This repository is frozen before BEST-2-era analysis to prevent post-hoc theory drift.
 
+## Authorship
+
+Freeze-stage authorship:
+
+- LuciferSun
+- flAmeBorn
+
+Older collaborator or creator names may remain inside `historical_archive/` only as provenance-preserved historical metadata.
+
 ## Claim Boundary
 
 This repository does not claim:
@@ -104,4 +113,3 @@ Recommended review order:
 6. `freeze_release/FINAL_GITHUB_FREEZE_CHECKLIST.md`
 7. `provenance/MANIFEST.csv` or root `MANIFEST.csv`
 8. `CHECKSUMS.sha256`
-

@@ -1,0 +1,13 @@
+Claim,Source,Status,Required evidence,Risk of hallucination or overclaiming
+"LSC is currently an unvalidated phenomenological framework, not confirmed new physics.",LSC-Research/LSC_core/theory/LSC-6.3.0/LSC_6_3_0_UNIFIED_BEST2_UPDATE.md,supported,Independent fits and cross-experiment validation would be required for stronger status.,Low if stated as phenomenological only.
+Sterile-neutrino explanations remain comparison baselines and are not excluded by LSC.,LSC 6.3.0 update; LSC 6.2.0 base theory,supported,Model comparison against sterile benchmark M3 with proper penalties.,Medium if stated as exclusion of sterile neutrinos.
+LSC 6.3.0 separates scalar trace response from traceless directional anisotropy.,LSC 6.3.0 update,supported,Frozen implementation using trace-only and trace+traceless baselines.,Low.
+Exact reproduction of BEST/GALLEX/SAGE anchor ratios is insufficient validation.,LSC 6.2.1 Codex analysis report,supported,Leave-one-out and cross-experiment checks.,Low.
+The gallium dataset is complete enough for first-pass ratios but lacks full covariance and extraction-level tables.,LSC_core/datasets/gallium-core/summary_report.md,supported,Official extraction/covariance tables from BEST/GALLEX/SAGE.,Low.
+A detector-frame tensor can model directional reconstruction response.,"LSC 6.0, 6.2.0, 6.3.0 documents",partially supported,Detector/systematics model and experimental orientation metadata.,Medium.
+A small energy-response shift may be amplified in gallium event rates through cross-section dependence.,LSC 5.5 and 6.0 theory notes,partially supported,Line-by-line cross-section propagation and covariance-aware fit.,Medium.
+Sidereal/orientation modulation is a discriminating future test.,LSC 6.0 and 6.3.0 documents,speculative,"Time-stamped exposures, orientation metadata, environmental corrections.",Medium-high.
+LSC 4.2 PBH-centered explanations are current LSC core.,Legacy LSC 4.2 / LSC 6.0 cleanup notes,deprecated,Not applicable for current core; preserved only as lineage.,High if treated as present core.
+LSC proves the gallium anomaly.,Explicitly disallowed in 6.3.0,unsupported / disallowed,Would require statistically preferred model vs baselines and external veto survival.,Very high.
+"IceCube is relevant as a constraint/veto or detector anisotropy analogy, not direct gallium evidence.",LSC 6.2.0 and 6.3.0,supported,Machine-readable constraints and careful separation of detector systematics from neutrino-sector claims.,Medium.
+BEST-2 should be used with pre-registered/frozen model templates.,LSC 6.3.0 frozen prediction protocol,supported,Versioned model spec before data fitting.,Low.

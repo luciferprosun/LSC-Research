@@ -1,0 +1,231 @@
+LSC Reconnaissance Report
+
+LSC PUBLIC DATA & CONSTRAINT
+RECONNAISSANCE
+Final Pre-BEST-2 Freeze Readiness Assessment
+
+Executive Summary
+This report constitutes a final, unprotective, and rigorous data reconnaissance for the LSC (Liquid Scintillator Core)
+framework prior to the BEST-2 experimental phase. Operating under the strict assumption that LSC is an
+unvalidated phenomenological framework, this audit maps all publicly available datasets, evaluates their sufficiency
+for likelihood-level analysis, identifies critical missing metadata, and maps external physics constraints (solar,
+KATRIN, IceCube).
+The central finding is that while the public domain offers sufficient data to establish the absolute deficit scale (trace),
+the framework remains fundamentally underconstrained regarding its directional and time-dependent parameters
+(traceless tensor components) due to the proprietary nature of extraction-level covariance and sidereal timestamps.
+
+A. Map of Publicly Available Datasets and Resources
+Resource
+
+Source / Link
+
+Contents & Machine Readability
+
+Sufficient?
+
+Class
+
+BEST (2022)
+
+PRL 128, 232501 (2022)
+
+Inner/Outer zone rates (20 extractions).
+
+No. Lacks full
+
+ESSENTIAL
+
+arXiv:2112.14599
+
+Machine-readable: No (PDF tables).
+
+covariance
+matrix.
+
+GALLEX
+
+PRD 80, 082001 (2009)
+
+Historical Cr-51 source calibration rates.
+
+No. No
+
+Machine-readable: No.
+
+timestamp event
+
+IMPORTANT
+
+logs.
+SAGE
+
+KATRIN
+
+IceCube
+
+PRC 80, 015807 (2009)
+
+Nature Phys 18, 160 (2022)
+
+Nature Phys 14, 961 (2018)
+
+Cr-51 and Ar-37 calibration extractions.
+
+No. Summary
+
+Machine-readable: No.
+
+statistics only.
+
+Sub-eV neutrino mass limits.
+
+Yes. Bounds eV-
+
+Machine-readable: Yes (Data releases).
+
+scale steriles.
+
+Lorentz Violation / SME tensor limits.
+
+Yes. Constrains
+
+Machine-readable: Yes (Data releases).
+
+high-energy
+
+IMPORTANT
+
+IMPORTANT
+
+OPTIONAL
+
+anisotropy.
+Solar
+
+Borexino: Nature 562 (2018)
+
+Neutrinos
+
+pp, Be-7, B-8 flux survival probabilities.
+
+Yes. Bounds
+
+Machine-readable: Yes (Borexino portal).
+
+total
+
+ESSENTIAL
+
+disappearance.
+Cross-Section
+
+PLB 795, 542 (2019)
+
+Gallium cross-section uncertainties.
+
+No. Theory
+
+Machine-readable: No.
+
+limits remain
+
+ESSENTIAL
+
+debated.
+
+CONFIDENTIAL // PRE-BEST-2 SCIENTIFIC EVALUATION
+
+Page 1 of 3
+
+LSC Reconnaissance Report
+
+Resource
+
+Source / Link
+
+Contents & Machine Readability
+
+Sufficient?
+
+Class
+
+Covariance
+
+N/A (Baksan collaboration)
+
+Correlated systematics across BEST
+
+N/A.
+
+UNAVAILABLE
+
+zones.
+Machine-readable: N/A.
+
+B. Missing Information & Validation Blockers
+Fundamental Underconstraint: The LSC framework introduces a detector-frame tensor (D_ij) allowing for
+directional and orientation-dependent variation. The public data is insufficient to constrain this.
+
+• Missing Covariance: The lack of a public, fully correlated systematic covariance matrix for the BEST inner/outer
+zones prevents rigorous $\chi^2$ testing. Treating the zones as having diagonal independent errors artificially
+inflates the statistical significance of any fit.
+• Missing Timestamps & Sidereal Data: To fit the traceless (directional) parameters of the LSC framework,
+precise time-stamped event data for extraction runs must be mapped to celestial coordinates (ICRS). This
+metadata is completely absent from public archives.
+• Private Access Requirement: Public data alone is entirely insufficient for full likelihood-level validation.
+Falsifying or proving the orientation-dependent parameters of LSC requires direct collaboration access to
+proprietary Baksan hardware logs and extraction chronologies.
+
+C. BEST-2 Resolution Capability
+Can BEST-2 realistically resolve the ambiguity?
+Partially. BEST-2 aims to refine measurements, potentially altering target geometries or baseline distances. If
+BEST-2 identifies a clear oscillation-like wave (distance-dependent), it strongly supports the standard sterileneutrino hypothesis. If the deficit remains uniformly isotropic across new geometries, it supports either a
+normalization error (cross-section) or the isotropic trace parameter of LSC.
+However, detector/systematics degeneracy will remain unless BEST-2 specifically publishes continuous, timeresolved extraction data mapped to celestial coordinates. Without this, an LSC tensor fit is indistinguishable from
+localized chemical inefficiencies or transient noise.
+
+CONFIDENTIAL // PRE-BEST-2 SCIENTIFIC EVALUATION
+
+Page 2 of 3
+
+LSC Reconnaissance Report
+
+D. Requisite Packages & Constraint Maps
+1. Minimum Required Dataset Package
+• Official extraction rates for BEST, SAGE, and GALLEX (Publicly available).
+• Gallium cross-section theoretical bounds (Bahcall/Kostensalo) (Publicly available).
+• Exact spatial coordinates of all target chamber zones relative to the Earth's rotational axis (Private/Limited).
+
+2. Critical Missing Information List (The Blockers)
+• Run-by-run fully correlated covariance matrices for BEST.
+• Absolute UTC timestamps for the initiation and conclusion of each chemical extraction.
+• Counter-level efficiencies and dead-time hardware logs.
+
+3. External Constraint Map
+• Solar/Atmospheric Consistency: Limits maximum isotropic disappearance. Constrains LSC's $ lpha_D$ to
+avoid violating Borexino limits.
+• KATRIN: Prevents the framework from assuming heavy sterile masses beyond $\sim 0.8$ eV as a baseline
+comparator.
+• Standard-Model Extension (SME) Limits: IceCube searches place stringent limits on Lorentz-violating tensor
+fields. If LSC assumes a cosmological background tensor, it must conform to IceCube's SME bounds ($<
+10^{-24}$).
+
+4. Pre-BEST-2 Freeze Readiness Assessment
+The framework is mathematically mature enough to be frozen, but it is experimentally unready for true falsification
+due to the public data vacuum. It must be frozen as a "conditional template" awaiting private data, rather than an
+immediately testable hypothesis.
+
+E. Final Decision
+RECOMMENDATION: FREEZE WITH DOWNGRADED CLAIMS
+Based on the severe lack of public covariance and orientation metadata, the LSC framework should be FROZEN in
+its current mathematical state (v6.3.0), but its operational status must be strictly limited.
+It cannot be presented as a fully verifiable theory using only public data. The freeze must explicitly state that the
+tensor (directional) components of LSC are currently untestable and that the framework serves solely as a
+preregistered mathematical pipeline, completely dependent on future collaboration with the BEST-2 team for sidereal
+and hardware metadata.
+
+CONFIDENTIAL // PRE-BEST-2 SCIENTIFIC EVALUATION
+
+Page 3 of 3
+
+

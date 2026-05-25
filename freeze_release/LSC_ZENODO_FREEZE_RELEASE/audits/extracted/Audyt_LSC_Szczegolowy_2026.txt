@@ -1,0 +1,28 @@
+Audyt: LSC Canonical Theory Context
+Package
+Data wygenerowania: 2026-05-25
+Status: Pre-BEST-2 Freeze (Wersja 6.3.0)
+
+1. Executive Summary
+LSC jest ramą fenomenologiczną, nie potwierdzoną teorią fizyczną. Obecny
+etap skupia się na protokole walidacji pre-BEST-2.
+
+2. Główne braki danych (Krytyczne)
+• Macierze kowariancji i dane surowe: Brak pełnych danych dla BEST/
+GALLEX/SAGE uniemożliwia pełną reprodukcję likelihood.
+• Metadane syderyczne: Brak orientacji detektorów i dokładnych
+timestampów uniemożliwia testy anizotropii.
+• Inaccessible Data: Zenodo API 19769179 jest niedostępne.
+
+3. Warunki sukcesu i porażki
+• Wsparcie: Model musi przewyższyć proste modele bazowe przy
+uwzględnieniu kar za parametry.
+• Falsyfikacja: Spadek znaczenia sygnału do poziomu systematyki
+detektora lub normalizacji oznacza porażkę modelu.
+
+4. Metodologia
+Obecna wersja 6.3.0 oddziela odpowiedź skalarną od anizotropii kierunkowej, co
+ma zredukować niejednoznaczności wynikające z prostych przesunięć
+normalizacji.
+
+

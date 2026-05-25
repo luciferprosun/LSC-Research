@@ -4,6 +4,13 @@
 
 Local release-candidate package for human review before any public GitHub or Zenodo release.
 
+## Authorship
+
+Freeze-stage authorship:
+
+- LuciferSun
+- flAmeBorn
+
 ## Release Positioning
 
 This release candidate presents LSC as a constrained phenomenological validation framework. It is not a discovery announcement and does not claim confirmed new physics, sterile-neutrino exclusion, or validated BEST-2 outcomes.
@@ -93,4 +100,3 @@ This release candidate includes checksum generation and source/provenance manife
 ## Audit Integration Notes
 
 External audits from Claude, Gemini, DeepSeek, Kimi, and reconnaissance material are included as constraint layers. Hostile or critical conclusions are preserved as validation requirements and risk controls, not treated as theory extensions.
-

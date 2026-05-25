@@ -1,0 +1,4 @@
+# GitHub Repository Description Draft
+
+LSC-Research is the canonical pre-BEST-2 freeze-stage repository for LSC 6.3.0, an unvalidated constrained phenomenological validation framework for Gallium/BEST-style neutrino anomaly analysis. It preserves the frozen canonical core, validation protocol, detector/systematics competitor baseline, implementation templates, audit trail, provenance manifests, and data-requirement documents. The repository makes no discovery claim, no sterile-neutrino exclusion claim, and no confirmed-new-physics claim. Full likelihood validation remains blocked by missing covariance matrices, extraction-level data, orientation/timestamp metadata, and external-constraint mappings. Future BEST-2-era analysis should test this frozen framework against null, normalization, cross-section/systematics, sterile-neutrino, detector/systematics, and LSC-specific models.
+

@@ -1,0 +1,16 @@
+LSC
+LSC 6.3.0
+Pre-BEST-2 freeze
+neutrino phenomenology
+Gallium anomaly
+BEST
+BEST-2
+validation framework
+detector systematics
+M4 baseline
+covariance limitations
+provenance
+reproducibility
+audit-aware archive
+request for data
+
