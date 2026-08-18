@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_PREFIT_EXECUTION_INCIDENT",
+  "incident_id": "LSC650-PREFIT-R2-BOOLEAN-SERIALIZATION-REMAINDER",
+  "timestamp_utc": "2026-08-16T17:00:28Z",
+  "status": "ABORTED_BEFORE_RESULT_CONSTRUCTION_OR_SERIALIZATION",
+  "prefit_freeze_revision": 2,
+  "prefit_freeze_path": "LSC_6_5_0_PREFIT_FREEZE_R2_ABORTED.json",
+  "prefit_freeze_sha256": "9f10ce019fd848515ae3370d224d1f688e147aba0419d4208e45dd24cfcf61fa",
+  "determination_source_sha256_before_fix": "86c0bd75072da14f6260eeca9b82ed3c8a95b6148022f25054beadf8ffaa86b3",
+  "exception": "NameError: name 'false' is not defined",
+  "root_cause": "Three additional JSON boolean literals remained later in the Python result-object construction; R1 validation did not statically inspect all loaded names.",
+  "optimizer_was_invoked_before_exception": true,
+  "optimizer_result_was_serialized": false,
+  "optimizer_result_was_printed_or_returned": false,
+  "result_file_created": false,
+  "scientific_outcome_available_to_decision_maker": false,
+  "scientific_or_methodological_change_authorized": false,
+  "repair": {
+    "scope": "Replace every remaining Python literal false with False and add an AST gate forbidding loaded names false, true, and null in the determination module.",
+    "physics_changed": false,
+    "data_changed": false,
+    "domain_or_bounds_changed": false,
+    "likelihood_or_covariance_changed": false,
+    "optimizer_configuration_changed": false,
+    "result_logic_changed": false
+  },
+  "governance": {
+    "prefit_revisions_1_and_2_preserved": true,
+    "new_prefit_revision_required": true,
+    "completed_scientific_determinations_before_revision_3": 0,
+    "unseen_aborted_software_attempts_total": 2,
+    "refit_or_post_result_tuning_performed": false
+  }
+}

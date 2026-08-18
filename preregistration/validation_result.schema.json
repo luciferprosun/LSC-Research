@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "LSC_metric": {},
+    "baseline_metrics": {
+      "type": "array"
+    },
+    "blinded": {
+      "type": "boolean"
+    },
+    "covariance_scenario": {
+      "type": "string"
+    },
+    "execution_manifest_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "falsification_state": {
+      "type": "string"
+    },
+    "interpretation_allowed": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "nuisance_scenario": {
+      "type": "string"
+    },
+    "observed_metric": {},
+    "preregistered": {
+      "type": "boolean"
+    },
+    "sensitivity_only": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string"
+    },
+    "test_id": {
+      "pattern": "^T(?:[1-9]|1[0-2])$",
+      "type": "string"
+    },
+    "uncertainty": {}
+  },
+  "required": [
+    "test_id",
+    "execution_manifest_hash",
+    "status",
+    "observed_metric",
+    "baseline_metrics",
+    "LSC_metric",
+    "nuisance_scenario",
+    "covariance_scenario",
+    "uncertainty",
+    "sensitivity_only",
+    "preregistered",
+    "blinded",
+    "falsification_state",
+    "interpretation_allowed",
+    "notes"
+  ],
+  "title": "ValidationResult",
+  "type": "object"
+}

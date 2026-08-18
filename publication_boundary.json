@@ -1,0 +1,263 @@
+{
+  "BEST2_prediction_authorized": false,
+  "allowed_claims": [
+    {
+      "allowed_in_publication": true,
+      "claim": "The historical LSC 6.3.0 model identity was recovered.",
+      "claim_id": "model_identity_recovered",
+      "evidence": "Steps 01, 02, and frozen_model_identity.json",
+      "reason": "Version, commit, freeze boundary, version DOI, and concept DOI agree.",
+      "status": "SUPPORTED"
+    },
+    {
+      "allowed_in_publication": true,
+      "claim": "The symbolic E1-E12 equation set was recovered.",
+      "claim_id": "equations_recovered",
+      "evidence": "Steps 01-02 and canonical equation hash",
+      "reason": "The canonical equation source and SHA-256 are fixed; this does not supply numerical values.",
+      "status": "SUPPORTED_SYMBOLIC_ONLY"
+    },
+    {
+      "allowed_in_publication": true,
+      "claim": "Release and symbolic provenance were recovered.",
+      "claim_id": "provenance_recovered",
+      "evidence": "Steps 01 and 05 provenance registries",
+      "reason": "The available lineage is auditable, while the missing numerical object has no recoverable provenance.",
+      "status": "SUPPORTED_WITH_SCOPE"
+    }
+  ],
+  "content_classifications": [
+    "UNCHANGED_FROM_6_3_0_AUTHENTIC",
+    "FORMALIZED_FROM_6_3_0",
+    "NEW_NUMERICAL_SPECIFICATION_6_3_1",
+    "NEW_METHOD_6_3_1",
+    "HISTORICAL_REFERENCE_ONLY",
+    "UNRESOLVED"
+  ],
+  "decision_date": "2026-08-16",
+  "decision_verdict": "LSC_6_3_0_NUMERICALLY_UNRECOVERABLE_SUCCESSOR_BOUNDARY_DEFINED",
+  "future_blind_targets": [
+    {
+      "blindness": "FUTURE_BLIND",
+      "dataset_id": "BEST2_FUTURE",
+      "status": "FUTURE_ONLY"
+    },
+    {
+      "blindness": "CONDITIONAL_ON_PRE_DATA_FREEZE",
+      "dataset_id": "NEW_GALLIUM_SOURCE_EXPERIMENT",
+      "status": "FUTURE_ELIGIBLE"
+    },
+    {
+      "blindness": "ASSESS_INDIVIDUALLY_BEFORE_DATA_ACCESS",
+      "dataset_id": "NEW_INDEPENDENT_EXPERIMENT",
+      "status": "FUTURE_ELIGIBLE"
+    }
+  ],
+  "historical_DOI": "10.5281/zenodo.20377427",
+  "historical_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+  "historical_concept_DOI": "10.5281/zenodo.19780615",
+  "historical_data_allowed_roles": [
+    "model development",
+    "compatibility assessment",
+    "retrospective benchmark",
+    "parameter illustration",
+    "baseline comparison"
+  ],
+  "historical_data_blindness": [
+    {
+      "blindness": "NON_BLIND_HISTORICAL",
+      "dataset_id": "BEST",
+      "exposure": "MODEL_EXPOSED",
+      "role": "RETROSPECTIVE_NON_BLIND"
+    },
+    {
+      "blindness": "NON_BLIND_HISTORICAL",
+      "dataset_id": "GALLEX_GNO",
+      "exposure": "MODEL_EXPOSED",
+      "role": "RETROSPECTIVE_NON_BLIND"
+    },
+    {
+      "blindness": "NON_BLIND_HISTORICAL",
+      "dataset_id": "SAGE_CR51",
+      "exposure": "MODEL_EXPOSED",
+      "role": "RETROSPECTIVE_NON_BLIND"
+    },
+    {
+      "blindness": "NON_BLIND_HISTORICAL",
+      "dataset_id": "SAGE_AR37",
+      "exposure": "MODEL_EXPOSED",
+      "role": "RETROSPECTIVE_NON_BLIND"
+    }
+  ],
+  "historical_data_prohibited_role": "strict blind confirmation of 6.3.1",
+  "historical_freeze_commit": "a6d582694d55fa0260ef7ab07ed83fd06feef607",
+  "historical_version": "6.3.0-pre-BEST2-freeze-update",
+  "identity_recoverability": "FULLY_RECOVERABLE",
+  "newly_specified_components_required": [
+    "complete parameter vector and canonical ordering",
+    "all numerical values and uncertainties",
+    "exact f0_a and fA_a definitions",
+    "active tensor components, normalization, orientation, and frame",
+    "complete units and transformations",
+    "initialization, bounds, defaults, and normalization order",
+    "executable evaluator, prediction input schema, and deterministic outputs",
+    "golden numerical reference vectors and release manifest"
+  ],
+  "numerical_recoverability": "NUMERICALLY_UNRECOVERABLE_WITH_CURRENT_EVIDENCE",
+  "numerical_validation_authorized": false,
+  "prediction_authorized": false,
+  "preserved_components": [
+    "historical release identity, commit, version DOI, and concept DOI",
+    "canonical symbolic E1-E12 equation set",
+    "authentic parameter names and roles",
+    "freeze boundary and negative evidence",
+    "historical validation protocol and provenance lineage"
+  ],
+  "prohibited_claims": [
+    {
+      "allowed_in_publication": false,
+      "claim": "Numerical predictions of historical 6.3.0 are reproducible.",
+      "claim_id": "numerical_predictions_reproducible",
+      "evidence": "Step 05 parameter adjudication",
+      "reason": "The complete parameter vector, functions, units, frames, tensor state, initialization, and prediction table are absent.",
+      "status": "MODEL_NOT_NUMERICALLY_RECOVERABLE"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "Historical 6.3.0 prediction tables are recoverable.",
+      "claim_id": "historical_predictions_recoverable",
+      "evidence": "Steps 01 and 05 release-artifact search",
+      "reason": "No authentic frozen prediction table was located.",
+      "status": "TEST_BLOCKED"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "An exact frozen 6.3.0 BEST validation can be performed.",
+      "claim_id": "best_validation_possible",
+      "evidence": "Steps 03-05 unlock matrix",
+      "reason": "The numerical model is incomplete and full collaboration likelihood/covariance is unavailable.",
+      "status": "TEST_BLOCKED"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "An exact frozen 6.3.0 SAGE validation can be performed.",
+      "claim_id": "sage_validation_possible",
+      "evidence": "Steps 03-05 unlock matrix",
+      "reason": "The numerical model and authoritative run covariance are unavailable.",
+      "status": "TEST_BLOCKED"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "An exact frozen 6.3.0 GALLEX/GNO validation can be performed.",
+      "claim_id": "gallex_validation_possible",
+      "evidence": "Steps 03-05 unlock matrix",
+      "reason": "The numerical model and authoritative source-run covariance/likelihood are unavailable.",
+      "status": "TEST_BLOCKED"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "KATRIN can currently exclude or confirm LSC.",
+      "claim_id": "katrin_veto_possible",
+      "evidence": "Step 05 KATRIN mapping assessment",
+      "reason": "The native KATRIN grid is valid, but no justified LSC mapping exists.",
+      "status": "TEST_BLOCKED_MAPPING_MISSING"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "IceCube can currently exclude or confirm LSC.",
+      "claim_id": "icecube_veto_possible",
+      "evidence": "Step 05 IceCube mapping assessment",
+      "reason": "The native IceCube release is valid, but no justified LSC mapping exists.",
+      "status": "TEST_BLOCKED_MAPPING_MISSING"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "The historical directional/sidereal test can currently be executed.",
+      "claim_id": "directional_test_possible",
+      "evidence": "Steps 02-05 T12 gates",
+      "reason": "Timing, orientation, geometry, active tensor, frames, units, and statistic prerequisites are incomplete.",
+      "status": "TEST_BLOCKED"
+    },
+    {
+      "allowed_in_publication": false,
+      "claim": "A BEST-2 prediction is currently available or authorized.",
+      "claim_id": "best2_prediction_possible",
+      "evidence": "BEST2FuturePredictionContract and Step 05 blocker registry",
+      "reason": "The executable successor and authoritative as-built inputs do not yet exist.",
+      "status": "FUTURE_ONLY_BLOCKED"
+    }
+  ],
+  "prohibited_publication_language": [
+    "6.3.1 reproduces exactly the original frozen 6.3.0 numerical model",
+    "6.3.0 passed independent validation",
+    "BEST blindly confirms 6.3.1",
+    "KATRIN or IceCube exclude or confirm LSC",
+    "a blocked test is a model falsification result"
+  ],
+  "publication_authorized": false,
+  "publication_readiness": {
+    "executable_successor_ready": false,
+    "historical_preservation_ready": true,
+    "maximum_current_level": "P1_SPECIFICATION_BOUNDARY_READY",
+    "prospective_prediction_ready": false,
+    "release_package_ready": false,
+    "retrospective_validation_ready": false,
+    "specification_boundary_ready": true
+  },
+  "release_requirements": [
+    "complete_parameter_vector",
+    "canonical_ordering",
+    "values",
+    "units",
+    "frame_definitions",
+    "tensor_components",
+    "tensor_semantics",
+    "initialization_rules",
+    "bounds_and_default_policy",
+    "executable_evaluator",
+    "prediction_input_schema",
+    "deterministic_output",
+    "golden_reference_vectors",
+    "parameter_bundle_sha256",
+    "commit_identity",
+    "environment_lock",
+    "provenance_manifest",
+    "machine_readable_release_manifest"
+  ],
+  "schema_version": "1.0.0",
+  "successor_version_candidate": "6.3.1",
+  "successor_version_required": true,
+  "symbolic_recoverability": "FULLY_RECOVERABLE",
+  "validation_tracks": {
+    "TRACK_A": {
+      "datasets": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "label": "RETROSPECTIVE_NON_BLIND",
+      "name": "Retrospective validation"
+    },
+    "TRACK_B": {
+      "label": "PROSPECTIVE_BLIND",
+      "name": "Prospective validation",
+      "requirements": [
+        "model frozen before outcomes",
+        "prediction artifact hashed and timestamped",
+        "no observed target data accessed"
+      ]
+    }
+  },
+  "version_bump_rule": {
+    "6.3.1": "Allowed only if E1-E12 and the model class remain unchanged; reproducibility, explicit numerical specification, methodology, and provenance changes only.",
+    "6.4.0_or_7.0": "Required if Step 07 changes equations, physical semantics, or model class; major bump for incompatible conceptual change."
+  },
+  "zenodo_strategy": {
+    "historical_version_doi_reused": false,
+    "model_release": "Create 6.3.1 as a new version in the 6.3 lineage only after freeze, producing a new version DOI while preserving the historical record.",
+    "publication_performed": false,
+    "recommendation": "OPTION_C",
+    "validation_companion": "Publish the Validation Kernel/reproducibility package as a separate linked record with its own DOI."
+  }
+}

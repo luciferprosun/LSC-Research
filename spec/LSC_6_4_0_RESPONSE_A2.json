@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_RESPONSE_SPECIFICATION",
+  "model_version": "6.4.0",
+  "configuration": "A2/C/A",
+  "response_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+  "classification": "NEW_PHYSICAL_HYPOTHESIS_6_4_0",
+  "owner_authorized": true,
+  "equations": {
+    "response_template": "F_m(E) = d ln sigma_m(E) / d ln E = E sigma_m'(E) / sigma_m(E)",
+    "local_scalar_response": "S_a(E,t) = alpha_0 F_m(E)",
+    "normalized_measure": "<g>_a = integral_Da(g dnu_a) / N0_a, N0_a = integral_Da(dnu_a)",
+    "prediction": "R_pred,a = 1 + alpha_0 <F_m>_a",
+    "finite_dilation_reference": "sigma_m(E exp(alpha_0)) / sigma_m(E)",
+    "null_limit": "alpha_0 = 0 implies S_a = 0 and R_pred,a = 1"
+  },
+  "objects": {
+    "index_a": "observation contract; it may identify a zone, exposure, or aggregate but never selects a physical coefficient",
+    "model_index_m": "frozen conventional cross-section scenario BAHCALL_1997_BEST_ESTIMATE_NATURAL_CUBIC_SPLINE",
+    "energy_E": {"unit": "MeV", "meaning": "incident electron-neutrino energy"},
+    "time_t": "no intrinsic LSC scalar time dependence; time enters only through conventional exposure weights",
+    "F_m": {"unit": "dimensionless", "normalization": "fixed by the logarithmic energy-dilation operator"},
+    "S_a": {"unit": "dimensionless"},
+    "alpha_0": {
+      "unit": "dimensionless",
+      "signed": true,
+      "meaning": "universal logarithmic incident-energy dilation amplitude",
+      "free_physical_parameter": true,
+      "refittable_between_experiments": false
+    },
+    "R_pred": {"unit": "dimensionless"}
+  },
+  "cross_section": {
+    "scenario_id": "BAHCALL_1997_BEST_ESTIMATE_NATURAL_CUBIC_SPLINE",
+    "payload": "external_physics/gallium_capture/bahcall_1997_best_estimate.csv",
+    "payload_sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5",
+    "provenance_manifest": "external_physics/gallium_capture/PROVENANCE_MANIFEST.json",
+    "provenance_manifest_sha256": "f428477ffa8b5077b64c16a53b887ec3f17bea87445e7fcf8dc1e8fea39ca73e",
+    "interpolation": "natural cubic spline",
+    "derivative": "analytic first derivative",
+    "energy_domain_mev": [0.24, 30.0],
+    "extrapolation": false
+  },
+  "supported_sources": {
+    "payload": "external_physics/gallium_capture/source_lines_prc108_035502.json",
+    "payload_sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e",
+    "isotopes": ["Cr51", "Ar37"],
+    "authoritative_source_input_required": true
+  },
+  "integration": {
+    "baseline_line_weight": "branching_fraction * source_activity_bq * exposure_seconds * conventional_probability * geometry_factor * detector_efficiency * sigma_m(E)",
+    "normalization_denominator": "sum of baseline line weights",
+    "response_numerator": "sum of baseline line weights times F_m(E)",
+    "zero_or_nonfinite_denominator": "FAIL_CLOSED_INVALID_BASELINE_MEASURE",
+    "conventional_terms_are_not_alpha_0": true
+  },
+  "model_profile": {
+    "physical_parameter_count": 1,
+    "active_physical_parameters": ["alpha_0"],
+    "tensor": "DISABLED",
+    "preferred_axis": null,
+    "anisotropic_amplitude": null,
+    "directional_claim": false,
+    "universal_cross_experiment_sharing": true,
+    "experiment_specific_physical_coefficients": []
+  },
+  "alpha_0_bounds": {
+    "theory_bound": null,
+    "theory_bound_status": "NO_STRICT_SOURCE_DERIVED_BOUND",
+    "numerical_support_bound_for_all_frozen_lines": [-0.5747389495096434, 3.607238025076703],
+    "linear_prediction_positivity_lower_bound": -0.5487452273628239,
+    "preregistered_analysis_bound": [-0.06137569484389956, 0.09541395625505644],
+    "analysis_bound_rule": "maximum relative error between the linear response and exact finite dilation is at most 0.01 at every frozen Cr51 and Ar37 line",
+    "analysis_bound_classification": "PREREGISTERED_ANALYSIS_BOUND_NOT_THEORY_BOUND",
+    "bound_widening_after_fit": "FORBIDDEN"
+  },
+  "unsupported_conditions": [
+    "unknown isotope or modified authoritative line set",
+    "energy outside cross-section payload",
+    "non-finite or non-positive cross section",
+    "alpha_0 outside preregistered analysis bound",
+    "tensor components, preferred axis, or anisotropic amplitude supplied",
+    "missing conventional input factor",
+    "zero or non-finite normalized-measure denominator",
+    "cross-section, line, policy, or specification hash mismatch"
+  ],
+  "unsupported_behavior": "FAIL_CLOSED",
+  "BEST2": {
+    "status": "FUTURE_ONLY_FUTURE_BLIND",
+    "observed_data_accessed": false,
+    "prediction_generated": false,
+    "schema_capability": "CONDITIONAL_ON_AUTHORITATIVE_AS_BUILT_INPUTS"
+  },
+  "publication_authorized": false
+}

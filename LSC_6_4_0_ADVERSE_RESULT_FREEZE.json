@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_ADVERSE_RESULT_FREEZE",
+  "created_utc": "2026-08-16T15:52:23Z",
+  "status": "DEVELOPMENT_PARAMETER_DETERMINATION_FAILED_IMMUTABLE",
+  "frozen_repository_commit": "e53db798f1f3f448034a6e0af6399e8256189cd5",
+  "model_version": "6.4.0",
+  "configuration": "A2/C/A",
+  "step07c_verdict": "LSC_6_4_0_PARAMETER_DETERMINATION_FAILED",
+  "scientific_interpretation": "ADVERSE_DEVELOPMENT_RESULT_NOT_MODEL_FALSIFICATION_NOT_VALIDATION",
+  "artifacts": [
+    {"path": "OWNER_AUTHORIZATION_6_4_0.md", "sha256": "585ef386fa32d7ce1f9a9c88839891f9cc5c8cfb3637ee70c4f6eeab8f100b63"},
+    {"path": "LSC_6_4_0_IMPLEMENTATION_CONTRACT.json", "sha256": "8dba90353a7028f075f59b627bbfc054f47eff172abe874cb7160e2412d8d732"},
+    {"path": "spec/LSC_6_4_0_RESPONSE_A2.json", "sha256": "c548592b44d0f75ecfd24f2392e07492920711415b207cf74c4bd31526fdceb8"},
+    {"path": "external_physics/gallium_capture/bahcall_1997_best_estimate.csv", "sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5"},
+    {"path": "external_physics/gallium_capture/source_lines_prc108_035502.json", "sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e"},
+    {"path": "external_physics/gallium_capture/PROVENANCE_MANIFEST.json", "sha256": "f428477ffa8b5077b64c16a53b887ec3f17bea87445e7fcf8dc1e8fea39ca73e"},
+    {"path": "external_physics/gallium_capture/INTERPOLATION_POLICY.md", "sha256": "604028a6c846a7fe7ff3173f211410087d63a1e89a21c2f1f5b93f6bd9f21ec7"},
+    {"path": "model_development/LSC_6_4_0_DEVELOPMENT_DATA_MANIFEST.json", "sha256": "2cbf40907a09e346b81f3142dfc3ff26b7023c2cd46d19b73b39ed681bba5458"},
+    {"path": "LSC_6_4_0_ALPHA0_DETERMINATION_PROTOCOL.json", "sha256": "ea6e1e984fc3f3ab613a627857f3d979d4d4877b083a1e98e04e915e0845c18d"},
+    {"path": "LSC_6_4_0_PRE_FIT_FREEZE.json", "sha256": "60380837f348cc41dc3d0b240fcba0b61a95c9f61cfab2bc3f5e7db71e9ea179"},
+    {"path": "LSC_6_4_0_ALPHA0_DETERMINATION_RESULT.json", "sha256": "86ab235e39237ef7ef86f3ce6609c2a33b9e36aab1b3940fac6e0736b8e08f7a"},
+    {"path": "LSC_6_4_0_STEP07C_STATUS.json", "sha256": "d06b8d0a443a02c5107ce0cdf20af349d25bc40d7b687604c76ec26c38f22e0c"},
+    {"path": "src/lsc_kernel/lsc640/cross_section.py", "sha256": "148c13072597aaf5b85c5921d86944b70e1ff1cb78c433c14f41e47fefc403d4"},
+    {"path": "src/lsc_kernel/lsc640/contracts.py", "sha256": "aba2fa07df41b5fb50842d24840a23f0c00e0c78eac8611d4016f317e418daf6"},
+    {"path": "src/lsc_kernel/lsc640/evaluator.py", "sha256": "215d76108119d4fbef25c681afc1f6890d4e5184fd3a1af9fff718754e079448"},
+    {"path": "src/lsc_kernel/lsc640/determination.py", "sha256": "986d2dd266291b6acd08c8ad5af28f0734266d5c6639d18caf048af09b9efe2a"},
+    {"path": "docs/model/STEP_07C_LSC_6_4_0_IMPLEMENTATION_REPORT.md", "sha256": "9a0a7357f663a3dc1a223a9402bd879a3fe2a35e793232de95609ae7bda91a33"}
+  ],
+  "frozen_outcome": {
+    "unconstrained_optimum": -0.1159773471000784,
+    "frozen_linear_domain": [-0.06137569484389956, 0.09541395625505644],
+    "constrained_result": -0.06137569305004568,
+    "boundary_status": "BOUNDARY_DOMINATED",
+    "parameter_bundle_created": false,
+    "release_candidate_created": false,
+    "refit_authorized": false
+  },
+  "successor_policy": {
+    "linear_6_4_0_may_be_modified": false,
+    "finite_or_nonlinear_response_requires_new_version": true,
+    "preferred_successor_version": "6.5.0",
+    "owner_authorization_required": true,
+    "new_parameter_determination_preregistration_required": true
+  }
+}

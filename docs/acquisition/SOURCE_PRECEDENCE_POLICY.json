@@ -1,0 +1,51 @@
+{
+  "clean_predictor_additional_requirements": [
+    "PRE_DATA or PRE_TARGET_DATA exposure for the intended target",
+    "historical non-blind tests retain their exposure label"
+  ],
+  "frozen_authenticity_requirements": [
+    "exact frozen lineage",
+    "unambiguous ordering, units, frame, and tensor semantics",
+    "no conflicts",
+    "no historical composite"
+  ],
+  "policy": "NO POST-HOC RECONSTRUCTION",
+  "schema_version": "1.0.0",
+  "tiers": [
+    {
+      "name": "EXACT_FROZEN_RELEASE_MACHINE_CONFIG",
+      "potentially_admissible": true,
+      "tier": 1
+    },
+    {
+      "name": "EXACT_FROZEN_COMMIT_CONFIG_OR_SOURCE",
+      "potentially_admissible": true,
+      "tier": 2
+    },
+    {
+      "name": "EXACT_ARCHIVED_RELEASE_MACHINE_ARTIFACT",
+      "potentially_admissible": true,
+      "tier": 3
+    },
+    {
+      "name": "VERSIONED_NUMERICAL_TABLE_TIED_TO_FREEZE",
+      "potentially_admissible": true,
+      "tier": 4
+    },
+    {
+      "name": "NUMERICAL_APPENDIX_TIED_TO_RELEASE",
+      "potentially_admissible": true,
+      "tier": 5
+    },
+    {
+      "name": "HISTORICAL_CANDIDATE",
+      "potentially_admissible": false,
+      "tier": 6
+    },
+    {
+      "name": "INFERENCE_OR_DIGITISATION",
+      "potentially_admissible": false,
+      "tier": 7
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_ALPHA0_DETERMINATION_PROTOCOL",
+  "protocol_status": "FROZEN_BEFORE_EXECUTION",
+  "model_version": "6.4.0",
+  "configuration": "A2/C/A",
+  "fit_run_id": "LSC640_ALPHA0_SINGLE_PREREGISTERED_RUN_2026_08_16",
+  "allowed_execution_count": 1,
+  "parameter": {
+    "parameter_id": "LSC640-PHYS-01",
+    "symbol": "alpha_0",
+    "meaning": "universal signed logarithmic incident-energy dilation amplitude",
+    "units": "dimensionless",
+    "shared_across_experiments_isotopes_zones": true,
+    "refit_between_experiments": false,
+    "null_value": 0.0
+  },
+  "scientific_bindings": {
+    "owner_authorization": "OWNER_AUTHORIZATION_6_4_0.md",
+    "response_specification": "spec/LSC_6_4_0_RESPONSE_A2.json",
+    "cross_section_manifest": "external_physics/gallium_capture/PROVENANCE_MANIFEST.json",
+    "interpolation_policy": "external_physics/gallium_capture/INTERPOLATION_POLICY.md",
+    "golden_vectors": "spec/LSC_6_4_0_GOLDEN_VECTORS.json"
+  },
+  "development_data": {
+    "manifest": "model_development/LSC_6_4_0_DEVELOPMENT_DATA_MANIFEST.json",
+    "labels": ["MODEL_EXPOSED", "RETROSPECTIVE_NON_BLIND", "DEVELOPMENT_DATA"],
+    "observations": ["BEST:zone=inner:published_aggregate_ratio"],
+    "observed_values": [0.791],
+    "standard_uncertainties": [0.05],
+    "holdout": ["BEST:zone=outer", "GALLEX/GNO", "SAGE Cr51", "SAGE Ar37"],
+    "holdout_in_objective": false
+  },
+  "model_prediction": {
+    "equation": "R_pred = 1 + alpha_0 * mean_F_m",
+    "mean_F_m": 1.8020760538663734,
+    "mean_F_m_source": "hash-verified A2 evaluator using frozen Cr51 lines and normalized baseline measure",
+    "response_model_sha256": "4a8f40e59431a27f8f4d5bc9809a706125a46ebdb5728458e4b04503e935b6f2"
+  },
+  "likelihood": {
+    "type": "DIAGONAL_GAUSSIAN_CHI_SQUARE",
+    "equation": "chi2(alpha_0) = sum_i ((R_observed_i - R_pred_i(alpha_0)) / standard_uncertainty_i)^2",
+    "normalization_terms_included": false,
+    "reason": "normalization is constant in alpha_0 and does not affect the frozen point estimate"
+  },
+  "covariance": {
+    "scenario_id": "COV_DIAGONAL",
+    "matrix": [[0.0025000000000000005]],
+    "classification": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+    "collaboration_level_inference_allowed": false
+  },
+  "nuisance": {
+    "treatment": "NONE_PROFILED",
+    "parameters": [],
+    "published_total_uncertainty_used_directly": true
+  },
+  "objective": {
+    "primary": "MINIMIZE_CHI_SQUARE",
+    "secondary_objectives": [],
+    "response_shape_selection_allowed": false,
+    "cross_section_scenario_selection_allowed": false
+  },
+  "bounds": {
+    "theory_bound": null,
+    "numerical_stability_bound": [-0.5487452273628239, 3.607238025076703],
+    "preregistered_analysis_bound": [-0.06137569484389956, 0.09541395625505644],
+    "fit_bound": [-0.06137569484389956, 0.09541395625505644],
+    "fit_bound_reason": "1% maximum linearization error over every frozen Cr51 and Ar37 source line",
+    "post_fit_widening_allowed": false
+  },
+  "optimizer": {
+    "library": "scipy.optimize.minimize_scalar",
+    "method": "bounded",
+    "xatol": 1e-15,
+    "maxiter": 1000,
+    "random_seed": null,
+    "initial_values": null,
+    "analytic_cross_check": "alpha_unconstrained = (R_observed - 1) / mean_F_m"
+  },
+  "convergence": {
+    "require_success": true,
+    "require_finite_estimate": true,
+    "require_finite_objective": true,
+    "boundary_tolerance": 1e-8
+  },
+  "uncertainty": {
+    "construction": "one-parameter profile delta-chi-square interval with DeltaChi2=1 within the frozen analysis domain",
+    "diagnostic_curvature_standard_error": "standard_uncertainty / abs(mean_F_m)",
+    "certified_interval_if_boundary_failure": false,
+    "probability_prior": null
+  },
+  "identifiability": {
+    "criterion": "abs(mean_F_m) > 1e-12 and finite positive objective curvature",
+    "failure_if_rank_deficient": true
+  },
+  "failure_criteria": [
+    "optimizer does not converge",
+    "unconstrained optimum lies outside the frozen analysis bound",
+    "constrained optimum is within 1e-8 of either fit boundary",
+    "estimate is non-identifiable or numerically unstable",
+    "result requires alpha_0 outside linear-response validity",
+    "authorized covariance or any hash binding changes",
+    "BEST2 observed data access is detected"
+  ],
+  "failure_verdict": "LSC_6_4_0_PARAMETER_DETERMINATION_FAILED",
+  "no_refit_policy": {
+    "second execution_after_result": "FORBIDDEN",
+    "response_change_after_result": "FORBIDDEN_WITHOUT_NEW_MODEL_REVISION",
+    "bound_change_after_result": "FORBIDDEN",
+    "dataset_change_after_result": "FORBIDDEN",
+    "separate_experiment_fit": "FORBIDDEN"
+  },
+  "transfer_policy": {
+    "successful_alpha_0_transfers_without_refit": true,
+    "historical_holdouts_are_retrospective_non_blind": true,
+    "BEST2_prediction_authorized": false
+  },
+  "diagnostics": [
+    "unconstrained analytic optimum",
+    "bounded optimizer result",
+    "objective at null and both bounds",
+    "curvature identifiability",
+    "boundary status",
+    "production/reference mean_F_m agreement"
+  ]
+}

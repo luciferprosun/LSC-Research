@@ -1,0 +1,255 @@
+{
+  "aliases": {
+    "M_CONSTANT_DEFICIT": "M1",
+    "M_CROSS_SECTION_VARIANT": "M2",
+    "M_DETECTOR_SYSTEMATIC": "M4/M_DETECTOR_SYSTEMATIC",
+    "M_EXPERIMENT_NORMALIZATION": "M4/M_EXPERIMENT_NORMALIZATION",
+    "M_HIERARCHICAL_EXPERIMENT": "M4/M_HIERARCHICAL_EXPERIMENT",
+    "M_NULL": "M0",
+    "M_STERILE_3P1": "M3"
+  },
+  "frozen_lsc_models_are_not_baseline_fit_targets": [
+    "M5",
+    "M6"
+  ],
+  "historical_models": [
+    {
+      "canonical_name": "null / published baseline",
+      "comparison_metrics": [
+        "chi-square",
+        "predictive log-likelihood",
+        "residual diagnostics"
+      ],
+      "complexity_measure": [
+        "k=0"
+      ],
+      "equations": [
+        "mu_i = mu_i,published"
+      ],
+      "evaluation_data": "held-out validation data",
+      "fitting_allowed": false,
+      "fixed_parameters": [
+        "published expectation"
+      ],
+      "free_parameters": [],
+      "hypothesis": "Published no-transition expectation.",
+      "likelihood_requirements": [
+        "dataset likelihood/covariance contract"
+      ],
+      "model_id": "M0",
+      "parameters": [],
+      "provenance": "FROZEN_PREDICTION_PROTOCOL.md model crosswalk",
+      "submodels": [],
+      "training_data": "NONE"
+    },
+    {
+      "canonical_name": "scalar normalization only",
+      "comparison_metrics": [
+        "held-out predictive log-likelihood",
+        "chi-square",
+        "AIC",
+        "BIC"
+      ],
+      "complexity_measure": [
+        "k=1 per declared scope",
+        "AIC",
+        "BIC"
+      ],
+      "equations": [
+        "mu_i = alpha * mu_i,published"
+      ],
+      "evaluation_data": "preregistered hold-out only",
+      "fitting_allowed": true,
+      "fixed_parameters": [],
+      "free_parameters": [
+        "alpha"
+      ],
+      "hypothesis": "One constant deficit shared over its declared scope.",
+      "likelihood_requirements": [
+        "declared scope",
+        "covariance scenario"
+      ],
+      "model_id": "M1",
+      "parameters": [
+        "alpha"
+      ],
+      "provenance": "FROZEN_PREDICTION_PROTOCOL.md model crosswalk",
+      "submodels": [],
+      "training_data": "preregistered calibration subset only"
+    },
+    {
+      "canonical_name": "cross-section / source-systematics only",
+      "comparison_metrics": [
+        "held-out predictive log-likelihood",
+        "chi-square"
+      ],
+      "complexity_measure": [
+        "effective k declared per scenario",
+        "AIC",
+        "BIC"
+      ],
+      "equations": [
+        "mu_i = mu_i,published(xs_model, source_nuisance)"
+      ],
+      "evaluation_data": "held-out validation data",
+      "fitting_allowed": true,
+      "fixed_parameters": [
+        "preregistered xs model choice/scan"
+      ],
+      "free_parameters": [
+        "source_nuisance"
+      ],
+      "hypothesis": "Published cross-section/source alternatives explain rate shifts.",
+      "likelihood_requirements": [
+        "cross-section registry",
+        "shared nuclear treatment"
+      ],
+      "model_id": "M2",
+      "parameters": [
+        "xs_model",
+        "source_nuisance"
+      ],
+      "provenance": "FROZEN_PREDICTION_PROTOCOL.md model crosswalk",
+      "submodels": [],
+      "training_data": "calibration subset or published priors only"
+    },
+    {
+      "canonical_name": "sterile-neutrino benchmark",
+      "comparison_metrics": [
+        "held-out predictive log-likelihood",
+        "chi-square",
+        "AIC",
+        "BIC"
+      ],
+      "complexity_measure": [
+        "k=2 plus declared nuisance count",
+        "AIC",
+        "BIC"
+      ],
+      "equations": [
+        "Pee(L,E)=1-sin^2(2theta_ee)*sin^2(1.267*Delta_m2*L/E)"
+      ],
+      "evaluation_data": "held-out validation data",
+      "fitting_allowed": true,
+      "fixed_parameters": [],
+      "free_parameters": [
+        "sin2_2theta_ee",
+        "Delta_m2"
+      ],
+      "hypothesis": "Standard 3+1 disappearance benchmark.",
+      "likelihood_requirements": [
+        "baseline and energy integration",
+        "dataset likelihood",
+        "external confidence construction"
+      ],
+      "model_id": "M3",
+      "parameters": [
+        "sin2_2theta_ee",
+        "Delta_m2"
+      ],
+      "provenance": "FROZEN_PREDICTION_PROTOCOL.md model crosswalk",
+      "submodels": [],
+      "training_data": "preregistered calibration subset or external published surface"
+    },
+    {
+      "canonical_name": "detector-systematics benchmark",
+      "comparison_metrics": [
+        "held-out predictive log-likelihood",
+        "chi-square",
+        "AIC",
+        "BIC"
+      ],
+      "complexity_measure": [
+        "exact nuisance/submodel count",
+        "AIC",
+        "BIC"
+      ],
+      "equations": [
+        "mu_i = alpha_experiment * mu_i,published * detector_response_i"
+      ],
+      "evaluation_data": "held-out validation data",
+      "fitting_allowed": true,
+      "fixed_parameters": [],
+      "free_parameters": [
+        "declared M4 submodel parameters"
+      ],
+      "hypothesis": "Detector/systematic shifts explain experiment variation.",
+      "likelihood_requirements": [
+        "nuisance registry",
+        "correlation scope",
+        "dataset likelihood"
+      ],
+      "model_id": "M4",
+      "parameters": [
+        "experiment normalization",
+        "detector nuisance",
+        "hierarchical variance"
+      ],
+      "provenance": "FROZEN_PREDICTION_PROTOCOL.md model crosswalk",
+      "submodels": [
+        "M_EXPERIMENT_NORMALIZATION",
+        "M_DETECTOR_SYSTEMATIC",
+        "M_HIERARCHICAL_EXPERIMENT"
+      ],
+      "training_data": "preregistered calibration subset only"
+    },
+    {
+      "canonical_name": "LSC trace-only",
+      "comparison_metrics": [
+        "same preregistered metrics as baselines"
+      ],
+      "complexity_measure": "frozen parameter count",
+      "equations": [
+        "Frozen E1-E12 subset as authenticated; no replacement equation."
+      ],
+      "evaluation_data": "held-out validation data only",
+      "fitting_allowed": false,
+      "fixed_parameters": [
+        "all frozen LSC parameters"
+      ],
+      "free_parameters": [],
+      "hypothesis": "Frozen LSC scalar/trace component.",
+      "likelihood_requirements": [
+        "complete authentic frozen numerical bundle"
+      ],
+      "model_id": "M5",
+      "parameters": [
+        "frozen LSC parameters"
+      ],
+      "provenance": "FROZEN_PREDICTION_PROTOCOL.md model crosswalk; currently numerically blocked",
+      "submodels": [],
+      "training_data": "NONE"
+    },
+    {
+      "canonical_name": "LSC trace + traceless anisotropy",
+      "comparison_metrics": [
+        "same preregistered metrics as baselines"
+      ],
+      "complexity_measure": "frozen parameter count",
+      "equations": [
+        "Frozen E1-E12 as authenticated; no replacement equation."
+      ],
+      "evaluation_data": "held-out validation data only",
+      "fitting_allowed": false,
+      "fixed_parameters": [
+        "all frozen LSC parameters"
+      ],
+      "free_parameters": [],
+      "hypothesis": "Full frozen LSC 6.3.0 model.",
+      "likelihood_requirements": [
+        "complete authentic numerical bundle",
+        "frames",
+        "orientation",
+        "timing for directional use"
+      ],
+      "model_id": "M6",
+      "parameters": [
+        "frozen LSC parameters and active tensor"
+      ],
+      "provenance": "FROZEN_PREDICTION_PROTOCOL.md model crosswalk; currently numerically blocked",
+      "submodels": [],
+      "training_data": "NONE"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

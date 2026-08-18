@@ -1,0 +1,355 @@
+{
+  "as_of": "2026-08-16",
+  "full_validation_unlock_set": {
+    "blocking_ids": [
+      "BLK-P0-FROZEN-BUNDLE",
+      "BLK-P1-BEST-COV",
+      "BLK-P1-SAGE-COV",
+      "BLK-P1-GALLEX-COV",
+      "BLK-P1-NUCLEAR-COV",
+      "BLK-P2-KATRIN-MAP",
+      "BLK-P2-ICECUBE-MAP",
+      "BLK-P3-M3-GEOMETRY"
+    ],
+    "complete": false,
+    "directional_component": "T12 remains a separate blocked component and is not silently required for scalar tests.",
+    "purpose": "Inferential execution of the frozen primary sequence T11, T7, T3, T1, T10.",
+    "required": [
+      "MINIMUM_VALIDATION_UNLOCK_SET complete",
+      "authenticated collaboration covariance/likelihood for every reached primary dataset",
+      "cross-experiment and shared nuclear covariance treatment with authoritative provenance",
+      "production M3 geometry for T10",
+      "explicit authorized external mappings wherever a veto is invoked",
+      "all test-specific prerequisites and unchanged frozen multiple-testing sequence"
+    ],
+    "set_id": "FULL_VALIDATION_UNLOCK_SET"
+  },
+  "minimum_validation_unlock_set": {
+    "blocking_ids": [
+      "BLK-P0-FROZEN-BUNDLE"
+    ],
+    "complete": false,
+    "not_required_for_sensitivity_only_first_run": [
+      "T12 directional inputs",
+      "KATRIN/IceCube mapping",
+      "full collaboration covariance if result is explicitly SENSITIVITY_ONLY"
+    ],
+    "purpose": "First controlled preregistered scalar LSC test in Step 06 or later.",
+    "required": [
+      "AUTHENTIC_FROZEN_BUNDLE_COMPLETE",
+      "target-dataset exposure classification recorded; non-clean historical tests never relabelled blind",
+      "unambiguous parameter ordering, units, frames, active tensor semantics where required by E1-E12",
+      "exact evaluator initialization/configuration and executable input mapping",
+      "hash-verified provenance admission",
+      "separate human-approved Step 06 execution authorization"
+    ],
+    "set_id": "MINIMUM_VALIDATION_UNLOCK_SET"
+  },
+  "numerical_validation_authorized": false,
+  "policy": "RECOVER OR PROVE THE GAP - NEVER FILL THE GAP",
+  "prediction_authorized": false,
+  "records": [
+    {
+      "adjudication": "AUTHENTIC_FROZEN_BUNDLE_INCOMPLETE",
+      "blocker_id": "BLK-P0-FROZEN-BUNDLE",
+      "category": "FROZEN_MODEL",
+      "current_status": "STILL_MISSING",
+      "evidence": [
+        "targeted Git/reflog/object/release scan complete",
+        "Zenodo release contains no numerical bundle"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Human provenance search in private historical media or author-held release workspace; do not reconstruct.",
+      "object": "complete authentic LSC 6.3.0 numerical bundle",
+      "priority": "P0",
+      "publication_dependency": true,
+      "required_for": [
+        "LSC prediction",
+        "T1-T11"
+      ],
+      "source": [
+        "LSC-Research commit 75901c968c7dbde7a16ea4836b18b8163950befa",
+        "Zenodo 10.5281/zenodo.20377427"
+      ],
+      "unlocks_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "adjudication": "AUTHORITATIVE_COLLABORATION_RECOVERED_SUMMARY_ONLY",
+      "blocker_id": "BLK-P1-BEST-COV",
+      "category": "COLLABORATION_COVARIANCE",
+      "current_status": "NOT_LOCATED",
+      "evidence": [
+        "published summary covariance prescription recovered",
+        "full 20-row/run covariance not located"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Request the exact run/zone covariance or likelihood object and nuisance definitions from BEST.",
+      "object": "BEST run/zone covariance and likelihood workspace",
+      "priority": "P1",
+      "publication_dependency": false,
+      "required_for": [
+        "COV_COLLABORATION",
+        "inferential T1/T2/T6/T11"
+      ],
+      "source": [
+        "arXiv:2109.11482",
+        "arXiv:2201.07364"
+      ],
+      "unlocks_tests": [
+        "T1",
+        "T2",
+        "T6",
+        "T9",
+        "T11"
+      ]
+    },
+    {
+      "adjudication": "AUTHORITATIVE_SOURCE_TABLES_RECOVERED_COVARIANCE_MISSING",
+      "blocker_id": "BLK-P1-SAGE-COV",
+      "category": "COLLABORATION_COVARIANCE",
+      "current_status": "NOT_LOCATED",
+      "evidence": [
+        "published run tables and marginal/systematic uncertainties recovered"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Request run covariance, source-calibration correlations, UTC convention, and available orientation metadata.",
+      "object": "SAGE 51Cr/37Ar run covariance and exact UTC metadata",
+      "priority": "P1",
+      "publication_dependency": false,
+      "required_for": [
+        "COV_COLLABORATION",
+        "run transfer",
+        "directional readiness"
+      ],
+      "source": [
+        "SAGE 51Cr source paper",
+        "SAGE 37Ar source paper"
+      ],
+      "unlocks_tests": [
+        "T3",
+        "T5",
+        "T6",
+        "T7",
+        "T12"
+      ]
+    },
+    {
+      "adjudication": "AUTHORITATIVE_SOURCE_TABLES_RECOVERED_COVARIANCE_MISSING",
+      "blocker_id": "BLK-P1-GALLEX-COV",
+      "category": "COLLABORATION_COVARIANCE",
+      "current_status": "NOT_LOCATED",
+      "evidence": [
+        "source-run tables and analysis method recovered",
+        "solar reanalysis correlation is not source covariance"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Request source-run covariance/likelihood, correlation definitions, and exact interval timezone.",
+      "object": "GALLEX Cr source covariance and exact UTC intervals",
+      "priority": "P1",
+      "publication_dependency": false,
+      "required_for": [
+        "COV_COLLABORATION",
+        "run transfer",
+        "directional readiness"
+      ],
+      "source": [
+        "arXiv:1001.2731"
+      ],
+      "unlocks_tests": [
+        "T3",
+        "T5",
+        "T6",
+        "T7",
+        "T12"
+      ]
+    },
+    {
+      "adjudication": "MARGINAL_ONLY",
+      "blocker_id": "BLK-P1-NUCLEAR-COV",
+      "category": "NUCLEAR_COVARIANCE",
+      "current_status": "STILL_MISSING",
+      "evidence": [
+        "authoritative marginal uncertainties and common-systematic statement recovered"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Request the numerical joint covariance or posterior samples if distributable.",
+      "object": "joint 51Cr/37Ar transition-strength covariance",
+      "priority": "P1",
+      "publication_dependency": false,
+      "required_for": [
+        "cross-isotope inference",
+        "COV_COLLABORATION"
+      ],
+      "source": [
+        "arXiv:2303.13623",
+        "arXiv:hep-ph/9710491"
+      ],
+      "unlocks_tests": [
+        "T5",
+        "T8"
+      ]
+    },
+    {
+      "adjudication": "MAPPING_NOT_JUSTIFIED",
+      "blocker_id": "BLK-P2-KATRIN-MAP",
+      "category": "EXTERNAL_MAPPING",
+      "current_status": "STILL_MISSING",
+      "evidence": [
+        "KATRIN absolute chi-square grid validated",
+        "LSC has no sterile-mass/mixing mapping equations"
+      ],
+      "human_contact_required": false,
+      "next_possible_action": "A new theory-level mapping would require separate preregistration and provenance; do not infer it.",
+      "object": "LSC-to-KATRIN observable/parameter mapping",
+      "priority": "P2",
+      "publication_dependency": false,
+      "required_for": [
+        "KATRIN external veto"
+      ],
+      "source": [
+        "Zenodo 10.5281/zenodo.19369714",
+        "LSC E1-E12"
+      ],
+      "unlocks_tests": [
+        "T10"
+      ]
+    },
+    {
+      "adjudication": "MAPPING_NOT_JUSTIFIED",
+      "blocker_id": "BLK-P2-ICECUBE-MAP",
+      "category": "EXTERNAL_MAPPING",
+      "current_status": "STILL_MISSING",
+      "evidence": [
+        "IceCube release objects validated",
+        "LSC has no flavor/matter-propagation mapping equations"
+      ],
+      "human_contact_required": false,
+      "next_possible_action": "Any model-dependent translation must be developed and frozen as new theory before use.",
+      "object": "LSC-to-IceCube observable/parameter mapping",
+      "priority": "P2",
+      "publication_dependency": false,
+      "required_for": [
+        "IceCube external veto"
+      ],
+      "source": [
+        "arXiv:2407.01314",
+        "LSC E1-E12"
+      ],
+      "unlocks_tests": [
+        "T10"
+      ]
+    },
+    {
+      "adjudication": "PUBLISHED_AVERAGE_GEOMETRY",
+      "blocker_id": "BLK-P3-M3-GEOMETRY",
+      "category": "GEOMETRY",
+      "current_status": "STILL_MISSING",
+      "evidence": [
+        "published average paths and Monte Carlo descriptions recovered",
+        "no exact machine-readable volume models located"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Acquire collaboration geometry definitions/integration code or retain approximation label.",
+      "object": "production M3 source/detector path-length distributions",
+      "priority": "P3",
+      "publication_dependency": false,
+      "required_for": [
+        "exact sterile 3+1 baseline"
+      ],
+      "source": [
+        "BEST source paper",
+        "SAGE source papers",
+        "GALLEX reanalysis"
+      ],
+      "unlocks_tests": [
+        "T10"
+      ]
+    },
+    {
+      "adjudication": "SPECIFICATION_INCOMPLETE",
+      "blocker_id": "BLK-P4-M4-HIERARCHY",
+      "category": "BASELINE_SPECIFICATION",
+      "current_status": "STILL_MISSING",
+      "evidence": [
+        "authentic high-level M4 detector-systematics schema recovered",
+        "hierarchy distributions/priors absent"
+      ],
+      "human_contact_required": false,
+      "next_possible_action": "Keep canonical M4 hierarchical execution disabled; a new baseline needs a distinct identity.",
+      "object": "canonical hierarchical M4 probability model",
+      "priority": "P4",
+      "publication_dependency": false,
+      "required_for": [
+        "M_HIERARCHICAL_EXPERIMENT execution"
+      ],
+      "source": [
+        "implementation/LSC_M4_IMPLEMENTATION_SCHEMA.md"
+      ],
+      "unlocks_tests": [
+        "T1",
+        "T3",
+        "T7",
+        "T11"
+      ]
+    },
+    {
+      "adjudication": "BLOCKED_DIRECTIONAL_DATA_INSUFFICIENT",
+      "blocker_id": "BLK-P5-T12",
+      "category": "DIRECTIONAL_DATA",
+      "current_status": "STILL_MISSING",
+      "evidence": [
+        "exposure intervals are multi-day aggregates",
+        "surveyed axes and active tensor unavailable"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Acquire every T12 prerequisite; exposure midpoint remains prohibited.",
+      "object": "timing, orientation, geometry, tensor, frames, and units",
+      "priority": "P5",
+      "publication_dependency": false,
+      "required_for": [
+        "T12"
+      ],
+      "source": [
+        "BEST/SAGE/GALLEX source papers",
+        "LSC frozen specification"
+      ],
+      "unlocks_tests": [
+        "T12"
+      ]
+    },
+    {
+      "adjudication": "FUTURE_ONLY",
+      "blocker_id": "BLK-FUTURE-BEST2",
+      "category": "FUTURE_DATA",
+      "current_status": "NOT_PUBLIC",
+      "evidence": [
+        "concept-level public information only"
+      ],
+      "human_contact_required": true,
+      "next_possible_action": "Wait for authoritative as-built inputs, then freeze prediction before observed results.",
+      "object": "BEST-2 as-built geometry/source/exposure freeze inputs",
+      "priority": "P5",
+      "publication_dependency": true,
+      "required_for": [
+        "future blind BEST-2 prediction"
+      ],
+      "source": [
+        "BEST-2 future contract"
+      ],
+      "unlocks_tests": []
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "PHASE_1_COMPLETE",
+  "scientific_model_version": "6.5.0",
+  "validation_kernel_package_version": "0.6.0",
+  "publication_ready": true,
+  "publication_performed": false,
+  "public_push_performed": false,
+  "github_release_created": false,
+  "zenodo_upload_performed": false,
+  "doi_minted": false,
+  "best2_observed_data_accessed": false,
+  "best2_prediction_generated": false,
+  "phase_2_validation_performed": false,
+  "public_payload_policy": {
+    "bahcall_1997_table_redistributed": false,
+    "materialization": "EXPLICIT_HASH_VERIFIED_ACQUISITION"
+  }
+}

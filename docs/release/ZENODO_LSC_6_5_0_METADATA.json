@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "ZENODO_PREDEPOSIT_METADATA_PLACEHOLDER",
+  "deposit_status": "PREPARED_NOT_UPLOADED",
+  "lineage_action": "CREATE_NEW_VERSION_IN_EXISTING_MODEL_LINEAGE",
+  "title": "LSC 6.5.0 exact finite-dilation scientific model",
+  "upload_type": "software",
+  "version": "6.5.0",
+  "supporting_package_version": "0.6.0",
+  "description": "Executable, reproducible, one-parameter exact finite-dilation LSC 6.5.0 artifact. Parameter determination was retrospective and non-blind; experimental validation has not yet been performed.",
+  "creators": [
+    {
+      "name": "LSC Validation Kernel contributors",
+      "status": "HUMAN_REVIEW_REQUIRED_BEFORE_DEPOSIT"
+    }
+  ],
+  "license": "MIT for original software and documentation; external material remains source-specific",
+  "keywords": [
+    "reproducibility",
+    "scientific model",
+    "gallium neutrino capture",
+    "exact finite dilation"
+  ],
+  "historical_version_doi": "10.5281/zenodo.20377427",
+  "historical_concept_doi": "10.5281/zenodo.19780615",
+  "new_version_doi": null,
+  "publication_date": null,
+  "upload_performed": false,
+  "doi_minted": false,
+  "human_metadata_review_required": true
+}

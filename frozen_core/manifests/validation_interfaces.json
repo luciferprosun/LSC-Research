@@ -1,0 +1,714 @@
+{
+  "schema_version": "1.0.0",
+  "tests": [
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "BEST_JOINT_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "BEST inner to outer zone transfer",
+      "covariance_requirement": [
+        "COV_COLLABORATION preferred",
+        "all declared sensitivity scenarios otherwise"
+      ],
+      "cross_section_treatment": "scan registered models; none selected post-result",
+      "dataset_inputs": [
+        "BEST"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "FAIL at test level if any equally/less complex declared baseline matches or improves held-out performance, or transfer residuals violate the preregistered calibration rule.",
+      "geometry_requirement": "published two-zone average-path geometry",
+      "holdout_subset": "SPLIT_BEST_INNER_TO_OUTER: outer zone",
+      "hypothesis": "A frozen model with genuine spatial structure should transfer from inner calibration to outer observations.",
+      "nuisance_treatment": [
+        "profile only preregistered nuisance parameters"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "production_rate or preregistered ratio",
+      "orientation_requirement": "not required for scalar test",
+      "pass_criterion": "PASS at test level only if frozen LSC held-out performance is better than every declared simpler baseline under the primary covariance source and does not reverse across credible sensitivity scenarios; no discovery claim.",
+      "prediction_authorized": false,
+      "prediction_target": "outer-zone rates by matched exposure",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers"
+      ],
+      "scientific_question": "Does an inner-derived frozen specification predict the outer zone without refit?",
+      "specification_gaps": [],
+      "test_id": "T1",
+      "test_statistic": [
+        "predictive log-likelihood",
+        "chi-square",
+        "residual diagnostics"
+      ],
+      "timing_requirement": "exposure-integrated timing only",
+      "train_calibration_subset": "SPLIT_BEST_INNER_TO_OUTER: inner zone"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "BEST_REVERSE_MAPPING_IDENTIFIABILITY_UNRESOLVED",
+        "BEST_JOINT_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "BEST outer to inner zone transfer",
+      "covariance_requirement": [
+        "COV_COLLABORATION preferred",
+        "all declared sensitivity scenarios otherwise"
+      ],
+      "cross_section_treatment": "same registry fixed before evaluation",
+      "dataset_inputs": [
+        "BEST"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "FAIL if reverse mapping is identified and frozen transfer is no better than a simpler baseline; otherwise report BLOCKED, never PASS.",
+      "geometry_requirement": "published two-zone average-path geometry",
+      "holdout_subset": "SPLIT_BEST_OUTER_TO_INNER: inner zone",
+      "hypothesis": "If the frozen mapping is identifiable from outer data, it should transfer to inner observations.",
+      "nuisance_treatment": [
+        "profile only preregistered nuisance parameters"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "production_rate or preregistered ratio",
+      "orientation_requirement": "not required for scalar test",
+      "pass_criterion": "Same model-comparison rule as T1, conditional on a preregistered proof that reverse mapping is identified.",
+      "prediction_authorized": false,
+      "prediction_target": "inner-zone rates by matched exposure",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers"
+      ],
+      "scientific_question": "Is reverse zone transfer mathematically identified and predictive without refit?",
+      "specification_gaps": [],
+      "test_id": "T2",
+      "test_statistic": [
+        "predictive log-likelihood",
+        "chi-square",
+        "residual diagnostics"
+      ],
+      "timing_requirement": "exposure-integrated timing only",
+      "train_calibration_subset": "SPLIT_BEST_OUTER_TO_INNER: outer zone"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "FROZEN_CROSS_EXPERIMENT_MAPPING_MISSING",
+        "FULL_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "BEST to GALLEX/SAGE transfer",
+      "covariance_requirement": [
+        "COV_COLLABORATION preferred",
+        "sensitivity scenarios reported separately"
+      ],
+      "cross_section_treatment": "all registered models and shared-isotope treatment",
+      "dataset_inputs": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "Component-level failure if transfer fails for a preregistered experiment/isotope or a simpler baseline matches/improves held-out score.",
+      "geometry_requirement": "experiment-published scalar geometry",
+      "holdout_subset": "GALLEX Cr, SAGE 51Cr and SAGE 37Ar source observations",
+      "hypothesis": "Frozen LSC structure should predict GALLEX and both SAGE isotope datasets without changing LSC parameters.",
+      "nuisance_treatment": [
+        "experiment normalization may be fitted only inside M4 baseline",
+        "frozen LSC parameters never profiled"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "published source rate/ratio",
+      "orientation_requirement": "not required for scalar transfer",
+      "pass_criterion": "PASS only if all specified hold-out experiment groups outperform declared simpler baselines under the frozen comparison rule.",
+      "prediction_authorized": false,
+      "prediction_target": "cross-experiment rate/ratio",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers"
+      ],
+      "scientific_question": "Does the frozen BEST specification transfer across independent gallium experiments without refit?",
+      "specification_gaps": [],
+      "test_id": "T3",
+      "test_statistic": [
+        "predictive log-likelihood",
+        "chi-square",
+        "leave-one-experiment-out score"
+      ],
+      "timing_requirement": "exact source time needed only for temporal variants",
+      "train_calibration_subset": "SPLIT_BEST_TO_GALLEX and SPLIT_BEST_TO_SAGE: BEST"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "FROZEN_CROSS_EXPERIMENT_MAPPING_MISSING",
+        "FULL_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "GALLEX/SAGE to BEST transfer",
+      "covariance_requirement": [
+        "same declared scenario for calibration and hold-out"
+      ],
+      "cross_section_treatment": "registered and frozen before evaluation",
+      "dataset_inputs": [
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37",
+        "BEST"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "FAIL if transfer does not generalize to either preregistered BEST zone or a simpler baseline is equal/better.",
+      "geometry_requirement": "published scalar geometry",
+      "holdout_subset": "SPLIT_GALLIUM_LEGACY_TO_BEST: BEST",
+      "hypothesis": "A cross-experiment frozen mapping should predict both BEST zones from GALLEX/SAGE calibration.",
+      "nuisance_treatment": [
+        "baseline/nuisance fitting confined to calibration subset"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "production rate or ratio",
+      "orientation_requirement": "not required",
+      "pass_criterion": "PASS only if both BEST zones satisfy the preregistered held-out comparison against simpler baselines.",
+      "prediction_authorized": false,
+      "prediction_target": "BEST inner and outer rates",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers"
+      ],
+      "scientific_question": "Does a non-BEST calibration transfer to BEST without refit?",
+      "specification_gaps": [],
+      "test_id": "T4",
+      "test_statistic": [
+        "predictive log-likelihood",
+        "chi-square"
+      ],
+      "timing_requirement": "scalar exposure timing",
+      "train_calibration_subset": "SPLIT_GALLIUM_LEGACY_TO_BEST: GALLEX/SAGE"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "FROZEN_ENERGY_MAPPING_MISSING",
+        "CROSS_ISOTOPE_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "51Cr to 37Ar cross-isotope transfer",
+      "covariance_requirement": [
+        "cross-isotope covariance required for inference",
+        "assumption scenarios sensitivity-only"
+      ],
+      "cross_section_treatment": "all registered 51Cr/37Ar pairs; no default correct model",
+      "dataset_inputs": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37",
+        "GALLIUM_CROSS_SECTIONS"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "Component-level falsification if a future collaboration-covariance run shows preregistered frozen isotope transfer is no better than simpler baselines.",
+      "geometry_requirement": "published experiment geometry",
+      "holdout_subset": "SPLIT_CR51_TO_AR37: SAGE 37Ar",
+      "hypothesis": "A frozen energy dependence should transfer from 51Cr datasets to SAGE 37Ar.",
+      "nuisance_treatment": [
+        "shared nuclear nuisance explicitly represented"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "isotope-specific production rate/ratio",
+      "orientation_requirement": "not required",
+      "pass_criterion": "No inferential PASS is authorized under assumption-only covariance; report stability or reversal across the full preregistered scan.",
+      "prediction_authorized": false,
+      "prediction_target": "37Ar production rate/ratio",
+      "readiness": "SENSITIVITY_ONLY",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers"
+      ],
+      "scientific_question": "Does frozen energy/isotope dependence transfer without refit?",
+      "specification_gaps": [],
+      "test_id": "T5",
+      "test_statistic": [
+        "predictive log-likelihood",
+        "chi-square",
+        "cross-section scenario stability"
+      ],
+      "timing_requirement": "not required for scalar transfer",
+      "train_calibration_subset": "SPLIT_CR51_TO_AR37: all eligible 51Cr observations"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "RUN_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "Leave-one-run-out",
+      "covariance_requirement": [
+        "COV_COLLABORATION needed for inference",
+        "diagonal/plausible scans sensitivity-only"
+      ],
+      "cross_section_treatment": "registered before folds",
+      "dataset_inputs": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "FAIL if preregistered aggregate or influence criterion fails, or any omitted split is hidden.",
+      "geometry_requirement": "not required beyond scalar contract",
+      "holdout_subset": "each omitted primary exposure in deterministic source order",
+      "hypothesis": "A frozen model should predict every omitted run without refitting its parameters.",
+      "nuisance_treatment": [
+        "baseline/nuisance fitting inside each training fold only"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "production rate/ratio",
+      "orientation_requirement": "not required",
+      "pass_criterion": "PASS only if every fold is disclosed and aggregate held-out performance beats declared simpler baselines under an inferentially valid covariance.",
+      "prediction_authorized": false,
+      "prediction_target": "omitted-run rate/ratio",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers",
+        "per-fold result"
+      ],
+      "scientific_question": "Are predictions stable for every omitted source exposure?",
+      "specification_gaps": [],
+      "test_id": "T6",
+      "test_statistic": [
+        "aggregate predictive log-likelihood",
+        "per-run standardized residual",
+        "influence diagnostics"
+      ],
+      "timing_requirement": "source interval sufficient for scalar LORO",
+      "train_calibration_subset": "SPLIT_LORO_*: all but one eligible primary exposure"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "CROSS_EXPERIMENT_COVARIANCE_INCOMPLETE"
+      ],
+      "canonical_name": "Leave-one-experiment-out",
+      "covariance_requirement": [
+        "cross-experiment covariance or declared sensitivity policy"
+      ],
+      "cross_section_treatment": "same registry over all folds",
+      "dataset_inputs": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "FAIL if any preregistered family transfer fails or a simpler baseline is equal/better overall.",
+      "geometry_requirement": "published scalar geometry",
+      "holdout_subset": "each experiment-family hold-out",
+      "hypothesis": "A frozen model should predict each held-out experiment family without parameter refit.",
+      "nuisance_treatment": [
+        "baseline/nuisance fitting inside training families only"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "combined source rate/ratio",
+      "orientation_requirement": "not required",
+      "pass_criterion": "PASS only if every declared family hold-out is reported and frozen LSC is better than simpler baselines under the preregistered rule.",
+      "prediction_authorized": false,
+      "prediction_target": "experiment-level combined rate/ratio",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers",
+        "per-family result"
+      ],
+      "scientific_question": "Does the frozen model generalize across experiment families?",
+      "specification_gaps": [],
+      "test_id": "T7",
+      "test_statistic": [
+        "aggregate predictive log-likelihood",
+        "held-out chi-square",
+        "residual diagnostics"
+      ],
+      "timing_requirement": "scalar only",
+      "train_calibration_subset": "SPLIT_LOEO_*: all non-held-out experiment families"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "CROSS_ISOTOPE_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "Gallium cross-section sensitivity",
+      "covariance_requirement": [
+        "COV_PLAUSIBLE_SCAN",
+        "COV_COLLABORATION if acquired"
+      ],
+      "cross_section_treatment": "all registry entries; none declared correct",
+      "dataset_inputs": [
+        "GALLIUM_CROSS_SECTIONS",
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "Model support is weakened if its advantage disappears across credible registered alternatives.",
+      "geometry_requirement": "not required",
+      "holdout_subset": "all eligible scalar observations",
+      "hypothesis": "A defensible result should not depend on post-result selection of one cross-section model.",
+      "nuisance_treatment": [
+        "shared nuclear nuisance per declared covariance scenario"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "rates/ratios and model-comparison deltas",
+      "orientation_requirement": "not required",
+      "pass_criterion": "SENSITIVITY_ONLY: report whether ordering/conclusion is stable; no discovery/exclusion/sigma/decisive language.",
+      "prediction_authorized": false,
+      "prediction_target": "model-comparison stability across registered cross-section alternatives",
+      "readiness": "SENSITIVITY_ONLY",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers",
+        "every cross-section alternative"
+      ],
+      "scientific_question": "Are conclusions robust to published capture cross-section alternatives?",
+      "specification_gaps": [],
+      "test_id": "T8",
+      "test_statistic": [
+        "scenario spread",
+        "rank stability",
+        "predictive score"
+      ],
+      "timing_requirement": "not required",
+      "train_calibration_subset": "NONE"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "COLLABORATION_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "Systematics perturbation sensitivity",
+      "covariance_requirement": [
+        "COV_DIAGONAL",
+        "COV_UNCORRELATED_SYSTEMATICS",
+        "COV_FULLY_COMMON_SELECTED",
+        "COV_PLAUSIBLE_SCAN"
+      ],
+      "cross_section_treatment": "registered alternatives only",
+      "dataset_inputs": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "Model support is weakened if advantage disappears across credible scenarios or requires one post-selected assumption.",
+      "geometry_requirement": "not required",
+      "holdout_subset": "all eligible scalar observations",
+      "hypothesis": "A credible advantage should survive reasonable predeclared systematic treatments.",
+      "nuisance_treatment": [
+        "all nuisance registry categories applicable to each dataset"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "rates/ratios",
+      "orientation_requirement": "not required",
+      "pass_criterion": "SENSITIVITY_ONLY: report complete scenario envelope without inferential significance language.",
+      "prediction_authorized": false,
+      "prediction_target": "model-comparison stability",
+      "readiness": "SENSITIVITY_ONLY",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers",
+        "every covariance/nuisance scenario"
+      ],
+      "scientific_question": "Are comparisons robust to preregistered nuisance/correlation scenarios?",
+      "specification_gaps": [],
+      "test_id": "T9",
+      "test_statistic": [
+        "scenario spread",
+        "rank stability",
+        "predictive score"
+      ],
+      "timing_requirement": "not required",
+      "train_calibration_subset": "NONE"
+    },
+    {
+      "baseline_models": [
+        "M3",
+        "M0",
+        "M1",
+        "M2",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "STERILE_GEOMETRY_INTEGRATION_INCOMPLETE",
+        "EXTERNAL_VETO_BLOCKED_MAPPING_MISSING"
+      ],
+      "canonical_name": "Sterile 3+1 baseline versus frozen LSC",
+      "covariance_requirement": [
+        "dataset-native covariance",
+        "assumption sensitivity kept separate"
+      ],
+      "cross_section_treatment": "registered gallium models",
+      "dataset_inputs": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37",
+        "KATRIN",
+        "ICECUBE",
+        "DAYA_BAY",
+        "PROSPECT",
+        "STEREO",
+        "MICROBOONE"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "Component/model support fails if M3 or a simpler baseline is equal/better, or a valid preregistered external mapping excludes the required region.",
+      "geometry_requirement": "baseline/energy integration required",
+      "holdout_subset": "preregistered gallium hold-outs",
+      "hypothesis": "Frozen LSC must outperform M3 out of sample after declared complexity treatment to claim an advantage.",
+      "nuisance_treatment": [
+        "M3 and baseline parameters only; frozen LSC never fit"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "rates/ratios; external native observables after mapping",
+      "orientation_requirement": "not required for scalar comparison",
+      "pass_criterion": "PASS only if frozen LSC improves held-out prediction after declared complexity treatment and no valid mapped external constraint excludes its required region.",
+      "prediction_authorized": false,
+      "prediction_target": "held-out gallium rates plus separately mapped external constraints",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers",
+        "external releases reported separately"
+      ],
+      "scientific_question": "Does frozen LSC predict better than the standard sterile benchmark?",
+      "specification_gaps": [],
+      "test_id": "T10",
+      "test_statistic": [
+        "predictive log-likelihood",
+        "chi-square",
+        "AIC",
+        "BIC"
+      ],
+      "timing_requirement": "scalar test does not require precise timing",
+      "train_calibration_subset": "preregistered gallium calibration split for M3 only"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M4"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "FULL_COVARIANCE_NOT_PUBLIC"
+      ],
+      "canonical_name": "Null/baseline comparison versus frozen LSC",
+      "covariance_requirement": [
+        "dataset-native preferred",
+        "all sensitivity scenarios disclosed"
+      ],
+      "cross_section_treatment": "registry fixed before evaluation",
+      "dataset_inputs": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "Model support fails if any simpler baseline is equal or better on preregistered held-out performance.",
+      "geometry_requirement": "published scalar geometry",
+      "holdout_subset": "all preregistered hold-outs",
+      "hypothesis": "Frozen LSC must outperform M0/M1/M2/M4 without parameter refit.",
+      "nuisance_treatment": [
+        "baseline/nuisance fitting only; frozen LSC never fit"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "rates/ratios",
+      "orientation_requirement": "not required",
+      "pass_criterion": "PASS only at test level if frozen LSC strictly improves held-out prediction over every declared simpler baseline after complexity treatment.",
+      "prediction_authorized": false,
+      "prediction_target": "held-out rates/ratios",
+      "readiness": "PARTIAL",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers"
+      ],
+      "scientific_question": "Does frozen LSC add out-of-sample predictive value beyond simpler explanations?",
+      "specification_gaps": [],
+      "test_id": "T11",
+      "test_statistic": [
+        "predictive log-likelihood",
+        "chi-square",
+        "AIC",
+        "BIC",
+        "residual diagnostics"
+      ],
+      "timing_requirement": "not required for scalar comparison",
+      "train_calibration_subset": "preregistered split-specific calibration for baselines only"
+    },
+    {
+      "baseline_models": [
+        "M0",
+        "M1",
+        "M4",
+        "M6"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "blockers": [
+        "MISSING_AUTHENTIC_FROZEN_NUMERICAL_BUNDLE",
+        "PRECISE_TIMING_MISSING",
+        "SURVEYED_ORIENTATION_MISSING",
+        "SUFFICIENT_GEOMETRY_MISSING",
+        "ACTIVE_TENSOR_MISSING",
+        "FRAME_TRANSFORMS_MISSING",
+        "REQUIRED_UNITS_MISSING"
+      ],
+      "canonical_name": "Directional and sidereal test",
+      "covariance_requirement": [
+        "adequate directional likelihood/covariance"
+      ],
+      "cross_section_treatment": "frozen before access",
+      "dataset_inputs": [
+        "BEST"
+      ],
+      "exposure_classification": "MODEL_EXPOSED",
+      "falsification_criterion": "Future component-level falsification follows only a preregistered adequately powered directional test; current absence of data is not a pass or fail.",
+      "geometry_requirement": "sufficient surveyed Earth-fixed detector/source geometry",
+      "holdout_subset": "UNAUTHORIZED",
+      "hypothesis": "A complete authentic tensor and frame mapping must yield a preregistered directional/sidereal prediction.",
+      "nuisance_treatment": [
+        "UNAUTHORIZED"
+      ],
+      "numerical_validation_authorized": false,
+      "observable": "time- and frame-resolved observable",
+      "orientation_requirement": "surveyed detector/source orientation plus complete active tensor and frame transforms",
+      "pass_criterion": "No PASS criterion is executable until the historical scientific statistic and all directional inputs are frozen.",
+      "prediction_authorized": false,
+      "prediction_target": "direction/time-resolved rate modulation",
+      "readiness": "BLOCKED",
+      "reporting_requirements": [
+        "all preregistered splits",
+        "all baseline metrics",
+        "adverse/null outcomes",
+        "exact provenance",
+        "blockers",
+        "BLOCKED_DIRECTIONAL_DATA_INSUFFICIENT"
+      ],
+      "scientific_question": "Can the frozen directional/tensor component predict time/orientation dependence?",
+      "specification_gaps": [
+        "PASS/FAIL statistic and power criterion remain SPECIFICATION_INCOMPLETE."
+      ],
+      "test_id": "T12",
+      "test_statistic": [
+        "SPECIFICATION_INCOMPLETE"
+      ],
+      "timing_requirement": "precise event/sub-run timing; exposure midpoint explicitly forbidden",
+      "train_calibration_subset": "UNAUTHORIZED"
+    }
+  ]
+}

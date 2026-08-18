@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_ALPHA0_DETERMINATION_RESULT",
+  "fit_run_id": "LSC640_ALPHA0_SINGLE_PREREGISTERED_RUN_2026_08_16",
+  "execution_classification": "RETROSPECTIVE_NON_BLIND_PARAMETER_DETERMINATION",
+  "development_data_labels": [
+    "MODEL_EXPOSED",
+    "RETROSPECTIVE_NON_BLIND",
+    "DEVELOPMENT_DATA"
+  ],
+  "verdict": "LSC_6_4_0_PARAMETER_DETERMINATION_FAILED",
+  "success": false,
+  "alpha_0_estimate_constrained": -0.06137569305004568,
+  "alpha_0_estimate_unconstrained_diagnostic": -0.1159773471000784,
+  "curvature_standard_error_diagnostic": 0.02774577681820058,
+  "certified_uncertainty_interval": null,
+  "objective_value": 3.872735360003486,
+  "objective_at_null": 17.47239999999999,
+  "objective_at_lower_bound": 3.872735105537897,
+  "objective_at_upper_bound": 58.04709040950604,
+  "fit_bound": [
+    -0.06137569484389956,
+    0.09541395625505644
+  ],
+  "optimizer": {
+    "library": "scipy.optimize.minimize_scalar",
+    "method": "bounded",
+    "success": true,
+    "message": "Solution found.",
+    "function_evaluations": 38,
+    "iterations": 38
+  },
+  "convergence": true,
+  "boundary_status": "BOUNDARY_DOMINATED",
+  "identifiability": "IDENTIFIABLE_ONE_DIMENSIONAL",
+  "failure_reasons": [
+    "unconstrained optimum lies below the frozen linear-response analysis domain",
+    "bounded solution is boundary dominated",
+    "the requested alpha_0 would be incompatible with the preregistered first-order validity criterion"
+  ],
+  "covariance_scenario": "COV_DIAGONAL",
+  "covariance_classification": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+  "profiled_nuisance_parameters": [],
+  "pre_fit_audit": {
+    "status": "PASS",
+    "owner_authorization": "PASS",
+    "response_specification": "PASS",
+    "cross_section_payload": "PASS",
+    "interpolation": "PASS",
+    "derivative": "PASS",
+    "schemas": "PASS",
+    "evaluator_determinism": "PASS",
+    "golden_vectors": "PASS 15/15",
+    "independent_reference": "PASS",
+    "development_dataset": "FROZEN",
+    "objective": "FROZEN",
+    "covariance_policy": "FROZEN_COV_DIAGONAL_SENSITIVITY_ONLY",
+    "bounds": "FROZEN",
+    "BEST2_observed_data_accessed": false,
+    "model_sha256": "4a8f40e59431a27f8f4d5bc9809a706125a46ebdb5728458e4b04503e935b6f2",
+    "prefit_freeze_sha256": "60380837f348cc41dc3d0b240fcba0b61a95c9f61cfab2bc3f5e7db71e9ea179"
+  },
+  "parameter_bundle_frozen": false,
+  "refit_authorized": false,
+  "response_or_bound_repair_after_result_authorized": false,
+  "BEST2_observed_data_accessed": false,
+  "BEST2_prediction_generated": false,
+  "scientific_interpretation": "ADVERSE_PARAMETER_DETERMINATION_RESULT_NOT_VALIDATION"
+}

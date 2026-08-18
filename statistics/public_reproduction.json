@@ -1,0 +1,144 @@
+{
+  "LSC_used": false,
+  "checks": [
+    {
+      "check_id": "BEST_INNER_MEASURED_PREDICTED",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 0.791,
+      "observed": 0.791066282421,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv; arXiv:2201.07364v3 lines 959-963; arXiv:2303.13623 Eq. near lines 1227-1228",
+      "tolerance": 0.0005
+    },
+    {
+      "check_id": "BEST_OUTER_MEASURED_PREDICTED",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 0.766,
+      "observed": 0.765840220386,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv; arXiv:2201.07364v3 lines 959-963; arXiv:2303.13623 Eq. near lines 1227-1228",
+      "tolerance": 0.0005
+    },
+    {
+      "check_id": "BEST_OUTER_INNER_DOUBLE_RATIO",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 0.97,
+      "observed": 0.968111316845,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv; arXiv:2303.13623 Eq. near line 1232",
+      "tolerance": 0.005
+    },
+    {
+      "check_id": "GALLEX_CR1",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 0.953,
+      "observed": 0.952681388013,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv; arXiv:1001.2731 Table source-tab",
+      "tolerance": 0.001
+    },
+    {
+      "check_id": "GALLEX_CR2",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 0.812,
+      "observed": 0.811866859624,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv; arXiv:1001.2731 Table source-tab",
+      "tolerance": 0.001
+    },
+    {
+      "check_id": "SAGE_CR51",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 0.95,
+      "observed": 0.95,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv; arXiv:hep-ph/9803418; DOI:10.1103/PhysRevC.59.2246",
+      "tolerance": 1e-12
+    },
+    {
+      "check_id": "SAGE_AR37",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 0.79,
+      "observed": 0.791366906475,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv; arXiv:nucl-ex/0512041; DOI:10.1103/PhysRevC.73.045805",
+      "tolerance": 0.002
+    },
+    {
+      "check_id": "KATRIN_GRID_DIMENSIONS",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": [
+        50,
+        50
+      ],
+      "observed": [
+        50,
+        50
+      ],
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/06_KATRIN/records/19369714/files/Main_result_KNM1to5_chi_square_map.json",
+      "tolerance": 0.0
+    },
+    {
+      "check_id": "KATRIN_FINITE_GRID_MINIMUM",
+      "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+      "expected": 1374.7638148637948,
+      "observed": 1374.7638148637948,
+      "passed": true,
+      "source": "LSC_6_3_0_VALIDATION/06_KATRIN/records/19369714/files/Main_result_KNM1to5_chi_square_map.json",
+      "tolerance": 1e-10
+    }
+  ],
+  "classification": "PUBLIC_RESULT_REPRODUCTION_ONLY",
+  "gallium_reproduction_audit_sha256": "7d49ab5f93e2d53b85755a602e21fe3a0a76ff3221c380549dba3a6e4de662ce",
+  "katrin_grid": {
+    "finite_minimum": 1374.7638148637948,
+    "interpolation_authorized": false,
+    "mapping_state": "EXTERNAL_VETO_BLOCKED_MAPPING_MISSING",
+    "minimum_axes": [
+      55.66058208578613,
+      0.012636314022528294
+    ],
+    "minimum_index": [
+      17,
+      20
+    ],
+    "shape": [
+      50,
+      50
+    ]
+  },
+  "passed": true,
+  "passed_count": 9,
+  "schema_version": "1.0.0",
+  "six_gallium_diagonal": {
+    "chi_square_about_weighted_mean": 3.9864878596290794,
+    "classification": "SENSITIVITY_ONLY",
+    "collaboration_equivalent": false,
+    "covariance_scenario": "COV_DIAGONAL",
+    "forbidden_interpretation": [
+      "combined significance",
+      "sigma evidence",
+      "collaboration result"
+    ],
+    "ratios": [
+      0.791,
+      0.766,
+      0.953,
+      0.812,
+      0.95,
+      0.79
+    ],
+    "sigmas": [
+      0.05,
+      0.05,
+      0.11,
+      0.105,
+      0.12,
+      0.095
+    ],
+    "weighted_mean": 0.8050639047105203,
+    "weighted_sigma": 0.029442402981404756
+  },
+  "total_count": 9
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/lsc/6.4.0/prediction-output.schema.json",
+  "title": "LSC 6.4.0 A2/C/A prediction output",
+  "type": "object",
+  "required": ["schema_version", "model_version", "model_profile", "model_sha256", "response_specification_sha256", "cross_section_payload_sha256", "source_line_payload_sha256", "input_sha256", "alpha_0", "per_line", "mean_F_m", "R_pred", "applicable_domain_status", "warnings", "blockers", "provenance_references"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "model_version": {"const": "6.4.0"},
+    "model_profile": {"const": "A2/C/A"},
+    "model_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "response_specification_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "cross_section_payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_line_payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "alpha_0": {"type": "number"},
+    "per_line": {"type": "array", "minItems": 1},
+    "mean_F_m": {"type": "number"},
+    "R_pred": {"type": "number", "exclusiveMinimum": 0.0},
+    "applicable_domain_status": {"const": "PASS"},
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "blockers": {"type": "array", "items": {"type": "string"}},
+    "provenance_references": {"type": "array", "minItems": 2, "items": {"type": "string"}}
+  }
+}

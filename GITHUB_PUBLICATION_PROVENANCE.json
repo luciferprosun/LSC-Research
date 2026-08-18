@@ -1,0 +1,17 @@
+{
+  "artifact": "GITHUB_PUBLICATION_SNAPSHOT",
+  "bahcall_payload_redistributed": false,
+  "best2_observed_data_accessed": false,
+  "best2_prediction_generated": false,
+  "frozen_input_head": "1f715b9b8777f89d17a84d340a24107531ccaed4",
+  "github_release_created": false,
+  "phase_1_audit_head": "775f13406e3fcaec042ed231f4fefb14087d4fe5",
+  "phase_2_validation_performed": false,
+  "prepared_utc": "2026-08-18T16:08:31Z",
+  "sanitized_publication_export": true,
+  "schema_version": "1.0.0",
+  "scientific_model_sha256": "c063aae4877159aa1ff2d0df4a8694988f587bc0cf68671357e711a136f7aab8",
+  "source_documentation_head": "fc42d2933fa65202c3c6fc281613a2902bbde724",
+  "source_subtree": "publication/github/",
+  "zenodo_upload_performed": false
+}

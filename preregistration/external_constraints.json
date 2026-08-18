@@ -1,0 +1,31 @@
+{
+  "automatic_likelihood_multiplication": false,
+  "mappings": [
+    {
+      "authorized": false,
+      "confidence_construction": "Release-native absolute chi-square grid; no inferred Wilks coverage.",
+      "constraint_id": "KATRIN",
+      "external_parameter_space": [
+        "mnu2sterile",
+        "sin2thetaee"
+      ],
+      "lsc_parameter_or_observable": null,
+      "mapping_equations": [],
+      "mapping_provenance": null,
+      "readiness_state": "EXTERNAL_VETO_BLOCKED_MAPPING_MISSING"
+    },
+    {
+      "authorized": false,
+      "confidence_construction": "Release-native confidence/metric construction must be retained.",
+      "constraint_id": "ICECUBE",
+      "external_parameter_space": [
+        "release-defined sterile parameter space"
+      ],
+      "lsc_parameter_or_observable": null,
+      "mapping_equations": [],
+      "mapping_provenance": null,
+      "readiness_state": "EXTERNAL_VETO_BLOCKED_MAPPING_MISSING"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

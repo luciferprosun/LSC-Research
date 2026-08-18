@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_ENVIRONMENT_LOCK",
+  "python": "3.12.3",
+  "platform": "Linux x86_64 glibc 2.39",
+  "dependencies": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "pytest": "9.1.1"
+  },
+  "blas_lapack": "scipy-openblas 0.3.34.0.0 USE64BITINT Haswell",
+  "float_precision": "IEEE-754 binary64",
+  "stable_summation": "math.fsum",
+  "random_seed_policy": "No stochastic computation; random seed is null.",
+  "optimizer": "scipy.optimize.minimize_scalar bounded, deterministic",
+  "dependency_lock": "requirements-step07e.lock",
+  "network_access_required": false
+}

@@ -1,0 +1,87 @@
+{
+  "edges": [
+    {
+      "from": "FROZEN_NUMERICAL_BUNDLE",
+      "to": "STEP06_CERTIFICATION"
+    },
+    {
+      "from": "STEP06_CERTIFICATION",
+      "to": "LSC_PREDICTION"
+    },
+    {
+      "from": "LSC_PREDICTION",
+      "to": "T11"
+    },
+    {
+      "from": "T11",
+      "to": "T7"
+    },
+    {
+      "from": "T7",
+      "to": "T3"
+    },
+    {
+      "from": "T3",
+      "to": "T1"
+    },
+    {
+      "from": "T1",
+      "to": "T10"
+    },
+    {
+      "from": "COLLABORATION_COVARIANCE",
+      "to": "INFERENTIAL_LIKELIHOOD"
+    },
+    {
+      "from": "KATRIN_MAPPING",
+      "to": "EXTERNAL_VETO"
+    },
+    {
+      "from": "ICECUBE_MAPPING",
+      "to": "EXTERNAL_VETO"
+    },
+    {
+      "from": "EXTERNAL_VETO",
+      "to": "T10"
+    },
+    {
+      "from": "M3_GEOMETRY",
+      "to": "M3_PRODUCTION"
+    },
+    {
+      "from": "M3_PRODUCTION",
+      "to": "T10"
+    },
+    {
+      "from": "TIMING_ORIENTATION_TENSOR_FRAMES",
+      "to": "T12"
+    },
+    {
+      "from": "BEST2_AS_BUILT_INPUTS",
+      "to": "BEST2_FUTURE_BLIND_PREDICTION"
+    }
+  ],
+  "nodes": [
+    "FROZEN_NUMERICAL_BUNDLE",
+    "STEP06_CERTIFICATION",
+    "LSC_PREDICTION",
+    "T11",
+    "T7",
+    "T3",
+    "T1",
+    "T10",
+    "COLLABORATION_COVARIANCE",
+    "INFERENTIAL_LIKELIHOOD",
+    "KATRIN_MAPPING",
+    "ICECUBE_MAPPING",
+    "EXTERNAL_VETO",
+    "M3_GEOMETRY",
+    "M3_PRODUCTION",
+    "TIMING_ORIENTATION_TENSOR_FRAMES",
+    "T12",
+    "BEST2_AS_BUILT_INPUTS",
+    "BEST2_FUTURE_BLIND_PREDICTION"
+  ],
+  "schema_version": "1.0.0",
+  "step05_execution_authorized": false
+}

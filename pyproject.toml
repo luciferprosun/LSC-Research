@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lsc-validation-kernel"
+version = "0.6.0"
+description = "Fail-closed specification and preregistration kernel for historical LSC validation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT for original software; third-party materials remain source-specific"}
+authors = [{name = "LSC Validation Kernel contributors"}]
+dependencies = [
+  "numpy>=2.0,<3",
+  "scipy>=1.13,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9,<10",
+]
+
+[project.scripts]
+lsc-kernel = "lsc_kernel.cli.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/test_step08_phase1_closure.py"]

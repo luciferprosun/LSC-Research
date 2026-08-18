@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_PARAMETER_BUNDLE",
+  "model_version": "6.5.0",
+  "configuration": "EXACT_FINITE_A2/C/A",
+  "status": "FROZEN_AFTER_SINGLE_PREREGISTERED_DETERMINATION",
+  "parameter": {
+    "parameter_id": "LSC650-PHYS-01",
+    "symbol": "alpha_0",
+    "value": -0.14388795521516184,
+    "units": "dimensionless",
+    "meaning": "universal signed logarithmic dilation Delta ln E of the capture-cross-section energy argument",
+    "null_value": 0.0,
+    "domain_closed": [-0.5747389495096434, 3.607238025076703],
+    "uncertainty": {
+      "construction": "one-parameter profile delta-chi-square interval with DeltaChi2=1",
+      "interval": [-0.19024973740805776, -0.10233891434687088],
+      "covariance_scenario": "COV_DIAGONAL",
+      "classification": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+      "not_a_probability_prior": true
+    },
+    "shared_across_experiments_isotopes_zones": true,
+    "parameter_content_sha256": "b0adea72546cd2685fa892b01b1e8b7209c732a66630c6def82be98275383e65"
+  },
+  "determination": {
+    "fit_run_id": "LSC650_ALPHA_SINGLE_PREREGISTERED_RUN_2026_08_16",
+    "result_path": "LSC_6_5_0_ALPHA_DETERMINATION_RESULT.json",
+    "result_sha256": "34a98aeff68a88b91da44dbe733966b5cdd265f222bb64f8d97d953f904993e9",
+    "protocol_path": "LSC_6_5_0_ALPHA_DETERMINATION_PROTOCOL.json",
+    "protocol_sha256": "bf05812385439b0c82a53ed9bf52a26b65b6b8925903fab4f04e6d4d5a67a56c",
+    "prefit_freeze_path": "LSC_6_5_0_PREFIT_FREEZE.json",
+    "prefit_freeze_sha256": "7a0fdacd8fcff134386e4864228554454237ddc8da3df2429effa4b3f23403e0",
+    "convergence": true,
+    "boundary_status": "INTERIOR",
+    "identifiability": "IDENTIFIABLE_ONE_DIMENSIONAL",
+    "objective_value": 2.169792942258529e-20,
+    "completed_determination_count": 1,
+    "aborted_pre_result_software_attempts": 2
+  },
+  "scientific_bindings": {
+    "scientific_specification_sha256": "114e8398a45e6a6c8fb4a105e994ca695805b06b9ed8608b86288ea0791ef948",
+    "scientific_freeze_sha256": "f32e606e37f5e880240b446737c2e72a30395b9017c7479e20ca7bc4ebcdc0df",
+    "owner_authorization_sha256": "6731100c50b1a35e8c0772f4ebc4130278edbbef72e618264e37a5b5cc6ef163",
+    "cross_section_payload_sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5",
+    "source_line_payload_sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e",
+    "6_4_0_adverse_freeze_sha256": "0a45c0f3e03d1691d3f9141de6c9a2cc33a0ad7ed878422f045b8b7a714275bc"
+  },
+  "development_exposure": ["MODEL_EXPOSED", "POST_6_4_DEVELOPMENT", "RETROSPECTIVE_NON_BLIND", "DEVELOPMENT_DATA"],
+  "development_dataset": "BEST:zone=inner:published_aggregate_ratio",
+  "historical_holdouts_used_in_determination": false,
+  "no_refit": true,
+  "refit_consequence": "Any later refit requires a new model-development version and new freeze.",
+  "validation_status": "NOT_YET_VALIDATED",
+  "BEST2": {
+    "status": ["FUTURE_ONLY", "FUTURE_BLIND"],
+    "observed_data_accessed": false,
+    "prediction_generated": false,
+    "prediction_authorized": false
+  },
+  "publication_authorized": false
+}

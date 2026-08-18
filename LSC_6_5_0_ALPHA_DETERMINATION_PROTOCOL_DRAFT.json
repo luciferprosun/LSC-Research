@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.1.0",
+  "document_kind": "LSC_6_5_0_ALPHA_DETERMINATION_PROTOCOL_DRAFT",
+  "status": "BLOCKED_PENDING_OWNER_AUTHORIZATION_AND_NEW_PREFIT_FREEZE",
+  "model_version": "6.5.0",
+  "configuration": "EXACT_A2/C/A",
+  "protocol_is_frozen_for_execution": false,
+  "fit_authorized": false,
+  "fit_executed_in_step07d": false,
+  "allowed_execution_count_after_future_freeze": 1,
+  "scientific_bindings": {
+    "successor_specification": {
+      "path": "spec/LSC_6_5_0_EXACT_DILATION_SPECIFICATION.yaml",
+      "sha256": "114e8398a45e6a6c8fb4a105e994ca695805b06b9ed8608b86288ea0791ef948"
+    },
+    "pending_owner_authorization": {
+      "path": "OWNER_AUTHORIZATION_LSC_6_5_0.md",
+      "current_sha256": "8ac509b769fc9b4e4cb26187d3121723d04799ce672ec8bcab793bc278c396d6",
+      "required_status_before_freeze": "OWNER_AUTHORIZED"
+    },
+    "predecessor_adverse_freeze": {
+      "path": "LSC_6_4_0_ADVERSE_RESULT_FREEZE.json",
+      "sha256": "0a45c0f3e03d1691d3f9141de6c9a2cc33a0ad7ed878422f045b8b7a714275bc"
+    },
+    "cross_section_payload": {
+      "path": "external_physics/gallium_capture/bahcall_1997_best_estimate.csv",
+      "sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5"
+    },
+    "source_lines": {
+      "path": "external_physics/gallium_capture/source_lines_prc108_035502.json",
+      "sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e"
+    }
+  },
+  "parameter": {
+    "parameter_id": "LSC650-PHYS-01",
+    "symbol": "alpha_0",
+    "units": "dimensionless",
+    "meaning": "universal signed logarithmic capture-cross-section argument dilation Delta ln E",
+    "null_value": 0.0,
+    "shared_across_experiments_isotopes_zones": true,
+    "refit_between_experiments": false
+  },
+  "prediction": {
+    "equation": "R_pred,a(alpha_0) = sum_i c_ai sigma(E_i exp(alpha_0)) / sum_i c_ai sigma(E_i)",
+    "conventional_prefactor": "c_ai = branching_i * activity_i * exposure_i * P_i * geometry_i * efficiency_i",
+    "cross_section_counted_once_in_numerator": true,
+    "cross_section_counted_once_in_denominator": true
+  },
+  "domain": {
+    "classification": "DATA_INDEPENDENT_CROSS_SECTION_SUPPORT_DOMAIN",
+    "derivation": "max_i ln(0.24/E_i) <= alpha_0 <= min_i ln(30.0/E_i)",
+    "canonical_Cr51_Ar37_domain_closed": [-0.5747389495096434, 3.607238025076703],
+    "old_6_4_linear_bound_reused": false,
+    "post_outcome_bound_adjustment_allowed": false
+  },
+  "development_data_proposal": {
+    "selection_reason": "preserve the already declared BEST-inner development versus historical-holdout separation; do not open a STEP 07C holdout after the adverse result",
+    "labels": ["POST_6_4_DEVELOPMENT", "MODEL_EXPOSED", "RETROSPECTIVE_NON_BLIND", "DEVELOPMENT_DATA"],
+    "observations": [
+      {
+        "observation_id": "BEST:zone=inner:published_aggregate_ratio",
+        "value": 0.791,
+        "standard_uncertainty": 0.05,
+        "source_path": "LSC_6_3_0_VALIDATION/02_BEST/Papers/arXiv_2201.07364/source/BESTextended.tex",
+        "source_sha256": "c9805ff757eb1c6f832b104f1eb043bb7e51b2c1a6711c0e1aa3737feed8f592"
+      }
+    ],
+    "holdout_not_in_objective": ["BEST:zone=outer", "GALLEX/GNO", "SAGE Cr51", "SAGE Ar37"],
+    "holdout_blindness": "MODEL_EXPOSED_NON_BLIND_HISTORICAL_NOT_STRICT_BLIND",
+    "BEST2_observed_data_allowed": false
+  },
+  "likelihood": {
+    "type": "DIAGONAL_GAUSSIAN_CHI_SQUARE",
+    "equation": "chi2(alpha_0) = ((R_observed - R_pred(alpha_0)) / standard_uncertainty)^2",
+    "classification": "DEVELOPMENT_OBJECTIVE_SENSITIVITY_ONLY",
+    "model_or_response_selection_from_objective": false
+  },
+  "covariance": {
+    "scenario_id": "COV_DIAGONAL",
+    "matrix": [[0.0025000000000000005]],
+    "classification": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+    "reason": "no authoritative collaboration covariance was recovered; this limitation is unchanged and cannot support collaboration-level inference"
+  },
+  "nuisance": {
+    "treatment": "NONE_PROFILED",
+    "parameters": [],
+    "published_aggregate_uncertainty_used_directly": true
+  },
+  "optimizer": {
+    "library": "scipy.optimize.minimize_scalar",
+    "method": "bounded",
+    "xatol": 1e-12,
+    "maxiter": 1000,
+    "random_seed": null,
+    "initial_values": null
+  },
+  "convergence_and_identifiability": {
+    "require_success": true,
+    "require_finite_estimate_and_objective": true,
+    "boundary_tolerance": 1e-8,
+    "require_positive_finite_curvature_or_equivalent_rank_check": true,
+    "boundary_dominated_is_failure": true
+  },
+  "uncertainty": {
+    "construction": "one-parameter profile delta-chi-square interval with DeltaChi2=1 inside the frozen exact-support domain",
+    "certified_interval_if_boundary_failure": false,
+    "probability_prior": null
+  },
+  "failure_criteria": [
+    "owner authorization is absent or does not match the exact specification hash",
+    "new pre-fit freeze is absent",
+    "any cross-section, source-line, dataset, objective, covariance, nuisance, domain or code binding changes",
+    "optimizer does not converge",
+    "estimate is non-finite, non-identifiable or boundary dominated",
+    "any transformed source energy leaves frozen cross-section support",
+    "BEST2 observed-data access is detected"
+  ],
+  "no_refit_policy": {
+    "single_execution_after_future_freeze": true,
+    "response_change_after_result": "REQUIRES_NEW_MODEL_VERSION_AND_NEW_OWNER_AUTHORIZATION",
+    "bound_change_after_result": "FORBIDDEN",
+    "dataset_change_after_result": "FORBIDDEN",
+    "separate_experiment_fit": "FORBIDDEN"
+  },
+  "required_future_prefit_gates": [
+    "owner authorization hash",
+    "scientific specification hash",
+    "exact evaluator and independent reference hashes",
+    "input/output schema hashes",
+    "exact-domain and no-double-counting tests",
+    "golden vectors",
+    "development-data manifest",
+    "objective/covariance/nuisance freeze",
+    "environment lock",
+    "BEST2 blindness check"
+  ],
+  "safety_receipt": {
+    "new_alpha_fit_performed_in_step07d": false,
+    "alpha_scan_performed_in_step07d": false,
+    "historical_holdout_evaluated_in_step07d": false,
+    "BEST2_observed_data_accessed": false,
+    "BEST2_prediction_generated": false
+  }
+}

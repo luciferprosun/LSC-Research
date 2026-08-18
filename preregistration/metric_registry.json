@@ -1,0 +1,205 @@
+{
+  "metrics": [
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "Gaussian residual interpretation limits apply"
+      ],
+      "interpretation_limits": [
+        "Gaussian residual interpretation limits apply"
+      ],
+      "metric_id": "CHI_SQUARE",
+      "prerequisites": "covariance or declared diagonal sensitivity"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "not a confidence level without coverage construction"
+      ],
+      "interpretation_limits": [
+        "not a confidence level without coverage construction"
+      ],
+      "metric_id": "DELTA_CHI_SQUARE",
+      "prerequisites": "nested/comparable models and documented reference"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "do not invoke Wilks automatically"
+      ],
+      "interpretation_limits": [
+        "do not invoke Wilks automatically"
+      ],
+      "metric_id": "LIKELIHOOD_RATIO",
+      "prerequisites": "explicit likelihood plus nesting/regularity or calibrated null distribution"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "primary out-of-sample comparison metric"
+      ],
+      "interpretation_limits": [
+        "primary out-of-sample comparison metric"
+      ],
+      "metric_id": "PREDICTIVE_LOG_LIKELIHOOD",
+      "prerequisites": "held-out predictive distribution"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "diagnostic, not standalone evidence"
+      ],
+      "interpretation_limits": [
+        "diagnostic, not standalone evidence"
+      ],
+      "metric_id": "RESIDUAL_DIAGNOSTICS",
+      "prerequisites": "defined residual/covariance transform"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "in-sample information criterion"
+      ],
+      "interpretation_limits": [
+        "in-sample information criterion"
+      ],
+      "metric_id": "AIC",
+      "prerequisites": "valid likelihood and effective parameter count"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "asymptotic approximation"
+      ],
+      "interpretation_limits": [
+        "asymptotic approximation"
+      ],
+      "metric_id": "BIC",
+      "prerequisites": "valid likelihood, effective parameter count and sample-size definition"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "all folds reported"
+      ],
+      "interpretation_limits": [
+        "all folds reported"
+      ],
+      "metric_id": "CROSS_VALIDATION_SCORE",
+      "prerequisites": "predeclared folds and fold-local fitting"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "requires adequate sample size"
+      ],
+      "interpretation_limits": [
+        "requires adequate sample size"
+      ],
+      "metric_id": "PREDICTIVE_CALIBRATION",
+      "prerequisites": "probabilistic prediction and calibration definition"
+    },
+    {
+      "applicable_datasets": "contract-dependent",
+      "applicable_models": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "assumptions": [
+        "unavailable without a valid Bayesian model"
+      ],
+      "interpretation_limits": [
+        "unavailable without a valid Bayesian model"
+      ],
+      "metric_id": "POSTERIOR_PREDICTIVE",
+      "prerequisites": "complete Bayesian generative model and frozen priors"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

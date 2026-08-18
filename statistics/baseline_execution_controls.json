@@ -1,0 +1,732 @@
+{
+  "LSC_used": false,
+  "all_converged": true,
+  "all_manifests_declare_LSC_false": true,
+  "classification": "NON_PHYSICAL_TEST_FIXTURE",
+  "cross_section_models_executed": [
+    "XS_01_BAHCALL_51CR",
+    "XS_03_HAXTON_51CR",
+    "XS_04_BARINOV_ET_AL._51CR",
+    "XS_06_KOSTENSALO_ET_AL._51CR",
+    "XS_08_SEMENOV_51CR",
+    "XS_10_ELLIOTT_GAVRIN_HAXTON_GROUND_STATE_51CR",
+    "XS_12_ELLIOTT_GAVRIN_HAXTON_KROFCHECK_51CR",
+    "XS_14_ELLIOTT_GAVRIN_HAXTON_FREKERS_51CR"
+  ],
+  "dataset_description": {
+    "classification": "NON_PHYSICAL_TEST_FIXTURE",
+    "covariance": [
+      [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.01,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.01,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.01
+      ]
+    ],
+    "expected": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "observed": [
+      0.8,
+      0.82,
+      0.79,
+      0.81
+    ]
+  },
+  "dataset_hash": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f",
+  "execution_count": 13,
+  "executions": [
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "ddeb833298b5b179e644f099e732a1ebb0e6c6f2470676402f25db287c2afe1e",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M0",
+        "model_version": "STEP04_BASELINE_1.0.0",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "ddeb833298b5b179e644f099e732a1ebb0e6c6f2470676402f25db287c2afe1e",
+        "fitted_parameters": {},
+        "model_id": "M0",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 15.259999999999996,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "a69dd1cbf866e2cba966cd083092d5fcc890a94a35e0fdc3a9cb9f4a8a6b222e",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M1",
+        "model_version": "STEP04_BASELINE_1.0.0",
+        "nuisance_treatment": "NONE",
+        "optimizer": "L-BFGS-B",
+        "parameters_fitted": [
+          "normalization"
+        ],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        0.8049999985365358,
+        0.8049999985365358,
+        0.8049999985365358,
+        0.8049999985365358
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 3,
+        "execution_manifest_hash": "a69dd1cbf866e2cba966cd083092d5fcc890a94a35e0fdc3a9cb9f4a8a6b222e",
+        "fitted_parameters": {
+          "normalization": 0.8049999985365358
+        },
+        "model_id": "M1",
+        "n_observations": 4,
+        "n_parameters": 1,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 0.050000000000000606,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "01e2150dcbdf5529f830a10bb9da6a4bad92daeb6e99522e08e0bc5597321c53",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_01_BAHCALL_51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "01e2150dcbdf5529f830a10bb9da6a4bad92daeb6e99522e08e0bc5597321c53",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 15.259999999999996,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "538be976cfa86c41ce7bb97382b67d60944c661c5c3d68f3808ce82c50bfc978",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_03_HAXTON_51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        1.0998278829604131,
+        1.0998278829604131,
+        1.0998278829604131,
+        1.0998278829604131
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "538be976cfa86c41ce7bb97382b67d60944c661c5c3d68f3808ce82c50bfc978",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 34.81939222836762,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "6d659a728d771f5e80bc50c1027b1cee67ce1c4484d2772b5705065f3989449e",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_04_BARINOV_ET_AL._51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        1.017211703958692,
+        1.017211703958692,
+        1.017211703958692,
+        1.017211703958692
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "6d659a728d771f5e80bc50c1027b1cee67ce1c4484d2772b5705065f3989449e",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 18.063522918820627,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "67ee35cc1485a5e4e734ffbb660507c2ef41782cad915790fc6ddec73a4765ca",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_06_KOSTENSALO_ET_AL._51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        0.9759036144578314,
+        0.9759036144578314,
+        0.9759036144578314,
+        0.9759036144578314
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "67ee35cc1485a5e4e734ffbb660507c2ef41782cad915790fc6ddec73a4765ca",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 11.733218173900422,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "1a7676a3d732ef11386b4f247e593c064b8813a6b077f972546cf81378a9f070",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_08_SEMENOV_51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        1.0223752151462997,
+        1.0223752151462997,
+        1.0223752151462997,
+        1.0223752151462997
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "1a7676a3d732ef11386b4f247e593c064b8813a6b077f972546cf81378a9f070",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 18.95079366396003,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "49a4b9389aef719095677aa0d6861a8289afefba869ab0692edac234789a832f",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_10_ELLIOTT_GAVRIN_HAXTON_GROUND_STATE_51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        0.927710843373494,
+        0.927710843373494,
+        0.927710843373494,
+        0.927710843373494
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "49a4b9389aef719095677aa0d6861a8289afefba869ab0692edac234789a832f",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 6.073180432573665,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "d5ca47a1cc195344fdcf0e98667c17421782fea1420649bf3367c73fe86e62b6",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_12_ELLIOTT_GAVRIN_HAXTON_KROFCHECK_51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        0.9827882960413081,
+        0.9827882960413081,
+        0.9827882960413081,
+        0.9827882960413081
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "d5ca47a1cc195344fdcf0e98667c17421782fea1420649bf3367c73fe86e62b6",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 12.693471283708723,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "ce3995848703e2a1f452025d84d89afe7b98b7041331010ae96c1acccb2949db",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M2",
+        "model_version": "STEP04_BASELINE_1.0.0:XS_14_ELLIOTT_GAVRIN_HAXTON_FREKERS_51CR",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        1.0068846815834769,
+        1.0068846815834769,
+        1.0068846815834769,
+        1.0068846815834769
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "ce3995848703e2a1f452025d84d89afe7b98b7041331010ae96c1acccb2949db",
+        "fitted_parameters": {},
+        "model_id": "M2",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 16.352969863224736,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "3d9a888c2c730b40efa16bd453a788cb2de9641c7a031e58b3003b6a4ba757cb",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M3",
+        "model_version": "STEP04_BASELINE_1.0.0",
+        "nuisance_treatment": "NONE",
+        "optimizer": "L-BFGS-B",
+        "parameters_fitted": [
+          "sin2_2theta_ee",
+          "delta_m2_ev2"
+        ],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        0.8027970715229971,
+        0.9348163222178852,
+        0.9889682051333561,
+        0.8441409941924929
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 2,
+        "execution_manifest_hash": "3d9a888c2c730b40efa16bd453a788cb2de9641c7a031e58b3003b6a4ba757cb",
+        "fitted_parameters": {
+          "delta_m2_ev2": 0.9999999969495843,
+          "sin2_2theta_ee": 0.19999999510317798
+        },
+        "model_id": "M3",
+        "n_observations": 4,
+        "n_parameters": 2,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 5.796323900711223e-15,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "ad9d26814fa9eb8d201321f1dc56aa9a105641edae53d3e3d76e0e1198a12050",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M4_EXPERIMENT_NORMALIZATION",
+        "model_version": "STEP04_BASELINE_1.0.0",
+        "nuisance_treatment": "NONE",
+        "optimizer": "L-BFGS-B",
+        "parameters_fitted": [
+          "normalization[BEST]",
+          "normalization[SAGE]"
+        ],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        0.8099999949997929,
+        0.8099999949997929,
+        0.7999999950008498,
+        0.7999999950008498
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 2,
+        "execution_manifest_hash": "ad9d26814fa9eb8d201321f1dc56aa9a105641edae53d3e3d76e0e1198a12050",
+        "fitted_parameters": {
+          "normalization[BEST]": 0.8099999949997929,
+          "normalization[SAGE]": 0.7999999950008498
+        },
+        "model_id": "M4_EXPERIMENT_NORMALIZATION",
+        "n_observations": 4,
+        "n_parameters": 2,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 0.04000000000000985,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    },
+    {
+      "manifest": {
+        "LSC_used": false,
+        "classification": "NON_PHYSICAL_TEST_FIXTURE",
+        "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+        "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+        "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_hashes": {
+          "FIXTURE_BASELINE_EXECUTION": "0b08948b3083636ce38bc9e6ca1f1e97efacc02deb5ca81cdcf256a12d07218f"
+        },
+        "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+        "execution_manifest_hash": "792dafbeebb77cf3b53cd5e6e635c4faed5ab6a8c4b02077fef4b2afeed00b8b",
+        "manifest_schema_version": "1.0.0",
+        "metric": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "model": "M4_DETECTOR_SYSTEMATIC",
+        "model_version": "STEP04_BASELINE_1.0.0",
+        "nuisance_treatment": "NONE",
+        "optimizer": "NONE",
+        "parameters_fitted": [],
+        "split": "FIXTURE_FULL_SAMPLE",
+        "timestamp": "STEP04_DETERMINISTIC_BASELINE_FIXTURE_NO_WALL_CLOCK"
+      },
+      "prediction": [
+        0.81,
+        0.81,
+        0.81,
+        0.81
+      ],
+      "result": {
+        "AIC_if_valid": null,
+        "BIC_if_valid": null,
+        "convergence": true,
+        "covariance_scenario": "COV_DIAGONAL",
+        "dataset_id": "FIXTURE_BASELINE_EXECUTION",
+        "dof_if_valid": 4,
+        "execution_manifest_hash": "792dafbeebb77cf3b53cd5e6e635c4faed5ab6a8c4b02077fef4b2afeed00b8b",
+        "fitted_parameters": {},
+        "model_id": "M4_DETECTOR_SYSTEMATIC",
+        "n_observations": 4,
+        "n_parameters": 0,
+        "nuisance_parameters": {},
+        "predictive_score_if_valid": null,
+        "sensitivity_only": true,
+        "split_id": "FIXTURE_FULL_SAMPLE",
+        "statistic": 0.05999999999999989,
+        "statistic_type": "BASELINE_FULL_COVARIANCE_CHI_SQUARE",
+        "warnings": []
+      }
+    }
+  ],
+  "frozen_LSC_baseline_status": "FORBIDDEN_BEFORE_DISPATCH",
+  "hierarchical_baseline_status": "SPECIFICATION_INCOMPLETE",
+  "passed": true,
+  "schema_version": "1.0.0",
+  "unique_manifest_count": 13
+}

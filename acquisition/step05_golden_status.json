@@ -1,0 +1,19 @@
+{
+  "BEST2_prediction_performed": false,
+  "LSC_prediction": "BLOCKED",
+  "LSC_validation": "BLOCKED",
+  "M3_geometry": "PUBLISHED_AVERAGE_GEOMETRY",
+  "M4_hierarchical_specification": "SPECIFICATION_INCOMPLETE",
+  "T12_data": "BLOCKED_DIRECTIONAL_DATA_INSUFFICIENT",
+  "best_collaboration_covariance": "NOT_LOCATED_FULL_MATRIX_SUMMARY_PRESCRIPTION_ONLY",
+  "frozen_identity": "VERIFIED",
+  "frozen_numerical_bundle": "AUTHENTIC_FROZEN_BUNDLE_INCOMPLETE",
+  "frozen_specification": "READY",
+  "icecube_mapping": "MAPPING_NOT_JUSTIFIED",
+  "katrin_mapping": "MAPPING_NOT_JUSTIFIED",
+  "minimum_validation_unlock_set": "INCOMPLETE",
+  "prediction_performed": false,
+  "statistical_engine": "READY",
+  "validation_methodology": "READY",
+  "validation_performed": false
+}

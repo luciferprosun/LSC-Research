@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "GALLIUM_CAPTURE_CROSS_SECTION_PROVENANCE_MANIFEST",
+  "acquisition_date": "2026-08-16",
+  "production_scenario_id": "BAHCALL_1997_BEST_ESTIMATE_NATURAL_CUBIC_SPLINE",
+  "scientific_status": "AUTHORITATIVE_PUBLISHED_TABLE_WITH_EXPLICIT_NUMERICAL_REPRESENTATION_CONVENTION",
+  "primary_cross_section_source": {
+    "citation": "John N. Bahcall, Gallium Solar Neutrino Experiments: Absorption Cross Sections, Neutrino Spectra, and Predicted Event Rates, Phys. Rev. C 56, 3391 (1997)",
+    "doi": "10.1103/PhysRevC.56.3391",
+    "arxiv": "hep-ph/9710491",
+    "official_url": "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.56.3391",
+    "author_data_url": "https://www.sns.ias.edu/~jnb/SNdata/oldsndata.html",
+    "source_version": "published 1997 table",
+    "coverage": "71Ga neutrino-capture best-estimate cross section from 0.240 to 30.000 MeV",
+    "source_instruction": "cubic spline fit to tabulated cross sections as a function of energy",
+    "reported_reproduction_scale": "1% or better for standard-spectrum best-estimate cross sections"
+  },
+  "source_line_source": {
+    "citation": "S. R. Elliott, V. N. Gavrin, and W. C. Haxton, Gallium neutrino absorption cross section and its uncertainty, Phys. Rev. C 108, 035502 (2023)",
+    "doi": "10.1103/PhysRevC.108.035502",
+    "arxiv": "2303.13623",
+    "official_url": "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.108.035502",
+    "source_version": "published 2023 Table I",
+    "coverage": "six 51Cr lines and three 37Ar lines"
+  },
+  "original_files": [
+    {
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/Bahcall_galliumcrosstabs.txt",
+      "sha256": "bba57204fb909a846f8fd77034ef420755c10ffeeb07acb8adc1f043e921f92a",
+      "role": "author-hosted data table mirror"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/bahcall_gallium_cross_sections.html",
+      "sha256": "f2680e36b63ceab17cf13f00a9dbd678bd7672093364d7c6aeab60c98de4c1af",
+      "role": "author-hosted data-page mirror"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/Papers/Bahcall_hep-ph_9710491.pdf",
+      "sha256": "8c0992226cd179bf9a212cad13a1d78eefeba8bebf2c3e095e06f0279d43eb0d",
+      "role": "published-paper mirror"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/Papers/source_hep-ph_9710491/paper.tex",
+      "sha256": "f9374f6c94442ff997358339331ccb2c2b7917192f47ff6376fd6714bdbe6686",
+      "role": "paper source containing spline instruction"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/Papers/Elliott_Gavrin_Haxton_2303.13623.pdf",
+      "sha256": "559074b745b5032b22674f352457321a66f516c18166103f2d8f66690b0cc115",
+      "role": "published source-line paper mirror"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/Papers/source_2303.13623/CS_paper_v10.tex",
+      "sha256": "d3f5b60fbe8dfd9c8bbcd1bd1694b58bb95dc41b29217ba9aaa03063e29b5573",
+      "role": "paper source containing exact line table"
+    }
+  ],
+  "production_payloads": [
+    {
+      "path": "external_physics/gallium_capture/bahcall_1997_best_estimate.csv",
+      "sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5",
+      "role": "lossless machine-readable transcription of the Best table",
+      "generated": true
+    },
+    {
+      "path": "external_physics/gallium_capture/source_lines_prc108_035502.json",
+      "sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e",
+      "role": "machine-readable transcription of published source lines",
+      "generated": true
+    },
+    {
+      "path": "external_physics/gallium_capture/INTERPOLATION_POLICY.md",
+      "sha256": "604028a6c846a7fe7ff3173f211410087d63a1e89a21c2f1f5b93f6bd9f21ec7",
+      "role": "pre-fit numerical representation freeze",
+      "generated": true
+    }
+  ],
+  "cross_section": {
+    "energy_unit": "MeV",
+    "value_unit": "1e-46 cm^2",
+    "point_count": 58,
+    "energy_domain_mev": [0.24, 30.0],
+    "positive_on_supported_domain": true,
+    "finite_on_supported_domain": true,
+    "representation": "natural cubic spline in linear energy and linear cross section",
+    "differentiability": "C2 on closed payload domain with one-sided endpoint derivative",
+    "derivative": "analytic derivative of frozen spline polynomials",
+    "extrapolation": "FORBIDDEN",
+    "uncertainty_representation": "published -3sigma and +3sigma tables preserved in source but not selected as production scenario"
+  },
+  "license_and_publication_provenance": {
+    "status": "published scientific material; bibliographic attribution required",
+    "redistribution_claim": "no independent relicensing asserted",
+    "digitization_used": false,
+    "undocumented_curve_reconstruction_used": false
+  },
+  "limitations": [
+    "The 1997 source specifies cubic splines but not endpoint boundary conditions; natural endpoints are a frozen numerical convention.",
+    "The derivative of the interpolant is deterministic but does not have a separately published derivative uncertainty guarantee.",
+    "The selected model is one frozen conventional cross-section scenario, not a claim that alternative nuclear calculations are invalid."
+  ]
+}

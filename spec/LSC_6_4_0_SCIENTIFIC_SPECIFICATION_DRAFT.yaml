@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.1.0",
+  "document_kind": "NON_EXECUTABLE_SCIENTIFIC_SPECIFICATION_DRAFT",
+  "model": {
+    "name": "LSC",
+    "candidate_version": "6.4.0",
+    "status": "OWNER_SCIENTIFIC_DECISION_REQUIRED",
+    "parent_historical_version": "6.3.0",
+    "parent_historical_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+    "step07a_verdict": "VERSION_ESCALATION_REQUIRED_6_4_0",
+    "fundamental_model_class_changed": false
+  },
+  "preservation": {
+    "equation_ids": ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9", "E10", "E11", "E12"],
+    "symbolic_equation_set_sha256": "af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981",
+    "equations_changed_in_step07a": false,
+    "historical_6_3_0_mutated": false
+  },
+  "canonical_reparameterization": {
+    "classification": "PHYSICALLY_EQUIVALENT_REPARAMETERIZATION",
+    "scalar_response": "S_a(E,t) = lambda0 * f0_a(E,t)",
+    "anisotropic_tensor_response": "B_a(E,t) = lambdaA * fA_a(E,t) * A_a",
+    "fractional_response": "rho_a(E,t,Omega) = S_a(E,t) + n_lab^T B_a(E,t) n_lab",
+    "efficiency": "epsilon_LSC,a = epsilon0_a * (1 + rho_a)",
+    "factorization_constraint": "B_a(E,t) = hA_a(E,t) * T_a with T_a independent of E and t",
+    "historical_aliases_not_independently_physical": ["lambda0", "f0_a", "lambdaA", "fA_a", "unnormalized_A_a"]
+  },
+  "integration": {
+    "classification": "ALGEBRAICALLY_IMPLIED",
+    "baseline_measure": "dnu_a = Phi * P_alpha_beta * sigma * epsilon0_a * W_a * dE * dOmega * dt",
+    "baseline_denominator": "N0_a = integral_Da dnu_a",
+    "normalized_functional": "<g>_a = integral_Da(g dnu_a) / N0_a",
+    "precondition": "N0_a must be finite and strictly positive",
+    "source_and_isotope_lines": "authoritative dataset input through Phi and sigma",
+    "volume_and_geometry": "authoritative dataset input through W_a",
+    "time_and_exposure": "authoritative dataset input through the domain and time-dependent factors",
+    "quadrature": "DEFERRED_IMPLEMENTATION_CONVENTION"
+  },
+  "observable_binding": {
+    "selected": "BINDING_A",
+    "classification": "ALGEBRAICALLY_IMPLIED",
+    "primary_prediction": "Rpred_a = N_LSC,a / N0_a",
+    "derived_residual": "DeltaR_a = Rpred_a - 1",
+    "linear_e2_identity": "Rpred_a = 1 + <S_a>_a + <n_lab^T B_a n_lab>_a",
+    "e7_policy": "historical first-order diagnostic derived from the primary E5/E1 ratio",
+    "theta_policy": "theta contains LSC physical parameters only",
+    "eta_policy": "eta contains nuisance parameters only",
+    "best_coordinate_policy": "R_inner and R_outer are independent; R_outer/R_inner is derived and is not a third independent datum"
+  },
+  "tensor_contract": {
+    "dimension": 3,
+    "dimension_classification": "ALGEBRAICALLY_IMPLIED",
+    "rank": 2,
+    "symmetric": true,
+    "traceless": true,
+    "independent_components_before_scale_gauge": 5,
+    "normalization": "FROBENIUS_NORM_ONE_ON_NONZERO_BRANCH",
+    "normalization_classification": "NORMALIZATION_CONVENTION",
+    "independent_continuous_degrees_after_scale_gauge": 4,
+    "zero_branch": "ANISOTROPY_OFF_NOT_NORMALIZED",
+    "sign_representative": "first nonzero canonical independent component positive; compensate sign in hA_a",
+    "sharing_rule": "UNRESOLVED_PHYSICAL_CHOICE",
+    "eigenvalue_shape": "UNRESOLVED_PHYSICAL_CHOICE",
+    "physical_orientation": "UNRESOLVED_PHYSICAL_CHOICE"
+  },
+  "coordinate_contract_draft": {
+    "classification": "COORDINATE_CONVENTION",
+    "model_storage_frame": {
+      "name": "ICRS",
+      "axes": "standard right-handed ICRS Cartesian axes",
+      "handedness": "RIGHT_HANDED",
+      "origin": "irrelevant for direction-only contractions",
+      "angle_unit": "radian",
+      "physical_preferred_direction": "NOT_SELECTED"
+    },
+    "earth_fixed_intermediate": {
+      "name": "ITRS_COMPATIBLE",
+      "handedness": "RIGHT_HANDED",
+      "transform": "versioned Earth-orientation implementation required"
+    },
+    "laboratory_frame": {
+      "name": "LOCAL_ENU",
+      "axes": ["east", "north", "up"],
+      "handedness": "RIGHT_HANDED",
+      "origin": "experiment-declared detector reference point",
+      "detector_rotation": "surveyed dataset input"
+    },
+    "time": {
+      "input_timestamp": "ISO_8601_UTC",
+      "earth_rotation_time": "UT1_FROM_VERSIONED_EARTH_ORIENTATION_DATA",
+      "additional_time_scale": "TT_WHERE_REQUIRED_BY_TRANSFORM",
+      "exposure_midpoint_fallback": false
+    }
+  },
+  "unit_contract_draft": {
+    "classification": "COORDINATE_CONVENTION_AFTER_GAUGE_REDUCTION",
+    "energy": "MeV",
+    "time_interval": "s",
+    "angles": "rad",
+    "directions": "dimensionless unit vectors",
+    "S_a": "dimensionless",
+    "B_a": "dimensionless",
+    "T_a": "dimensionless",
+    "Rpred": "dimensionless",
+    "ratio_covariance": "dimensionless_squared",
+    "chi_square": "dimensionless",
+    "count_or_rate": "must be declared by each dataset contract and must match between numerator and denominator"
+  },
+  "unresolved_physical_content": [
+    "exact scalar response family S_a(E,t)",
+    "exact anisotropic response family hA_a(E,t)",
+    "tensor general-versus-uniaxial family",
+    "tensor shared-versus-geometry-derived-versus-independent rule",
+    "tensor eigenvalue shape",
+    "physical preferred orientation in ICRS",
+    "numerical values and scientifically justified bounds"
+  ],
+  "owner_decision_options": {
+    "response_function_hypothesis": ["PHYSICALLY_DERIVED_TRANSFERABLE", "FINITE_PREREGISTERED_BASIS", "FIXED_DESIGN_MOMENTS_ONLY"],
+    "tensor_family": ["SHARED_UNIAXIAL_PREDECLARED_AXIS", "SHARED_GENERAL_STF", "ANISOTROPY_DISABLED"],
+    "sharing_semantics": ["GLOBAL_SHARED", "GEOMETRY_DERIVED_ZONE_TENSORS", "INDEPENDENT_ZONE_TENSORS"]
+  },
+  "parameter_space": {
+    "finite": false,
+    "reason": "response-function families are not selected",
+    "zero_parameter_non_null_model_available": false,
+    "one_parameter_model_condition": "fixed normalized scalar response and anisotropy disabled",
+    "two_parameter_model_condition": "fixed scalar and anisotropic responses plus fixed normalized tensor shape and physical orientation"
+  },
+  "authorization": {
+    "production_evaluator": false,
+    "parameter_fit": false,
+    "numerical_prediction": false,
+    "T1_T12": false,
+    "BEST2_prediction": false,
+    "publication": false,
+    "public_push": false
+  }
+}

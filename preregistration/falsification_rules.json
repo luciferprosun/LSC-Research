@@ -1,0 +1,47 @@
+{
+  "aggregation_policy": "No single failure automatically becomes global model falsification unless an explicit preregistered escalation rule says so.",
+  "levels": [
+    "test-level falsification",
+    "component-level falsification",
+    "model-level falsification"
+  ],
+  "rules": [
+    {
+      "condition": "Frozen out-of-sample prediction fails its preregistered test rule.",
+      "level": "test-level falsification",
+      "rule_id": "FALSIFY_OUT_OF_SAMPLE",
+      "scope": "the failed test unless an escalation rule is separately preregistered"
+    },
+    {
+      "condition": "Apparent advantage disappears across credible preregistered nuisance/covariance scenarios.",
+      "level": "component-level falsification",
+      "rule_id": "FALSIFY_COVARIANCE_FRAGILITY",
+      "scope": "the affected model component/claim"
+    },
+    {
+      "condition": "An equally or less complex baseline predicts held-out data equally well or better under the frozen comparison rule.",
+      "level": "model-level falsification",
+      "rule_id": "FALSIFY_SIMPLER_BASELINE",
+      "scope": "claimed LSC predictive advantage"
+    },
+    {
+      "condition": "A valid preregistered quantitative mapping shows an external constraint excludes the required region.",
+      "level": "component-level falsification",
+      "rule_id": "FALSIFY_EXTERNAL_MAPPING",
+      "scope": "mapped parameter/component only"
+    },
+    {
+      "condition": "Required preregistered isotope or experiment transfer fails without refit.",
+      "level": "component-level falsification",
+      "rule_id": "FALSIFY_TRANSFER",
+      "scope": "transfer/generalization component"
+    },
+    {
+      "condition": "Claimed directional effect fails an adequately powered future test with timing, surveyed orientation, frames and active tensor.",
+      "level": "component-level falsification",
+      "rule_id": "FALSIFY_DIRECTIONAL_FUTURE",
+      "scope": "directional/traceless component"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "LSC_used": false,
+  "classification": "NON_PHYSICAL_TEST_FIXTURE",
+  "code_commit": "4553c25205c1c2fcb13c2c97c3a0d1af724a78fe",
+  "code_commit_relationship": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT",
+  "code_tree_hash": "0100e4d4caa1e0dbf22d19df0fdd43e1a1c7a0b3fedf8443907bd646ed1deb10",
+  "covariance_scenario": "FIXTURE_DIAGONAL",
+  "dataset_hashes": {
+    "NON_PHYSICAL_TEST_FIXTURE": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "environment_hash": "aaedbc80605cafc7e8603392902151ccc0d1f5829ae3c5abdb3bd3b8417227ad",
+  "execution_manifest_hash": "78879fc386be43c3075b2f1154ecb87f80bc537e9f49ca25bee3da9e77165e52",
+  "manifest_schema_version": "1.0.0",
+  "metric": "CHI_SQUARE",
+  "model": "M1",
+  "model_version": "STEP04_BASELINE_1.0.0",
+  "nuisance_treatment": "FIXTURE_NONE",
+  "optimizer": "L-BFGS-B",
+  "parameters_fitted": [
+    "normalization"
+  ],
+  "split": "FIXTURE_MODEL_SELECTION",
+  "timestamp": "STEP04_DETERMINISTIC_FIXTURE_NO_WALL_CLOCK"
+}

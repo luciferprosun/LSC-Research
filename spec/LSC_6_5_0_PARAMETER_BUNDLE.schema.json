@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/lsc/6.5.0/parameter-bundle.schema.json",
+  "title": "LSC 6.5.0 frozen parameter bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "document_kind", "model_version", "configuration", "status", "parameter", "determination", "scientific_bindings", "development_exposure", "no_refit", "validation_status", "BEST2"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "document_kind": {"const": "LSC_6_5_0_PARAMETER_BUNDLE"},
+    "model_version": {"const": "6.5.0"},
+    "configuration": {"const": "EXACT_FINITE_A2/C/A"},
+    "status": {"const": "FROZEN_AFTER_SINGLE_PREREGISTERED_DETERMINATION"},
+    "parameter": {
+      "type": "object",
+      "required": ["parameter_id", "symbol", "value", "units", "meaning", "domain_closed", "uncertainty", "parameter_content_sha256"],
+      "properties": {
+        "parameter_id": {"const": "LSC650-PHYS-01"},
+        "symbol": {"const": "alpha_0"},
+        "value": {"type": "number", "minimum": -0.5747389495096434, "maximum": 3.607238025076703},
+        "units": {"const": "dimensionless"},
+        "meaning": {"type": "string"},
+        "domain_closed": {"const": [-0.5747389495096434, 3.607238025076703]},
+        "uncertainty": {"type": "object"},
+        "parameter_content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "determination": {"type": "object"},
+    "scientific_bindings": {"type": "object"},
+    "development_exposure": {"type": "array", "minItems": 4},
+    "no_refit": {"const": true},
+    "validation_status": {"const": "NOT_YET_VALIDATED"},
+    "BEST2": {"type": "object"}
+  }
+}

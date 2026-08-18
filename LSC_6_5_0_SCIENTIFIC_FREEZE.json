@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_SCIENTIFIC_FREEZE",
+  "status": "FROZEN_BEFORE_IMPLEMENTATION_OUTCOME_AND_PARAMETER_DETERMINATION",
+  "created_utc": "2026-08-16T16:43:10Z",
+  "version": "6.5.0",
+  "configuration": "EXACT_FINITE_A2/C/A",
+  "classification": ["NEW_PHYSICAL_HYPOTHESIS_6_5_0", "NEW_POST_6_4_PHYSICAL_SUCCESSOR", "POST_6_4_DEVELOPMENT"],
+  "parent_lineage": {
+    "historical_6_3_0_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+    "6_3_1_status": "ABANDONED_BEFORE_RELEASE",
+    "6_4_0_status": "DEVELOPMENT_PARAMETER_DETERMINATION_FAILED_IMMUTABLE",
+    "6_4_0_adverse_freeze": "LSC_6_4_0_ADVERSE_RESULT_FREEZE.json",
+    "6_4_0_adverse_freeze_sha256": "0a45c0f3e03d1691d3f9141de6c9a2cc33a0ad7ed878422f045b8b7a714275bc",
+    "step07d_commit": "c522e344f7c0e43352626a7e435099c1da174286"
+  },
+  "scientific_specification": {
+    "path": "spec/LSC_6_5_0_EXACT_DILATION_SPECIFICATION.yaml",
+    "sha256": "114e8398a45e6a6c8fb4a105e994ca695805b06b9ed8608b86288ea0791ef948"
+  },
+  "owner_authorization": {
+    "path": "OWNER_AUTHORIZATION_LSC_6_5_0.md",
+    "sha256": "6731100c50b1a35e8c0772f4ebc4130278edbbef72e618264e37a5b5cc6ef163",
+    "status": "OWNER_AUTHORIZED"
+  },
+  "exact_response": {
+    "transformation": "E_sigma_prime = E * exp(alpha_0)",
+    "kernel": "K_m(E;alpha_0) = sigma_m(E * exp(alpha_0)) / sigma_m(E)",
+    "local_response": "S_m(E;alpha_0) = K_m(E;alpha_0) - 1",
+    "expectation": "N_LSC,a(alpha_0) = integral_Da K_m(E;alpha_0) dnu_a",
+    "baseline": "N0_a = integral_Da dnu_a",
+    "observable": "R_pred,a(alpha_0) = N_LSC,a(alpha_0) / N0_a = <K_m(E;alpha_0)>_a",
+    "null_limit": "alpha_0=0 -> K=1 -> S=0 -> R_pred=1",
+    "production_uses_derivative": false,
+    "dilated_object": "capture-cross-section argument only",
+    "source_line_energies_are_authoritative_inputs": true
+  },
+  "parameter_contract": {
+    "physical_parameter_count": 1,
+    "symbol": "alpha_0",
+    "definition": "signed logarithmic dilation Delta ln E of the capture-cross-section energy argument",
+    "units": "dimensionless",
+    "null_value": 0.0,
+    "sharing": "UNIVERSAL_ACROSS_EXPERIMENTS_ISOTOPES_ZONES",
+    "additional_physical_parameters": []
+  },
+  "domain": {
+    "cross_section_support_mev_closed": [0.24, 30.0],
+    "active_source_energy_union_mev_closed": [0.4264, 0.8138],
+    "derivation": "max_i ln(0.24/E_i) <= alpha_0 <= min_i ln(30.0/E_i)",
+    "alpha_domain_closed": [-0.5747389495096434, 3.607238025076703],
+    "classification": "DATA_INDEPENDENT_SOURCE_SUPPORT_DERIVED",
+    "old_6_4_linear_bound_reused": false,
+    "additional_theory_bound": null,
+    "outside_domain": "FAIL_CLOSED_UNSUPPORTED_DOMAIN"
+  },
+  "cross_section": {
+    "scenario_id": "BAHCALL_1997_BEST_ESTIMATE_NATURAL_CUBIC_SPLINE",
+    "payload_path": "external_physics/gallium_capture/bahcall_1997_best_estimate.csv",
+    "payload_sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5",
+    "source_lines_path": "external_physics/gallium_capture/source_lines_prc108_035502.json",
+    "source_lines_sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e",
+    "provenance_manifest_sha256": "f428477ffa8b5077b64c16a53b887ec3f17bea87445e7fcf8dc1e8fea39ca73e",
+    "interpolation_policy_sha256": "604028a6c846a7fe7ff3173f211410087d63a1e89a21c2f1f5b93f6bd9f21ec7",
+    "interpolation": "natural cubic spline in linear E and sigma",
+    "extrapolation": "FORBIDDEN"
+  },
+  "integration": {
+    "baseline_measure_contains_sigma_exactly_once": true,
+    "kernel_replaces_baseline_sigma_in_numerator": true,
+    "normalized_line_measure": "c_ai sigma(E_i) / sum_j c_aj sigma(E_j)",
+    "conventional_prefactor": "c_ai = branching_i activity_i exposure_i P_i geometry_i efficiency_i",
+    "source_activity_is_dilated": false,
+    "geometry_is_dilated": false,
+    "exposure_or_time_is_dilated": false,
+    "nuisance_is_dilated": false
+  },
+  "model_profile": {
+    "anisotropic_sector": "DISABLED",
+    "tensor": "DISABLED",
+    "preferred_axis": "NONE",
+    "sharing": "UNIVERSAL",
+    "experiment_specific_lsc_parameters": 0,
+    "isotope_specific_lsc_parameters": 0,
+    "zone_specific_lsc_parameters": 0
+  },
+  "fit_policy": {
+    "fit_performed_before_this_freeze": false,
+    "step07c_boundary_solution_is_input": false,
+    "step07c_unconstrained_optimum_is_input": false,
+    "response_selection_from_fit_quality": false,
+    "single_future_determination_requires_separate_prefit_freeze": true
+  },
+  "BEST2": {
+    "status": ["FUTURE_ONLY", "FUTURE_BLIND"],
+    "observed_data_accessed": false,
+    "prediction_authorized": false,
+    "prediction_generated": false
+  },
+  "publication_authorized": false
+}

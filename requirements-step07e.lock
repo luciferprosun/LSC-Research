@@ -1,0 +1,11 @@
+# Exact Python environment for STEP 07E implementation and determination.
+# Python: 3.12.3
+# Platform: Linux x86_64, glibc 2.39
+# BLAS/LAPACK: scipy-openblas 0.3.34.0.0, USE64BITINT, Haswell
+iniconfig==2.3.0
+numpy==2.5.2
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.20.0
+pytest==9.1.1
+scipy==1.18.0

@@ -1,0 +1,72 @@
+{
+  "LSC_used": false,
+  "classification": "NON_PHYSICAL_TEST_FIXTURE",
+  "fixtures": [
+    {
+      "classification": "NON_PHYSICAL_TEST_FIXTURE",
+      "expected": 4.0,
+      "fixture_id": "FIXTURE_DIAGONAL_GAUSSIAN",
+      "observed": 4.0,
+      "passed": true,
+      "tolerance": 1e-12
+    },
+    {
+      "classification": "NON_PHYSICAL_TEST_FIXTURE",
+      "expected": 0.6666666666666666,
+      "fixture_id": "FIXTURE_CORRELATED_GAUSSIAN",
+      "observed": 0.6666666666666667,
+      "passed": true,
+      "tolerance": 1e-12
+    },
+    {
+      "classification": "NON_PHYSICAL_TEST_FIXTURE",
+      "expected": {
+        "parameter": 0.5,
+        "profiled_chi_square": 0.5
+      },
+      "fixture_id": "FIXTURE_SHARED_NUISANCE",
+      "observed": {
+        "parameter": 0.4999999955705542,
+        "profiled_chi_square": 0.4999999999999999
+      },
+      "passed": true,
+      "tolerance": 1e-07
+    },
+    {
+      "classification": "NON_PHYSICAL_TEST_FIXTURE",
+      "expected": {
+        "pseudoinverse_reported": true,
+        "pseudoinverse_value": 1.0,
+        "reject_policy_rejected": true
+      },
+      "fixture_id": "FIXTURE_SINGULAR_COVARIANCE",
+      "observed": {
+        "pseudoinverse_reported": true,
+        "pseudoinverse_value": 0.9999999999999998,
+        "reject_policy_rejected": true
+      },
+      "passed": true,
+      "tolerance": 1e-12
+    },
+    {
+      "classification": "NON_PHYSICAL_TEST_FIXTURE",
+      "expected": true,
+      "fixture_id": "FIXTURE_CROSS_VALIDATION",
+      "observed": true,
+      "passed": true,
+      "tolerance": 0.0
+    },
+    {
+      "classification": "NON_PHYSICAL_TEST_FIXTURE",
+      "expected": "M1_BEATS_M0",
+      "fixture_id": "FIXTURE_MODEL_SELECTION",
+      "observed": "M1_BEATS_M0",
+      "passed": true,
+      "tolerance": 1e-10
+    }
+  ],
+  "passed": true,
+  "passed_count": 6,
+  "schema_version": "1.0.0",
+  "total_count": 6
+}

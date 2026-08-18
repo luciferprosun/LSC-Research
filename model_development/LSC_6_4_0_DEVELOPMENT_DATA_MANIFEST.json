@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_DEVELOPMENT_DATA_MANIFEST",
+  "model_version": "6.4.0",
+  "configuration": "A2/C/A",
+  "freeze_date": "2026-08-16",
+  "exposure_labels": ["MODEL_EXPOSED", "RETROSPECTIVE_NON_BLIND", "DEVELOPMENT_DATA"],
+  "split_id": "SPLIT_BEST_INNER_TO_OUTER",
+  "split_source": {
+    "path": "preregistration/splits.json",
+    "sha256": "f423de13f055d90f3189f8fc12cf5d7bb59f689fb51959718a987e2e9f782096"
+  },
+  "development_observations": [
+    {
+      "observation_id": "BEST:zone=inner:published_aggregate_ratio",
+      "experiment": "BEST",
+      "zone": "inner",
+      "source_isotope": "Cr51",
+      "observable": "measured_to_conventional_expected_rate_ratio",
+      "value": 0.791,
+      "standard_uncertainty": 0.05,
+      "uncertainty_use": "single diagonal published aggregate uncertainty under COV_DIAGONAL",
+      "source_location": "BESTextended.tex Table XIV and published aggregate result",
+      "source_doi": "10.1103/PhysRevC.105.065502",
+      "source_arxiv": "2201.07364v3"
+    }
+  ],
+  "holdout_observations": [
+    "BEST:zone=outer:published_aggregate_ratio",
+    "all GALLEX/GNO observations",
+    "all SAGE Cr51 observations",
+    "all SAGE Ar37 observations"
+  ],
+  "holdout_use_in_alpha0_objective": false,
+  "source_files": [
+    {
+      "path": "LSC_6_3_0_VALIDATION/02_BEST/Papers/arXiv_2201.07364/source/BESTextended.tex",
+      "sha256": "c9805ff757eb1c6f832b104f1eb043bb7e51b2c1a6711c0e1aa3737feed8f592",
+      "role": "authoritative published aggregate ratio"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/PUBLISHED_RESULT_REPRODUCTION.csv",
+      "sha256": "7d49ab5f93e2d53b85755a602e21fe3a0a76ff3221c380549dba3a6e4de662ce",
+      "role": "previously verified public-result transcription"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/BEST_RUN_LEVEL.csv",
+      "sha256": "9bc2607b18aad11f5cd602cd547c3fe0f2052181386385247d819469c2fb3832",
+      "role": "preserved run-level data; explicitly excluded from this aggregate objective"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/02_BEST/BEST_51CR_SOURCE_DATA.csv",
+      "sha256": "8776caa42eaa2709937ccaff0a98e01c92df99f5ab5fe6a85bc987b0c7d02a14",
+      "role": "historical source-input provenance; production line inputs use the frozen PRC 108 table"
+    }
+  ],
+  "normalized_measure": {
+    "source_lines": "external_physics/gallium_capture/source_lines_prc108_035502.json#isotopes/Cr51",
+    "source_line_payload_sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e",
+    "cross_section_payload_sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5",
+    "common_factor_policy": "source activity, exposure, geometry, conventional probability, and Ge-recovery efficiency are common across source lines in this aggregate ratio and cancel algebraically; their normalized fixture value 1.0 is not a fitted physical value",
+    "line_dependent_weight": "branching_fraction times sigma_m(E)",
+    "mean_F_m": 1.8020760538663734
+  },
+  "covariance": {
+    "scenario_id": "COV_DIAGONAL",
+    "scenario_source": "preregistration/covariance_scenarios.json",
+    "scenario_source_sha256": "6191b5ed53cded70877013b57a85ac4f981ade9d869bd2a24da93353e7657c56",
+    "matrix": [[0.0025000000000000005]],
+    "provenance_status": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+    "collaboration_covariance_available": false
+  },
+  "nuisance": {
+    "policy_id": "PUBLISHED_AGGREGATE_TOTAL_UNCERTAINTY_NO_ADDITIONAL_PROFILED_NUISANCE",
+    "profiled_parameters": [],
+    "reason": "the one published aggregate uncertainty is used directly and its missing full nuisance/covariance decomposition is not reconstructed"
+  },
+  "BEST2_observed_data_accessed": false,
+  "BEST2_observed_data_included": false,
+  "prospective_claim_allowed": false
+}

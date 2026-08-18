@@ -1,0 +1,139 @@
+{
+  "adjudication_stage": "STEP_04_BEFORE_ANY_LSC_NUMERICAL_EVALUATION",
+  "alternatives_considered_not_selected": [
+    {
+      "reason_not_selected": "Less aligned with the scientific prerequisite order and requires all primary p-values before adjudication.",
+      "strategy": "HOLM_FAMILY_WISE_CONTROL",
+      "validity": "Valid for a simultaneously available primary family under arbitrary dependence."
+    },
+    {
+      "reason_not_selected": "Controls expected false discoveries rather than the stronger family-wise error needed for a confirmatory claim.",
+      "strategy": "BENJAMINI_HOCHBERG_FALSE_DISCOVERY_RATE",
+      "validity": "Potentially valid under an appropriate dependence contract."
+    },
+    {
+      "reason_not_selected": "The frozen methodology contains several ordered generalization requirements, so a single endpoint would discard required gates.",
+      "strategy": "PRESPECIFIED_PRIMARY_WITH_DESCRIPTIVE_SECONDARIES",
+      "validity": "Valid if a single endpoint is selected before results."
+    }
+  ],
+  "dependency_map": [
+    {
+      "independent": false,
+      "shared_data": [
+        "BEST"
+      ],
+      "tests": [
+        "T1",
+        "T2",
+        "T6"
+      ]
+    },
+    {
+      "independent": false,
+      "shared_data": [
+        "BEST",
+        "GALLEX_GNO"
+      ],
+      "tests": [
+        "T3",
+        "T4",
+        "T7",
+        "T11"
+      ]
+    },
+    {
+      "independent": false,
+      "shared_data": [
+        "gallium experiments"
+      ],
+      "tests": [
+        "T5",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "independent": false,
+      "shared_data": [
+        "gallium",
+        "external releases after mapping"
+      ],
+      "tests": [
+        "T10"
+      ]
+    },
+    {
+      "independent": "NOT_ASSESSABLE",
+      "shared_data": [
+        "directional inputs unavailable"
+      ],
+      "tests": [
+        "T12"
+      ]
+    }
+  ],
+  "families": {
+    "blocked": [
+      "T12"
+    ],
+    "exploratory_future": [],
+    "primary": [
+      "T11",
+      "T7",
+      "T3",
+      "T1",
+      "T10"
+    ],
+    "secondary_descriptive": [
+      "T2",
+      "T4",
+      "T6"
+    ],
+    "sensitivity_only": [
+      "T5",
+      "T8",
+      "T9"
+    ]
+  },
+  "primary_endpoint_policy": {
+    "family_id": "LSC_PRIMARY_FIXED_SEQUENCE_V1",
+    "family_wise_alpha": 0.05,
+    "ordering_basis": "Broad simpler-baseline comparison, then cross-experiment generalization, legacy transfer, within-BEST zone transfer, and finally the more assumption-intensive sterile comparison.",
+    "selected_without_lsc_results": true,
+    "stop_rule": "Test each endpoint at alpha=0.05 in the declared order; stop confirmatory testing at the first non-rejection, blocker, invalid p-value, or unavailable prerequisite. All later outputs are descriptive.",
+    "strategy": "FIXED_SEQUENCE_HIERARCHICAL_GATEKEEPING",
+    "tests": [
+      "T11",
+      "T7",
+      "T3",
+      "T1",
+      "T10"
+    ]
+  },
+  "prohibitions": [
+    "No post-result reordering or strategy selection.",
+    "No treating T1-T12 as independent.",
+    "No confirmatory alpha for secondary or sensitivity-only tests.",
+    "No global confirmation while any required primary gate is blocked or the LSC numerical bundle is missing."
+  ],
+  "result_information_used": false,
+  "schema_version": "2.0.0",
+  "selected_strategy": {
+    "justification": [
+      "Primary questions are scientifically ordered and heavily reuse the same gallium observations.",
+      "A fixed sequence controls family-wise type-I error at 0.05 without assuming endpoint independence.",
+      "It prevents a failed or blocked prerequisite from being bypassed by a later favorable result."
+    ],
+    "limitations": [
+      "Each endpoint still requires a valid preregistered test statistic and calibration before a p-value exists.",
+      "Current missing frozen LSC objects and covariance/mapping blockers stop the sequence before evaluation.",
+      "Secondary and sensitivity outputs cannot rescue a closed primary gate."
+    ],
+    "strategy": "FIXED_SEQUENCE_HIERARCHICAL_GATEKEEPING"
+  },
+  "status": "MULTIPLE_TESTING_POLICY_FROZEN"
+}
