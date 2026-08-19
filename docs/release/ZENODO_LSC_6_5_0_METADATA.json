@@ -7,7 +7,7 @@
   "upload_type": "software",
   "version": "6.5.0",
   "supporting_package_version": "0.6.0",
-  "description": "Executable, reproducible, one-parameter exact finite-dilation LSC 6.5.0 artifact. Parameter determination was retrospective and non-blind; experimental validation has not yet been performed.",
+  "description": "LSC 6.5.0 is the exact finite-dilation successor in the established LSC model lineage. It uses one frozen universal alpha_0 in the capture-cross-section energy argument and is executable, audited, and reproducible. The historical 6.3.0 identity is preserved; 6.3.1 was abandoned before release, and the 6.4.0 linear development attempt remains an adverse result. Phase 1 is complete. Development and parameter determination were retrospective and non-blind; experimental Phase 2 validation has not begun. BEST-2 remains future-only and blind, with no prediction generated. The separate LSC Validation Kernel 0.6.0 companion is maintained in the public GitHub repository.",
   "creators": [
     {
       "name": "LuciferSun",
@@ -16,6 +16,9 @@
     {
       "name": "flAmeBorn",
       "affiliation": "Independent Research"
+    },
+    {
+      "name": "LINZ HOSS"
     }
   ],
   "access_right": "open",
@@ -31,17 +34,15 @@
   "repository_url": "https://github.com/luciferprosun/LSC-Validation-Kernel",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.20377427",
-      "relation": "isNewVersionOf"
-    },
-    {
       "identifier": "https://github.com/luciferprosun/LSC-Validation-Kernel",
-      "relation": "isDerivedFrom",
+      "relation": "isSupplementedBy",
       "resource_type": "software"
     }
   ],
   "historical_version_doi": "10.5281/zenodo.20377427",
   "historical_concept_doi": "10.5281/zenodo.19780615",
+  "native_versioning_note": "Create through Zenodo New version from record 20377427; Zenodo supplies the version relation, so do not add a duplicate manual relation.",
+  "validation_kernel_companion_url": "https://github.com/luciferprosun/LSC-Validation-Kernel",
   "new_version_doi": null,
   "validation_kernel_companion_doi": null,
   "publication_date": null,
@@ -50,9 +51,9 @@
   "owner_upload_ready": true,
   "human_metadata_review_required": true,
   "human_review_items": [
-    "Confirm creator spellings, order, and affiliations.",
-    "Confirm control of the existing model concept lineage before using Zenodo New version.",
+    "Owner-confirmed creator order is LuciferSun, flAmeBorn, LINZ HOSS; no ORCID or affiliation is supplied for LINZ HOSS.",
+    "Confirm that the draft was created with Zenodo New version from record 20377427 and retains concept DOI 10.5281/zenodo.19780615.",
     "Accept the upload date supplied by Zenodo at deposit time.",
-    "Add the Validation Kernel companion DOI only after that separate record exists."
+    "The GitHub relation identifies the Validation Kernel companion until its separate DOI exists; add the companion DOI only after that record is published."
   ]
 }

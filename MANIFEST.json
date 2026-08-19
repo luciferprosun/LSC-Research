@@ -28,7 +28,7 @@
     },
     {
       "path": "GITHUB_PUBLICATION_PROVENANCE.json",
-      "sha256": "d2cc3d45bd856f274ddb3279378d2ea0277288f40502766e2a68e75eeef944f0",
+      "sha256": "bd24a1e3baa0ceaf3965ab4e459b2da1aa1100a7b06bfc103db00eeb99b4fed5",
       "size_bytes": 797
     },
     {
@@ -603,8 +603,8 @@
     },
     {
       "path": "docs/release/LSC_6_5_0_CITATION.cff",
-      "sha256": "69ea654114a80e212a0e92952395ca80f50a119178ae603fe6fc59403f18affa",
-      "size_bytes": 801
+      "sha256": "20543d29d449e2e36e0466e350c8add7e8810d759e71716a6e8d702cbc632066",
+      "size_bytes": 1103
     },
     {
       "path": "docs/release/LSC_6_5_0_PUBLICATION_README.md",
@@ -623,8 +623,8 @@
     },
     {
       "path": "docs/release/ZENODO_LSC_6_5_0_METADATA.json",
-      "sha256": "a92c1f90c69b9ff9bcb254522e146a94d1068cbf55ed733d07fc3a5b4adbd638",
-      "size_bytes": 2152
+      "sha256": "8757ade8e6446763399c3292a0f7ec603dbea4bd1332aa3c9a9d0e8e6dfa24fe",
+      "size_bytes": 3023
     },
     {
       "path": "docs/release/ZENODO_VALIDATION_KERNEL_METADATA.json",
