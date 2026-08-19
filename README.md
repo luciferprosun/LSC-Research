@@ -13,12 +13,14 @@ The current frozen scientific model artifact is **LSC 6.5.0**. It is:
 - parameter-frozen;
 - independently audited;
 - reproducible;
-- publication-ready;
+- published as a version-specific Zenodo record;
 - **not yet experimentally validated**.
 
-Phase 1 is complete. No GitHub Release, final tag, Zenodo upload, DOI minting,
-BEST-2 prediction, or Phase 2 execution is implied by this repository
-snapshot.
+Phase 1 is complete. The frozen model artifact is published on Zenodo as
+[version DOI `10.5281/zenodo.22007108`](https://doi.org/10.5281/zenodo.22007108)
+within concept lineage `10.5281/zenodo.19780615`. No GitHub Release, final tag,
+Validation Kernel Zenodo publication, BEST-2 prediction, or Phase 2 execution
+is implied by this repository snapshot.
 
 The Validation Kernel software/package version (`0.6.0`) and scientific model
 version (`6.5.0`) are intentionally independent version lines. The frozen

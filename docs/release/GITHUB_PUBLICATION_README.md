@@ -34,11 +34,10 @@ The reproduction must report the canonical model hash, parameter bundle,
 frozen parameter/interval, and `29/29` golden vectors. `MANIFEST.json` and
 `SHA256SUMS.txt` bind this export.
 
-The publication-safe default test configuration runs the 12-case STEP 08
-closure suite. Older integration tests are retained as audit source, but some
-require the large historical evidence archive and third-party mirrors that are
-deliberately not redistributed. Their complete local execution count is kept
-in the final STEP 08 source-audit record, outside this self-checksummed export.
+The publication-safe default test configuration runs the STEP 08 closure
+suite. Older integration tests are retained as audit source, but some require
+the large historical evidence archive and third-party mirrors that are
+deliberately not redistributed.
 
 ## Scientific boundary
 
@@ -53,6 +52,10 @@ were accessed and no prediction was generated.
 
 ## Publication and licensing
 
-No push, GitHub Release, Zenodo upload, or DOI mint occurred during package
-preparation. `LICENSE` applies to original project code/documentation;
-`THIRD_PARTY_NOTICES.md` records source-specific provenance and terms.
+The LSC 6.5.0 model is published as Zenodo version DOI
+`10.5281/zenodo.22007108` in concept lineage
+`10.5281/zenodo.19780615`. The Validation Kernel remains a separate,
+unpublished companion pending creator confirmation. No GitHub Release or
+Phase-2 execution occurred. `LICENSE` applies to original project
+code/documentation; `THIRD_PARTY_NOTICES.md` records source-specific provenance
+and terms.

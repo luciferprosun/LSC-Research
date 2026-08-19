@@ -1,11 +1,12 @@
 {
   "schema_version": "1.1.0",
   "document_kind": "ZENODO_PREDEPOSIT_METADATA",
-  "deposit_status": "READY_FOR_OWNER_UPLOAD",
+  "deposit_status": "BLOCKED_PENDING_COAUTHOR_CONFIRMATION",
   "lineage_action": "CREATE_SEPARATE_LINKED_COMPANION_RECORD",
   "title": "LSC Validation Kernel reproducibility companion",
   "upload_type": "software",
   "version": "0.6.0",
+  "coauthor_status": "KERNEL_COAUTHOR_CONFIRMATION_REQUIRED",
   "related_scientific_model_version": "6.5.0",
   "description": "Fail-closed reproducibility, preregistration, audit, and future-validation infrastructure accompanying the frozen LSC 6.5.0 scientific model. Experimental validation has not yet been performed.",
   "creators": [
@@ -31,7 +32,7 @@
   "repository_url": "https://github.com/luciferprosun/LSC-Validation-Kernel",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.19780615",
+      "identifier": "10.5281/zenodo.22007108",
       "relation": "isSupplementTo"
     },
     {
@@ -41,17 +42,17 @@
     }
   ],
   "related_model_concept_doi": "10.5281/zenodo.19780615",
-  "related_model_version_doi": null,
+  "related_model_version_doi": "10.5281/zenodo.22007108",
   "companion_doi": null,
   "publication_date": null,
   "upload_performed": false,
   "doi_minted": false,
-  "owner_upload_ready": true,
+  "owner_upload_ready": false,
   "human_metadata_review_required": true,
   "human_review_items": [
-    "Confirm creator spellings, order, and affiliations.",
+    "Owner decision required: confirm whether LINZ HOSS is also a Validation Kernel co-author; do not add the name without that decision.",
+    "Confirm the final Validation Kernel creator order and affiliations after the co-author decision.",
     "Accept the upload date supplied by Zenodo at deposit time.",
-    "Add the specific LSC 6.5.0 DOI only after the model record exists.",
     "After both records exist, add reciprocal companion relations without changing either package payload."
   ]
 }
