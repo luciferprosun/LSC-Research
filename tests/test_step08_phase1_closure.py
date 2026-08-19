@@ -200,6 +200,8 @@ class TestStep08ReleasePreparation:
             "RELEASE_NOTES_LSC_6_5_0.md",
             "PHASE_2_VALIDATION_HANDOFF.md",
             "BEST2_PROSPECTIVE_HANDOFF.md",
+            "CONTRIBUTORS.md",
+            "docs/project/LINZ_HOSS_CONTRIBUTION.md",
         )
         for relative in required:
             assert (ROOT / relative).is_file(), relative
@@ -212,11 +214,16 @@ class TestStep08ReleasePreparation:
         kernel_creators = [
             {"name": "LuciferSun", "affiliation": "Independent Research"},
             {"name": "flAmeBorn", "affiliation": "Independent Research"},
+            {"name": "LINZ HOSS"},
         ]
-        model_creators = [*kernel_creators, {"name": "LINZ HOSS"}]
+        model_creators = [
+            {"name": "LuciferSun", "affiliation": "Independent Research"},
+            {"name": "flAmeBorn", "affiliation": "Independent Research"},
+            {"name": "LINZ HOSS"},
+        ]
         assert model["title"] == "LSC 6.5.0 exact finite-dilation scientific model"
         assert model["version"] == "6.5.0"
-        assert kernel["title"] == "LSC Validation Kernel reproducibility companion"
+        assert kernel["title"] == "LSC Validation Kernel"
         assert kernel["version"] == "0.6.0"
         assert model["creators"] == model_creators
         assert kernel["creators"] == kernel_creators
@@ -225,11 +232,17 @@ class TestStep08ReleasePreparation:
         assert model["upload_performed"] is True
         assert model["doi_minted"] is True
         assert model["new_version_doi"] == "10.5281/zenodo.22007108"
-        assert kernel["deposit_status"] == "BLOCKED_PENDING_COAUTHOR_CONFIRMATION"
-        assert kernel["coauthor_status"] == "KERNEL_COAUTHOR_CONFIRMATION_REQUIRED"
-        assert kernel["owner_upload_ready"] is False
-        assert kernel["upload_performed"] is False
-        assert kernel["doi_minted"] is False
+        assert kernel["coauthor_status"] == "KERNEL_COAUTHOR_AUTHORIZED"
+        if kernel["deposit_status"] == "PUBLISHED":
+            assert kernel["owner_upload_ready"] is False
+            assert kernel["upload_performed"] is True
+            assert kernel["doi_minted"] is True
+            assert kernel["companion_doi"]
+        else:
+            assert kernel["deposit_status"] == "READY_FOR_OWNER_UPLOAD"
+            assert kernel["owner_upload_ready"] is True
+            assert kernel["upload_performed"] is False
+            assert kernel["doi_minted"] is False
         assert kernel["related_model_version_doi"] == "10.5281/zenodo.22007108"
         for metadata in (model, kernel):
             assert metadata["upload_type"] == "software"
@@ -237,18 +250,17 @@ class TestStep08ReleasePreparation:
             assert metadata["license"] == "mit"
         assert all(item["identifier"] for item in metadata["related_identifiers"])
         assert model["validation_kernel_companion_doi"] is None
-        assert kernel["companion_doi"] is None
 
         kernel_citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
         model_citation = (ROOT / "docs/release/LSC_6_5_0_CITATION.cff").read_text(
             encoding="utf-8"
         )
-        assert 'title: "LSC Validation Kernel reproducibility companion"' in kernel_citation
+        assert 'title: "LSC Validation Kernel"' in kernel_citation
         assert 'version: "0.6.0"' in kernel_citation
         assert 'title: "LSC 6.5.0 exact finite-dilation scientific model"' in model_citation
         assert 'version: "6.5.0"' in model_citation
         assert 'family-names: "LINZ HOSS"' in model_citation
-        assert 'family-names: "LINZ HOSS"' not in kernel_citation
+        assert 'family-names: "LINZ HOSS"' in kernel_citation
 
         packages = publication_packages()
         if not all(package.is_dir() for package in packages):
@@ -272,23 +284,31 @@ class TestStep08ReleasePreparation:
             (kernel_package, kernel, kernel_citation),
         ):
             packaged_metadata = json.loads((package / "ZENODO_METADATA.json").read_text())
+            expected_deposit_metadata = source_metadata
             if package == model_package:
                 assert packaged_metadata["deposit_status"] == "READY_FOR_OWNER_UPLOAD"
                 assert packaged_metadata["upload_performed"] is False
                 assert packaged_metadata["doi_minted"] is False
                 assert packaged_metadata["new_version_doi"] is None
+                expected_deposit_metadata = packaged_metadata
+            elif package == kernel_package and source_metadata["deposit_status"] == "PUBLISHED":
+                assert packaged_metadata["deposit_status"] == "READY_FOR_OWNER_UPLOAD"
+                assert packaged_metadata["upload_performed"] is False
+                assert packaged_metadata["doi_minted"] is False
+                assert packaged_metadata["companion_doi"] is None
+                expected_deposit_metadata = packaged_metadata
             else:
                 assert packaged_metadata == source_metadata
             deposit = json.loads((package / ".zenodo.json").read_text())
             assert set(deposit) == deposit_fields
             for field in deposit_fields:
-                assert deposit[field] == source_metadata[field]
+                assert deposit[field] == expected_deposit_metadata[field]
             packaged_citation = (package / "CITATION.cff").read_text(encoding="utf-8")
             if package == model_package:
                 assert 'title: "LSC 6.5.0 exact finite-dilation scientific model"' in packaged_citation
                 assert 'version: "6.5.0"' in packaged_citation
                 assert 'family-names: "LINZ HOSS"' in packaged_citation
-            else:
+            elif package != kernel_package or source_metadata["deposit_status"] != "PUBLISHED":
                 assert packaged_citation == source_citation
 
     def test_publication_state_records_model_publication_only(self) -> None:

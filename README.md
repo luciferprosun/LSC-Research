@@ -100,6 +100,16 @@ Further reading:
 - [BEST-2 prospective handoff](BEST2_PROSPECTIVE_HANDOFF.md)
 - [Development disclosure](LSC_6_5_0_DEVELOPMENT_DISCLOSURE.md)
 
+## Contributors and dedication
+
+Current project and Validation Kernel metadata recognize **LINZ HOSS** for
+conceptual discussion, intellectual feedback, and contribution to the
+conceptual development environment of the LSC research program. This does not
+attribute code, equations, numerical fits, validation experiments, or
+datasets. Separate from scientific claims, the project acknowledges LINZ HOSS
+as an important inspiration in LSC's development history. See the
+[contribution record](docs/project/LINZ_HOSS_CONTRIBUTION.md).
+
 ## Licensing and provenance
 
 `LICENSE` applies to original project code and documentation.

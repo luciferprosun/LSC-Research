@@ -1,5 +1,16 @@
 # Changelog
 
+## Validation Kernel 0.6.0 — publication metadata finalized 2026-08-19
+
+- Records the owner-authorized inclusion of LINZ HOSS in current Validation
+  Kernel creator metadata.
+- Adds a durable, bounded contribution record and a separate human-facing
+  dedication without changing scientific attribution or historical releases.
+- Keeps the Validation Kernel software version at `0.6.0` and the frozen LSC
+  scientific model version at `6.5.0`.
+- Makes no change to equations, parameters, scientific hashes, validation
+  policy, adverse results, or Phase-2 status.
+
 ## 6.5.0 — publication package prepared 2026-08-18
 
 - Introduces the exact finite-dilation successor

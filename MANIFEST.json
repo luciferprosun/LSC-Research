@@ -8,8 +8,8 @@
     },
     {
       "path": ".zenodo.json",
-      "sha256": "fd1dd0e198c562db0683da176e46dca264c310bf16cecf901a90ec68106a91ee",
-      "size_bytes": 983
+      "sha256": "0ff29491d322b0e45073cc56a8e0a7b2fd7610c79d23386040af3df17ec76294",
+      "size_bytes": 1091
     },
     {
       "path": "BEST2_PROSPECTIVE_HANDOFF.md",
@@ -18,18 +18,23 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "44ee0bc6b2ef75c7e44582dbc382d5247c6a1ce5ae172ed6f6ac1ef1407be828",
-      "size_bytes": 1314
+      "sha256": "d24e29c0606c55abe034bccdfbc19d6ec69739c0512d46dc787d6abf9652e5d1",
+      "size_bytes": 1879
     },
     {
       "path": "CITATION.cff",
-      "sha256": "d07d5a04d471e70c9f1ba9078cd80dd4e0d665f65b0e053d678e139ab05e32a7",
-      "size_bytes": 777
+      "sha256": "5461dc66be267f6035bad88b8e3d6e5e63a50d044ab27c992ccadf9c72b25b63",
+      "size_bytes": 781
+    },
+    {
+      "path": "CONTRIBUTORS.md",
+      "sha256": "085b2578db48a8aaddd979822c8d9949e5a7f2424503e514b8629eee5fdc10c2",
+      "size_bytes": 984
     },
     {
       "path": "GITHUB_PUBLICATION_PROVENANCE.json",
-      "sha256": "de055c26defa7fdbcaea2d76351f45b99ece097bea620267fcfcebcab9c357cc",
-      "size_bytes": 1198
+      "sha256": "b7cf52572ff34af6cf15807fdcf00f1402f6994cd24e1ff0f672f3508802004d",
+      "size_bytes": 1061
     },
     {
       "path": "LICENSE",
@@ -203,8 +208,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e4944d20486a3299cb934931ceddf42a8deb4cbeba21d133bb665a2120349289",
-      "size_bytes": 4186
+      "sha256": "6ecf40ecc5c0dc495a03be4ae8eeaee07590782e7afc2a160f9f844a068ff976",
+      "size_bytes": 4719
     },
     {
       "path": "RELEASE_NOTES_LSC_6_5_0.md",
@@ -228,8 +233,8 @@
     },
     {
       "path": "ZENODO_METADATA.json",
-      "sha256": "dbf91565c6aab891b15944e43dd130fd10c83afc7fcd1a7f0a44ea27c76612b6",
-      "size_bytes": 2290
+      "sha256": "56e71e3ce23af18c3cc894a3cd04903231e55995019bbaeddddcea911bfad1e3",
+      "size_bytes": 1951
     },
     {
       "path": "ZENODO_PUBLICATION_RECEIPT.json",
@@ -572,6 +577,11 @@
       "size_bytes": 1425
     },
     {
+      "path": "docs/project/LINZ_HOSS_CONTRIBUTION.md",
+      "sha256": "2da0851c34858c772fce06348c2c92818b6b9d1d7e5d2d41b2b1ed9225ec97bc",
+      "size_bytes": 1083
+    },
+    {
       "path": "docs/provenance/DATA_EXPOSURE_ASSESSMENT.md",
       "sha256": "e52ec042c95aadf2cb45b0760f66719abfe281b42cd79aa71e93c12ad73ad31c",
       "size_bytes": 2416
@@ -633,8 +643,8 @@
     },
     {
       "path": "docs/release/ZENODO_VALIDATION_KERNEL_METADATA.json",
-      "sha256": "dbf91565c6aab891b15944e43dd130fd10c83afc7fcd1a7f0a44ea27c76612b6",
-      "size_bytes": 2290
+      "sha256": "56e71e3ce23af18c3cc894a3cd04903231e55995019bbaeddddcea911bfad1e3",
+      "size_bytes": 1951
     },
     {
       "path": "docs/scientific/GAUGE_IDENTIFIABILITY_ANALYSIS.md",
@@ -663,8 +673,8 @@
     },
     {
       "path": "docs/scientific/LSC_VERSION_HISTORY_DRAFT.md",
-      "sha256": "439ecc03fe261ce2101fb21694d86aff928dd55db92b0f2e444d06a4d6662708",
-      "size_bytes": 1575
+      "sha256": "40d0e02cca52b23abd3d12a393f4ef1c1857ba12da88e2470b65b3d11cfdfc7d",
+      "size_bytes": 2122
     },
     {
       "path": "docs/scientific/MINIMAL_PHYSICAL_PARAMETER_SET.csv",
@@ -1023,8 +1033,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "bf16344e32233c0850a7224f4697cec2469e2def6eac3a98d3fa65ca3b8157ab",
-      "size_bytes": 794
+      "sha256": "852e3b4dee8305bf3700ea34894053a2384778ce6ecb4ff698007655af014815",
+      "size_bytes": 816
     },
     {
       "path": "requirements-step04.lock",
@@ -1598,8 +1608,8 @@
     },
     {
       "path": "tests/test_step08_phase1_closure.py",
-      "sha256": "721665f0bb5b64704a875d53bf380e9cc60db51944ebe10323a4c3767056c537",
-      "size_bytes": 16789
+      "sha256": "14d353a122ec694c3347ed92f6c547e908bc0c115830defc0877345ea20f78d8",
+      "size_bytes": 17869
     },
     {
       "path": "tools/acquire_bahcall_1997_payload.py",
@@ -1692,20 +1702,12 @@
       "size_bytes": 14097
     }
   ],
-  "github_release_created": false,
   "input_head": "1f715b9b8777f89d17a84d340a24107531ccaed4",
   "model_sha256": "c063aae4877159aa1ff2d0df4a8694988f587bc0cf68671357e711a136f7aab8",
   "package_kind": "GITHUB_PUBLICATION_EXPORT",
   "parameter_bundle_sha256": "617d72a303a947e8e7467efb3c745f7e44dc1c07eab7d830a90dbfd179da5c18",
-  "phase": "PHASE_1_COMPLETE_LSC_6_5_0_PUBLISHED",
-  "phase_2_validation_performed": false,
-  "publication_performed": true,
+  "phase": "PHASE_1_PUBLICATION_PREPARATION_ONLY",
+  "publication_performed": false,
   "schema_version": "1.0.0",
-  "validation_kernel_coauthor_status": "KERNEL_COAUTHOR_CONFIRMATION_REQUIRED",
-  "validation_kernel_published": false,
-  "zenodo_concept_doi": "10.5281/zenodo.19780615",
-  "zenodo_record_id": 22007108,
-  "zenodo_upload_performed": true,
-  "zenodo_version_doi": "10.5281/zenodo.22007108",
-  "zenodo_zip_sha256": "9f1f1ad0402c42602a37b064a5601b5827fcfaa31abe4a6481c321038b07a4e9"
+  "validation_kernel_coauthor_status": "KERNEL_COAUTHOR_AUTHORIZED"
 }

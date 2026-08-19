@@ -1,12 +1,13 @@
 cff-version: 1.2.0
 message: "If you use the Validation Kernel, cite this software companion and the separately released LSC 6.5.0 scientific model."
-title: "LSC Validation Kernel reproducibility companion"
+title: "LSC Validation Kernel"
 type: software
 authors:
   - family-names: "LuciferSun"
     affiliation: "Independent Research"
   - family-names: "flAmeBorn"
     affiliation: "Independent Research"
+  - family-names: "LINZ HOSS"
 version: "0.6.0"
 repository-code: "https://github.com/luciferprosun/LSC-Validation-Kernel"
 license: MIT

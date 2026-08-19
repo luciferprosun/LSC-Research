@@ -16,3 +16,13 @@ Preserved public trail:
 
 Phase 2 has not been executed. BEST-2 remains future blind, with no observed
 data accessed and no prediction generated.
+
+## Current project recognition and historical authorship
+
+Current LSC and Validation Kernel materials recognize LINZ HOSS for conceptual
+discussion, intellectual feedback, and contribution to the conceptual
+development environment of the LSC research program. This current recognition
+does not rewrite immutable historical releases or their recorded author lists,
+and it does not attribute particular code, equations, numerical fits,
+experiments, or datasets. See
+[`docs/project/LINZ_HOSS_CONTRIBUTION.md`](../project/LINZ_HOSS_CONTRIBUTION.md).

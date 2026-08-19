@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "document_kind": "ZENODO_PREDEPOSIT_METADATA",
-  "deposit_status": "BLOCKED_PENDING_COAUTHOR_CONFIRMATION",
+  "deposit_status": "READY_FOR_OWNER_UPLOAD",
   "lineage_action": "CREATE_SEPARATE_LINKED_COMPANION_RECORD",
-  "title": "LSC Validation Kernel reproducibility companion",
+  "title": "LSC Validation Kernel",
   "upload_type": "software",
   "version": "0.6.0",
-  "coauthor_status": "KERNEL_COAUTHOR_CONFIRMATION_REQUIRED",
+  "coauthor_status": "KERNEL_COAUTHOR_AUTHORIZED",
   "related_scientific_model_version": "6.5.0",
   "description": "Fail-closed reproducibility, preregistration, audit, and future-validation infrastructure accompanying the frozen LSC 6.5.0 scientific model. Experimental validation has not yet been performed.",
   "creators": [
@@ -17,6 +17,9 @@
     {
       "name": "flAmeBorn",
       "affiliation": "Independent Research"
+    },
+    {
+      "name": "LINZ HOSS"
     }
   ],
   "access_right": "open",
@@ -36,6 +39,10 @@
       "relation": "isSupplementTo"
     },
     {
+      "identifier": "10.5281/zenodo.19780615",
+      "relation": "isSupplementTo"
+    },
+    {
       "identifier": "https://github.com/luciferprosun/LSC-Validation-Kernel",
       "relation": "isDerivedFrom",
       "resource_type": "software"
@@ -47,12 +54,7 @@
   "publication_date": null,
   "upload_performed": false,
   "doi_minted": false,
-  "owner_upload_ready": false,
-  "human_metadata_review_required": true,
-  "human_review_items": [
-    "Owner decision required: confirm whether LINZ HOSS is also a Validation Kernel co-author; do not add the name without that decision.",
-    "Confirm the final Validation Kernel creator order and affiliations after the co-author decision.",
-    "Accept the upload date supplied by Zenodo at deposit time.",
-    "After both records exist, add reciprocal companion relations without changing either package payload."
-  ]
+  "owner_upload_ready": true,
+  "human_metadata_review_required": false,
+  "human_review_items": []
 }
