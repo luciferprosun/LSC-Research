@@ -7,6 +7,11 @@
       "size_bytes": 554
     },
     {
+      "path": ".zenodo.json",
+      "sha256": "9ace8c2eee758f1dcbd1d9a0333763d4faf587846000b3d50d2c2cb1631073ac",
+      "size_bytes": 983
+    },
+    {
       "path": "BEST2_PROSPECTIVE_HANDOFF.md",
       "sha256": "2e31ac27733f2f760af7b34fe9fecf3b6f2ceda691e7351c1d5283c5218c99a7",
       "size_bytes": 1634
@@ -18,13 +23,13 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "1172eb976a40e6d33c2a5cd021a875fb6f7a98500f362b5b694e65b21dfecb4b",
-      "size_bytes": 734
+      "sha256": "d07d5a04d471e70c9f1ba9078cd80dd4e0d665f65b0e053d678e139ab05e32a7",
+      "size_bytes": 777
     },
     {
       "path": "GITHUB_PUBLICATION_PROVENANCE.json",
-      "sha256": "f26630f065e1ad631b296e47d13e2aefdf19c0b1ff9f5c1f28fc00ee4c353456",
-      "size_bytes": 743
+      "sha256": "d2cc3d45bd856f274ddb3279378d2ea0277288f40502766e2a68e75eeef944f0",
+      "size_bytes": 797
     },
     {
       "path": "LICENSE",
@@ -220,6 +225,11 @@
       "path": "THIRD_PARTY_NOTICES.md",
       "sha256": "54a3d348e1bce46f56b8d647a99ad919b4db72ab012868837535f020d086e2cf",
       "size_bytes": 1940
+    },
+    {
+      "path": "ZENODO_METADATA.json",
+      "sha256": "cee3d13f4ae7b59b0cdeaa23a5a22a2dc37a0f5116c61de958d16838b3f4f9a0",
+      "size_bytes": 2080
     },
     {
       "path": "acquisition/step05_golden_status.json",
@@ -592,6 +602,11 @@
       "size_bytes": 2259
     },
     {
+      "path": "docs/release/LSC_6_5_0_CITATION.cff",
+      "sha256": "69ea654114a80e212a0e92952395ca80f50a119178ae603fe6fc59403f18affa",
+      "size_bytes": 801
+    },
+    {
       "path": "docs/release/LSC_6_5_0_PUBLICATION_README.md",
       "sha256": "1439d5ee51b2ed2296f269fbdc0032cbefc19cdcad1752ab7aa43d7e8009ac16",
       "size_bytes": 2756
@@ -608,13 +623,13 @@
     },
     {
       "path": "docs/release/ZENODO_LSC_6_5_0_METADATA.json",
-      "sha256": "1320ffaf08d5b157d7571fd587e85eeb1eca74fb21ed2761ee21a0edc3c90903",
-      "size_bytes": 1202
+      "sha256": "a92c1f90c69b9ff9bcb254522e146a94d1068cbf55ed733d07fc3a5b4adbd638",
+      "size_bytes": 2152
     },
     {
       "path": "docs/release/ZENODO_VALIDATION_KERNEL_METADATA.json",
-      "sha256": "c1a70dfac3d778f4df626c554acbaafad77cd3d78eb1fb3800fb4aee9db66fe8",
-      "size_bytes": 1134
+      "sha256": "cee3d13f4ae7b59b0cdeaa23a5a22a2dc37a0f5116c61de958d16838b3f4f9a0",
+      "size_bytes": 2080
     },
     {
       "path": "docs/scientific/GAUGE_IDENTIFIABILITY_ANALYSIS.md",
@@ -1003,8 +1018,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "5fc606c471cd5ee79e54a6f1b8f5e6065adcbee84246c9f422ebd7c6addeb61c",
-      "size_bytes": 796
+      "sha256": "bf16344e32233c0850a7224f4697cec2469e2def6eac3a98d3fa65ca3b8157ab",
+      "size_bytes": 794
     },
     {
       "path": "requirements-step04.lock",
@@ -1674,7 +1689,7 @@
   ],
   "input_head": "1f715b9b8777f89d17a84d340a24107531ccaed4",
   "model_sha256": "c063aae4877159aa1ff2d0df4a8694988f587bc0cf68671357e711a136f7aab8",
-  "package_kind": "GITHUB_PUBLICATION_SNAPSHOT",
+  "package_kind": "GITHUB_PUBLICATION_EXPORT",
   "parameter_bundle_sha256": "617d72a303a947e8e7467efb3c745f7e44dc1c07eab7d830a90dbfd179da5c18",
   "phase": "PHASE_1_PUBLICATION_PREPARATION_ONLY",
   "publication_performed": false,

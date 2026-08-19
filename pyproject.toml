@@ -9,7 +9,7 @@ description = "Fail-closed specification and preregistration kernel for historic
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT for original software; third-party materials remain source-specific"}
-authors = [{name = "LSC Validation Kernel contributors"}]
+authors = [{name = "LuciferSun"}, {name = "flAmeBorn"}]
 dependencies = [
   "numpy>=2.0,<3",
   "scipy>=1.13,<2",

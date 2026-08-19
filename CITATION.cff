@@ -1,19 +1,21 @@
 cff-version: 1.2.0
-message: "If you use LSC 6.5.0, cite this artifact and the external scientific sources listed in THIRD_PARTY_NOTICES.md."
-title: "LSC 6.5.0 exact finite-dilation model and Validation Kernel"
+message: "If you use the Validation Kernel, cite this software companion and the separately released LSC 6.5.0 scientific model."
+title: "LSC Validation Kernel reproducibility companion"
 type: software
 authors:
-  - name: "LSC Validation Kernel contributors"
-version: "6.5.0"
+  - family-names: "LuciferSun"
+    affiliation: "Independent Research"
+  - family-names: "flAmeBorn"
+    affiliation: "Independent Research"
+version: "0.6.0"
 repository-code: "https://github.com/luciferprosun/LSC-Validation-Kernel"
 license: MIT
 keywords:
   - reproducibility
-  - scientific model
-  - gallium neutrino capture
   - validation
+  - preregistration
+  - scientific software
 abstract: >-
-  Executable one-parameter exact finite-dilation LSC 6.5.0 model with a
-  fail-closed validation and reproducibility kernel. The parameter
-  determination is retrospective and non-blind; experimental validation has
-  not yet been performed.
+  Fail-closed reproducibility, preregistration, audit, and future-validation
+  infrastructure accompanying the frozen LSC 6.5.0 scientific model.
+  Experimental validation has not yet been performed.

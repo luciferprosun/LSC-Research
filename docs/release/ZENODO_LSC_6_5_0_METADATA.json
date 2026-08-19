@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.0",
-  "document_kind": "ZENODO_PREDEPOSIT_METADATA_PLACEHOLDER",
-  "deposit_status": "PREPARED_NOT_UPLOADED",
+  "schema_version": "1.1.0",
+  "document_kind": "ZENODO_PREDEPOSIT_METADATA",
+  "deposit_status": "READY_FOR_OWNER_UPLOAD",
   "lineage_action": "CREATE_NEW_VERSION_IN_EXISTING_MODEL_LINEAGE",
   "title": "LSC 6.5.0 exact finite-dilation scientific model",
   "upload_type": "software",
@@ -10,22 +10,49 @@
   "description": "Executable, reproducible, one-parameter exact finite-dilation LSC 6.5.0 artifact. Parameter determination was retrospective and non-blind; experimental validation has not yet been performed.",
   "creators": [
     {
-      "name": "LSC Validation Kernel contributors",
-      "status": "HUMAN_REVIEW_REQUIRED_BEFORE_DEPOSIT"
+      "name": "LuciferSun",
+      "affiliation": "Independent Research"
+    },
+    {
+      "name": "flAmeBorn",
+      "affiliation": "Independent Research"
     }
   ],
-  "license": "MIT for original software and documentation; external material remains source-specific",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "license_scope_note": "MIT covers original software and documentation; external materials remain governed by the source-specific terms recorded in THIRD_PARTY_NOTICES.md.",
   "keywords": [
     "reproducibility",
     "scientific model",
     "gallium neutrino capture",
     "exact finite dilation"
   ],
+  "repository_url": "https://github.com/luciferprosun/LSC-Validation-Kernel",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.20377427",
+      "relation": "isNewVersionOf"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-Validation-Kernel",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    }
+  ],
   "historical_version_doi": "10.5281/zenodo.20377427",
   "historical_concept_doi": "10.5281/zenodo.19780615",
   "new_version_doi": null,
+  "validation_kernel_companion_doi": null,
   "publication_date": null,
   "upload_performed": false,
   "doi_minted": false,
-  "human_metadata_review_required": true
+  "owner_upload_ready": true,
+  "human_metadata_review_required": true,
+  "human_review_items": [
+    "Confirm creator spellings, order, and affiliations.",
+    "Confirm control of the existing model concept lineage before using Zenodo New version.",
+    "Accept the upload date supplied by Zenodo at deposit time.",
+    "Add the Validation Kernel companion DOI only after that separate record exists."
+  ]
 }
