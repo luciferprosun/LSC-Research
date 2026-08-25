@@ -1,0 +1,34 @@
+{
+  "authority_role": "canonical-pre-best-2-freeze",
+  "authorship_authorities": [
+    "CITATION.cff",
+    "README.md"
+  ],
+  "coverage": "full-repository",
+  "exclude": [
+    "evidence-chain/chain.jsonl"
+  ],
+  "include": [
+    "*"
+  ],
+  "license_authorities": [
+    "LICENSE"
+  ],
+  "network_id": "urn:lsc:evidence-chain:2026-08",
+  "recorded_by": "Codex, acting on the explicit instruction of repository owner @luciferprosun",
+  "related_persistent_identifiers": [
+    "doi:10.5281/zenodo.20377427",
+    "doi:10.5281/zenodo.20037838",
+    "doi:10.5281/zenodo.19780615"
+  ],
+  "repository": "luciferprosun/LSC-Research",
+  "required_paths": [
+    ".github/workflows/evidence-chain.yml",
+    "CITATION.cff",
+    "RESEARCH_ATTRIBUTION.md",
+    "evidence-chain/README.md",
+    "evidence-chain/scope.json",
+    "tools/evidence_chain.py"
+  ],
+  "schema_version": "1.0.0"
+}

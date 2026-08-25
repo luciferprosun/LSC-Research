@@ -1,0 +1,27 @@
+name: LSC Evidence Chain
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  verify-and-attest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the exact revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Verify append-only chain and current LSC scope
+        run: python3 tools/evidence_chain.py verify --require-current
+
+      - name: Attest the evidence chain on public main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.event.repository.private == false
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: evidence-chain/chain.jsonl

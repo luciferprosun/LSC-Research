@@ -113,3 +113,12 @@ Recommended review order:
 6. `freeze_release/FINAL_GITHUB_FREEZE_CHECKLIST.md`
 7. `provenance/MANIFEST.csv` or root `MANIFEST.csv`
 8. `CHECKSUMS.sha256`
+
+## LSC Evidence Chain
+
+The complete repository is bound by an append-only, file-level SHA-256
+evidence chain and checked in CI. See
+[the evidence protocol](evidence-chain/README.md) and
+[research attribution boundary](RESEARCH_ATTRIBUTION.md). The chain supplements
+the existing freeze manifests and DOI records; it does not change the MIT
+license or turn chronology into scientific validation.
