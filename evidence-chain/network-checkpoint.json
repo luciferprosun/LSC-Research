@@ -1,0 +1,118 @@
+{
+  "checkpoint_created_at_utc": "2026-08-25T16:02:47Z",
+  "checkpoint_repository": "luciferprosun/LSC-Research",
+  "explicit_exclusions": [
+    {
+      "reason": "Separate open-source AOIA system; no AOIA code, license, or page is part of the LSC Evidence Chain.",
+      "repository": "luciferprosun/AOIA-Core"
+    },
+    {
+      "reason": "The matching path uses LSC in an unrelated security-core context and is not part of the LSC research line.",
+      "repository": "luciferprosun/osint-template"
+    }
+  ],
+  "limitations": "This checkpoint binds repository commits and evidence-record hashes. It supports integrity, custody, and chronology claims; it is not a legal guarantee of originality or scientific validity.",
+  "network_id": "urn:lsc:evidence-chain:2026-08",
+  "purpose": "Cross-repository anchor for every identified GitHub repository that canonically stores, archives, distributes, studies, or publicly presents LSC research material.",
+  "repositories": [
+    {
+      "archived_at_capture": false,
+      "authority_role": "active-validation-kernel-and-lsc-6.5.0-companion",
+      "baseline_commit": "0093befe65f8acef05a2c3d97711375f10218fec",
+      "baseline_manifest_files": 347,
+      "baseline_manifest_sha256": "f0030143e732b6b0be8e6ae634f5ebc041fe58fd7957ab26059b28409c800dc4",
+      "baseline_parent_commit": "0b117a9a928c701b9f059d200c2aca2237d53326",
+      "baseline_record_sha256": "bfe2585b7574b4bd0f4e09cf8594ed11166ec9b25c93f119236afc0f56b480b1",
+      "baseline_scope_sha256": "d22c0ce404d13a7b15133390e84a921f670b37bc1fa93db642ce7eaeae75bf4d",
+      "coverage": "full-repository",
+      "repository": "luciferprosun/LSC-Validation-Kernel",
+      "url": "https://github.com/luciferprosun/LSC-Validation-Kernel",
+      "visibility": "private"
+    },
+    {
+      "archived_at_capture": false,
+      "authority_role": "canonical-pre-best-2-freeze",
+      "baseline_commit": "8ef63f81994e6106d9a60f60e84fe675f948ae68",
+      "baseline_manifest_files": 404,
+      "baseline_manifest_sha256": "e4b30c0c700f0534f93a54de7273524418a1f84b6ca0efc133fa683211d40fe3",
+      "baseline_parent_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+      "baseline_record_sha256": "16f1e6123d12d08ec7462637f0420fca0c626941c8e9d3c461c8505313de3809",
+      "baseline_scope_sha256": "8005e5cdd787f20a45bf71a9707c84bbebd592c60ec8d2624e27dd923d768cda",
+      "coverage": "full-repository",
+      "repository": "luciferprosun/LSC-Research",
+      "url": "https://github.com/luciferprosun/LSC-Research",
+      "visibility": "public"
+    },
+    {
+      "archived_at_capture": true,
+      "authority_role": "legacy-mixed-root-archive",
+      "baseline_commit": "5423c925a962e80f8392c73066e3379f2ca2cdd9",
+      "baseline_manifest_files": 539,
+      "baseline_manifest_sha256": "48ed9574dcd276bab5709266a294507d400c22b838dc1bf54b1408aa800251a7",
+      "baseline_parent_commit": "e43e00833a5ff1a694d088f2070eb1dd25ca073b",
+      "baseline_record_sha256": "1a88cfd579448e9114701e1bc2ad06d7405f7a2b58ea9c48bbd31bde7d6fcf5b",
+      "baseline_scope_sha256": "930d9730b8d74826ac6846cf5f825a280b6b0d5bd21711df5d10b29ca7eb334d",
+      "coverage": "full-repository",
+      "repository": "luciferprosun/LLM-MHLM-Main-Project",
+      "url": "https://github.com/luciferprosun/LLM-MHLM-Main-Project",
+      "visibility": "public"
+    },
+    {
+      "archived_at_capture": false,
+      "authority_role": "ai-epistemics-case-study-with-lsc-references",
+      "baseline_commit": "68ce2f27d53df7a9e73d998af264a73e10b5f4ed",
+      "baseline_manifest_files": 355,
+      "baseline_manifest_sha256": "237fa3f1fdc56676aa3ea213d91b9050b0ee493b2d433ee59f49cb7ffdb57b20",
+      "baseline_parent_commit": "98f0c734e69fc5ec70229e50a1a963e024b5a896",
+      "baseline_record_sha256": "a53fafd4e330ffc37d73b175cab732d13c07c12e5488a0fcd029886ba48a66bb",
+      "baseline_scope_sha256": "07b7180b7c96d2cc4b35cf6fd6928bd3dded7e278d4d1ed32f0ec623932e65f4",
+      "coverage": "full-repository",
+      "repository": "luciferprosun/MHLM_MDLH",
+      "url": "https://github.com/luciferprosun/MHLM_MDLH",
+      "visibility": "public"
+    },
+    {
+      "archived_at_capture": false,
+      "authority_role": "public-lsc-archive-and-distribution",
+      "baseline_commit": "f4f96261e62c8e94f10bddda79247c9081028851",
+      "baseline_manifest_files": 69,
+      "baseline_manifest_sha256": "999a5cf506dbf9bc01e90e9e681a8d0118aa6e6300905836091dcadfae2d60f7",
+      "baseline_parent_commit": "092e232aeb36c52b09fe8c6b72fdd6fd50b65d2f",
+      "baseline_record_sha256": "813c2fd72e71c20de4941cef405f8ea8cdb931f62c2a06ff2c1edc51e61fb2c6",
+      "baseline_scope_sha256": "52a268df47fa65954b12ad2c5c230f4226e94a715011fd3c6b6e4093ba81b483",
+      "coverage": "full-repository",
+      "repository": "luciferprosun/akasha-chronicles",
+      "url": "https://github.com/luciferprosun/akasha-chronicles",
+      "visibility": "public"
+    },
+    {
+      "archived_at_capture": false,
+      "authority_role": "public-lsc-presentation-mirror",
+      "baseline_commit": "9b92bc4eabe072674304dc47f297954f48fb6c63",
+      "baseline_manifest_files": 10,
+      "baseline_manifest_sha256": "7e12717fc71af2733faa6b33d26c1ba56e821706990a1e73a6ced956d1b8da52",
+      "baseline_parent_commit": "c8ffa6dea7d1c1119a46a0325dd31ee2aaef837e",
+      "baseline_record_sha256": "e3a9651ff2074242477839a50ec670ea89680583110568d792321f19ac6ef0cf",
+      "baseline_scope_sha256": "ab72fcb6c876f98c1b93cd6bafed17034ce10c26cc16779bb294bb0041be307a",
+      "coverage": "lsc-subset-in-mixed-site",
+      "repository": "luciferprosun/luciferprosun.github.io",
+      "url": "https://github.com/luciferprosun/luciferprosun.github.io",
+      "visibility": "public"
+    },
+    {
+      "archived_at_capture": false,
+      "authority_role": "canonical-site-source-lsc-presentation",
+      "baseline_commit": "00251e2ab0cac875c8c9e4845934658738d54e91",
+      "baseline_manifest_files": 10,
+      "baseline_manifest_sha256": "e5f4246654c2ebdcb3bc0cc7a687406721ff66efd42ab0c71764e67a7df99330",
+      "baseline_parent_commit": "dac512c2e722001872be174031b7b687a526f4f0",
+      "baseline_record_sha256": "19d33184e27e101bd1c5675719d7ebdb6b5c3a5dc4f2181d7d32334edc9e5aff",
+      "baseline_scope_sha256": "e587eff76521d4f5451d60d46249cf22ccf516b44e46db030290349ba1c22e07",
+      "coverage": "lsc-subset-in-mixed-site",
+      "repository": "luciferprosun/sparkHAT",
+      "url": "https://github.com/luciferprosun/sparkHAT",
+      "visibility": "private"
+    }
+  ],
+  "schema_version": "1.0.0"
+}
