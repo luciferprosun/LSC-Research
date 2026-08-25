@@ -116,3 +116,10 @@ as an important inspiration in LSC's development history. See the
 `THIRD_PARTY_NOTICES.md` records external scientific provenance and
 source-specific terms. The complete local RC1 and historical evidence archive
 are not redistributed in this sanitized GitHub snapshot.
+
+## LSC Evidence Chain
+
+The repository is protected by an append-only, file-level SHA-256 evidence
+chain with CI verification. See [the evidence protocol](evidence-chain/README.md)
+and [research attribution boundary](RESEARCH_ATTRIBUTION.md). The chain records
+integrity and chronology without changing the MIT license or scientific status.
