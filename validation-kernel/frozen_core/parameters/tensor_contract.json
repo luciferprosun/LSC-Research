@@ -1,0 +1,15 @@
+{
+  "active_components_available": false,
+  "contract": {
+    "dimension_size": null,
+    "expected_rank": 2,
+    "frame_requirement": "COMPATIBLE_WITH_n_lab",
+    "frame_status": "MISSING_FROZEN_FRAME",
+    "orientation_required": true,
+    "provenance_source": "canonical-equations:E3-E4-E12",
+    "square": true,
+    "symbol": "A_a^{ij}",
+    "symmetric": true,
+    "traceless": true
+  }
+}

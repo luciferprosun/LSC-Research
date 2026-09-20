@@ -1,0 +1,18 @@
+{
+  "6_3_0_historical_record": "PRESERVED",
+  "6_3_0_numerical_validation": "NOT_AUTHORIZED",
+  "6_3_1_executable_specification": "NOT_YET_CREATED",
+  "BEST2": "FUTURE_BLIND",
+  "BEST2_prediction_performed": false,
+  "LSC_fit_performed": false,
+  "LSC_prediction_performed": false,
+  "LSC_validation_performed": false,
+  "decision_verdict": "LSC_6_3_0_NUMERICALLY_UNRECOVERABLE_SUCCESSOR_BOUNDARY_DEFINED",
+  "frozen_6_3_0_identity": "PRESERVED",
+  "historical_data": "RETROSPECTIVE_NON_BLIND",
+  "identity_recoverability": "FULLY_RECOVERABLE",
+  "numerical_recoverability": "NUMERICALLY_UNRECOVERABLE_WITH_CURRENT_EVIDENCE",
+  "publication": "NOT_AUTHORIZED",
+  "successor_boundary": "DEFINED",
+  "symbolic_recoverability": "FULLY_RECOVERABLE"
+}

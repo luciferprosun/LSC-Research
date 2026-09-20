@@ -1,0 +1,34 @@
+{
+  "LSC_prediction_performed": false,
+  "LSC_used": false,
+  "LSC_validation_performed": false,
+  "baseline_execution_controls": {
+    "count": 13,
+    "passed": true
+  },
+  "classification": [
+    "NON_PHYSICAL_TEST_FIXTURE",
+    "PUBLIC_RESULT_REPRODUCTION_ONLY",
+    "STATISTICAL_ENGINE_CONTROL"
+  ],
+  "external_mapping_state": "EXTERNAL_VETO_BLOCKED_MAPPING_MISSING",
+  "fixtures": {
+    "count": 6,
+    "passed": true
+  },
+  "public_reproduction": {
+    "count": 9,
+    "passed": true
+  },
+  "schema_version": "1.0.0",
+  "six_gallium_interpretation": "SENSITIVITY_ONLY",
+  "statistical_controls": {
+    "datasets": [
+      "MicroBooNE",
+      "PROSPECT",
+      "STEREO",
+      "IceCube"
+    ],
+    "passed": true
+  }
+}

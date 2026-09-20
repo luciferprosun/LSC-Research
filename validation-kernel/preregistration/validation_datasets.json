@@ -1,0 +1,1228 @@
+{
+  "datasets": [
+    {
+      "allowed_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ],
+      "available_observables": [
+        "production_rate",
+        "published_zone_prediction",
+        "ratio_R",
+        "target_mass",
+        "activity",
+        "efficiencies"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "All 20 zone-exposure rows; zone and exposure IDs are immutable."
+        ],
+        "covariance_fields": [
+          "NOT_PUBLIC"
+        ],
+        "dataset_id": "BEST",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "Do not replace outer row sum 1070 with combined value 1069 or vice versa.",
+          "No midpoint-as-event-time use."
+        ],
+        "geometry_fields": [
+          "target_zone",
+          "source_target_mass_t",
+          "published average path length"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "BEST_RUN_LEVEL.csv@sha256:9bc2607b18aad11f5cd602cd547c3fe0f2052181386385247d819469c2fb3832",
+        "schema_version": "1.0.0",
+        "timing_fields": [
+          "source_exposure_start/end_utc_inferred",
+          "extraction_datetime_utc_inferred"
+        ],
+        "transformations": [
+          "Published day-of-year to UTC only where tagged INFERENCE and UTC+3 source basis is retained.",
+          "Ratios are measured_rate/published_zone_prediction and remain INFERENCE."
+        ],
+        "uncertainty_fields": [
+          "production_rate_stat_sigma_plus/minus",
+          "production_rate_sys_pct_plus/minus_common"
+        ],
+        "units": {
+          "activity": "MCi",
+          "production_rate": "71Ge atoms/day",
+          "target_mass": "tonne"
+        }
+      },
+      "count_semantics": "10 exposures x 2 target zones",
+      "covariance_availability": "Full 20x20 and inner/outer joint covariance NOT_PUBLIC.",
+      "dataset_id": "BEST",
+      "experiment": "BEST",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Two-zone dimensions, masses and average path lengths; no complete CAD/mesh.",
+      "known_limitations": [
+        "Outer candidate row sum is 1070 while combined source row is 1069; policy PRESERVE_SOURCE_DISCREPANCY.",
+        "Candidate/sub-run timestamps and collaboration likelihood workspace are unavailable."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/BEST_RUN_LEVEL.csv",
+      "number_of_objects": 20,
+      "orientation_availability": "Surveyed Earth-fixed detector/source orientation NOT_PUBLIC.",
+      "prohibited_tests": [
+        "T12"
+      ],
+      "provenance_status": "SOURCE_DERIVED_AND_HASH_VERIFIED",
+      "quality_grade": "B",
+      "raw_or_derived": "DERIVED_WITH_SOURCE_PROVENANCE",
+      "sha256": "9bc2607b18aad11f5cd602cd547c3fe0f2052181386385247d819469c2fb3832",
+      "source_dois": [
+        "10.1103/PhysRevLett.128.232501",
+        "10.1103/PhysRevC.105.065502"
+      ],
+      "source_reference": "https://arxiv.org/abs/2201.07364",
+      "timing_resolution": "Exposure interval and extraction/counting-start timestamps; UTC conversion explicitly INFERENCE.",
+      "uncertainties": [
+        "asymmetric statistical",
+        "common systematic budget",
+        "source activity",
+        "target mass"
+      ],
+      "validation_role": "PRIMARY_GALLIUM_VALIDATION",
+      "version": "2201.07364v3 / archive 2026-08-16"
+    },
+    {
+      "allowed_tests": [
+        "T3",
+        "T4",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ],
+      "available_observables": [
+        "production_rate",
+        "background rates",
+        "source activity",
+        "counter efficiency",
+        "carrier yield"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "All 83 published source/solar rows.",
+          "Source rows must retain Cr1/Cr2 grouping."
+        ],
+        "covariance_fields": [
+          "NOT_PUBLIC"
+        ],
+        "dataset_id": "GALLEX_GNO",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "Solar rows are not source-exposure hold-outs.",
+          "Do not invent exact time-of-day."
+        ],
+        "geometry_fields": [
+          "target_mass_t"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "GALLEX_RUN_LEVEL.csv@sha256:8535f227a1ef544b07967ca73125948e46c32f8ff38165e21305826af671f0b4",
+        "schema_version": "1.0.0",
+        "timing_fields": [
+          "published_start_or_run_date",
+          "timestamp_end_inferred"
+        ],
+        "transformations": [
+          "End dates inferred from published duration remain explicitly INFERENCE."
+        ],
+        "uncertainty_fields": [
+          "stat_sigma_plus/minus",
+          "systematic_sigma"
+        ],
+        "units": {
+          "production_rate": "SNU or atoms/day as row-defined",
+          "source_activity": "row-defined published unit"
+        }
+      },
+      "count_semantics": "65 solar rows plus 18 51Cr source rows grouped as Cr1/Cr2",
+      "covariance_availability": "Full run covariance NOT_PUBLIC.",
+      "dataset_id": "GALLEX_GNO",
+      "experiment": "GALLEX/GNO",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Target mass and named source grouping; detailed geometry incomplete.",
+      "known_limitations": [
+        "Exact Cr exposure bounds and full covariance are unavailable."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/GALLEX_RUN_LEVEL.csv",
+      "number_of_objects": 83,
+      "orientation_availability": "NOT_PUBLIC.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T12"
+      ],
+      "provenance_status": "SOURCE_DERIVED_AND_HASH_VERIFIED",
+      "quality_grade": "B",
+      "raw_or_derived": "DERIVED_WITH_SOURCE_PROVENANCE",
+      "sha256": "8535f227a1ef544b07967ca73125948e46c32f8ff38165e21305826af671f0b4",
+      "source_dois": [
+        "10.1016/j.physletb.2010.01.030"
+      ],
+      "source_reference": "https://arxiv.org/abs/1001.2731",
+      "timing_resolution": "Start date/day resolution; exact exposure times NOT_PUBLIC.",
+      "uncertainties": [
+        "asymmetric statistical where published",
+        "limited published systematics"
+      ],
+      "validation_role": "PRIMARY_GALLIUM_TRANSFER",
+      "version": "1001.2731 / archive 2026-08-16"
+    },
+    {
+      "allowed_tests": [
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ],
+      "available_observables": [
+        "production_rate",
+        "activity",
+        "efficiencies",
+        "candidate and fitted event counts"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "8 primary_source_exposure rows.",
+          "4 controls retained for QA only."
+        ],
+        "covariance_fields": [
+          "NOT_PUBLIC"
+        ],
+        "dataset_id": "SAGE_CR51",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "Secondary extractions and failed/control rows are not independent validation observations."
+        ],
+        "geometry_fields": [
+          "gallium_mass_t"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "SAGE_CR51_RUN_LEVEL.csv@sha256:26e4ac90edc325eec0e4d3d7639b43d61aced5dd6f7f21edf281b01a6ec4fe82",
+        "schema_version": "1.0.0",
+        "timing_fields": [
+          "source_exposure_start/end_unzoned"
+        ],
+        "transformations": [
+          "Combined predicted rate inferred from published R stays INFERENCE."
+        ],
+        "uncertainty_fields": [
+          "stat_sigma_plus/minus",
+          "systematic_pct_plus/minus"
+        ],
+        "units": {
+          "production_rate": "atoms/day",
+          "source_activity": "kCi"
+        }
+      },
+      "count_semantics": "8 primary 51Cr exposures plus 4 secondary extraction controls",
+      "covariance_availability": "Full covariance NOT_PUBLIC.",
+      "dataset_id": "SAGE_CR51",
+      "experiment": "SAGE",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Target mass only; detailed geometry incomplete.",
+      "known_limitations": [
+        "Controls/failures may not be promoted to independent primary exposures.",
+        "51Cr and 37Ar remain distinct isotope contracts."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/SAGE_CR51_RUN_LEVEL.csv",
+      "number_of_objects": 12,
+      "orientation_availability": "NOT_PUBLIC.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T12"
+      ],
+      "provenance_status": "SOURCE_DERIVED_AND_HASH_VERIFIED",
+      "quality_grade": "B",
+      "raw_or_derived": "DERIVED_WITH_SOURCE_PROVENANCE",
+      "sha256": "26e4ac90edc325eec0e4d3d7639b43d61aced5dd6f7f21edf281b01a6ec4fe82",
+      "source_dois": [
+        "10.1103/PhysRevC.59.2246"
+      ],
+      "source_reference": "https://arxiv.org/abs/hep-ph/9803418",
+      "timing_resolution": "Local/unzoned exposure intervals; UTC offset NOT_PUBLIC.",
+      "uncertainties": [
+        "asymmetric statistical",
+        "published systematic percentages"
+      ],
+      "validation_role": "PRIMARY_GALLIUM_TRANSFER",
+      "version": "hep-ph/9803418 / archive 2026-08-16"
+    },
+    {
+      "allowed_tests": [
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ],
+      "available_observables": [
+        "production_rate",
+        "activity",
+        "efficiencies",
+        "candidate and fitted event counts"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "10 primary_source_exposure rows.",
+          "Ar3-2 retained as a control only."
+        ],
+        "covariance_fields": [
+          "NOT_PUBLIC"
+        ],
+        "dataset_id": "SAGE_AR37",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "Ar3-2 is not an independent primary exposure."
+        ],
+        "geometry_fields": [
+          "gallium_mass_t"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "SAGE_37AR_RUN_LEVEL.csv@sha256:f1ce4c8f696f0e936a1c886a7f0bee04e9ee3370f75f6ae461c57d82ce60d590",
+        "schema_version": "1.0.0",
+        "timing_fields": [
+          "source_exposure_start/end_unzoned"
+        ],
+        "transformations": [],
+        "uncertainty_fields": [
+          "stat_sigma_plus/minus",
+          "systematic_pct_plus/minus"
+        ],
+        "units": {
+          "production_rate": "atoms/day",
+          "source_activity": "kCi"
+        }
+      },
+      "count_semantics": "10 primary 37Ar exposures plus Ar3-2 control/secondary extraction",
+      "covariance_availability": "Full covariance NOT_PUBLIC.",
+      "dataset_id": "SAGE_AR37",
+      "experiment": "SAGE",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Target mass only; detailed geometry incomplete.",
+      "known_limitations": [
+        "Ar3-2 is excluded from the collaboration combined result and remains a control.",
+        "51Cr and 37Ar remain distinct isotope contracts."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/18_VALIDATION_READY/SAGE_37AR_RUN_LEVEL.csv",
+      "number_of_objects": 11,
+      "orientation_availability": "NOT_PUBLIC.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T12"
+      ],
+      "provenance_status": "SOURCE_DERIVED_AND_HASH_VERIFIED",
+      "quality_grade": "B",
+      "raw_or_derived": "DERIVED_WITH_SOURCE_PROVENANCE",
+      "sha256": "f1ce4c8f696f0e936a1c886a7f0bee04e9ee3370f75f6ae461c57d82ce60d590",
+      "source_dois": [
+        "10.1103/PhysRevC.73.045805"
+      ],
+      "source_reference": "https://arxiv.org/abs/nucl-ex/0512041",
+      "timing_resolution": "Local/unzoned exposure intervals; UTC offset NOT_PUBLIC.",
+      "uncertainties": [
+        "asymmetric statistical",
+        "published systematic percentages"
+      ],
+      "validation_role": "PRIMARY_GALLIUM_TRANSFER",
+      "version": "nucl-ex/0512041 / archive 2026-08-16"
+    },
+    {
+      "allowed_tests": [
+        "T5",
+        "T8",
+        "T10",
+        "T11"
+      ],
+      "available_observables": [
+        "total cross section",
+        "ground-state contribution",
+        "split-normal marginal uncertainty"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "All published model/isotope alternatives."
+        ],
+        "covariance_fields": [
+          "NOT_PUBLIC"
+        ],
+        "dataset_id": "GALLIUM_CROSS_SECTIONS",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "Do not average models into an invented default."
+        ],
+        "geometry_fields": [],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "CROSS_SECTION_MODELS.csv@sha256:b6e8318334698cb0725e9c508dd1b9e8a75d426a4083912e0bde2f7705db90b9",
+        "schema_version": "1.0.0",
+        "timing_fields": [],
+        "transformations": [
+          "Split-normal fields are source-derived marginal summaries only."
+        ],
+        "uncertainty_fields": [
+          "sigma_plus",
+          "sigma_minus"
+        ],
+        "units": {
+          "cross_section": "1e-45 cm2"
+        }
+      },
+      "count_semantics": "Published model-isotope rows",
+      "covariance_availability": "Cross-isotope/model joint covariance NOT_PUBLIC.",
+      "dataset_id": "GALLIUM_CROSS_SECTIONS",
+      "experiment": "Gallium cross-section theory",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "NOT_APPLICABLE.",
+      "known_limitations": [
+        "No model is designated correct or default.",
+        "Krofcheck and Frekers alternatives must not be combined."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/CROSS_SECTION_MODELS.csv",
+      "number_of_objects": 15,
+      "orientation_availability": "NOT_APPLICABLE.",
+      "prohibited_tests": [
+        "T12"
+      ],
+      "provenance_status": "SOURCE_DERIVED_AND_HASH_VERIFIED",
+      "quality_grade": "B",
+      "raw_or_derived": "DERIVED_WITH_SOURCE_PROVENANCE",
+      "sha256": "b6e8318334698cb0725e9c508dd1b9e8a75d426a4083912e0bde2f7705db90b9",
+      "source_dois": [
+        "10.1103/PhysRevC.56.3391",
+        "10.1103/PhysRevC.108.035502",
+        "10.1016/j.physletb.2019.06.057"
+      ],
+      "source_reference": "https://arxiv.org/abs/2303.13623",
+      "timing_resolution": "NOT_APPLICABLE.",
+      "uncertainties": [
+        "published asymmetric marginal uncertainty"
+      ],
+      "validation_role": "NUCLEAR_MODEL_SENSITIVITY",
+      "version": "archive 2026-08-16"
+    },
+    {
+      "allowed_tests": [
+        "T10"
+      ],
+      "available_observables": [
+        "mnu2sterile",
+        "sin2thetaee",
+        "absolute chi-square"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "All 50x50 finite/capped grid cells."
+        ],
+        "covariance_fields": [],
+        "dataset_id": "KATRIN",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "No confidence-level assignment without documented construction."
+        ],
+        "geometry_fields": [],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "record-19369714/Main_result_KNM1to5_chi_square_map.json",
+        "schema_version": "1.0.0",
+        "timing_fields": [],
+        "transformations": [
+          "Finite-grid minimum may be subtracted only when explicitly requested and labelled."
+        ],
+        "uncertainty_fields": [
+          "chi_square grid"
+        ],
+        "units": {
+          "chi_square": "dimensionless",
+          "mnu2sterile": "eV2",
+          "sin2thetaee": "dimensionless"
+        }
+      },
+      "count_semantics": "50x50 absolute chi-square grid",
+      "covariance_availability": "Grid supplied; no gallium-LSC joint covariance.",
+      "dataset_id": "KATRIN",
+      "experiment": "KATRIN",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "NOT_APPLICABLE.",
+      "known_limitations": [
+        "An explicit frozen LSC-to-KATRIN mapping is absent.",
+        "Grid is absolute chi-square, not delta chi-square; confidence construction is not inferred."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/06_KATRIN/records/19369714/files/Main_result_KNM1to5_chi_square_map.json",
+      "number_of_objects": 2500,
+      "orientation_availability": "NOT_APPLICABLE.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PUBLIC_RELEASE_HASH_VERIFIED",
+      "quality_grade": "A",
+      "raw_or_derived": "RAW_PUBLIC_RELEASE",
+      "sha256": "64d968ff1ad6fcc231a12eec52ae64d657a1a23c6cec7fe3fe95789725b26336",
+      "source_dois": [
+        "10.5281/zenodo.15860994",
+        "10.1038/s41586-025-09739-9"
+      ],
+      "source_reference": "https://zenodo.org/records/19369714",
+      "timing_resolution": "NOT_APPLICABLE.",
+      "uncertainties": [
+        "grid likelihood surface"
+      ],
+      "validation_role": "EXTERNAL_CONSTRAINT_ONLY",
+      "version": "record 19369714 (2026-04-01)"
+    },
+    {
+      "allowed_tests": [
+        "T10"
+      ],
+      "available_observables": [
+        "sterile contours",
+        "likelihood-metric differences",
+        "events/uptime/response by release"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "Only release files whose identity/integrity status is recorded."
+        ],
+        "covariance_fields": "release-defined",
+        "dataset_id": "ICECUBE",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "No cross-release likelihood multiplication."
+        ],
+        "geometry_fields": "release-defined",
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "ICECUBE_FILE_INTEGRITY.csv@sha256:e2a93f7af91671bc60714c16a2e84b858b7969d9a5297690245490324ba48548",
+        "schema_version": "1.0.0",
+        "timing_fields": "release-defined",
+        "transformations": [
+          "Release-native test statistics and confidence construction must be preserved."
+        ],
+        "uncertainty_fields": "release-defined",
+        "units": {
+          "release_defined": "release-defined"
+        }
+      },
+      "count_semantics": "Current Dataverse file integrity records",
+      "covariance_availability": "Release-specific; no LSC mapping or joint covariance.",
+      "dataset_id": "ICECUBE",
+      "experiment": "IceCube",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Response metadata by release.",
+      "known_limitations": [
+        "DeepCore is Grade C for independent reanalysis; aggregate grade is conservative.",
+        "Explicit frozen mapping and confidence construction are required."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/07_ICECUBE/ICECUBE_FILE_INTEGRITY.csv",
+      "number_of_objects": 52,
+      "orientation_availability": "Directional quantities only where release-specific, not BEST orientation.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PUBLIC_RELEASE_INDEX_HASH_VERIFIED",
+      "quality_grade": "C",
+      "raw_or_derived": "RAW_AND_RELEASE_INDEX",
+      "sha256": "e2a93f7af91671bc60714c16a2e84b858b7969d9a5297690245490324ba48548",
+      "source_dois": [
+        "10.7910/DVN/QKL28Z",
+        "10.7910/DVN/OSPLDG",
+        "10.7910/DVN/MMIIZA"
+      ],
+      "source_reference": "https://icecube.wisc.edu/science/data-releases/",
+      "timing_resolution": "Event-level only for IceTracks; other releases vary.",
+      "uncertainties": [
+        "release-specific statistical products"
+      ],
+      "validation_role": "EXTERNAL_CONSTRAINT_ONLY",
+      "version": "archive 2026-08-16"
+    },
+    {
+      "allowed_tests": [],
+      "available_observables": [
+        "7Be time series",
+        "orbital time series/periodograms",
+        "CNO spectrum/correlation/likelihood"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "Archived public time-series and CNO resources only."
+        ],
+        "covariance_fields": [
+          "CNO 14x14 only"
+        ],
+        "dataset_id": "BOREXINO",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "No direct gallium-LSC inference."
+        ],
+        "geometry_fields": [],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "BOREXINO_RESOURCE_MATRIX.csv@sha256:98378dc8e2e51e0e3c0150c228a7d5ce666aa649dac82e748de1d763314cf106",
+        "schema_version": "1.0.0",
+        "timing_fields": [
+          "source-defined binned time"
+        ],
+        "transformations": [
+          "Preserve published binning and UTC origin."
+        ],
+        "uncertainty_fields": [
+          "published bin errors",
+          "CNO correlation/likelihood"
+        ],
+        "units": {
+          "rate": "source-defined"
+        }
+      },
+      "count_semantics": "Retained open-data resource groups",
+      "covariance_availability": "Available only for CNO spectral package; not full time-bin covariance.",
+      "dataset_id": "BOREXINO",
+      "experiment": "Borexino",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Experiment-specific; no BEST geometry mapping.",
+      "known_limitations": [
+        "Temporal-methodology control, not direct gallium evidence.",
+        "No frozen LSC-to-Borexino observable mapping."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/08_BOREXINO/BOREXINO_RESOURCE_MATRIX.csv",
+      "number_of_objects": 6,
+      "orientation_availability": "No surveyed BEST-compatible orientation.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PUBLIC_RELEASE_INDEX_HASH_VERIFIED",
+      "quality_grade": "B",
+      "raw_or_derived": "RAW_RELEASE_INDEX",
+      "sha256": "98378dc8e2e51e0e3c0150c228a7d5ce666aa649dac82e748de1d763314cf106",
+      "source_dois": [
+        "NOT_RECORDED_IN_ARCHIVE; see arXiv:1701.07970, 2204.07029, 2205.15975, 2307.14636"
+      ],
+      "source_reference": "https://bxopen.lngs.infn.it/",
+      "timing_resolution": "30.4-day/7-day and 30-day/8-hour bins; explicit UTC origin for orbital release.",
+      "uncertainties": [
+        "binned rate errors",
+        "14x14 published CNO correlation"
+      ],
+      "validation_role": "METHODOLOGY_CONTROL",
+      "version": "archive 2026-08-16"
+    },
+    {
+      "allowed_tests": [
+        "T10"
+      ],
+      "available_observables": [
+        "spectra",
+        "detector performance",
+        "backgrounds",
+        "efficiencies",
+        "responses",
+        "reactor rates",
+        "baselines"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "All compact analysis package members covered by its release identity."
+        ],
+        "covariance_fields": "release-defined",
+        "dataset_id": "DAYA_BAY",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "No ordinary three-flavor release reinterpretation as sterile constraint without a declared likelihood."
+        ],
+        "geometry_fields": [
+          "reactor-detector baselines"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "dayabay_analysis_dataset_tsv_1-0-0.zip@sha256:fbbc75791315a7c75c7a0d89dc7629aae33649e7e7901ab317f97a2d69fa4f5b",
+        "schema_version": "1.0.0",
+        "timing_fields": "daily detector performance",
+        "transformations": [
+          "Preserve release-native response/correction definitions."
+        ],
+        "uncertainty_fields": "release-defined",
+        "units": {
+          "release_defined": "release-defined"
+        }
+      },
+      "count_semantics": "Compact TSV archive members",
+      "covariance_availability": "Release-specific matrices/inputs.",
+      "dataset_id": "DAYA_BAY",
+      "experiment": "Daya Bay",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Published reactor-detector baselines.",
+      "known_limitations": [
+        "N",
+        "o",
+        "t",
+        " ",
+        "a",
+        " ",
+        "g",
+        "a",
+        "l",
+        "l",
+        "i",
+        "u",
+        "m",
+        " ",
+        "s",
+        "o",
+        "u",
+        "r",
+        "c",
+        "e",
+        " ",
+        "d",
+        "a",
+        "t",
+        "a",
+        "s",
+        "e",
+        "t",
+        ";",
+        " ",
+        "n",
+        "o",
+        " ",
+        "a",
+        "u",
+        "t",
+        "o",
+        "m",
+        "a",
+        "t",
+        "i",
+        "c",
+        " ",
+        "L",
+        "S",
+        "C",
+        " ",
+        "l",
+        "i",
+        "k",
+        "e",
+        "l",
+        "i",
+        "h",
+        "o",
+        "o",
+        "d",
+        " ",
+        "c",
+        "o",
+        "m",
+        "b",
+        "i",
+        "n",
+        "a",
+        "t",
+        "i",
+        "o",
+        "n",
+        "."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/DayaBay/data/dayabay_analysis_dataset_tsv_1-0-0.zip",
+      "number_of_objects": 213,
+      "orientation_availability": "NOT_APPLICABLE to gallium orientation.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PUBLIC_RELEASE_HASH_VERIFIED",
+      "quality_grade": "A",
+      "raw_or_derived": "RAW_PUBLIC_RELEASE",
+      "sha256": "fbbc75791315a7c75c7a0d89dc7629aae33649e7e7901ab317f97a2d69fa4f5b",
+      "source_dois": [
+        "10.5281/zenodo.17587229"
+      ],
+      "source_reference": "https://zenodo.org/records/17587229",
+      "timing_resolution": "Daily performance and run coverage.",
+      "uncertainties": [
+        "published model uncertainties"
+      ],
+      "validation_role": "EXTERNAL_CONVENTIONAL_CONTROL",
+      "version": "1.0.0"
+    },
+    {
+      "allowed_tests": [
+        "T10"
+      ],
+      "available_observables": [
+        "spectra",
+        "baseline distributions",
+        "response matrices",
+        "covariance",
+        "delta-chi-square",
+        "CLs contours"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "All 76 ancillary files under Source/anc/data."
+        ],
+        "covariance_fields": [
+          "statistical",
+          "background",
+          "systematic"
+        ],
+        "dataset_id": "PROSPECT",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "No Gaussian reinterpretation of CLs grids."
+        ],
+        "geometry_fields": [
+          "baseline distributions"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "PROSPECT source tar@sha256:0e8a7a4314a1405df00000d54249b54ae9031726ee716ed3336df34f255ab7f0",
+        "schema_version": "1.0.0",
+        "timing_fields": "period identifiers",
+        "transformations": [
+          "Use collaboration parsing and response conventions."
+        ],
+        "uncertainty_fields": [
+          "published covariance products"
+        ],
+        "units": {
+          "release_defined": "release-defined"
+        }
+      },
+      "count_semantics": "Ancillary numerical analysis files",
+      "covariance_availability": "Published covariance matrices available.",
+      "dataset_id": "PROSPECT",
+      "experiment": "PROSPECT",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Six baseline bins and response matrices.",
+      "known_limitations": [
+        "Preserve collaboration CLs/statistical construction.",
+        "Not direct LSC validation."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/PROSPECT/Papers/PROSPECT_Final_2406.10408_source.tar",
+      "number_of_objects": 76,
+      "orientation_availability": "NOT_APPLICABLE.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PUBLIC_RELEASE_HASH_VERIFIED",
+      "quality_grade": "A",
+      "raw_or_derived": "RAW_PUBLIC_RELEASE",
+      "sha256": "0e8a7a4314a1405df00000d54249b54ae9031726ee716ed3336df34f255ab7f0",
+      "source_dois": [
+        "10.1103/PhysRevLett.134.151802"
+      ],
+      "source_reference": "https://arxiv.org/abs/2406.10408",
+      "timing_resolution": "Release-defined periods.",
+      "uncertainties": [
+        "statistical/background/systematic covariance"
+      ],
+      "validation_role": "EXTERNAL_STERILE_BASELINE_CONTROL",
+      "version": "2406.10408 source"
+    },
+    {
+      "allowed_tests": [
+        "T10"
+      ],
+      "available_observables": [
+        "cell spectra",
+        "covariance",
+        "response",
+        "delta-chi-square",
+        "critical map",
+        "contours"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "Six acquired core tables; other indexed tables require separate acquisition identity."
+        ],
+        "covariance_fields": [
+          "published selected covariance"
+        ],
+        "dataset_id": "STEREO",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "No automatic likelihood multiplication."
+        ],
+        "geometry_fields": [
+          "detector cell"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "hepdata_132368_v2.json@sha256:c0d3f00e46bf5c8f23883ef7000fc205e32da840ea8897b89e51cbbd221d52e4",
+        "schema_version": "1.0.0",
+        "timing_fields": [],
+        "transformations": [
+          "Preserve HEPData schema and collaboration confidence construction."
+        ],
+        "uncertainty_fields": [
+          "prompt-spectrum covariance"
+        ],
+        "units": {
+          "release_defined": "release-defined"
+        }
+      },
+      "count_semantics": "Core acquired HEPData tables",
+      "covariance_availability": "Published selected covariance available.",
+      "dataset_id": "STEREO",
+      "experiment": "STEREO",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Detector-cell structure/response.",
+      "known_limitations": [
+        "Do not treat test-statistic grids as Gaussian likelihoods.",
+        "Not direct LSC validation."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/STEREO/metadata/hepdata_132368_v2.json",
+      "number_of_objects": 6,
+      "orientation_availability": "NOT_APPLICABLE.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PUBLIC_RELEASE_HASH_VERIFIED",
+      "quality_grade": "A",
+      "raw_or_derived": "RAW_PUBLIC_METADATA",
+      "sha256": "c0d3f00e46bf5c8f23883ef7000fc205e32da840ea8897b89e51cbbd221d52e4",
+      "source_dois": [
+        "10.1038/s41586-022-05568-2",
+        "10.17182/hepdata.132368.v2"
+      ],
+      "source_reference": "https://www.hepdata.net/record/132368",
+      "timing_resolution": "Release-defined.",
+      "uncertainties": [
+        "prompt-spectrum covariance"
+      ],
+      "validation_role": "EXTERNAL_STERILE_BASELINE_CONTROL",
+      "version": "HEPData v2"
+    },
+    {
+      "allowed_tests": [
+        "T10"
+      ],
+      "available_observables": [
+        "14-channel spectra",
+        "constrained channels",
+        "364x364 systematic covariance",
+        "3D delta-chi-square map"
+      ],
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "contract": {
+        "allowed_rows": [
+          "Four acquired core products with their release metadata."
+        ],
+        "covariance_fields": [
+          "364x364 systematic covariance"
+        ],
+        "dataset_id": "MICROBOONE",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "No direct gallium inference or automatic likelihood multiplication."
+        ],
+        "geometry_fields": [
+          "release-defined"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "hepdata_166435.json@sha256:a206472feb62992cb3402360a906e3971388e6d18d89e190f1120f1ebc474dd6",
+        "schema_version": "1.0.0",
+        "timing_fields": [],
+        "transformations": [
+          "Preserve release channel ordering and confidence construction."
+        ],
+        "uncertainty_fields": [
+          "systematic covariance"
+        ],
+        "units": {
+          "release_defined": "release-defined"
+        }
+      },
+      "count_semantics": "Core acquired numerical products",
+      "covariance_availability": "364x364 systematic covariance available.",
+      "dataset_id": "MICROBOONE",
+      "experiment": "MicroBooNE",
+      "exposure_classification": "MODEL_EXPOSED",
+      "geometry_availability": "Beam/detector analysis geometry only.",
+      "known_limitations": [
+        "Preserve Combined Neyman-Pearson treatment.",
+        "Not direct LSC validation."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/MicroBooNE/metadata/hepdata_166435.json",
+      "number_of_objects": 4,
+      "orientation_availability": "NOT_APPLICABLE.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PUBLIC_RELEASE_HASH_VERIFIED",
+      "quality_grade": "A",
+      "raw_or_derived": "RAW_PUBLIC_METADATA",
+      "sha256": "a206472feb62992cb3402360a906e3971388e6d18d89e190f1120f1ebc474dd6",
+      "source_dois": [
+        "10.1038/s41586-025-09757-7",
+        "10.17182/hepdata.166435.v1"
+      ],
+      "source_reference": "https://www.hepdata.net/record/166435",
+      "timing_resolution": "Release-defined.",
+      "uncertainties": [
+        "systematic covariance; data statistical treatment is release-specific"
+      ],
+      "validation_role": "EXTERNAL_STERILE_BASELINE_CONTROL",
+      "version": "HEPData v1"
+    },
+    {
+      "allowed_tests": [],
+      "available_observables": [
+        "planned three-zone 58Co observables only"
+      ],
+      "blindness_level": "FUTURE_BLIND",
+      "contract": {
+        "allowed_rows": [
+          "Proposal metadata only; zero observation rows."
+        ],
+        "covariance_fields": [
+          "MISSING"
+        ],
+        "dataset_id": "BEST2_FUTURE",
+        "derived_field_policy": "Only deterministic, documented derivations are allowed and must retain an INFERENCE label.",
+        "exclusions": [
+          "All future observed values until a timestamped prediction freeze is sealed."
+        ],
+        "geometry_fields": [
+          "proposal geometry only"
+        ],
+        "missing_value_policy": "Preserve NOT_PUBLIC/UNRESOLVED; never impute a scientific value.",
+        "provenance_fields": [
+          "source",
+          "source_locator",
+          "value_status",
+          "sha256"
+        ],
+        "raw_source_identity": "BEST2_PREDICTION_TARGET.md@sha256:135472df388da8d532a9d98c7f00a75833d4e460c26c16f8cb661f6585a89ba3",
+        "schema_version": "1.0.0",
+        "timing_fields": [
+          "proposed schedule only"
+        ],
+        "transformations": [],
+        "uncertainty_fields": [
+          "proposal-only"
+        ],
+        "units": {
+          "proposal_fields": "source-defined"
+        }
+      },
+      "count_semantics": "No observed measurement objects",
+      "covariance_availability": "Not available.",
+      "dataset_id": "BEST2_FUTURE",
+      "experiment": "BEST-2",
+      "exposure_classification": "MODEL_PREEXISTING",
+      "geometry_availability": "Proposal geometry, not as-built survey.",
+      "known_limitations": [
+        "No observed results, source certificate, as-built geometry or final schedule.",
+        "No numerical prediction may be generated in Step 03."
+      ],
+      "local_path": "LSC_6_3_0_VALIDATION/10_BEST2_FUTURE/BEST2_PREDICTION_TARGET.md",
+      "number_of_objects": 0,
+      "orientation_availability": "Not available.",
+      "prohibited_tests": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12"
+      ],
+      "provenance_status": "PROPOSAL_HASH_VERIFIED",
+      "quality_grade": "E",
+      "raw_or_derived": "PROPOSAL_ONLY",
+      "sha256": "135472df388da8d532a9d98c7f00a75833d4e460c26c16f8cb661f6585a89ba3",
+      "source_dois": [
+        "10.1134/S106377881901006X",
+        "10.31857/S0044451025030058",
+        "10.1134/S1063779624702411"
+      ],
+      "source_reference": "https://arxiv.org/abs/2501.08127",
+      "timing_resolution": "Proposed 10 x 16-day exposures; actual calendar unavailable.",
+      "uncertainties": [
+        "proposal estimates only"
+      ],
+      "validation_role": "FUTURE_BLIND_PREDICTION_TARGET",
+      "version": "proposal archive 2026-08-16"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_of_truth": "ValidationDatasetRegistry"
+}

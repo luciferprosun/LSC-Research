@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_SCIENTIFIC_DECISION_FREEZE",
+  "created_utc": "2026-08-16T12:43:25Z",
+  "response_closure_extended_utc": "2026-08-16T13:09:08Z",
+  "step07a_commit": "2c7f29cab7aeb5d1ffb0aa2c2693ba9e13b6346d",
+  "historical_6_3_0_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+  "successor_version": "6.4.0",
+  "successor_version_reason": "new physical closure assumptions required",
+  "planned_6_3_1_executable_release": "ABANDONED_BEFORE_RELEASE",
+  "owner_authorized": false,
+  "implementation_authorized": false,
+  "canonical_sources": [
+    {
+      "path": "docs/scientific/STEP_07A_SCIENTIFIC_SPECIFICATION_ADJUDICATION.md",
+      "sha256": "9dec21385c0510653f45c1d98bc3b11a72776db9b7fd366f658083b8e1a861ca"
+    },
+    {
+      "path": "docs/scientific/OWNER_SCIENTIFIC_DECISIONS_REQUIRED.md",
+      "sha256": "e07a1069a97ef0aa66519d4b63c2de05d18bcc119563ddcde4e6913850978c63"
+    },
+    {
+      "path": "docs/scientific/GAUGE_IDENTIFIABILITY_ANALYSIS.md",
+      "sha256": "fc100720f7932e4ac23ef094c73b95870a191425e6fd850344c63797f1123732"
+    },
+    {
+      "path": "docs/scientific/MINIMAL_PHYSICAL_PARAMETER_SET.csv",
+      "sha256": "84eb443facdc3df3bd4846545a3bd2fa900ed6ade3e194f7852880b5cfefea56"
+    },
+    {
+      "path": "docs/scientific/PARAMETER_DETERMINATION_REQUIREMENTS.md",
+      "sha256": "1557d47d64f1fa9dc5d6ae51e554947951a9499760bebea77bb677d3646c607e"
+    },
+    {
+      "path": "docs/scientific/SCIENTIFIC_SPECIFICATION_DECISION_RECORD.md",
+      "sha256": "56e033e57a12113746cb62705ef8c9ca3599b88978e33a92dcec045a6d11fded"
+    },
+    {
+      "path": "spec/LSC_6_4_0_SCIENTIFIC_SPECIFICATION_DRAFT.yaml",
+      "sha256": "227d998133ff286c7833ffeb7408012e240b19dff28030feccd35dca4bf6bbe9"
+    },
+    {
+      "path": "docs/model/PARAMETER_IDENTIFIABILITY_AUDIT.md",
+      "sha256": "e1e6a41f874e501394c9131c1151adb94c6b85658d9965bc54962353dfb90bbe"
+    },
+    {
+      "path": "publication_boundary.json",
+      "sha256": "d5ca8db12b4caedaf720e746ea3fef0f37904e36d23cece0f029f3dc817963ac"
+    }
+  ],
+  "decision_space": [
+    {
+      "decision_id": "decision_1_response_function",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "options": {
+        "A": "Physically derived transferable functions (recommended)",
+        "B": "Finite preregistered phenomenological basis",
+        "C": "Observation-specific weighted moments"
+      },
+      "recommended_option": "A",
+      "owner_selection": null
+    },
+    {
+      "decision_id": "decision_2_tensor_family",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "options": {
+        "A": "Shared normalized uniaxial tensor with an a-priori axis (recommended for a full M6 model)",
+        "B": "Shared general 3-by-3 symmetric traceless tensor",
+        "C": "Disable the anisotropic sector"
+      },
+      "recommended_option": "C",
+      "owner_selection": null,
+      "physical_axis_status": "NO_JUSTIFIED_AXIS_AVAILABLE"
+    },
+    {
+      "decision_id": "decision_3_sharing_semantics",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "options": {
+        "A": "One physical tensor and one response law shared across experiments/zones (recommended)",
+        "B": "Zone tensors derived deterministically from a frozen geometry law",
+        "C": "Independently fitted zone or experiment tensors"
+      },
+      "recommended_option": "A",
+      "owner_selection": null
+    }
+  ],
+  "recommended_configuration": {
+    "configuration_id": "R-A_T-C_S-A",
+    "response_option": "A",
+    "tensor_option": "C",
+    "sharing_option": "A",
+    "physical_free_parameter_count": 1,
+    "parameters_requiring_determination": [
+      "owner selection of one exact fixed normalized scalar response equation and its external-function provenance",
+      "alpha_0 value and scientifically justified bounds"
+    ],
+    "BEST2_capability": "PROSPECTIVE_SCHEMA_CAPABLE",
+    "BEST2_status": "FUTURE_ONLY",
+    "BEST2_blindness": "FUTURE_BLIND"
+  },
+  "generated_artifacts": [
+    {
+      "path": "docs/scientific/LSC_6_4_0_OWNER_DECISION_MATRIX.md",
+      "role": "three-decision and 27-combination scientific assessment",
+      "sha256": "88bc442f36110bbb23656f29a295676720dcbcea81ad4fe2d81a11b85c482243"
+    },
+    {
+      "path": "LSC_6_4_0_IMPLEMENTATION_CONTRACT.json",
+      "role": "owner-gated implementation contract",
+      "sha256": "638b57fcb8945716df388d7497f465a3c71a0e65e2b255087292e039e31426b0"
+    },
+    {
+      "path": "OWNER_AUTHORIZATION_REQUIRED.md",
+      "role": "exactly three owner authorization decisions",
+      "sha256": "cb1b2a70742582ca2b2e8eac35ea6135ec87a07dae94e2aeb40a27fac99d36fd"
+    },
+    {
+      "path": "docs/scientific/LSC_6_4_0_PARAMETER_DETERMINATION_REGISTRY.csv",
+      "role": "future parameter-determination registry",
+      "sha256": "f23526d416076f1658a2ca7c2aaacc2fad4b074db709204ee23c3e614a69834a"
+    }
+  ],
+  "decision_matrix_sha256": "88bc442f36110bbb23656f29a295676720dcbcea81ad4fe2d81a11b85c482243",
+  "implementation_contract_sha256": "638b57fcb8945716df388d7497f465a3c71a0e65e2b255087292e039e31426b0",
+  "response_closure_extension": {
+    "step": "07B.1",
+    "verdict": "RESPONSE_A_NEW_PHYSICAL_HYPOTHESIS_OPTIONS_READY",
+    "candidate_specification": {
+      "path": "spec/LSC_6_4_0_RESPONSE_A_CANDIDATES.json",
+      "sha256": "3e46905843266b4c5e249825fb79b98e2e2405ab51a826e9ee232fae8eb8d7db"
+    },
+    "alpha0_determination_contract": {
+      "path": "LSC_6_4_0_ALPHA0_DETERMINATION_CONTRACT.json",
+      "sha256": "dd7b129ede3d8cbab2601a180a574e55be728150376575337039433636b23dae"
+    },
+    "recommended_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+    "owner_selected_candidate_id": null,
+    "owner_authorized": false,
+    "ready_for_implementation": false
+  },
+  "safety_state": {
+    "fit_performed": false,
+    "prediction_performed": false,
+    "T1_T12_performed": false,
+    "BEST2_observed_data_accessed": false,
+    "BEST2_prediction_generated": false,
+    "sky_scan_performed": false,
+    "release_created": false,
+    "tag_created": false,
+    "push_performed": false,
+    "publication_performed": false
+  },
+  "next_gate": {
+    "ready_for_owner_authorization": true,
+    "ready_for_step07c_now": false,
+    "step07c_requires": [
+      "owner authorization of all three decisions",
+      "exact Response A equation payload and provenance",
+      "regenerated hash-bound authorized implementation contract"
+    ]
+  }
+}

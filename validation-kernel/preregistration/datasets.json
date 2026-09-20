@@ -1,0 +1,6 @@
+{
+  "$ref": "validation_datasets.json",
+  "note": "Checksum-bound alias; validation_datasets.json is the sole machine-readable dataset source of truth.",
+  "schema_version": "1.0.0",
+  "sha256": "4e5ab9c4ab3020ad2a75c761f9b191cb3769202495255472bc73cd6a76f52381"
+}

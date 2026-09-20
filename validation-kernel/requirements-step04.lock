@@ -1,0 +1,8 @@
+# Exact environment used for the Step 04 statistical validation run.
+iniconfig==2.3.0
+numpy==2.5.2
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.20.0
+pytest==9.1.1
+scipy==1.18.0

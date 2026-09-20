@@ -1,0 +1,12 @@
+claim,status,reason,evidence,allowed_in_publication
+"A2/C/A was implemented reproducibly","ALLOWED","The evaluator, hashes, golden vectors and independent implementation passed","STEP_07C report; model hash 4a8f40e59431a27f8f4d5bc9809a706125a46ebdb5728458e4b04503e935b6f2","YES"
+"The alpha_0 determination was preregistered","ALLOWED","The objective, data, bounds, covariance and failure criteria were frozen before the single run","LSC_6_4_0_PRE_FIT_FREEZE.json","YES"
+"The determination was boundary dominated","ALLOWED","The unconstrained optimum was outside the frozen linear domain and the constrained result lay on its lower boundary","LSC_6_4_0_ALPHA0_DETERMINATION_RESULT.json","YES"
+"No 6.4.0 parameter was frozen","ALLOWED","The failure policy prohibited promotion of the boundary diagnostic","LSC_6_4_0_STEP07C_STATUS.json","YES"
+"No validation followed the failed determination","ALLOWED","No retrospective smoke, holdout evaluation or BEST-2 prediction was performed","STEP_07C report","YES"
+"LSC 6.4.0 was validated or confirmed","PROHIBITED","No valid parameter bundle or validation execution exists","STEP_07C report","NO"
+"LSC 6.4.0 was fit successfully","PROHIBITED","Numerical optimizer convergence did not satisfy the preregistered scientific acceptance criteria","LSC_6_4_0_ALPHA0_DETERMINATION_RESULT.json","NO"
+"The boundary value is the LSC 6.4.0 alpha_0 parameter","PROHIBITED","It is a constrained diagnostic and parameter_bundle_frozen=false","LSC_6_4_0_ALPHA0_DETERMINATION_RESULT.json","NO"
+"LSC 6.4.0 was falsified","PROHIBITED","The result is a failed development-parameter determination under a bounded approximation, not a model-validation test","LSC_6_4_0_ADVERSE_RESULT_RECORD.md","NO"
+"An exact nonlinear response is part of LSC 6.4.0","PROHIBITED","Changing predictive closure after the adverse result requires a new model version and owner authorization","LSC_6_4_0_ADVERSE_RESULT_FREEZE.json","NO"
+"LSC 6.4.0 is release ready","PROHIBITED","No parameter bundle or release candidate exists","LSC_6_4_0_STEP07C_STATUS.json","NO"

@@ -1,0 +1,29 @@
+digraph LSC_E1_E12 {
+  rankdir=LR;
+  E1 [label="E1"];
+  E2 [label="E2"];
+  E3 [label="E3"];
+  E4 [label="E4"];
+  E5 [label="E5"];
+  E6 [label="E6"];
+  E7 [label="E7"];
+  E8 [label="E8"];
+  E9 [label="E9"];
+  E10 [label="E10"];
+  E11 [label="E11"];
+  E12 [label="E12"];
+  E1 -> E6 [style="solid"];
+  E1 -> E8 [style="solid"];
+  E2 -> E5 [style="solid"];
+  E3 -> E2 [style="solid"];
+  E3 -> E8 [style="solid"];
+  E4 -> E3 [style="solid"];
+  E4 -> E12 [style="solid"];
+  E6 -> E9 [style="solid"];
+  E6 -> E10 [style="solid"];
+  E7 -> E10 [style="dashed"];
+  E8 -> E7 [style="solid"];
+  E5 -> E10 [style="dashed"];
+  E11 -> E3 [style="solid"];
+  E11 -> E12 [style="solid"];
+}

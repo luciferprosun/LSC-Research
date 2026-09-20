@@ -1,0 +1,156 @@
+{
+  "nuisances": [
+    {
+      "category": "source activity",
+      "correlated_across_experiments": false,
+      "correlated_across_isotopes": false,
+      "correlated_across_runs": true,
+      "correlated_across_zones": true,
+      "experiment": "source experiment",
+      "nuisance_id": "NUIS_SOURCE_ACTIVITY",
+      "published_covariance": "NO_COMPLETE_MATRIX",
+      "scope": "run/source campaign",
+      "treatment_scenarios": [
+        "fixed published",
+        "profile with published prior",
+        "covariance sensitivity"
+      ]
+    },
+    {
+      "category": "extraction efficiency",
+      "correlated_across_experiments": false,
+      "correlated_across_isotopes": false,
+      "correlated_across_runs": false,
+      "correlated_across_zones": true,
+      "experiment": "gallium",
+      "nuisance_id": "NUIS_EXTRACTION_EFFICIENCY",
+      "published_covariance": "NO_COMPLETE_MATRIX",
+      "scope": "run/extraction",
+      "treatment_scenarios": [
+        "profile with published uncertainty",
+        "sensitivity"
+      ]
+    },
+    {
+      "category": "counting efficiency",
+      "correlated_across_experiments": false,
+      "correlated_across_isotopes": false,
+      "correlated_across_runs": false,
+      "correlated_across_zones": false,
+      "experiment": "gallium",
+      "nuisance_id": "NUIS_COUNTING_EFFICIENCY",
+      "published_covariance": "NO_COMPLETE_MATRIX",
+      "scope": "counter/run",
+      "treatment_scenarios": [
+        "profile with published uncertainty",
+        "sensitivity"
+      ]
+    },
+    {
+      "category": "background/radon",
+      "correlated_across_experiments": false,
+      "correlated_across_isotopes": false,
+      "correlated_across_runs": false,
+      "correlated_across_zones": false,
+      "experiment": "gallium",
+      "nuisance_id": "NUIS_BACKGROUND_RADON",
+      "published_covariance": "NO_COMPLETE_MATRIX",
+      "scope": "counter/run",
+      "treatment_scenarios": [
+        "dataset-native likelihood only",
+        "sensitivity"
+      ]
+    },
+    {
+      "category": "geometry",
+      "correlated_across_experiments": false,
+      "correlated_across_isotopes": false,
+      "correlated_across_runs": true,
+      "correlated_across_zones": true,
+      "experiment": "all",
+      "nuisance_id": "NUIS_GEOMETRY",
+      "published_covariance": "PARTIAL",
+      "scope": "zone/detector",
+      "treatment_scenarios": [
+        "fixed published geometry",
+        "source-defined nuisance"
+      ]
+    },
+    {
+      "category": "detector efficiency",
+      "correlated_across_experiments": false,
+      "correlated_across_isotopes": false,
+      "correlated_across_runs": false,
+      "correlated_across_zones": true,
+      "experiment": "all",
+      "nuisance_id": "NUIS_DETECTOR_EFFICIENCY",
+      "published_covariance": "DATASET_SPECIFIC",
+      "scope": "detector/run",
+      "treatment_scenarios": [
+        "dataset-native treatment"
+      ]
+    },
+    {
+      "category": "gallium capture cross section",
+      "correlated_across_experiments": true,
+      "correlated_across_isotopes": true,
+      "correlated_across_runs": true,
+      "correlated_across_zones": true,
+      "experiment": "gallium",
+      "nuisance_id": "NUIS_GA_CAPTURE_XS",
+      "published_covariance": "JOINT_MATRIX_NOT_PUBLIC",
+      "scope": "isotope/model",
+      "treatment_scenarios": [
+        "registered model scan",
+        "shared nuisance sensitivity"
+      ]
+    },
+    {
+      "category": "isotope transition uncertainty",
+      "correlated_across_experiments": true,
+      "correlated_across_isotopes": true,
+      "correlated_across_runs": true,
+      "correlated_across_zones": true,
+      "experiment": "gallium",
+      "nuisance_id": "NUIS_ISOTOPE_TRANSITION",
+      "published_covariance": "JOINT_MATRIX_NOT_PUBLIC",
+      "scope": "isotope/model",
+      "treatment_scenarios": [
+        "registered model scan",
+        "shared nuisance sensitivity"
+      ]
+    },
+    {
+      "category": "experiment normalization",
+      "correlated_across_experiments": false,
+      "correlated_across_isotopes": false,
+      "correlated_across_runs": true,
+      "correlated_across_zones": true,
+      "experiment": "all",
+      "nuisance_id": "NUIS_EXPERIMENT_NORMALIZATION",
+      "published_covariance": "MODEL_DEPENDENT",
+      "scope": "experiment",
+      "treatment_scenarios": [
+        "M4 fit in training subset only",
+        "hierarchical baseline"
+      ]
+    },
+    {
+      "category": "shared nuclear uncertainty",
+      "correlated_across_experiments": true,
+      "correlated_across_isotopes": true,
+      "correlated_across_runs": true,
+      "correlated_across_zones": true,
+      "experiment": "gallium",
+      "nuisance_id": "NUIS_SHARED_NUCLEAR",
+      "published_covariance": "NOT_PUBLIC",
+      "scope": "cross-isotope",
+      "treatment_scenarios": [
+        "COV_FULLY_COMMON_SELECTED",
+        "COV_PLAUSIBLE_SCAN",
+        "COV_COLLABORATION"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}

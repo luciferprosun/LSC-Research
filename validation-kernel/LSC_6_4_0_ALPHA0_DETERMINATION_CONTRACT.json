@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_ALPHA0_FUTURE_DETERMINATION_CONTRACT",
+  "model_version": "6.4.0",
+  "status": "PRE_FIT_FREEZE_INCOMPLETE_OWNER_SELECTION_REQUIRED",
+  "parameter": {
+    "parameter_id": "LSC640-PHYS-01",
+    "symbol": "alpha_0",
+    "datatype": "float64",
+    "units": "dimensionless",
+    "physical_parameter": true,
+    "empirical_parameter": "CONDITIONAL",
+    "shared_across_zones_exposures_sources_isotopes_and_experiments": true,
+    "refittable_between_experiments": false,
+    "candidate_conditional_meanings": {
+      "RESPONSE_A1_UNIVERSAL_SCALE": "signed fractional baseline-response change",
+      "RESPONSE_A2_CAPTURE_ENERGY_DILATION": "signed logarithmic incident-neutrino-energy dilation d(ln E)",
+      "RESPONSE_A3_DETECTOR_ENERGY_DILATION": "signed logarithmic detector energy-axis dilation d(ln E)"
+    },
+    "recommended_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+    "recommended_sign_convention": "positive alpha_0 evaluates the selected conventional response at larger E",
+    "theoretical_domain": "candidate-specific positivity domain; a finite numerical interval is not yet source-derived",
+    "preregistered_lower_bound": null,
+    "preregistered_upper_bound": null,
+    "value": null,
+    "uncertainty": null,
+    "prior": null
+  },
+  "determination_precedence": [
+    "independent theory",
+    "independent calibration with exact provenance",
+    "one preregistered retrospective historical development set"
+  ],
+  "pre_fit_freeze_requirements": {
+    "owner_authorization": "REQUIRED",
+    "selected_response_candidate": "REQUIRED",
+    "response_equation_hash": "REQUIRED",
+    "normalization_hash": "REQUIRED",
+    "domain_hash": "REQUIRED",
+    "parameter_bounds": "REQUIRED",
+    "single_objective_function": "REQUIRED",
+    "development_dataset_manifest": "REQUIRED_IF_EMPIRICAL",
+    "covariance_scenario": "REQUIRED_IF_EMPIRICAL",
+    "nuisance_policy": "REQUIRED_IF_EMPIRICAL",
+    "optimizer_and_tolerances": "REQUIRED_IF_EMPIRICAL",
+    "identifiability_rank_check": "REQUIRED",
+    "stopping_rule": "REQUIRED_IF_EMPIRICAL"
+  },
+  "development_data_policy": {
+    "historical_gallium_use_allowed": "ONLY_AFTER_OWNER_AUTHORIZATION_AND_PRE_FIT_FREEZE",
+    "required_label_if_used": "RETROSPECTIVE_NON_BLIND_MODEL_EXPOSED",
+    "exact_dataset_ids_rows_and_sha256_required": true,
+    "one_development_objective_only": true,
+    "holdout_data_in_objective_forbidden": true,
+    "BEST2_observed_data_allowed": false,
+    "future_prospective_data_allowed": false
+  },
+  "objective": {
+    "status": "NOT_SELECTED",
+    "allowed_scope": "one frozen development objective after owner authorization",
+    "goodness_of_fit_used_in_step07b1": false
+  },
+  "covariance_policy": {
+    "status": "NOT_SELECTED",
+    "collaboration_covariance_required_for_collaboration_level_inference": true,
+    "assumption_based_covariance_label": "SENSITIVITY_ONLY",
+    "scenario_selection_after_outcome_forbidden": true
+  },
+  "no_refit_rule": {
+    "after_parameter_freeze": true,
+    "between_experiments": true,
+    "after_target_result_access": true,
+    "BEST2": true,
+    "violation_requires_new_model_revision_and_exposure_disclosure": true
+  },
+  "authorization": {
+    "owner_authorized": false,
+    "parameter_determination_authorized": false,
+    "fit_authorized": false,
+    "prediction_authorized": false,
+    "validation_authorized": false
+  },
+  "safety_receipt": {
+    "fit_performed_in_step07b1": false,
+    "parameter_value_selected_in_step07b1": false,
+    "bounds_selected_in_step07b1": false,
+    "historical_outcome_used_for_response_selection": false,
+    "BEST2_observed_data_accessed": false,
+    "prediction_generated": false
+  }
+}

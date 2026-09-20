@@ -1,0 +1,119 @@
+{
+  "edges": [
+    {
+      "rationale": "E6 consumes N0_a from E1.",
+      "source": "E1",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E6"
+    },
+    {
+      "rationale": "E8 requires the same flux, cross-section, geometry, and exposure weighting used in E1.",
+      "source": "E1",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E8"
+    },
+    {
+      "rationale": "E5 consumes epsilon_LSC,a from E2.",
+      "source": "E2",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E5"
+    },
+    {
+      "rationale": "E2 consumes q_a from E3.",
+      "source": "E3",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E2"
+    },
+    {
+      "rationale": "E8 consumes q_a from E3.",
+      "source": "E3",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E8"
+    },
+    {
+      "rationale": "E4 constrains the tensor used by E3.",
+      "source": "E4",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E3"
+    },
+    {
+      "rationale": "E4 constrains the tensor used by E12.",
+      "source": "E4",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E12"
+    },
+    {
+      "rationale": "E9 is assembled from inner and outer ratios.",
+      "source": "E6",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E9"
+    },
+    {
+      "rationale": "E10 consumes observed ratios.",
+      "source": "E6",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E10"
+    },
+    {
+      "rationale": "E7 may provide R_pred residuals, but the source does not freeze this binding.",
+      "source": "E7",
+      "status": "UNVERIFIED_DEPENDENCY",
+      "target": "E10"
+    },
+    {
+      "rationale": "E7 consumes F0_a and FA_a from E8.",
+      "source": "E8",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E7"
+    },
+    {
+      "rationale": "E5 may provide predictions for E10, but the exact ratio binding is not frozen.",
+      "source": "E5",
+      "status": "UNVERIFIED_DEPENDENCY",
+      "target": "E10"
+    },
+    {
+      "rationale": "E11 produces n_lab used by E3.",
+      "source": "E11",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E3"
+    },
+    {
+      "rationale": "E11 produces n_lab used by E12.",
+      "source": "E11",
+      "status": "SOURCE_DERIVED_DEPENDENCY",
+      "target": "E12"
+    }
+  ],
+  "graph_type": "DIRECTED_ACYCLIC_GRAPH",
+  "nodes": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E10",
+    "E11",
+    "E12"
+  ],
+  "policy": "No sequential edge is implied merely by equation numbering.",
+  "schema_version": "1.0.0",
+  "topological_order": [
+    "E1",
+    "E4",
+    "E6",
+    "E9",
+    "E11",
+    "E3",
+    "E2",
+    "E5",
+    "E8",
+    "E7",
+    "E10",
+    "E12"
+  ]
+}

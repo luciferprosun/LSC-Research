@@ -1,0 +1,153 @@
+{
+  "count": 16,
+  "missing": [
+    {
+      "blocks_executable_evaluation": true,
+      "object": "theta",
+      "reason": "No complete numerical vector or authoritative serialization was recovered.",
+      "source": "missing-full-theta",
+      "status": "MISSING",
+      "symbol": "theta"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "parameter_ordering",
+      "reason": "No authoritative ordered vector or checkpoint layout was recovered.",
+      "source": "missing-parameter-ordering",
+      "status": "MISSING",
+      "symbol": "order(theta)"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "lambda0",
+      "reason": "The symbol is frozen, but its numerical value and unit normalization are not.",
+      "source": "missing-lambda0",
+      "status": "MISSING",
+      "symbol": "lambda0"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "lambdaA",
+      "reason": "The symbol is frozen, but its numerical value and unit normalization are not.",
+      "source": "missing-lambdaA",
+      "status": "MISSING",
+      "symbol": "lambdaA"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "f0_a",
+      "reason": "The freeze boundary explicitly says the exact functional form is not frozen.",
+      "source": "missing-f0-a",
+      "status": "MISSING",
+      "symbol": "f0_a(E,t)"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "fA_a",
+      "reason": "The freeze boundary explicitly says the exact functional form is not frozen.",
+      "source": "missing-fA-a",
+      "status": "MISSING",
+      "symbol": "fA_a(E,t)"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "active_anisotropy_tensor",
+      "reason": "No version-safe active components were recovered.",
+      "source": "missing-active-tensor-components",
+      "status": "MISSING",
+      "symbol": "A_a^{ij}"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "tensor_orientation",
+      "reason": "No direction, Euler angles, rotation, or equivalent frozen object was recovered.",
+      "source": "missing-tensor-orientation",
+      "status": "MISSING",
+      "symbol": "orientation(A_a^{ij})"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "complete_reference_frame",
+      "reason": "ICRS and lab names are symbolic; the complete transform metadata are absent.",
+      "source": "missing-coordinate-frame",
+      "status": "MISSING",
+      "symbol": "frame"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "eta",
+      "reason": "Roles are frozen, but an ordered numerical nuisance contract and bounds are absent.",
+      "source": "canonical-parameter-structures",
+      "status": "MISSING",
+      "symbol": "eta"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "covariance",
+      "reason": "The full covariance object and its unit convention are not frozen.",
+      "source": "canonical-parameter-structures",
+      "status": "MISSING",
+      "symbol": "C"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "numerical_configuration",
+      "reason": "No complete frozen numerical configuration was recovered.",
+      "source": "missing-frozen-numeric-config",
+      "status": "MISSING",
+      "symbol": "config"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "parameter_bounds",
+      "reason": "The freeze boundary explicitly classifies final bounds as not frozen.",
+      "source": "missing-final-bounds",
+      "status": "MISSING",
+      "symbol": "bounds(theta,eta)"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "numerical_defaults",
+      "reason": "The symbolic integrals have no complete executable numerical contract.",
+      "source": "missing-numerical-defaults",
+      "status": "MISSING",
+      "symbol": "numerical_defaults"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "frozen_prediction_table",
+      "reason": "Existing tables are post-data, fitted, or unrelated.",
+      "source": "missing-frozen-prediction-table",
+      "status": "MISSING",
+      "symbol": "R_pred"
+    },
+    {
+      "blocks_executable_evaluation": true,
+      "object": "executable_evaluator_inputs",
+      "reason": "No machine-executable E1-E12 input contract was frozen.",
+      "source": "missing-e1-e12-evaluator",
+      "status": "MISSING",
+      "symbol": "inputs(E1-E12)"
+    }
+  ],
+  "model_identity": {
+    "canonical_version": "6.3.0-pre-BEST2-freeze-update",
+    "freeze_commit": "a6d582694d55fa0260ef7ab07ed83fd06feef607",
+    "historical_git_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+    "kernel_schema_version": "1.0.0",
+    "model_name": "LSC",
+    "provenance_registry_checksum": "f8c595a27f4352424712dab2300c2e01bdafd8cdda4ba5fabef50c1feb77d67c",
+    "source_manifest_checksum": "e16b7b5ac775389aa3fdf5b319d0ecb3460eab3bf3126f850d1ef4da84c659ce",
+    "symbolic_equation_set_identity": "LSC-E1-E12@sha256:af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981",
+    "zenodo_concept_doi": "10.5281/zenodo.19780615",
+    "zenodo_version_doi": "10.5281/zenodo.20377427"
+  },
+  "provenance_registry_sha256": "f8c595a27f4352424712dab2300c2e01bdafd8cdda4ba5fabef50c1feb77d67c",
+  "schema_version": "1.0.0",
+  "t12_additional_metadata_blockers": [
+    "precise_timing",
+    "surveyed_orientation",
+    "sufficient_geometry",
+    "required_reference_frames"
+  ]
+}

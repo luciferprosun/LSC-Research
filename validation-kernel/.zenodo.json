@@ -1,0 +1,43 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "affiliation": "Independent Research",
+      "name": "LuciferSun"
+    },
+    {
+      "affiliation": "Independent Research",
+      "name": "flAmeBorn"
+    },
+    {
+      "name": "LINZ HOSS"
+    }
+  ],
+  "description": "Fail-closed reproducibility, preregistration, audit, and future-validation infrastructure accompanying the frozen LSC 6.5.0 scientific model. Experimental validation has not yet been performed.",
+  "keywords": [
+    "reproducibility",
+    "validation",
+    "preregistration",
+    "scientific software"
+  ],
+  "language": "eng",
+  "license": "mit",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22007108",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "10.5281/zenodo.19780615",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-Validation-Kernel",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    }
+  ],
+  "title": "LSC Validation Kernel",
+  "upload_type": "software",
+  "version": "0.6.0"
+}

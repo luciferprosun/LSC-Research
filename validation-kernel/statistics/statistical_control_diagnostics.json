@@ -1,0 +1,244 @@
+{
+  "IceCube": {
+    "all_indexed_files_exist": true,
+    "all_indexed_sizes_match": true,
+    "classification": "STATISTICAL_ENGINE_CONTROL",
+    "constraint_id": "ICECUBE",
+    "dois_by_release": {
+      "DeepCore_7p5y_sterile": [
+        "10.7910/DVN/QKL28Z"
+      ],
+      "IceTracks_DR2": [
+        "10.7910/DVN/MMIIZA"
+      ],
+      "Upgrade_oscillation_potential": [
+        "10.7910/DVN/OSPLDG"
+      ]
+    },
+    "file_records": 52,
+    "index_sha256": "e2a93f7af91671bc60714c16a2e84b858b7969d9a5297690245490324ba48548",
+    "mapping_state": "EXTERNAL_VETO_BLOCKED_MAPPING_MISSING",
+    "numerical_objects": {
+      "07_ICECUBE/DeepCore_7p5y_sterile/data/marginalized_umu4_sq.csv": {
+        "finite": true,
+        "sha256": "b1fcb97c2e871a342198be8447bfa92d2113d8615de6b5863b42f218c945fc4d",
+        "shape": [
+          500,
+          2
+        ]
+      },
+      "07_ICECUBE/DeepCore_7p5y_sterile/data/marginalized_utau4_sq.csv": {
+        "finite": true,
+        "sha256": "bfa9959da8151c52334f0c073955a65c9add7eb0c996faf86c4993eeccae2762",
+        "shape": [
+          500,
+          2
+        ]
+      },
+      "07_ICECUBE/DeepCore_7p5y_sterile/data/oscnext_sterile_sensitivity_90pct.csv": {
+        "finite": true,
+        "sha256": "0bf4f3b76da49bdda014c8ead4e1b50a0d380b8cd6e0dc5fcac7e97b5d6ea62b",
+        "shape": [
+          59,
+          2
+        ]
+      },
+      "07_ICECUBE/DeepCore_7p5y_sterile/data/real_data_wilks_contours_reprod_mar_2025_metric_diff.csv": {
+        "finite": true,
+        "sha256": "368b7c34bee108a6c05fef9958e9c9ceefcc1b24c980a2a9e3571e19cc64f66e",
+        "shape": [
+          420,
+          3
+        ]
+      },
+      "07_ICECUBE/DeepCore_7p5y_sterile/data/wilks_contour_90pct.csv": {
+        "finite": true,
+        "sha256": "f9bc8e3bd884307d65e2370c3cede181fde3a94c689184a3d87cdb7141760df7",
+        "shape": [
+          54,
+          2
+        ]
+      },
+      "07_ICECUBE/Upgrade_oscillation_potential/data/modchi2map_icecube.csv": {
+        "finite": true,
+        "sha256": "4e96b531742cbde7d77126b2653a61fd98b934f2cbef3ff3ba2ab2267f3a98db",
+        "shape": [
+          121,
+          3
+        ]
+      },
+      "07_ICECUBE/Upgrade_oscillation_potential/data/modchi2map_nufitwSK.csv": {
+        "finite": true,
+        "sha256": "2044b2c490138e1903bf6d93db4b5106c4d64a021ab57d7805a8525ef5b3f356",
+        "shape": [
+          121,
+          3
+        ]
+      },
+      "07_ICECUBE/Upgrade_oscillation_potential/data/modchi2map_nufitwoSK.csv": {
+        "finite": true,
+        "sha256": "f76c66d486ab64084db669399af87f9178aaaf9c40d0500e317a89083b64b4c6",
+        "shape": [
+          121,
+          3
+        ]
+      }
+    },
+    "numerical_objects_validated": 8,
+    "release_identities": [
+      "DeepCore_7p5y_sterile",
+      "IceTracks_DR2",
+      "Upgrade_oscillation_potential"
+    ],
+    "release_loading_ready": true
+  },
+  "MicroBooNE": {
+    "diagnostics": {
+      "condition_number_nonzero_spectrum": 667668231.8325582,
+      "condition_number_positive_subspace": 667668231.8325582,
+      "finite": true,
+      "maximum_eigenvalue": 18348287.992124237,
+      "minimum_eigenvalue": 0.027481145750732277,
+      "near_zero_eigenvalue_count": 0,
+      "negative_eigenvalue_count": 0,
+      "positive_eigenvalue_count": 364,
+      "positive_semidefinite_within_tolerance": true,
+      "rank": 364,
+      "rank_tolerance": 1.4829863624073397e-06,
+      "shape": [
+        364,
+        364
+      ],
+      "singular_within_tolerance": false,
+      "square": true,
+      "symmetric": true,
+      "symmetry_tolerance": 1e-10
+    },
+    "path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/MicroBooNE/HEPData/covariance_14_channels.json",
+    "sha256": "7b8dbb4551b0ccb164de73cecbfa3fefa5fd8c48a5f97af004daf0855363339a"
+  },
+  "PROSPECT": {
+    "BackgroundCovMatrix.txt": {
+      "diagnostics": {
+        "condition_number_nonzero_spectrum": 639924877407.3445,
+        "condition_number_positive_subspace": 205580485560.35712,
+        "finite": true,
+        "maximum_eigenvalue": 0.019821023198634706,
+        "minimum_eigenvalue": -3.8846344716958786e-11,
+        "near_zero_eigenvalue_count": 446,
+        "negative_eigenvalue_count": 241,
+        "positive_eigenvalue_count": 303,
+        "positive_semidefinite_within_tolerance": false,
+        "rank": 544,
+        "rank_tolerance": 4.357139752697216e-15,
+        "shape": [
+          990,
+          990
+        ],
+        "singular_within_tolerance": true,
+        "square": true,
+        "symmetric": true,
+        "symmetry_tolerance": 1e-10
+      },
+      "path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/PROSPECT/Source/anc/data/CovarianceMatrices/BackgroundCovMatrix.txt",
+      "sha256": "8ade9b64c5d3089346416ab52580adcec6c4b0992cd0807b6c91226e8e906c87"
+    },
+    "StatisticalCovMatrix.txt": {
+      "diagnostics": {
+        "condition_number_nonzero_spectrum": 5862.569285585615,
+        "condition_number_positive_subspace": 1047.7505336387312,
+        "finite": true,
+        "maximum_eigenvalue": 368.41217763363505,
+        "minimum_eigenvalue": -16.759612792728834,
+        "near_zero_eigenvalue_count": 0,
+        "negative_eigenvalue_count": 16,
+        "positive_eigenvalue_count": 974,
+        "positive_semidefinite_within_tolerance": false,
+        "rank": 990,
+        "rank_tolerance": 8.098589706790865e-11,
+        "shape": [
+          990,
+          990
+        ],
+        "singular_within_tolerance": false,
+        "square": true,
+        "symmetric": true,
+        "symmetry_tolerance": 1e-10
+      },
+      "path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/PROSPECT/Source/anc/data/CovarianceMatrices/StatisticalCovMatrix.txt",
+      "sha256": "970fcde05d8f9d6cd8a853f4fe25b15f261dfb0034b0dcfce5fb0211da3fab26"
+    },
+    "SystematicCovMatrix.txt": {
+      "diagnostics": {
+        "condition_number_nonzero_spectrum": 3206181088393.7246,
+        "condition_number_positive_subspace": 3206181088393.7246,
+        "finite": true,
+        "maximum_eigenvalue": 4.549755993517673,
+        "minimum_eigenvalue": -0.008427543109788996,
+        "near_zero_eigenvalue_count": 0,
+        "negative_eigenvalue_count": 368,
+        "positive_eigenvalue_count": 622,
+        "positive_semidefinite_within_tolerance": false,
+        "rank": 990,
+        "rank_tolerance": 1.0001462843650657e-12,
+        "shape": [
+          990,
+          990
+        ],
+        "singular_within_tolerance": false,
+        "square": true,
+        "symmetric": true,
+        "symmetry_tolerance": 1e-10
+      },
+      "path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/PROSPECT/Source/anc/data/CovarianceMatrices/SystematicCovMatrix.txt",
+      "sha256": "b41be2ce932e3c6e2c83669714276b91bb75d8bdaace9297e6645c5165df3aa8"
+    }
+  },
+  "STEREO": {
+    "compatibility_note": "The covariance is 44x44 over two concatenated prompt spectra; the response stores a 22-bin prompt axis and a distinct 22-bin neutrino-energy axis in two y groups. Compatibility is therefore checked on the shared prompt-energy axis, not by falsely equating prompt and neutrino axes.",
+    "covariance": {
+      "condition_number_nonzero_spectrum": 103.42523536517146,
+      "condition_number_positive_subspace": 103.42523536517146,
+      "finite": true,
+      "maximum_eigenvalue": 1.5046149451607954e-89,
+      "minimum_eigenvalue": 1.4547851303875068e-91,
+      "near_zero_eigenvalue_count": 0,
+      "negative_eigenvalue_count": 0,
+      "positive_eigenvalue_count": 44,
+      "positive_semidefinite_within_tolerance": true,
+      "rank": 44,
+      "rank_tolerance": 1.4700031766751165e-103,
+      "shape": [
+        44,
+        44
+      ],
+      "singular_within_tolerance": false,
+      "square": true,
+      "symmetric": true,
+      "symmetry_tolerance": 1e-10
+    },
+    "covariance_energy_axes": [
+      22,
+      22
+    ],
+    "covariance_path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/STEREO/HEPData/prompt_spectra_covariance.json",
+    "covariance_prompt_axis_matches_response_prompt_axis": true,
+    "covariance_sha256": "4a2ecbafe78fea03b6f7ce123665e3c7795230b0187e6ee6ef87b0b93f140511",
+    "measured_energy_bins": 11,
+    "response_entry_shape": [
+      22,
+      22
+    ],
+    "response_finite": true,
+    "response_groups": [
+      0,
+      1
+    ],
+    "response_path": "LSC_6_3_0_VALIDATION/09_OTHER_NEUTRINO_CONSTRAINTS/STEREO/HEPData/detector_response_matrix.json",
+    "response_sha256": "373d392b3f869bf076cfa15ec0ce28f486dc387320999225cbe6ca26e425c44f"
+  },
+  "classification": "STATISTICAL_ENGINE_CONTROL",
+  "passed": true,
+  "physical_LSC_interpretation_authorized": false,
+  "schema_version": "1.0.0"
+}

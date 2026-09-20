@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_STEP_07B1_RESPONSE_CLOSURE_FREEZE",
+  "created_utc": "2026-08-16T13:20:17Z",
+  "input_head": "8e5162ab398cd5b5b12b85569daa75b857d39a89",
+  "step07a_commit": "2c7f29cab7aeb5d1ffb0aa2c2693ba9e13b6346d",
+  "historical_6_3_0_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+  "model_version": "6.4.0",
+  "planned_6_3_1_executable_release": "ABANDONED_BEFORE_RELEASE",
+  "closure_verdict": "RESPONSE_A_NEW_PHYSICAL_HYPOTHESIS_OPTIONS_READY",
+  "unique_backbone_derived_response_found": false,
+  "response_candidate_count": 3,
+  "recommended_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+  "owner_selected_candidate_id": null,
+  "owner_authorized": false,
+  "ready_for_implementation": false,
+  "source_evidence": [
+    {
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "role": "preserved E1-E12 symbolic backbone",
+      "sha256": "af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_HISTORICAL_LINEAGE.md",
+      "role": "active-versus-deprecated mechanism boundary",
+      "sha256": "ced6394a527f9cbf668392d896105f8ba9675db96a300be3f7880e21367357ad"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/historical_archive/pre_step5_repository/LSC_core/simulations/legacy/lsc55/LSC55_Hard_Mathematics_2026-04-25.md",
+      "role": "historical logarithmic response motivation only",
+      "sha256": "bebf950d7cb93287fd5314f86e03e0201261fd0940145a47035cd68904f6be9d"
+    },
+    {
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/Papers/source_2303.13623/CS_paper_v10.tex",
+      "role": "conventional external gallium cross-section source candidate",
+      "sha256": "d3f5b60fbe8dfd9c8bbcd1bd1694b58bb95dc41b29217ba9aaa03063e29b5573"
+    },
+    {
+      "path": "preregistration/gallium_cross_section_models.json",
+      "role": "no-default cross-section scenario registry",
+      "sha256": "d724012744b44f07a5e3e3068694d81fe9b56417183220250b695f01109e8552"
+    }
+  ],
+  "generated_artifacts": [
+    {
+      "path": "spec/LSC_6_4_0_RESPONSE_A_CANDIDATES.json",
+      "role": "three complete Response-A candidate equations and domains",
+      "sha256": "3e46905843266b4c5e249825fb79b98e2e2405ab51a826e9ee232fae8eb8d7db"
+    },
+    {
+      "path": "LSC_6_4_0_ALPHA0_DETERMINATION_CONTRACT.json",
+      "role": "future pre-fit alpha_0 determination contract",
+      "sha256": "dd7b129ede3d8cbab2601a180a574e55be728150376575337039433636b23dae"
+    },
+    {
+      "path": "OWNER_AUTHORIZATION_6_4_0.md",
+      "role": "exactly three pending owner decisions",
+      "sha256": "2b7b243fa6020934c3438514f76111f8701c7ea5b5d6425abd930466debcbd4c"
+    },
+    {
+      "path": "LSC_6_4_0_IMPLEMENTATION_CONTRACT.json",
+      "role": "updated fail-closed owner-gated implementation contract",
+      "sha256": "638b57fcb8945716df388d7497f465a3c71a0e65e2b255087292e039e31426b0"
+    },
+    {
+      "path": "docs/scientific/STEP_07B1_RESPONSE_CLOSURE_REPORT.md",
+      "role": "scientific closure report",
+      "sha256": "1bcbc065e0b78d94a61116208a4d2988b5f5b00e1fddc32a69e0db91a2c5bee2"
+    },
+    {
+      "path": "tests/test_step07b1_response_closure.py",
+      "role": "response closure regression tests",
+      "sha256": "f730e6d14a6181d53869b13ab9c6b6fde615a745a1891fba75a75c50eac8e88e"
+    }
+  ],
+  "test_receipt": {
+    "step07b1": "15 passed, 3 subtests passed",
+    "step07b_and_step07b1": "31 passed, 3 subtests passed",
+    "full_suite": "207 passed, 21 subtests passed",
+    "archive_sha256": "1882/1882 PASS",
+    "nested_repositories": "4/4 clean and git fsck PASS",
+    "publication_path_findings": 0
+  },
+  "safety_state": {
+    "fit_performed": false,
+    "response_shape_optimized": false,
+    "prediction_performed": false,
+    "T1_T12_performed": false,
+    "BEST2_observed_data_accessed": false,
+    "BEST2_prediction_generated": false,
+    "owner_authorization_recorded": false,
+    "implementation_authorized": false,
+    "parameter_determination_authorized": false,
+    "publication_performed": false,
+    "push_performed": false
+  },
+  "next_gate": {
+    "ready_for_owner_authorization": true,
+    "ready_for_step07c_now": false,
+    "ready_for_step07c_after_valid_owner_authorization": true,
+    "required_before_any_fit": [
+      "one owner-selected candidate",
+      "selected external function and SHA-256",
+      "selected response domain and normalization",
+      "numerical alpha_0 bounds and linear-response tolerance",
+      "objective, development-data, covariance and nuisance freeze"
+    ]
+  }
+}

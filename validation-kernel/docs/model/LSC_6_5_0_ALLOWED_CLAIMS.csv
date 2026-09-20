@@ -1,0 +1,11 @@
+claim,status,reason,allowed_in_publication
+"LSC 6.5.0 is explicitly specified","ALLOWED","Exact equations inputs parameter and hashes are present","YES"
+"LSC 6.5.0 is executable and deterministic","ALLOWED","Production and independent implementations plus golden vectors pass","YES"
+"alpha_0 was determined retrospectively","ALLOWED_WITH_LABEL","BEST inner is MODEL_EXPOSED and RETROSPECTIVE_NON_BLIND","YES"
+"The development estimate is collaboration-level inference","PROHIBITED","Full collaboration covariance was not recovered and COV_DIAGONAL is sensitivity-only","NO"
+"LSC 6.5.0 is validated or confirmed","PROHIBITED","No authorized validation battery was executed","NO"
+"Historical holdouts are strict blind confirmation","PROHIBITED","Earlier LSC development was exposed to the historical datasets","NO"
+"BEST-2 confirms or is predicted by LSC 6.5.0","PROHIBITED","No BEST-2 observed data were accessed and no prediction was generated","NO"
+"LSC 6.5.0 has directional or anisotropic support","PROHIBITED","Tensor and anisotropic sectors are disabled","NO"
+"KATRIN or IceCube confirms/excludes LSC 6.5.0","PROHIBITED","External mappings remain unjustified","NO"
+"LSC 6.4.0 parameter determination succeeded","PROHIBITED","The immutable 6.4.0 result was boundary dominated and failed","NO"

@@ -1,0 +1,137 @@
+{
+  "classifications_allowed": [
+    "UNCHANGED_FROM_6_3_0_AUTHENTIC",
+    "FORMALIZED_FROM_6_3_0",
+    "NEW_NUMERICAL_SPECIFICATION_6_3_1",
+    "NEW_METHOD_6_3_1",
+    "HISTORICAL_REFERENCE_ONLY",
+    "UNRESOLVED"
+  ],
+  "contract_date": "2026-08-16",
+  "data_exposure_labels": {
+    "BEST2": [
+      "FUTURE_ONLY",
+      "FUTURE_BLIND"
+    ],
+    "future_prediction": [
+      "PROSPECTIVE_BLIND only after complete pre-outcome freeze"
+    ],
+    "historical_gallium": [
+      "MODEL_EXPOSED",
+      "NON_BLIND_HISTORICAL",
+      "RETROSPECTIVE_NON_BLIND"
+    ]
+  },
+  "development_sequence": [
+    "specification",
+    "parameter determination",
+    "freeze",
+    "retrospective evaluation",
+    "prospective prediction",
+    "future unblinding"
+  ],
+  "equations_allowed_to_preserve": {
+    "condition": "Preserve only if explicitly unchanged; any physical change triggers version escalation.",
+    "equation_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9",
+      "E10",
+      "E11",
+      "E12"
+    ],
+    "symbolic_equation_set_sha256": "af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981"
+  },
+  "freeze_requirements": [
+    "complete_parameter_vector",
+    "canonical_ordering",
+    "values",
+    "units",
+    "frame_definitions",
+    "tensor_components",
+    "tensor_semantics",
+    "initialization_rules",
+    "bounds_and_default_policy",
+    "executable_evaluator",
+    "prediction_input_schema",
+    "deterministic_output",
+    "golden_reference_vectors",
+    "parameter_bundle_sha256",
+    "commit_identity",
+    "environment_lock",
+    "provenance_manifest",
+    "machine_readable_release_manifest"
+  ],
+  "golden_reference_requirement": "Multiple experiment-independent input cases with exact or precision-bounded expected output.",
+  "numerical_bundle_schema": {
+    "note": "Step 07 may version/extend the schema for 6.3.1 but may not weaken provenance or completeness gates.",
+    "path": "frozen_core/parameters/frozen_parameter_bundle.schema.json",
+    "sha256": "44b9cfedad025643729f2ea94d1eb538cd9abfa45f33fb4a4b30ce072ff02881"
+  },
+  "numerical_validation_authorized": false,
+  "parameter_fields_required": [
+    "parameter_id",
+    "value",
+    "units",
+    "origin",
+    "reason",
+    "introduced_version",
+    "data_exposure_status",
+    "inherited",
+    "newly_specified",
+    "fit_derived",
+    "uncertainty",
+    "frozen_status"
+  ],
+  "prediction_authorized": false,
+  "provenance_requirements": [
+    "source identity and SHA-256 for every preserved or inherited object",
+    "explicit reason and decision record for every newly specified value",
+    "no cross-era composite or silent legacy inheritance",
+    "fit-derived values identify all training datasets and cannot support blind claims on those datasets",
+    "UNRESOLVED content cannot enter an executable release"
+  ],
+  "publication_authorized": false,
+  "publication_boundary_sha256": "d5ca8db12b4caedaf720e746ea3fef0f37904e36d23cece0f029f3dc817963ac",
+  "release_naming": {
+    "candidate_version": "6.3.1",
+    "identity": "explicitly specified executable successor",
+    "not_allowed_identity": "recovered numerical copy of 6.3.0",
+    "project": "LSC",
+    "version_escalation": "Use 6.4.0 or 7.0 if E1-E12, physical semantics, or model class changes."
+  },
+  "schema_version": "1.0.0",
+  "source_decision_verdict": "LSC_6_3_0_NUMERICALLY_UNRECOVERABLE_SUCCESSOR_BOUNDARY_DEFINED",
+  "unresolved_objects": [
+    "theta",
+    "parameter_ordering",
+    "lambda0",
+    "lambdaA",
+    "f0_a",
+    "fA_a",
+    "active_tensor_components",
+    "tensor_orientation",
+    "complete_reference_frame",
+    "complete_units",
+    "eta",
+    "covariance",
+    "numerical_configuration",
+    "parameter_bounds",
+    "numerical_defaults",
+    "frozen_prediction_table",
+    "executable_evaluator_inputs"
+  ],
+  "validation_restrictions": [
+    "No 6.3.0 numerical reconstruction claim.",
+    "No historical gallium dataset may be labelled strict blind for 6.3.1.",
+    "No LSC numerical validation before the new 6.3.1 freeze.",
+    "No BEST-2 prediction before authoritative as-built inputs and the 6.3.1 freeze.",
+    "No KATRIN/IceCube claim without an explicit authorized mapping."
+  ]
+}

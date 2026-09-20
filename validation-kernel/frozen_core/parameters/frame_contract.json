@@ -1,0 +1,35 @@
+{
+  "complete": false,
+  "frames": [
+    {
+      "complete": false,
+      "description": "A separate model-internal frame is not defined by the frozen sources.",
+      "name": "MODEL_INTERNAL",
+      "source_status": "NOT_SOURCE_DEFINED"
+    },
+    {
+      "complete": false,
+      "description": "Detector and lab orientation are required, but no surveyed detector transform is frozen.",
+      "name": "DETECTOR_FRAME",
+      "source_status": "SYMBOLIC_NAME_ONLY"
+    },
+    {
+      "complete": false,
+      "description": "Latitude and longitude appear in E11; no Earth-fixed intermediate transform is specified.",
+      "name": "EARTH_FIXED",
+      "source_status": "UNVERIFIED_INTERMEDIATE"
+    },
+    {
+      "complete": false,
+      "description": "E3 and E11 name lab-frame directions; origin, axes, handedness, and orientation are incomplete.",
+      "name": "LAB_FRAME",
+      "source_status": "AUTHENTIC_SYMBOLIC_ROLE"
+    },
+    {
+      "complete": false,
+      "description": "E11 names ICRS, but the frozen celestial direction and complete transform metadata are absent.",
+      "name": "ICRS",
+      "source_status": "AUTHENTIC_SYMBOLIC_ROLE"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_ALPHA_DETERMINATION_PROTOCOL",
+  "protocol_status": "FROZEN_BEFORE_EXECUTION",
+  "model_version": "6.5.0",
+  "configuration": "EXACT_FINITE_A2/C/A",
+  "fit_run_id": "LSC650_ALPHA_SINGLE_PREREGISTERED_RUN_2026_08_16",
+  "allowed_execution_count": 1,
+  "parameter": {
+    "parameter_id": "LSC650-PHYS-01",
+    "symbol": "alpha_0",
+    "meaning": "universal signed logarithmic dilation Delta ln E of the capture-cross-section energy argument",
+    "units": "dimensionless",
+    "shared_across_experiments_isotopes_zones": true,
+    "refit_between_experiments": false,
+    "null_value": 0.0
+  },
+  "scientific_bindings": {
+    "owner_authorization": "OWNER_AUTHORIZATION_LSC_6_5_0.md",
+    "scientific_specification": "spec/LSC_6_5_0_EXACT_DILATION_SPECIFICATION.yaml",
+    "scientific_freeze": "LSC_6_5_0_SCIENTIFIC_FREEZE.json",
+    "6_4_0_adverse_freeze": "LSC_6_4_0_ADVERSE_RESULT_FREEZE.json",
+    "cross_section_manifest": "external_physics/gallium_capture/PROVENANCE_MANIFEST.json",
+    "interpolation_policy": "external_physics/gallium_capture/INTERPOLATION_POLICY.md",
+    "golden_vectors": "spec/LSC_6_5_0_GOLDEN_VECTORS.json"
+  },
+  "prediction": {
+    "equation": "R_pred(alpha_0) = sum_i c_i sigma(E_i exp(alpha_0)) / sum_i c_i sigma(E_i)",
+    "conventional_prefactor": "c_i = branching_i activity_i exposure_i P_i geometry_i efficiency_i",
+    "cross_section_counted_once_in_numerator": true,
+    "cross_section_counted_once_in_denominator": true,
+    "derivative_approximation_used": false
+  },
+  "development_data": {
+    "manifest": "model_development/LSC_6_5_0_DEVELOPMENT_DATA_MANIFEST.json",
+    "labels": ["MODEL_EXPOSED", "POST_6_4_DEVELOPMENT", "RETROSPECTIVE_NON_BLIND", "DEVELOPMENT_DATA"],
+    "observations": ["BEST:zone=inner:published_aggregate_ratio"],
+    "observed_values": [0.791],
+    "standard_uncertainties": [0.05],
+    "holdout": ["BEST:zone=outer", "GALLEX/GNO", "SAGE Cr51", "SAGE Ar37", "BEST-2"],
+    "holdout_in_objective": false
+  },
+  "likelihood": {
+    "type": "DIAGONAL_GAUSSIAN_CHI_SQUARE",
+    "equation": "chi2(alpha_0) = ((R_observed - R_pred(alpha_0)) / standard_uncertainty)^2",
+    "normalization_terms_included": false,
+    "classification": "DEVELOPMENT_OBJECTIVE_SENSITIVITY_ONLY"
+  },
+  "covariance": {
+    "scenario_id": "COV_DIAGONAL",
+    "matrix": [[0.0025000000000000005]],
+    "classification": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+    "collaboration_level_inference_allowed": false,
+    "sensitivity_rule": "Missing collaboration covariance does not block this disclosed development estimate; it blocks collaboration-equivalent inference and keeps the result SENSITIVITY_ONLY."
+  },
+  "nuisance": {
+    "treatment": "NONE_PROFILED",
+    "parameters": [],
+    "published_total_uncertainty_used_directly": true,
+    "stability_rule": "No nuisance parameter may absorb or create experiment-specific alpha_0 physics."
+  },
+  "objective": {
+    "primary": "MINIMIZE_CHI_SQUARE",
+    "secondary_objectives": [],
+    "response_selection_allowed": false,
+    "cross_section_selection_allowed": false,
+    "dataset_selection_after_result_allowed": false
+  },
+  "bounds": {
+    "theory_bound": null,
+    "source_support_domain": [-0.5747389495096434, 3.607238025076703],
+    "fit_bound": [-0.5747389495096434, 3.607238025076703],
+    "derivation": "max_i ln(0.24/E_i) <= alpha_0 <= min_i ln(30.0/E_i) for frozen Cr51 and Ar37 lines",
+    "old_6_4_result_or_bound_used": false,
+    "post_fit_adjustment_allowed": false
+  },
+  "optimizer": {
+    "library": "scipy.optimize.minimize_scalar",
+    "method": "bounded",
+    "xatol": 1e-12,
+    "maxiter": 1000,
+    "random_seed": null,
+    "initial_values": null,
+    "unconstrained_diagnostic_predeclared": false
+  },
+  "convergence": {
+    "require_success": true,
+    "require_finite_estimate_and_objective": true,
+    "boundary_tolerance": 1e-8
+  },
+  "identifiability": {
+    "criterion": "finite abs(dR_pred/dalpha_0) > 1e-8 and positive finite local chi-square curvature",
+    "finite_difference_step": 1e-5,
+    "failure_if_rank_deficient": true
+  },
+  "uncertainty": {
+    "construction": "one-parameter profile delta-chi-square interval with DeltaChi2=1 inside the frozen source-support domain",
+    "require_two_sided_interval": true,
+    "certified_interval_if_boundary_failure": false,
+    "probability_prior": null
+  },
+  "failure_criteria": [
+    "optimizer does not converge",
+    "estimate or objective is non-finite",
+    "estimate lies within 1e-8 of either frozen domain boundary",
+    "parameter is not locally identifiable",
+    "a two-sided DeltaChi2=1 interval cannot be constructed inside the frozen domain",
+    "a transformed source energy leaves frozen cross-section support",
+    "any frozen scientific, code, data, covariance, nuisance, optimizer or environment binding changes",
+    "BEST-2 observed-data access is detected"
+  ],
+  "failure_verdict": "LSC_6_5_0_PARAMETER_DETERMINATION_FAILED",
+  "success_verdict": "LSC_6_5_0_PARAMETER_DETERMINATION_SUCCEEDED",
+  "no_refit_policy": {
+    "second_execution_after_result": "FORBIDDEN",
+    "response_change_after_result": "REQUIRES_NEW_MODEL_VERSION",
+    "bound_change_after_result": "FORBIDDEN",
+    "dataset_change_after_result": "FORBIDDEN",
+    "separate_experiment_or_isotope_fit": "FORBIDDEN"
+  },
+  "transfer_policy": {
+    "successful_alpha_0_transfers_without_refit": true,
+    "historical_holdouts_are_retrospective_non_blind": true,
+    "BEST2_prediction_authorized": false
+  },
+  "diagnostics": [
+    "bounded optimizer result",
+    "objective at null and both support bounds",
+    "local derivative and curvature identifiability",
+    "two-sided profile interval",
+    "boundary status",
+    "production/reference agreement"
+  ]
+}

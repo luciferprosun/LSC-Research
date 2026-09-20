@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_RETROSPECTIVE_SMOKE_REPORT",
+  "status": "PASS_TECHNICAL_PIPELINE_ONLY",
+  "classification": "RETROSPECTIVE_NON_BLIND_TECHNICAL_SMOKE_NOT_VALIDATION",
+  "model_sha256": "c063aae4877159aa1ff2d0df4a8694988f587bc0cf68671357e711a136f7aab8",
+  "parameter_bundle_sha256": "617d72a303a947e8e7467efb3c745f7e44dc1c07eab7d830a90dbfd179da5c18",
+  "input_sha256": "7ba969dd1baebec54224f3b4b3cfd0b007a73f835ca544bdec8b5b1b91391688",
+  "input_role": "BEST_OUTER_TECHNICAL_SCHEMA_SMOKE_NO_OUTCOME",
+  "source_isotope": "Cr51",
+  "source_line_count": 6,
+  "alpha_0": -0.14388795521516184,
+  "R_pred": 0.7909999999926349,
+  "input_alpha_domain_closed": [-0.5747389495096434, 3.6856845632174173],
+  "observed_outcome_loaded": false,
+  "observed_outcome_compared": false,
+  "holdout_statistic_computed": false,
+  "parameter_changed_after_smoke": false,
+  "BEST2_observed_data_accessed": false,
+  "BEST2_prediction_generated": false,
+  "interpretation_allowed": "Evaluator schema, frozen-bundle loading, exact kernel, normalization, and provenance execute end to end.",
+  "interpretation_prohibited": "No compatibility, fit quality, validation, confirmation, exclusion, or prospective claim."
+}

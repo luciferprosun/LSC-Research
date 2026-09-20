@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_MODEL_IDENTITY",
+  "model_name": "LSC Exact Finite Dilation",
+  "model_version": "6.5.0",
+  "configuration": "EXACT_FINITE_A2/C/A",
+  "status": "EXECUTABLE_PARAMETER_FROZEN_RELEASE_CANDIDATE",
+  "classification": "NEW_POST_6_4_PHYSICAL_SUCCESSOR",
+  "repository_base_commit": "c522e344f7c0e43352626a7e435099c1da174286",
+  "historical_parent": {
+    "6_3_0_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+    "6_3_1": "ABANDONED_BEFORE_RELEASE",
+    "6_4_0": "DEVELOPMENT_PARAMETER_DETERMINATION_FAILED_IMMUTABLE"
+  },
+  "components": {
+    "scientific_specification_sha256": "114e8398a45e6a6c8fb4a105e994ca695805b06b9ed8608b86288ea0791ef948",
+    "scientific_freeze_sha256": "f32e606e37f5e880240b446737c2e72a30395b9017c7479e20ca7bc4ebcdc0df",
+    "owner_authorization_sha256": "6731100c50b1a35e8c0772f4ebc4130278edbbef72e618264e37a5b5cc6ef163",
+    "cross_section_payload_sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5",
+    "source_line_payload_sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e",
+    "parameter_bundle_sha256": "617d72a303a947e8e7467efb3c745f7e44dc1c07eab7d830a90dbfd179da5c18",
+    "parameter_bundle_schema_sha256": "cbe0407c629171591d6402b0f7499f35b02fafe5c71f4b65908706d5a0ddfef7",
+    "evaluator_source_sha256": "ab195449e68da7d4b19e5dbd45079add4fee0e154666d63e30d9381a59dccd8f",
+    "cross_section_source_sha256": "06133f5315fcb2d18077d75d015dbede5cd8e2d4142db841068f5b4a4a2d44b4",
+    "contracts_source_sha256": "87faf36807b75f9ea253db572cb540a903edb726485ceb870e5eb24fba7fc732",
+    "prediction_input_schema_sha256": "4f878e2114e098edc99311d9674ea72f4f94baf979dab026860abf31d25033d8",
+    "prediction_output_schema_sha256": "2ac730fdf97931b2e9ffbab3d655a8eaa9eb62abb68a57346b3df0da03e213b7",
+    "golden_vectors_sha256": "27a7bcab3a77bf1d9832e63388bf5df913c41d7848e5a3abd4f0adc0f293988f",
+    "environment_lock_sha256": "15ed08cd36160bdf4ff7ff55ec84a5ddf5eba2263aa1cec662b5def15c0a8f2c"
+  },
+  "model_sha256": "c063aae4877159aa1ff2d0df4a8694988f587bc0cf68671357e711a136f7aab8",
+  "model_hash_rule": "SHA256 of canonical JSON {model_version, configuration, components} with sorted keys and compact separators",
+  "physical_parameter_count": 1,
+  "parameter_bundle_path": "LSC_6_5_0_PARAMETER_BUNDLE.json",
+  "no_refit": true,
+  "validation_complete": false,
+  "BEST2_prediction_generated": false,
+  "publication_authorized": false
+}

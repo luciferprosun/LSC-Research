@@ -1,0 +1,148 @@
+{
+  "policy": "Assumption-based covariance results are SENSITIVITY_ONLY and cannot support discovery/exclusion/sigma/decisive claims.",
+  "scenarios": [
+    {
+      "allowed_use": "diagnostic sensitivity",
+      "assumptions": [
+        "Only explicitly available marginal variances; off-diagonal entries zero."
+      ],
+      "available": true,
+      "forbidden_claims": [
+        "discovery",
+        "exclusion",
+        "sigma evidence",
+        "decisive preference",
+        "collaboration covariance"
+      ],
+      "provenance_status": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+      "scenario_id": "COV_DIAGONAL",
+      "test_compatibility": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "allowed_use": "bounded sensitivity only",
+      "assumptions": [
+        "Published systematic components treated independent across observations unless explicitly common."
+      ],
+      "available": true,
+      "forbidden_claims": [
+        "discovery",
+        "exclusion",
+        "sigma evidence",
+        "decisive preference",
+        "published correlation"
+      ],
+      "provenance_status": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+      "scenario_id": "COV_UNCORRELATED_SYSTEMATICS",
+      "test_compatibility": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "allowed_use": "bounded sensitivity where covariance remains valid/nonsingular",
+      "assumptions": [
+        "Only named selected shared nuisances are 100% correlated over their preregistered scope."
+      ],
+      "available": true,
+      "forbidden_claims": [
+        "discovery",
+        "exclusion",
+        "sigma evidence",
+        "decisive preference",
+        "all systematics common"
+      ],
+      "provenance_status": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+      "scenario_id": "COV_FULLY_COMMON_SELECTED",
+      "test_compatibility": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "allowed_use": "robustness envelope only",
+      "assumptions": [
+        "Correlation coefficients scanned over a predeclared grid/range; range is never chosen after results."
+      ],
+      "available": true,
+      "forbidden_claims": [
+        "discovery",
+        "exclusion",
+        "sigma evidence",
+        "decisive preference",
+        "data-estimated covariance"
+      ],
+      "provenance_status": "ASSUMPTION_BASED_SENSITIVITY_ONLY",
+      "scenario_id": "COV_PLAUSIBLE_SCAN",
+      "test_compatibility": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "allowed_use": "inference only after source acquisition, hash verification and contract validation",
+      "assumptions": [
+        "Exact authenticated collaboration covariance/likelihood object and nuisance definition required."
+      ],
+      "available": false,
+      "forbidden_claims": [
+        "availability before authenticated source"
+      ],
+      "provenance_status": "MISSING_AUTHENTIC_SOURCE",
+      "scenario_id": "COV_COLLABORATION",
+      "test_compatibility": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}

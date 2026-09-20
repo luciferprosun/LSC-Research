@@ -1,0 +1,518 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_OWNER_GATED_IMPLEMENTATION_CONTRACT",
+  "status": "A2_C_A_IMPLEMENTATION_COMPLETE_ALPHA0_DETERMINATION_PENDING",
+  "owner_authorized": true,
+  "ready_for_implementation": true,
+  "implementation_complete": true,
+  "parameter_bundle_complete": false,
+  "release_candidate_ready": false,
+  "model": {
+    "name": "LSC",
+    "version": "6.4.0",
+    "configuration_id": "R-A_T-C_S-A",
+    "configuration_name": "TRANSFERABLE_TRACE_ONLY_M5",
+    "parent_historical_version": "6.3.0",
+    "parent_historical_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+    "parent_version_doi": "10.5281/zenodo.20377427",
+    "parent_concept_doi": "10.5281/zenodo.19780615",
+    "step07a_commit": "2c7f29cab7aeb5d1ffb0aa2c2693ba9e13b6346d",
+    "version_reason": "new physical closure assumptions required",
+    "fundamental_model_class_changed": false
+  },
+  "source_bindings": {
+    "canonical_owner_decision_source": {
+      "path": "docs/scientific/OWNER_SCIENTIFIC_DECISIONS_REQUIRED.md",
+      "sha256": "e07a1069a97ef0aa66519d4b63c2de05d18bcc119563ddcde4e6913850978c63"
+    },
+    "step07a_report": {
+      "path": "docs/scientific/STEP_07A_SCIENTIFIC_SPECIFICATION_ADJUDICATION.md",
+      "sha256": "9dec21385c0510653f45c1d98bc3b11a72776db9b7fd366f658083b8e1a861ca"
+    },
+    "gauge_identifiability_analysis": {
+      "path": "docs/scientific/GAUGE_IDENTIFIABILITY_ANALYSIS.md",
+      "sha256": "fc100720f7932e4ac23ef094c73b95870a191425e6fd850344c63797f1123732"
+    },
+    "step07a_scientific_draft": {
+      "path": "spec/LSC_6_4_0_SCIENTIFIC_SPECIFICATION_DRAFT.yaml",
+      "sha256": "227d998133ff286c7833ffeb7408012e240b19dff28030feccd35dca4bf6bbe9"
+    },
+    "publication_boundary": {
+      "path": "publication_boundary.json",
+      "sha256": "d5ca8db12b4caedaf720e746ea3fef0f37904e36d23cece0f029f3dc817963ac"
+    },
+    "response_candidate_set": {
+      "path": "spec/LSC_6_4_0_RESPONSE_A_CANDIDATES.json",
+      "sha256": "3e46905843266b4c5e249825fb79b98e2e2405ab51a826e9ee232fae8eb8d7db"
+    },
+    "alpha0_determination_contract": {
+      "path": "LSC_6_4_0_ALPHA0_DETERMINATION_CONTRACT.json",
+      "sha256": "dd7b129ede3d8cbab2601a180a574e55be728150376575337039433636b23dae"
+    }
+  },
+  "response_closure": {
+    "step": "07B.1",
+    "verdict": "RESPONSE_A_NEW_PHYSICAL_HYPOTHESIS_OPTIONS_READY",
+    "unique_backbone_derived_response_found": false,
+    "candidate_package_present": true,
+    "candidate_ids": [
+      "RESPONSE_A1_UNIVERSAL_SCALE",
+      "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+      "RESPONSE_A3_DETECTOR_ENERGY_DILATION"
+    ],
+    "recommended_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+    "owner_selected_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+    "recommended_equation": "F_A2,m(E) = d ln sigma_m(E) / d ln E; S_a(E,t) = alpha_0 * F_A2,m(E); Rpred_a = 1 + alpha_0 * <F_A2,m>_a",
+    "recommended_normalization": "alpha_0 is the logarithmic incident-energy dilation d(ln E); arbitrary template rescaling is forbidden",
+    "recommended_domain": "E>0 with positive C1 versioned sigma_m on a neighborhood of every evaluated 51Cr or 37Ar line; otherwise fail closed",
+    "classification": "NEW_PHYSICAL_HYPOTHESIS_6_4_0",
+    "source_bindings": [
+      {
+        "path": "spec/LSC_6_4_0_RESPONSE_A_CANDIDATES.json",
+        "sha256": "3e46905843266b4c5e249825fb79b98e2e2405ab51a826e9ee232fae8eb8d7db"
+      },
+      {
+        "path": "LSC_6_4_0_ALPHA0_DETERMINATION_CONTRACT.json",
+        "sha256": "dd7b129ede3d8cbab2601a180a574e55be728150376575337039433636b23dae"
+      }
+    ],
+    "owner_authorization_document": "OWNER_AUTHORIZATION_6_4_0.md",
+    "owner_authorization_status": "OWNER_AUTHORIZED_A2_C_A",
+    "implementation_boundary": "Production evaluator is authorized after hash verification. Parameter determination requires the separate frozen pre-fit audit. Scientific validation, BEST-2 prediction and publication remain unauthorized."
+  },
+  "canonical_decision_space": {
+    "decision_1_response_function": {
+      "options": [
+        {
+          "id": "A",
+          "title": "Physically derived transferable functions (recommended)"
+        },
+        {
+          "id": "B",
+          "title": "Finite preregistered phenomenological basis"
+        },
+        {
+          "id": "C",
+          "title": "Observation-specific weighted moments"
+        }
+      ],
+      "recommended_option": "A",
+      "owner_selection": "A2_CAPTURE_ENERGY_DILATION"
+    },
+    "decision_2_tensor_family": {
+      "options": [
+        {
+          "id": "A",
+          "title": "Shared normalized uniaxial tensor with an a-priori axis (recommended for a full M6 model)"
+        },
+        {
+          "id": "B",
+          "title": "Shared general 3-by-3 symmetric traceless tensor"
+        },
+        {
+          "id": "C",
+          "title": "Disable the anisotropic sector"
+        }
+      ],
+      "recommended_option": "C",
+      "owner_selection": "C"
+    },
+    "decision_3_sharing_semantics": {
+      "options": [
+        {
+          "id": "A",
+          "title": "One physical tensor and one response law shared across experiments/zones (recommended)"
+        },
+        {
+          "id": "B",
+          "title": "Zone tensors derived deterministically from a frozen geometry law"
+        },
+        {
+          "id": "C",
+          "title": "Independently fitted zone or experiment tensors"
+        }
+      ],
+      "recommended_option": "A",
+      "owner_selection": "A"
+    }
+  },
+  "new_physical_assumptions": [
+    {
+      "decision_id": "decision_1_response_function",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "recommended_option": "A",
+      "content": "one physically derived transferable scalar response template with one signed amplitude"
+    },
+    {
+      "decision_id": "decision_2_tensor_family",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "recommended_option": "C",
+      "content": "anisotropic sector disabled in the active trace-only branch"
+    },
+    {
+      "decision_id": "decision_3_sharing_semantics",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "recommended_option": "A",
+      "content": "one universal physical response law and frozen physical coefficients across zones and experiments"
+    }
+  ],
+  "recommended_configuration": {
+    "response": {
+      "option": "A",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "canonical_form": "S_a(E,t;x) = alpha_0 * s(E,t;x)",
+      "template_status": "OWNER_AUTHORIZED_AND_HASH_FROZEN",
+      "candidate_specification": "spec/LSC_6_4_0_RESPONSE_A_CANDIDATES.json",
+      "recommended_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+      "owner_selected_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+      "recommended_exact_form": "s(E,t;x) = d ln sigma_m(E) / d ln E",
+      "template_requirements": [
+        "owner selects exactly one candidate",
+        "selected external input functions and SHA-256 are frozen",
+        "candidate-specific parameter bounds and linear-response tolerance are frozen",
+        "selected domain and fail-closed policy are accepted",
+        "no outcome-dependent cross-section or response model selection"
+      ],
+      "free_amplitudes": 1,
+      "no_hidden_energy_time_or_isotope_dependence": true
+    },
+    "tensor": {
+      "option": "C",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "anisotropic_sector_active": false,
+      "canonical_tensor_response": "B_a(E,t) = 0",
+      "tensor_free_parameters": 0,
+      "directional_claims_authorized": false,
+      "full_M6_successor": false
+    },
+    "axis": {
+      "status": "NO_JUSTIFIED_AXIS_AVAILABLE",
+      "active_model_axis": null,
+      "axis_required_by_recommendation": false,
+      "sky_scan_performed": false,
+      "residual_direction_scan_performed": false,
+      "best_fit_direction_selection_performed": false,
+      "future_option_A_admission": [
+        "AXIS_THEORETICALLY_DEFINED",
+        "AXIS_EXTERNALLY_DEFINED"
+      ]
+    },
+    "sharing": {
+      "option": "A",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "physical_response_universal": true,
+      "physical_parameters_refittable_between_experiments": false,
+      "zone_dependence_sources": [
+        "authoritative source and isotope inputs",
+        "authoritative geometry and volume weights",
+        "authoritative detector baseline response",
+        "authoritative exposure and timing inputs"
+      ],
+      "experiment_specific_calibration_class": "NUISANCE_NOT_LSC_PHYSICS",
+      "nuisance_promotion_to_physical_parameter": false
+    },
+    "physical_free_parameter_count": 1,
+    "physical_free_parameter_count_condition": "exact normalized scalar response template is fixed before alpha_0 determination",
+    "identifiability": "CONDITIONAL_FINITE_ONE_DIMENSIONAL",
+    "prospective_transferability": "SUPPORTED_AFTER_COMPLETE_OWNER_PAYLOAD_PARAMETER_FREEZE_AND_AUTHORITATIVE_INPUTS"
+  },
+  "classification_ledger": {
+    "allowed_classifications": [
+      "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "FORMALIZATION_PRESERVED_FROM_6_3_0",
+      "GAUGE_CONVENTION",
+      "COORDINATE_CONVENTION"
+    ],
+    "gauge_conventions": [
+      {
+        "object": "scalar factorization",
+        "classification": "GAUGE_CONVENTION",
+        "rule": "S_a is primary; lambda0 and f0_a are not independently physical"
+      },
+      {
+        "object": "anisotropic factorization",
+        "classification": "GAUGE_CONVENTION",
+        "rule": "B_a is primary; lambdaA, fA_a and unnormalized A_a are not independently physical"
+      },
+      {
+        "object": "nonzero tensor scale",
+        "classification": "GAUGE_CONVENTION",
+        "rule": "Frobenius norm one; inactive in the recommended tensor-off branch"
+      }
+    ],
+    "preserved_formalizations": [
+      {
+        "object": "three-dimensional symmetric traceless tensor structure",
+        "classification": "FORMALIZATION_PRESERVED_FROM_6_3_0"
+      },
+      {
+        "object": "normalized E8 baseline functional",
+        "classification": "FORMALIZATION_PRESERVED_FROM_6_3_0"
+      },
+      {
+        "object": "Binding A Rpred=NLSC/N0",
+        "classification": "FORMALIZATION_PRESERVED_FROM_6_3_0"
+      },
+      {
+        "object": "theta physical and eta nuisance separation",
+        "classification": "FORMALIZATION_PRESERVED_FROM_6_3_0"
+      }
+    ],
+    "coordinate_conventions": [
+      {
+        "object": "canonical energy unit",
+        "classification": "COORDINATE_CONVENTION",
+        "value": "MeV"
+      },
+      {
+        "object": "canonical time interval unit",
+        "classification": "COORDINATE_CONVENTION",
+        "value": "s"
+      },
+      {
+        "object": "canonical angle unit",
+        "classification": "COORDINATE_CONVENTION",
+        "value": "rad"
+      }
+    ]
+  },
+  "equation_relationship": {
+    "summary": "symbolic backbone preserved; predictive closure newly specified in 6.4.0",
+    "symbolic_equation_set_sha256": "af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981",
+    "equations": [
+      {
+        "id": "E1",
+        "relationship": "ALGEBRAICALLY_UNCHANGED"
+      },
+      {
+        "id": "E2",
+        "relationship": "SYMBOLIC_BACKBONE_PRESERVED_NEW_SCALAR_CLOSURE_ANISOTROPY_INACTIVE"
+      },
+      {
+        "id": "E3",
+        "relationship": "PRESERVED_HISTORICALLY_INACTIVE_IN_RECOMMENDED_BRANCH"
+      },
+      {
+        "id": "E4",
+        "relationship": "PRESERVED_HISTORICALLY_INACTIVE_IN_RECOMMENDED_BRANCH"
+      },
+      {
+        "id": "E5",
+        "relationship": "ALGEBRAICALLY_UNCHANGED_EVALUATED_WITH_NEW_SCALAR_CLOSURE"
+      },
+      {
+        "id": "E6",
+        "relationship": "ALGEBRAICALLY_UNCHANGED"
+      },
+      {
+        "id": "E7",
+        "relationship": "ALGEBRAICALLY_UNCHANGED_DERIVED_RESIDUAL"
+      },
+      {
+        "id": "E8",
+        "relationship": "NORMALIZED_SCALAR_FUNCTIONAL_PRESERVED_ANISOTROPIC_FUNCTIONAL_INACTIVE"
+      },
+      {
+        "id": "E9",
+        "relationship": "ALGEBRAICALLY_UNCHANGED_DERIVED_COORDINATE"
+      },
+      {
+        "id": "E10",
+        "relationship": "ALGEBRAICALLY_UNCHANGED_NO_VALIDATION_AUTHORIZED"
+      },
+      {
+        "id": "E11",
+        "relationship": "PRESERVED_HISTORICALLY_INACTIVE_NO_DIRECTIONAL_EXECUTION"
+      },
+      {
+        "id": "E12",
+        "relationship": "PRESERVED_HISTORICALLY_INACTIVE_NO_DIRECTIONAL_CLAIM"
+      }
+    ]
+  },
+  "normalization": {
+    "classification": "FORMALIZATION_PRESERVED_FROM_6_3_0",
+    "baseline_measure": "dnu_a = Phi * P_alpha_beta * sigma * epsilon0_a * W_a * dE * dOmega * dt",
+    "baseline_denominator": "N0_a = integral_Da dnu_a",
+    "normalized_functional": "<g>_a = integral_Da(g dnu_a) / N0_a",
+    "precondition": "N0_a must be finite and strictly positive",
+    "response_template_normalization": "CANDIDATE_SPECIFIC_DIRECT_PHYSICAL_NORMALIZATION_OWNER_SELECTION_REQUIRED"
+  },
+  "frames": {
+    "classification": "COORDINATE_CONVENTION",
+    "active_scalar_model_requires_physical_axis": false,
+    "model_storage_frame_for_future_directional_extension": "ICRS",
+    "earth_fixed_intermediate": "ITRS_COMPATIBLE",
+    "laboratory_frame": "RIGHT_HANDED_LOCAL_ENU",
+    "physical_preferred_direction": null,
+    "time_input": "ISO_8601_UTC",
+    "earth_rotation_input": "VERSIONED_UT1_AND_EARTH_ORIENTATION_DATA",
+    "exposure_midpoint_fallback": false
+  },
+  "units": {
+    "classification": "COORDINATE_CONVENTION",
+    "energy": "MeV",
+    "time_interval": "s",
+    "angle": "rad",
+    "S_a": "dimensionless",
+    "B_a": "dimensionless",
+    "Rpred": "dimensionless",
+    "ratio_covariance": "dimensionless_squared",
+    "count_or_rate_policy": "declared by each dataset contract and matched between numerator and denominator"
+  },
+  "observable_binding": {
+    "classification": "FORMALIZATION_PRESERVED_FROM_6_3_0",
+    "binding": "BINDING_A",
+    "prediction": "Rpred_a = NLSC_a / N0_a",
+    "recommended_branch_identity": "Rpred_a = 1 + <alpha_0 * s(E,t;x)>_a",
+    "residual": "DeltaR_a = Rpred_a - 1",
+    "best_independent_coordinates": [
+      "R_inner",
+      "R_outer"
+    ],
+    "best_double_ratio": "DERIVED_NOT_INDEPENDENT"
+  },
+  "integration": {
+    "classification": "FORMALIZATION_PRESERVED_FROM_6_3_0",
+    "source_and_isotope_weighting": "authoritative dataset input through Phi and sigma",
+    "volume_and_geometry_weighting": "authoritative dataset input through W_a",
+    "time_weighting": "authoritative exposure domain and time-dependent factors",
+    "detector_weighting": "authoritative epsilon0_a",
+    "normalization_denominator": "N0_a",
+    "quadrature": "exact finite source-line summation in published line order using IEEE-754 binary64"
+  },
+  "physical_parameter_schema": [
+    {
+      "parameter_id": "LSC640-STRUCT-01",
+      "symbol": "s(E,t;x)",
+      "kind": "FIXED_PHYSICAL_RESPONSE_TEMPLATE",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "free_parameter": false,
+      "status": "A2_OWNER_AUTHORIZED_RESPONSE_SPECIFICATION_FROZEN",
+      "candidate_specification": "spec/LSC_6_4_0_RESPONSE_A_CANDIDATES.json",
+      "can_be_refit_between_experiments": false
+    },
+    {
+      "parameter_id": "LSC640-PHYS-01",
+      "symbol": "alpha_0",
+      "kind": "SIGNED_SCALAR_AMPLITUDE",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "free_parameter": true,
+      "status": "VALUE_UNDETERMINED_BOUNDS_AND_PROTOCOL_FROZEN",
+      "determination_contract": "LSC_6_4_0_ALPHA0_DETERMINATION_CONTRACT.json",
+      "allowed_range": "THEORY_OR_PREREGISTERED_DEVELOPMENT_PROTOCOL_REQUIRED",
+      "identifiability": "CONDITIONAL_ON_FIXED_NONDEGENERATE_TEMPLATE",
+      "historical_fit_required": "CONDITIONAL",
+      "can_be_refit_between_experiments": false
+    },
+    {
+      "parameter_id": "LSC640-BRANCH-01",
+      "symbol": "B_a",
+      "kind": "INACTIVE_ANISOTROPIC_BRANCH",
+      "classification": "NEW_PHYSICAL_ASSUMPTION_6_4_0",
+      "free_parameter": false,
+      "status": "ANISOTROPY_DISABLED",
+      "value": "IDENTICALLY_ZERO_BY_OWNER_BRANCH_DECISION",
+      "can_be_refit_between_experiments": false
+    }
+  ],
+  "parameter_determination_requirements": {
+    "model_development_performed_in_step07b": false,
+    "preferred_source": "THEORY_OR_CALIBRATION",
+    "retrospective_determination_allowed_only_after_owner_authorization": true,
+    "required_before_any_fit": [
+      "owner selection of one exact response equation and normalization",
+      "selected external response or cross-section function with version and SHA-256",
+      "development dataset IDs row IDs and SHA-256",
+      "one objective function",
+      "covariance and nuisance policy",
+      "bounds and initialization",
+      "optimizer tolerance convergence and stopping rule",
+      "identifiability rank check",
+      "MODEL_EXPOSED labels"
+    ],
+    "historical_data_label_if_used": "RETROSPECTIVE_NON_BLIND",
+    "BEST2_observed_data_allowed": false
+  },
+  "prospective_policy": {
+    "same_physical_equation_and_parameters_across_experiments": true,
+    "physical_refit_for_new_experiment": false,
+    "unsupported_domain_behavior": "FAIL_CLOSED",
+    "BEST2_status": "FUTURE_ONLY",
+    "BEST2_blindness": "FUTURE_BLIND",
+    "BEST2_capability": "PROSPECTIVE_SCHEMA_CAPABLE",
+    "BEST2_prediction_generated": false,
+    "BEST2_observed_data_accessed": false,
+    "BEST2_prerequisites": [
+      "valid owner authorization with exact response equation",
+      "owner-selected response candidate and frozen external-function payload",
+      "frozen parameter determination and complete model hash",
+      "authoritative as-built source geometry exposure and detector inputs",
+      "prediction artifact frozen before observed data access"
+    ]
+  },
+  "combination_assessment": [
+    {"id": "R-A/T-A/S-A", "parameter_count": "2", "adjudication": "BLOCKED_AXIS_MISSING"},
+    {"id": "R-A/T-A/S-B", "parameter_count": "2_PLUS_GEOMETRY_LAW", "adjudication": "BLOCKED_NEW_GEOMETRY_LAW"},
+    {"id": "R-A/T-A/S-C", "parameter_count": "UNDEFINED_CANONICAL_CONFLICT", "adjudication": "SCIENTIFICALLY_INADMISSIBLE"},
+    {"id": "R-A/T-B/S-A", "parameter_count": "6", "adjudication": "NOT_CURRENTLY_IDENTIFIABLE"},
+    {"id": "R-A/T-B/S-B", "parameter_count": "6_PLUS_GEOMETRY_LAW", "adjudication": "NOT_CURRENTLY_IDENTIFIABLE"},
+    {"id": "R-A/T-B/S-C", "parameter_count": "AT_LEAST_1_PLUS_5m", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-A/T-C/S-A", "parameter_count": "1", "adjudication": "RECOMMENDED"},
+    {"id": "R-A/T-C/S-B", "parameter_count": "1", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-A/T-C/S-C", "parameter_count": "1", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-B/T-A/S-A", "parameter_count": "p0_PLUS_pA", "adjudication": "CONDITIONALLY_ADMISSIBLE_NON_BLIND"},
+    {"id": "R-B/T-A/S-B", "parameter_count": "p0_PLUS_pA_PLUS_GEOMETRY_LAW", "adjudication": "CONDITIONALLY_ADMISSIBLE_NON_BLIND"},
+    {"id": "R-B/T-A/S-C", "parameter_count": "UNDEFINED_CANONICAL_CONFLICT", "adjudication": "SCIENTIFICALLY_INADMISSIBLE"},
+    {"id": "R-B/T-B/S-A", "parameter_count": "p0_PLUS_pA_PLUS_4", "adjudication": "NOT_CURRENTLY_IDENTIFIABLE"},
+    {"id": "R-B/T-B/S-B", "parameter_count": "p0_PLUS_pA_PLUS_4_PLUS_GEOMETRY_LAW", "adjudication": "NOT_CURRENTLY_IDENTIFIABLE"},
+    {"id": "R-B/T-B/S-C", "parameter_count": "AT_LEAST_p0_PLUS_m_TIMES_pA_PLUS_4", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-B/T-C/S-A", "parameter_count": "p0", "adjudication": "CONDITIONALLY_ADMISSIBLE_NON_BLIND"},
+    {"id": "R-B/T-C/S-B", "parameter_count": "p0", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-B/T-C/S-C", "parameter_count": "p0", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-C/T-A/S-A", "parameter_count": "2b_TENSOR_NOT_SEPARATELY_IDENTIFIABLE", "adjudication": "NOT_PROSPECTIVELY_SPECIFIED"},
+    {"id": "R-C/T-A/S-B", "parameter_count": "2b_PLUS_GEOMETRY_LAW", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-C/T-A/S-C", "parameter_count": "AT_LEAST_2b_PLUS_INDEPENDENT_TENSORS", "adjudication": "SCIENTIFICALLY_INADMISSIBLE"},
+    {"id": "R-C/T-B/S-A", "parameter_count": "2b_PLUS_4_RANK_DEFICIENT", "adjudication": "NOT_CURRENTLY_IDENTIFIABLE"},
+    {"id": "R-C/T-B/S-B", "parameter_count": "2b_PLUS_4_PLUS_GEOMETRY_LAW", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-C/T-B/S-C", "parameter_count": "AT_LEAST_2b_PLUS_4m", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-C/T-C/S-A", "parameter_count": "b", "adjudication": "RESTRICTED_METHOD_PROFILE_ONLY"},
+    {"id": "R-C/T-C/S-B", "parameter_count": "b", "adjudication": "DOMINATED_MODEL_VARIANT"},
+    {"id": "R-C/T-C/S-C", "parameter_count": "b", "adjudication": "DOMINATED_MODEL_VARIANT"}
+  ],
+  "validation_restrictions": {
+    "fit_performed_in_step07b": false,
+    "prediction_performed_in_step07b": false,
+    "T1_T12_performed_in_step07b": false,
+    "historical_validation_performed_in_step07b": false,
+    "BEST2_prediction_authorized": false,
+    "BEST2_observed_data_accessed": false,
+    "directional_claim_authorized": false,
+    "T12_status": "BLOCKED_OR_INAPPLICABLE_TRACE_ONLY_BRANCH",
+    "publication_authorized": false,
+    "push_authorized": false,
+    "release_authorized": false
+  },
+  "version_disposition": {
+    "successor_version": "6.4.0",
+    "successor_reason": "new physical closure assumptions required",
+    "planned_6_3_1_executable_release": "ABANDONED_BEFORE_RELEASE",
+    "planned_6_3_1_reason": "completion required new physical assumptions and therefore semantic version escalation to 6.4.0",
+    "historical_6_3_0_immutable": true
+  },
+  "authorization": {
+    "owner_decisions_required": 3,
+    "owner_decisions_recorded": 3,
+    "owner_authorized": true,
+    "response_candidate_package_present": true,
+    "response_candidate_count": 3,
+    "response_owner_selection_recorded": true,
+    "required_response_equation_payload_present": true,
+    "implementation_authorized": true,
+    "parameter_determination_authorized": true,
+    "model_execution_authorized": true,
+    "historical_evaluation_authorized": false,
+    "prospective_prediction_authorized": false,
+    "publication_authorized": false
+  }
+}

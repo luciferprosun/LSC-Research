@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_5_0_PREFIT_EXECUTION_INCIDENT",
+  "incident_id": "LSC650-PREFIT-R1-BOOLEAN-SERIALIZATION",
+  "timestamp_utc": "2026-08-16T16:58:55Z",
+  "status": "ABORTED_BEFORE_RESULT_CONSTRUCTION_OR_SERIALIZATION",
+  "prefit_freeze_revision": 1,
+  "prefit_freeze_path": "LSC_6_5_0_PREFIT_FREEZE_R1_ABORTED.json",
+  "prefit_freeze_sha256": "132d81a801401363dc14bb837c07be96e097e966db9bc89585b389e99c8e62f5",
+  "determination_source_sha256_before_fix": "86070aded79a0c9c5e959d441414bed83f5598d8f4a9d69a65a741c3e94bc02b",
+  "exception": "NameError: name 'false' is not defined",
+  "root_cause": "A JSON boolean literal was used in Python result-object construction.",
+  "optimizer_was_invoked_before_exception": true,
+  "optimizer_result_was_serialized": false,
+  "optimizer_result_was_printed_or_returned": false,
+  "result_file_created": false,
+  "scientific_outcome_available_to_decision_maker": false,
+  "scientific_or_methodological_change_authorized": false,
+  "repair": {
+    "scope": "Replace exactly two Python literals false with False after optimizer output construction.",
+    "physics_changed": false,
+    "data_changed": false,
+    "domain_or_bounds_changed": false,
+    "likelihood_or_covariance_changed": false,
+    "optimizer_configuration_changed": false,
+    "result_logic_changed": false,
+    "determination_source_sha256_after_fix": "86c0bd75072da14f6260eeca9b82ed3c8a95b6148022f25054beadf8ffaa86b3"
+  },
+  "governance": {
+    "original_prefit_freeze_preserved": true,
+    "new_prefit_revision_required": true,
+    "completed_scientific_determinations_before_revision_2": 0,
+    "unseen_aborted_software_attempts": 1,
+    "refit_or_post_result_tuning_performed": false
+  }
+}

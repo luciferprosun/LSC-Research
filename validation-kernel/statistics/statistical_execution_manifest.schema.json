@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "LSC_used": {
+      "const": false
+    },
+    "classification": {
+      "type": "string"
+    },
+    "code_commit": {
+      "type": "string"
+    },
+    "code_commit_relationship": {
+      "const": "HASHED_SOURCE_TREE_DESCENDS_FROM_CODE_COMMIT"
+    },
+    "code_tree_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "covariance_scenario": {
+      "type": "string"
+    },
+    "dataset_hashes": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "environment_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "execution_manifest_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "manifest_schema_version": {
+      "const": "1.0.0"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "model_version": {
+      "type": "string"
+    },
+    "nuisance_treatment": {
+      "type": "string"
+    },
+    "optimizer": {
+      "type": "string"
+    },
+    "parameters_fitted": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "split": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "dataset_hashes",
+    "model",
+    "model_version",
+    "parameters_fitted",
+    "nuisance_treatment",
+    "covariance_scenario",
+    "split",
+    "metric",
+    "optimizer",
+    "code_commit",
+    "code_tree_hash",
+    "code_commit_relationship",
+    "environment_hash",
+    "classification",
+    "timestamp",
+    "LSC_used",
+    "execution_manifest_hash"
+  ],
+  "title": "StatisticalExecutionManifest",
+  "type": "object"
+}

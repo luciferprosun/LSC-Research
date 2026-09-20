@@ -1,0 +1,85 @@
+{
+  "complete": false,
+  "parameters": [
+    {
+      "canonical_name": "theta",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "parameter_ordering",
+      "unit_status": "NOT_APPLICABLE",
+      "units": "NOT_APPLICABLE"
+    },
+    {
+      "canonical_name": "lambda0",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "lambdaA",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "f0_a",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "fA_a",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "active_anisotropy_tensor",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "tensor_orientation",
+      "unit_status": "NOT_APPLICABLE",
+      "units": "NOT_APPLICABLE"
+    },
+    {
+      "canonical_name": "complete_reference_frame",
+      "unit_status": "NOT_APPLICABLE",
+      "units": "NOT_APPLICABLE"
+    },
+    {
+      "canonical_name": "eta",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "covariance",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "numerical_configuration",
+      "unit_status": "NOT_APPLICABLE",
+      "units": "NOT_APPLICABLE"
+    },
+    {
+      "canonical_name": "parameter_bounds",
+      "unit_status": "NOT_APPLICABLE",
+      "units": "NOT_APPLICABLE"
+    },
+    {
+      "canonical_name": "numerical_defaults",
+      "unit_status": "NOT_APPLICABLE",
+      "units": "NOT_APPLICABLE"
+    },
+    {
+      "canonical_name": "frozen_prediction_table",
+      "unit_status": "MISSING_FROZEN_UNIT",
+      "units": "UNKNOWN"
+    },
+    {
+      "canonical_name": "executable_evaluator_inputs",
+      "unit_status": "NOT_APPLICABLE",
+      "units": "NOT_APPLICABLE"
+    }
+  ]
+}

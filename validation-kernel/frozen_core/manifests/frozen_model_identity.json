@@ -1,0 +1,12 @@
+{
+  "canonical_version": "6.3.0-pre-BEST2-freeze-update",
+  "freeze_commit": "a6d582694d55fa0260ef7ab07ed83fd06feef607",
+  "historical_git_commit": "6ffa07bdde533fcc2a550e36c762b8edd9236c47",
+  "kernel_schema_version": "1.0.0",
+  "model_name": "LSC",
+  "provenance_registry_checksum": "f8c595a27f4352424712dab2300c2e01bdafd8cdda4ba5fabef50c1feb77d67c",
+  "source_manifest_checksum": "e16b7b5ac775389aa3fdf5b319d0ecb3460eab3bf3126f850d1ef4da84c659ce",
+  "symbolic_equation_set_identity": "LSC-E1-E12@sha256:af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981",
+  "zenodo_concept_doi": "10.5281/zenodo.19780615",
+  "zenodo_version_doi": "10.5281/zenodo.20377427"
+}

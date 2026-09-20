@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "PHASE_1_COMPLETE",
+  "scientific_model_version": "6.5.0",
+  "validation_kernel_package_version": "0.6.0",
+  "publication_ready": true,
+  "publication_performed": true,
+  "public_push_performed": true,
+  "github_release_created": false,
+  "zenodo_upload_performed": true,
+  "doi_minted": true,
+  "zenodo_version_doi": "10.5281/zenodo.22007108",
+  "zenodo_concept_doi": "10.5281/zenodo.19780615",
+  "zenodo_record_id": 22007108,
+  "zenodo_record_url": "https://zenodo.org/records/22007108",
+  "zenodo_publication_timestamp": "2026-08-19T06:08:44.682234+00:00",
+  "uploaded_zip_sha256": "9f1f1ad0402c42602a37b064a5601b5827fcfaa31abe4a6481c321038b07a4e9",
+  "best2_observed_data_accessed": false,
+  "best2_prediction_generated": false,
+  "phase_2_validation_performed": false,
+  "public_payload_policy": {
+    "bahcall_1997_table_redistributed": false,
+    "materialization": "EXPLICIT_HASH_VERIFIED_ACQUISITION"
+  }
+}

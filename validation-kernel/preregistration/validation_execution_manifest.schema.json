@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "numerical_validation_authorized": {
+      "const": false
+    },
+    "prediction_authorized": {
+      "const": false
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "test_id",
+    "model_identity",
+    "model_hash",
+    "dataset_hashes",
+    "transformation_version",
+    "split_id",
+    "baseline_versions",
+    "covariance_scenario",
+    "nuisance_policy",
+    "metric",
+    "code_commit",
+    "environment_hash",
+    "timestamp",
+    "authorization_state",
+    "prediction_authorized",
+    "numerical_validation_authorized",
+    "execution_manifest_hash"
+  ],
+  "title": "ValidationExecutionManifest",
+  "type": "object"
+}

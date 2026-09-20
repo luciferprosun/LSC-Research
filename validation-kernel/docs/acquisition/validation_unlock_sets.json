@@ -1,0 +1,47 @@
+{
+  "full": {
+    "blocking_ids": [
+      "BLK-P0-FROZEN-BUNDLE",
+      "BLK-P1-BEST-COV",
+      "BLK-P1-SAGE-COV",
+      "BLK-P1-GALLEX-COV",
+      "BLK-P1-NUCLEAR-COV",
+      "BLK-P2-KATRIN-MAP",
+      "BLK-P2-ICECUBE-MAP",
+      "BLK-P3-M3-GEOMETRY"
+    ],
+    "complete": false,
+    "directional_component": "T12 remains a separate blocked component and is not silently required for scalar tests.",
+    "purpose": "Inferential execution of the frozen primary sequence T11, T7, T3, T1, T10.",
+    "required": [
+      "MINIMUM_VALIDATION_UNLOCK_SET complete",
+      "authenticated collaboration covariance/likelihood for every reached primary dataset",
+      "cross-experiment and shared nuclear covariance treatment with authoritative provenance",
+      "production M3 geometry for T10",
+      "explicit authorized external mappings wherever a veto is invoked",
+      "all test-specific prerequisites and unchanged frozen multiple-testing sequence"
+    ],
+    "set_id": "FULL_VALIDATION_UNLOCK_SET"
+  },
+  "minimum": {
+    "blocking_ids": [
+      "BLK-P0-FROZEN-BUNDLE"
+    ],
+    "complete": false,
+    "not_required_for_sensitivity_only_first_run": [
+      "T12 directional inputs",
+      "KATRIN/IceCube mapping",
+      "full collaboration covariance if result is explicitly SENSITIVITY_ONLY"
+    ],
+    "purpose": "First controlled preregistered scalar LSC test in Step 06 or later.",
+    "required": [
+      "AUTHENTIC_FROZEN_BUNDLE_COMPLETE",
+      "target-dataset exposure classification recorded; non-clean historical tests never relabelled blind",
+      "unambiguous parameter ordering, units, frames, active tensor semantics where required by E1-E12",
+      "exact evaluator initialization/configuration and executable input mapping",
+      "hash-verified provenance admission",
+      "separate human-approved Step 06 execution authorization"
+    ],
+    "set_id": "MINIMUM_VALIDATION_UNLOCK_SET"
+  }
+}

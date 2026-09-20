@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use LSC 6.5.0, cite this scientific-model artifact and the external scientific sources listed in THIRD_PARTY_NOTICES.md."
+title: "LSC 6.5.0 exact finite-dilation scientific model"
+type: software
+authors:
+  - family-names: "LuciferSun"
+    affiliation: "Independent Research"
+  - family-names: "flAmeBorn"
+    affiliation: "Independent Research"
+  - family-names: "LINZ HOSS"
+version: "6.5.0"
+doi: "10.5281/zenodo.22007108"
+date-released: 2026-08-19
+repository-code: "https://github.com/luciferprosun/LSC-Validation-Kernel"
+license: MIT
+keywords:
+  - reproducibility
+  - scientific model
+  - gallium neutrino capture
+  - exact finite dilation
+abstract: >-
+  LSC 6.5.0 is the executable, audited, and reproducible exact finite-dilation
+  successor in the established LSC model lineage. It uses one frozen universal
+  alpha_0. The historical 6.3.0 identity is preserved; 6.3.1 was abandoned
+  before release, and the 6.4.0 linear development attempt remains an adverse
+  result. Phase 1 is complete. Development was retrospective and non-blind;
+  experimental Phase 2 validation has not begun, and BEST-2 remains future-blind.

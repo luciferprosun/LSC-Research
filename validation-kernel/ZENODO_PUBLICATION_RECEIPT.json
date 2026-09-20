@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "ZENODO_PUBLICATION_RECEIPT",
+  "verified_at_utc": "2026-08-19T06:12:29Z",
+  "status": "LSC_6_5_0_ZENODO_NEW_VERSION_PUBLISHED",
+  "prepublication_receipt_sha256": "6dd918620069f51a8f0976156aebcc4b8c3e48abcd87978ff3faee3c5f0b7a78",
+  "publication": {
+    "record_id": 22007108,
+    "record_url": "https://zenodo.org/records/22007108",
+    "version_doi": "10.5281/zenodo.22007108",
+    "concept_doi": "10.5281/zenodo.19780615",
+    "previous_version_doi": "10.5281/zenodo.20377427",
+    "publication_timestamp": "2026-08-19T06:08:44.682234+00:00",
+    "native_new_version": true,
+    "version_index": 4,
+    "is_latest_version": true,
+    "old_record_modified": false
+  },
+  "metadata": {
+    "title": "LSC 6.5.0 exact finite-dilation scientific model",
+    "version": "6.5.0",
+    "resource_type": "software",
+    "access_right": "open",
+    "license": "mit-license",
+    "creators": [
+      {
+        "name": "LuciferSun",
+        "affiliation": "Independent Research"
+      },
+      {
+        "name": "flAmeBorn",
+        "affiliation": "Independent Research"
+      },
+      {
+        "name": "LINZ HOSS"
+      }
+    ]
+  },
+  "artifact": {
+    "filename": "LSC-6.5.0.zip",
+    "size_bytes": 122515,
+    "sha256": "9f1f1ad0402c42602a37b064a5601b5827fcfaa31abe4a6481c321038b07a4e9",
+    "zenodo_download_sha256": "9f1f1ad0402c42602a37b064a5601b5827fcfaa31abe4a6481c321038b07a4e9",
+    "zenodo_md5": "4e6a33ba8ee85abb1e4def9b5eeeec32",
+    "manifest_sha256": "616fdc2f8b54747831b28b26c77df47f5da3cef3730ba5caa8a3cf88a92cf1a2",
+    "checksums_verified": true,
+    "bahcall_redistributed": false
+  },
+  "scientific_identity": {
+    "model_sha256": "c063aae4877159aa1ff2d0df4a8694988f587bc0cf68671357e711a136f7aab8",
+    "parameter_bundle_sha256": "617d72a303a947e8e7467efb3c745f7e44dc1c07eab7d830a90dbfd179da5c18",
+    "scientific_hashes_unchanged": true,
+    "phase_1_complete": true,
+    "phase_2_started": false,
+    "experimental_validation_claimed": false
+  },
+  "github": {
+    "public_head_at_publication": "3549c06e78c2d3b41221a8d5cd4944fa3ede4e38",
+    "origin_main_at_publication": "3549c06e78c2d3b41221a8d5cd4944fa3ede4e38",
+    "synchronized_at_publication": true,
+    "github_release_created": false
+  },
+  "validation_kernel": {
+    "software_version": "0.6.0",
+    "companion_package_ready": true,
+    "coauthor_status": "KERNEL_COAUTHOR_CONFIRMATION_REQUIRED",
+    "separate_publication_performed": false
+  },
+  "safety": {
+    "critical_findings": 0,
+    "licensing_and_provenance": "PASS",
+    "secrets_or_private_state_uploaded": false
+  }
+}

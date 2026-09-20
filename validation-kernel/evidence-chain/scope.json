@@ -1,0 +1,35 @@
+{
+  "authority_role": "active-validation-kernel-and-lsc-6.5.0-companion",
+  "authorship_authorities": [
+    "CITATION.cff",
+    "CONTRIBUTORS.md",
+    "docs/project/LINZ_HOSS_CONTRIBUTION.md"
+  ],
+  "coverage": "full-repository",
+  "exclude": [
+    "evidence-chain/chain.jsonl"
+  ],
+  "include": [
+    "*"
+  ],
+  "license_authorities": [
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "network_id": "urn:lsc:evidence-chain:2026-08",
+  "recorded_by": "Codex, acting on the explicit instruction of repository owner @luciferprosun",
+  "related_persistent_identifiers": [
+    "doi:10.5281/zenodo.22007108",
+    "doi:10.5281/zenodo.19780615"
+  ],
+  "repository": "luciferprosun/LSC-Validation-Kernel",
+  "required_paths": [
+    ".github/workflows/evidence-chain.yml",
+    "CITATION.cff",
+    "RESEARCH_ATTRIBUTION.md",
+    "evidence-chain/README.md",
+    "evidence-chain/scope.json",
+    "tools/evidence_chain.py"
+  ],
+  "schema_version": "1.0.0"
+}

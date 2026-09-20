@@ -1,0 +1,13 @@
+claim,status,reason,evidence,allowed_in_publication
+The historical LSC 6.3.0 model identity was recovered.,SUPPORTED,"Version, commit, freeze boundary, version DOI, and concept DOI agree.","Steps 01, 02, and frozen_model_identity.json",True
+The symbolic E1-E12 equation set was recovered.,SUPPORTED_SYMBOLIC_ONLY,The canonical equation source and SHA-256 are fixed; this does not supply numerical values.,Steps 01-02 and canonical equation hash,True
+Release and symbolic provenance were recovered.,SUPPORTED_WITH_SCOPE,"The available lineage is auditable, while the missing numerical object has no recoverable provenance.",Steps 01 and 05 provenance registries,True
+Numerical predictions of historical 6.3.0 are reproducible.,MODEL_NOT_NUMERICALLY_RECOVERABLE,"The complete parameter vector, functions, units, frames, tensor state, initialization, and prediction table are absent.",Step 05 parameter adjudication,False
+Historical 6.3.0 prediction tables are recoverable.,TEST_BLOCKED,No authentic frozen prediction table was located.,Steps 01 and 05 release-artifact search,False
+An exact frozen 6.3.0 BEST validation can be performed.,TEST_BLOCKED,The numerical model is incomplete and full collaboration likelihood/covariance is unavailable.,Steps 03-05 unlock matrix,False
+An exact frozen 6.3.0 SAGE validation can be performed.,TEST_BLOCKED,The numerical model and authoritative run covariance are unavailable.,Steps 03-05 unlock matrix,False
+An exact frozen 6.3.0 GALLEX/GNO validation can be performed.,TEST_BLOCKED,The numerical model and authoritative source-run covariance/likelihood are unavailable.,Steps 03-05 unlock matrix,False
+KATRIN can currently exclude or confirm LSC.,TEST_BLOCKED_MAPPING_MISSING,"The native KATRIN grid is valid, but no justified LSC mapping exists.",Step 05 KATRIN mapping assessment,False
+IceCube can currently exclude or confirm LSC.,TEST_BLOCKED_MAPPING_MISSING,"The native IceCube release is valid, but no justified LSC mapping exists.",Step 05 IceCube mapping assessment,False
+The historical directional/sidereal test can currently be executed.,TEST_BLOCKED,"Timing, orientation, geometry, active tensor, frames, units, and statistic prerequisites are incomplete.",Steps 02-05 T12 gates,False
+A BEST-2 prediction is currently available or authorized.,FUTURE_ONLY_BLOCKED,The executable successor and authoritative as-built inputs do not yet exist.,BEST2FuturePredictionContract and Step 05 blocker registry,False

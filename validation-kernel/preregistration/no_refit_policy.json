@@ -1,0 +1,13 @@
+{
+  "baseline_fitting_allowed": true,
+  "constraint": "Baseline fitting and nuisance profiling may occur only in preregistered scopes and never alter frozen LSC parameters.",
+  "error": "FrozenModelRefitForbidden",
+  "frozen_lsc_operations_forbidden": [
+    "FIT",
+    "REFIT",
+    "OPTIMIZE",
+    "CALIBRATE"
+  ],
+  "nuisance_profiling_allowed": true,
+  "policy_version": "1.0.0"
+}

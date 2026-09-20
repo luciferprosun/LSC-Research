@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "AUTHORITATIVE_GALLIUM_SOURCE_LINE_PAYLOAD",
+  "source": {
+    "citation": "S. R. Elliott, V. N. Gavrin, and W. C. Haxton, Phys. Rev. C 108, 035502 (2023)",
+    "doi": "10.1103/PhysRevC.108.035502",
+    "arxiv": "2303.13623",
+    "source_location": "Table I"
+  },
+  "energy_unit": "MeV",
+  "weight_semantics": "neutrino branching fraction; weights sum to one within each isotope",
+  "isotopes": {
+    "Cr51": [
+      {"line_id": "Cr51-7524", "energy_mev": 0.7524, "branching_fraction": 0.0140},
+      {"line_id": "Cr51-7518", "energy_mev": 0.7518, "branching_fraction": 0.0842},
+      {"line_id": "Cr51-7465", "energy_mev": 0.7465, "branching_fraction": 0.8025},
+      {"line_id": "Cr51-4323", "energy_mev": 0.4323, "branching_fraction": 0.0015},
+      {"line_id": "Cr51-4317", "energy_mev": 0.4317, "branching_fraction": 0.0092},
+      {"line_id": "Cr51-4264", "energy_mev": 0.4264, "branching_fraction": 0.0886}
+    ],
+    "Ar37": [
+      {"line_id": "Ar37-8138", "energy_mev": 0.8138, "branching_fraction": 0.0111},
+      {"line_id": "Ar37-8135", "energy_mev": 0.8135, "branching_fraction": 0.0866},
+      {"line_id": "Ar37-8107", "energy_mev": 0.8107, "branching_fraction": 0.9023}
+    ]
+  },
+  "observed_results_included": false,
+  "BEST2_observed_data_included": false
+}

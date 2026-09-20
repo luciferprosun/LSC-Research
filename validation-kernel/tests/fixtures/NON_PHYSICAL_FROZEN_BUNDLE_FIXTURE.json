@@ -1,0 +1,32 @@
+{
+  "classification": "NON_PHYSICAL_FROZEN_BUNDLE_FIXTURE",
+  "purpose": "Ingestion shape testing only. This object contains no physical parameter values.",
+  "prediction_authorized": false,
+  "parameter_shapes": [
+    {
+      "canonical_name": "theta",
+      "kind": "vector",
+      "shape": [
+        "UNKNOWN_FROZEN_LENGTH"
+      ],
+      "value_marker": "NON_PHYSICAL_TEST_VALUE_OMITTED"
+    },
+    {
+      "canonical_name": "active_anisotropy_tensor",
+      "kind": "rank_2_tensor",
+      "shape": [
+        3,
+        3
+      ],
+      "value_marker": "NON_PHYSICAL_TEST_VALUE_OMITTED"
+    },
+    {
+      "canonical_name": "tensor_orientation",
+      "kind": "orientation_contract",
+      "shape": [
+        "MISSING_FROZEN_ORIENTATION"
+      ],
+      "value_marker": "NON_PHYSICAL_TEST_VALUE_OMITTED"
+    }
+  ]
+}

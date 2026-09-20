@@ -1,0 +1,406 @@
+{
+  "equations": [
+    {
+      "blockers": [
+        "missing-numerical-defaults",
+        "missing-e1-e12-evaluator"
+      ],
+      "canonical_symbolic_representation": "N0_a = integral dE dOmega dt [Phi(E,t,Omega) P_alpha_beta(E,L) sigma(E) epsilon0_a(E,t,Omega) W_a(E,t,Omega)]",
+      "dependencies": [],
+      "equation_id": "E1",
+      "execution_readiness": "BLOCKED_MISSING_NUMERICAL_CONTRACT",
+      "frame_constraints": [
+        "Omega and geometry conventions are not completely frozen."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "Phi",
+        "P_alpha_beta",
+        "sigma",
+        "epsilon0_a",
+        "W_a",
+        "integration_domain"
+      ],
+      "outputs": [
+        "N0_a"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E1",
+      "units_constraints": [
+        "Complete integrand and integration-unit contract is not frozen."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-lambda0",
+        "missing-lambdaA",
+        "missing-f0-a",
+        "missing-fA-a"
+      ],
+      "canonical_symbolic_representation": "epsilon_LSC,a(E,t,Omega) = epsilon0_a(E,t,Omega) * [1 + lambda0*f0_a(E,t) + lambdaA*q_a(t,Omega)*fA_a(E,t)]",
+      "dependencies": [
+        "E3"
+      ],
+      "equation_id": "E2",
+      "execution_readiness": "BLOCKED_MISSING_PARAMETER",
+      "frame_constraints": [
+        "q_a and the active tensor require a compatible lab-frame contract."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "epsilon0_a",
+        "lambda0",
+        "f0_a",
+        "lambdaA",
+        "q_a",
+        "fA_a"
+      ],
+      "outputs": [
+        "epsilon_LSC_a"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E2",
+      "units_constraints": [
+        "The bracket must be compatible with a dimensionless multiplier; individual normalizations are not frozen."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-active-tensor-components",
+        "missing-tensor-orientation",
+        "missing-coordinate-frame"
+      ],
+      "canonical_symbolic_representation": "q_a(t,Omega) = n_i^lab(t,Omega) A_a^{ij} n_j^lab(t,Omega)",
+      "dependencies": [
+        "E4",
+        "E11"
+      ],
+      "equation_id": "E3",
+      "execution_readiness": "BLOCKED_MISSING_ORIENTATION",
+      "frame_constraints": [
+        "n_lab and A_a_ij must share a frame; the complete frame and orientation are missing."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "n_lab",
+        "A_a_ij"
+      ],
+      "outputs": [
+        "q_a"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E3",
+      "units_constraints": [
+        "Direction-vector and tensor normalization units are not completely frozen."
+      ]
+    },
+    {
+      "blockers": [],
+      "canonical_symbolic_representation": "A_a^{ij} = A_a^{ji}; Tr(A_a) = 0",
+      "dependencies": [],
+      "equation_id": "E4",
+      "execution_readiness": "NUMERIC_READY",
+      "frame_constraints": [
+        "Structural checks do not supply the missing tensor orientation or frame."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:validate_tensor_constraints",
+      "implementation_scope": "NON_PREDICTIVE_STRUCTURAL_CHECK_ONLY",
+      "inputs": [
+        "A_a_ij"
+      ],
+      "outputs": [
+        "tensor_constraint_result"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E4",
+      "units_constraints": [
+        "Structural symmetry and trace checks do not determine component units."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-full-theta",
+        "missing-frozen-numeric-config",
+        "missing-numerical-defaults"
+      ],
+      "canonical_symbolic_representation": "N_LSC,a(theta) = integral dE dOmega dt [Phi P sigma epsilon_LSC,a W_a]",
+      "dependencies": [
+        "E2"
+      ],
+      "equation_id": "E5",
+      "execution_readiness": "BLOCKED_MISSING_PARAMETER",
+      "frame_constraints": [
+        "Geometry, exposure, and response-frame contracts are incomplete."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "Phi",
+        "P",
+        "sigma",
+        "epsilon_LSC_a",
+        "W_a",
+        "theta",
+        "integration_domain"
+      ],
+      "outputs": [
+        "N_LSC_a"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E5",
+      "units_constraints": [
+        "Complete integrand and integration-unit contract is not frozen."
+      ]
+    },
+    {
+      "blockers": [],
+      "canonical_symbolic_representation": "R_a = N_obs,a / N0_a",
+      "dependencies": [
+        "E1"
+      ],
+      "equation_id": "E6",
+      "execution_readiness": "NUMERIC_READY",
+      "frame_constraints": [
+        "No frame is required for the arithmetic ratio itself."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:observed_ratio",
+      "implementation_scope": "NON_LSC_ALGEBRAIC_TRANSFORM_ONLY",
+      "inputs": [
+        "N_obs_a",
+        "N0_a"
+      ],
+      "outputs": [
+        "R_a"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E6",
+      "units_constraints": [
+        "N_obs_a and N0_a must share units; R_a is dimensionless."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-lambda0",
+        "missing-lambdaA",
+        "missing-f0-a",
+        "missing-fA-a"
+      ],
+      "canonical_symbolic_representation": "Delta R_a^LSC ~= lambda0*F0_a + lambdaA*FA_a",
+      "dependencies": [
+        "E8"
+      ],
+      "equation_id": "E7",
+      "execution_readiness": "BLOCKED_MISSING_PARAMETER",
+      "frame_constraints": [
+        "FA_a inherits the unresolved anisotropy frame contract."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "lambda0",
+        "F0_a",
+        "lambdaA",
+        "FA_a"
+      ],
+      "outputs": [
+        "Delta_R_a_LSC"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E7",
+      "units_constraints": [
+        "Delta R is dimensionless; factor and amplitude normalizations are not frozen."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-f0-a",
+        "missing-fA-a",
+        "missing-numerical-defaults"
+      ],
+      "canonical_symbolic_representation": "F0_a = <f0_a>_a; FA_a = <q_a fA_a>_a",
+      "dependencies": [
+        "E1",
+        "E3"
+      ],
+      "equation_id": "E8",
+      "execution_readiness": "BLOCKED_MISSING_FUNCTION",
+      "frame_constraints": [
+        "FA_a inherits q_a frame and orientation requirements."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "f0_a",
+        "q_a",
+        "fA_a",
+        "E1_weighting"
+      ],
+      "outputs": [
+        "F0_a",
+        "FA_a"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E8",
+      "units_constraints": [
+        "Weight normalization and response-template units are not frozen."
+      ]
+    },
+    {
+      "blockers": [],
+      "canonical_symbolic_representation": "R_BEST = (R_inner, R_outer, R_outer / R_inner)",
+      "dependencies": [
+        "E6"
+      ],
+      "equation_id": "E9",
+      "execution_readiness": "NUMERIC_READY",
+      "frame_constraints": [
+        "No frame is required for this tuple construction."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:best_binned_target",
+      "implementation_scope": "NON_LSC_ALGEBRAIC_TRANSFORM_ONLY",
+      "inputs": [
+        "R_inner",
+        "R_outer"
+      ],
+      "outputs": [
+        "R_BEST"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E9",
+      "units_constraints": [
+        "R_inner, R_outer, and their ratio are dimensionless."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-full-theta",
+        "missing-active-units",
+        "missing-frozen-numeric-config"
+      ],
+      "canonical_symbolic_representation": "chi2(theta,eta) = [R_obs-R_pred(theta,eta)]^T C^-1 [R_obs-R_pred(theta,eta)] + penalty(eta)",
+      "dependencies": [
+        "E5",
+        "E6",
+        "E7"
+      ],
+      "equation_id": "E10",
+      "execution_readiness": "BLOCKED_MISSING_COVARIANCE",
+      "frame_constraints": [
+        "Directional predictions inherit unresolved frame requirements."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "R_obs",
+        "R_pred",
+        "theta",
+        "eta",
+        "C",
+        "penalty"
+      ],
+      "outputs": [
+        "chi2"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E10",
+      "units_constraints": [
+        "Covariance must be consistent with residual units; the full convention is missing."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-coordinate-frame",
+        "missing-tensor-orientation"
+      ],
+      "canonical_symbolic_representation": "n_lab(t) = R_lab<-ICRS(t, latitude, longitude, detector_orientation) * n_ICRS",
+      "dependencies": [],
+      "equation_id": "E11",
+      "execution_readiness": "BLOCKED_MISSING_FRAME",
+      "frame_constraints": [
+        "ICRS and lab roles are named; axes, orientation, timing convention, and transform are incomplete."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "t",
+        "latitude",
+        "longitude",
+        "detector_orientation",
+        "n_ICRS",
+        "R_lab_from_ICRS"
+      ],
+      "outputs": [
+        "n_lab"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E11",
+      "units_constraints": [
+        "Time, angle, and direction conventions are not completely frozen."
+      ]
+    },
+    {
+      "blockers": [
+        "missing-active-tensor-components",
+        "missing-tensor-orientation",
+        "missing-coordinate-frame",
+        "missing-precise-timing",
+        "missing-sufficient-geometry"
+      ],
+      "canonical_symbolic_representation": "S_a(t) = n_lab,i(t) A^{ij} n_lab,j(t)",
+      "dependencies": [
+        "E4",
+        "E11"
+      ],
+      "equation_id": "E12",
+      "execution_readiness": "BLOCKED_MISSING_ORIENTATION",
+      "frame_constraints": [
+        "Complete active tensor, ICRS-to-lab transform, and surveyed orientation are required."
+      ],
+      "implementation_function": "lsc_kernel.frozen.equations:blocked_symbolic_equation",
+      "implementation_scope": "SYMBOLIC_DESCRIPTOR_ONLY",
+      "inputs": [
+        "n_lab",
+        "A_ij",
+        "precise_timing",
+        "surveyed_orientation",
+        "geometry"
+      ],
+      "outputs": [
+        "S_a_t"
+      ],
+      "provenance_artifact_id": "canonical-equations",
+      "provenance_status": "AUTHENTIC_FROZEN",
+      "source_document": "01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "source_location": "Canonical Equations / E12",
+      "units_constraints": [
+        "Tensor normalization and time convention are not frozen."
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}

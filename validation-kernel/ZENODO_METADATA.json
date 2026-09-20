@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.2.0",
+  "document_kind": "ZENODO_PREDEPOSIT_METADATA",
+  "deposit_status": "READY_FOR_OWNER_UPLOAD",
+  "lineage_action": "CREATE_SEPARATE_LINKED_COMPANION_RECORD",
+  "title": "LSC Validation Kernel",
+  "upload_type": "software",
+  "version": "0.6.0",
+  "coauthor_status": "KERNEL_COAUTHOR_AUTHORIZED",
+  "related_scientific_model_version": "6.5.0",
+  "description": "Fail-closed reproducibility, preregistration, audit, and future-validation infrastructure accompanying the frozen LSC 6.5.0 scientific model. Experimental validation has not yet been performed.",
+  "creators": [
+    {
+      "name": "LuciferSun",
+      "affiliation": "Independent Research"
+    },
+    {
+      "name": "flAmeBorn",
+      "affiliation": "Independent Research"
+    },
+    {
+      "name": "LINZ HOSS"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "license_scope_note": "MIT covers original software and documentation; external materials remain governed by the source-specific terms recorded in THIRD_PARTY_NOTICES.md.",
+  "keywords": [
+    "reproducibility",
+    "validation",
+    "preregistration",
+    "scientific software"
+  ],
+  "repository_url": "https://github.com/luciferprosun/LSC-Validation-Kernel",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22007108",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "10.5281/zenodo.19780615",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://github.com/luciferprosun/LSC-Validation-Kernel",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    }
+  ],
+  "related_model_concept_doi": "10.5281/zenodo.19780615",
+  "related_model_version_doi": "10.5281/zenodo.22007108",
+  "companion_doi": null,
+  "publication_date": null,
+  "upload_performed": false,
+  "doi_minted": false,
+  "owner_upload_ready": true,
+  "human_metadata_review_required": false,
+  "human_review_items": []
+}

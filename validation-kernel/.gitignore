@@ -1,0 +1,45 @@
+# Preserved local source archive. It is evidence input, not kernel source.
+/LSC_6_3_0_VALIDATION/
+
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials/
+secrets/
+
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and build products
+.venv/
+venv/
+build/
+dist/
+tmp/
+temp/
+*.log
+
+# Large or executable serialized artifacts must remain outside Git.
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.pt
+*.pth
+*.joblib
+*.h5
+*.hdf5
+*.mat
+*.parquet
+*.feather
+*.root

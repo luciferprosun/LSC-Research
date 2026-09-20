@@ -1,0 +1,127 @@
+{
+  "schema_version": "0.1.0",
+  "document_kind": "NON_EXECUTABLE_SCIENTIFIC_SUCCESSOR_DRAFT",
+  "model": {
+    "name": "LSC",
+    "version": "6.5.0",
+    "status": "OWNER_AUTHORIZATION_PENDING",
+    "configuration": "EXACT_A2/C/A",
+    "predecessor_version": "6.4.0",
+    "predecessor_commit": "e53db798f1f3f448034a6e0af6399e8256189cd5",
+    "predecessor_verdict": "LSC_6_4_0_PARAMETER_DETERMINATION_FAILED",
+    "version_reason": "finite predictive closure is specified after the adverse linear 6.4.0 determination",
+    "classification": "POST_6_4_DEVELOPMENT"
+  },
+  "physical_hypothesis": {
+    "id": "N1_EXACT_CAPTURE_ARGUMENT_DILATION",
+    "classification": "NEW_PHYSICAL_HYPOTHESIS_6_5_0",
+    "statement": "The universal signed parameter alpha_0 translates the logarithm of the incident-energy argument of the frozen gallium capture cross section and no other forward-model quantity.",
+    "transformation": "E_sigma_prime = E * exp(alpha_0)",
+    "dilated_object": "capture-cross-section argument only",
+    "source_line_energy_is_rewritten": false,
+    "source_spectrum_is_dilated": false,
+    "oscillation_probability_is_dilated": false,
+    "detector_response_is_dilated": false,
+    "geometry_is_dilated": false,
+    "time_or_activity_is_dilated": false
+  },
+  "equations": {
+    "finite_operator": "T_alpha sigma(E) = sigma(E * exp(alpha_0))",
+    "local_multiplier": "K_m(E;alpha_0) = sigma_m(E * exp(alpha_0)) / sigma_m(E)",
+    "local_response": "S_m(E;alpha_0) = K_m(E;alpha_0) - 1",
+    "baseline_measure": "dnu_a = Phi * P * sigma_m(E) * epsilon0_a * W_a * dE * dOmega * dt",
+    "baseline_expectation": "N0_a = integral_Da dnu_a",
+    "exact_expectation": "N_LSC,a(alpha_0) = integral_Da K_m(E;alpha_0) dnu_a = integral_Da Phi * P * sigma_m(E * exp(alpha_0)) * epsilon0_a * W_a dE dOmega dt",
+    "exact_observable": "R_pred,a(alpha_0) = N_LSC,a(alpha_0) / N0_a = <K_m(E;alpha_0)>_a = 1 + <S_m(E;alpha_0)>_a",
+    "normalized_average": "<g>_a = integral_Da g dnu_a / N0_a",
+    "null_limit": "alpha_0 = 0 implies K_m = 1, S_m = 0, and R_pred,a = 1",
+    "first_order_bridge": "S_m(E;alpha_0) = alpha_0 * d ln sigma_m(E) / d ln E + O(alpha_0^2)",
+    "flow_composition": "T_alpha T_beta = T_(alpha+beta); K(E;alpha+beta) = K(E;alpha) K(E exp(alpha);beta)"
+  },
+  "derivation": {
+    "finite_transformation_first": "Substitution E_sigma_prime=E exp(alpha_0) into the capture cross section gives the ratio K directly.",
+    "generator": "D = d/d ln E = E d/dE",
+    "exponential_flow": "exp(alpha_0 D) sigma(E) = sigma(E exp(alpha_0))",
+    "independent_derivations_agree": true,
+    "uniqueness_scope": "unique within a differentiable one-parameter scale group whose parameter is exactly Delta ln E and whose action is restricted to the cross-section argument",
+    "not_claimed": "not uniquely derived from historical 6.3.0 and not authorized as 6.4.0"
+  },
+  "pre_outcome_provenance": {
+    "path": "spec/LSC_6_4_0_RESPONSE_A2.json",
+    "sha256": "c548592b44d0f75ecfd24f2392e07492920711415b207cf74c4bd31526fdceb8",
+    "field": "equations.finite_dilation_reference",
+    "content": "sigma_m(E exp(alpha_0)) / sigma_m(E)",
+    "status": "REFERENCE_HASH_FROZEN_BEFORE_THE_STEP_07C_PARAMETER_DETERMINATION",
+    "interpretation": "the finite equation was not selected from the adverse optimum; promoting it to a production response remains a new owner-gated 6.5.0 closure"
+  },
+  "cross_section": {
+    "scenario_id": "BAHCALL_1997_BEST_ESTIMATE_NATURAL_CUBIC_SPLINE",
+    "payload": "external_physics/gallium_capture/bahcall_1997_best_estimate.csv",
+    "payload_sha256": "55dc0006cbb2bca205f03162521dbbc75ba68af223810b312113398528a49da5",
+    "source_line_payload": "external_physics/gallium_capture/source_lines_prc108_035502.json",
+    "source_line_payload_sha256": "ecfd559f0ccbb5da7040b42d73f2abc2c49a0637993964c621f6e145da70c70e",
+    "interpolation": "natural cubic spline in linear E and sigma",
+    "support_mev_closed": [0.24, 30.0],
+    "positive_on_support": true,
+    "extrapolation": false,
+    "payload_changed_after_6_4_failure": false
+  },
+  "domain": {
+    "rule_per_input": "max_i ln(E_min/E_i) <= alpha_0 <= min_i ln(E_max/E_i)",
+    "rule_preconditions": [
+      "every authoritative baseline energy E_i is positive and inside the cross-section support",
+      "every transformed energy E_i exp(alpha_0) remains inside the same support",
+      "sigma_m(E_i) and sigma_m(E_i exp(alpha_0)) are finite and strictly positive",
+      "the baseline denominator is finite and strictly positive"
+    ],
+    "canonical_Cr51_Ar37_energy_union_mev": [0.4264, 0.8138],
+    "canonical_Cr51_Ar37_alpha_domain_closed": [-0.5747389495096434, 3.607238025076703],
+    "domain_classification": "DATA_INDEPENDENT_CROSS_SECTION_SUPPORT_DOMAIN",
+    "old_linear_analysis_bound_reused": false,
+    "theory_bound": null,
+    "outside_domain": "FAIL_CLOSED_UNSUPPORTED_DOMAIN"
+  },
+  "parameter_contract": {
+    "physical_parameter_count": 1,
+    "parameters": [
+      {
+        "parameter_id": "LSC650-PHYS-01",
+        "symbol": "alpha_0",
+        "units": "dimensionless",
+        "meaning": "universal signed logarithmic capture-cross-section argument dilation Delta ln E",
+        "null_value": 0.0,
+        "shared_across_experiments_isotopes_zones": true,
+        "refittable_between_experiments": false,
+        "value": null,
+        "status": "NOT_DETERMINED_OWNER_AUTHORIZATION_PENDING"
+      }
+    ],
+    "additional_polynomial_coefficients": [],
+    "experiment_specific_physical_coefficients": [],
+    "nuisance_parameters_are_lsc_parameters": false
+  },
+  "model_profile": {
+    "sharing": "UNIVERSAL_CROSS_EXPERIMENT",
+    "anisotropic_sector": "DISABLED",
+    "tensor": null,
+    "preferred_axis": null,
+    "directional_claims": false,
+    "T12": "OUTSIDE_PRODUCTION_PROFILE"
+  },
+  "exposure": {
+    "model_development_classification": ["POST_6_4_DEVELOPMENT", "MODEL_EXPOSED"],
+    "BEST_inner": ["POST_6_4_DEVELOPMENT", "MODEL_EXPOSED", "RETROSPECTIVE_NON_BLIND", "DEVELOPMENT_DATA"],
+    "BEST_outer_GALLEX_SAGE": ["MODEL_EXPOSED", "NON_BLIND_HISTORICAL", "NOT_USED_IN_STEP_07C_OBJECTIVE"],
+    "BEST2": ["FUTURE_ONLY", "FUTURE_BLIND"]
+  },
+  "authorization": {
+    "owner_authorized": false,
+    "implementation_authorized": false,
+    "parameter_determination_authorized": false,
+    "fit_performed_in_step07d": false,
+    "historical_holdout_evaluation_performed_in_step07d": false,
+    "BEST2_observed_data_accessed": false,
+    "BEST2_prediction_generated": false,
+    "publication_authorized": false
+  }
+}

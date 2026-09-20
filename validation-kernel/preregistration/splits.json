@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "selection_policy": "Split membership is stable, identifier-driven and frozen before outcomes; no result-adaptive split changes.",
+  "splits": [
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "BEST:zone=outer"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_BEST_INNER_TO_OUTER",
+      "test_id": "T1",
+      "train": [
+        "BEST:zone=inner"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "BEST:zone=inner"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_BEST_OUTER_TO_INNER",
+      "test_id": "T2",
+      "train": [
+        "BEST:zone=outer"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "BEST:exposure_id=6..10"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_BEST_EARLY_TO_LATE",
+      "test_id": "T6",
+      "train": [
+        "BEST:exposure_id=1..5"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "BEST:one omitted run"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_BEST_LORO",
+      "test_id": "T6",
+      "train": [
+        "BEST:all eligible primary rows except stable omitted run"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "GALLEX_GNO:one omitted Cr source run"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_GALLEX_LORO",
+      "test_id": "T6",
+      "train": [
+        "GALLEX_GNO:all eligible Cr source rows except stable omitted run"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "SAGE_CR51:one omitted primary run"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_SAGE_CR51_LORO",
+      "test_id": "T6",
+      "train": [
+        "SAGE_CR51:all primary exposures except stable omitted run"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "SAGE_AR37:one omitted primary run"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_SAGE_AR37_LORO",
+      "test_id": "T6",
+      "train": [
+        "SAGE_AR37:all primary exposures except stable omitted run"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "BEST"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_LOEO_BEST",
+      "test_id": "T7",
+      "train": [
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "GALLEX_GNO"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_LOEO_GALLEX",
+      "test_id": "T7",
+      "train": [
+        "BEST",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "SAGE_CR51"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_LOEO_SAGE_CR51",
+      "test_id": "T7",
+      "train": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_AR37"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "SAGE_AR37"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_LOEO_SAGE_AR37",
+      "test_id": "T7",
+      "train": [
+        "BEST",
+        "GALLEX_GNO",
+        "SAGE_CR51"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "GALLEX_GNO:Cr source rows"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_BEST_TO_GALLEX",
+      "test_id": "T3",
+      "train": [
+        "BEST"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_BEST_TO_SAGE",
+      "test_id": "T3",
+      "train": [
+        "BEST"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "BEST"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_GALLIUM_LEGACY_TO_BEST",
+      "test_id": "T4",
+      "train": [
+        "GALLEX_GNO",
+        "SAGE_CR51",
+        "SAGE_AR37"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "SAGE_AR37"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_CR51_TO_AR37",
+      "test_id": "T5",
+      "train": [
+        "BEST",
+        "GALLEX_GNO:Cr source rows",
+        "SAGE_CR51"
+      ]
+    },
+    {
+      "blindness_level": "NON_BLIND_HISTORICAL",
+      "exposure_classification": "MODEL_EXPOSED",
+      "holdout": [
+        "one stable experiment family"
+      ],
+      "holdout_is_clean_unexposed": false,
+      "ordering": "lexicographic canonical dataset/run ID",
+      "split_id": "SPLIT_EXPERIMENT_FAMILY_HOLDOUT",
+      "test_id": "T7",
+      "train": [
+        "all non-held-out registered gallium families"
+      ]
+    }
+  ]
+}

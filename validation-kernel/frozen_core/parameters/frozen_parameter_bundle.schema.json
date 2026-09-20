@@ -1,0 +1,221 @@
+{
+  "$defs": {
+    "parameterEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "dimensions": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provenance": {
+          "additionalProperties": false,
+          "properties": {
+            "artifact_id": {
+              "type": "string"
+            },
+            "classification": {
+              "const": "AUTHENTIC_FROZEN"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "artifact_id",
+            "classification",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "units": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {}
+      },
+      "required": [
+        "dimensions",
+        "frame",
+        "provenance",
+        "units",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:lsc-validation-kernel:frozen-parameter-bundle:1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "bundle_schema_version": {
+      "const": "1.0.0"
+    },
+    "bundle_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "frame_definitions": {
+      "type": "object"
+    },
+    "model_identity": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_version": {
+          "const": "6.3.0-pre-BEST2-freeze-update"
+        },
+        "freeze_commit": {
+          "const": "a6d582694d55fa0260ef7ab07ed83fd06feef607"
+        },
+        "historical_git_commit": {
+          "const": "6ffa07bdde533fcc2a550e36c762b8edd9236c47"
+        },
+        "kernel_schema_version": {
+          "const": "1.0.0"
+        },
+        "model_name": {
+          "const": "LSC"
+        },
+        "provenance_registry_checksum": {
+          "const": "f8c595a27f4352424712dab2300c2e01bdafd8cdda4ba5fabef50c1feb77d67c"
+        },
+        "source_manifest_checksum": {
+          "const": "e16b7b5ac775389aa3fdf5b319d0ecb3460eab3bf3126f850d1ef4da84c659ce"
+        },
+        "symbolic_equation_set_identity": {
+          "const": "LSC-E1-E12@sha256:af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981"
+        },
+        "zenodo_concept_doi": {
+          "const": "10.5281/zenodo.19780615"
+        },
+        "zenodo_version_doi": {
+          "const": "10.5281/zenodo.20377427"
+        }
+      },
+      "required": [
+        "canonical_version",
+        "freeze_commit",
+        "historical_git_commit",
+        "kernel_schema_version",
+        "model_name",
+        "provenance_registry_checksum",
+        "source_manifest_checksum",
+        "symbolic_equation_set_identity",
+        "zenodo_concept_doi",
+        "zenodo_version_doi"
+      ],
+      "type": "object"
+    },
+    "parameters": {
+      "additionalProperties": false,
+      "properties": {
+        "active_anisotropy_tensor": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "complete_reference_frame": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "covariance": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "eta": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "executable_evaluator_inputs": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "f0_a": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "fA_a": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "frozen_prediction_table": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "lambda0": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "lambdaA": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "numerical_configuration": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "numerical_defaults": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "parameter_bounds": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "parameter_ordering": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "tensor_orientation": {
+          "$ref": "#/$defs/parameterEntry"
+        },
+        "theta": {
+          "$ref": "#/$defs/parameterEntry"
+        }
+      },
+      "required": [
+        "theta",
+        "parameter_ordering",
+        "lambda0",
+        "lambdaA",
+        "f0_a",
+        "fA_a",
+        "active_anisotropy_tensor",
+        "tensor_orientation",
+        "complete_reference_frame",
+        "eta",
+        "covariance",
+        "numerical_configuration",
+        "parameter_bounds",
+        "numerical_defaults",
+        "frozen_prediction_table",
+        "executable_evaluator_inputs"
+      ],
+      "type": "object"
+    },
+    "provenance_state": {
+      "const": "AUTHENTIC_FROZEN"
+    },
+    "source_references": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "tensor_definitions": {
+      "type": "object"
+    },
+    "unit_definitions": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "bundle_schema_version",
+    "bundle_sha256",
+    "frame_definitions",
+    "model_identity",
+    "parameters",
+    "provenance_state",
+    "source_references",
+    "tensor_definitions",
+    "unit_definitions"
+  ],
+  "title": "FrozenParameterBundle",
+  "type": "object"
+}

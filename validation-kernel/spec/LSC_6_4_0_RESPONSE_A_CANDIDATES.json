@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "document_kind": "LSC_6_4_0_RESPONSE_A_SCIENTIFIC_CANDIDATE_SET",
+  "model_version": "6.4.0",
+  "status": "OWNER_SELECTION_REQUIRED",
+  "closure_verdict": "RESPONSE_A_NEW_PHYSICAL_HYPOTHESIS_OPTIONS_READY",
+  "unique_backbone_derived_response_found": false,
+  "active_branch": {
+    "tensor_option": "C",
+    "anisotropic_sector_active": false,
+    "sharing_option": "A",
+    "universal_cross_experiment_law": true,
+    "experiment_specific_physical_coefficients": []
+  },
+  "preserved_backbone": {
+    "local_response": "epsilon_LSC,a(E,t,Omega) = epsilon0_a(E,t,Omega) * [1 + S_a(E,t)]",
+    "baseline_measure": "dnu_a = Phi * P_alpha_beta * sigma * epsilon0_a * W_a * dE * dOmega * dt",
+    "baseline_denominator": "N0_a = integral_Da dnu_a",
+    "weighted_average": "<g>_a = integral_Da(g * dnu_a) / N0_a",
+    "observable_binding": "Rpred_a = 1 + <S_a>_a",
+    "preconditions": [
+      "N0_a is finite and strictly positive",
+      "all authoritative input functions are finite on the integration domain"
+    ],
+    "source_path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+    "source_sha256": "af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981"
+  },
+  "index_semantics": {
+    "a": "analysis bin or detector zone named by an authoritative dataset contract",
+    "E": "incident neutrino energy expressed in MeV",
+    "t": "physical exposure time; no candidate adds an intrinsic scalar time law",
+    "Omega": "integration direction in the preserved baseline measure; inactive in S_a for the trace-only branch"
+  },
+  "common_rules": {
+    "response_factorization": "S_a(E,t) = alpha_0 * F_a(E,t; authoritative_inputs)",
+    "S_a_units": "dimensionless",
+    "F_a_units": "dimensionless",
+    "alpha_0_units": "dimensionless",
+    "one_empirical_physical_parameter": "alpha_0",
+    "normalization_rule": "The physical definition of alpha_0 fixes template scale; arbitrary F -> cF rescaling is forbidden after owner selection.",
+    "source_activity_role": "conventional baseline input only",
+    "standard_decay_role": "conventional baseline input only",
+    "line_branching_role": "conventional baseline input only",
+    "geometry_role": "conventional W_a input only",
+    "detector_nuisance_role": "eta nuisance only; never an experiment-specific LSC coefficient",
+    "unsupported_behavior": "FAIL_CLOSED_UNSUPPORTED_DOMAIN",
+    "physical_parameter_refit_between_experiments": false,
+    "BEST2_observed_data_accessed": false,
+    "BEST2_prediction_generated": false
+  },
+  "candidates": [
+    {
+      "candidate_id": "RESPONSE_A1_UNIVERSAL_SCALE",
+      "title": "Universal fractional response scale",
+      "classification": "NEW_PHYSICAL_HYPOTHESIS_6_4_0",
+      "equation": "F_A1,a(E,t) = 1; S_a(E,t) = alpha_0; Rpred_a = 1 + alpha_0",
+      "equation_ast": {
+        "op": "multiply",
+        "left": {"symbol": "alpha_0"},
+        "right": {"op": "constant", "value": 1.0}
+      },
+      "physical_hypothesis": "A single universal multiplicative response shift applies to every supported zone, exposure, source and experiment.",
+      "alpha_0_meaning": "signed fractional change of the baseline response",
+      "parameter_count": 1,
+      "normalization": {
+        "rule": "F_A1 is identically one",
+        "scale_gauge_removed": true,
+        "constant": 1.0
+      },
+      "intrinsic_energy_dependence": false,
+      "intrinsic_time_dependence": false,
+      "source_dependence": false,
+      "isotope_dependence": false,
+      "experiment_dependence": false,
+      "geometry_dependence": false,
+      "domain": {
+        "energy": "E > 0 within an authoritative dataset contract",
+        "time": "any time accepted by the authoritative exposure contract",
+        "source_lines": "all lines accepted by the authoritative dataset contract",
+        "isotopes": ["51Cr", "37Ar", "future sources only after an authoritative contract"],
+        "additional_preconditions": ["alpha_0 > -1 so the multiplicative response remains strictly positive"]
+      },
+      "external_constants": [],
+      "external_inputs": ["canonical E1 baseline measure"],
+      "transferability": "FULL_WITHIN_DECLARED_DATASET_DOMAIN",
+      "falsifiability": "A single frozen alpha_0 must transfer without refit.",
+      "identifiability": "DEGENERATE_WITH_M1_AND_COMMON_NORMALIZATION_NUISANCES_UNLESS_EXTERNALLY_CONSTRAINED",
+      "scientific_limitation": "Prediction-equivalent to the M1 constant-normalization baseline; it does not establish a distinct LSC mechanism.",
+      "BEST2_capability": "PROSPECTIVE_SCHEMA_CAPABLE",
+      "recommendation_status": "ADMISSIBLE_NESTED_CONTROL_NOT_RECOMMENDED_AS_DISTINCT_LSC"
+    },
+    {
+      "candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+      "title": "Universal gallium-capture energy-dilation response",
+      "classification": "NEW_PHYSICAL_HYPOTHESIS_6_4_0",
+      "equation": "F_A2,m(E) = (partial/partial xi) ln sigma_m(E * exp(xi)) at xi=0 = d ln sigma_m(E)/d ln E; S_a(E,t) = alpha_0 * F_A2,m(E); Rpred_a = 1 + alpha_0 * <F_A2,m>_a",
+      "equation_ast": {
+        "op": "multiply",
+        "left": {"symbol": "alpha_0"},
+        "right": {
+          "op": "log_derivative",
+          "function": "sigma_m",
+          "variable": "E",
+          "dilation_map": "E * exp(xi)",
+          "evaluation_point": {"xi": 0.0}
+        }
+      },
+      "physical_hypothesis": "The scalar LSC amplitude is a universal infinitesimal logarithmic dilation of the incident-neutrino-energy argument of the conventional 71Ga capture cross section; source activity, decay, line weights, geometry and detector efficiency are not shifted.",
+      "alpha_0_meaning": "signed logarithmic incident-energy dilation d(ln E); positive alpha_0 samples the capture response at higher E",
+      "parameter_count": 1,
+      "normalization": {
+        "rule": "F_A2 is the logarithmic derivative of a versioned physical cross-section function; alpha_0 is the logarithmic energy dilation.",
+        "scale_gauge_removed": true,
+        "arbitrary_template_rescaling_allowed": false
+      },
+      "intrinsic_energy_dependence": true,
+      "intrinsic_time_dependence": false,
+      "source_dependence": "only through authoritative line energies and weights in the E1 measure",
+      "isotope_dependence": "only through authoritative source-line energies and the preregistered cross-section model scenario",
+      "experiment_dependence": false,
+      "geometry_dependence": false,
+      "domain": {
+        "energy": "E > 0 and sigma_m(E) > 0 on an open neighborhood of every evaluated source line; sigma_m must be C1 there",
+        "time": "any time accepted by the authoritative exposure contract; F_A2 has no intrinsic t dependence",
+        "source_lines": ["51Cr lines admitted by the versioned cross-section source", "37Ar lines admitted by the versioned cross-section source"],
+        "isotopes": ["51Cr", "37Ar"],
+        "additional_preconditions": [
+          "the cross-section model ID, function, units, version and SHA-256 are frozen before alpha_0 determination",
+          "1 + alpha_0 * F_A2,m(E) > 0 at every integration point",
+          "a preregistered linear-response tolerance is satisfied"
+        ]
+      },
+      "external_constants": "all constants are owned by the selected versioned sigma_m source; no new numerical LSC constant is introduced",
+      "external_inputs": [
+        "a positive differentiable 71Ga capture cross-section function sigma_m(E)",
+        "preregistered/gallium_cross_section_models.json",
+        "authoritative source-line energies and branching weights"
+      ],
+      "cross_section_scenario_policy": "No model is declared correct or selected after seeing an outcome. Every admitted sigma_m scenario is frozen before parameter determination and reported separately.",
+      "transferability": "UNIVERSAL_OPERATOR_WITH_AUTHORITATIVE_CROSS_SECTION_SCENARIOS",
+      "falsifiability": "One alpha_0 and the same derivative law transfer across zones, experiments and isotopes without refit; different source spectra can reject the law.",
+      "identifiability": "ONE_DIMENSIONAL_AFTER_SIGMA_MODEL_AND_NUISANCE_POLICY_FREEZE",
+      "scientific_limitation": "The universal energy-dilation mechanism is not preserved by canonical 6.3.0 and is therefore a new 6.4.0 physical hypothesis. The current registry contains line-averaged totals, not a complete differentiable function for every model.",
+      "BEST2_capability": "PROSPECTIVE_SCHEMA_CAPABLE_CONDITIONAL_ON_AUTHORITATIVE_AS_BUILT_INPUTS_AND_FROZEN_SIGMA_FUNCTION",
+      "recommendation_status": "RECOMMENDED_FOR_OWNER_SELECTION"
+    },
+    {
+      "candidate_id": "RESPONSE_A3_DETECTOR_ENERGY_DILATION",
+      "title": "Universal detector-response energy-dilation operator",
+      "classification": "NEW_PHYSICAL_HYPOTHESIS_6_4_0",
+      "equation": "F_A3,a(E,t) = (partial/partial xi) ln epsilon0_a(E * exp(xi),t) at xi=0 = partial ln epsilon0_a(E,t)/partial ln E; S_a(E,t) = alpha_0 * F_A3,a(E,t); Rpred_a = 1 + alpha_0 * <F_A3,a>_a",
+      "equation_ast": {
+        "op": "multiply",
+        "left": {"symbol": "alpha_0"},
+        "right": {
+          "op": "log_derivative",
+          "function": "epsilon0_a",
+          "variable": "E",
+          "dilation_map": "E * exp(xi)",
+          "evaluation_point": {"xi": 0.0}
+        }
+      },
+      "physical_hypothesis": "The scalar LSC amplitude is a universal infinitesimal logarithmic dilation of the energy argument of each detector's authoritative baseline efficiency curve; the operator and alpha_0 are universal while the baseline curve is an experiment input.",
+      "alpha_0_meaning": "signed logarithmic detector energy-axis dilation d(ln E)",
+      "parameter_count": 1,
+      "normalization": {
+        "rule": "F_A3 is the logarithmic derivative of the authoritative baseline efficiency; alpha_0 is the logarithmic energy-axis dilation.",
+        "scale_gauge_removed": true,
+        "arbitrary_template_rescaling_allowed": false
+      },
+      "intrinsic_energy_dependence": true,
+      "intrinsic_time_dependence": false,
+      "source_dependence": false,
+      "isotope_dependence": false,
+      "experiment_dependence": "only through the authoritative epsilon0_a input; no experiment-specific LSC coefficient",
+      "geometry_dependence": false,
+      "domain": {
+        "energy": "E > 0 and epsilon0_a(E,t) > 0 on an open neighborhood of every evaluated energy; epsilon0_a must be C1 in E",
+        "time": "times for which the authoritative efficiency contract is valid",
+        "source_lines": "all lines covered by the authoritative efficiency curve",
+        "isotopes": ["51Cr", "37Ar", "future sources only inside an authoritative efficiency domain"],
+        "additional_preconditions": [
+          "the epsilon0_a function, interpolation rule, units, validity interval, version and SHA-256 are frozen",
+          "1 + alpha_0 * F_A3,a(E,t) > 0 at every integration point",
+          "a preregistered linear-response tolerance is satisfied"
+        ]
+      },
+      "external_constants": [],
+      "external_inputs": ["authoritative positive differentiable detector baseline response epsilon0_a(E,t)"],
+      "transferability": "UNIVERSAL_OPERATOR_CONDITIONAL_ON_COMPARABLE_AUTHORITATIVE_DETECTOR_RESPONSE_CURVES",
+      "falsifiability": "The operator and alpha_0 transfer without refit; measured baseline response curves determine all experiment variation.",
+      "identifiability": "CONDITIONAL_AND_POTENTIALLY_DEGENERATE_WITH_M4_DETECTOR_SYSTEMATICS",
+      "scientific_limitation": "The archive does not contain the required energy-resolved efficiency functions for the radiochemical gallium experiments; the hypothesis may be observationally indistinguishable from detector-systematic effects.",
+      "BEST2_capability": "PROSPECTIVE_SCHEMA_CAPABLE_ONLY_IF_AUTHORITATIVE_AS_BUILT_ENERGY_RESPONSE_IS_AVAILABLE",
+      "recommendation_status": "ADMISSIBLE_BUT_NOT_RECOMMENDED_WITH_CURRENT_INPUTS"
+    }
+  ],
+  "comparison": {
+    "forbidden_criterion": "goodness-of-fit to BEST, SAGE, GALLEX/GNO or BEST-2",
+    "recommended_candidate_id": "RESPONSE_A2_CAPTURE_ENERGY_DILATION",
+    "recommendation_basis": [
+      "one physical amplitude",
+      "fixed transferable operator",
+      "source and isotope transfer without experiment-specific coefficients",
+      "prospective falsifiability",
+      "historical motivation from energy-response perturbation without promoting historical fitted values",
+      "clear separation from source activity, detector efficiency and geometry inputs"
+    ],
+    "owner_selection_required": true,
+    "reason_unique_derivation_failed": "E1-E12 fix only the linear response slot and its weighted observable. Canonical 6.3.0 explicitly leaves f0_a physically unfixed and removes the old standalone energy-map mechanism. Symmetry and dimensions do not choose among A1-A3."
+  },
+  "safety": {
+    "fit_performed": false,
+    "prediction_performed": false,
+    "validation_performed": false,
+    "BEST2_observed_data_accessed": false,
+    "BEST2_prediction_generated": false,
+    "owner_authorized": false,
+    "ready_for_implementation": false
+  }
+}

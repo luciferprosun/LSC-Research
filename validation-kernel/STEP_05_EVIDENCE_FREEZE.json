@@ -1,0 +1,150 @@
+{
+  "policy": "Hash snapshot only; inclusion does not promote evidence to frozen numerical input.",
+  "records": [
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "SUMMARY_COVARIANCE_AND_GEOMETRY_ONLY",
+      "object_id": "best-detailed-paper-source",
+      "path": "LSC_6_3_0_VALIDATION/02_BEST/Papers/arXiv_2201.07364/BEST_2201.07364_source.tar",
+      "provenance_class": "AUTHORITATIVE_COLLABORATION_RECOVERED",
+      "sha256": "c059cd9ac3f498b8e475763d430fca183aca189583b5da3dbc91b4cc2cbf9523",
+      "source_identifier": "arXiv:2201.07364v3"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "SYMBOLIC_SPECIFICATION_ONLY",
+      "object_id": "canonical-equations",
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_ACTIVE_EQUATION_SET.md",
+      "provenance_class": "AUTHENTIC_FROZEN",
+      "sha256": "af801a3f45171f6cc87f526fcfe30b8d87ca445ab304cd614569358aa1f94981",
+      "source_identifier": "Git 75901c968c7dbde7a16ea4836b18b8163950befa"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "PRIMARY_NEGATIVE_EVIDENCE",
+      "object_id": "canonical-freeze-boundary",
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_FREEZE_BOUNDARY.md",
+      "provenance_class": "AUTHENTIC_FROZEN",
+      "sha256": "b38ccc4f9f67e020b6c090e548e0bdcc2e8053097e22ac5ceb6447730e6a1f05",
+      "source_identifier": "Git 75901c968c7dbde7a16ea4836b18b8163950befa"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "SYMBOLIC_NAMES_AND_SEMANTICS_ONLY",
+      "object_id": "canonical-parameter-structures",
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/canonical/LSC_CANONICAL_CORE.md",
+      "provenance_class": "AUTHENTIC_FROZEN",
+      "sha256": "c8857d6bd1c8f1cb3b6d145c4b942985cb330edea879a31de6dabafef882a762",
+      "source_identifier": "Git 75901c968c7dbde7a16ea4836b18b8163950befa"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "SOURCE_TABLES_RECOVERED_COVARIANCE_MISSING",
+      "object_id": "gallex-reanalysis-source",
+      "path": "LSC_6_3_0_VALIDATION/03_GALLEX_GNO/Papers/GALLEX_reanalysis_1001.2731_source.tar",
+      "provenance_class": "AUTHORITATIVE_EXTERNAL_RECOVERED",
+      "sha256": "5313abcdd3b12f740a0f3800e98f7406f1c1d342de7e3862391e62e2b87993ff",
+      "source_identifier": "arXiv:1001.2731"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "HIGH_LEVEL_SCHEMA_HIERARCHY_INCOMPLETE",
+      "object_id": "historical-m4-schema",
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/implementation/LSC_M4_IMPLEMENTATION_SCHEMA.md",
+      "provenance_class": "AUTHENTIC_FROZEN",
+      "sha256": "b1150da5678eb3c58ba3c2e156be632d8953ea62c58cc0634196c4c72da67a62",
+      "source_identifier": "Git 75901c968c7dbde7a16ea4836b18b8163950befa"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "NATIVE_RELEASE_VALID_LSC_MAPPING_NOT_JUSTIFIED",
+      "object_id": "icecube-release-index",
+      "path": "LSC_6_3_0_VALIDATION/07_ICECUBE/ICECUBE_FILE_INTEGRITY.csv",
+      "provenance_class": "DERIVED_WITH_EXACT_PROVENANCE",
+      "sha256": "e2a93f7af91671bc60714c16a2e84b858b7969d9a5297690245490324ba48548",
+      "source_identifier": "archived IceCube releases"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "NATIVE_GRID_VALID_LSC_MAPPING_NOT_JUSTIFIED",
+      "object_id": "katrin-grid",
+      "path": "LSC_6_3_0_VALIDATION/06_KATRIN/records/19369714/files/Main_result_KNM1to5_chi_square_map.json",
+      "provenance_class": "AUTHORITATIVE_EXTERNAL_RECOVERED",
+      "sha256": "64d968ff1ad6fcc231a12eec52ae64d657a1a23c6cec7fe3fe95789725b26336",
+      "source_identifier": "10.5281/zenodo.19369714"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "MARGINAL_ONLY",
+      "object_id": "nuclear-cross-section-source",
+      "path": "LSC_6_3_0_VALIDATION/05_GALLIUM_CROSS_SECTIONS/Papers/Elliott_Gavrin_Haxton_2303.13623_source.tar",
+      "provenance_class": "AUTHORITATIVE_EXTERNAL_RECOVERED",
+      "sha256": "88be4fc518b18229930234f6a96b3f23a2cec9747c07648c394619d20a54c3d2",
+      "source_identifier": "arXiv:2303.13623"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "REJECTED_AS_FROZEN_INPUT",
+      "object_id": "postdata-toy-c0-c1",
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/LSC-Research/historical_archive/pre_step5_repository/LSC_core/arXiv last edition 13.05/source/outputs/model_parameters.csv",
+      "provenance_class": "HISTORICAL_POST_DATA",
+      "sha256": "bea6a9a0e9878ec2aa97402b897edd2547f9597a66da2cef1b12e4ab84dbe780",
+      "source_identifier": "Git 700aa9262df66731f0fc180af44fbdea9897623d"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "SOURCE_TABLES_RECOVERED_COVARIANCE_MISSING",
+      "object_id": "sage-ar37-source",
+      "path": "LSC_6_3_0_VALIDATION/04_SAGE/Papers/SAGE_Ar37_nucl-ex_0512041_source.tar",
+      "provenance_class": "AUTHORITATIVE_EXTERNAL_RECOVERED",
+      "sha256": "0146620e63de281d17c1e85739da2c855234660582a586c240706beb133c1a90",
+      "source_identifier": "arXiv:nucl-ex/0512041"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "SOURCE_TABLES_RECOVERED_COVARIANCE_MISSING",
+      "object_id": "sage-cr51-source",
+      "path": "LSC_6_3_0_VALIDATION/04_SAGE/Papers/SAGE_Cr51_hep-ph_9803418_source.tar",
+      "provenance_class": "AUTHORITATIVE_EXTERNAL_RECOVERED",
+      "sha256": "579ec44eab6641f3f893e004a97275f64a4ce4e1c5a1ae6bc358b559ba12d64e",
+      "source_identifier": "arXiv:hep-ph/9803418"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "BLOCKERS_FORMALIZED",
+      "object_id": "step05-blocker-registry",
+      "path": "blocker_registry.json",
+      "provenance_class": "DERIVED_WITH_EXACT_PROVENANCE",
+      "sha256": "f986d1836bfadd2de6da4266ab068adab547838bbbdd046dcfd5d37d9edcf493",
+      "source_identifier": "Step 05 code and adjudication"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "AUTHENTIC_FROZEN_BUNDLE_INCOMPLETE",
+      "object_id": "step05-parameter-adjudication",
+      "path": "docs/acquisition/FROZEN_PARAMETER_ADJUDICATION.csv",
+      "provenance_class": "DERIVED_WITH_EXACT_PROVENANCE",
+      "sha256": "1ca80f15267d417da42a0195fb7ee668339d2630068461c51852f77bb40d97a8",
+      "source_identifier": "Step 05 targeted investigation"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "SEARCH_SCOPE_FROZEN",
+      "object_id": "step05-search-log",
+      "path": "docs/acquisition/ACQUISITION_SEARCH_LOG.csv",
+      "provenance_class": "DERIVED_WITH_EXACT_PROVENANCE",
+      "sha256": "fb4289c88d247ddd715a460d6d3ea11464d855efe0fb156d1ca5307d998cb53d",
+      "source_identifier": "Step 05 targeted investigation"
+    },
+    {
+      "acquisition_timestamp": "2026-08-16T10:46:00+02:00",
+      "adjudication": "NO_NUMERICAL_BUNDLE_IN_ARCHIVE",
+      "object_id": "zenodo-release-archive",
+      "path": "LSC_6_3_0_VALIDATION/01_LSC_FROZEN_REFERENCE/zenodo_record_20377427/files/zenodo25maj.zip",
+      "provenance_class": "AUTHENTIC_FROZEN",
+      "sha256": "f21af7f0b1a6fbc4d4011ddf5b9c5b85e9710cd7d44f8da4d91e33ac0b09635e",
+      "source_identifier": "10.5281/zenodo.20377427"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,29 @@
+{
+  "blindness_level": "FUTURE_BLIND",
+  "freeze_requirements": [
+    "complete authentic frozen numerical LSC bundle",
+    "collaboration-approved as-built geometry and source insertion coordinates",
+    "final isotope/branching/source assay and covariance",
+    "actual exposure/extraction/counting protocol",
+    "predeclared cross-section/covariance/nuisance policy"
+  ],
+  "geometry_version": "2025 three-zone proposal; as-built survey required",
+  "hash_requirements": [
+    "model identity/hash",
+    "parameter bundle hash",
+    "geometry hash",
+    "source certificate hash",
+    "prediction table hash",
+    "preregistration hash"
+  ],
+  "isotope": "58Co proposal; final isotope must be collaboration-confirmed",
+  "planned_observable": "zone-resolved 71Ge production rate",
+  "prediction_schema": "zone, exposure, prediction, units, frozen identity, provenance",
+  "prediction_values": [],
+  "proposed_exposures": "10 exposures of 16 days in proposal; actual schedule required",
+  "schema_version": "1.0.0",
+  "source_concept": "400 kCi proposal; final assay and covariance required",
+  "source_reference": "arXiv:2501.08127; DOI:10.31857/S0044451025030058",
+  "status": "FUTURE_ONLY",
+  "timestamp_of_prediction_freeze": null
+}

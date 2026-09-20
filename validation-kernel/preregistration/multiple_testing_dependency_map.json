@@ -1,0 +1,87 @@
+{
+  "consequence": "Tests are not treated as twelve independent endpoints.",
+  "dependencies": [
+    {
+      "independent": false,
+      "shared_data": [
+        "BEST"
+      ],
+      "tests": [
+        "T1",
+        "T2",
+        "T6"
+      ]
+    },
+    {
+      "independent": false,
+      "shared_data": [
+        "BEST",
+        "GALLEX_GNO"
+      ],
+      "tests": [
+        "T3",
+        "T4",
+        "T7",
+        "T11"
+      ]
+    },
+    {
+      "independent": false,
+      "shared_data": [
+        "gallium experiments"
+      ],
+      "tests": [
+        "T5",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "independent": false,
+      "shared_data": [
+        "gallium",
+        "external releases after mapping"
+      ],
+      "tests": [
+        "T10"
+      ]
+    },
+    {
+      "independent": "NOT_ASSESSABLE",
+      "shared_data": [
+        "directional inputs unavailable"
+      ],
+      "tests": [
+        "T12"
+      ]
+    }
+  ],
+  "families": {
+    "blocked": [
+      "T12"
+    ],
+    "exploratory_future": [],
+    "primary": [
+      "T11",
+      "T7",
+      "T3",
+      "T1",
+      "T10"
+    ],
+    "secondary_descriptive": [
+      "T2",
+      "T4",
+      "T6"
+    ],
+    "sensitivity_only": [
+      "T5",
+      "T8",
+      "T9"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "selected_before_LSC_numerical_evaluation": true
+}
