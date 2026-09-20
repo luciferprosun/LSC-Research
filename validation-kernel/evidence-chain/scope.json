@@ -22,7 +22,10 @@
     "doi:10.5281/zenodo.22007108",
     "doi:10.5281/zenodo.19780615"
   ],
-  "repository": "luciferprosun/LSC-Validation-Kernel",
+  "historical_repository_aliases": [
+    "luciferprosun/LSC-Validation-Kernel"
+  ],
+  "repository": "luciferprosun/LSC-Research#validation-kernel",
   "required_paths": [
     ".github/workflows/evidence-chain.yml",
     "CITATION.cff",

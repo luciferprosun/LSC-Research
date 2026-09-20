@@ -3,6 +3,9 @@
 ## Status
 
 This repository is the canonical LSC freeze-stage repository for the pre-BEST-2 era.
+It also contains the complete, separately versioned LSC Validation Kernel in
+[`validation-kernel/`](validation-kernel/). The import does not alter the
+pre-BEST-2 freeze, activate Phase 2, or create a new scientific result.
 
 LSC is preserved here as an unvalidated, constrained phenomenological validation framework for studying Gallium/BEST-style neutrino anomaly structures against conventional baselines, detector/systematics competitors, sterile-neutrino comparisons, and external constraints.
 
@@ -72,6 +75,7 @@ The M4 detector/systematics baseline remains a primary competitor. Missing covar
 | `data_requirements/` | Missing-data requests and data limitations needed for validation. |
 | `historical_archive/` | Pre-STEP5 repository state, deprecated components, old speculative material, legacy PBH/curvature material, noncanonical history. |
 | `tools/` | Helper scripts for manifest/checksum maintenance if needed. |
+| `validation-kernel/` | Complete executable LSC Validation Kernel and its separately preserved evidence chain for LSC 6.5.0. |
 
 ## Missing Data Blocking Full Validation
 

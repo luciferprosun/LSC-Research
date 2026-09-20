@@ -43,9 +43,28 @@ def sha256_bytes(value: bytes) -> str:
     return hashlib.sha256(value).hexdigest()
 
 
+def repository_root() -> Path:
+    result = subprocess.run(
+        ("git", "-C", str(ROOT), "rev-parse", "--show-toplevel"),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+    if result.returncode:
+        detail = result.stderr.decode("utf-8", "replace").strip()
+        raise EvidenceError(f"cannot determine Git repository root: {detail}")
+    return Path(result.stdout.decode("utf-8", "strict").strip())
+
+
+REPOSITORY_ROOT = repository_root()
+MODULE_PREFIX = (
+    "" if ROOT == REPOSITORY_ROOT else ROOT.relative_to(REPOSITORY_ROOT).as_posix() + "/"
+)
+
+
 def git(*args: str) -> bytes:
     result = subprocess.run(
-        ("git", "-C", str(ROOT), *args),
+        ("git", "-C", str(REPOSITORY_ROOT), *args),
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         check=False,
@@ -54,6 +73,20 @@ def git(*args: str) -> bytes:
         detail = result.stderr.decode("utf-8", "replace").strip()
         raise EvidenceError(f"git {' '.join(args)} failed: {detail}")
     return result.stdout
+
+
+def module_relative(path: str) -> str | None:
+    """Return a module-relative Git path, or None for a sibling path.
+
+    The Validation Kernel can be imported beneath a larger LSC repository.
+    Commands are always run from the enclosing Git root, so this chain
+    deliberately retains its historical module-relative manifest paths.
+    """
+    if not MODULE_PREFIX:
+        return path
+    if not path.startswith(MODULE_PREFIX):
+        return None
+    return path[len(MODULE_PREFIX) :]
 
 
 def load_scope() -> dict[str, Any]:
@@ -84,7 +117,16 @@ def load_scope() -> dict[str, Any]:
             isinstance(item, str) and item for item in value
         ):
             raise EvidenceError(f"scope field {key!r} must be a list of strings")
+    aliases = scope.get("historical_repository_aliases", [])
+    if not isinstance(aliases, list) or not all(
+        isinstance(item, str) and item.strip() for item in aliases
+    ):
+        raise EvidenceError("scope field 'historical_repository_aliases' must be a list of strings")
     return scope
+
+
+def accepted_repositories(scope: dict[str, Any]) -> set[str]:
+    return {scope["repository"], *scope.get("historical_repository_aliases", [])}
 
 
 def selected(path: str, scope: dict[str, Any]) -> bool:
@@ -106,11 +148,12 @@ def nul_paths(raw: bytes) -> list[str]:
 def ensure_staged_scope_is_stable(scope: dict[str, Any]) -> None:
     unstaged = nul_paths(git("diff", "--name-only", "-z", "--"))
     untracked = nul_paths(git("ls-files", "--others", "--exclude-standard", "-z"))
-    offenders = sorted(
-        path
-        for path in (*unstaged, *untracked)
-        if selected(path, scope)
-    )
+    offenders = []
+    for path in (*unstaged, *untracked):
+        relative = module_relative(path)
+        if relative is not None and selected(relative, scope):
+            offenders.append(relative)
+    offenders.sort()
     if offenders:
         rendered = "\n  - ".join(offenders)
         raise EvidenceError(
@@ -130,10 +173,13 @@ def index_manifest(scope: dict[str, Any]) -> list[dict[str, Any]]:
             path = raw_path.decode("utf-8", "strict")
         except (ValueError, UnicodeDecodeError) as exc:
             raise EvidenceError("cannot parse Git index entry") from exc
+        relative = module_relative(path)
+        if relative is None:
+            continue
         if stage != "0":
-            raise EvidenceError(f"unmerged index entry in evidence scope: {path}")
-        if selected(path, scope):
-            entries.append((path, mode, object_id))
+            raise EvidenceError(f"unmerged index entry in evidence scope: {relative}")
+        if selected(relative, scope):
+            entries.append((relative, mode, object_id))
 
     entries.sort(key=lambda item: item[0])
     manifest: list[dict[str, Any]] = []
@@ -239,9 +285,11 @@ def verify(*, require_current: bool) -> dict[str, Any]:
     validate_records(records)
     latest = records[-1]
 
-    for key in ("network_id", "repository", "authority_role", "coverage"):
+    for key in ("network_id", "authority_role", "coverage"):
         if latest.get(key) != scope.get(key):
             raise EvidenceError(f"latest record and scope disagree on {key!r}")
+    if latest.get("repository") not in accepted_repositories(scope):
+        raise EvidenceError("latest record repository is not an accepted historical identity")
 
     result: dict[str, Any] = {
         "chain_records": len(records),
@@ -270,9 +318,10 @@ def snapshot(event: str, statement: str, recorded_by: str | None) -> dict[str, A
     if records:
         validate_records(records)
         latest = records[-1]
-        for key in ("network_id", "repository"):
-            if latest.get(key) != scope.get(key):
-                raise EvidenceError(f"refusing to continue a chain with changed {key!r}")
+        if latest.get("network_id") != scope.get("network_id"):
+            raise EvidenceError("refusing to continue a chain with changed 'network_id'")
+        if latest.get("repository") not in accepted_repositories(scope):
+            raise EvidenceError("refusing to continue a chain from an unknown repository identity")
         if event == "baseline":
             raise EvidenceError("baseline is allowed only for the first record")
     elif event != "baseline":

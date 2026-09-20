@@ -24,7 +24,7 @@ repositories—a GitHub/Sigstore artifact attestation.
 
 ## Verification
 
-Run from the repository root:
+Run from the Validation Kernel module root:
 
 ```bash
 python3 tools/evidence_chain.py verify --require-current
