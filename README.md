@@ -126,3 +126,9 @@ evidence chain and checked in CI. See
 [research attribution boundary](RESEARCH_ATTRIBUTION.md). The chain supplements
 the existing freeze manifests and DOI records; it does not change the MIT
 license or turn chronology into scientific validation.
+
+## Public Contact
+
+- LinkedIn — Łukasz Żuchowski: https://www.linkedin.com/in/łukasz-żuchowski-807160316/
+
+This contact link does not alter the scientific freeze or validation status of the repository.
