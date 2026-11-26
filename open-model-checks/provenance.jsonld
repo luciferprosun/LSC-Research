@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "@base": "https://raw.githubusercontent.com/luciferprosun/LSC-Research/lodc-lsc-hnc-2026/open-model-checks/",
+    "license": {"@type": "@id"},
+    "citation": {"@type": "@id"},
+    "isBasedOn": {"@type": "@id"},
+    "contentUrl": {"@type": "@id"},
+    "hasPart": {"@type": "@id"},
+    "codeRepository": {"@type": "@id"}
+  },
+  "@graph": [
+    {
+      "@id": "run.py",
+      "@type": "SoftwareSourceCode",
+      "name": "Open Model Checks",
+      "programmingLanguage": "Python 3.10+",
+      "codeRepository": "https://github.com/luciferprosun/LSC-Research/tree/lodc-lsc-hnc-2026/open-model-checks",
+      "license": "https://spdx.org/licenses/MIT.html",
+      "isBasedOn": ["https://doi.org/10.5281/zenodo.22007108", "https://doi.org/10.5281/zenodo.21526354"],
+      "hasPart": ["data/best-rates.csv", "data/f107-monthly.csv", "results/summary.json", "results/f107-holdout.csv"]
+    },
+    {
+      "@id": "data/best-rates.csv",
+      "@type": "Dataset",
+      "name": "BEST published gallium rate ratios, equation 20",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isBasedOn": "https://arxiv.org/abs/2201.07364",
+      "citation": "https://doi.org/10.1103/PhysRevC.105.065502",
+      "distribution": {"@type": "DataDownload", "contentUrl": "data/best-rates.csv", "encodingFormat": "text/csv"}
+    },
+    {
+      "@id": "data/f107-monthly.csv",
+      "@type": "Dataset",
+      "name": "Monthly solar radio flux F10.7 (frozen extract)",
+      "temporalCoverage": "2005-01/2024-12",
+      "license": "https://open.canada.ca/en/open-government-licence-canada",
+      "isBasedOn": "https://services.swpc.noaa.gov/json/solar-cycle/observed-solar-cycle-indices.json",
+      "citation": "https://data.asc-csa.gc.ca/dataset/cfd2331e-6d68-41c0-9cf2-f2e9c4d68eb7",
+      "distribution": {"@type": "DataDownload", "contentUrl": "data/f107-monthly.csv", "encodingFormat": "text/csv"}
+    },
+    {
+      "@id": "results/summary.json",
+      "@type": "Dataset",
+      "name": "Gallium and solar flux model-comparison summary",
+      "isBasedOn": ["run.py", "data/best-rates.csv", "data/f107-monthly.csv"],
+      "distribution": {"@type": "DataDownload", "contentUrl": "results/summary.json", "encodingFormat": "application/json"}
+    },
+    {
+      "@id": "results/f107-holdout.csv",
+      "@type": "Dataset",
+      "name": "Solar flux holdout observations and predictions",
+      "temporalCoverage": "2018-01/2024-12",
+      "isBasedOn": ["run.py", "data/f107-monthly.csv"],
+      "distribution": {"@type": "DataDownload", "contentUrl": "results/f107-holdout.csv", "encodingFormat": "text/csv"}
+    }
+  ]
+}

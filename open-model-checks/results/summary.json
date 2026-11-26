@@ -1,0 +1,29 @@
+{
+  "gallium": {
+    "best_inner_observed": "0.79",
+    "best_outer_observed": "0.77",
+    "shared_weights_outer_prediction_both_models": "0.790",
+    "outer_observed_minus_prediction": "-0.020",
+    "synthetic_changed_weights_outer_response": "0.742",
+    "free_normalization_outer_response": "0.79"
+  },
+  "solar_flux": {
+    "fit_targets": 144,
+    "fit_end": "2017-12",
+    "test_targets": 84,
+    "test_first": "2018-01",
+    "test_last": "2024-12",
+    "persistence": {
+      "rmse_sfu": 12.307113,
+      "mae_sfu": 7.489524
+    },
+    "matched_linear": {
+      "rmse_sfu": 14.40145,
+      "mae_sfu": 8.43761
+    },
+    "hnc_inspired": {
+      "rmse_sfu": 26.977451,
+      "mae_sfu": 14.838613
+    }
+  }
+}
