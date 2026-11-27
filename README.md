@@ -11,6 +11,19 @@ LSC is preserved here as an unvalidated, constrained phenomenological validation
 
 This repository is frozen before BEST-2-era analysis to prevent post-hoc theory drift.
 
+## One canonical LSC repository
+
+LSC-Research is the canonical repository for the current research, the separately
+versioned [Validation Kernel](validation-kernel/), and preserved historical releases.
+The LSC 6.0 publication corpus is already retained in the
+[LSC 6.0 archive](historical_archive/pre_step5_repository/legacy/LSC-6.0/).
+It includes its original license, citation metadata, theory, simulations, and
+v1.2.0/6.2.0 release materials.
+
+See [consolidation status](docs/LSC_CONSOLIDATION_STATUS_20261127.md) for the verified
+scope and history limitations. This navigation update preserves the existing
+scientific freeze; historical claims remain classified as historical material.
+
 ## Authorship
 
 Freeze-stage authorship:
